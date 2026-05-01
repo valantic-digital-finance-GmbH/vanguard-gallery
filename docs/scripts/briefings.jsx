@@ -1,7 +1,8 @@
 // SAP Blog Tracker — briefing accordion
 const { useState, useRef, useEffect, useCallback } = React;
 
-const BRIEFINGS = [
+// Seed data — shown instantly while the live JSON loads (or if fetch fails)
+const BRIEFINGS_SEED = [
   {
     id: 'fri-2026-04-24',
     weekday: 'Friday',
@@ -185,6 +186,17 @@ const BRIEFINGS = [
   },
 ];
 
+function useBriefings() {
+  const [briefings, setBriefings] = useState(BRIEFINGS_SEED);
+  useEffect(() => {
+    fetch('data/briefings.json')
+      .then(r => r.ok ? r.json() : Promise.reject(r.status))
+      .then(data => { if (Array.isArray(data) && data.length) setBriefings(data); })
+      .catch(() => { /* keep seed data on any error */ });
+  }, []);
+  return briefings;
+}
+
 function Briefing({ b, isOpen, onToggle }) {
   const headerRef = useRef(null);
   const onKey = (e) => {
@@ -276,10 +288,16 @@ function Briefing({ b, isOpen, onToggle }) {
 }
 
 function BriefingLog() {
-  const [openId, setOpenId] = useState(BRIEFINGS[0].id);
+  const briefings = useBriefings();
+  const [openId, setOpenId] = useState(briefings[0]?.id);
   const [filter, setFilter] = useState('week');
 
-  const list = BRIEFINGS;
+  // Keep openId in sync when briefings update from the live fetch
+  useEffect(() => {
+    setOpenId(id => id ?? briefings[0]?.id);
+  }, [briefings]);
+
+  const list = briefings;
   return (
     <div>
       <div className="pv-briefing-toolbar">
@@ -316,4 +334,4 @@ function BriefingLog() {
   );
 }
 
-Object.assign(window, { BriefingLog, BRIEFINGS });
+Object.assign(window, { BriefingLog, BRIEFINGS: BRIEFINGS_SEED });
