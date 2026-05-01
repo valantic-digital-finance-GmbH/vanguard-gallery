@@ -1,41 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vanguard Gallery</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Vanguard · An valantic AI initiative</title>
+  <link rel="stylesheet" href="fonts/valantic-fonts.css">
+  <link rel="stylesheet" href="assets/icons/phosphor.css">
+  <link rel="stylesheet" href="styles/site.css">
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
 </head>
-<body>
-  <header>
-    <h1>Vanguard Gallery</h1>
-    <p class="tagline">A curated space for digital finance innovation</p>
-  </header>
+<body data-screen-label="01 Home">
+  <div id="header"></div>
 
   <main>
-    <section class="hero">
-      <h2>Welcome</h2>
-      <p>This is a sample GitHub Pages site for the <strong>vanguard-gallery</strong> repository.</p>
+    <!-- Hero -->
+    <section class="pv-hero">
+      <div class="pv-container">
+        <div class="pv-hero-grid">
+          <div>
+            <div class="pv-hero-meta">
+              <span class="pv-dot"></span>
+              <span>Vanguard · Spring 2026 release</span>
+              <span aria-hidden="true">·</span>
+              <span>6 use cases live</span>
+            </div>
+            <h1>The team's working showcase of <span class="pv-grad">applied AI</span>.</h1>
+            <p class="pv-lede">Project Vanguard is where valantic's AI initiative ships. Every tool below is built, used, and maintained by our consultants — a public record of the work we are most proud of, with the code to match.</p>
+            <div class="pv-hero-cta-row">
+              <a class="pv-btn pv-btn-primary" href="#use-cases">
+                Explore the use cases <i class="ph ph-arrow-down"></i>
+              </a>
+              <a class="pv-btn pv-btn-secondary" href="sap-blog-tracker.html">
+                Read a sample briefing
+              </a>
+            </div>
+            <div class="pv-hero-stats">
+              <div>
+                <div class="pv-stat-num">06</div>
+                <div class="pv-stat-label">USE CASES SHIPPED</div>
+              </div>
+              <div>
+                <div class="pv-stat-num">14</div>
+                <div class="pv-stat-label">CONSULTANTS BUILDING</div>
+              </div>
+              <div>
+                <div class="pv-stat-num">23</div>
+                <div class="pv-stat-label">CLIENTS USING</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pv-hero-mascot" aria-hidden="true">
+            <img src="assets/vanguard-avatar.png" alt="">
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="cards">
-      <article class="card">
-        <h3>📐 Design</h3>
-        <p>Crafting clean, accessible interfaces for modern financial applications.</p>
-      </article>
-      <article class="card">
-        <h3>⚙️ Engineering</h3>
-        <p>Building robust, scalable systems with cutting-edge technologies.</p>
-      </article>
-      <article class="card">
-        <h3>🔒 Security</h3>
-        <p>Ensuring trust and compliance at every layer of the stack.</p>
-      </article>
+    <!-- Latest news -->
+    <section class="pv-section pv-section-soft" id="news">
+      <div class="pv-container">
+        <div class="pv-section-head">
+          <div>
+            <span class="pv-eyebrow">Latest news</span>
+            <h2>What the team is shipping this month.</h2>
+          </div>
+          <a class="pv-section-action" href="#">View all updates <i class="ph ph-arrow-up-right"></i></a>
+        </div>
+
+        <div class="pv-news-grid">
+          <article class="pv-news-card">
+            <div class="pv-news-meta">
+              <span class="pv-news-tag">Release</span>
+              <span>April 24, 2026</span>
+            </div>
+            <h3>SAP Blog Tracker hits production with daily morning briefings.</h3>
+            <p>The first Vanguard tool exits beta — now generating Mon–Fri summaries for SAP-aligned teams across the practice.</p>
+            <div class="pv-news-foot">
+              <span>3 min read</span>
+              <span class="pv-arrow"><i class="ph ph-arrow-right"></i></span>
+            </div>
+          </article>
+
+          <article class="pv-news-card">
+            <div class="pv-news-meta">
+              <span class="pv-news-tag">Field note</span>
+              <span>April 18, 2026</span>
+            </div>
+            <h3>RFP Copilot helps a retail client respond in 36 hours, not nine days.</h3>
+            <p>A first-draft sprint that used to require three senior consultants ran with two analysts and the Copilot — without losing fidelity.</p>
+            <div class="pv-news-foot">
+              <span>5 min read</span>
+              <span class="pv-arrow"><i class="ph ph-arrow-right"></i></span>
+            </div>
+          </article>
+
+          <article class="pv-news-card">
+            <div class="pv-news-meta">
+              <span class="pv-news-tag">Talk</span>
+              <span>April 09, 2026</span>
+            </div>
+            <h3>"Calm AI for the back office" — a talk at the Düsseldorf Data Forum.</h3>
+            <p>Lead engineer Lina Brendle on the design discipline behind Vanguard: small surfaces, sharp scope, audited everything.</p>
+            <div class="pv-news-foot">
+              <span>22 min watch</span>
+              <span class="pv-arrow"><i class="ph ph-arrow-right"></i></span>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
+
+    <!-- Use case carousel (focal) -->
+    <div id="carousel-mount"></div>
+
   </main>
 
-  <footer>
-    <p>© 2026 valantic Digital Finance GmbH · <a href="https://github.com/valantic-digital-finance-GmbH/vanguard-gallery">GitHub</a></p>
-  </footer>
+  <div id="footer"></div>
+
+  <script type="text/babel" src="scripts/components.jsx"></script>
+  <script type="text/babel" src="scripts/carousel.jsx"></script>
+  <script type="text/babel">
+    ReactDOM.createRoot(document.getElementById('header')).render(<Header active="home"/>);
+    ReactDOM.createRoot(document.getElementById('carousel-mount')).render(<UseCaseCarousel/>);
+    ReactDOM.createRoot(document.getElementById('footer')).render(<Footer/>);
+  </script>
 </body>
 </html>

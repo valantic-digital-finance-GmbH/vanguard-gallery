@@ -1,0 +1,285 @@
+/*
+ * valantic Design System — Colors & Type
+ * ─────────────────────────────────────────
+ * Source of truth for colors, spacing, radii, shadow and typography tokens.
+ * Every artifact should link this file (or inline its :root block).
+ *
+ * Usage:
+ *   <link rel="stylesheet" href="fonts/valantic-fonts.css">
+ *   <link rel="stylesheet" href="colors_and_type.css">
+ *
+ * Theme switching: set data-mode="dark" on <html>
+ * Route switching: set data-route="a" | "b" | "c" on <html>
+ */
+
+/* ════════════════════════════════════════════════════════════
+   COLOR TOKENS
+   ════════════════════════════════════════════════════════════ */
+:root {
+  /* ── Primary: valantic Gradient (always use 135°) ─────────── */
+  --val-coral:     #ff4b4b;
+  --val-peach:     #ff744f;
+  --val-gradient:  linear-gradient(135deg, #ff4b4b, #ff744f);
+
+  /* ── Base ─────────────────────────────────────────────────── */
+  --val-black:     #100c2a;
+  --val-white:     #ffffff;
+
+  /* ── Secondary (supporting — never use as primary) ────────── */
+  --val-indigo:    #193773;   /* Route A subheads, strong text */
+  --val-royal:     #1a4fd6;   /* Route B highlight */
+  --val-blue:      #3c4bc8;   /* Route C subhead */
+  --val-purple:    #5b26b7;   /* Route C emphasis */
+
+  /* ── Tertiary / Neutral accents ───────────────────────────── */
+  --val-gold:      #c0aa81;
+  --val-silver:    #cdcdcd;
+  --val-lavender:  #a78db6;
+
+  /* ── Semantic (theme-aware) — components MUST use these ───── */
+  --bg:            var(--val-white);
+  --bg-subtle:     #fafafa;
+  --bg-card:       #fafafa;
+  --bg-nav:        rgba(255,255,255,0.96);
+
+  --text:          var(--val-black);
+  --text-sub:      #666666;
+  --text-meta:     #888888;
+  --heading:       var(--val-black);
+  --heading-sub:   var(--val-indigo);
+
+  --border:        #f0eeee;
+  --border-strong: #e0dede;
+
+  --accent:        var(--val-coral);   /* coral-first accent */
+  --accent-hover:  var(--val-peach);
+}
+
+/* ── Dark mode ─────────────────────────────────────────────── */
+[data-mode="dark"],
+html.dark {
+  --bg:            var(--val-black);
+  --bg-subtle:     #16122f;
+  --bg-card:       rgba(255,255,255,0.04);
+  --bg-nav:        rgba(16,12,42,0.96);
+
+  --text:          rgba(255,255,255,0.88);
+  --text-sub:      rgba(255,255,255,0.55);
+  --text-meta:     rgba(255,255,255,0.35);
+  --heading:       var(--val-white);
+  --heading-sub:   rgba(255,255,255,0.72);
+
+  --border:        rgba(255,255,255,0.08);
+  --border-strong: rgba(255,255,255,0.16);
+}
+
+/* ════════════════════════════════════════════════════════════
+   SPACING (strict 8px grid)
+   ════════════════════════════════════════════════════════════ */
+:root {
+  --sp-1:  8px;
+  --sp-2: 16px;
+  --sp-3: 24px;
+  --sp-4: 32px;
+  --sp-6: 48px;
+  --sp-8: 64px;
+  --sp-10: 80px;
+  --sp-12: 96px;
+}
+
+/* ════════════════════════════════════════════════════════════
+   RADII & SHADOWS
+   ════════════════════════════════════════════════════════════ */
+:root {
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:  12px;
+  --radius-xl:  20px;
+  --radius-pill: 999px;
+
+  --shadow-sm: 0 1px 2px rgba(16,12,42,.04), 0 1px 3px rgba(16,12,42,.06);
+  --shadow-md: 0 4px 16px rgba(16,12,42,.06), 0 2px 6px rgba(16,12,42,.04);
+  --shadow-lg: 0 16px 40px rgba(16,12,42,.08), 0 4px 12px rgba(16,12,42,.05);
+  --shadow-coral: 0 20px 60px rgba(255,75,75,.25);
+}
+
+/* ════════════════════════════════════════════════════════════
+   TYPOGRAPHY — base + semantic
+   Fonts are loaded via fonts/valantic-fonts.css (self-host)
+   or the Maven Pro CDN <link> tag.
+   ════════════════════════════════════════════════════════════ */
+
+:root {
+  --font-display: 'Maven Pro', 'Segoe UI', system-ui, sans-serif;
+  --font-body:    'Segoe UI', 'Maven Pro', system-ui, sans-serif;
+  --font-mono:    ui-monospace, SFMono-Regular, 'SF Mono', Menlo, monospace;
+
+  /* Per-route heading weight token */
+  --h-weight: 400;   /* Route A default */
+}
+
+[data-route="b"],
+[data-route="c"] {
+  --h-weight: 700;   /* Route B & C: bold headings */
+}
+
+/* ── Base ────────────────────────────────────────────────── */
+body {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Headings — h1 always gradient-filled */
+h1 {
+  font-family: var(--font-display);
+  font-size: 45px;
+  font-weight: var(--h-weight);
+  line-height: 1.1;
+  margin-bottom: var(--sp-2);
+  background: var(--val-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: var(--h-weight);
+  line-height: 1.15;
+  margin-top: var(--sp-6);
+  margin-bottom: var(--sp-2);
+  color: var(--heading);
+  letter-spacing: -0.005em;
+}
+h2 .accent,
+h2 span.grad {
+  background: var(--val-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+h3 {
+  font-family: var(--font-display);
+  font-size: 25px;
+  font-weight: var(--h-weight);
+  line-height: 1.3;
+  margin-top: var(--sp-4);
+  margin-bottom: var(--sp-2);
+  color: var(--heading-sub);
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--heading);
+  margin-bottom: var(--sp-1);
+}
+
+p  { font-size: 17px; line-height: 1.5; margin-bottom: var(--sp-2); color: var(--text); }
+small, .meta { font-size: 13px; color: var(--text-meta); }
+
+strong { font-weight: 600; color: var(--heading-sub); }
+em     { font-style: italic; color: var(--val-indigo); }
+
+a {
+  color: var(--val-coral);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color .15s ease, color .15s ease;
+}
+a:hover { color: var(--val-peach); border-bottom-color: currentColor; }
+
+code, pre { font-family: var(--font-mono); font-size: 14px; }
+code { background: var(--bg-card); border: 1px solid var(--border); padding: 1px 6px; border-radius: var(--radius-sm); }
+
+/* ── Eyebrow / label ─────────────────────────────────────── */
+.label, .eyebrow {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--val-coral);
+  display: block;
+  margin-bottom: var(--sp-1);
+}
+.label + h1, .label + h2, .label + h3 { margin-top: 0; }
+
+/* ── Divider — coral-to-peach-to-transparent (core brand motif) ── */
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, var(--val-coral), var(--val-peach), transparent);
+  margin: var(--sp-6) 0;
+  opacity: .25;
+  border: 0;
+}
+
+/* ── Badges ──────────────────────────────────────────────── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-1);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  background: var(--val-gradient);
+  color: var(--val-white);
+  line-height: 1;
+}
+.badge-outline { background: transparent; border: 1.5px solid var(--val-coral); color: var(--val-coral); }
+.badge-neutral { background: var(--bg-card); border: 1px solid var(--border); color: var(--text-sub); }
+
+/* ── Buttons ─────────────────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-1);
+  padding: 14px 28px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  border-radius: var(--radius-md);
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform .1s ease, filter .15s ease, background .15s ease;
+}
+.btn-primary   { background: var(--val-gradient); color: var(--val-white); }
+.btn-primary:hover { filter: brightness(1.05); }
+.btn-primary:active { transform: translateY(1px); }
+
+.btn-secondary { background: transparent; color: var(--text); border: 1.5px solid var(--border-strong); }
+.btn-secondary:hover { border-color: var(--val-coral); color: var(--val-coral); }
+
+.btn-ghost    { background: transparent; color: var(--val-coral); padding: 10px 14px; }
+.btn-ghost:hover { background: rgba(255,75,75,0.08); }
+
+/* ── Card base ───────────────────────────────────────────── */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--sp-4);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ── Phosphor icon gradient helper ───────────────────────── */
+.ph.grad {
+  background: var(--val-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
