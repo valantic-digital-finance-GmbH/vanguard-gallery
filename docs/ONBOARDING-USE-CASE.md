@@ -86,7 +86,9 @@ The GitHub Action in your repo needs write access to the gallery repo. Contact t
 
 ## Step 3 — Add the push workflow
 
-Create `.github/workflows/push-to-gallery.yml` in your repo with the content below. No edits needed except to replace `<your-tool-id>` in the commit message if you like a cleaner history.
+Create `.github/workflows/push-to-gallery.yml` in your repo with the content below. No edits needed.
+
+> **Why REST API instead of `git push`?** GitHub's password authentication for git operations over HTTPS is disabled. Classic PATs also cannot use the `x-access-token:` prefix that only works for GitHub Apps. The GitHub Contents REST API (`PUT /repos/.../contents/...`) is the reliable alternative — it uses the PAT as a bearer token in the `Authorization` header and avoids git authentication entirely.
 
 ```yaml
 name: Push to Vanguard Gallery
@@ -95,6 +97,7 @@ on:
   push:
     paths: ['vanguard-usecase.json']
     branches: [main]
+  workflow_dispatch:
 
 jobs:
   push-to-gallery:
@@ -103,20 +106,57 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Push use case data to gallery
+        env:
+          VANGUARD_GALLERY_PAT: ${{ secrets.VANGUARD_GALLERY_PAT }}
         run: |
+          if [ -z "${VANGUARD_GALLERY_PAT}" ]; then
+            echo "❌ VANGUARD_GALLERY_PAT secret is not set or not accessible"
+            exit 1
+          fi
+
           USE_CASE_ID=$(jq -r '.id' vanguard-usecase.json)
+          echo "Use case ID: $USE_CASE_ID"
 
-          git config --global user.email "vanguard-gallery-bot@valantic.com"
-          git config --global user.name "Vanguard Gallery Bot"
+          TARGET_PATH="docs/data/usecases/${USE_CASE_ID}.json"
 
-          git clone https://x-access-token:${{ secrets.VANGUARD_GALLERY_PAT }}@github.com/valantic-digital-finance-gmbh/vanguard-gallery.git /tmp/gallery
+          # Get current file SHA (required by GitHub API to update an existing file)
+          SHA=$(curl -s \
+            -H "Authorization: token ${VANGUARD_GALLERY_PAT}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/valantic-digital-finance-GmbH/vanguard-gallery/contents/${TARGET_PATH}" \
+            | jq -r '.sha // empty')
 
-          cp vanguard-usecase.json /tmp/gallery/docs/data/usecases/${USE_CASE_ID}.json
+          CONTENT=$(base64 -w 0 vanguard-usecase.json)
+          MSG="chore: update ${USE_CASE_ID} use case from source repo"
 
-          cd /tmp/gallery
-          git add docs/data/usecases/${USE_CASE_ID}.json
-          git diff --cached --quiet || git commit -m "chore: update ${USE_CASE_ID} use case from source repo"
-          git push origin main
+          if [ -n "$SHA" ]; then
+            PAYLOAD=$(jq -n \
+              --arg message "$MSG" \
+              --arg content "$CONTENT" \
+              --arg sha "$SHA" \
+              '{message: $message, content: $content, sha: $sha}')
+          else
+            PAYLOAD=$(jq -n \
+              --arg message "$MSG" \
+              --arg content "$CONTENT" \
+              '{message: $message, content: $content}')
+          fi
+
+          RESPONSE=$(curl -s -w "\n%{http_code}" -X PUT \
+            -H "Authorization: token ${VANGUARD_GALLERY_PAT}" \
+            -H "Accept: application/vnd.github+json" \
+            -H "Content-Type: application/json" \
+            -d "$PAYLOAD" \
+            "https://api.github.com/repos/valantic-digital-finance-GmbH/vanguard-gallery/contents/${TARGET_PATH}")
+
+          HTTP_CODE=$(echo "$RESPONSE" | tail -1)
+          if [ "$HTTP_CODE" = "200" ] || [ "$HTTP_CODE" = "201" ]; then
+            echo "✅ ${USE_CASE_ID}.json pushed to vanguard-gallery (HTTP $HTTP_CODE)"
+          else
+            echo "❌ Failed to push (HTTP $HTTP_CODE)"
+            echo "$RESPONSE" | head -1
+            exit 1
+          fi
 ```
 
 ---
