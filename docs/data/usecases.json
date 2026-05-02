@@ -13,7 +13,7 @@
       "Validates via Pydantic and deploys through the official SAP DataSphere CLI"
     ],
     "stack": "Python · Pydantic · SAP DataSphere CLI",
-    "image": "https://raw.githubusercontent.com/valantic-digital-finance-GmbH/artifex/main/artifex_mascot.png"
+    "image": "artifex_mascot.png"
   },
   {
     "id": "sap-blog-tracker",
