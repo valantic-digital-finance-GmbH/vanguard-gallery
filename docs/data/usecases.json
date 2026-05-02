@@ -58,5 +58,21 @@
       "shape": "#2e2860",
       "accent": "#7b5ea7"
     }
+  },
+  {
+    "id": "sharepoint-watch",
+    "order": 4,
+    "title": "SharePoint Watch",
+    "tag": "IT Operations",
+    "icon": "ph-hard-drives",
+    "repo": "https://github.com/valantic-digital-finance-GmbH/sharepoint-watch",
+    "description": "Daily storage snapshots for every SharePoint site in the M365 tenant — anomaly detection, 24-month history, and Power BI trends embedded right in SharePoint.",
+    "benefits": [
+      "Tracks storage growth for every site daily — no manual checks",
+      "Fires anomaly alerts before quota incidents happen",
+      "Power BI report embedded in SharePoint, zero extra tooling for stakeholders"
+    ],
+    "stack": "PowerShell · Azure SQL · Power BI",
+    "image": "https://valantic-digital-finance-GmbH.github.io/vanguard-gallery/assets/usecases/sharepoint-watch/preview.svg"
   }
 ]
