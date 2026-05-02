@@ -1,0 +1,21 @@
+{
+  "id": "vanguard-gallery",
+  "order": 3,
+  "title": "Vanguard Gallery",
+  "tag": "Showcase",
+  "icon": "ph-cards",
+  "repo": "https://github.com/valantic-digital-finance-GmbH/vanguard-gallery",
+  "description": "The living showcase of AI tools built by valantic Digital Finance — every use case, one click from source.",
+  "benefits": [
+    "Single source of truth for all internal AI tools",
+    "Zero-touch onboarding: push a JSON file, card appears in minutes",
+    "Built with React, self-hosted fonts, and GitHub Pages"
+  ],
+  "stack": "React · GitHub Pages · GitHub Actions",
+  "art": "gallery",
+  "palette": {
+    "bg": "#100c2a",
+    "shape": "#2e2860",
+    "accent": "#7b5ea7"
+  }
+}

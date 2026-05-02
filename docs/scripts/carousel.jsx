@@ -3,21 +3,52 @@ const { useState, useEffect, useRef, useCallback } = React;
 
 const USE_CASES_SEED = [
   {
+    id: 'artifex',
+    title: 'artifex',
+    tag: 'Data modelling',
+    icon: 'ph-hammer',
+    repo: 'https://github.com/valantic-digital-finance-GmbH/artifex',
+    description: 'Turns human-readable markdown specs into deployed SAP DataSphere artifacts — no hand-crafted CSN/JSON required.',
+    benefits: [
+      'Replaces opaque CSN/JSON with readable markdown table specs',
+      'Generates up to 12 interdependent artifacts from a single v2 spec',
+      'Validates via Pydantic and deploys through the official SAP DataSphere CLI',
+    ],
+    stack: 'Python · Pydantic · SAP DataSphere CLI',
+    image: 'https://raw.githubusercontent.com/valantic-digital-finance-GmbH/artifex/main/artifex_mascot.png',
+  },
+  {
     id: 'sap-blog-tracker',
     title: 'SAP Blog Tracker',
     tag: 'Knowledge ops',
     icon: 'ph-newspaper-clipping',
     href: 'sap-blog-tracker.html',
-    repo: 'https://github.com/valantic/sap-blog-tracker',
+    repo: 'https://github.com/valantic-digital-finance-GmbH/blog-tracker',
     description: 'A daily morning briefing that summarises every newly published SAP blog post worth reading — delivered in one calm, ordered digest.',
     benefits: [
       'Replaces 60+ minutes of manual scanning each morning',
       'Surfaces only what is relevant to active engagements',
       'Consistent voice across analysts and consultants',
     ],
-    stack: 'GPT-4o · Python · Slack',
+    stack: 'GPT-4o · Python · Outlook',
     art: 'sap',
     isInternalPage: true,
+  },
+  {
+    id: 'vanguard-gallery',
+    title: 'Vanguard Gallery',
+    tag: 'Showcase',
+    icon: 'ph-cards',
+    repo: 'https://github.com/valantic-digital-finance-GmbH/vanguard-gallery',
+    description: 'The living showcase of AI tools built by valantic Digital Finance — every use case, one click from source.',
+    benefits: [
+      'Single source of truth for all internal AI tools',
+      'Zero-touch onboarding: push a JSON file, card appears in minutes',
+      'Built with React, self-hosted fonts, and GitHub Pages',
+    ],
+    stack: 'React · GitHub Pages · GitHub Actions',
+    art: 'gallery',
+    palette: { bg: '#100c2a', shape: '#2e2860', accent: '#7b5ea7' },
   },
   {
     id: 'rfp-copilot',
@@ -122,6 +153,7 @@ function CardArt({ uc }) {
     meeting:  { bg: '#ecefe9', shape: '#bfc8b3', accent: '#193773' },
     forecast: { bg: '#f4ecec', shape: '#dcc0c0', accent: '#ff744f' },
     contract: { bg: '#ebeef0', shape: '#c2cad2', accent: '#100c2a' },
+    gallery:  { bg: '#100c2a', shape: '#2e2860', accent: '#7b5ea7' },
   };
   const p = (uc.palette && uc.palette.bg) ? uc.palette : (defaultPalettes[kind] || defaultPalettes.sap);
 
@@ -215,6 +247,28 @@ function CardArt({ uc }) {
       </svg>
     );
   }
+  if (kind === 'gallery') {
+    return (
+      <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" style={{width:'100%', height:'100%'}}>
+        <rect width="400" height="300" fill={p.bg}/>
+        {[0, 1, 2].map(i => (
+          <g key={i} transform={`translate(${44 + i * 112}, 48)`}>
+            <rect width="96" height="148" rx="6" fill={p.shape} opacity={1 - i * 0.18}/>
+            <rect x="10" y="12" width="52" height="6" rx="2" fill={p.accent} opacity=".85"/>
+            <rect x="10" y="28" width="76" height="3" rx="1.5" fill={p.accent} opacity=".25"/>
+            <rect x="10" y="38" width="68" height="3" rx="1.5" fill={p.accent} opacity=".2"/>
+            <rect x="10" y="48" width="72" height="3" rx="1.5" fill={p.accent} opacity=".2"/>
+            <rect x="10" y="66" width="40" height="3" rx="1.5" fill={p.accent} opacity=".15"/>
+            <rect x="10" y="76" width="36" height="3" rx="1.5" fill={p.accent} opacity=".15"/>
+            <rect x="10" y="86" width="38" height="3" rx="1.5" fill={p.accent} opacity=".15"/>
+          </g>
+        ))}
+        {[0, 1, 2, 3, 4].map(i => (
+          <circle key={i} cx={180 + i * 10} cy={248} r="3" fill={p.accent} opacity={i === 0 ? 1 : 0.3}/>
+        ))}
+      </svg>
+    );
+  }
   return <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" style={{width:'100%', height:'100%'}}><rect width="400" height="300" fill={p.bg}/></svg>;
 }
 
@@ -278,11 +332,11 @@ function UseCaseCarousel() {
   }, [maxIndex]);
 
   // Touch / drag
-  const dragRef = useRef({ active: false, startX: 0, startIdx: 0 });
+  // Drag — pointer capture is deferred until movement threshold so that
+  // clicks on child <a> elements still fire normally.
+  const dragRef = useRef({ active: false, startX: 0, startIdx: 0, dragging: false, pointerId: null });
   const onPointerDown = (e) => {
-    dragRef.current = { active: true, startX: e.clientX, startIdx: safeIndex };
-    e.currentTarget.setPointerCapture(e.pointerId);
-    e.currentTarget.classList.add('is-dragging');
+    dragRef.current = { active: true, startX: e.clientX, startIdx: safeIndex, dragging: false, pointerId: e.pointerId };
   };
   const onPointerMove = (e) => {
     const d = dragRef.current;
@@ -292,12 +346,19 @@ function UseCaseCarousel() {
     if (!first) return;
     const cardW = first.getBoundingClientRect().width;
     const dx = e.clientX - d.startX;
+    if (!d.dragging) {
+      if (Math.abs(dx) < 8) return;
+      d.dragging = true;
+      e.currentTarget.setPointerCapture(d.pointerId);
+      e.currentTarget.classList.add('is-dragging');
+    }
     const moved = Math.round(-dx / (cardW * 0.5));
     const target = Math.max(0, Math.min(maxIndex, d.startIdx + moved));
     if (target !== safeIndex) setIndex(target);
   };
   const onPointerUp = (e) => {
     dragRef.current.active = false;
+    dragRef.current.dragging = false;
     e.currentTarget.classList.remove('is-dragging');
   };
 

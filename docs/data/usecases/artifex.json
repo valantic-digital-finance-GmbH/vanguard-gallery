@@ -1,0 +1,16 @@
+{
+  "id": "artifex",
+  "order": 1,
+  "title": "artifex",
+  "tag": "Data modelling",
+  "icon": "ph-hammer",
+  "repo": "https://github.com/valantic-digital-finance-GmbH/artifex",
+  "description": "Turns human-readable markdown specs into deployed SAP DataSphere artifacts — no hand-crafted CSN/JSON required.",
+  "benefits": [
+    "Replaces opaque CSN/JSON with readable markdown table specs",
+    "Generates up to 12 interdependent artifacts from a single v2 spec",
+    "Validates via Pydantic and deploys through the official SAP DataSphere CLI"
+  ],
+  "stack": "Python · Pydantic · SAP DataSphere CLI",
+  "image": "https://raw.githubusercontent.com/valantic-digital-finance-GmbH/artifex/main/artifex_mascot.png"
+}

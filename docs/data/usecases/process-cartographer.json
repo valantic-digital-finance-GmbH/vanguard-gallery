@@ -1,6 +1,6 @@
 {
   "id": "process-cartographer",
-  "order": 3,
+  "order": 50,
   "title": "Process Cartographer",
   "tag": "Operations",
   "icon": "ph-graph",
