@@ -1,0 +1,18 @@
+{
+  "_comment": "Copy this file to docs/data/news/<your-id>.json and fill in each field. The filename must match the id field (e.g. artifex-v2.json for id 'artifex-v2').",
+
+  "id": "your-news-id",
+  "_id_comment": "REQUIRED. Unique kebab-case slug. Must match the filename without .json. No spaces, lowercase only. Example: 'rfp-copilot-launch'.",
+
+  "date": "2026-01-15",
+  "_date_comment": "REQUIRED. ISO 8601 date string (YYYY-MM-DD). Items are sorted newest-first by this field on the site.",
+
+  "tag": "Release",
+  "_tag_comment": "REQUIRED. Short category label shown as a badge on the card. Conventional values: Release, Update, Field note, Talk.",
+
+  "title": "Your self-contained headline — keep it under 120 characters.",
+  "_title_comment": "REQUIRED. The headline IS the story. Write it so no body paragraph is needed. Max ~120 characters. End with a full stop.",
+
+  "href": null,
+  "_href_comment": "OPTIONAL. URL the card links to when clicked. Use a full https:// URL for external links (opens in new tab), or a relative path like 'sap-blog-tracker.html' for internal gallery pages (opens in same tab). If omitted the card is non-interactive."
+}

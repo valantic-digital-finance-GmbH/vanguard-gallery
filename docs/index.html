@@ -45,10 +45,6 @@
                 <div class="pv-stat-num">14</div>
                 <div class="pv-stat-label">CONSULTANTS BUILDING</div>
               </div>
-              <div>
-                <div class="pv-stat-num">23</div>
-                <div class="pv-stat-label">CLIENTS USING</div>
-              </div>
             </div>
           </div>
 
@@ -59,59 +55,8 @@
       </div>
     </section>
 
-    <!-- Latest news -->
-    <section class="pv-section pv-section-soft" id="news">
-      <div class="pv-container">
-        <div class="pv-section-head">
-          <div>
-            <span class="pv-eyebrow">Latest news</span>
-            <h2>What the team is shipping this month.</h2>
-          </div>
-          <a class="pv-section-action" href="#">View all updates <i class="ph ph-arrow-up-right"></i></a>
-        </div>
-
-        <div class="pv-news-grid">
-          <article class="pv-news-card">
-            <div class="pv-news-meta">
-              <span class="pv-news-tag">Release</span>
-              <span>April 24, 2026</span>
-            </div>
-            <h3>SAP Blog Tracker hits production with daily morning briefings.</h3>
-            <p>The first Vanguard tool exits beta — now generating Mon–Fri summaries for SAP-aligned teams across the practice.</p>
-            <div class="pv-news-foot">
-              <span>3 min read</span>
-              <span class="pv-arrow"><i class="ph ph-arrow-right"></i></span>
-            </div>
-          </article>
-
-          <article class="pv-news-card">
-            <div class="pv-news-meta">
-              <span class="pv-news-tag">Field note</span>
-              <span>April 18, 2026</span>
-            </div>
-            <h3>RFP Copilot helps a retail client respond in 36 hours, not nine days.</h3>
-            <p>A first-draft sprint that used to require three senior consultants ran with two analysts and the Copilot — without losing fidelity.</p>
-            <div class="pv-news-foot">
-              <span>5 min read</span>
-              <span class="pv-arrow"><i class="ph ph-arrow-right"></i></span>
-            </div>
-          </article>
-
-          <article class="pv-news-card">
-            <div class="pv-news-meta">
-              <span class="pv-news-tag">Talk</span>
-              <span>April 09, 2026</span>
-            </div>
-            <h3>"Calm AI for the back office" — a talk at the Düsseldorf Data Forum.</h3>
-            <p>Lead engineer Lina Brendle on the design discipline behind Vanguard: small surfaces, sharp scope, audited everything.</p>
-            <div class="pv-news-foot">
-              <span>22 min watch</span>
-              <span class="pv-arrow"><i class="ph ph-arrow-right"></i></span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
+    <!-- Latest news (React component) -->
+    <div id="news-mount"></div>
 
     <!-- Use case carousel (focal) -->
     <div id="carousel-mount"></div>
@@ -122,8 +67,10 @@
 
   <script type="text/babel" src="scripts/components.jsx"></script>
   <script type="text/babel" src="scripts/carousel.jsx"></script>
+  <script type="text/babel" src="scripts/news.jsx"></script>
   <script type="text/babel">
     ReactDOM.createRoot(document.getElementById('header')).render(<Header active="home"/>);
+    ReactDOM.createRoot(document.getElementById('news-mount')).render(<NewsSection/>);
     ReactDOM.createRoot(document.getElementById('carousel-mount')).render(<UseCaseCarousel/>);
     ReactDOM.createRoot(document.getElementById('footer')).render(<Footer/>);
 

@@ -311,7 +311,7 @@ a { color: inherit; text-decoration: none; }
   padding-top: 32px;
   border-top: 1px solid var(--pv-border);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   max-width: 540px;
 }
@@ -418,7 +418,7 @@ a { color: inherit; text-decoration: none; }
   .pv-section-head { flex-direction: column; align-items: start; margin-bottom: 32px; }
 }
 
-/* ── News ───────────── */
+/* ── News (compact, headline-only cards) ───────────── */
 .pv-news-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -430,23 +430,30 @@ a { color: inherit; text-decoration: none; }
 .pv-news-card {
   display: flex;
   flex-direction: column;
-  padding: 28px;
+  gap: 12px;
+  padding: 24px 28px;
   background: #fff;
   border: 1px solid var(--pv-border);
   border-radius: 16px;
-  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
   transition: border-color .2s var(--ease), transform .2s var(--ease), box-shadow .2s var(--ease);
 }
-.pv-news-card:hover {
+a.pv-news-card {
+  cursor: pointer;
+}
+a.pv-news-card:hover {
   border-color: var(--pv-border-strong);
   transform: translateY(-2px);
   box-shadow: var(--pv-shadow-md);
+}
+.pv-news-card--static {
+  cursor: default;
 }
 .pv-news-meta {
   display: flex; align-items: center; gap: 10px;
   font-size: 12px; letter-spacing: .04em;
   color: var(--pv-text-meta);
-  margin-bottom: 18px;
 }
 .pv-news-tag {
   display: inline-block;
@@ -460,31 +467,24 @@ a { color: inherit; text-decoration: none; }
   border-radius: 999px;
 }
 .pv-news-card h3 {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 500;
-  line-height: 1.3;
+  line-height: 1.35;
   color: var(--pv-text);
   letter-spacing: -.005em;
-  margin: 0 0 12px;
-}
-.pv-news-card p {
-  font-size: 14px;
-  line-height: 1.5;
-  color: var(--pv-text-sub);
-  margin: 0 0 20px;
+  margin: 0;
   flex-grow: 1;
 }
-.pv-news-card .pv-news-foot {
-  display: flex; justify-content: space-between;
-  font-size: 12px; color: var(--pv-text-meta);
-  padding-top: 16px;
-  border-top: 1px solid var(--pv-border);
+.pv-news-arrow {
+  align-self: flex-end;
+  font-size: 15px;
+  color: var(--pv-text-meta);
+  transition: transform .2s var(--ease), color .2s var(--ease);
 }
-.pv-news-card .pv-news-foot .pv-arrow {
+a.pv-news-card:hover .pv-news-arrow {
   color: var(--pv-text);
-  transition: transform .2s var(--ease);
+  transform: translateX(3px);
 }
-.pv-news-card:hover .pv-arrow { transform: translateX(3px); }
 
 /* ── Carousel ───────────── */
 .pv-showcase {

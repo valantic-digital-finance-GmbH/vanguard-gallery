@@ -1,0 +1,30 @@
+[
+  {
+    "id": "artifex",
+    "date": "2026-04-28",
+    "tag": "Release",
+    "title": "artifex ships — SAP DataSphere modelling from human-readable markdown.",
+    "href": "https://github.com/valantic-digital-finance-GmbH/artifex"
+  },
+  {
+    "id": "sap-blog-tracker",
+    "date": "2026-04-21",
+    "tag": "Release",
+    "title": "SAP Blog Tracker hits production — daily Mon–Fri briefings now live.",
+    "href": "sap-blog-tracker.html"
+  },
+  {
+    "id": "vanguard-gallery",
+    "date": "2026-04-14",
+    "tag": "Update",
+    "title": "Vanguard Gallery goes live — the team's AI showcase is now public.",
+    "href": "https://github.com/valantic-digital-finance-GmbH/vanguard-gallery"
+  },
+  {
+    "id": "sharepoint-watch",
+    "date": "2026-04-07",
+    "tag": "Release",
+    "title": "SharePoint Watch deployed — daily M365 storage snapshots with anomaly alerts.",
+    "href": "https://github.com/valantic-digital-finance-GmbH/sharepoint-watch"
+  }
+]
