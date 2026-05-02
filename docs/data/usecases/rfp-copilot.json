@@ -1,0 +1,21 @@
+{
+  "id": "rfp-copilot",
+  "order": 2,
+  "title": "RFP Copilot",
+  "tag": "Sales enablement",
+  "icon": "ph-file-text",
+  "repo": "https://github.com/valantic/rfp-copilot",
+  "description": "A retrieval-augmented assistant that drafts the first 80% of any client RFP response from a curated library of past wins.",
+  "benefits": [
+    "Cuts first-draft turnaround from 9 days to 36 hours",
+    "Cites every claim back to its source proposal",
+    "Locked behind SSO with full audit trail"
+  ],
+  "stack": "Claude · pgvector · Next.js",
+  "art": "rfp",
+  "palette": {
+    "bg": "#eef0f3",
+    "shape": "#bfc6d1",
+    "accent": "#1a4fd6"
+  }
+}

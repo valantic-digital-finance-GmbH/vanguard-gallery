@@ -1,0 +1,21 @@
+{
+  "id": "contract-radar",
+  "order": 6,
+  "title": "Contract Radar",
+  "tag": "Legal & risk",
+  "icon": "ph-shield-check",
+  "repo": "https://github.com/valantic/contract-radar",
+  "description": "Reads supplier contracts the way a senior counsel would — flags off-market terms, expiring SLAs, and indemnity gaps in plain language.",
+  "benefits": [
+    "Reviews a 60-page MSA in under 90 seconds",
+    "Flags reviewed by counsel auto-train the model",
+    "Ships with an EU AI Act compliance report"
+  ],
+  "stack": "Claude · LangGraph · Postgres",
+  "art": "contract",
+  "palette": {
+    "bg": "#ebeef0",
+    "shape": "#c2cad2",
+    "accent": "#100c2a"
+  }
+}
