@@ -1,0 +1,22 @@
+{
+  "id": "sap-blog-tracker",
+  "order": 1,
+  "title": "SAP Blog Tracker",
+  "tag": "Knowledge ops",
+  "icon": "ph-newspaper-clipping",
+  "repo": "https://github.com/valantic/sap-blog-tracker",
+  "href": "sap-blog-tracker.html",
+  "description": "A daily morning briefing that summarises every newly published SAP blog post worth reading — delivered in one calm, ordered digest.",
+  "benefits": [
+    "Replaces 60+ minutes of manual scanning each morning",
+    "Surfaces only what is relevant to active engagements",
+    "Consistent voice across analysts and consultants"
+  ],
+  "stack": "GPT-4o · Python · Slack",
+  "art": "sap",
+  "palette": {
+    "bg": "#f3efe7",
+    "shape": "#d4c8a5",
+    "accent": "#100c2a"
+  }
+}

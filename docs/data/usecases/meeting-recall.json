@@ -1,0 +1,21 @@
+{
+  "id": "meeting-recall",
+  "order": 4,
+  "title": "Meeting Recall",
+  "tag": "Productivity",
+  "icon": "ph-microphone",
+  "repo": "https://github.com/valantic/meeting-recall",
+  "description": "Private, on-device transcription and structured recall for client workshops — searchable by decision, owner, or action.",
+  "benefits": [
+    "Runs entirely on-device — no audio leaves the laptop",
+    "Decision log auto-syncs to Confluence",
+    "Multilingual: DE, EN, FR out of the box"
+  ],
+  "stack": "Whisper · Llama · Tauri",
+  "art": "meeting",
+  "palette": {
+    "bg": "#ecefe9",
+    "shape": "#bfc8b3",
+    "accent": "#193773"
+  }
+}

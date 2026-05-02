@@ -1,7 +1,7 @@
 // Project Vanguard — Use case carousel
 const { useState, useEffect, useRef, useCallback } = React;
 
-const USE_CASES = [
+const USE_CASES_SEED = [
   {
     id: 'sap-blog-tracker',
     title: 'SAP Blog Tracker',
@@ -96,9 +96,26 @@ const USE_CASES = [
   },
 ];
 
+// ─── Fetch hook — loads live data, keeps seed as fallback ────────────────
+function useUseCases() {
+  const [items, setItems] = useState(USE_CASES_SEED);
+  useEffect(() => {
+    fetch('data/usecases.json')
+      .then(r => r.ok ? r.json() : Promise.reject())
+      .then(setItems)
+      .catch(() => {});
+  }, []);
+  return items;
+}
+
 // ─── Card art (cohesive, restrained — no stock images) ───────────────────
-function CardArt({ kind }) {
-  const palettes = {
+function CardArt({ uc }) {
+  if (uc.image) {
+    return <img src={uc.image} alt={uc.title} style={{width:'100%',height:'100%',objectFit:'cover',display:'block'}}/>;
+  }
+
+  const kind = uc.art;
+  const defaultPalettes = {
     sap:      { bg: '#f3efe7', shape: '#d4c8a5', accent: '#100c2a' },
     rfp:      { bg: '#eef0f3', shape: '#bfc6d1', accent: '#1a4fd6' },
     process:  { bg: '#f1ebe7', shape: '#e0c3b3', accent: '#ff4b4b' },
@@ -106,7 +123,7 @@ function CardArt({ kind }) {
     forecast: { bg: '#f4ecec', shape: '#dcc0c0', accent: '#ff744f' },
     contract: { bg: '#ebeef0', shape: '#c2cad2', accent: '#100c2a' },
   };
-  const p = palettes[kind] || palettes.sap;
+  const p = (uc.palette && uc.palette.bg) ? uc.palette : (defaultPalettes[kind] || defaultPalettes.sap);
 
   if (kind === 'sap') {
     return (
@@ -198,11 +215,12 @@ function CardArt({ kind }) {
       </svg>
     );
   }
-  return <rect width="400" height="300" fill={p.bg}/>;
+  return <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" style={{width:'100%', height:'100%'}}><rect width="400" height="300" fill={p.bg}/></svg>;
 }
 
 // ─── Carousel ────────────────────────────────────────────────────────────
 function UseCaseCarousel() {
+  const useCases = useUseCases();
   const trackRef = useRef(null);
   const wrapRef = useRef(null);
   const [index, setIndex] = useState(0);
@@ -221,7 +239,7 @@ function UseCaseCarousel() {
     return () => window.removeEventListener('resize', compute);
   }, []);
 
-  const maxIndex = Math.max(0, USE_CASES.length - visible);
+  const maxIndex = Math.max(0, useCases.length - visible);
   const safeIndex = Math.min(index, maxIndex);
 
   // Translate based on first card width + gap
@@ -284,7 +302,7 @@ function UseCaseCarousel() {
   };
 
   const progress = maxIndex === 0 ? 1 : (safeIndex / maxIndex);
-  const fillWidth = `${((visible / USE_CASES.length) * 100) + (progress * (1 - visible / USE_CASES.length) * 100)}%`;
+  const fillWidth = `${((visible / useCases.length) * 100) + (progress * (1 - visible / useCases.length) * 100)}%`;
 
   return (
     <section className="pv-showcase" id="use-cases" ref={wrapRef}>
@@ -315,7 +333,7 @@ function UseCaseCarousel() {
               onPointerUp={onPointerUp}
               onPointerCancel={onPointerUp}
             >
-              {USE_CASES.map((uc, i) => (
+              {useCases.map((uc, i) => (
                 <a key={uc.id}
                    className="pv-uc-card"
                    href={uc.repo}
@@ -324,7 +342,7 @@ function UseCaseCarousel() {
                    aria-label={`${uc.title} — opens GitHub repository in new tab`}
                    onDragStart={e => e.preventDefault()}>
                   <div className="pv-uc-media">
-                    <CardArt kind={uc.art}/>
+                    <CardArt uc={uc}/>
                     <span className="pv-uc-media-tag">
                       <i className={`ph ${uc.icon}`}></i> {uc.tag}
                     </span>
@@ -358,7 +376,7 @@ function UseCaseCarousel() {
             </div>
             <div className="pv-pag-info" aria-live="polite">
               <span className="pv-pag-current">{String(safeIndex + 1).padStart(2,'0')}</span>
-              <span>/ {String(USE_CASES.length).padStart(2,'0')}</span>
+              <span>/ {String(useCases.length).padStart(2,'0')}</span>
             </div>
           </div>
         </div>
@@ -367,4 +385,4 @@ function UseCaseCarousel() {
   );
 }
 
-Object.assign(window, { UseCaseCarousel, USE_CASES, CardArt });
+Object.assign(window, { UseCaseCarousel, USE_CASES_SEED, CardArt });
