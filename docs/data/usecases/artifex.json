@@ -12,5 +12,5 @@
     "Validates via Pydantic and deploys through the official SAP DataSphere CLI"
   ],
   "stack": "Python · Pydantic · SAP DataSphere CLI",
-  "image": "artifex_mascot.png"
+  "image": "assets/usecases/artifex/preview.png"
 }
