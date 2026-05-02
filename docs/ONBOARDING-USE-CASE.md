@@ -44,9 +44,9 @@ Copy [`docs/templates/vanguard-usecase.template.json`](templates/vanguard-usecas
 | `description` | ✅ | 1–2 sentences, max ~200 characters. |
 | `benefits` | ✅ | Exactly **3** short bullet strings. Start with a verb or a number. |
 | `stack` | ✅ | Tech stack string, items separated by ` · ` (e.g. `Claude · Python · Slack`). |
-| `image` | optional | Path to a preview image in your repo (e.g. `"image": "preview.png"` or `"image": "docs/preview.png"`). The push-to-gallery workflow automatically uploads the file to the gallery and rewrites the path. Supports PNG, JPG, SVG, WebP. If omitted, a generated SVG illustration is used. **Note:** raw.githubusercontent.com links do not work for private repos. |
+| `image` | optional | Local filename of a preview image **committed to your repo** (e.g. `"preview.png"` or `"docs/preview.png"`). The workflow uploads it to the gallery and rewrites the path automatically. Supports PNG, JPG, SVG, WebP. **Do NOT use `raw.githubusercontent.com` URLs — they return 404 for private repos.** If omitted, a generated SVG illustration is used. |
 | `palette` | optional | Custom SVG art colours (`{ "bg": "#hex", "shape": "#hex", "accent": "#hex" }`). Only used when `image` is absent. |
-| `art` | optional | Named SVG template fallback. Valid values: `sap`, `rfp`, `process`, `meeting`, `forecast`, `contract`. |
+| `art` | optional | Named SVG template fallback. Valid values: `sap`, `rfp`, `process`, `meeting`, `forecast`, `contract`, `gallery`. |
 | `href` | optional | Internal gallery page path. Leave out unless your tool has a dedicated page inside the gallery site. |
 
 **Minimal working example:**
@@ -80,7 +80,7 @@ The GitHub Action in your repo needs write access to the gallery repo. Contact t
 3. Name: `VANGUARD_GALLERY_PAT`
 4. Value: *(provided by gallery maintainer)*
 
-> The PAT is a **fine-grained token** scoped only to the `vanguard-gallery` repository with `Contents: Read and Write` permission. It cannot access any other repository.
+> The PAT is a **classic personal access token** scoped to the `vanguard-gallery` repository with `repo` permissions. It cannot access any other repository.
 
 ---
 
@@ -95,7 +95,7 @@ name: Push to Vanguard Gallery
 
 on:
   push:
-    paths: ['vanguard-usecase.json']
+    paths: ['vanguard-usecase.json', '*.png', '*.jpg', '*.jpeg', '*.svg', '*.webp']
     branches: [main]
   workflow_dispatch:
 
@@ -117,16 +117,68 @@ jobs:
           USE_CASE_ID=$(jq -r '.id' vanguard-usecase.json)
           echo "Use case ID: $USE_CASE_ID"
 
+          # ── Upload local image if specified ─────────────────────────────
+          IMAGE_FIELD=$(jq -r '.image // empty' vanguard-usecase.json)
+          GALLERY_IMAGE_URL=""
+
+          if [ -n "$IMAGE_FIELD" ] && [[ "$IMAGE_FIELD" != http* ]] && [ -f "$IMAGE_FIELD" ]; then
+            echo "Uploading local image: $IMAGE_FIELD"
+            IMAGE_EXT="${IMAGE_FIELD##*.}"
+            IMAGE_TARGET="docs/assets/usecases/${USE_CASE_ID}/preview.${IMAGE_EXT}"
+
+            IMG_SHA=$(curl -s \
+              -H "Authorization: token ${VANGUARD_GALLERY_PAT}" \
+              -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/valantic-digital-finance-GmbH/vanguard-gallery/contents/${IMAGE_TARGET}" \
+              | jq -r '.sha // empty')
+
+            IMG_CONTENT=$(base64 -w 0 "$IMAGE_FIELD")
+            IMG_MSG="chore: update ${USE_CASE_ID} preview image"
+
+            if [ -n "$IMG_SHA" ]; then
+              IMG_PAYLOAD=$(jq -n \
+                --arg m "$IMG_MSG" --arg c "$IMG_CONTENT" --arg s "$IMG_SHA" \
+                '{message: $m, content: $c, sha: $s}')
+            else
+              IMG_PAYLOAD=$(jq -n \
+                --arg m "$IMG_MSG" --arg c "$IMG_CONTENT" \
+                '{message: $m, content: $c}')
+            fi
+
+            IMG_RESPONSE=$(curl -s -w "\n%{http_code}" -X PUT \
+              -H "Authorization: token ${VANGUARD_GALLERY_PAT}" \
+              -H "Accept: application/vnd.github+json" \
+              -H "Content-Type: application/json" \
+              -d "$IMG_PAYLOAD" \
+              "https://api.github.com/repos/valantic-digital-finance-GmbH/vanguard-gallery/contents/${IMAGE_TARGET}")
+
+            IMG_HTTP=$(echo "$IMG_RESPONSE" | tail -1)
+            if [ "$IMG_HTTP" = "200" ] || [ "$IMG_HTTP" = "201" ]; then
+              echo "✅ Image uploaded (HTTP $IMG_HTTP)"
+              GALLERY_IMAGE_URL="https://valantic-digital-finance-GmbH.github.io/vanguard-gallery/assets/usecases/${USE_CASE_ID}/preview.${IMAGE_EXT}"
+            else
+              echo "⚠️  Image upload failed (HTTP $IMG_HTTP) — continuing without image"
+              echo "$IMG_RESPONSE" | head -1
+            fi
+          fi
+
+          # ── Push usecase JSON ────────────────────────────────────────────
           TARGET_PATH="docs/data/usecases/${USE_CASE_ID}.json"
 
-          # Get current file SHA (required by GitHub API to update an existing file)
           SHA=$(curl -s \
             -H "Authorization: token ${VANGUARD_GALLERY_PAT}" \
             -H "Accept: application/vnd.github+json" \
             "https://api.github.com/repos/valantic-digital-finance-GmbH/vanguard-gallery/contents/${TARGET_PATH}" \
             | jq -r '.sha // empty')
 
-          CONTENT=$(base64 -w 0 vanguard-usecase.json)
+          # If image was uploaded, rewrite image field to the gallery Pages URL
+          if [ -n "$GALLERY_IMAGE_URL" ]; then
+            USECASE_JSON=$(jq --arg url "$GALLERY_IMAGE_URL" '.image = $url' vanguard-usecase.json)
+            CONTENT=$(echo "$USECASE_JSON" | base64 -w 0)
+          else
+            CONTENT=$(base64 -w 0 vanguard-usecase.json)
+          fi
+
           MSG="chore: update ${USE_CASE_ID} use case from source repo"
 
           if [ -n "$SHA" ]; then

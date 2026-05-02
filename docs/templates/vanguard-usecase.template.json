@@ -36,11 +36,11 @@
   "_href_comment": "OPTIONAL. Internal gallery page path (e.g. 'sap-blog-tracker.html'). Only set this if your tool has a dedicated page inside the vanguard-gallery site. Leave null otherwise.",
 
   "image": null,
-  "_image_comment": "OPTIONAL but recommended. URL to a preview image or screenshot (e.g. 'https://raw.githubusercontent.com/your-org/your-repo/main/docs/preview.png'). Recommended size: 800x600px. If omitted the card will use a generated SVG illustration instead.",
+  "_image_comment": "OPTIONAL but recommended. Local filename of a preview image committed to your repo root (e.g. 'preview.png' or 'docs/preview.png'). The push-to-gallery workflow uploads it to the gallery and rewrites this field automatically. Recommended size: 800x600px. Supports PNG, JPG, SVG, WebP. Do NOT use raw.githubusercontent.com URLs — they return 404 for private repos. If omitted the card uses a generated SVG illustration.",
 
   "palette": null,
   "_palette_comment": "OPTIONAL. Custom colours for the SVG art fallback. Only used if 'image' is null. Provide an object with 'bg' (background), 'shape', and 'accent' hex values.",
 
   "art": null,
-  "_art_comment": "OPTIONAL. Named SVG art template to use when no image is provided. Valid values: 'sap', 'rfp', 'process', 'meeting', 'forecast', 'contract'. If omitted a plain coloured background from 'palette' is used."
+  "_art_comment": "OPTIONAL. Named SVG art template to use when no image is provided. Valid values: 'sap', 'rfp', 'process', 'meeting', 'forecast', 'contract', 'gallery'. If omitted a plain coloured background from 'palette' is used."
 }
