@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <rect width="800" height="600" fill="#f3efe7"/>
+
+  <!-- subtle background grid lines -->
+  <line x1="0" y1="150" x2="800" y2="150" stroke="#d4c8a5" stroke-width="0.4" opacity=".35"/>
+  <line x1="0" y1="300" x2="800" y2="300" stroke="#d4c8a5" stroke-width="0.4" opacity=".35"/>
+  <line x1="0" y1="450" x2="800" y2="450" stroke="#d4c8a5" stroke-width="0.4" opacity=".35"/>
+  <line x1="200" y1="0" x2="200" y2="600" stroke="#d4c8a5" stroke-width="0.4" opacity=".25"/>
+  <line x1="600" y1="0" x2="600" y2="600" stroke="#d4c8a5" stroke-width="0.4" opacity=".25"/>
+
+  <!-- main newspaper card -->
+  <rect x="60" y="32" width="500" height="536" rx="10" fill="#ffffff" stroke="#d4c8a5" stroke-width="1.5"/>
+
+  <!-- header bar -->
+  <rect x="60" y="32" width="500" height="64" rx="10" fill="#100c2a"/>
+  <rect x="60" y="76" width="500" height="20" fill="#100c2a"/>
+
+  <!-- masthead text -->
+  <text x="88" y="67" font-family="Georgia,'Times New Roman',serif" font-size="20" font-weight="700" fill="#f3efe7" letter-spacing="3">SAP BLOG TRACKER</text>
+  <text x="88" y="87" font-family="system-ui,sans-serif" font-size="10.5" fill="#d4c8a5" opacity=".85" letter-spacing="0.5">Monday, 28 April 2026  ·  Morning Edition  ·  12 new posts</text>
+
+  <!-- thin gold rule under header -->
+  <line x1="60" y1="96" x2="560" y2="96" stroke="#d4c8a5" stroke-width="0.8" opacity=".6"/>
+
+  <!-- ── SECTION 1: Top Stories ───────────────────────── -->
+  <text x="88" y="122" font-family="system-ui,sans-serif" font-size="9" font-weight="700" fill="#100c2a" letter-spacing="2" opacity=".55">TOP STORIES</text>
+
+  <!-- headline block -->
+  <rect x="88" y="132" width="310" height="6" rx="2" fill="#100c2a" opacity=".82"/>
+  <rect x="88" y="145" width="260" height="4" rx="1.5" fill="#d4c8a5"/>
+  <rect x="88" y="154" width="290" height="4" rx="1.5" fill="#d4c8a5" opacity=".7"/>
+  <rect x="88" y="163" width="240" height="4" rx="1.5" fill="#d4c8a5" opacity=".5"/>
+
+  <!-- thumbnail placeholder -->
+  <rect x="416" y="128" width="116" height="80" rx="5" fill="#f3efe7" stroke="#d4c8a5" stroke-width="1"/>
+  <rect x="428" y="140" width="60" height="6" rx="2" fill="#100c2a" opacity=".18"/>
+  <rect x="428" y="153" width="80" height="4" rx="1.5" fill="#d4c8a5" opacity=".5"/>
+  <rect x="428" y="163" width="70" height="4" rx="1.5" fill="#d4c8a5" opacity=".35"/>
+  <!-- tiny SAP logo dots -->
+  <circle cx="452" cy="192" r="5" fill="#100c2a" opacity=".12"/>
+  <circle cx="465" cy="192" r="5" fill="#100c2a" opacity=".08"/>
+  <circle cx="478" cy="192" r="5" fill="#100c2a" opacity=".05"/>
+
+  <!-- ── SECTION 2 divider ──────────────────────────── -->
+  <line x1="88" y1="222" x2="532" y2="222" stroke="#d4c8a5" stroke-width="0.8"/>
+  <text x="88" y="238" font-family="system-ui,sans-serif" font-size="9" font-weight="700" fill="#100c2a" letter-spacing="2" opacity=".55">SAP BTP  &amp;  INTEGRATION</text>
+
+  <rect x="88" y="246" width="280" height="5" rx="1.5" fill="#100c2a" opacity=".7"/>
+  <rect x="88" y="257" width="390" height="4" rx="1.5" fill="#d4c8a5"/>
+  <rect x="88" y="267" width="350" height="4" rx="1.5" fill="#d4c8a5" opacity=".7"/>
+  <rect x="88" y="277" width="370" height="4" rx="1.5" fill="#d4c8a5" opacity=".5"/>
+
+  <!-- ── SECTION 3 divider ──────────────────────────── -->
+  <line x1="88" y1="298" x2="532" y2="298" stroke="#d4c8a5" stroke-width="0.8"/>
+  <text x="88" y="314" font-family="system-ui,sans-serif" font-size="9" font-weight="700" fill="#100c2a" letter-spacing="2" opacity=".55">AI &amp; MACHINE LEARNING</text>
+
+  <rect x="88" y="322" width="300" height="5" rx="1.5" fill="#100c2a" opacity=".7"/>
+  <rect x="88" y="333" width="380" height="4" rx="1.5" fill="#d4c8a5"/>
+  <rect x="88" y="343" width="330" height="4" rx="1.5" fill="#d4c8a5" opacity=".7"/>
+
+  <!-- ── Highlight card ─────────────────────────────── -->
+  <rect x="88" y="366" width="432" height="100" rx="7" fill="#f3efe7" stroke="#d4c8a5" stroke-width="1"/>
+  <!-- "TOP POST" badge -->
+  <rect x="100" y="378" width="50" height="14" rx="3" fill="#100c2a" opacity=".12"/>
+  <text x="114" y="389" font-family="system-ui,sans-serif" font-size="8" font-weight="700" fill="#100c2a" opacity=".6" letter-spacing="1">TOP</text>
+  <!-- article title lines -->
+  <rect x="100" y="399" width="370" height="6" rx="2" fill="#100c2a" opacity=".78"/>
+  <rect x="100" y="412" width="340" height="4" rx="1.5" fill="#d4c8a5"/>
+  <rect x="100" y="422" width="310" height="4" rx="1.5" fill="#d4c8a5" opacity=".7"/>
+  <!-- read-more pill -->
+  <rect x="100" y="438" width="72" height="18" rx="4" fill="#100c2a" opacity=".1"/>
+  <text x="120" y="451" font-family="system-ui,sans-serif" font-size="9" fill="#100c2a" opacity=".6" letter-spacing="0.5">Read →</text>
+
+  <!-- ── Footer band ────────────────────────────────── -->
+  <line x1="88" y1="484" x2="532" y2="484" stroke="#d4c8a5" stroke-width="0.8"/>
+  <text x="88" y="502" font-family="system-ui,sans-serif" font-size="9" fill="#100c2a" opacity=".4">Generated by SAP Blog Tracker · valantic Digital Finance</text>
+  <!-- post count chips -->
+  <rect x="88" y="512" width="46" height="14" rx="3" fill="#d4c8a5" opacity=".5"/>
+  <text x="97" y="523" font-family="system-ui,sans-serif" font-size="8" fill="#100c2a" opacity=".7">12 posts</text>
+  <rect x="142" y="512" width="54" height="14" rx="3" fill="#d4c8a5" opacity=".35"/>
+  <text x="151" y="523" font-family="system-ui,sans-serif" font-size="8" fill="#100c2a" opacity=".6">3 sections</text>
+  <rect x="204" y="512" width="56" height="14" rx="3" fill="#d4c8a5" opacity=".25"/>
+  <text x="213" y="523" font-family="system-ui,sans-serif" font-size="8" fill="#100c2a" opacity=".5">GPT-4o</text>
+
+  <!-- ── Right decorative panel ─────────────────────── -->
+  <rect x="592" y="44" width="162" height="520" rx="8" fill="#100c2a" opacity=".055"/>
+
+  <text x="612" y="84" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="#100c2a" opacity=".45" letter-spacing="1">STATS</text>
+  <line x1="612" y1="90" x2="736" y2="90" stroke="#d4c8a5" stroke-width="0.7" opacity=".6"/>
+
+  <!-- stat rows -->
+  <rect x="612" y="102" width="90" height="5" rx="2" fill="#100c2a" opacity=".35"/>
+  <rect x="612" y="114" width="70" height="4" rx="2" fill="#d4c8a5" opacity=".7"/>
+  <rect x="612" y="124" width="80" height="4" rx="2" fill="#d4c8a5" opacity=".5"/>
+
+  <line x1="612" y1="140" x2="736" y2="140" stroke="#d4c8a5" stroke-width="0.6" opacity=".4"/>
+
+  <rect x="612" y="152" width="80" height="5" rx="2" fill="#100c2a" opacity=".35"/>
+  <rect x="612" y="164" width="60" height="4" rx="2" fill="#d4c8a5" opacity=".7"/>
+  <rect x="612" y="174" width="75" height="4" rx="2" fill="#d4c8a5" opacity=".5"/>
+
+  <!-- decorative circle graphic -->
+  <circle cx="673" cy="320" r="52" fill="#100c2a" opacity=".05"/>
+  <circle cx="673" cy="320" r="36" fill="none" stroke="#100c2a" stroke-width="1.5" opacity=".2"/>
+  <circle cx="673" cy="320" r="20" fill="none" stroke="#d4c8a5" stroke-width="1" opacity=".4"/>
+  <circle cx="673" cy="320" r="7" fill="#100c2a" opacity=".4"/>
+  <!-- tick marks -->
+  <line x1="673" y1="268" x2="673" y2="276" stroke="#100c2a" stroke-width="1.5" opacity=".2"/>
+  <line x1="673" y1="364" x2="673" y2="372" stroke="#100c2a" stroke-width="1.5" opacity=".2"/>
+  <line x1="621" y1="320" x2="629" y2="320" stroke="#100c2a" stroke-width="1.5" opacity=".2"/>
+  <line x1="717" y1="320" x2="725" y2="320" stroke="#100c2a" stroke-width="1.5" opacity=".2"/>
+
+  <!-- small bar chart -->
+  <rect x="618" y="430" width="10" height="30" rx="2" fill="#100c2a" opacity=".15"/>
+  <rect x="633" y="418" width="10" height="42" rx="2" fill="#100c2a" opacity=".22"/>
+  <rect x="648" y="422" width="10" height="38" rx="2" fill="#100c2a" opacity=".18"/>
+  <rect x="663" y="410" width="10" height="50" rx="2" fill="#100c2a" opacity=".28"/>
+  <rect x="678" y="415" width="10" height="45" rx="2" fill="#100c2a" opacity=".20"/>
+  <rect x="693" y="408" width="10" height="52" rx="2" fill="#d4c8a5" opacity=".7"/>
+  <rect x="708" y="420" width="10" height="40" rx="2" fill="#100c2a" opacity=".18"/>
+  <line x1="612" y1="464" x2="736" y2="464" stroke="#d4c8a5" stroke-width="0.7" opacity=".5"/>
+  <text x="612" y="478" font-family="system-ui,sans-serif" font-size="8" fill="#100c2a" opacity=".35">Posts/week</text>
+</svg>

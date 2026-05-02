@@ -44,7 +44,7 @@ Copy [`docs/templates/vanguard-usecase.template.json`](templates/vanguard-usecas
 | `description` | ✅ | 1–2 sentences, max ~200 characters. |
 | `benefits` | ✅ | Exactly **3** short bullet strings. Start with a verb or a number. |
 | `stack` | ✅ | Tech stack string, items separated by ` · ` (e.g. `Claude · Python · Slack`). |
-| `image` | optional | URL to a preview image/screenshot. Recommended size: **800 × 600 px**. Host it inside your own repo under a `docs/` folder and use the raw GitHub URL: `https://raw.githubusercontent.com/<org>/<repo>/main/docs/preview.png`. If omitted, a generated SVG illustration is used instead. |
+| `image` | optional | Path to a preview image in your repo (e.g. `"image": "preview.png"` or `"image": "docs/preview.png"`). The push-to-gallery workflow automatically uploads the file to the gallery and rewrites the path. Supports PNG, JPG, SVG, WebP. If omitted, a generated SVG illustration is used. **Note:** raw.githubusercontent.com links do not work for private repos. |
 | `palette` | optional | Custom SVG art colours (`{ "bg": "#hex", "shape": "#hex", "accent": "#hex" }`). Only used when `image` is absent. |
 | `art` | optional | Named SVG template fallback. Valid values: `sap`, `rfp`, `process`, `meeting`, `forecast`, `contract`. |
 | `href` | optional | Internal gallery page path. Leave out unless your tool has a dedicated page inside the gallery site. |

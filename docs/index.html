@@ -24,7 +24,7 @@
               <span class="pv-dot"></span>
               <span>Vanguard · Spring 2026 release</span>
               <span aria-hidden="true">·</span>
-              <span>6 use cases live</span>
+              <span id="kpi-usecases-meta">6 use cases live</span>
             </div>
             <h1>The team's working showcase of <span class="pv-grad">applied AI</span>.</h1>
             <p class="pv-lede">Project Vanguard is where valantic's AI initiative ships. Every tool below is built, used, and maintained by our consultants — a public record of the work we are most proud of, with the code to match.</p>
@@ -38,7 +38,7 @@
             </div>
             <div class="pv-hero-stats">
               <div>
-                <div class="pv-stat-num">06</div>
+                <div id="kpi-usecases" class="pv-stat-num">06</div>
                 <div class="pv-stat-label">USE CASES SHIPPED</div>
               </div>
               <div>
@@ -126,6 +126,19 @@
     ReactDOM.createRoot(document.getElementById('header')).render(<Header active="home"/>);
     ReactDOM.createRoot(document.getElementById('carousel-mount')).render(<UseCaseCarousel/>);
     ReactDOM.createRoot(document.getElementById('footer')).render(<Footer/>);
+
+    // Sync use-cases-shipped KPI from live data
+    fetch('data/usecases.json')
+      .then(r => r.ok ? r.json() : null)
+      .then(data => {
+        if (!data) return;
+        const n = data.length;
+        const numEl = document.getElementById('kpi-usecases');
+        if (numEl) numEl.textContent = String(n).padStart(2, '0');
+        const metaEl = document.getElementById('kpi-usecases-meta');
+        if (metaEl) metaEl.textContent = `${n} use cases live`;
+      })
+      .catch(() => {});
   </script>
 </body>
 </html>

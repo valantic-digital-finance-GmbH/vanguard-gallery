@@ -31,6 +31,7 @@
     ],
     "stack": "GPT-4o · Python · Outlook",
     "art": "sap",
+    "image": "assets/usecases/sap-blog-tracker/preview.svg",
     "palette": {
       "bg": "#f3efe7",
       "shape": "#d4c8a5",
