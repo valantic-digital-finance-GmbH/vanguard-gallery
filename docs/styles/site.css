@@ -864,23 +864,6 @@ a.pv-news-card:hover .pv-news-arrow {
   color: var(--pv-text-meta);
   letter-spacing: .03em;
 }
-.pv-briefing-toolbar .pv-toolbar-actions {
-  display: flex; gap: 4px;
-}
-.pv-toolbar-btn {
-  display: inline-flex; align-items: center; gap: 6px;
-  padding: 8px 14px;
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--pv-text-sub);
-  background: transparent;
-  border: 1px solid var(--pv-border);
-  border-radius: 999px;
-  cursor: pointer;
-  transition: border-color .15s var(--ease), color .15s var(--ease);
-}
-.pv-toolbar-btn:hover { border-color: var(--pv-text); color: var(--pv-text); }
-.pv-toolbar-btn.is-active { border-color: var(--pv-text); color: var(--pv-text); background: #fff; }
 
 .pv-briefing-list {
   border-top: 1px solid var(--pv-border);
@@ -1115,8 +1098,8 @@ a.pv-news-card:hover .pv-news-arrow {
 
 /* ── Feed shell ──────────────────────────────────────────────── */
 .pv-feed {
-  height: min(820px, calc(100vh - 220px));
-  min-height: 560px;
+  height: min(920px, calc(100vh - 160px));
+  min-height: 640px;
   border: 1px solid var(--pv-border);
   border-radius: 12px;
   overflow: hidden;
@@ -1148,8 +1131,4 @@ a.pv-news-card:hover .pv-news-arrow {
   border-radius: 999px;
 }
 
-/* On narrow viewports the feed needs ≥720px — hide it and force back to briefings */
-@media (max-width: 760px) {
-  .pv-feed { display: none; }
-  .pv-view-toggle-btn[aria-selected="true"]:not(:first-child) { display: none; }
-}
+/* Table View on narrow viewports is handled in JS (mobile hint shown instead) */

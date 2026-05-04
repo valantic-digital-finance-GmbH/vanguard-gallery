@@ -1,15 +1,5 @@
 // SAP Blog Tracker — briefing accordion
-const { useState, useRef, useEffect, useCallback, useMemo } = React;
-
-const FILTERS = [
-  { id: 'BDC',        label: 'BDC',        sections: ['SAP Business Data Cloud'] },
-  { id: 'SAC',        label: 'SAC',        sections: [
-    'SAP Analytics Cloud',
-    'SAP Analytics Cloud for planning',
-    'SAP Analytics Cloud, data modeling',
-  ]},
-  { id: 'Datasphere', label: 'Datasphere', sections: ['SAP Datasphere'] },
-];
+const { useState, useRef, useEffect } = React;
 
 // Seed data — shown instantly while the live JSON loads (or if fetch fails)
 const BRIEFINGS_SEED = [
@@ -228,58 +218,21 @@ function Briefing({ b, isOpen, onToggle }) {
 function BriefingLog() {
   const briefings = useBriefings();
   const [openId, setOpenId] = useState(briefings[0]?.id);
-  const [selected, setSelected] = useState(new Set());
 
   useEffect(() => {
     setOpenId(id => id ?? briefings[0]?.id);
   }, [briefings]);
 
-  const toggleFilter = useCallback((id) => {
-    setSelected(prev => {
-      const next = new Set(prev);
-      next.has(id) ? next.delete(id) : next.add(id);
-      return next;
-    });
-  }, []);
-
-  const list = useMemo(() => {
-    if (selected.size === 0) return briefings;
-    const allowed = new Set(
-      FILTERS.filter(f => selected.has(f.id)).flatMap(f => f.sections)
-    );
-    return briefings
-      .map(b => ({ ...b, sections: (b.sections || []).filter(s => allowed.has(s.name)) }))
-      .filter(b => b.sections.length > 0);
-  }, [briefings, selected]);
-
-  const metaLabel = selected.size === 0
-    ? `Showing ${list.length} briefings · last issued today, 07:00 CET`
-    : `Showing ${list.length} of ${briefings.length} briefings · ${FILTERS.filter(f => selected.has(f.id)).map(f => f.label).join(', ')}`;
+  const metaLabel = `Showing ${briefings.length} briefings · last issued today, 07:00 CET`;
 
   return (
     <div>
       <div className="pv-briefing-toolbar">
         <div className="pv-toolbar-meta">{metaLabel}</div>
-        <div className="pv-toolbar-actions" role="group" aria-label="Filter by product">
-          <button
-            className={"pv-toolbar-btn" + (selected.size === 0 ? " is-active" : "")}
-            onClick={() => setSelected(new Set())}
-            aria-pressed={selected.size === 0}>
-            All
-          </button>
-          {FILTERS.map(f => (
-            <button key={f.id}
-              className={"pv-toolbar-btn" + (selected.has(f.id) ? " is-active" : "")}
-              onClick={() => toggleFilter(f.id)}
-              aria-pressed={selected.has(f.id)}>
-              {f.label}
-            </button>
-          ))}
-        </div>
       </div>
 
       <div className="pv-briefing-list" role="list">
-        {list.map(b => (
+        {briefings.map(b => (
           <Briefing
             key={b.id}
             b={b}

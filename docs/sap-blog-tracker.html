@@ -46,7 +46,7 @@
             </div>
             <div class="pv-page-hero-aside-row">
               <span class="k">RUNS</span>
-              <span class="v">214 briefings shipped</span>
+              <span class="v" id="kpi-runs">214 briefings shipped</span>
             </div>
             <div class="pv-page-hero-aside-row">
               <span class="k">SOURCE</span>
@@ -91,6 +91,7 @@
       const [view, setView] = React.useState(
         () => location.hash.replace('#', '') === 'feed' ? 'feed' : 'briefings'
       );
+      const [isMobile, setIsMobile] = React.useState(() => window.innerWidth < 760);
 
       React.useEffect(() => {
         const desc = document.getElementById('view-desc');
@@ -103,6 +104,12 @@
         }
         window.addEventListener('hashchange', onHash);
         return () => window.removeEventListener('hashchange', onHash);
+      }, []);
+
+      React.useEffect(() => {
+        function onResize() { setIsMobile(window.innerWidth < 760); }
+        window.addEventListener('resize', onResize);
+        return () => window.removeEventListener('resize', onResize);
       }, []);
 
       function go(v) {
@@ -121,13 +128,27 @@
             <button role="tab" aria-selected={view === 'feed'}
               className={'pv-view-toggle-btn' + (view === 'feed' ? ' is-active' : '')}
               onClick={() => go('feed')}>
-              All posts
+              Table View
             </button>
           </div>
 
           {view === 'briefings'
             ? <BriefingLog />
-            : <div className="pv-feed"><FeedView /></div>}
+            : isMobile
+              ? <div style={{
+                  padding: '32px 24px',
+                  background: 'var(--pv-bg-soft)',
+                  border: '1px solid var(--pv-border)',
+                  borderRadius: 12,
+                  fontSize: 15,
+                  color: 'var(--pv-text-sub)',
+                  lineHeight: 1.6,
+                  maxWidth: 480,
+                }}>
+                  Table View requires a desktop browser. Please open this page on a larger screen.
+                </div>
+              : <div className="pv-feed"><FeedView /></div>
+          }
         </>
       );
     }
@@ -135,6 +156,25 @@
     ReactDOM.createRoot(document.getElementById('header')).render(<Header active="sap"/>);
     ReactDOM.createRoot(document.getElementById('log-mount')).render(<BlogTrackerView/>);
     ReactDOM.createRoot(document.getElementById('footer')).render(<Footer/>);
+
+    // Sync RUNS KPI: (a) briefing count + (b) unique blog post count
+    fetch('data/briefings.json')
+      .then(r => r.ok ? r.json() : null)
+      .then(data => {
+        if (!Array.isArray(data)) return;
+        const numBriefings = data.length;
+        const urlSet = new Set();
+        for (const b of data) {
+          for (const sec of (b.sections || [])) {
+            for (const p of [...(sec.top || []), ...(sec.rest || [])]) {
+              if (p.url) urlSet.add(p.url);
+            }
+          }
+        }
+        const el = document.getElementById('kpi-runs');
+        if (el) el.textContent = `${numBriefings} briefings · ${urlSet.size} blog posts`;
+      })
+      .catch(() => {});
   </script>
 </body>
 </html>
