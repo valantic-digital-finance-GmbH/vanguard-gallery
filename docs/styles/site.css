@@ -1080,3 +1080,76 @@ a.pv-news-card:hover .pv-news-arrow {
   .pv-brief-content .pv-brief-rail { flex-direction: row; flex-wrap: wrap; gap: 18px; }
   .pv-brief-body { font-size: 15px; }
 }
+
+/* ── View toggle (Briefings / All posts) ──────────────────── */
+.pv-view-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  background: var(--pv-bg-soft);
+  border: 1px solid var(--pv-border);
+  border-radius: 999px;
+  margin-bottom: 28px;
+}
+.pv-view-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 18px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--pv-text-sub);
+  background: transparent;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background .15s var(--ease), color .15s var(--ease);
+  line-height: 1;
+}
+.pv-view-toggle-btn:hover { color: var(--pv-text); }
+.pv-view-toggle-btn.is-active {
+  background: var(--pv-text);
+  color: #ffffff;
+}
+
+/* ── Feed shell ──────────────────────────────────────────────── */
+.pv-feed {
+  height: min(820px, calc(100vh - 220px));
+  min-height: 560px;
+  border: 1px solid var(--pv-border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--pv-shadow-sm);
+
+  /* Map the handoff's CSS-var contract onto Project Vanguard tokens */
+  --sans:      'Maven Pro', 'Segoe UI', system-ui, sans-serif;
+  --mono:      'Maven Pro', 'Segoe UI', system-ui, sans-serif;
+  --surface-0: var(--pv-bg);
+  --surface-bg: var(--pv-bg-soft);
+  --surface-1: #f6f5f2;
+  --surface-2: #eceae6;
+  --border:    var(--pv-border);
+  --text:      var(--pv-text);
+  --text-2:    var(--pv-text-sub);
+  --text-3:    var(--pv-text-meta);
+  --accent:    var(--pv-accent);
+}
+
+.pv-feed .feed-row:hover .post-title-link {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.pv-feed ::-webkit-scrollbar { width: 8px; height: 8px; }
+.pv-feed ::-webkit-scrollbar-track { background: transparent; }
+.pv-feed ::-webkit-scrollbar-thumb {
+  background: var(--pv-border-strong);
+  border-radius: 999px;
+}
+
+/* On narrow viewports the feed needs ≥720px — hide it and force back to briefings */
+@media (max-width: 760px) {
+  .pv-feed { display: none; }
+  .pv-view-toggle-btn[aria-selected="true"]:not(:first-child) { display: none; }
+}

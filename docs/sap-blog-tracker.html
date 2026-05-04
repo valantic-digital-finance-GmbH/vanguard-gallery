@@ -61,10 +61,10 @@
       <div class="pv-container">
         <div style="display:flex; align-items:end; justify-content:space-between; gap:24px; margin-bottom:24px; flex-wrap:wrap;">
           <div>
-            <span class="pv-eyebrow">Morning briefings</span>
-            <h2 style="font-size:clamp(28px,3vw,38px); font-weight:500; letter-spacing:-.02em; margin:12px 0 0; color:var(--pv-text);">A browsable log of this week.</h2>
+            <span class="pv-eyebrow">SAP Blog posts</span>
+            <h2 style="font-size:clamp(28px,3vw,38px); font-weight:500; letter-spacing:-.02em; margin:12px 0 0; color:var(--pv-text);">Browse the posts.</h2>
           </div>
-          <p style="max-width:380px; font-size:14px; color:var(--pv-text-sub); margin:0;">
+          <p id="view-desc" style="max-width:380px; font-size:14px; color:var(--pv-text-sub); margin:0;">
             Each entry is a single morning's digest. Click any row to expand the full briefing — entries collapse independently.
           </p>
         </div>
@@ -78,9 +78,62 @@
 
   <script type="text/babel" src="scripts/components.jsx"></script>
   <script type="text/babel" src="scripts/briefings.jsx"></script>
+  <script type="text/babel" src="scripts/feed-shared.jsx"></script>
+  <script type="text/babel" src="scripts/feed-data.jsx"></script>
+  <script type="text/babel" src="scripts/feed-view.jsx"></script>
   <script type="text/babel">
+    const VIEW_DESCS = {
+      briefings: "Each entry is a single morning's digest. Click any row to expand the full briefing — entries collapse independently.",
+      feed:      "A flat feed of every individual SAP blog post. Filter by product area, sort any column, and click a row to open the original post.",
+    };
+
+    function BlogTrackerView() {
+      const [view, setView] = React.useState(
+        () => location.hash.replace('#', '') === 'feed' ? 'feed' : 'briefings'
+      );
+
+      React.useEffect(() => {
+        const desc = document.getElementById('view-desc');
+        if (desc) desc.textContent = VIEW_DESCS[view] || VIEW_DESCS.briefings;
+      }, [view]);
+
+      React.useEffect(() => {
+        function onHash() {
+          setView(location.hash.replace('#', '') === 'feed' ? 'feed' : 'briefings');
+        }
+        window.addEventListener('hashchange', onHash);
+        return () => window.removeEventListener('hashchange', onHash);
+      }, []);
+
+      function go(v) {
+        history.replaceState(null, '', v === 'feed' ? '#feed' : location.pathname + location.search);
+        setView(v);
+      }
+
+      return (
+        <>
+          <div className="pv-view-toggle" role="tablist" aria-label="View mode">
+            <button role="tab" aria-selected={view === 'briefings'}
+              className={'pv-view-toggle-btn' + (view === 'briefings' ? ' is-active' : '')}
+              onClick={() => go('briefings')}>
+              Briefings
+            </button>
+            <button role="tab" aria-selected={view === 'feed'}
+              className={'pv-view-toggle-btn' + (view === 'feed' ? ' is-active' : '')}
+              onClick={() => go('feed')}>
+              All posts
+            </button>
+          </div>
+
+          {view === 'briefings'
+            ? <BriefingLog />
+            : <div className="pv-feed"><FeedView /></div>}
+        </>
+      );
+    }
+
     ReactDOM.createRoot(document.getElementById('header')).render(<Header active="sap"/>);
-    ReactDOM.createRoot(document.getElementById('log-mount')).render(<BriefingLog/>);
+    ReactDOM.createRoot(document.getElementById('log-mount')).render(<BlogTrackerView/>);
     ReactDOM.createRoot(document.getElementById('footer')).render(<Footer/>);
   </script>
 </body>
