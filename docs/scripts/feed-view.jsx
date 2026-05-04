@@ -252,11 +252,18 @@ function FeedView() {
   const [sidebarW, setSidebarW]                 = fvState(232);
   const [colWidths, setColWidths]               = fvState({ date: 60, title: 0, tags: 220, author: 140 });
   const [isResizing, setIsResizing]             = fvState(false);
+  const [isFullscreen, setIsFullscreen]         = fvState(false);
 
   fvEffect(() => {
     window.loadFeedData()
       .then(d => { setData(d); })
       .catch(() => setError('Couldn\'t load posts — try reloading the page.'));
+  }, []);
+
+  fvEffect(() => {
+    function onKey(e) { if (e.key === 'Escape') setIsFullscreen(false); }
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
   }, []);
 
   function handleSort(key) {
@@ -329,7 +336,7 @@ function FeedView() {
 
   const { COLLECTIONS, TAGS, POSTS } = data;
 
-  return (
+  const mainGrid = (
     <div style={{
       display: 'grid', gridTemplateColumns: `${sidebarW}px 1fr`,
       height: '100%', background: 'var(--surface-0)', color: 'var(--text)',
@@ -411,7 +418,7 @@ function FeedView() {
             <button
               onClick={() => setActiveTags(new Set())}
               style={{
-                marginLeft: 'auto', fontFamily: 'var(--sans)', fontSize: 11.5,
+                fontFamily: 'var(--sans)', fontSize: 11.5,
                 color: 'var(--pv-accent)', background: 'none', border: 'none',
                 cursor: 'pointer', padding: '2px 4px',
               }}
@@ -419,6 +426,21 @@ function FeedView() {
               Clear filters ×
             </button>
           )}
+          <span style={{ flex: 1 }} />
+          <button
+            onClick={() => setIsFullscreen(f => !f)}
+            title={isFullscreen ? 'Exit fullscreen' : 'Fullscreen'}
+            aria-label={isFullscreen ? 'Exit fullscreen' : 'Fullscreen'}
+            style={{
+              background: 'none', border: 'none', cursor: 'pointer',
+              display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+              color: 'var(--text-3)', fontSize: 16, padding: '2px 4px', borderRadius: 4,
+            }}
+            onMouseEnter={e => { e.currentTarget.style.color = 'var(--text)'; }}
+            onMouseLeave={e => { e.currentTarget.style.color = 'var(--text-3)'; }}
+          >
+            <i className={isFullscreen ? 'ph ph-arrows-in' : 'ph ph-arrows-out'}></i>
+          </button>
         </header>
 
         {/* Table */}
@@ -464,6 +486,19 @@ function FeedView() {
       </section>
     </div>
   );
+
+  if (isFullscreen) {
+    return (
+      <div className="pv-feed" style={{
+        position: 'fixed', inset: 0, zIndex: 9999,
+        borderRadius: 0, border: 'none',
+      }}>
+        {mainGrid}
+      </div>
+    );
+  }
+
+  return mainGrid;
 }
 
 window.FeedView = FeedView;
