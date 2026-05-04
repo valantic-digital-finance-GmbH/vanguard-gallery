@@ -44,42 +44,75 @@
       "Business Data Cloud",
       "Datasphere"
     ],
-    "body": {
-      "headline": "The blog provides a detailed guide on implementing Single Sign-On (SSO) for SAP Datasphere using SAP Cloud Identity Services.",
-      "sections": [
-        {
-          "h": "SAP Business Data Cloud",
-          "items": [
-            "Provisioning of Business Data Cloud : SAP Hana Cloud",
-            "The blog highlights key features and enhancements introduced in the March releases of SAP Datasphere and SAP Business Data Cloud. It also provides links to community news blogs and a webinar series titled 'The Next Era of Business Data.'"
-          ]
-        },
-        {
-          "h": "SAP Datasphere",
-          "items": [
-            "The blog provides a detailed guide on implementing Single Sign-On (SSO) for SAP Datasphere using SAP Cloud Identity Services. It focuses on leveraging the SAP Identity Authentication Service (IAS) in integration with OKTA for seamless authentication.",
-            "The blog highlights key features and enhancements introduced in the March releases of SAP Datasphere and SAP Business Data Cloud. It also provides links to community news blogs and a webinar series titled 'The Next Era of Business Data.'"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "author": "ShreyasriB",
-          "title": "Provisioning of Business Data Cloud : SAP Hana Cloud",
-          "minutes": 5
-        },
-        {
-          "author": "karthikj2",
-          "title": "Configuring Single Sign-On (SSO) for SAP Datasphere using SAP Cloud Identity Services (IAS)",
-          "minutes": 5
-        },
-        {
-          "author": "kpsauer",
-          "title": "SAP Business Data Cloud and Datasphere News in March",
-          "minutes": 1
-        }
-      ]
-    }
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Provisioning of Business Data Cloud : SAP Hana Cloud",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/provisioning-of-business-data-cloud-sap-hana-cloud/ba-p/14382155",
+            "author": "ShreyasriB",
+            "date_published": "2026-04-27",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5
+          },
+          {
+            "title": "SAP Business Data Cloud and Datasphere News in March",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-data-cloud-and-datasphere-news-in-march/ba-p/14368704",
+            "author": "kpsauer",
+            "date_published": "2026-04-08",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "summary": "The blog highlights key features and enhancements introduced in the March releases of SAP Datasphere and SAP Business Data Cloud. It also provides links to community news blogs and a webinar series titled 'The Next Era of Business Data.'",
+            "post_type": "Release"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "Configuring Single Sign-On (SSO) for SAP Datasphere using SAP Cloud Identity Services (IAS)",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/configuring-single-sign-on-sso-for-sap-datasphere-using-sap-cloud-identity/ba-p/14375113",
+            "author": "karthikj2",
+            "date_published": "2026-04-15",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 5,
+            "summary": "The blog provides a detailed guide on implementing Single Sign-On (SSO) for SAP Datasphere using SAP Cloud Identity Services. It focuses on leveraging the SAP Identity Authentication Service (IAS) in integration with OKTA for seamless authentication.",
+            "post_type": "How-to"
+          },
+          {
+            "title": "SAP Business Data Cloud and Datasphere News in March",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-data-cloud-and-datasphere-news-in-march/ba-p/14368704",
+            "author": "kpsauer",
+            "date_published": "2026-04-08",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "summary": "The blog highlights key features and enhancements introduced in the March releases of SAP Datasphere and SAP Business Data Cloud. It also provides links to community news blogs and a webinar series titled 'The Next Era of Business Data.'",
+            "post_type": "Release"
+          }
+        ],
+        "rest": []
+      }
+    ]
   },
   {
     "id": "thu-2026-03-19",
@@ -93,24 +126,30 @@
     "tags": [
       "Business Data Cloud"
     ],
-    "body": {
-      "headline": "The blog explains how to use the SAP Business Data Cloud Capacity Unit Estimator for SAP BDC Connect for Databricks.",
-      "sections": [
-        {
-          "h": "SAP Business Data Cloud",
-          "items": [
-            "The blog explains how to use the SAP Business Data Cloud Capacity Unit Estimator for SAP BDC Connect for Databricks. It provides guidance on sizing your setup to plan effectively, prevent unexpected issues, and optimize your data-sharing architecture."
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "author": "FernandaFroelich",
-          "title": "How to use SAP Business Data Cloud Capacity Unit Estimator for SAP BDC Connect for Databricks?",
-          "minutes": 5
-        }
-      ]
-    }
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "How to use SAP Business Data Cloud Capacity Unit Estimator for SAP BDC Connect for Databricks?",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-use-sap-business-data-cloud-capacity-unit-estimator-for-sap-bdc/ba-p/14353832",
+            "author": "FernandaFroelich",
+            "date_published": "2026-03-19",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "summary": "The blog explains how to use the SAP Business Data Cloud Capacity Unit Estimator for SAP BDC Connect for Databricks. It provides guidance on sizing your setup to plan effectively, avoid unexpected issues, and optimize your data-sharing architecture.",
+            "post_type": "How-to"
+          }
+        ],
+        "rest": []
+      }
+    ]
   },
   {
     "id": "sat-2026-02-28",
@@ -126,67 +165,136 @@
       "Business Data Cloud",
       "Analytics Cloud"
     ],
-    "body": {
-      "headline": "6 SAP blog posts.",
-      "sections": [
-        {
-          "h": "SAP Business Data Cloud",
-          "items": [
-            "SAP Business Data Cloud and Datasphere News in February",
-            "Expanding Visual Analysis: New Area Chart, Pareto Chart, and Stacked Area Enhancements",
-            "Create Your Own SAP BDC Workshop: BDC Partner Academy",
-            "SAP Business Data Cloud and Datasphere News in January"
-          ]
-        },
-        {
-          "h": "SAP Datasphere",
-          "items": [
-            "SAP Business Data Cloud and Datasphere News in February",
-            "AI-Assisted SAP Datasphere Modeling",
-            "SAP Business Data Cloud and Datasphere News in January"
-          ]
-        },
-        {
-          "h": "SAP Analytics Cloud",
-          "items": [
-            "Expanding Visual Analysis: New Area Chart, Pareto Chart, and Stacked Area Enhancements",
-            "Story Versioning in SAP Analytics Cloud: Design with Confidence & Iterate Without Fear!"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "author": "kpsauer",
-          "title": "SAP Business Data Cloud and Datasphere News in February",
-          "minutes": 5
-        },
-        {
-          "author": "Yonggang_Yu",
-          "title": "AI-Assisted SAP Datasphere Modeling",
-          "minutes": 5
-        },
-        {
-          "author": "Tunir",
-          "title": "Expanding Visual Analysis: New Area Chart, Pareto Chart, and Stacked Area Enhancements",
-          "minutes": 5
-        },
-        {
-          "author": "Tunir",
-          "title": "Story Versioning in SAP Analytics Cloud: Design with Confidence & Iterate Without Fear!",
-          "minutes": 5
-        },
-        {
-          "author": "KarthikM8",
-          "title": "Create Your Own SAP BDC Workshop: BDC Partner Academy",
-          "minutes": 5
-        },
-        {
-          "author": "kpsauer",
-          "title": "SAP Business Data Cloud and Datasphere News in January",
-          "minutes": 5
-        }
-      ]
-    }
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "SAP Business Data Cloud and Datasphere News in February",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-data-cloud-and-datasphere-news-in-february/ba-p/14331899",
+            "author": "kpsauer",
+            "date_published": "2026-02-28",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5
+          },
+          {
+            "title": "Expanding Visual Analysis: New Area Chart, Pareto Chart, and Stacked Area Enhancements",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/expanding-visual-analysis-new-area-chart-pareto-chart-and-stacked-area/ba-p/14328138",
+            "author": "Tunir",
+            "date_published": "2026-02-13",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5
+          }
+        ],
+        "rest": [
+          {
+            "title": "Create Your Own SAP BDC Workshop: BDC Partner Academy",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/create-your-own-sap-bdc-workshop-bdc-partner-academy/ba-p/14325696",
+            "author": "KarthikM8",
+            "date_published": "2026-02-11",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5
+          },
+          {
+            "title": "SAP Business Data Cloud and Datasphere News in January",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-data-cloud-and-datasphere-news-in-january/ba-p/14320094",
+            "author": "kpsauer",
+            "date_published": "2026-02-05",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5
+          }
+        ]
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "SAP Business Data Cloud and Datasphere News in February",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-data-cloud-and-datasphere-news-in-february/ba-p/14331899",
+            "author": "kpsauer",
+            "date_published": "2026-02-28",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5
+          },
+          {
+            "title": "AI-Assisted SAP Datasphere Modeling",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/ai-assisted-sap-datasphere-modeling/ba-p/14334545",
+            "author": "Yonggang_Yu",
+            "date_published": "2026-02-23",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 5
+          }
+        ],
+        "rest": [
+          {
+            "title": "SAP Business Data Cloud and Datasphere News in January",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-data-cloud-and-datasphere-news-in-january/ba-p/14320094",
+            "author": "kpsauer",
+            "date_published": "2026-02-05",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5
+          }
+        ]
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "Expanding Visual Analysis: New Area Chart, Pareto Chart, and Stacked Area Enhancements",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/expanding-visual-analysis-new-area-chart-pareto-chart-and-stacked-area/ba-p/14328138",
+            "author": "Tunir",
+            "date_published": "2026-02-13",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5
+          },
+          {
+            "title": "Story Versioning in SAP Analytics Cloud: Design with Confidence & Iterate Without Fear!",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/story-versioning-in-sap-analytics-cloud-design-with-confidence-amp-iterate/ba-p/14327560",
+            "author": "Tunir",
+            "date_published": "2026-02-13",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 5
+          }
+        ],
+        "rest": []
+      }
+    ]
   },
   {
     "id": "tue-2026-01-27",
@@ -202,47 +310,84 @@
       "Analytics Cloud",
       "Datasphere"
     ],
-    "body": {
-      "headline": "The blog outlines ten compelling reasons to rely on the SAP Business Transformation Center for critical ERP data migrations.",
-      "sections": [
-        {
-          "h": "SAP Business Data Cloud",
-          "items": [
-            "The blog outlines ten compelling reasons to rely on the SAP Business Transformation Center for critical ERP data migrations. It highlights its capabilities in ensuring secure, efficient, and reliable migration processes. This tool is positioned as a trusted solution for complex transformation projects.",
-            "SAP Datasphere News in December"
-          ]
-        },
-        {
-          "h": "SAP Datasphere",
-          "items": [
-            "SAP Datasphere News in December"
-          ]
-        },
-        {
-          "h": "SAP Analytics Cloud",
-          "items": [
-            "The blog post discusses the challenges users face with the calculation logic in SAP Analytics Cloud (SAC), particularly when features behave inconsistently. It introduces a collective KBA that compiles the latest known limitations of Story Calculations to assist users in navigating these issues."
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "author": "Sascha_Loeffler",
-          "title": "10 reasons to trust the SAP Business Transformation Center with your data migration",
-          "minutes": 5
-        },
-        {
-          "author": "fidan_karimovaa",
-          "title": "Understanding Known Limitations of Calculations Feature in SAP Analytics Cloud (SAC)",
-          "minutes": 1
-        },
-        {
-          "author": "kpsauer",
-          "title": "SAP Datasphere News in December",
-          "minutes": 5
-        }
-      ]
-    }
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "10 reasons to trust the SAP Business Transformation Center with your data migration",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/10-reasons-to-trust-the-sap-business-transformation-center-with-your-data/ba-p/14289531",
+            "author": "Sascha_Loeffler",
+            "date_published": "2026-01-27",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "summary": "The blog outlines ten compelling reasons to rely on the SAP Business Transformation Center for critical ERP data migrations. It emphasizes the tool's reliability and suitability for complex transformation projects.",
+            "post_type": "Article"
+          },
+          {
+            "title": "SAP Datasphere News in December",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-datasphere-news-in-december/ba-p/14299695",
+            "author": "kpsauer",
+            "date_published": "2026-01-09",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "SAP Datasphere News in December",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-datasphere-news-in-december/ba-p/14299695",
+            "author": "kpsauer",
+            "date_published": "2026-01-09",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "Understanding Known Limitations of Calculations Feature in SAP Analytics Cloud (SAC)",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/understanding-known-limitations-of-calculations-feature-in-sap-analytics/ba-p/14306575",
+            "author": "fidan_karimovaa",
+            "date_published": "2026-01-22",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 1,
+            "summary": "The blog post discusses the challenges users face with the calculation logic in SAP Analytics Cloud (SAC), particularly when features behave inconsistently. It introduces a collective KBA that compiles the latest known limitations of Story Calculations to assist users in navigating these issues.",
+            "post_type": "Article"
+          }
+        ],
+        "rest": []
+      }
+    ]
   },
   {
     "id": "fri-2025-12-12",
@@ -257,38 +402,57 @@
       "Datasphere",
       "Business Data Cloud"
     ],
-    "body": {
-      "headline": "1 SAP blog posts.",
-      "sections": [
-        {
-          "h": "SAP Business Data Cloud",
-          "items": [
-            "SAP Datasphere News in November"
-          ]
-        },
-        {
-          "h": "SAP Datasphere",
-          "items": [
-            "SAP Datasphere News in November"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "author": "kpsauer",
-          "title": "SAP Datasphere News in November",
-          "minutes": 5
-        }
-      ]
-    }
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "SAP Datasphere News in November",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-datasphere-news-in-november/ba-p/14286018",
+            "author": "kpsauer",
+            "date_published": "2025-12-12",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "SAP Datasphere News in November",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-datasphere-news-in-november/ba-p/14286018",
+            "author": "kpsauer",
+            "date_published": "2025-12-12",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5
+          }
+        ],
+        "rest": []
+      }
+    ]
   },
   {
     "id": "thu-2025-11-27",
     "weekday": "Thursday",
     "iso": "2025-11-27",
     "full": "Nov 27, 2025",
-    "title": "This blog post provides a step-by-step guide to activating the Object Store in SAP Datasphere.",
-    "preview": "This blog post provides a step-by-step guide to provisioning SAP BDC Connect for seamless data sharing with Databricks. It covers prerequisites like admin permissions, regional alignment, and enabling",
+    "title": "This blog post provides a detailed guide on activating the Object Store in SAP Datasphere, covering key limitations, requirements, supported regions, and deployment considerations.",
+    "preview": "This blog post provides a step-by-step guide to provisioning SAP BDC Connect for seamless data sharing with Databricks. It covers prerequisites such as admin permissions, regional alignment, and works",
     "reads": "13 min",
     "posts": 5,
     "tags": [
@@ -296,109 +460,189 @@
       "Business Data Cloud",
       "Analytics Cloud"
     ],
-    "body": {
-      "headline": "This blog post provides a step-by-step guide to activating the Object Store in SAP Datasphere.",
-      "sections": [
-        {
-          "h": "SAP Business Data Cloud",
-          "items": [
-            "This blog post provides a step-by-step guide to provisioning SAP BDC Connect for seamless data sharing with Databricks. It covers prerequisites like admin permissions, regional alignment, and enabling Unity Catalog and Delta Sharing, followed by configuration steps in SAP for Me and Databricks. The guide ensures successful connection setup and validation for data product sharing between SAP Business Data Cloud and Databricks.",
-            "SAP Datasphere News in October"
-          ]
-        },
-        {
-          "h": "SAP Datasphere",
-          "items": [
-            "This blog post provides a step-by-step guide to activating the Object Store in SAP Datasphere. It covers key limitations, requirements, supported regions, and deployment considerations like space creation and capacity units. The guide ensures a clear understanding of the activation process.",
-            "Is it possible to configure scoped roles from SAP Datasphere in SAP Cloud Identity Service?",
-            "SAP Datasphere News in October"
-          ]
-        },
-        {
-          "h": "SAP Analytics Cloud",
-          "items": [
-            "The blog provides a step-by-step guide to importing data from an on-premise MS SQL Server into SAP Analytics Cloud. It emphasizes using the SAP Analytics Cloud Agent and SAP Cloud Connector on a dedicated server for optimal performance and multi-user access. Best practices for setup are also discussed."
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "author": "FernandaFroelich",
-          "title": "How to activate the Object Store in SAP Datasphere?",
-          "minutes": 1
-        },
-        {
-          "author": "FernandaFroelich",
-          "title": "Is it possible to configure scoped roles from SAP Datasphere in SAP Cloud Identity Service?",
-          "minutes": 5
-        },
-        {
-          "author": "FernandaFroelich",
-          "title": "How to provision SAP BDC Connect for Databricks?",
-          "minutes": 1
-        },
-        {
-          "author": "Sakshi_Kathuria",
-          "title": "Creating an Import Data Connection to an On-Premise MS SQL Server",
-          "minutes": 1
-        },
-        {
-          "author": "kpsauer",
-          "title": "SAP Datasphere News in October",
-          "minutes": 5
-        }
-      ]
-    }
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "How to provision SAP BDC Connect for Databricks?",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-provision-sap-bdc-connect-for-databricks/ba-p/14279245",
+            "author": "FernandaFroelich",
+            "date_published": "2025-11-27",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "summary": "This blog post provides a step-by-step guide to provisioning SAP BDC Connect for seamless data sharing with Databricks. It covers prerequisites such as admin permissions, regional alignment, and workspace compatibility, followed by configuration steps in SAP for Me and Databricks. The guide ensures successful connection setup and validation for data product sharing.",
+            "post_type": "How-to"
+          },
+          {
+            "title": "SAP Datasphere News in October",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-datasphere-news-in-october/ba-p/14258069",
+            "author": "kpsauer",
+            "date_published": "2025-11-04",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "How to activate the Object Store in SAP Datasphere?",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-activate-the-object-store-in-sap-datasphere/ba-p/14279053",
+            "author": "FernandaFroelich",
+            "date_published": "2025-11-27",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 1,
+            "summary": "This blog post provides a detailed guide on activating the Object Store in SAP Datasphere, covering key limitations, requirements, supported regions, and deployment considerations. It includes a step-by-step walkthrough for successful activation, addressing space creation and capacity unit planning. The post ensures clarity on what to expect during the process.",
+            "post_type": "How-to"
+          },
+          {
+            "title": "Is it possible to configure scoped roles from SAP Datasphere in SAP Cloud Identity Service?",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/is-it-possible-to-configure-scoped-roles-from-sap-datasphere-in-sap-cloud/ba-p/14278996",
+            "author": "FernandaFroelich",
+            "date_published": "2025-11-27",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 5
+          }
+        ],
+        "rest": [
+          {
+            "title": "SAP Datasphere News in October",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-datasphere-news-in-october/ba-p/14258069",
+            "author": "kpsauer",
+            "date_published": "2025-11-04",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5
+          }
+        ]
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "Creating an Import Data Connection to an On-Premise MS SQL Server",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/creating-an-import-data-connection-to-an-on-premise-ms-sql-server/ba-p/14265075",
+            "author": "Sakshi_Kathuria",
+            "date_published": "2025-11-11",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 1,
+            "summary": "This blog provides a step-by-step guide to importing data from an on-premise MS SQL Server into SAP Analytics Cloud. It explains the use of the SAP Analytics Cloud Agent and SAP Cloud Connector for establishing the connection and recommends installing these tools on a dedicated server for optimal performance. The focus is on ensuring a stable and efficient setup for multiple users.",
+            "post_type": "How-to"
+          }
+        ],
+        "rest": []
+      }
+    ]
   },
   {
     "id": "fri-2025-10-31",
     "weekday": "Friday",
     "iso": "2025-10-31",
     "full": "Oct 31, 2025",
-    "title": "The blog demonstrates an end-to-end process of integrating SAP BW data with Databricks Enterprise via SAP Business Data Cloud without requiring data movement.",
-    "preview": "The blog post provides a curated list of SAP TechEd virtual sessions focused on building an AI-ready data strategy. It targets engineers, scientists, and analysts looking to enhance their expertise in",
+    "title": "The blog post demonstrates an end-to-end process of integrating SAP BW data with Databricks Enterprise via SAP Business Data Cloud, eliminating the need for data movement.",
+    "preview": "The blog post provides a curated list of recommended SAP TechEd virtual sessions focused on building an AI-ready data strategy. It targets engineers, scientists, and analysts looking to enhance their ",
     "reads": "15 min",
     "posts": 3,
     "tags": [
       "Business Data Cloud",
       "Datasphere"
     ],
-    "body": {
-      "headline": "The blog demonstrates an end-to-end process of integrating SAP BW data with Databricks Enterprise via SAP Business Data Cloud without requiring data movement.",
-      "sections": [
-        {
-          "h": "SAP Business Data Cloud",
-          "items": [
-            "The blog demonstrates an end-to-end process of integrating SAP BW data with Databricks Enterprise via SAP Business Data Cloud without requiring data movement. It highlights how this setup enables quick application of ML and AI on SAP BW data.",
-            "The blog post provides a curated list of SAP TechEd virtual sessions focused on building an AI-ready data strategy. It targets engineers, scientists, and analysts looking to enhance their expertise in business data cloud solutions. The recommendations aim to help attendees maximize their learning experience during the event.",
-            "SAP Datasphere News in September"
-          ]
-        },
-        {
-          "h": "SAP Datasphere",
-          "items": [
-            "SAP Datasphere News in September"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "author": "JonGooding",
-          "title": "BW Data Product Generator to Databricks Enterprise Capability",
-          "minutes": 5
-        },
-        {
-          "author": "JoseChicas",
-          "title": "SAP TechEd Virtual Business Data Cloud Session Recommendations",
-          "minutes": 5
-        },
-        {
-          "author": "kpsauer",
-          "title": "SAP Datasphere News in September",
-          "minutes": 5
-        }
-      ]
-    }
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "BW Data Product Generator to Databricks Enterprise Capability",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/bw-data-product-generator-to-databricks-enterprise-capability/ba-p/14251192",
+            "author": "JonGooding",
+            "date_published": "2025-10-31",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "summary": "The blog post demonstrates an end-to-end process of integrating SAP BW data with Databricks Enterprise via SAP Business Data Cloud, eliminating the need for data movement. It highlights the capability to enable machine learning and AI on SAP BW data seamlessly.",
+            "post_type": "Deep dive"
+          },
+          {
+            "title": "SAP TechEd Virtual Business Data Cloud Session Recommendations",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-teched-virtual-business-data-cloud-session-recommendations/ba-p/14248738",
+            "author": "JoseChicas",
+            "date_published": "2025-10-22",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "summary": "The blog post provides a curated list of recommended SAP TechEd virtual sessions focused on building an AI-ready data strategy. It targets engineers, scientists, and analysts looking to enhance their understanding of SAP's Business Data Cloud offerings. The sessions aim to equip attendees with insights and tools for leveraging data effectively in AI initiatives.",
+            "post_type": "Event"
+          }
+        ],
+        "rest": [
+          {
+            "title": "SAP Datasphere News in September",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-datasphere-news-in-september/ba-p/14235999",
+            "author": "kpsauer",
+            "date_published": "2025-10-16",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5
+          }
+        ]
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "SAP Datasphere News in September",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-datasphere-news-in-september/ba-p/14235999",
+            "author": "kpsauer",
+            "date_published": "2025-10-16",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5
+          }
+        ],
+        "rest": []
+      }
+    ]
   },
   {
     "id": "tue-2025-09-23",
@@ -414,54 +658,104 @@
       "Business Data Cloud",
       "Analytics Cloud"
     ],
-    "body": {
-      "headline": "4 SAP blog posts.",
-      "sections": [
-        {
-          "h": "SAP Business Data Cloud",
-          "items": [
-            "Get started with SAP Databricks: Introduction",
-            "SAP Datasphere News in August"
-          ]
-        },
-        {
-          "h": "SAP Datasphere",
-          "items": [
-            "SAP Datasphere Integration with SAP S/4HANA: SAP Cloud Connector Setup Guide",
-            "SAP Datasphere News in August"
-          ]
-        },
-        {
-          "h": "SAP Analytics Cloud",
-          "items": [
-            "Dynamic MTD/QTD/YTD Calculation in SAC story using Restricted Measure",
-            "SAP Datasphere News in August"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "author": "jeet_kapase",
-          "title": "SAP Datasphere Integration with SAP S/4HANA: SAP Cloud Connector Setup Guide",
-          "minutes": 5
-        },
-        {
-          "author": "FernandaFroelich",
-          "title": "Get started with SAP Databricks: Introduction",
-          "minutes": 1
-        },
-        {
-          "author": "spurwar",
-          "title": "Dynamic MTD/QTD/YTD Calculation in SAC story using Restricted Measure",
-          "minutes": 5
-        },
-        {
-          "author": "kpsauer",
-          "title": "SAP Datasphere News in August",
-          "minutes": 5
-        }
-      ]
-    }
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Get started with SAP Databricks: Introduction",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/get-started-with-sap-databricks-introduction/ba-p/14219035",
+            "author": "FernandaFroelich",
+            "date_published": "2025-09-18",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1
+          },
+          {
+            "title": "SAP Datasphere News in August",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-datasphere-news-in-august/ba-p/14202859",
+            "author": "kpsauer",
+            "date_published": "2025-09-02",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "SAP Datasphere Integration with SAP S/4HANA: SAP Cloud Connector Setup Guide",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-datasphere-integration-with-sap-s-4hana-sap-cloud-connector-setup-guide/ba-p/14224459",
+            "author": "jeet_kapase",
+            "date_published": "2025-09-23",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 5
+          },
+          {
+            "title": "SAP Datasphere News in August",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-datasphere-news-in-august/ba-p/14202859",
+            "author": "kpsauer",
+            "date_published": "2025-09-02",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "Dynamic MTD/QTD/YTD Calculation in SAC story using Restricted Measure",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/dynamic-mtd-qtd-ytd-calculation-in-sac-story-using-restricted-measure/ba-p/14217207",
+            "author": "spurwar",
+            "date_published": "2025-09-16",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 5
+          },
+          {
+            "title": "SAP Datasphere News in August",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-datasphere-news-in-august/ba-p/14202859",
+            "author": "kpsauer",
+            "date_published": "2025-09-02",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5
+          }
+        ],
+        "rest": []
+      }
+    ]
   },
   {
     "id": "mon-2025-08-25",
@@ -477,67 +771,138 @@
       "Business Data Cloud",
       "Datasphere"
     ],
-    "body": {
-      "headline": "6 SAP blog posts.",
-      "sections": [
-        {
-          "h": "SAP Business Data Cloud",
-          "items": [
-            "How to use SAP Business Data Cloud Capacity Unit Estimator for SAP Analytics Cloud?",
-            "How to edit a quota assignment in SAP Business Data Cloud (BDC)?",
-            "How to use SAP Business Data Cloud Capacity Unit Estimator?"
-          ]
-        },
-        {
-          "h": "SAP Datasphere",
-          "items": [
-            "How to edit a quota assignment in SAP Business Data Cloud (BDC)?",
-            "Optimizing Data Movement in SAP Datasphere: Replication Flow or Remote Table Replication?"
-          ]
-        },
-        {
-          "h": "SAP Analytics Cloud",
-          "items": [
-            "SAP Analytics Cloud: Smarter Currency Conversion with Just Ask",
-            "How to use SAP Business Data Cloud Capacity Unit Estimator for SAP Analytics Cloud?",
-            "How to edit a quota assignment in SAP Business Data Cloud (BDC)?",
-            "AI-Assisted Calculations in SAP Analytics Cloud"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "author": "emilylian-sap",
-          "title": "SAP Analytics Cloud: Smarter Currency Conversion with Just Ask",
-          "minutes": 5
-        },
-        {
-          "author": "FernandaFroelich",
-          "title": "How to use SAP Business Data Cloud Capacity Unit Estimator for SAP Analytics Cloud?",
-          "minutes": 1
-        },
-        {
-          "author": "FernandaFroelich",
-          "title": "How to edit a quota assignment in SAP Business Data Cloud (BDC)?",
-          "minutes": 5
-        },
-        {
-          "author": "FernandaFroelich",
-          "title": "How to use SAP Business Data Cloud Capacity Unit Estimator?",
-          "minutes": 5
-        },
-        {
-          "author": "EstherRodrigo",
-          "title": "AI-Assisted Calculations in SAP Analytics Cloud",
-          "minutes": 5
-        },
-        {
-          "author": "Harish_Ratnala",
-          "title": "Optimizing Data Movement in SAP Datasphere: Replication Flow or Remote Table Replication?",
-          "minutes": 1
-        }
-      ]
-    }
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "How to use SAP Business Data Cloud Capacity Unit Estimator for SAP Analytics Cloud?",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-use-sap-business-data-cloud-capacity-unit-estimator-for-sap/ba-p/14184447",
+            "author": "FernandaFroelich",
+            "date_published": "2025-08-20",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1
+          },
+          {
+            "title": "How to edit a quota assignment in SAP Business Data Cloud (BDC)?",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-edit-a-quota-assignment-in-sap-business-data-cloud-bdc/ba-p/14181937",
+            "author": "FernandaFroelich",
+            "date_published": "2025-08-19",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5
+          }
+        ],
+        "rest": [
+          {
+            "title": "How to use SAP Business Data Cloud Capacity Unit Estimator?",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-use-sap-business-data-cloud-capacity-unit-estimator/ba-p/14181530",
+            "author": "FernandaFroelich",
+            "date_published": "2025-08-15",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5
+          }
+        ]
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "How to edit a quota assignment in SAP Business Data Cloud (BDC)?",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-edit-a-quota-assignment-in-sap-business-data-cloud-bdc/ba-p/14181937",
+            "author": "FernandaFroelich",
+            "date_published": "2025-08-19",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5
+          },
+          {
+            "title": "Optimizing Data Movement in SAP Datasphere: Replication Flow or Remote Table Replication?",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/optimizing-data-movement-in-sap-datasphere-replication-flow-or-remote-table/ba-p/14179771",
+            "author": "Harish_Ratnala",
+            "date_published": "2025-08-14",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 1
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "SAP Analytics Cloud: Smarter Currency Conversion with Just Ask",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-analytics-cloud-smarter-currency-conversion-with-just-ask/ba-p/14191389",
+            "author": "emilylian-sap",
+            "date_published": "2025-08-25",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 5
+          },
+          {
+            "title": "How to use SAP Business Data Cloud Capacity Unit Estimator for SAP Analytics Cloud?",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-use-sap-business-data-cloud-capacity-unit-estimator-for-sap/ba-p/14184447",
+            "author": "FernandaFroelich",
+            "date_published": "2025-08-20",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1
+          }
+        ],
+        "rest": [
+          {
+            "title": "How to edit a quota assignment in SAP Business Data Cloud (BDC)?",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-edit-a-quota-assignment-in-sap-business-data-cloud-bdc/ba-p/14181937",
+            "author": "FernandaFroelich",
+            "date_published": "2025-08-19",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5
+          },
+          {
+            "title": "AI-Assisted Calculations in SAP Analytics Cloud",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/ai-assisted-calculations-in-sap-analytics-cloud/ba-p/14180673",
+            "author": "EstherRodrigo",
+            "date_published": "2025-08-14",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 5
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "mon-2025-07-28",
@@ -552,41 +917,59 @@
       "Analytics Cloud",
       "Datasphere"
     ],
-    "body": {
-      "headline": "3 SAP blog posts.",
-      "sections": [
-        {
-          "h": "SAP Datasphere",
-          "items": [
-            "SAP Datasphere News in June"
-          ]
-        },
-        {
-          "h": "SAP Analytics Cloud",
-          "items": [
-            "Planning & Analytics App Inspiration Gallery",
-            "How to Collect a HTTP Archive (HAR file) from the SAC Mobile App: A Step-by-Step Guide"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "author": "MarcZauritz",
-          "title": "Planning & Analytics App Inspiration Gallery",
-          "minutes": 5
-        },
-        {
-          "author": "nik_beliakov",
-          "title": "How to Collect a HTTP Archive (HAR file) from the SAC Mobile App: A Step-by-Step Guide",
-          "minutes": 1
-        },
-        {
-          "author": "kpsauer",
-          "title": "SAP Datasphere News in June",
-          "minutes": 5
-        }
-      ]
-    }
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "SAP Datasphere News in June",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-datasphere-news-in-june/ba-p/14141650",
+            "author": "kpsauer",
+            "date_published": "2025-07-04",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 5
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "Planning & Analytics App Inspiration Gallery",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/planning-amp-analytics-app-inspiration-gallery/ba-p/14160311",
+            "author": "MarcZauritz",
+            "date_published": "2025-07-28",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 5
+          },
+          {
+            "title": "How to Collect a HTTP Archive (HAR file) from the SAC Mobile App: A Step-by-Step Guide",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-collect-a-http-archive-har-file-from-the-sac-mobile-app-a-step-by/ba-p/14140486",
+            "author": "nik_beliakov",
+            "date_published": "2025-07-04",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 1
+          }
+        ],
+        "rest": []
+      }
+    ]
   },
   {
     "id": "thu-2025-06-26",
@@ -601,47 +984,70 @@
       "Datasphere",
       "Analytics Cloud"
     ],
-    "body": {
-      "headline": "4 SAP blog posts.",
-      "sections": [
-        {
-          "h": "SAP Datasphere",
-          "items": [
-            "All Datasphere Functions in One File",
-            "SAP Datasphere News in May",
-            "Provisioning of Business Data Cloud : SAP Datasphere"
-          ]
-        },
-        {
-          "h": "SAP Analytics Cloud",
-          "items": [
-            "Provisioning of Business Data Cloud : SAP Analytics Cloud"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "author": "ByronCarvajalP",
-          "title": "All Datasphere Functions in One File",
-          "minutes": 5
-        },
-        {
-          "author": "kpsauer",
-          "title": "SAP Datasphere News in May",
-          "minutes": 5
-        },
-        {
-          "author": "ShreyasriB",
-          "title": "Provisioning of Business Data Cloud : SAP Analytics Cloud",
-          "minutes": 5
-        },
-        {
-          "author": "ShreyasriB",
-          "title": "Provisioning of Business Data Cloud : SAP Datasphere",
-          "minutes": 5
-        }
-      ]
-    }
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "All Datasphere Functions in One File",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/all-datasphere-functions-in-one-file/ba-p/14137499",
+            "author": "ByronCarvajalP",
+            "date_published": "2025-06-26",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 5
+          },
+          {
+            "title": "SAP Datasphere News in May",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-datasphere-news-in-may/ba-p/14125082",
+            "author": "kpsauer",
+            "date_published": "2025-06-13",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 5
+          }
+        ],
+        "rest": [
+          {
+            "title": "Provisioning of Business Data Cloud : SAP Datasphere",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/provisioning-of-business-data-cloud-sap-datasphere/ba-p/14118851",
+            "author": "ShreyasriB",
+            "date_published": "2025-06-04",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 5
+          }
+        ]
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "Provisioning of Business Data Cloud : SAP Analytics Cloud",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/provisioning-of-business-data-cloud-sap-analytics-cloud/ba-p/14120463",
+            "author": "ShreyasriB",
+            "date_published": "2025-06-06",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 5
+          }
+        ],
+        "rest": []
+      }
+    ]
   },
   {
     "id": "fri-2025-05-30",
@@ -657,47 +1063,71 @@
       "SAC Planning",
       "Datasphere"
     ],
-    "body": {
-      "headline": "4 SAP blog posts.",
-      "sections": [
-        {
-          "h": "SAP Datasphere",
-          "items": [
-            "SAP Datasphere News in April"
-          ]
-        },
-        {
-          "h": "SAP Analytics Cloud",
-          "items": [
-            "Getting Authenticated with Data Export and Data Import API's",
-            "SAP 分析云建模扩展与集成 2025 年 QRC2 版本更新内容",
-            "新功能详解：使用Housekeeping在SAP 分析云系统中高效维护数据"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "author": "jamiePower",
-          "title": "Getting Authenticated with Data Export and Data Import API's",
-          "minutes": 5
-        },
-        {
-          "author": "mike688",
-          "title": "SAP 分析云建模扩展与集成 2025 年 QRC2 版本更新内容",
-          "minutes": 5
-        },
-        {
-          "author": "Simon_Hwang",
-          "title": "新功能详解：使用Housekeeping在SAP 分析云系统中高效维护数据",
-          "minutes": 5
-        },
-        {
-          "author": "kpsauer",
-          "title": "SAP Datasphere News in April",
-          "minutes": 5
-        }
-      ]
-    }
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "SAP Datasphere News in April",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-datasphere-news-in-april/ba-p/14091774",
+            "author": "kpsauer",
+            "date_published": "2025-05-07",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 5
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "Getting Authenticated with Data Export and Data Import API's",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/getting-authenticated-with-data-export-and-data-import-api-s/ba-p/14060183",
+            "author": "jamiePower",
+            "date_published": "2025-05-30",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Analytics Cloud for planning"
+            ],
+            "minutes": 5
+          },
+          {
+            "title": "SAP 分析云建模扩展与集成 2025 年 QRC2 版本更新内容",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-%E5%88%86%E6%9E%90%E4%BA%91%E5%BB%BA%E6%A8%A1%E6%89%A9%E5%B1%95%E4%B8%8E%E9%9B%86%E6%88%90-2025-%E5%B9%B4-qrc2-%E7%89%88%E6%9C%AC%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9/ba-p/14108577",
+            "author": "mike688",
+            "date_published": "2025-05-22",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 5
+          }
+        ],
+        "rest": [
+          {
+            "title": "新功能详解：使用Housekeeping在SAP 分析云系统中高效维护数据",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/%E6%96%B0%E5%8A%9F%E8%83%BD%E8%AF%A6%E8%A7%A3-%E4%BD%BF%E7%94%A8housekeeping%E5%9C%A8sap-%E5%88%86%E6%9E%90%E4%BA%91%E7%B3%BB%E7%BB%9F%E4%B8%AD%E9%AB%98%E6%95%88%E7%BB%B4%E6%8A%A4%E6%95%B0%E6%8D%AE/ba-p/14097042",
+            "author": "Simon_Hwang",
+            "date_published": "2025-05-09",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 5
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "tue-2025-04-22",
@@ -711,41 +1141,60 @@
     "tags": [
       "Analytics Cloud"
     ],
-    "body": {
-      "headline": "4 SAP blog posts.",
-      "sections": [
-        {
-          "h": "SAP Analytics Cloud",
-          "items": [
-            "How to send an email from a SAP Analytics Cloud graph/table, passing through the values",
-            "Efficient Data Maintenance in SAP Analytics Cloud System Overview - Housekeeping",
-            "Introducing the Gantt Chart Custom Widget for SAP Analytics Cloud",
-            "Strategy for troubleshooting network performance issues in SAP Analytics Cloud (SAC)"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "author": "florian_hamon",
-          "title": "How to send an email from a SAP Analytics Cloud graph/table, passing through the values",
-          "minutes": 5
-        },
-        {
-          "author": "thomas_fery",
-          "title": "Efficient Data Maintenance in SAP Analytics Cloud System Overview - Housekeeping",
-          "minutes": 1
-        },
-        {
-          "author": "alexander_khobotov",
-          "title": "Introducing the Gantt Chart Custom Widget for SAP Analytics Cloud",
-          "minutes": 5
-        },
-        {
-          "author": "nik_beliakov",
-          "title": "Strategy for troubleshooting network performance issues in SAP Analytics Cloud (SAC)",
-          "minutes": 5
-        }
-      ]
-    }
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "How to send an email from a SAP Analytics Cloud graph/table, passing through the values",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-send-an-email-from-a-sap-analytics-cloud-graph-table-passing-through/ba-p/14003104",
+            "author": "florian_hamon",
+            "date_published": "2025-04-22",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 5
+          },
+          {
+            "title": "Efficient Data Maintenance in SAP Analytics Cloud System Overview - Housekeeping",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/efficient-data-maintenance-in-sap-analytics-cloud-system-overview/ba-p/14057374",
+            "author": "thomas_fery",
+            "date_published": "2025-04-11",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 1
+          }
+        ],
+        "rest": [
+          {
+            "title": "Introducing the Gantt Chart Custom Widget for SAP Analytics Cloud",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/introducing-the-gantt-chart-custom-widget-for-sap-analytics-cloud/ba-p/14055045",
+            "author": "alexander_khobotov",
+            "date_published": "2025-04-08",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 5
+          },
+          {
+            "title": "Strategy for troubleshooting network performance issues in SAP Analytics Cloud (SAC)",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/strategy-for-troubleshooting-network-performance-issues-in-sap-analytics/ba-p/14054830",
+            "author": "nik_beliakov",
+            "date_published": "2025-04-08",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 5
+          }
+        ]
+      }
+    ]
   }
 ]
