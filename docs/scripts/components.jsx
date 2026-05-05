@@ -43,7 +43,7 @@ function Header({ active }) {
           ))}
         </nav>
         <a className="pv-header-cta"
-           href="https://github.com/" target="_blank" rel="noopener noreferrer"
+           href="https://github.com/valantic-digital-finance-GmbH" target="_blank" rel="noopener noreferrer"
            aria-label="View on GitHub">
           <i className="ph ph-github-logo"></i>
           GitHub
