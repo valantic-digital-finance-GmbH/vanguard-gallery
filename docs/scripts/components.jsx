@@ -82,8 +82,7 @@ function Footer() {
             <div className="pv-footer-col">
               <div className="pv-footer-col-title">Connect</div>
               <ul>
-                <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub <i className="ph ph-arrow-up-right"></i></a></li>
-                <li><a href="mailto:vanguard@valantic.com">vanguard@valantic.com</a></li>
+                <li><a href="https://github.com/valantic-digital-finance-GmbH" target="_blank" rel="noopener noreferrer">GitHub <i className="ph ph-arrow-up-right"></i></a></li>
                 <li><a href="#">Internal portal</a></li>
               </ul>
             </div>
