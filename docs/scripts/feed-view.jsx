@@ -124,7 +124,8 @@ function fvFormatDate(hoursAgo) {
   const d = new Date(Date.now() - hoursAgo * 3600 * 1000);
   const dd = String(d.getDate()).padStart(2, '0');
   const mm = String(d.getMonth() + 1).padStart(2, '0');
-  return `${dd}.${mm}`;
+  const yyyy = d.getFullYear();
+  return `${dd}.${mm}.${yyyy}`;
 }
 
 function FvFeedRow({ post, isSelected, onSelect, gridTemplate }) {
@@ -250,7 +251,7 @@ function FeedView() {
   const [sortDir, setSortDir]                   = fvState('desc');
   const [selectedId, setSelectedId]             = fvState(null);
   const [sidebarW, setSidebarW]                 = fvState(232);
-  const [colWidths, setColWidths]               = fvState({ date: 60, title: 0, tags: 220, author: 140 });
+  const [colWidths, setColWidths]               = fvState({ date: 92, title: 0, tags: 220, author: 140 });
   const [isResizing, setIsResizing]             = fvState(false);
   const [isFullscreen, setIsFullscreen]         = fvState(false);
 
@@ -266,6 +267,11 @@ function FeedView() {
     return () => window.removeEventListener('keydown', onKey);
   }, []);
 
+  fvEffect(() => {
+    document.body.classList.toggle('pv-feed-locked', isFullscreen);
+    return () => document.body.classList.remove('pv-feed-locked');
+  }, [isFullscreen]);
+
   function handleSort(key) {
     if (sortKey === key) {
       setSortDir(d => d === 'asc' ? 'desc' : 'asc');
@@ -278,7 +284,7 @@ function FeedView() {
   function handleColResize(key, delta) {
     setColWidths(prev => {
       const next = { ...prev };
-      if (key === 'date')  next.date   = Math.max(40, Math.min(160, prev.date + delta));
+      if (key === 'date')  next.date   = Math.max(80, Math.min(180, prev.date + delta));
       if (key === 'title') next.tags   = Math.max(80, Math.min(500, prev.tags - delta));
       if (key === 'tags')  next.author = Math.max(80, Math.min(360, prev.author - delta));
       return next;
@@ -348,7 +354,7 @@ function FeedView() {
       <aside style={{
         borderRight: '1px solid var(--border)', background: 'var(--surface-bg)',
         padding: '10px 8px', display: 'flex', flexDirection: 'column',
-        overflowY: 'auto', position: 'relative',
+        overflowY: 'auto', overflowX: 'hidden', position: 'relative',
       }}>
         <FvColResizer
           onResize={d => setSidebarW(w => Math.max(160, Math.min(420, w + d)))}
@@ -384,7 +390,7 @@ function FeedView() {
             <button key={t.name} onClick={() => toggleTag(t.name)}
               style={{
                 display: 'flex', alignItems: 'center', gap: 8,
-                width: '100%', padding: '4px 8px',
+                width: '100%', minWidth: 0, overflow: 'hidden', padding: '4px 8px',
                 background: activeTags.has(t.name) ? 'var(--surface-2)' : 'transparent',
                 border: 'none', borderRadius: 4, cursor: 'pointer', textAlign: 'left',
               }}
@@ -492,6 +498,8 @@ function FeedView() {
       <div className="pv-feed" style={{
         position: 'fixed', inset: 0, zIndex: 9999,
         borderRadius: 0, border: 'none',
+        height: '100vh', minHeight: 0, maxHeight: 'none',
+        boxShadow: 'none',
       }}>
         {mainGrid}
       </div>

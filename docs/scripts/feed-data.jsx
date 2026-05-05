@@ -60,9 +60,21 @@ async function loadFeedData() {
       tagCounts.set(short, (tagCounts.get(short) ?? 0) + 1);
     }
   }
+  const TAG_COLOR = {
+    'BDC':          4,
+    'Datasphere':   6,
+    'SAC':          5,
+    'SAC Planning': 5,
+    'SAC Modeling': 5,
+  };
+
   const TAGS = Array.from(tagCounts.entries())
     .sort((a, b) => b[1] - a[1])
-    .map(([name, count]) => ({ name, count, color: (feedHash(name) % 6) + 1 }));
+    .map(([name, count]) => ({
+      name,
+      count,
+      color: TAG_COLOR[name] ?? ((feedHash(name) % 6) + 1),
+    }));
   const tagByName = new Map(TAGS.map(t => [t.name, t]));
 
   const POSTS = rawPosts.map((p, i) => {

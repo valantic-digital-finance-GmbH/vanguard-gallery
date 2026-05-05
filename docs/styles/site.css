@@ -1131,4 +1131,7 @@ a.pv-news-card:hover .pv-news-arrow {
   border-radius: 999px;
 }
 
+/* Locks page scroll while feed fullscreen overlay is open */
+body.pv-feed-locked { overflow: hidden; }
+
 /* Table View on narrow viewports is handled in JS (mobile hint shown instead) */
