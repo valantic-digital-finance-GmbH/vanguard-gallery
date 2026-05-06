@@ -120,11 +120,8 @@ function FvSidebarSection({ title, children, defaultOpen }) {
   );
 }
 
-function fvFormatDate(hoursAgo) {
-  const d = new Date(Date.now() - hoursAgo * 3600 * 1000);
-  const dd = String(d.getDate()).padStart(2, '0');
-  const mm = String(d.getMonth() + 1).padStart(2, '0');
-  const yyyy = d.getFullYear();
+function fvFormatDate(dateStr) {
+  const [yyyy, mm, dd] = dateStr.split('-');
   return `${dd}.${mm}.${yyyy}`;
 }
 
@@ -151,7 +148,7 @@ function FvFeedRow({ post, isSelected, onSelect, gridTemplate }) {
         fontFamily: 'var(--sans)', fontVariantNumeric: 'tabular-nums',
         fontSize: 11, color: 'var(--text-3)', letterSpacing: '0.02em',
       }}>
-        {fvFormatDate(post.hoursAgo)}
+        {fvFormatDate(post.date)}
       </span>
       <span className="post-title-link" style={{
         fontFamily: 'var(--sans)', fontSize: 13, fontWeight: 450,
@@ -304,15 +301,15 @@ function FeedView() {
   const filtered = fvMemo(() => {
     if (!data) return [];
     let list = data.POSTS;
-    if (activeCollection === 'today') list = list.filter(p => p.hoursAgo < 24);
-    if (activeCollection === 'wk')    list = list.filter(p => p.hoursAgo < 168);
-    if (activeCollection === 'month') list = list.filter(p => p.hoursAgo < 720);
+    if (activeCollection === 'today') list = list.filter(p => p.inToday);
+    if (activeCollection === 'wk')    list = list.filter(p => p.inWeek);
+    if (activeCollection === 'month') list = list.filter(p => p.inMonth);
     if (activeTags.size > 0) {
       list = list.filter(p => p.tags.some(t => activeTags.has(t.name)));
     }
     list = [...list];
     const cmp = (() => {
-      if (sortKey === 'date')   return (a, b) => a.hoursAgo - b.hoursAgo;
+      if (sortKey === 'date')   return (a, b) => a.date.localeCompare(b.date);
       if (sortKey === 'title')  return (a, b) => a.title.localeCompare(b.title);
       if (sortKey === 'author') return (a, b) => a.author.localeCompare(b.author);
       if (sortKey === 'tags')   return (a, b) => (a.tags[0]?.name || '').localeCompare(b.tags[0]?.name || '');

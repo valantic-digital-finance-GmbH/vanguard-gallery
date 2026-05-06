@@ -15,11 +15,6 @@ function feedHash(s) {
   return Math.abs(h);
 }
 
-function toHoursAgo(isoDate) {
-  const t = Date.parse(isoDate + 'T00:00:00Z');
-  return Math.floor((Date.now() - t) / 3_600_000);
-}
-
 function toPerson(name) {
   const parts = String(name || '?').trim().split(/\s+/);
   const initials = ((parts[0]?.[0] ?? '') + (parts[1]?.[0] ?? '')).toUpperCase() || '?';
@@ -77,8 +72,19 @@ async function loadFeedData() {
     }));
   const tagByName = new Map(TAGS.map(t => [t.name, t]));
 
+  // Calendar boundaries computed once, using the user's local clock.
+  const now = new Date();
+  const pad = n => String(n).padStart(2, '0');
+  const isoLocal = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+  const todayStr = isoLocal(now);
+  const dayIdx = (now.getDay() + 6) % 7;   // 0 = Monday (ISO week)
+  const weekStart = new Date(now);
+  weekStart.setDate(now.getDate() - dayIdx);
+  const weekStartStr = isoLocal(weekStart);
+  const monthPrefix = todayStr.slice(0, 7); // 'YYYY-MM'
+
   const POSTS = rawPosts.map((p, i) => {
-    const hoursAgo = toHoursAgo(p.date_published || '2000-01-01');
+    const date = p.date_published || '2000-01-01';
     const tags = Array.from(
       new Set((p.matching_tags || []).map(r => TAG_SHORT[r] || r))
     )
@@ -88,21 +94,24 @@ async function loadFeedData() {
       id: p.url || `post-${i}`,
       title: p.title || '(no title)',
       url: p.url || '',
-      hoursAgo,
+      date,
+      inToday: date === todayStr,
+      inWeek:  date >= weekStartStr && date <= todayStr,
+      inMonth: date.startsWith(monthPrefix) && date <= todayStr,
       tags,
       author: p.author || 'Unknown',
       assignee: toPerson(p.author),
     };
   });
 
-  // Sort POSTS newest first by default.
-  POSTS.sort((a, b) => a.hoursAgo - b.hoursAgo);
+  // Sort POSTS newest first by ISO date string (lex == chrono for YYYY-MM-DD).
+  POSTS.sort((a, b) => b.date.localeCompare(a.date));
 
   const COLLECTIONS = [
-    { id: 'all',   name: 'All posts',   count: POSTS.length },
-    { id: 'today', name: 'Today',       count: POSTS.filter(p => p.hoursAgo < 24).length  },
-    { id: 'wk',    name: 'This week',   count: POSTS.filter(p => p.hoursAgo < 168).length },
-    { id: 'month', name: 'This month',  count: POSTS.filter(p => p.hoursAgo < 720).length },
+    { id: 'all',   name: 'All posts',  count: POSTS.length },
+    { id: 'today', name: 'Today',      count: POSTS.filter(p => p.inToday).length },
+    { id: 'wk',    name: 'This week',  count: POSTS.filter(p => p.inWeek).length },
+    { id: 'month', name: 'This month', count: POSTS.filter(p => p.inMonth).length },
   ];
 
   return { COLLECTIONS, TAGS, POSTS };
