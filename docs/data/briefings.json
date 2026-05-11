@@ -1,5 +1,80 @@
 [
   {
+    "id": "mon-2026-05-11",
+    "weekday": "Monday",
+    "iso": "2026-05-11",
+    "full": "May 11, 2026",
+    "title": "SAP Discovery Center introduces AI maturity assessments and SAP Business Data Cloud services to enhance solution development.",
+    "preview": "Improved navigation and new Joule missions simplify the transition from exploration to production-ready solutions.",
+    "reads": "10 min",
+    "posts": 2,
+    "tags": [
+      "Analytics Cloud",
+      "Business Data Cloud"
+    ],
+    "highlights": [
+      "SAP Discovery Center introduces AI maturity assessments and SAP Business Data Cloud services to enhance solution development.",
+      "Improved navigation and new Joule missions simplify the transition from exploration to production-ready solutions.",
+      "Updates aim to provide expert guidance and streamline the user journey from inspiration to implementation."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "What’s New in SAP Discovery Center: From Inspiration to Guidance",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/what-s-new-in-sap-discovery-center-from-inspiration-to-guidance/ba-p/14392005",
+            "author": "cecilysorenson",
+            "date_published": "2026-05-10",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "summary": "The blog highlights the latest updates in SAP Discovery Center, introduced at SAP Sapphire 2026. Key enhancements include AI maturity assessments, SAP Business Data Cloud services, improved navigation, and new Joule missions, all aimed at streamlining the transition from exploration to production-ready solutions with expert support.",
+            "post_type": "Release"
+          },
+          {
+            "title": "SAP BDC - Driving Lite Viewer Adoption: Why Your Tables Matter",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-bdc-driving-lite-viewer-adoption-why-your-tables-matter/ba-p/14392248",
+            "author": "thomas_fery",
+            "date_published": "2026-05-08",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "SAP BDC - Driving Lite Viewer Adoption: Why Your Tables Matter",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-bdc-driving-lite-viewer-adoption-why-your-tables-matter/ba-p/14392248",
+            "author": "thomas_fery",
+            "date_published": "2026-05-08",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "fri-2026-05-08",
     "weekday": "Friday",
     "iso": "2026-05-08",
