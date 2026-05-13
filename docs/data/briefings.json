@@ -1,5 +1,82 @@
 [
   {
+    "id": "wed-2026-05-13",
+    "weekday": "Wednesday",
+    "iso": "2026-05-13",
+    "full": "May 13, 2026",
+    "title": "The SAP Analytics Cloud Home Screen now features a Blog Card introduced in Q2 2026 QRC.",
+    "preview": "The Blog Card provides direct access to SAP Community updates from the dashboard.",
+    "reads": "10 min",
+    "posts": 2,
+    "tags": [
+      "Analytics Cloud",
+      "Business Data Cloud"
+    ],
+    "highlights": [
+      "The SAP Analytics Cloud Home Screen now features a Blog Card introduced in Q2 2026 QRC.",
+      "The Blog Card provides direct access to SAP Community updates from the dashboard.",
+      "This enhancement ensures users stay updated with the latest SAP news and insights effortlessly."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "What's New on the SAP Analytics Cloud Home Screen — Q2 2026 QRC: The New Blog Card",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/what-s-new-on-the-sap-analytics-cloud-home-screen-q2-2026-qrc-the-new-blog/ba-p/14394010",
+            "author": "thomas_fery",
+            "date_published": "2026-05-12",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "summary": "The new Blog Card feature on the SAP Analytics Cloud Home Screen, introduced in Q2 2026 QRC, allows users to access SAP Community updates directly from their dashboard. This enhancement ensures users stay informed about the latest news and insights seamlessly.",
+            "post_type": "Release"
+          },
+          {
+            "title": "SAP HANA Cloud Integration with metaphactory - For Knowledge Graph Modelling, Visualization & More",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-hana-cloud-integration-with-metaphactory-for-knowledge-graph-modelling/ba-p/14390776",
+            "author": "shabana",
+            "date_published": "2026-05-12",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "What's New on the SAP Analytics Cloud Home Screen — Q2 2026 QRC: The New Blog Card",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/what-s-new-on-the-sap-analytics-cloud-home-screen-q2-2026-qrc-the-new-blog/ba-p/14394010",
+            "author": "thomas_fery",
+            "date_published": "2026-05-12",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "summary": "The new Blog Card feature on the SAP Analytics Cloud Home Screen, introduced in Q2 2026 QRC, allows users to access SAP Community updates directly from their dashboard. This enhancement ensures users stay informed about the latest news and insights seamlessly.",
+            "post_type": "Release"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "tue-2026-05-12",
     "weekday": "Tuesday",
     "iso": "2026-05-12",
