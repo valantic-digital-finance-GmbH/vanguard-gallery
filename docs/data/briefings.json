@@ -1,5 +1,83 @@
 [
   {
+    "id": "thu-2026-05-14",
+    "weekday": "Thursday",
+    "iso": "2026-05-14",
+    "full": "May 14, 2026",
+    "title": "CMDP in SAP BDC using Datasphere VIEW involves multiple data copies before reaching Databricks, challenging the 'zero copy' concept.",
+    "preview": "The blog provides insights into storage patterns and options for CMDP implementation, validated by SAP Product Engineering.",
+    "reads": "6 min",
+    "posts": 2,
+    "tags": [
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [
+      "CMDP in SAP BDC using Datasphere VIEW involves multiple data copies before reaching Databricks, challenging the 'zero copy' concept.",
+      "The blog provides insights into storage patterns and options for CMDP implementation, validated by SAP Product Engineering.",
+      "SAP's 3-episode BW Modernization Masterclass supports partners in transitioning from legacy BW systems to modern cloud analytics platforms.",
+      "The masterclass simplifies BW modernization and equips participants to better assist their customers."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Customer-Managed Data Products in SAP BDC: What Really Happens When Your Source Is a Datasphere VIEW",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/customer-managed-data-products-in-sap-bdc-what-really-happens-when-your/ba-p/14394675",
+            "author": "I858551",
+            "date_published": "2026-05-13",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "summary": "The blog post explores the storage patterns encountered when building a Customer-Managed Data Product (CMDP) in SAP Business Data Cloud using a Datasphere VIEW as the data source. It explains why multiple copies of data are created before reaching Databricks, discusses available options, and clarifies the concept of 'zero copy' in this context. The insights are based on a real enterprise implementation validated by SAP Product Engineering.",
+            "post_type": "Deep dive"
+          },
+          {
+            "title": "Transform Your BW Modernization Journey: Join SAP’s 3-Episode Modernization Masterclass",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/transform-your-bw-modernization-journey-join-sap-s-3-episode-modernization/ba-p/14395229",
+            "author": "KarthikM8",
+            "date_published": "2026-05-13",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "summary": "SAP has introduced a 3-episode masterclass to help partners transition from legacy Business Warehouse systems to modern cloud-based analytics platforms. This series aims to simplify BW modernization and equip participants with the necessary knowledge to support their customers effectively.",
+            "post_type": "Event"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "Customer-Managed Data Products in SAP BDC: What Really Happens When Your Source Is a Datasphere VIEW",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/customer-managed-data-products-in-sap-bdc-what-really-happens-when-your/ba-p/14394675",
+            "author": "I858551",
+            "date_published": "2026-05-13",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "summary": "The blog post explores the storage patterns encountered when building a Customer-Managed Data Product (CMDP) in SAP Business Data Cloud using a Datasphere VIEW as the data source. It explains why multiple copies of data are created before reaching Databricks, discusses available options, and clarifies the concept of 'zero copy' in this context. The insights are based on a real enterprise implementation validated by SAP Product Engineering.",
+            "post_type": "Deep dive"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "wed-2026-05-13",
     "weekday": "Wednesday",
     "iso": "2026-05-13",
