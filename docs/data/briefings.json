@@ -1,5 +1,47 @@
 [
   {
+    "id": "fri-2026-05-15",
+    "weekday": "Friday",
+    "iso": "2026-05-15",
+    "full": "May 15, 2026",
+    "title": "SAP Sapphire 2026 unveiled key announcements with significant implications for the SAP partner ecosystem.",
+    "preview": "The blog provides insights to help partners assess the potential impact of these developments on their strategies.",
+    "reads": "1 min",
+    "posts": 1,
+    "tags": [
+      "Business Data Cloud"
+    ],
+    "highlights": [
+      "SAP Sapphire 2026 unveiled key announcements with significant implications for the SAP partner ecosystem.",
+      "The blog provides insights to help partners assess the potential impact of these developments on their strategies.",
+      "It serves as a resource for both attendees and non-attendees to stay informed about SAP's evolving direction.",
+      "The analysis is grounded in the author's research and experience, offering practical takeaways for partners."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "SAP Sapphire 2026 Announcements and What it means to SAP Partner Ecosystem",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-sapphire-2026-announcements-and-what-it-means-to-sap-partner-ecosystem/ba-p/14396203",
+            "author": "Yellareddy",
+            "date_published": "2026-05-14",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "summary": "The blog provides an overview of the key announcements made during SAP Sapphire 2026, focusing on their implications for the SAP partner ecosystem. It caters to both attendees and those who missed the event, offering insights based on the author's research and experience. The content aims to help partners understand the potential impact of these developments.",
+            "post_type": "Event"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "thu-2026-05-14",
     "weekday": "Thursday",
     "iso": "2026-05-14",
