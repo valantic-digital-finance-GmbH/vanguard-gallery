@@ -290,9 +290,9 @@ function FvMobileFlipPrompt() {
 
 // 5-column grid: date · title · tags · board · author
 const FV_MOBILE_GRID            = '76px 1fr 120px 110px 96px';
-const FV_MOBILE_GRID_FULLSCREEN = '72px 1fr 100px 100px 88px';
+const FV_MOBILE_GRID_FULLSCREEN = '72px minmax(0,1fr) 100px 100px 88px';
 
-function FvMobileTableRow({ post, gridTemplate = FV_MOBILE_GRID }) {
+function FvMobileTableRow({ post, gridTemplate = FV_MOBILE_GRID, isFullscreen = false }) {
   const [pressed, setPressed] = fvState(false);
   return (
     <a
@@ -307,9 +307,9 @@ function FvMobileTableRow({ post, gridTemplate = FV_MOBILE_GRID }) {
       style={{
         display: 'grid',
         gridTemplateColumns: gridTemplate,
-        gap: 10,
+        gap: isFullscreen ? 6 : 10,
         alignItems: 'center',
-        padding: '0 14px',
+        padding: isFullscreen ? '0 0' : '0 14px',
         minHeight: 48,
         borderBottom: '1px solid var(--border)',
         textDecoration: 'none',
@@ -369,7 +369,7 @@ function FvMobileTableRow({ post, gridTemplate = FV_MOBILE_GRID }) {
   );
 }
 
-function FvMobileHeaderRow({ sortKey, sortDir, onSort, gridTemplate = FV_MOBILE_GRID }) {
+function FvMobileHeaderRow({ sortKey, sortDir, onSort, gridTemplate = FV_MOBILE_GRID, isFullscreen = false }) {
   const cellStyle = {
     fontFamily: 'var(--sans)', fontSize: 11, fontWeight: 500,
     color: 'var(--text-3)', letterSpacing: '0.02em', textTransform: 'uppercase',
@@ -386,7 +386,8 @@ function FvMobileHeaderRow({ sortKey, sortDir, onSort, gridTemplate = FV_MOBILE_
   return (
     <div style={{
       display: 'grid', gridTemplateColumns: gridTemplate,
-      gap: 10, alignItems: 'center', padding: '0 14px', height: 36,
+      gap: isFullscreen ? 6 : 10, alignItems: 'center',
+      padding: isFullscreen ? '0 0' : '0 14px', height: 36,
       borderBottom: '1px solid var(--border)', background: 'var(--surface-0)',
       position: 'sticky', top: 0, zIndex: 2,
     }}>
@@ -433,7 +434,8 @@ function FvMobileLandscapeLayout({
       {/* Topbar */}
       <header style={{
         display: 'flex', alignItems: 'center', gap: 8,
-        padding: '0 10px 0 14px', borderBottom: '1px solid var(--border)', height: 48, flexShrink: 0,
+        padding: isFullscreen ? '0 4px' : '0 10px 0 14px',
+        borderBottom: '1px solid var(--border)', height: 48, flexShrink: 0,
       }}>
         <span style={{ fontFamily: 'var(--sans)', fontSize: 13, fontWeight: 600, color: 'var(--text)' }}>
           {COLLECTIONS.find(c => c.id === activeCollection)?.name || 'All posts'}
@@ -566,8 +568,8 @@ function FvMobileLandscapeLayout({
         {/* Table area */}
         <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
           <div style={{ flex: 1, overflowY: 'auto', WebkitOverflowScrolling: 'touch' }}>
-            <FvMobileHeaderRow sortKey={sortKey} sortDir={sortDir} onSort={handleSort} gridTemplate={gridTemplate} />
-            {filtered.map(p => <FvMobileTableRow key={p.id} post={p} gridTemplate={gridTemplate} />)}
+            <FvMobileHeaderRow sortKey={sortKey} sortDir={sortDir} onSort={handleSort} gridTemplate={gridTemplate} isFullscreen={isFullscreen} />
+            {filtered.map(p => <FvMobileTableRow key={p.id} post={p} gridTemplate={gridTemplate} isFullscreen={isFullscreen} />)}
             {filtered.length === 0 && (
               <div style={{
                 padding: '40px 16px', textAlign: 'center',
