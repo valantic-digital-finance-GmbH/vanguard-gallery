@@ -72,6 +72,17 @@ async function loadFeedData() {
     }));
   const tagByName = new Map(TAGS.map(t => [t.name, t]));
 
+  // Build board registry — mirrors TAGS pattern, no color coding.
+  const boardCounts = new Map();
+  for (const p of rawPosts) {
+    const name = p.board_name;
+    if (name) boardCounts.set(name, (boardCounts.get(name) ?? 0) + 1);
+  }
+  const BOARDS = Array.from(boardCounts.entries())
+    .sort((a, b) => b[1] - a[1])
+    .map(([name, count]) => ({ name, count }));
+  const boardByName = new Map(BOARDS.map(b => [b.name, b]));
+
   // Calendar boundaries computed once, using the user's local clock.
   const now = new Date();
   const pad = n => String(n).padStart(2, '0');
@@ -101,6 +112,7 @@ async function loadFeedData() {
       tags,
       author: p.author || 'Unknown',
       assignee: toPerson(p.author),
+      board: boardByName.get(p.board_name || '') || null,
     };
   });
 
@@ -114,7 +126,7 @@ async function loadFeedData() {
     { id: 'month', name: 'This month', count: POSTS.filter(p => p.inMonth).length },
   ];
 
-  return { COLLECTIONS, TAGS, POSTS };
+  return { COLLECTIONS, TAGS, BOARDS, POSTS };
 }
 
 window.loadFeedData = loadFeedData;
