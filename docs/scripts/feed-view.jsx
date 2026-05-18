@@ -288,6 +288,9 @@ function FvMobileFlipPrompt() {
   );
 }
 
+// 5-column grid: date · title · tags · board · author
+const FV_MOBILE_GRID = '76px 1fr 120px 110px 96px';
+
 function FvMobileTableRow({ post }) {
   const [pressed, setPressed] = fvState(false);
   return (
@@ -302,7 +305,7 @@ function FvMobileTableRow({ post }) {
       onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; }}
       style={{
         display: 'grid',
-        gridTemplateColumns: '80px 1fr 130px',
+        gridTemplateColumns: FV_MOBILE_GRID,
         gap: 10,
         alignItems: 'center',
         padding: '0 14px',
@@ -329,7 +332,7 @@ function FvMobileTableRow({ post }) {
       }}>
         {post.title}
       </span>
-      <span style={{ display: 'flex', gap: 3, overflow: 'hidden', justifyContent: 'flex-end', flexWrap: 'nowrap' }}>
+      <span style={{ display: 'flex', gap: 3, overflow: 'hidden', flexWrap: 'nowrap' }}>
         {post.tags.slice(0, 2).map(t => <FeedChipTag key={t.name} tag={t} size="xs" />)}
         {post.tags.length > 2 && (
           <span style={{
@@ -339,6 +342,27 @@ function FvMobileTableRow({ post }) {
             +{post.tags.length - 2}
           </span>
         )}
+      </span>
+      <span style={{ display: 'flex', alignItems: 'center', overflow: 'hidden' }}>
+        {post.board && (
+          <span style={{
+            display: 'inline-flex', alignItems: 'center',
+            background: 'var(--surface-2)', color: 'var(--text-2)',
+            fontFamily: 'var(--sans)', fontSize: 10.5, fontWeight: 500,
+            padding: '1px 6px', borderRadius: 3, whiteSpace: 'nowrap',
+            lineHeight: 1.4, overflow: 'hidden', textOverflow: 'ellipsis', maxWidth: '100%',
+          }}>
+            {post.board.name}
+          </span>
+        )}
+      </span>
+      <span style={{
+        display: 'inline-flex', alignItems: 'center', gap: 6,
+        fontFamily: 'var(--sans)', fontSize: 11, color: 'var(--text-2)',
+        overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',
+      }}>
+        <FeedAvatar person={post.assignee} size={16} />
+        {post.author}
       </span>
     </a>
   );
@@ -352,13 +376,15 @@ function FvMobileHeaderRow({ sortKey, sortDir, onSort }) {
     cursor: 'pointer', userSelect: 'none', height: '100%',
   };
   const cols = [
-    { key: 'date',  label: 'date'  },
-    { key: 'title', label: 'title' },
-    { key: 'tags',  label: 'tags'  },
+    { key: 'date',   label: 'date'   },
+    { key: 'title',  label: 'title'  },
+    { key: 'tags',   label: 'tags'   },
+    { key: 'board',  label: 'board'  },
+    { key: 'author', label: 'author' },
   ];
   return (
     <div style={{
-      display: 'grid', gridTemplateColumns: '80px 1fr 130px',
+      display: 'grid', gridTemplateColumns: FV_MOBILE_GRID,
       gap: 10, alignItems: 'center', padding: '0 14px', height: 36,
       borderBottom: '1px solid var(--border)', background: 'var(--surface-0)',
       position: 'sticky', top: 0, zIndex: 2,
@@ -380,155 +406,32 @@ function FvMobileHeaderRow({ sortKey, sortDir, onSort }) {
   );
 }
 
-function FvMobileFilterSheet({ data, activeCollection, setActiveCollection, activeTags, toggleTag, activeBoards, toggleBoard, clearFilters, onClose }) {
-  const sheetRef = fvRef(null);
+function FvMobileLandscapeLayout({
+  filtered, data,
+  activeCollection, setActiveCollection,
+  activeTags, toggleTag,
+  activeBoards, toggleBoard,
+  sortKey, sortDir, handleSort,
+  clearFilters,
+  isFullscreen, onToggleFullscreen,
+}) {
+  const [filterPaneOpen, setFilterPaneOpen] = fvState(false);
   const { COLLECTIONS, TAGS, BOARDS } = data;
-
-  fvEffect(() => {
-    requestAnimationFrame(() => {
-      if (sheetRef.current) sheetRef.current.style.transform = 'translateY(0)';
-    });
-  }, []);
-
-  function handleClose() {
-    if (sheetRef.current) {
-      sheetRef.current.style.transform = 'translateY(100%)';
-      setTimeout(onClose, 280);
-    } else {
-      onClose();
-    }
-  }
-
-  const hasFilters = activeTags.size > 0 || activeBoards.size > 0;
-
-  return (
-    <div
-      ref={sheetRef}
-      role="dialog"
-      aria-modal="true"
-      style={{
-        position: 'fixed', bottom: 0, left: 0, right: 0,
-        zIndex: 101,
-        background: 'var(--surface-0)',
-        borderRadius: '16px 16px 0 0',
-        borderTop: '1px solid var(--border)',
-        boxShadow: '0 -8px 40px rgba(16,12,42,0.12)',
-        maxHeight: '72vh',
-        display: 'flex', flexDirection: 'column',
-        transform: 'translateY(100%)',
-        transition: 'transform 0.28s cubic-bezier(0.22,0.61,0.36,1)',
-        fontFamily: 'var(--sans)',
-      }}
-    >
-      {/* Drag handle */}
-      <div style={{ display: 'flex', justifyContent: 'center', padding: '12px 0 4px' }}>
-        <div style={{ width: 36, height: 4, borderRadius: 2, background: 'var(--border)' }} />
-      </div>
-
-      {/* Header */}
-      <div style={{ display: 'flex', alignItems: 'center', padding: '0 16px 12px', gap: 8 }}>
-        <span style={{ flex: 1, fontSize: 15, fontWeight: 600, color: 'var(--text)' }}>Filter</span>
-        {hasFilters && (
-          <button
-            onClick={clearFilters}
-            style={{
-              fontFamily: 'var(--sans)', fontSize: 12,
-              color: 'var(--accent)', background: 'none', border: 'none',
-              cursor: 'pointer', padding: '2px 4px', borderRadius: 3,
-            }}
-          >
-            Clear all
-          </button>
-        )}
-        <button
-          onClick={handleClose}
-          aria-label="Close filters"
-          style={{
-            background: 'none', border: 'none', cursor: 'pointer',
-            display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-            color: 'var(--text-3)', fontSize: 18, padding: '4px', borderRadius: 4,
-          }}
-          onMouseEnter={e => { e.currentTarget.style.color = 'var(--text)'; }}
-          onMouseLeave={e => { e.currentTarget.style.color = 'var(--text-3)'; }}
-        >
-          <i className="ph ph-x" />
-        </button>
-      </div>
-
-      {/* Scrollable content */}
-      <div style={{ flex: 1, overflowY: 'auto', WebkitOverflowScrolling: 'touch', padding: '0 8px 32px' }}>
-        <FvSidebarSection title="Collections" defaultOpen={true}>
-          {COLLECTIONS.map(c => (
-            <FvSidebarItem
-              key={c.id}
-              icon={c.id === 'all' ? 'all' : 'today'}
-              label={c.name}
-              count={c.count}
-              active={activeCollection === c.id}
-              onClick={() => setActiveCollection(c.id)}
-            />
-          ))}
-        </FvSidebarSection>
-
-        <FvSidebarSection title={`Tags · ${TAGS.length}`}>
-          {TAGS.map(t => (
-            <button key={t.name} onClick={() => toggleTag(t.name)}
-              style={{
-                display: 'flex', alignItems: 'center', gap: 8,
-                width: '100%', minWidth: 0, overflow: 'hidden', padding: '4px 8px',
-                background: activeTags.has(t.name) ? 'var(--surface-2)' : 'transparent',
-                border: 'none', borderRadius: 4, cursor: 'pointer', textAlign: 'left',
-              }}
-            >
-              <FeedChipTag tag={t} size="xs" />
-              <span style={{ flex: 1 }} />
-              <span style={{ fontFamily: 'var(--sans)', fontVariantNumeric: 'tabular-nums', fontSize: 10.5, color: 'var(--text-3)' }}>
-                {t.count}
-              </span>
-            </button>
-          ))}
-        </FvSidebarSection>
-
-        <FvSidebarSection title={`Boards · ${BOARDS.length}`}>
-          {BOARDS.map(b => (
-            <button key={b.name} onClick={() => toggleBoard(b.name)}
-              style={{
-                display: 'flex', alignItems: 'center', gap: 8,
-                width: '100%', minWidth: 0, overflow: 'hidden', padding: '4px 8px',
-                background: activeBoards.has(b.name) ? 'var(--surface-2)' : 'transparent',
-                border: 'none', borderRadius: 4, cursor: 'pointer', textAlign: 'left',
-              }}
-            >
-              <span style={{
-                display: 'inline-flex', alignItems: 'center', gap: 4,
-                background: 'var(--surface-2)', color: 'var(--text-2)',
-                fontFamily: 'var(--sans)', fontSize: 10.5, fontWeight: 500,
-                padding: '1px 6px', borderRadius: 3, whiteSpace: 'nowrap', lineHeight: 1.4,
-              }}>
-                {b.name}
-              </span>
-              <span style={{ flex: 1 }} />
-              <span style={{ fontFamily: 'var(--sans)', fontVariantNumeric: 'tabular-nums', fontSize: 10.5, color: 'var(--text-3)' }}>
-                {b.count}
-              </span>
-            </button>
-          ))}
-        </FvSidebarSection>
-      </div>
-    </div>
-  );
-}
-
-function FvMobileLandscapeLayout({ filtered, data, activeCollection, activeTags, activeBoards, sortKey, sortDir, handleSort, onOpenFilters, clearFilters }) {
-  const { COLLECTIONS } = data;
   const totalActiveFilters = activeTags.size + activeBoards.size;
+
+  const badgeStyle = {
+    background: 'var(--accent)', color: '#fff',
+    borderRadius: 999, fontSize: 10, fontWeight: 700,
+    padding: '1px 5px', lineHeight: 1.4,
+  };
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', height: '100%', background: 'var(--surface-0)', color: 'var(--text)', fontFamily: 'var(--sans)', fontSize: 13 }}>
+
       {/* Topbar */}
       <header style={{
-        display: 'flex', alignItems: 'center', gap: 10,
-        padding: '0 14px', borderBottom: '1px solid var(--border)', height: 48, flexShrink: 0,
+        display: 'flex', alignItems: 'center', gap: 8,
+        padding: '0 10px 0 14px', borderBottom: '1px solid var(--border)', height: 48, flexShrink: 0,
       }}>
         <span style={{ fontFamily: 'var(--sans)', fontSize: 13, fontWeight: 600, color: 'var(--text)' }}>
           {COLLECTIONS.find(c => c.id === activeCollection)?.name || 'All posts'}
@@ -549,44 +452,130 @@ function FvMobileLandscapeLayout({ filtered, data, activeCollection, activeTags,
           </button>
         )}
         <span style={{ flex: 1 }} />
+
+        {/* Filter pane toggle */}
         <button
-          onClick={onOpenFilters}
+          onClick={() => setFilterPaneOpen(p => !p)}
           style={{
             display: 'inline-flex', alignItems: 'center', gap: 5,
             fontFamily: 'var(--sans)', fontSize: 12, fontWeight: 500,
-            color: totalActiveFilters > 0 ? 'var(--accent)' : 'var(--text-3)',
-            background: 'none', border: 'none', cursor: 'pointer',
+            color: filterPaneOpen ? 'var(--text)' : (totalActiveFilters > 0 ? 'var(--accent)' : 'var(--text-3)'),
+            background: filterPaneOpen ? 'var(--surface-2)' : 'none',
+            border: 'none', cursor: 'pointer',
             padding: '6px 10px', borderRadius: 6,
+            transition: 'background .12s, color .12s',
           }}
-          onMouseEnter={e => { e.currentTarget.style.background = 'var(--surface-1)'; }}
-          onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; }}
         >
           <i className="ph ph-funnel" style={{ fontSize: 14 }} />
           Filters
-          {totalActiveFilters > 0 && (
-            <span style={{
-              background: 'var(--accent)', color: '#fff',
-              borderRadius: 999, fontSize: 10, fontWeight: 700,
-              padding: '1px 5px', lineHeight: 1.4,
-            }}>
-              {totalActiveFilters}
-            </span>
-          )}
+          {totalActiveFilters > 0 && <span style={badgeStyle}>{totalActiveFilters}</span>}
+        </button>
+
+        {/* Fullscreen toggle */}
+        <button
+          onClick={onToggleFullscreen}
+          title={isFullscreen ? 'Exit fullscreen' : 'Fullscreen'}
+          aria-label={isFullscreen ? 'Exit fullscreen' : 'Fullscreen'}
+          style={{
+            background: 'none', border: 'none', cursor: 'pointer',
+            display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+            color: 'var(--text-3)', fontSize: 16, padding: '4px', borderRadius: 4,
+          }}
+          onMouseEnter={e => { e.currentTarget.style.color = 'var(--text)'; }}
+          onMouseLeave={e => { e.currentTarget.style.color = 'var(--text-3)'; }}
+        >
+          <i className={isFullscreen ? 'ph ph-arrows-in' : 'ph ph-arrows-out'} />
         </button>
       </header>
 
-      {/* Table */}
-      <div style={{ flex: 1, overflowY: 'auto', WebkitOverflowScrolling: 'touch' }}>
-        <FvMobileHeaderRow sortKey={sortKey} sortDir={sortDir} onSort={handleSort} />
-        {filtered.map(p => <FvMobileTableRow key={p.id} post={p} />)}
-        {filtered.length === 0 && (
-          <div style={{
-            padding: '40px 16px', textAlign: 'center',
-            fontFamily: 'var(--sans)', fontSize: 13, color: 'var(--text-3)',
-          }}>
-            No posts match the current filter.
+      {/* Body — filter pane + table side by side */}
+      <div style={{ flex: 1, display: 'flex', overflow: 'hidden' }}>
+
+        {/* Collapsible filter pane */}
+        <aside style={{
+          width: filterPaneOpen ? 200 : 0,
+          flexShrink: 0,
+          overflow: 'hidden',
+          transition: 'width 0.22s ease',
+          borderRight: filterPaneOpen ? '1px solid var(--border)' : 'none',
+          background: 'var(--surface-bg)',
+        }}>
+          <div style={{ width: 200, padding: '10px 8px', height: '100%', overflowY: 'auto', boxSizing: 'border-box' }}>
+            <FvSidebarSection title="Collections" defaultOpen={true}>
+              {COLLECTIONS.map(c => (
+                <FvSidebarItem
+                  key={c.id}
+                  icon={c.id === 'all' ? 'all' : 'today'}
+                  label={c.name}
+                  count={c.count}
+                  active={activeCollection === c.id}
+                  onClick={() => setActiveCollection(c.id)}
+                />
+              ))}
+            </FvSidebarSection>
+
+            <FvSidebarSection title={`Tags · ${TAGS.length}`}>
+              {TAGS.map(t => (
+                <button key={t.name} onClick={() => toggleTag(t.name)}
+                  style={{
+                    display: 'flex', alignItems: 'center', gap: 8,
+                    width: '100%', minWidth: 0, overflow: 'hidden', padding: '4px 8px',
+                    background: activeTags.has(t.name) ? 'var(--surface-2)' : 'transparent',
+                    border: 'none', borderRadius: 4, cursor: 'pointer', textAlign: 'left',
+                  }}
+                >
+                  <FeedChipTag tag={t} size="xs" />
+                  <span style={{ flex: 1 }} />
+                  <span style={{ fontFamily: 'var(--sans)', fontVariantNumeric: 'tabular-nums', fontSize: 10.5, color: 'var(--text-3)' }}>
+                    {t.count}
+                  </span>
+                </button>
+              ))}
+            </FvSidebarSection>
+
+            <FvSidebarSection title={`Boards · ${BOARDS.length}`}>
+              {BOARDS.map(b => (
+                <button key={b.name} onClick={() => toggleBoard(b.name)}
+                  style={{
+                    display: 'flex', alignItems: 'center', gap: 8,
+                    width: '100%', minWidth: 0, overflow: 'hidden', padding: '4px 8px',
+                    background: activeBoards.has(b.name) ? 'var(--surface-2)' : 'transparent',
+                    border: 'none', borderRadius: 4, cursor: 'pointer', textAlign: 'left',
+                  }}
+                >
+                  <span style={{
+                    display: 'inline-flex', alignItems: 'center', gap: 4,
+                    background: 'var(--surface-2)', color: 'var(--text-2)',
+                    fontFamily: 'var(--sans)', fontSize: 10.5, fontWeight: 500,
+                    padding: '1px 6px', borderRadius: 3, whiteSpace: 'nowrap', lineHeight: 1.4,
+                  }}>
+                    {b.name}
+                  </span>
+                  <span style={{ flex: 1 }} />
+                  <span style={{ fontFamily: 'var(--sans)', fontVariantNumeric: 'tabular-nums', fontSize: 10.5, color: 'var(--text-3)' }}>
+                    {b.count}
+                  </span>
+                </button>
+              ))}
+            </FvSidebarSection>
           </div>
-        )}
+        </aside>
+
+        {/* Table area */}
+        <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+          <div style={{ flex: 1, overflowY: 'auto', WebkitOverflowScrolling: 'touch' }}>
+            <FvMobileHeaderRow sortKey={sortKey} sortDir={sortDir} onSort={handleSort} />
+            {filtered.map(p => <FvMobileTableRow key={p.id} post={p} />)}
+            {filtered.length === 0 && (
+              <div style={{
+                padding: '40px 16px', textAlign: 'center',
+                fontFamily: 'var(--sans)', fontSize: 13, color: 'var(--text-3)',
+              }}>
+                No posts match the current filter.
+              </div>
+            )}
+          </div>
+        </div>
       </div>
 
       {/* Status bar */}
@@ -619,7 +608,6 @@ function FeedView({ mobileMode = 'desktop' }) {
   const [colWidths, setColWidths]               = fvState({ date: 92, title: 0, tags: 200, board: 160, author: 140 });
   const [isResizing, setIsResizing]             = fvState(false);
   const [isFullscreen, setIsFullscreen]         = fvState(false);
-  const [filterSheetOpen, setFilterSheetOpen]   = fvState(false);
 
   fvEffect(() => {
     window.loadFeedData()
@@ -637,9 +625,6 @@ function FeedView({ mobileMode = 'desktop' }) {
     document.body.classList.toggle('pv-feed-locked', isFullscreen);
     return () => document.body.classList.remove('pv-feed-locked');
   }, [isFullscreen]);
-
-  // Close filter sheet when orientation changes mode
-  fvEffect(() => { setFilterSheetOpen(false); }, [mobileMode]);
 
   function handleSort(key) {
     if (sortKey === key) {
@@ -711,7 +696,7 @@ function FeedView({ mobileMode = 'desktop' }) {
     return list;
   }, [data, activeCollection, activeTags, activeBoards, sortKey, sortDir]);
 
-  // Portrait — no data needed, render prompt immediately
+  // Portrait — render prompt without loading data
   if (mobileMode === 'flip') return <FvMobileFlipPrompt />;
 
   if (error) {
@@ -732,16 +717,11 @@ function FeedView({ mobileMode = 'desktop' }) {
 
   const { COLLECTIONS, TAGS, BOARDS, POSTS } = data;
 
-  const scrimStyle = {
-    position: 'fixed', inset: 0, zIndex: 100,
-    background: 'rgba(16,12,42,0.35)',
-    backdropFilter: 'blur(2px)',
-  };
-
-  const filterSheetEl = filterSheetOpen && (
-    <>
-      <div onClick={() => setFilterSheetOpen(false)} style={scrimStyle} />
-      <FvMobileFilterSheet
+  // Landscape mobile — inline left-pane filter + 5-column table
+  if (mobileMode === 'table') {
+    const landscapeContent = (
+      <FvMobileLandscapeLayout
+        filtered={filtered}
         data={data}
         activeCollection={activeCollection}
         setActiveCollection={setActiveCollection}
@@ -749,31 +729,22 @@ function FeedView({ mobileMode = 'desktop' }) {
         toggleTag={toggleTag}
         activeBoards={activeBoards}
         toggleBoard={toggleBoard}
+        sortKey={sortKey}
+        sortDir={sortDir}
+        handleSort={handleSort}
         clearFilters={clearFilters}
-        onClose={() => setFilterSheetOpen(false)}
+        isFullscreen={isFullscreen}
+        onToggleFullscreen={() => setIsFullscreen(f => !f)}
       />
-    </>
-  );
-
-  // Landscape mobile — simplified 3-column table + filter sheet
-  if (mobileMode === 'table') {
-    return (
-      <>
-        <FvMobileLandscapeLayout
-          filtered={filtered}
-          data={data}
-          activeCollection={activeCollection}
-          activeTags={activeTags}
-          activeBoards={activeBoards}
-          sortKey={sortKey}
-          sortDir={sortDir}
-          handleSort={handleSort}
-          onOpenFilters={() => setFilterSheetOpen(true)}
-          clearFilters={clearFilters}
-        />
-        {filterSheetEl}
-      </>
     );
+    if (isFullscreen) {
+      return (
+        <div style={{ position: 'fixed', inset: 0, zIndex: 9999, background: 'var(--surface-0)' }}>
+          {landscapeContent}
+        </div>
+      );
+    }
+    return landscapeContent;
   }
 
   // Desktop — full two-panel layout
