@@ -289,9 +289,10 @@ function FvMobileFlipPrompt() {
 }
 
 // 5-column grid: date · title · tags · board · author
-const FV_MOBILE_GRID = '76px 1fr 120px 110px 96px';
+const FV_MOBILE_GRID            = '76px 1fr 120px 110px 96px';
+const FV_MOBILE_GRID_FULLSCREEN = '72px 1fr 100px 100px 88px';
 
-function FvMobileTableRow({ post }) {
+function FvMobileTableRow({ post, gridTemplate = FV_MOBILE_GRID }) {
   const [pressed, setPressed] = fvState(false);
   return (
     <a
@@ -305,7 +306,7 @@ function FvMobileTableRow({ post }) {
       onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; }}
       style={{
         display: 'grid',
-        gridTemplateColumns: FV_MOBILE_GRID,
+        gridTemplateColumns: gridTemplate,
         gap: 10,
         alignItems: 'center',
         padding: '0 14px',
@@ -368,7 +369,7 @@ function FvMobileTableRow({ post }) {
   );
 }
 
-function FvMobileHeaderRow({ sortKey, sortDir, onSort }) {
+function FvMobileHeaderRow({ sortKey, sortDir, onSort, gridTemplate = FV_MOBILE_GRID }) {
   const cellStyle = {
     fontFamily: 'var(--sans)', fontSize: 11, fontWeight: 500,
     color: 'var(--text-3)', letterSpacing: '0.02em', textTransform: 'uppercase',
@@ -384,7 +385,7 @@ function FvMobileHeaderRow({ sortKey, sortDir, onSort }) {
   ];
   return (
     <div style={{
-      display: 'grid', gridTemplateColumns: FV_MOBILE_GRID,
+      display: 'grid', gridTemplateColumns: gridTemplate,
       gap: 10, alignItems: 'center', padding: '0 14px', height: 36,
       borderBottom: '1px solid var(--border)', background: 'var(--surface-0)',
       position: 'sticky', top: 0, zIndex: 2,
@@ -418,6 +419,7 @@ function FvMobileLandscapeLayout({
   const [filterPaneOpen, setFilterPaneOpen] = fvState(false);
   const { COLLECTIONS, TAGS, BOARDS } = data;
   const totalActiveFilters = activeTags.size + activeBoards.size;
+  const gridTemplate = isFullscreen ? FV_MOBILE_GRID_FULLSCREEN : FV_MOBILE_GRID;
 
   const badgeStyle = {
     background: 'var(--accent)', color: '#fff',
@@ -564,8 +566,8 @@ function FvMobileLandscapeLayout({
         {/* Table area */}
         <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
           <div style={{ flex: 1, overflowY: 'auto', WebkitOverflowScrolling: 'touch' }}>
-            <FvMobileHeaderRow sortKey={sortKey} sortDir={sortDir} onSort={handleSort} />
-            {filtered.map(p => <FvMobileTableRow key={p.id} post={p} />)}
+            <FvMobileHeaderRow sortKey={sortKey} sortDir={sortDir} onSort={handleSort} gridTemplate={gridTemplate} />
+            {filtered.map(p => <FvMobileTableRow key={p.id} post={p} gridTemplate={gridTemplate} />)}
             {filtered.length === 0 && (
               <div style={{
                 padding: '40px 16px', textAlign: 'center',
@@ -579,16 +581,18 @@ function FvMobileLandscapeLayout({
       </div>
 
       {/* Status bar */}
-      <footer style={{
-        borderTop: '1px solid var(--border)', padding: '0 14px',
-        display: 'flex', alignItems: 'center', gap: 14, height: 28, flexShrink: 0,
-        fontFamily: 'var(--sans)', fontVariantNumeric: 'tabular-nums',
-        fontSize: 10.5, color: 'var(--text-3)',
-      }}>
-        <span>{filtered.length} posts</span>
-        <span style={{ flex: 1 }} />
-        <span>valantic · SAP Blog Tracker</span>
-      </footer>
+      {!isFullscreen && (
+        <footer style={{
+          borderTop: '1px solid var(--border)', padding: '0 14px',
+          display: 'flex', alignItems: 'center', gap: 14, height: 28, flexShrink: 0,
+          fontFamily: 'var(--sans)', fontVariantNumeric: 'tabular-nums',
+          fontSize: 10.5, color: 'var(--text-3)',
+        }}>
+          <span>{filtered.length} posts</span>
+          <span style={{ flex: 1 }} />
+          <span>valantic · SAP Blog Tracker</span>
+        </footer>
+      )}
     </div>
   );
 }
@@ -744,8 +748,6 @@ function FeedView({ mobileMode = 'desktop' }) {
         background: 'var(--surface-0)',
         paddingTop:    'env(safe-area-inset-top, 0)',
         paddingBottom: 'env(safe-area-inset-bottom, 0)',
-        paddingLeft:   'env(safe-area-inset-left, 0)',
-        paddingRight:  'env(safe-area-inset-right, 0)',
         boxSizing: 'border-box',
       }}>
           {landscapeContent}
@@ -919,16 +921,18 @@ function FeedView({ mobileMode = 'desktop' }) {
         </div>
 
         {/* Status bar */}
-        <footer style={{
-          borderTop: '1px solid var(--border)', padding: '6px 16px',
-          display: 'flex', alignItems: 'center', gap: 14, height: 28,
-          fontFamily: 'var(--sans)', fontVariantNumeric: 'tabular-nums',
-          fontSize: 10.5, color: 'var(--text-3)',
-        }}>
-          <span>{filtered.length} posts</span>
-          <span style={{ flex: 1 }} />
-          <span>valantic · SAP Blog Tracker</span>
-        </footer>
+        {!isFullscreen && (
+          <footer style={{
+            borderTop: '1px solid var(--border)', padding: '6px 16px',
+            display: 'flex', alignItems: 'center', gap: 14, height: 28,
+            fontFamily: 'var(--sans)', fontVariantNumeric: 'tabular-nums',
+            fontSize: 10.5, color: 'var(--text-3)',
+          }}>
+            <span>{filtered.length} posts</span>
+            <span style={{ flex: 1 }} />
+            <span>valantic · SAP Blog Tracker</span>
+          </footer>
+        )}
       </section>
     </div>
   );
