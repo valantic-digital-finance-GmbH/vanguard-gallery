@@ -739,7 +739,15 @@ function FeedView({ mobileMode = 'desktop' }) {
     );
     if (isFullscreen) {
       return (
-        <div style={{ position: 'fixed', inset: 0, zIndex: 9999, background: 'var(--surface-0)' }}>
+        <div style={{
+        position: 'fixed', inset: 0, zIndex: 9999,
+        background: 'var(--surface-0)',
+        paddingTop:    'env(safe-area-inset-top, 0)',
+        paddingBottom: 'env(safe-area-inset-bottom, 0)',
+        paddingLeft:   'env(safe-area-inset-left, 0)',
+        paddingRight:  'env(safe-area-inset-right, 0)',
+        boxSizing: 'border-box',
+      }}>
           {landscapeContent}
         </div>
       );
