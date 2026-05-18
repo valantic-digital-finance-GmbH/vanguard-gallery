@@ -1,5 +1,109 @@
 [
   {
+    "id": "mon-2026-05-18",
+    "weekday": "Monday",
+    "iso": "2026-05-18",
+    "full": "May 18, 2026",
+    "title": "SAP launched the Mastering SAP Data Architecture Advanced Learning Journey on its learning platform.",
+    "preview": "The program introduces a new role-based SAP Certified Data Architect certification.",
+    "reads": "10 min",
+    "posts": 2,
+    "tags": [
+      "Analytics Cloud",
+      "SAC Modeling",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [
+      "SAP launched the Mastering SAP Data Architecture Advanced Learning Journey on its learning platform.",
+      "The program introduces a new role-based SAP Certified Data Architect certification.",
+      "Professionals gain structured training and certification opportunities in data architecture."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "New SAP Data Architecture Learning Journey & SAP Certified Data Architect Certification is now Live",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/new-sap-data-architecture-learning-journey-amp-sap-certified-data-architect/ba-p/14397727",
+            "author": "Gaurish-Dessai",
+            "date_published": "2026-05-17",
+            "matching_tags": [
+              "SAP Analytics Cloud, data modeling",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "summary": "SAP has launched the Mastering SAP Data Architecture Advanced Learning Journey on its learning platform. This includes a new role-based SAP Certified Data Architect certification, providing professionals with structured training and certification opportunities in data architecture.",
+            "post_type": "Release"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "New SAP Data Architecture Learning Journey & SAP Certified Data Architect Certification is now Live",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/new-sap-data-architecture-learning-journey-amp-sap-certified-data-architect/ba-p/14397727",
+            "author": "Gaurish-Dessai",
+            "date_published": "2026-05-17",
+            "matching_tags": [
+              "SAP Analytics Cloud, data modeling",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "summary": "SAP has launched the Mastering SAP Data Architecture Advanced Learning Journey on its learning platform. This includes a new role-based SAP Certified Data Architect certification, providing professionals with structured training and certification opportunities in data architecture.",
+            "post_type": "Release"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "New SAP Data Architecture Learning Journey & SAP Certified Data Architect Certification is now Live",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/new-sap-data-architecture-learning-journey-amp-sap-certified-data-architect/ba-p/14397727",
+            "author": "Gaurish-Dessai",
+            "date_published": "2026-05-17",
+            "matching_tags": [
+              "SAP Analytics Cloud, data modeling",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "summary": "SAP has launched the Mastering SAP Data Architecture Advanced Learning Journey on its learning platform. This includes a new role-based SAP Certified Data Architect certification, providing professionals with structured training and certification opportunities in data architecture.",
+            "post_type": "Release"
+          },
+          {
+            "title": "はじめてのSAP Analytics Cloud BI - エクスポート",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%AEsap-analytics-cloud-bi-%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88/ba-p/14391031",
+            "author": "hayato_uemura",
+            "date_published": "2026-05-15",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 5
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "fri-2026-05-15",
     "weekday": "Friday",
     "iso": "2026-05-15",
