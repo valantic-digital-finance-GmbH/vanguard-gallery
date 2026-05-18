@@ -168,6 +168,20 @@ function FvFeedRow({ post, isSelected, onSelect, gridTemplate }) {
           </span>
         )}
       </span>
+      <span style={{ display: 'flex', alignItems: 'center', overflow: 'hidden' }}>
+        {post.board && (
+          <span style={{
+            display: 'inline-flex', alignItems: 'center',
+            background: 'var(--surface-2)', color: 'var(--text-2)',
+            fontFamily: 'var(--sans)', fontSize: 10.5, fontWeight: 500,
+            padding: '1px 6px', borderRadius: 3, whiteSpace: 'nowrap',
+            lineHeight: 1.4, overflow: 'hidden', textOverflow: 'ellipsis',
+            maxWidth: '100%',
+          }}>
+            {post.board.name}
+          </span>
+        )}
+      </span>
       <span style={{
         display: 'inline-flex', alignItems: 'center', gap: 7,
         fontFamily: 'var(--sans)', fontSize: 11.5, color: 'var(--text-2)',
@@ -206,6 +220,7 @@ function FvHeaderRow({ gridTemplate, onResize, setResizing, sortKey, sortDir, on
     { key: 'date',   label: 'date',   resizable: true  },
     { key: 'title',  label: 'title',  resizable: true  },
     { key: 'tags',   label: 'tags',   resizable: true  },
+    { key: 'board',  label: 'board',  resizable: true  },
     { key: 'author', label: 'author', resizable: false },
   ];
   return (
@@ -244,11 +259,12 @@ function FeedView() {
   const [error, setError]     = fvState(null);
   const [activeCollection, setActiveCollection] = fvState('all');
   const [activeTags, setActiveTags]             = fvState(() => new Set());
+  const [activeBoards, setActiveBoards]         = fvState(() => new Set());
   const [sortKey, setSortKey]                   = fvState('date');
   const [sortDir, setSortDir]                   = fvState('desc');
   const [selectedId, setSelectedId]             = fvState(null);
   const [sidebarW, setSidebarW]                 = fvState(232);
-  const [colWidths, setColWidths]               = fvState({ date: 92, title: 0, tags: 220, author: 140 });
+  const [colWidths, setColWidths]               = fvState({ date: 92, title: 0, tags: 200, board: 160, author: 140 });
   const [isResizing, setIsResizing]             = fvState(false);
   const [isFullscreen, setIsFullscreen]         = fvState(false);
 
@@ -281,17 +297,26 @@ function FeedView() {
   function handleColResize(key, delta) {
     setColWidths(prev => {
       const next = { ...prev };
-      if (key === 'date')  next.date   = Math.max(80, Math.min(180, prev.date + delta));
-      if (key === 'title') next.tags   = Math.max(80, Math.min(500, prev.tags - delta));
-      if (key === 'tags')  next.author = Math.max(80, Math.min(360, prev.author - delta));
+      if (key === 'date')  next.date  = Math.max(80, Math.min(180, prev.date + delta));
+      if (key === 'title') next.tags  = Math.max(80, Math.min(500, prev.tags - delta));
+      if (key === 'tags')  next.board = Math.max(80, Math.min(360, prev.board - delta));
+      if (key === 'board') next.author = Math.max(80, Math.min(360, prev.author - delta));
       return next;
     });
   }
 
-  const gridTemplate = `${colWidths.date}px 1fr ${colWidths.tags}px ${colWidths.author}px`;
+  const gridTemplate = `${colWidths.date}px 1fr ${colWidths.tags}px ${colWidths.board}px ${colWidths.author}px`;
 
   function toggleTag(name) {
     setActiveTags(prev => {
+      const next = new Set(prev);
+      next.has(name) ? next.delete(name) : next.add(name);
+      return next;
+    });
+  }
+
+  function toggleBoard(name) {
+    setActiveBoards(prev => {
       const next = new Set(prev);
       next.has(name) ? next.delete(name) : next.add(name);
       return next;
@@ -307,19 +332,23 @@ function FeedView() {
     if (activeTags.size > 0) {
       list = list.filter(p => p.tags.some(t => activeTags.has(t.name)));
     }
+    if (activeBoards.size > 0) {
+      list = list.filter(p => p.board && activeBoards.has(p.board.name));
+    }
     list = [...list];
     const cmp = (() => {
       if (sortKey === 'date')   return (a, b) => a.date.localeCompare(b.date);
       if (sortKey === 'title')  return (a, b) => a.title.localeCompare(b.title);
       if (sortKey === 'author') return (a, b) => a.author.localeCompare(b.author);
       if (sortKey === 'tags')   return (a, b) => (a.tags[0]?.name || '').localeCompare(b.tags[0]?.name || '');
+      if (sortKey === 'board')  return (a, b) => (a.board?.name || '').localeCompare(b.board?.name || '');
       return () => 0;
     })();
     list.sort(cmp);
     if (sortKey === 'date') { if (sortDir === 'desc') list.reverse(); }
     else if (sortDir === 'desc') list.reverse();
     return list;
-  }, [data, activeCollection, activeTags, sortKey, sortDir]);
+  }, [data, activeCollection, activeTags, activeBoards, sortKey, sortDir]);
 
   if (error) {
     return (
@@ -337,7 +366,7 @@ function FeedView() {
     );
   }
 
-  const { COLLECTIONS, TAGS, POSTS } = data;
+  const { COLLECTIONS, TAGS, BOARDS, POSTS } = data;
 
   const mainGrid = (
     <div style={{
@@ -401,6 +430,32 @@ function FeedView() {
           ))}
         </FvSidebarSection>
 
+        <FvSidebarSection title={`Boards · ${BOARDS.length}`}>
+          {BOARDS.map(b => (
+            <button key={b.name} onClick={() => toggleBoard(b.name)}
+              style={{
+                display: 'flex', alignItems: 'center', gap: 8,
+                width: '100%', minWidth: 0, overflow: 'hidden', padding: '4px 8px',
+                background: activeBoards.has(b.name) ? 'var(--surface-2)' : 'transparent',
+                border: 'none', borderRadius: 4, cursor: 'pointer', textAlign: 'left',
+              }}
+            >
+              <span style={{
+                display: 'inline-flex', alignItems: 'center', gap: 4,
+                background: 'var(--surface-2)', color: 'var(--text-2)',
+                fontFamily: 'var(--sans)', fontSize: 10.5, fontWeight: 500,
+                padding: '1px 6px', borderRadius: 3, whiteSpace: 'nowrap', lineHeight: 1.4,
+              }}>
+                {b.name}
+              </span>
+              <span style={{ flex: 1 }} />
+              <span style={{ fontFamily: 'var(--sans)', fontVariantNumeric: 'tabular-nums', fontSize: 10.5, color: 'var(--text-3)' }}>
+                {b.count}
+              </span>
+            </button>
+          ))}
+        </FvSidebarSection>
+
         <div style={{ flex: 1 }} />
       </aside>
 
@@ -417,9 +472,9 @@ function FeedView() {
           <span style={{ fontFamily: 'var(--sans)', fontVariantNumeric: 'tabular-nums', fontSize: 11, color: 'var(--text-3)' }}>
             {filtered.length}
           </span>
-          {activeTags.size > 0 && (
+          {(activeTags.size > 0 || activeBoards.size > 0) && (
             <button
-              onClick={() => setActiveTags(new Set())}
+              onClick={() => { setActiveTags(new Set()); setActiveBoards(new Set()); }}
               style={{
                 fontFamily: 'var(--sans)', fontSize: 11.5,
                 color: 'var(--pv-accent)', background: 'none', border: 'none',
