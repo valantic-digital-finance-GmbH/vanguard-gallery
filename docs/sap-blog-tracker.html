@@ -87,11 +87,15 @@
       feed:      "A flat feed of every individual SAP blog post. Filter by product area, sort any column, and click a row to open the original post.",
     };
 
+    function getMobileMode(w) {
+      return w < 600 ? 'flip' : w < 900 ? 'table' : 'desktop';
+    }
+
     function BlogTrackerView() {
       const [view, setView] = React.useState(
         () => location.hash.replace('#', '') === 'feed' ? 'feed' : 'briefings'
       );
-      const [isMobile, setIsMobile] = React.useState(() => window.innerWidth < 760);
+      const [mobileMode, setMobileMode] = React.useState(() => getMobileMode(window.innerWidth));
 
       React.useEffect(() => {
         const desc = document.getElementById('view-desc');
@@ -107,7 +111,7 @@
       }, []);
 
       React.useEffect(() => {
-        function onResize() { setIsMobile(window.innerWidth < 760); }
+        function onResize() { setMobileMode(getMobileMode(window.innerWidth)); }
         window.addEventListener('resize', onResize);
         return () => window.removeEventListener('resize', onResize);
       }, []);
@@ -134,20 +138,11 @@
 
           {view === 'briefings'
             ? <BriefingLog />
-            : isMobile
-              ? <div style={{
-                  padding: '32px 24px',
-                  background: 'var(--pv-bg-soft)',
-                  border: '1px solid var(--pv-border)',
-                  borderRadius: 12,
-                  fontSize: 15,
-                  color: 'var(--pv-text-sub)',
-                  lineHeight: 1.6,
-                  maxWidth: 480,
-                }}>
-                  Table View requires a desktop browser. Please open this page on a larger screen.
+            : mobileMode === 'flip'
+              ? <FeedView mobileMode="flip" />
+              : <div className={'pv-feed' + (mobileMode === 'table' ? ' pv-feed--mobile' : '')}>
+                  <FeedView mobileMode={mobileMode} />
                 </div>
-              : <div className="pv-feed"><FeedView /></div>
           }
         </>
       );
