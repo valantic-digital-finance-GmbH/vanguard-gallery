@@ -746,10 +746,17 @@ function FeedView({ mobileMode = 'desktop' }) {
     if (isFullscreen) {
       return (
         <div style={{
-        position: 'fixed', inset: 0, zIndex: 9999,
+        position: 'fixed',
+        top:    'calc(env(safe-area-inset-top, 0px) * -1)',
+        bottom: 'calc(env(safe-area-inset-bottom, 0px) * -1)',
+        left:   'calc(env(safe-area-inset-left, 0px) * -1)',
+        right:  'calc(env(safe-area-inset-right, 0px) * -1)',
+        zIndex: 9999,
         background: 'var(--surface-0)',
-        paddingTop:    'env(safe-area-inset-top, 0)',
-        paddingBottom: 'env(safe-area-inset-bottom, 0)',
+        paddingTop:    'env(safe-area-inset-top, 0px)',
+        paddingBottom: 'env(safe-area-inset-bottom, 0px)',
+        paddingLeft:   'calc(env(safe-area-inset-left, 0px) + 10px)',
+        paddingRight:  'calc(env(safe-area-inset-right, 0px) + 10px)',
         boxSizing: 'border-box',
       }}>
           {landscapeContent}
