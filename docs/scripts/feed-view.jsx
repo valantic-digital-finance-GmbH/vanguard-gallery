@@ -254,7 +254,359 @@ function FvHeaderRow({ gridTemplate, onResize, setResizing, sortKey, sortDir, on
   );
 }
 
-function FeedView() {
+// ── Mobile components ─────────────────────────────────────────────────────────
+
+function FvMobileFlipPrompt() {
+  return (
+    <div style={{
+      padding: '28px 24px',
+      background: 'var(--pv-bg-soft)',
+      border: '1px solid var(--pv-border)',
+      borderRadius: 12,
+      color: 'var(--pv-text-sub)',
+      lineHeight: 1.6,
+      maxWidth: 480,
+      display: 'flex',
+      alignItems: 'flex-start',
+      gap: 14,
+    }}>
+      <i className="ph ph-device-rotate" style={{
+        fontSize: 26,
+        color: 'var(--pv-text-meta)',
+        flexShrink: 0,
+        marginTop: 1,
+      }} />
+      <div>
+        <div style={{ fontSize: 15, fontWeight: 500, color: 'var(--pv-text)', marginBottom: 4 }}>
+          Rotate to landscape
+        </div>
+        <div style={{ fontSize: 14 }}>
+          Tilt your phone sideways to view the full table.
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function FvMobileTableRow({ post }) {
+  const [pressed, setPressed] = fvState(false);
+  return (
+    <a
+      href={post.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      onTouchStart={() => setPressed(true)}
+      onTouchEnd={() => setPressed(false)}
+      onTouchCancel={() => setPressed(false)}
+      onMouseEnter={e => { e.currentTarget.style.background = 'var(--surface-1)'; }}
+      onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; }}
+      style={{
+        display: 'grid',
+        gridTemplateColumns: '80px 1fr 130px',
+        gap: 10,
+        alignItems: 'center',
+        padding: '0 14px',
+        minHeight: 48,
+        borderBottom: '1px solid var(--border)',
+        textDecoration: 'none',
+        color: 'inherit',
+        background: pressed ? 'var(--surface-1)' : 'transparent',
+        cursor: 'pointer',
+        transition: 'background .08s',
+      }}
+    >
+      <span style={{
+        fontFamily: 'var(--sans)', fontVariantNumeric: 'tabular-nums',
+        fontSize: 11, color: 'var(--text-3)', letterSpacing: '0.02em',
+        whiteSpace: 'nowrap',
+      }}>
+        {fvFormatDate(post.date)}
+      </span>
+      <span style={{
+        fontFamily: 'var(--sans)', fontSize: 13, fontWeight: 450,
+        color: 'var(--text)', overflow: 'hidden',
+        textOverflow: 'ellipsis', whiteSpace: 'nowrap',
+      }}>
+        {post.title}
+      </span>
+      <span style={{ display: 'flex', gap: 3, overflow: 'hidden', justifyContent: 'flex-end', flexWrap: 'nowrap' }}>
+        {post.tags.slice(0, 2).map(t => <FeedChipTag key={t.name} tag={t} size="xs" />)}
+        {post.tags.length > 2 && (
+          <span style={{
+            fontFamily: 'var(--sans)', fontVariantNumeric: 'tabular-nums',
+            fontSize: 10.5, color: 'var(--text-3)', alignSelf: 'center',
+          }}>
+            +{post.tags.length - 2}
+          </span>
+        )}
+      </span>
+    </a>
+  );
+}
+
+function FvMobileHeaderRow({ sortKey, sortDir, onSort }) {
+  const cellStyle = {
+    fontFamily: 'var(--sans)', fontSize: 11, fontWeight: 500,
+    color: 'var(--text-3)', letterSpacing: '0.02em', textTransform: 'uppercase',
+    display: 'inline-flex', alignItems: 'center',
+    cursor: 'pointer', userSelect: 'none', height: '100%',
+  };
+  const cols = [
+    { key: 'date',  label: 'date'  },
+    { key: 'title', label: 'title' },
+    { key: 'tags',  label: 'tags'  },
+  ];
+  return (
+    <div style={{
+      display: 'grid', gridTemplateColumns: '80px 1fr 130px',
+      gap: 10, alignItems: 'center', padding: '0 14px', height: 36,
+      borderBottom: '1px solid var(--border)', background: 'var(--surface-0)',
+      position: 'sticky', top: 0, zIndex: 2,
+    }}>
+      {cols.map(c => {
+        const isActive = sortKey === c.key;
+        return (
+          <span key={c.key} onClick={() => onSort(c.key)}
+            style={{ ...cellStyle, color: isActive ? 'var(--text)' : 'var(--text-3)' }}
+            onMouseEnter={e => { if (!isActive) e.currentTarget.style.color = 'var(--text-2)'; }}
+            onMouseLeave={e => { if (!isActive) e.currentTarget.style.color = 'var(--text-3)'; }}
+          >
+            {c.label}
+            <FvSortArrows active={isActive} dir={sortDir} />
+          </span>
+        );
+      })}
+    </div>
+  );
+}
+
+function FvMobileFilterSheet({ data, activeCollection, setActiveCollection, activeTags, toggleTag, activeBoards, toggleBoard, clearFilters, onClose }) {
+  const sheetRef = fvRef(null);
+  const { COLLECTIONS, TAGS, BOARDS } = data;
+
+  fvEffect(() => {
+    requestAnimationFrame(() => {
+      if (sheetRef.current) sheetRef.current.style.transform = 'translateY(0)';
+    });
+  }, []);
+
+  function handleClose() {
+    if (sheetRef.current) {
+      sheetRef.current.style.transform = 'translateY(100%)';
+      setTimeout(onClose, 280);
+    } else {
+      onClose();
+    }
+  }
+
+  const hasFilters = activeTags.size > 0 || activeBoards.size > 0;
+
+  return (
+    <div
+      ref={sheetRef}
+      role="dialog"
+      aria-modal="true"
+      style={{
+        position: 'fixed', bottom: 0, left: 0, right: 0,
+        zIndex: 101,
+        background: 'var(--surface-0)',
+        borderRadius: '16px 16px 0 0',
+        borderTop: '1px solid var(--border)',
+        boxShadow: '0 -8px 40px rgba(16,12,42,0.12)',
+        maxHeight: '72vh',
+        display: 'flex', flexDirection: 'column',
+        transform: 'translateY(100%)',
+        transition: 'transform 0.28s cubic-bezier(0.22,0.61,0.36,1)',
+        fontFamily: 'var(--sans)',
+      }}
+    >
+      {/* Drag handle */}
+      <div style={{ display: 'flex', justifyContent: 'center', padding: '12px 0 4px' }}>
+        <div style={{ width: 36, height: 4, borderRadius: 2, background: 'var(--border)' }} />
+      </div>
+
+      {/* Header */}
+      <div style={{ display: 'flex', alignItems: 'center', padding: '0 16px 12px', gap: 8 }}>
+        <span style={{ flex: 1, fontSize: 15, fontWeight: 600, color: 'var(--text)' }}>Filter</span>
+        {hasFilters && (
+          <button
+            onClick={clearFilters}
+            style={{
+              fontFamily: 'var(--sans)', fontSize: 12,
+              color: 'var(--accent)', background: 'none', border: 'none',
+              cursor: 'pointer', padding: '2px 4px', borderRadius: 3,
+            }}
+          >
+            Clear all
+          </button>
+        )}
+        <button
+          onClick={handleClose}
+          aria-label="Close filters"
+          style={{
+            background: 'none', border: 'none', cursor: 'pointer',
+            display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+            color: 'var(--text-3)', fontSize: 18, padding: '4px', borderRadius: 4,
+          }}
+          onMouseEnter={e => { e.currentTarget.style.color = 'var(--text)'; }}
+          onMouseLeave={e => { e.currentTarget.style.color = 'var(--text-3)'; }}
+        >
+          <i className="ph ph-x" />
+        </button>
+      </div>
+
+      {/* Scrollable content */}
+      <div style={{ flex: 1, overflowY: 'auto', WebkitOverflowScrolling: 'touch', padding: '0 8px 32px' }}>
+        <FvSidebarSection title="Collections" defaultOpen={true}>
+          {COLLECTIONS.map(c => (
+            <FvSidebarItem
+              key={c.id}
+              icon={c.id === 'all' ? 'all' : 'today'}
+              label={c.name}
+              count={c.count}
+              active={activeCollection === c.id}
+              onClick={() => setActiveCollection(c.id)}
+            />
+          ))}
+        </FvSidebarSection>
+
+        <FvSidebarSection title={`Tags · ${TAGS.length}`}>
+          {TAGS.map(t => (
+            <button key={t.name} onClick={() => toggleTag(t.name)}
+              style={{
+                display: 'flex', alignItems: 'center', gap: 8,
+                width: '100%', minWidth: 0, overflow: 'hidden', padding: '4px 8px',
+                background: activeTags.has(t.name) ? 'var(--surface-2)' : 'transparent',
+                border: 'none', borderRadius: 4, cursor: 'pointer', textAlign: 'left',
+              }}
+            >
+              <FeedChipTag tag={t} size="xs" />
+              <span style={{ flex: 1 }} />
+              <span style={{ fontFamily: 'var(--sans)', fontVariantNumeric: 'tabular-nums', fontSize: 10.5, color: 'var(--text-3)' }}>
+                {t.count}
+              </span>
+            </button>
+          ))}
+        </FvSidebarSection>
+
+        <FvSidebarSection title={`Boards · ${BOARDS.length}`}>
+          {BOARDS.map(b => (
+            <button key={b.name} onClick={() => toggleBoard(b.name)}
+              style={{
+                display: 'flex', alignItems: 'center', gap: 8,
+                width: '100%', minWidth: 0, overflow: 'hidden', padding: '4px 8px',
+                background: activeBoards.has(b.name) ? 'var(--surface-2)' : 'transparent',
+                border: 'none', borderRadius: 4, cursor: 'pointer', textAlign: 'left',
+              }}
+            >
+              <span style={{
+                display: 'inline-flex', alignItems: 'center', gap: 4,
+                background: 'var(--surface-2)', color: 'var(--text-2)',
+                fontFamily: 'var(--sans)', fontSize: 10.5, fontWeight: 500,
+                padding: '1px 6px', borderRadius: 3, whiteSpace: 'nowrap', lineHeight: 1.4,
+              }}>
+                {b.name}
+              </span>
+              <span style={{ flex: 1 }} />
+              <span style={{ fontFamily: 'var(--sans)', fontVariantNumeric: 'tabular-nums', fontSize: 10.5, color: 'var(--text-3)' }}>
+                {b.count}
+              </span>
+            </button>
+          ))}
+        </FvSidebarSection>
+      </div>
+    </div>
+  );
+}
+
+function FvMobileLandscapeLayout({ filtered, data, activeCollection, activeTags, activeBoards, sortKey, sortDir, handleSort, onOpenFilters, clearFilters }) {
+  const { COLLECTIONS } = data;
+  const totalActiveFilters = activeTags.size + activeBoards.size;
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', height: '100%', background: 'var(--surface-0)', color: 'var(--text)', fontFamily: 'var(--sans)', fontSize: 13 }}>
+      {/* Topbar */}
+      <header style={{
+        display: 'flex', alignItems: 'center', gap: 10,
+        padding: '0 14px', borderBottom: '1px solid var(--border)', height: 48, flexShrink: 0,
+      }}>
+        <span style={{ fontFamily: 'var(--sans)', fontSize: 13, fontWeight: 600, color: 'var(--text)' }}>
+          {COLLECTIONS.find(c => c.id === activeCollection)?.name || 'All posts'}
+        </span>
+        <span style={{ fontFamily: 'var(--sans)', fontVariantNumeric: 'tabular-nums', fontSize: 11, color: 'var(--text-3)' }}>
+          {filtered.length}
+        </span>
+        {totalActiveFilters > 0 && (
+          <button
+            onClick={clearFilters}
+            style={{
+              fontFamily: 'var(--sans)', fontSize: 11.5,
+              color: 'var(--accent)', background: 'none', border: 'none',
+              cursor: 'pointer', padding: '2px 4px',
+            }}
+          >
+            Clear filters ×
+          </button>
+        )}
+        <span style={{ flex: 1 }} />
+        <button
+          onClick={onOpenFilters}
+          style={{
+            display: 'inline-flex', alignItems: 'center', gap: 5,
+            fontFamily: 'var(--sans)', fontSize: 12, fontWeight: 500,
+            color: totalActiveFilters > 0 ? 'var(--accent)' : 'var(--text-3)',
+            background: 'none', border: 'none', cursor: 'pointer',
+            padding: '6px 10px', borderRadius: 6,
+          }}
+          onMouseEnter={e => { e.currentTarget.style.background = 'var(--surface-1)'; }}
+          onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; }}
+        >
+          <i className="ph ph-funnel" style={{ fontSize: 14 }} />
+          Filters
+          {totalActiveFilters > 0 && (
+            <span style={{
+              background: 'var(--accent)', color: '#fff',
+              borderRadius: 999, fontSize: 10, fontWeight: 700,
+              padding: '1px 5px', lineHeight: 1.4,
+            }}>
+              {totalActiveFilters}
+            </span>
+          )}
+        </button>
+      </header>
+
+      {/* Table */}
+      <div style={{ flex: 1, overflowY: 'auto', WebkitOverflowScrolling: 'touch' }}>
+        <FvMobileHeaderRow sortKey={sortKey} sortDir={sortDir} onSort={handleSort} />
+        {filtered.map(p => <FvMobileTableRow key={p.id} post={p} />)}
+        {filtered.length === 0 && (
+          <div style={{
+            padding: '40px 16px', textAlign: 'center',
+            fontFamily: 'var(--sans)', fontSize: 13, color: 'var(--text-3)',
+          }}>
+            No posts match the current filter.
+          </div>
+        )}
+      </div>
+
+      {/* Status bar */}
+      <footer style={{
+        borderTop: '1px solid var(--border)', padding: '0 14px',
+        display: 'flex', alignItems: 'center', gap: 14, height: 28, flexShrink: 0,
+        fontFamily: 'var(--sans)', fontVariantNumeric: 'tabular-nums',
+        fontSize: 10.5, color: 'var(--text-3)',
+      }}>
+        <span>{filtered.length} posts</span>
+        <span style={{ flex: 1 }} />
+        <span>valantic · SAP Blog Tracker</span>
+      </footer>
+    </div>
+  );
+}
+
+// ── Main FeedView ─────────────────────────────────────────────────────────────
+
+function FeedView({ mobileMode = 'desktop' }) {
   const [data, setData]       = fvState(null);
   const [error, setError]     = fvState(null);
   const [activeCollection, setActiveCollection] = fvState('all');
@@ -267,6 +619,7 @@ function FeedView() {
   const [colWidths, setColWidths]               = fvState({ date: 92, title: 0, tags: 200, board: 160, author: 140 });
   const [isResizing, setIsResizing]             = fvState(false);
   const [isFullscreen, setIsFullscreen]         = fvState(false);
+  const [filterSheetOpen, setFilterSheetOpen]   = fvState(false);
 
   fvEffect(() => {
     window.loadFeedData()
@@ -284,6 +637,9 @@ function FeedView() {
     document.body.classList.toggle('pv-feed-locked', isFullscreen);
     return () => document.body.classList.remove('pv-feed-locked');
   }, [isFullscreen]);
+
+  // Close filter sheet when orientation changes mode
+  fvEffect(() => { setFilterSheetOpen(false); }, [mobileMode]);
 
   function handleSort(key) {
     if (sortKey === key) {
@@ -323,6 +679,11 @@ function FeedView() {
     });
   }
 
+  function clearFilters() {
+    setActiveTags(new Set());
+    setActiveBoards(new Set());
+  }
+
   const filtered = fvMemo(() => {
     if (!data) return [];
     let list = data.POSTS;
@@ -350,6 +711,9 @@ function FeedView() {
     return list;
   }, [data, activeCollection, activeTags, activeBoards, sortKey, sortDir]);
 
+  // Portrait — no data needed, render prompt immediately
+  if (mobileMode === 'flip') return <FvMobileFlipPrompt />;
+
   if (error) {
     return (
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', color: 'var(--text-3)', fontFamily: 'var(--sans)', fontSize: 13 }}>
@@ -368,6 +732,51 @@ function FeedView() {
 
   const { COLLECTIONS, TAGS, BOARDS, POSTS } = data;
 
+  const scrimStyle = {
+    position: 'fixed', inset: 0, zIndex: 100,
+    background: 'rgba(16,12,42,0.35)',
+    backdropFilter: 'blur(2px)',
+  };
+
+  const filterSheetEl = filterSheetOpen && (
+    <>
+      <div onClick={() => setFilterSheetOpen(false)} style={scrimStyle} />
+      <FvMobileFilterSheet
+        data={data}
+        activeCollection={activeCollection}
+        setActiveCollection={setActiveCollection}
+        activeTags={activeTags}
+        toggleTag={toggleTag}
+        activeBoards={activeBoards}
+        toggleBoard={toggleBoard}
+        clearFilters={clearFilters}
+        onClose={() => setFilterSheetOpen(false)}
+      />
+    </>
+  );
+
+  // Landscape mobile — simplified 3-column table + filter sheet
+  if (mobileMode === 'table') {
+    return (
+      <>
+        <FvMobileLandscapeLayout
+          filtered={filtered}
+          data={data}
+          activeCollection={activeCollection}
+          activeTags={activeTags}
+          activeBoards={activeBoards}
+          sortKey={sortKey}
+          sortDir={sortDir}
+          handleSort={handleSort}
+          onOpenFilters={() => setFilterSheetOpen(true)}
+          clearFilters={clearFilters}
+        />
+        {filterSheetEl}
+      </>
+    );
+  }
+
+  // Desktop — full two-panel layout
   const mainGrid = (
     <div style={{
       display: 'grid', gridTemplateColumns: `${sidebarW}px 1fr`,
@@ -474,7 +883,7 @@ function FeedView() {
           </span>
           {(activeTags.size > 0 || activeBoards.size > 0) && (
             <button
-              onClick={() => { setActiveTags(new Set()); setActiveBoards(new Set()); }}
+              onClick={clearFilters}
               style={{
                 fontFamily: 'var(--sans)', fontSize: 11.5,
                 color: 'var(--pv-accent)', background: 'none', border: 'none',

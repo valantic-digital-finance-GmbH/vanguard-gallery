@@ -1134,4 +1134,17 @@ a.pv-news-card:hover .pv-news-arrow {
 /* Locks page scroll while feed fullscreen overlay is open */
 body.pv-feed-locked { overflow: hidden; }
 
-/* Table View on narrow viewports is handled in JS (mobile hint shown instead) */
+/* Mobile feed shell — landscape phone / narrow viewport */
+.pv-feed.pv-feed--mobile {
+  height: min(680px, calc(100vh - 120px));
+  min-height: 480px;
+}
+
+/* Portrait phone — shell not used; flip prompt renders inline */
+@media (max-width: 599px) {
+  .pv-feed.pv-feed--mobile {
+    height: calc(100svh - 200px);
+    min-height: 320px;
+    border-radius: 8px;
+  }
+}
