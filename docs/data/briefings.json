@@ -1,5 +1,50 @@
 [
   {
+    "id": "tue-2026-05-19",
+    "weekday": "Tuesday",
+    "iso": "2026-05-19",
+    "full": "May 19, 2026",
+    "title": "SAP Analytics Cloud now features a curated Custom Widget Library for extended functionality.",
+    "preview": "The library introduces new chart types to enhance data visualization capabilities.",
+    "reads": "5 min",
+    "posts": 1,
+    "tags": [
+      "Analytics Cloud"
+    ],
+    "highlights": [
+      "SAP Analytics Cloud now features a curated Custom Widget Library for extended functionality.",
+      "The library introduces new chart types to enhance data visualization capabilities.",
+      "Custom widgets are designed to address specific user needs and expand analytics flexibility."
+    ],
+    "sections": [
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "Introducing the SAP Analytics Cloud Custom Widget Library",
+            "url": "https://community.sap.com/t5/data-and-analytics-blog-posts/introducing-the-sap-analytics-cloud-custom-widget-library/ba-p/14398681",
+            "author": "Michelle_Miley",
+            "date_published": "2026-05-18",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-analyticsblog-board",
+            "board_name": "Data and Analytics Blog Posts",
+            "summary": "The blog introduces a curated library of custom widgets for SAP Analytics Cloud, enabling users to extend its functionality with new chart types. It also explains the motivation behind creating these widgets to enhance data visualization capabilities.",
+            "post_type": "Release"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "mon-2026-05-18",
     "weekday": "Monday",
     "iso": "2026-05-18",
