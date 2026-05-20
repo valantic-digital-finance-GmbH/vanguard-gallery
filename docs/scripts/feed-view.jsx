@@ -937,7 +937,7 @@ function FeedView({ mobileMode = 'desktop' }) {
               Clear filters ×
             </button>
           )}
-          <span style={{ flex: 1 }} />
+          <FvSearchPill value={titleQuery} onChange={setTitleQuery} />
           <button
             onClick={() => setIsFullscreen(f => !f)}
             title={isFullscreen ? 'Exit fullscreen' : 'Fullscreen'}
