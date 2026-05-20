@@ -463,11 +463,12 @@ function FvMobileLandscapeLayout({
   activeBoards, toggleBoard,
   sortKey, sortDir, handleSort,
   clearFilters,
+  titleQuery, setTitleQuery,
   isFullscreen, onToggleFullscreen,
 }) {
   const [filterPaneOpen, setFilterPaneOpen] = fvState(false);
   const { COLLECTIONS, TAGS, BOARDS } = data;
-  const totalActiveFilters = activeTags.size + activeBoards.size;
+  const totalActiveFilters = activeTags.size + activeBoards.size + (titleQuery.trim() ? 1 : 0);
   const gridTemplate = isFullscreen ? FV_MOBILE_GRID_FULLSCREEN : FV_MOBILE_GRID;
 
   const badgeStyle = {
@@ -503,7 +504,7 @@ function FvMobileLandscapeLayout({
             Clear filters ×
           </button>
         )}
-        <span style={{ flex: 1 }} />
+        <FvSearchPill value={titleQuery} onChange={setTitleQuery} />
 
         {/* Filter pane toggle */}
         <button
@@ -793,6 +794,8 @@ function FeedView({ mobileMode = 'desktop' }) {
         sortDir={sortDir}
         handleSort={handleSort}
         clearFilters={clearFilters}
+        titleQuery={titleQuery}
+        setTitleQuery={setTitleQuery}
         isFullscreen={isFullscreen}
         onToggleFullscreen={() => setIsFullscreen(f => !f)}
       />
