@@ -485,6 +485,7 @@ function FvMobileLandscapeLayout({
         display: 'flex', alignItems: 'center', gap: 8,
         padding: isFullscreen ? '0 4px' : '0 10px 0 14px',
         borderBottom: '1px solid var(--border)', height: 48, flexShrink: 0,
+        position: 'relative',
       }}>
         <span style={{ fontFamily: 'var(--sans)', fontSize: 13, fontWeight: 600, color: 'var(--text)' }}>
           {COLLECTIONS.find(c => c.id === activeCollection)?.name || 'All posts'}
@@ -504,7 +505,13 @@ function FvMobileLandscapeLayout({
             Clear filters ×
           </button>
         )}
-        <FvSearchPill value={titleQuery} onChange={setTitleQuery} />
+        <div style={{
+          position: 'absolute', left: '50%', transform: 'translateX(-50%)',
+          width: 220, display: 'flex', alignItems: 'center',
+        }}>
+          <FvSearchPill value={titleQuery} onChange={setTitleQuery} />
+        </div>
+        <span style={{ flex: 1 }} />
 
         {/* Filter pane toggle */}
         <button
@@ -921,6 +928,7 @@ function FeedView({ mobileMode = 'desktop' }) {
         <header style={{
           display: 'flex', alignItems: 'center', gap: 10,
           padding: '10px 16px', borderBottom: '1px solid var(--border)', height: 44,
+          position: 'relative',
         }}>
           <span style={{ fontFamily: 'var(--sans)', fontSize: 13, fontWeight: 600, color: 'var(--text)' }}>
             {COLLECTIONS.find(c => c.id === activeCollection)?.name || 'All posts'}
@@ -940,7 +948,13 @@ function FeedView({ mobileMode = 'desktop' }) {
               Clear filters ×
             </button>
           )}
-          <FvSearchPill value={titleQuery} onChange={setTitleQuery} />
+          <div style={{
+            position: 'absolute', left: '50%', transform: 'translateX(-50%)',
+            width: 280, display: 'flex', alignItems: 'center',
+          }}>
+            <FvSearchPill value={titleQuery} onChange={setTitleQuery} />
+          </div>
+          <span style={{ flex: 1 }} />
           <button
             onClick={() => setIsFullscreen(f => !f)}
             title={isFullscreen ? 'Exit fullscreen' : 'Fullscreen'}
