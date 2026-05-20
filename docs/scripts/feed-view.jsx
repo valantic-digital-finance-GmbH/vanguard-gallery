@@ -408,6 +408,54 @@ function FvMobileHeaderRow({ sortKey, sortDir, onSort, gridTemplate = FV_MOBILE_
   );
 }
 
+function FvSearchPill({ value, onChange, placeholder }) {
+  placeholder = placeholder || 'Filter by title\u2026';
+  const [focused, fvSetFocused] = fvState(false);
+  return (
+    <label style={{
+      display: 'flex', alignItems: 'center', gap: 6,
+      flex: 1, maxWidth: 420, minWidth: 180,
+      padding: '0 8px', height: 28, borderRadius: 999,
+      border: `1px solid ${focused ? 'var(--accent, var(--pv-accent))' : 'var(--border)'}`,
+      background: 'var(--surface-1)',
+      transition: 'border-color .15s',
+      cursor: 'text',
+      boxSizing: 'border-box',
+    }}>
+      <i className="ph ph-magnifying-glass" style={{ fontSize: 13, color: 'var(--text-3)', flexShrink: 0 }} />
+      <input
+        type="text"
+        value={value}
+        onChange={e => onChange(e.target.value)}
+        onFocus={() => fvSetFocused(true)}
+        onBlur={() => fvSetFocused(false)}
+        placeholder={placeholder}
+        style={{
+          flex: 1, minWidth: 0,
+          background: 'none', border: 'none', outline: 'none',
+          fontFamily: 'var(--sans)', fontSize: 12.5, color: 'var(--text)',
+          padding: 0,
+        }}
+      />
+      {value && (
+        <button
+          onClick={() => onChange('')}
+          tabIndex={-1}
+          style={{
+            background: 'none', border: 'none', cursor: 'pointer',
+            color: 'var(--text-3)', fontSize: 12, padding: '0 2px',
+            display: 'inline-flex', alignItems: 'center', flexShrink: 0,
+          }}
+          onMouseEnter={e => { e.currentTarget.style.color = 'var(--text)'; }}
+          onMouseLeave={e => { e.currentTarget.style.color = 'var(--text-3)'; }}
+        >
+          ×
+        </button>
+      )}
+    </label>
+  );
+}
+
 function FvMobileLandscapeLayout({
   filtered, data,
   activeCollection, setActiveCollection,
