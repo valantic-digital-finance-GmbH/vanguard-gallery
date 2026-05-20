@@ -414,7 +414,7 @@ function FvSearchPill({ value, onChange, placeholder }) {
   return (
     <label style={{
       display: 'flex', alignItems: 'center', gap: 6,
-      flex: 1, maxWidth: 420, minWidth: 180,
+      flex: 1, minWidth: 180,
       padding: '0 8px', height: 28, borderRadius: 999,
       border: `1px solid ${focused ? 'var(--accent, var(--pv-accent))' : 'var(--border)'}`,
       background: 'var(--surface-1)',
@@ -507,7 +507,7 @@ function FvMobileLandscapeLayout({
         )}
         <div style={{
           position: 'absolute', left: '50%', transform: 'translateX(-50%)',
-          width: 220, display: 'flex', alignItems: 'center',
+          width: 'clamp(140px, calc(100% - 240px), 440px)', display: 'flex', alignItems: 'center',
         }}>
           <FvSearchPill value={titleQuery} onChange={setTitleQuery} />
         </div>
@@ -950,7 +950,7 @@ function FeedView({ mobileMode = 'desktop' }) {
           )}
           <div style={{
             position: 'absolute', left: '50%', transform: 'translateX(-50%)',
-            width: 280, display: 'flex', alignItems: 'center',
+            width: 'clamp(160px, calc(100% - 320px), 600px)', display: 'flex', alignItems: 'center',
           }}>
             <FvSearchPill value={titleQuery} onChange={setTitleQuery} />
           </div>
