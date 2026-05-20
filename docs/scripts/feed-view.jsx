@@ -662,6 +662,7 @@ function FeedView({ mobileMode = 'desktop' }) {
   const [colWidths, setColWidths]               = fvState({ date: 92, title: 0, tags: 200, board: 160, author: 140 });
   const [isResizing, setIsResizing]             = fvState(false);
   const [isFullscreen, setIsFullscreen]         = fvState(false);
+  const [titleQuery, setTitleQuery]             = fvState('');
 
   fvEffect(() => {
     window.loadFeedData()
@@ -721,6 +722,7 @@ function FeedView({ mobileMode = 'desktop' }) {
   function clearFilters() {
     setActiveTags(new Set());
     setActiveBoards(new Set());
+    setTitleQuery('');
   }
 
   const filtered = fvMemo(() => {
@@ -735,6 +737,10 @@ function FeedView({ mobileMode = 'desktop' }) {
     if (activeBoards.size > 0) {
       list = list.filter(p => p.board && activeBoards.has(p.board.name));
     }
+    if (titleQuery.trim()) {
+      const q = titleQuery.trim().toLowerCase();
+      list = list.filter(p => p.title.toLowerCase().includes(q));
+    }
     list = [...list];
     const cmp = (() => {
       if (sortKey === 'date')   return (a, b) => a.date.localeCompare(b.date);
@@ -748,7 +754,7 @@ function FeedView({ mobileMode = 'desktop' }) {
     if (sortKey === 'date') { if (sortDir === 'desc') list.reverse(); }
     else if (sortDir === 'desc') list.reverse();
     return list;
-  }, [data, activeCollection, activeTags, activeBoards, sortKey, sortDir]);
+  }, [data, activeCollection, activeTags, activeBoards, sortKey, sortDir, titleQuery]);
 
   // Portrait — render prompt without loading data
   if (mobileMode === 'flip') return <FvMobileFlipPrompt />;
@@ -919,7 +925,7 @@ function FeedView({ mobileMode = 'desktop' }) {
           <span style={{ fontFamily: 'var(--sans)', fontVariantNumeric: 'tabular-nums', fontSize: 11, color: 'var(--text-3)' }}>
             {filtered.length}
           </span>
-          {(activeTags.size > 0 || activeBoards.size > 0) && (
+          {(activeTags.size > 0 || activeBoards.size > 0 || titleQuery.trim().length > 0) && (
             <button
               onClick={clearFilters}
               style={{
