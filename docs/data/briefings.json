@@ -1,5 +1,86 @@
 [
   {
+    "id": "wed-2026-05-20",
+    "weekday": "Wednesday",
+    "iso": "2026-05-20",
+    "full": "May 20, 2026",
+    "title": "New SDK capabilities for SAC custom widgets introduce advanced filtering options, including Filter by Range for dates and Filter by Condition with operators like Contains and Starts With.",
+    "preview": "SAP Sapphire 2026 featured engaging sessions, including a presentation on SAP HANA Cloud and interactive discussions at the HANA Cloud booth.",
+    "reads": "11 min",
+    "posts": 3,
+    "tags": [
+      "Analytics Cloud",
+      "Business Data Cloud"
+    ],
+    "highlights": [
+      "New SDK capabilities for SAC custom widgets introduce advanced filtering options, including Filter by Range for dates and Filter by Condition with operators like Contains and Starts With.",
+      "SAP Sapphire 2026 featured engaging sessions, including a presentation on SAP HANA Cloud and interactive discussions at the HANA Cloud booth.",
+      "The blog reflects on meaningful exchanges with data professionals, offering insights and solutions for database challenges during the event."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "A Look Back on my SAP Sapphire 2026 Experience",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/a-look-back-on-my-sap-sapphire-2026-experience/ba-p/14399365",
+            "author": "Daniel_Dukes",
+            "date_published": "2026-05-19",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts",
+            "summary": "The author reflects on their experience at SAP Sapphire 2026 in Orlando, highlighting their involvement in presenting an SAP HANA Cloud session and engaging with data professionals at the HANA Cloud booth. They shared insights, answered questions, and discussed database solutions during the event. The post provides a recap of their activities and interactions.",
+            "post_type": "Event"
+          },
+          {
+            "title": "Unpacking SAP Business Data Cloud for Solution Architects",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/unpacking-sap-business-data-cloud-for-solution-architects/ba-p/14399221",
+            "author": "JoseBastidas",
+            "date_published": "2026-05-19",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "New SDK Capabilities: Filter by Range and Filter by Condition for SAC Custom Widgets",
+            "url": "https://community.sap.com/t5/data-and-analytics-blog-posts/new-sdk-capabilities-filter-by-range-and-filter-by-condition-for-sac-custom/ba-p/14398681",
+            "author": "Michelle_Miley",
+            "date_published": "2026-05-18",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-analyticsblog-board",
+            "board_name": "Data and Analytics Blog Posts",
+            "summary": "The blog highlights new SDK capabilities for SAC custom widgets, enabling advanced filtering options. These include Filter by Range for date dimensions and Filter by Condition with various operators like Contains and Starts With.",
+            "post_type": "Release"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "tue-2026-05-19",
     "weekday": "Tuesday",
     "iso": "2026-05-19",
