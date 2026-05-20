@@ -950,7 +950,7 @@ function FeedView({ mobileMode = 'desktop' }) {
           )}
           <div style={{
             position: 'absolute', left: '50%', transform: 'translateX(-50%)',
-            width: 'clamp(160px, calc(100% - 320px), 600px)', display: 'flex', alignItems: 'center',
+            width: `clamp(160px, calc(100% - 320px), ${isFullscreen ? '1200px' : '600px'})`, display: 'flex', alignItems: 'center',
           }}>
             <FvSearchPill value={titleQuery} onChange={setTitleQuery} />
           </div>
