@@ -4,24 +4,240 @@
     "weekday": "Thursday",
     "iso": "2026-05-21",
     "full": "May 21, 2026",
-    "title": "Learn how to build a configurable, reusable navigation bar in SAP Analytics Cloud using composite widgets for dynamic rendering and centralized control.",
-    "preview": "The navigation bar approach enables customizable navigation across multiple SAC stories through styling and scripting techniques.",
-    "reads": "65 min",
-    "posts": 17,
+    "title": "The SAP Business AI Platform integrates business context into AI models while emphasizing data access, security, governance, and compliance.",
+    "preview": "Core components of the SAP Business AI Platform align with the vision of the Autonomous Enterprise.",
+    "reads": "50 min",
+    "posts": 18,
     "tags": [
-      "Analytics Cloud",
-      "Datasphere",
-      "Business Data Cloud",
-      "SAC Planning",
-      "SAC Modeling"
+      "Business AI",
+      "Business Data Cloud"
     ],
     "highlights": [
-      "Learn how to build a configurable, reusable navigation bar in SAP Analytics Cloud using composite widgets for dynamic rendering and centralized control.",
-      "The navigation bar approach enables customizable navigation across multiple SAC stories through styling and scripting techniques.",
-      "Discourage exporting data to Excel in SAP Analytics Cloud by promoting native analytics and reporting capabilities.",
-      "Encourage users to adopt SAC's built-in features over traditional spreadsheet workflows for enhanced efficiency and functionality."
+      "The SAP Business AI Platform integrates business context into AI models while emphasizing data access, security, governance, and compliance.",
+      "Core components of the SAP Business AI Platform align with the vision of the Autonomous Enterprise.",
+      "An 11-part webinar series, 'Architecting the Autonomous Enterprise,' targets architects and covers topics like Joule Work, the Autonomous Suite, and the Business AI Platform.",
+      "The webinar series runs weekly from June 1 to August 12, 2026, offering insights into SAP's Autonomous Enterprise framework.",
+      "Registration details for the webinar series are available for professionals interested in deepening their understanding of SAP's technologies."
     ],
     "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "SAP Business AI Platform: #2 What Exactly It is and Its Components",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-ai-platform-2-what-exactly-it-is-and-its-components/ba-p/14400724",
+            "author": "Raja_Gupta1",
+            "date_published": "2026-05-21",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "This blog post delves into the SAP Business AI Platform, explaining its core components and how it integrates business context into AI models. It also addresses key aspects like data access, security, governance, and compliance. The post builds on the vision of the Autonomous Enterprise introduced earlier.",
+            "post_type": "Deep dive"
+          },
+          {
+            "title": "New Webinar Series: Architecting the Autonomous Enterprise - for Architects, by Architects",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/new-webinar-series-architecting-the-autonomous-enterprise-for-architects-by/ba-p/14398947",
+            "author": "Gaurish-Dessai",
+            "date_published": "2026-05-19",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "This blog post announces an 11-part webinar series designed for architects, focusing on SAP's Autonomous Enterprise. Topics include Joule Work, the Autonomous Suite, the Business AI Platform, and more, with sessions running weekly from June 1 to August 12, 2026. Registration details are provided for interested participants.",
+            "post_type": "Event"
+          },
+          {
+            "title": "Text Processing in NLP",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/text-processing-in-nlp/ba-p/14398680",
+            "author": "Trupti81",
+            "date_published": "2026-05-19",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": [
+          {
+            "title": "Part 3 - Workflow n8n Integration with Joule Studio",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/part-3-workflow-n8n-integration-with-joule-studio/ba-p/14392294",
+            "author": "Shopithan_Goneswaran",
+            "date_published": "2026-05-15",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "SAP UX Update: The New Joule Work Engagement Layer Experiences",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-ux-update-the-new-joule-work-engagement-layer-experiences/ba-p/14396478",
+            "author": "ThomasReiss",
+            "date_published": "2026-05-14",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "SAP Sapphire 2026 Announcements and What it means to SAP Partner Ecosystem",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-sapphire-2026-announcements-and-what-it-means-to-sap-partner-ecosystem/ba-p/14396232",
+            "author": "Yellareddy",
+            "date_published": "2026-05-14",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "SAP Sapphire 2026 Announcements only",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-sapphire-2026-announcements-only/ba-p/14396190",
+            "author": "Yellareddy",
+            "date_published": "2026-05-14",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "IBM and SAP: Advancing AI Driven Operations in the Era of the Autonomous Enterprise",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/ibm-and-sap-advancing-ai-driven-operations-in-the-era-of-the-autonomous/ba-p/14392125",
+            "author": "Christine13",
+            "date_published": "2026-05-14",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Top 9 takeaways #SAPSapphire 2026",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/top-9-takeaways-sapsapphire-2026/ba-p/14395990",
+            "author": "Senta",
+            "date_published": "2026-05-14",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "SAP Business AI Platform: #1 Autonomous Enterprise - The Vision",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-ai-platform-1-autonomous-enterprise-the-vision/ba-p/14394764",
+            "author": "Raja_Gupta1",
+            "date_published": "2026-05-13",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Why Software Today Feels Like the Auto Industry Before Tesla",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/why-software-today-feels-like-the-auto-industry-before-tesla/ba-p/14394160",
+            "author": "winklero",
+            "date_published": "2026-05-12",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Four years of recognition: SAP Signavio again a Leader in the Gartner® Magic Quadrant™",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/four-years-of-recognition-sap-signavio-again-a-leader-in-the-gartner-magic/ba-p/14392475",
+            "author": "Patrizia_Calvia",
+            "date_published": "2026-05-08",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Modern SAP Cloud ERP Security: From Core ERP to BTP, SaaS, and AI",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/modern-sap-cloud-erp-security-from-core-erp-to-btp-saas-and-ai/ba-p/14392369",
+            "author": "Jana_Cyber",
+            "date_published": "2026-05-08",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Sapphire Orlando 2026: Responsible innovation - Joule architecture for security and governance",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sapphire-orlando-2026-responsible-innovation-joule-architecture-for/ba-p/14391237",
+            "author": "sudhakarsingh",
+            "date_published": "2026-05-07",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "SAP Sapphire 2026: Unlocking Next-Level Innovation to AI with SAP Business AI Platform",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-sapphire-2026-unlocking-next-level-innovation-to-ai-with-sap-business/ba-p/14390712",
+            "author": "joanneks",
+            "date_published": "2026-05-06",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Intelligence Without Context Is Just Confidence",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/intelligence-without-context-is-just-confidence/ba-p/14387947",
+            "author": "yoramfriedman",
+            "date_published": "2026-05-04",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          },
+          {
+            "title": "The Whiteboard: Making Supply Chain Reasoning Work for AI",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/the-whiteboard-making-supply-chain-reasoning-work-for-ai/ba-p/14387892",
+            "author": "yoramfriedman",
+            "date_published": "2026-05-04",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ]
+      },
       {
         "name": "SAP Business Data Cloud",
         "tags": [
@@ -29,246 +245,19 @@
         ],
         "top": [
           {
-            "title": "Partner Learning Accelerator: SAP Certified – SAP Business Data Cloud Fast-Track Session",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/partner-learning-accelerator-sap-certified-sap-business-data-cloud-fast/ba-p/14398772",
+            "title": "Planning your transition paths to SAP Business Data Cloud",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/planning-your-transition-paths-to-sap-business-data-cloud/ba-p/14400276",
             "author": "JoseBastidas",
-            "date_published": "2026-05-20",
+            "date_published": "2026-05-21",
             "matching_tags": [
               "SAP Business Data Cloud"
             ],
             "minutes": 5,
             "board_id": "technology-blog-sap",
             "board_name": "Technology Blog Posts by SAP"
-          },
-          {
-            "title": "Delta Replication in SAP Datasphere: From Real-Time to Scheduled Execution with New Enhancements",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/delta-replication-in-sap-datasphere-from-real-time-to-scheduled-execution/ba-p/14395938",
-            "author": "yogen_patil",
-            "date_published": "2026-05-14",
-            "matching_tags": [
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 1,
-            "board_id": "technology-blog-members",
-            "board_name": "Technology Blog Posts by Members"
-          },
-          {
-            "title": "SAP Analytics Cloud - You Want to Export to Excel? Not Today. 🚫📊",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/sap-analytics-cloud-you-want-to-export-to-excel-not-today/ba-p/14389398",
-            "author": "Sebastian_Bock",
-            "date_published": "2026-05-12",
-            "matching_tags": [
-              "SAP Analytics Cloud",
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-members",
-            "board_name": "Technology Blog Posts by Members",
-            "summary": "This blog post provides a step-by-step guide to discourage users from exporting data to Excel in SAP Analytics Cloud. It emphasizes promoting SAC's native capabilities over traditional spreadsheet workflows. The goal is to encourage better adoption of SAC's features for analytics and reporting.",
-            "post_type": "How-to"
           }
         ],
         "rest": []
-      },
-      {
-        "name": "SAP Datasphere",
-        "tags": [
-          "SAP Datasphere"
-        ],
-        "top": [
-          {
-            "title": "Datasphere: To Slash or to Backslash? Resolving the Compound Characteristic Crisis",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/datasphere-to-slash-or-to-backslash-resolving-the-compound-characteristic/ba-p/14399234",
-            "author": "Tano_B",
-            "date_published": "2026-05-19",
-            "matching_tags": [
-              "SAP Analytics Cloud",
-              "SAP Datasphere"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-members",
-            "board_name": "Technology Blog Posts by Members"
-          },
-          {
-            "title": "Cost Optimization in SAP Datasphere",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/cost-optimization-in-sap-datasphere/ba-p/14349279",
-            "author": "Padmanabula",
-            "date_published": "2026-05-06",
-            "matching_tags": [
-              "SAP Datasphere"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-members",
-            "board_name": "Technology Blog Posts by Members"
-          },
-          {
-            "title": "Managing Parent-Child Hierarchies in SAC: A Datasphere-Driven Approach",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/managing-parent-child-hierarchies-in-sac-a-datasphere-driven-approach/ba-p/14384315",
-            "author": "Tano_B",
-            "date_published": "2026-04-28",
-            "matching_tags": [
-              "SAP Analytics Cloud for planning",
-              "SAP Analytics Cloud, data modeling",
-              "SAP Datasphere"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-members",
-            "board_name": "Technology Blog Posts by Members"
-          }
-        ],
-        "rest": [
-          {
-            "title": "Key figure / column based security in Datasphere",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/key-figure-column-based-security-in-datasphere/ba-p/14380611",
-            "author": "appel_solar_dk",
-            "date_published": "2026-04-23",
-            "matching_tags": [
-              "SAP Datasphere"
-            ],
-            "minutes": 1,
-            "board_id": "technology-blog-members",
-            "board_name": "Technology Blog Posts by Members"
-          }
-        ]
-      },
-      {
-        "name": "SAP Analytics Cloud",
-        "tags": [
-          "SAP Analytics Cloud",
-          "SAP Analytics Cloud for planning",
-          "SAP Analytics Cloud, data modeling"
-        ],
-        "top": [
-          {
-            "title": "Building a “Plug-and-Play” Navigation Bar in SAP Analytics Cloud",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/building-a-plug-and-play-navigation-bar-in-sap-analytics-cloud/ba-p/14392304",
-            "author": "r_chaitanya",
-            "date_published": "2026-05-14",
-            "matching_tags": [
-              "SAP Analytics Cloud"
-            ],
-            "minutes": 1,
-            "board_id": "technology-blog-members",
-            "board_name": "Technology Blog Posts by Members",
-            "summary": "The blog explains how to create a configurable navigation bar in SAP Analytics Cloud using a composite widget. It details combining widgets, styling, and scripting to enable centralized control and runtime parameter interpretation for dynamic rendering. The approach allows for reusable and customizable navigation across multiple stories.",
-            "post_type": "How-to"
-          },
-          {
-            "title": "SAP Analytics Cloud Q1 2026 Release: Insights from Hands‑On Experience",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/sap-analytics-cloud-q1-2026-release-insights-from-hands-on-experience/ba-p/14391449",
-            "author": "arshiya__safreen",
-            "date_published": "2026-05-08",
-            "matching_tags": [
-              "SAP Analytics Cloud",
-              "SAP Analytics Cloud for planning",
-              "SAP Analytics Cloud, data modeling"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-members",
-            "board_name": "Technology Blog Posts by Members"
-          },
-          {
-            "title": "SAC Story Versioning— Ability to save different versions of Story inside a single SAC story !!",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/sac-story-versioning-ability-to-save-different-versions-of-story-inside-a/ba-p/14362929",
-            "author": "Ashish_Farkya1",
-            "date_published": "2026-03-31",
-            "matching_tags": [
-              "SAP Analytics Cloud for planning",
-              "SAP Analytics Cloud, data modeling"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-members",
-            "board_name": "Technology Blog Posts by Members"
-          }
-        ],
-        "rest": [
-          {
-            "title": "Beyond Row-Level Security: Implementing Widget-Level Custom Authorization in SAP Analytics Cloud",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/beyond-row-level-security-implementing-widget-level-custom-authorization-in/ba-p/14339344",
-            "author": "VijayBhaskaran",
-            "date_published": "2026-03-31",
-            "matching_tags": [
-              "SAP Analytics Cloud, data modeling"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-members",
-            "board_name": "Technology Blog Posts by Members"
-          },
-          {
-            "title": "Creating a User Input Form in SAP Analytics Cloud (SAC) Using a Planning Model",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/creating-a-user-input-form-in-sap-analytics-cloud-sac-using-a-planning/ba-p/14328557",
-            "author": "Himanshu_Sharma_26",
-            "date_published": "2026-02-19",
-            "matching_tags": [
-              "SAP Analytics Cloud, data modeling"
-            ],
-            "minutes": 1,
-            "board_id": "technology-blog-members",
-            "board_name": "Technology Blog Posts by Members"
-          },
-          {
-            "title": "Displaying SAP Analytics Cloud KPI Tiles from Stories Using REST APIs",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/displaying-sap-analytics-cloud-kpi-tiles-from-stories-using-rest-apis/ba-p/14320914",
-            "author": "Ajay105",
-            "date_published": "2026-02-04",
-            "matching_tags": [
-              "SAP Analytics Cloud, data modeling"
-            ],
-            "minutes": 1,
-            "board_id": "technology-blog-members",
-            "board_name": "Technology Blog Posts by Members"
-          },
-          {
-            "title": "Building a GL Account Hierarchy for SAC Planning with CDS Views - Part 2 ( Building the Hierarchy )",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/building-a-gl-account-hierarchy-for-sac-planning-with-cds-views-part-2/ba-p/14294606",
-            "author": "Siva_Prakash_S",
-            "date_published": "2025-12-24",
-            "matching_tags": [
-              "SAP Analytics Cloud, data modeling"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-members",
-            "board_name": "Technology Blog Posts by Members"
-          },
-          {
-            "title": "Extending an SAP Sample Sankey Custom Widget in SAP Analytics Cloud to Deliver Top-N Hierarchical In",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/extending-an-sap-sample-sankey-custom-widget-in-sap-analytics-cloud-to/ba-p/14295743",
-            "author": "GovindaRaoBanothu45",
-            "date_published": "2025-12-23",
-            "matching_tags": [
-              "SAP Analytics Cloud, data modeling"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-members",
-            "board_name": "Technology Blog Posts by Members"
-          },
-          {
-            "title": "Standard CDS Views that helped me load Master Data for SAC Planning",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/standard-cds-views-that-helped-me-load-master-data-for-sac-planning/ba-p/14293475",
-            "author": "Siva_Prakash_S",
-            "date_published": "2025-12-19",
-            "matching_tags": [
-              "SAP Analytics Cloud, data modeling"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-members",
-            "board_name": "Technology Blog Posts by Members"
-          },
-          {
-            "title": "SAP BTP: Data Fabric",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/sap-btp-data-fabric/ba-p/14288089",
-            "author": "SekhuteTK",
-            "date_published": "2025-12-12",
-            "matching_tags": [
-              "SAP Analytics Cloud, data modeling"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-members",
-            "board_name": "Technology Blog Posts by Members"
-          }
-        ]
       }
     ]
   },
