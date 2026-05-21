@@ -190,7 +190,7 @@ function Briefing({ b, isOpen, onToggle }) {
               </div>
               <div className="pv-rail-row">
                 <span className="k">Issued</span>
-                <span className="v">07:00 CET</span>
+                <span className="v">in the morning</span>
               </div>
             </aside>
             <div className="pv-brief-body">
@@ -223,7 +223,7 @@ function BriefingLog() {
     setOpenId(id => id ?? briefings[0]?.id);
   }, [briefings]);
 
-  const metaLabel = `Showing ${briefings.length} briefings · last issued today, 07:00 CET`;
+  const metaLabel = `Showing ${briefings.length} briefings · last issued this morning`;
 
   return (
     <div>
