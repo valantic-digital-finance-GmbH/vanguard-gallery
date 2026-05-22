@@ -1,5 +1,62 @@
 [
   {
+    "id": "fri-2026-05-22",
+    "weekday": "Friday",
+    "iso": "2026-05-22",
+    "full": "May 22, 2026",
+    "title": "SAP Datasphere’s One Data Catalog uses AI to automate metadata management, solving issues like incomplete metadata and inconsistent classifications.",
+    "preview": "The tool supports compliance teams facing regulatory pressures by improving data governance at scale.",
+    "reads": "6 min",
+    "posts": 2,
+    "tags": [
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [
+      "SAP Datasphere’s One Data Catalog uses AI to automate metadata management, solving issues like incomplete metadata and inconsistent classifications.",
+      "The tool supports compliance teams facing regulatory pressures by improving data governance at scale.",
+      "A global pharmaceutical company successfully used One Data Catalog for audit preparation, showcasing its practical benefits."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "One Data Catalog: AI-Powered Metadata and Search for Better Data Governance",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/one-data-catalog-ai-powered-metadata-and-search-for-better-data-governance/ba-p/14401409",
+            "author": "Corrie",
+            "date_published": "2026-05-22",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts",
+            "summary": "The blog post discusses how SAP Datasphere’s One Data Catalog leverages AI to automate metadata management, addressing challenges like incomplete metadata and inconsistent classifications. It highlights the benefits for compliance teams under regulatory pressure and provides a real-world example of its application in a global pharmaceutical company's audit preparation. This AI-driven approach enhances data governance at enterprise scale.",
+            "post_type": "Article"
+          },
+          {
+            "title": "Embracing AI for planning and analysis in SAP Business Data Cloud",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/embracing-ai-for-planning-and-analysis-in-sap-business-data-cloud/ba-p/14400344",
+            "author": "JoseBastidas",
+            "date_published": "2026-05-21",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "thu-2026-05-21",
     "weekday": "Thursday",
     "iso": "2026-05-21",
