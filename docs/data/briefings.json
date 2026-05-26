@@ -1,5 +1,59 @@
 [
   {
+    "id": "tue-2026-05-26",
+    "weekday": "Tuesday",
+    "iso": "2026-05-26",
+    "full": "May 26, 2026",
+    "title": "SAP Datasphere enables the creation of cost center hierarchy analytical models for streamlined financial analysis.",
+    "preview": "The new SAP Snowflake integration enhances data connectivity and analytics capabilities within the SAP Business Data Cloud.",
+    "reads": "10 min",
+    "posts": 2,
+    "tags": [
+      "Business Data Cloud"
+    ],
+    "highlights": [
+      "SAP Datasphere enables the creation of cost center hierarchy analytical models for streamlined financial analysis.",
+      "The new SAP Snowflake integration enhances data connectivity and analytics capabilities within the SAP Business Data Cloud.",
+      "General availability of the SAP Snowflake connector simplifies access to enterprise data for advanced insights.",
+      "SAP continues to expand its ecosystem with tools that bridge data silos and improve decision-making processes."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Building a Cost Center Hierarchy Analytical Model in SAP Datasphere",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/building-a-cost-center-hierarchy-analytical-model-in-sap-datasphere/ba-p/14403638",
+            "author": "Siva",
+            "date_published": "2026-05-26",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          },
+          {
+            "title": "Announcing General Availability of SAP Snowflake and SAP Business Data Cloud Connect for Snowflake",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/announcing-general-availability-of-sap-snowflake-and-sap-business-data/ba-p/14386550",
+            "author": "hozumi",
+            "date_published": "2026-05-25",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "mon-2026-05-25",
     "weekday": "Monday",
     "iso": "2026-05-25",
@@ -3361,74 +3415,6 @@
             "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/%E6%96%B0%E5%8A%9F%E8%83%BD%E8%AF%A6%E8%A7%A3-%E4%BD%BF%E7%94%A8housekeeping%E5%9C%A8sap-%E5%88%86%E6%9E%90%E4%BA%91%E7%B3%BB%E7%BB%9F%E4%B8%AD%E9%AB%98%E6%95%88%E7%BB%B4%E6%8A%A4%E6%95%B0%E6%8D%AE/ba-p/14097042",
             "author": "Simon_Hwang",
             "date_published": "2025-05-09",
-            "matching_tags": [
-              "SAP Analytics Cloud"
-            ],
-            "minutes": 5
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "tue-2025-04-22",
-    "weekday": "Tuesday",
-    "iso": "2025-04-22",
-    "full": "Apr 22, 2025",
-    "title": "4 SAP blog posts.",
-    "preview": "4 SAP blog posts.",
-    "reads": "16 min",
-    "posts": 4,
-    "tags": [
-      "Analytics Cloud"
-    ],
-    "highlights": [],
-    "sections": [
-      {
-        "name": "SAP Analytics Cloud",
-        "tags": [
-          "SAP Analytics Cloud",
-          "SAP Analytics Cloud for planning",
-          "SAP Analytics Cloud, data modeling"
-        ],
-        "top": [
-          {
-            "title": "How to send an email from a SAP Analytics Cloud graph/table, passing through the values",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-send-an-email-from-a-sap-analytics-cloud-graph-table-passing-through/ba-p/14003104",
-            "author": "florian_hamon",
-            "date_published": "2025-04-22",
-            "matching_tags": [
-              "SAP Analytics Cloud"
-            ],
-            "minutes": 5
-          },
-          {
-            "title": "Efficient Data Maintenance in SAP Analytics Cloud System Overview - Housekeeping",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/efficient-data-maintenance-in-sap-analytics-cloud-system-overview/ba-p/14057374",
-            "author": "thomas_fery",
-            "date_published": "2025-04-11",
-            "matching_tags": [
-              "SAP Analytics Cloud"
-            ],
-            "minutes": 1
-          }
-        ],
-        "rest": [
-          {
-            "title": "Introducing the Gantt Chart Custom Widget for SAP Analytics Cloud",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/introducing-the-gantt-chart-custom-widget-for-sap-analytics-cloud/ba-p/14055045",
-            "author": "alexander_khobotov",
-            "date_published": "2025-04-08",
-            "matching_tags": [
-              "SAP Analytics Cloud"
-            ],
-            "minutes": 5
-          },
-          {
-            "title": "Strategy for troubleshooting network performance issues in SAP Analytics Cloud (SAC)",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/strategy-for-troubleshooting-network-performance-issues-in-sap-analytics/ba-p/14054830",
-            "author": "nik_beliakov",
-            "date_published": "2025-04-08",
             "matching_tags": [
               "SAP Analytics Cloud"
             ],
