@@ -12,5 +12,5 @@
     "Searchable Gantt chart and change timeline on a GitHub Pages site"
   ],
   "stack": "Python · Playwright · D3.js · GitHub Actions",
-  "art": "sap"
+  "image": "assets/usecases/sap-roadmap-explorer/preview.svg"
 }
