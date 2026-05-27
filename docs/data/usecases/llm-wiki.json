@@ -1,0 +1,16 @@
+{
+  "id": "llm-wiki",
+  "order": 5,
+  "title": "LLM Personal Wiki",
+  "tag": "Knowledge ops",
+  "icon": "ph-brain",
+  "repo": "https://github.com/valantic-digital-finance-GmbH/llm-wiki",
+  "description": "Your AI conversations compile themselves into a searchable knowledge base. Claude Code hooks capture every session and extract decisions, patterns, and lessons into cross-referenced markdown articles.",
+  "benefits": [
+    "Zero-effort capture via SessionEnd and PreCompact hooks",
+    "Index-guided retrieval beats RAG at personal scale — no vector DB needed",
+    "Shared memory across Claude Code and GitHub Copilot CLI"
+  ],
+  "stack": "Claude · Python · Claude Agent SDK · Obsidian",
+  "image": "https://valantic-digital-finance-GmbH.github.io/vanguard-gallery/assets/usecases/llm-wiki/preview.svg"
+}
