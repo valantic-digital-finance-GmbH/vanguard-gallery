@@ -88,6 +88,9 @@ async function loadFeedData() {
   const pad = n => String(n).padStart(2, '0');
   const isoLocal = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
   const todayStr = isoLocal(now);
+  const yesterday = new Date(now);
+  yesterday.setDate(now.getDate() - 1);
+  const yesterdayStr = isoLocal(yesterday);
   const dayIdx = (now.getDay() + 6) % 7;   // 0 = Monday (ISO week)
   const weekStart = new Date(now);
   weekStart.setDate(now.getDate() - dayIdx);
@@ -106,7 +109,7 @@ async function loadFeedData() {
       title: p.title || '(no title)',
       url: p.url || '',
       date,
-      inToday: date === todayStr,
+      inYesterday: date === yesterdayStr,
       inWeek:  date >= weekStartStr && date <= todayStr,
       inMonth: date.startsWith(monthPrefix) && date <= todayStr,
       tags,
@@ -121,7 +124,7 @@ async function loadFeedData() {
 
   const COLLECTIONS = [
     { id: 'all',   name: 'All posts',  count: POSTS.length },
-    { id: 'today', name: 'Today',      count: POSTS.filter(p => p.inToday).length },
+    { id: 'yesterday', name: 'Yesterday',  count: POSTS.filter(p => p.inYesterday).length },
     { id: 'wk',    name: 'This week',  count: POSTS.filter(p => p.inWeek).length },
     { id: 'month', name: 'This month', count: POSTS.filter(p => p.inMonth).length },
   ];

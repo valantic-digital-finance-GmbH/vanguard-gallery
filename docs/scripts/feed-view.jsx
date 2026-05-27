@@ -736,7 +736,7 @@ function FeedView({ mobileMode = 'desktop' }) {
   const filtered = fvMemo(() => {
     if (!data) return [];
     let list = data.POSTS;
-    if (activeCollection === 'today') list = list.filter(p => p.inToday);
+    if (activeCollection === 'yesterday') list = list.filter(p => p.inYesterday);
     if (activeCollection === 'wk')    list = list.filter(p => p.inWeek);
     if (activeCollection === 'month') list = list.filter(p => p.inMonth);
     if (activeTags.size > 0) {
