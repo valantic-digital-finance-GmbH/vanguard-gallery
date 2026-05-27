@@ -98,6 +98,7 @@
     "tag": "Knowledge ops",
     "icon": "ph-chart-line-up",
     "repo": "https://github.com/valantic-digital-finance-GmbH/sap-roadmap-explorer",
+    "href": "sap-roadmap.html",
     "description": "Automated daily tracking of SAP product roadmap changes — additions, deletions, and delivery-quarter shifts — with Markdown reports and a static preview site.",
     "benefits": [
       "Detects roadmap changes across 3 SAP products every morning at 03:00 UTC",
@@ -105,6 +106,6 @@
       "Searchable Gantt chart and change timeline on a GitHub Pages site"
     ],
     "stack": "Python · Playwright · D3.js · GitHub Actions",
-    "image": "assets/usecases/sap-roadmap-explorer/preview.svg"
+    "image": "https://valantic-digital-finance-GmbH.github.io/vanguard-gallery/assets/usecases/sap-roadmap-explorer/preview.svg"
   }
 ]
