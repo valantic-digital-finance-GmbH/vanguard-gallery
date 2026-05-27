@@ -1,0 +1,3942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>SAP Roadmap Tracker · Project Vanguard</title>
+  <link rel="stylesheet" href="fonts/valantic-fonts.css">
+  <link rel="stylesheet" href="assets/icons/phosphor.css">
+  <link rel="stylesheet" href="styles/site.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/roadmap/styles/site.css">
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body data-screen-label="SAP Roadmap Tracker">
+  <div id="header"></div>
+
+  <main>
+    <section class="pv-page-hero">
+      <div class="pv-container">
+        <div class="pv-page-hero-grid">
+          <div>
+            <span class="pv-eyebrow">Use case · live</span>
+            <h1>SAP Roadmap Tracker.</h1>
+            <p>Live snapshot of SAP product roadmaps across Analytics Cloud, Datasphere, and Business Data Cloud — updated daily at 03:00 UTC. Filter by product, quarter, or slipped items to track delivery changes.</p>
+            <div style="margin-top: 28px; display: flex; gap: 12px; flex-wrap: wrap;">
+              <a class="pv-btn pv-btn-primary" href="https://github.com/valantic-digital-finance-GmbH/sap-roadmap-explorer" target="_blank" rel="noopener noreferrer">
+                <i class="ph ph-github-logo"></i> View repository
+              </a>
+              <a class="pv-btn pv-btn-secondary" href="index.html#use-cases">
+                <i class="ph ph-arrow-left"></i> Back to all use cases
+              </a>
+            </div>
+          </div>
+          <aside class="pv-page-hero-aside" aria-label="Tracker meta">
+            <div class="pv-page-hero-aside-row">
+              <span class="k">STATUS</span>
+              <span class="v live">Live · daily</span>
+            </div>
+            <div class="pv-page-hero-aside-row">
+              <span class="k">CADENCE</span>
+              <span class="v">Every day · 03:00 UTC</span>
+            </div>
+            <div class="pv-page-hero-aside-row">
+              <span class="k">COVERAGE</span>
+              <span class="v">3 SAP products</span>
+            </div>
+            <div class="pv-page-hero-aside-row">
+              <span class="k">SOURCE</span>
+              <span class="v">roadmaps.sap.com</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="pv-roadmap-viewer">
+      <div class="pv-container">
+        
+<header class="toolbar">
+<span class="toolbar-brand">SAP Roadmap <span>Tracker</span></span>
+<div class="legend">
+<div class="leg"><div class="leg-dot" style="background:#3b82f6"></div> Planned</div>
+<div class="leg"><div class="leg-dot" style="background:#64748b"></div> Delivered</div>
+<div class="leg"><div class="leg-dot" style="background:#ef4444"></div> Slipped</div>
+</div>
+<span class="filter-label">Product</span>
+<select class="filter-select" id="product-filter">
+<option value="">All Products</option>
+<option value="sap-analytics-cloud">SAP Analytics Cloud</option>
+<option value="sap-business-data-cloud">SAP Business Data Cloud</option>
+<option value="sap-datasphere">SAP Datasphere</option>
+</select>
+<button class="slip-toggle active" id="slip-toggle">
+<span class="dot"></span> Show Slipped Items
+  </button>
+<button class="slip-toggle" id="slipped-only-toggle" style="margin-left:8px">
+<span class="dot"></span> Slipped Only
+  </button>
+</header>
+<div class="tab-bar">
+<button class="tab-btn active" data-tab="board">📋 Board</button>
+<button class="tab-btn" data-tab="shifts">🔀 Date Shifts</button>
+</div>
+<div class="tab-panel active" id="board-panel">
+<div class="board-wrap" id="board">
+<div class="empty-state"><p>Loading…</p></div>
+</div>
+</div>
+<div class="tab-panel" id="shifts-panel">
+<div class="shifts-table-container">
+<table class="shifts-table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Item</th>
+<th>Product</th>
+<th>Old Quarter</th>
+<th>New Quarter</th>
+<th>Direction</th>
+</tr>
+</thead>
+<tbody id="shifts-table-body">
+</tbody>
+</table>
+<div class="empty-state" id="shifts-empty" style="display:none">
+      No date shifts found for the selected filter.
+    </div>
+</div>
+</div>
+<footer>
+  Generated by <a href="https://github.com/valantic-digital-finance-GmbH/sap-roadmap-explorer">SAP Roadmap Tracker</a>
+   ·  <a href="history.html">Change History</a>
+</footer>
+<script>
+  window.__LATEST_DATA__ = {
+  "generated": "2026-05-27T18:55:12.783709+00:00",
+  "products": [
+    "sap-analytics-cloud",
+    "sap-business-data-cloud",
+    "sap-datasphere"
+  ],
+  "items": [
+    {
+      "id": "C0F14A396CF44853A49B9929B4A787CF",
+      "title": "Planning Agent",
+      "quarter": "Q4 2026",
+      "capability": "AI for Planning and Analytics",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "D8274AA0B42F4735A183DA9E85C81EBD",
+      "title": "Chart footer in smart insights feature",
+      "quarter": "Q4 2026",
+      "capability": "AI for Planning and Analytics",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "C56011F326834C10BA12FAD5423B3121",
+      "title": "AI-assisted prompt insights",
+      "quarter": "Q3 2026",
+      "capability": "AI for Planning and Analytics",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "1D0C0342C0C94C69B410F82B99E2A059",
+      "title": "AI-powered story insight generation",
+      "quarter": "Q3 2026",
+      "capability": "AI for Planning and Analytics",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "6F256A6435634C21B6F8DB39D75E17E0",
+      "title": "Smart insights from SAP Datasphere models",
+      "quarter": null,
+      "capability": "AI for Planning and Analytics",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "20AF8C673D90408398400D5AA889A951",
+      "title": "Smart insights from table cells",
+      "quarter": "Q3 2026",
+      "capability": "AI for Planning and Analytics",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "7FC4E67D11F6478E9D0FF4584DFF715A",
+      "title": "Data Actions: automatically derive changed planning context",
+      "quarter": "Q3 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "691B3B1873E94136A231409A4D3FD5CC",
+      "title": "Compass: predictive range proposals",
+      "quarter": "Q3 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAC9DD21FD0B1C76527708F1B99",
+      "title": "Multi Action: trigger SAP Datasphere task chain from an API step",
+      "quarter": null,
+      "capability": "Business Planning and Forecasting",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "35EF24CC61634CFA93C2409DC0CE6291",
+      "title": "Job Monitor: inclusion of Data Export API jobs",
+      "quarter": null,
+      "capability": "Business Planning and Forecasting",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "FDA45599DFB0406ABEC7632067C2BD96",
+      "title": "Advanced Formulas: first and last for non-year granularity",
+      "quarter": null,
+      "capability": "Business Planning and Forecasting",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "3E11D5E0DFC74D27BBD707F6413FE979",
+      "title": "Plan Entry: onBeforeDataEntryProcess() table event",
+      "quarter": null,
+      "capability": "Business Planning and Forecasting",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAC9DD21FD0A7DDD15678801988",
+      "title": "Multi Actions: API step to support business user authentication",
+      "quarter": "Product Vision",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "96E7394B948141C3882121ABF06867C5",
+      "title": "Asymmetric reporting: visibility filters for table widgets",
+      "quarter": null,
+      "capability": "Business Planning and Forecasting",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAADBCE1FE0B6D3A8E594907786",
+      "title": "Job Monitor: in-story monitoring",
+      "quarter": "Q3 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "3AEB69C2AC0542778B72FC6B51FBF6CF",
+      "title": "Data Locking: support for up to six locking dimensions",
+      "quarter": null,
+      "capability": "Business Planning and Forecasting",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "B0BEE54300814DE990E5BA76A1D79028",
+      "title": "Data Actions: scale factor with copy step",
+      "quarter": "Q3 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "EEC44C5DA547499C8F5555F62433C15F",
+      "title": "Data Validations",
+      "quarter": "Q4 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "2AE3C05AB40F4E20B8329948A4591234",
+      "title": "Data Locking: array selection support in API",
+      "quarter": null,
+      "capability": "Business Planning and Forecasting",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "4799BCB752CC4E2CB762F41980601333",
+      "title": "Advanced Formulas: string manipulation functions",
+      "quarter": "Q4 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "0DCFAA2354F34C1CBBD3177BC743CBE9",
+      "title": "Customization of validation rule handling for unassigned members",
+      "quarter": "Q3 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "7EF95598880A40DEB4E084A29C5FB4D2",
+      "title": "Plan Entry: extended input readiness for validation rules",
+      "quarter": null,
+      "capability": "Business Planning and Forecasting",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "B1F418C977484ECC924C5CC591B72C4F",
+      "title": "Export to Excel functionality: retain cell formatting as true value type",
+      "quarter": "Q3 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAADBCE1FE0A2B4E0744D2F111C",
+      "title": "Plan Process Management: retain team reference",
+      "quarter": null,
+      "capability": "Business Planning and Forecasting",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "4492C4D9AF7E40E49624B1AA20E68380",
+      "title": "Data Actions: filter-parameter",
+      "quarter": "Q3 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "56B5BD71BA6D445A82D58E4EDFB42382",
+      "title": "Job Monitor: inclusion of delta calculations",
+      "quarter": null,
+      "capability": "Business Planning and Forecasting",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "4945B1A494534E34B106D6D74E9A84AA",
+      "title": "Compass: story widget for the display of simulation results",
+      "quarter": "Q3 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "3A67D555B7BD45EE997B0C38D72CA87E",
+      "title": "Job Monitor: inclusion of Data Import API jobs",
+      "quarter": "Q3 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "840882BE0F0A467F93775D813FE8F9ED",
+      "title": "Version Management: warning on browser tab close with unpublished data",
+      "quarter": "Q4 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "CF907486B990440DB140205C442E49ED",
+      "title": "Multi Actions: comment management step",
+      "quarter": "Q3 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "1700ECFCD5BB4AD2BCD3D054C4FCA758",
+      "title": "Multi Actions: option to reduce preprocessing validation checks",
+      "quarter": "Q4 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3ABE796A1FE0A7E230EB65E17F17",
+      "title": "Modeling: reuse currency rate table from SAP Datasphere",
+      "quarter": "Q3 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "0A2E7704FB5041CDA84BF7D78A8E4E6A",
+      "title": "Plan Entry: copy and paste optimization",
+      "quarter": "Q3 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAADBCE1FE094D1DE1E1D95EBFC",
+      "title": "Live data connectivity to Microsoft Azure SQL Database",
+      "quarter": null,
+      "capability": "Business Planning and Forecasting",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "1BF538234CAF452CB2573645BF8D1039",
+      "title": "Plan Auditing: removal of restrictions on data purge volumes",
+      "quarter": null,
+      "capability": "Business Planning and Forecasting",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "0425B8C9DF6D43878D1F3FB3BE72233C",
+      "title": "Plan Entry: additional information in the AfterExecute() event for file uploads",
+      "quarter": null,
+      "capability": "Business Planning and Forecasting",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "9D78EA70FA004304B30B319E53F8002A",
+      "title": "Advanced Formulas: performance improvements",
+      "quarter": "Q4 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "C6C9D7F755834678AA9D57C19453D91D",
+      "title": "Plan Entry: support for Inverse Formula entry where non-target factor does not have an inverse formula",
+      "quarter": null,
+      "capability": "Business Planning and Forecasting",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "BA2F6CB49BB34C9CB2CA10670757D38E",
+      "title": "Version Management: story events for version publishing",
+      "quarter": "Q4 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "57E8F66D4BCE4C98B9940A911E1E7484",
+      "title": "Commenting: story API for batch updates of comments",
+      "quarter": null,
+      "capability": "Business Planning and Forecasting",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3ABE772D1FD09EC5949F41BA1AAD",
+      "title": "Gauge chart",
+      "quarter": "Q3 2026",
+      "capability": "Dashboard Design",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "E9C01FD747E41EEDA8F9E2D33BCBA004",
+      "title": "Running total story calculation for live SAP Business Warehouse (SAP BW)",
+      "quarter": "Q1 2027",
+      "capability": "Dashboard Design",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "F5A58673B6DD1EED9ACCD476191E1A51",
+      "title": "Live SAP Business Warehouse (SAP BW): dynamic filter support for fiscal dimensions",
+      "quarter": "Q3 2026",
+      "capability": "Dashboard Design",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "6398BA8BC0244DBABEBAD03BABC14376",
+      "title": "Support for additional scales",
+      "quarter": null,
+      "capability": "Dashboard Design",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "7F3FD5C2AD7148FC856B52B2D862BB80",
+      "title": "Invalid calculations management",
+      "quarter": null,
+      "capability": "Dashboard Design",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "9E814A84CC634CCFA2948F0EAA16D901",
+      "title": "Respect for SAP BW application query-level text presentations without the system admin toggle",
+      "quarter": null,
+      "capability": "Dashboard Design",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "60917F2EE2F34D53A28414ABD420A589",
+      "title": "Custom widget for dimension-based filtering by condition and range",
+      "quarter": null,
+      "capability": "Dashboard Design",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3ABE796A1FE09EC5687E9D87DA11",
+      "title": "Funnel chart",
+      "quarter": "Q3 2026",
+      "capability": "Dashboard Design",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "AA653AB78DBB486CA048D7DEBCC16A19",
+      "title": "Creation of charts with drag and drop",
+      "quarter": null,
+      "capability": "Dashboard Design",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "FE96FC7D1D6D495AB5A28F2F0E4FDAEE",
+      "title": "Scripting API: showing hierarchy leaves only in table widgets",
+      "quarter": null,
+      "capability": "Dashboard Design",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "150A4EA691B740C39D6E99AFDFA67000",
+      "title": "Decoupled Data Panel from Builder Panel and Styling Panel",
+      "quarter": null,
+      "capability": "Dashboard Design",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "33DFA7FE36214A59B3F744486C183BEF",
+      "title": "Dynamic time filter for \u201crest of period\u201d",
+      "quarter": null,
+      "capability": "Dashboard Design",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "6CBA209E471A406BBE03897FE30BD115",
+      "title": "Ability to show totals for blended tables and charts in the optimized story designer",
+      "quarter": null,
+      "capability": "Dashboard Design",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "D68168A2BC9B4BD0A199C5D2AD257B2D",
+      "title": "Prompted switch to the new table build experience",
+      "quarter": null,
+      "capability": "Dashboard Design",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAC9DD21FD09F8F3E54565B37D8",
+      "title": "Sankey chart",
+      "quarter": "Q3 2026",
+      "capability": "Dashboard Design",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "2BF1BA0B4FDA4C88B2174E53C2970730",
+      "title": "New supported features in the lightweight viewer",
+      "quarter": null,
+      "capability": "Dashboard Design",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "9FFA0E60D3644A478CB28867514F9EA7",
+      "title": "Ability to use measure input control within restricted measure calculations",
+      "quarter": null,
+      "capability": "Dashboard Design",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "510C1FA9FF324F788911DC0B7CEDB3D1",
+      "title": "Addition of Microsoft Teams as a delivery channel for My Metrics Report",
+      "quarter": null,
+      "capability": "Dashboard Design",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "B7EF4C94EDE6427D81268CCFFAF3EEFA",
+      "title": "Deep copy support for composites with data models",
+      "quarter": null,
+      "capability": "Dashboard Extensibility",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "ABC1893F1B121EEEB8911641018E9E8C",
+      "title": "Responsive layout enhancement: improving the display of the responsive rule",
+      "quarter": "Q4 2026",
+      "capability": "Dashboard Extensibility",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "69FA734D47E8479582ADF1F669862095",
+      "title": "Composite: enablement of importing composites from SAP Business Data Cloud Intelligent Packages",
+      "quarter": null,
+      "capability": "Dashboard Extensibility",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAADBCE1FE0B4B6F862C475F724",
+      "title": "Custom widgets library",
+      "quarter": "Q3 2026",
+      "capability": "Dashboard Extensibility",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "78DE5EAE95A24D3D8E3850F1777EE3E8",
+      "title": "Composite: supporting composites in Lite Viewer",
+      "quarter": null,
+      "capability": "Dashboard Extensibility",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "1F9A6FF637844ECEAD766C0CF4746931",
+      "title": "Composite: enablement of interface properties in the composite calculation editor",
+      "quarter": null,
+      "capability": "Dashboard Extensibility",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "77CA977315FF47DF95EB5B794D7397C2",
+      "title": "Composite: versioning support for composite artifacts",
+      "quarter": null,
+      "capability": "Dashboard Extensibility",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AA914A11FD09CF62C1E6379E9DC",
+      "title": "Support for recent and favorites in open and save dialogs",
+      "quarter": null,
+      "capability": "Data and Analytics Administration",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "587B02DAFF99432DB36C4AEAABBF9F21",
+      "title": "Public dimension tables in the file repository",
+      "quarter": "Q3 2026",
+      "capability": "Data and Analytics Administration",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAC9DD21FD0AEC594B37A267AE1",
+      "title": "My Metrics for KPIs monitoring: creating new metrics",
+      "quarter": "Q3 2026",
+      "capability": "Data and Analytics Administration",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "B5A5AA23AA5D46DDA721639914B1740C",
+      "title": "My Metrics: edit metrics",
+      "quarter": "Q3 2026",
+      "capability": "Data and Analytics Administration",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "9C6553A1B66744F3921D74CF168B2E31",
+      "title": "Home screen: new homepage features",
+      "quarter": null,
+      "capability": "Data and Analytics Administration",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3ABE772D1EECB3A392887B364215",
+      "title": "Incremental load for New Model Load Jobs",
+      "quarter": "Q4 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3ABE772D1FD0A5F7BFC26C687C05",
+      "title": "Data import API: hierarchy support",
+      "quarter": "Q4 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAADBCE1FE095FEE3767C0FAC4C",
+      "title": "Live data connectivity to Microsoft SharePoint lists",
+      "quarter": "Q4 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3ABE796A1FE095FF827A052C529C",
+      "title": "Live data connectivity to Microsoft SharePoint Excel files",
+      "quarter": "Q4 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "A51713C4AB2F1EDF8FD544918325686E",
+      "title": "Import connection for SAP HANA Cloud",
+      "quarter": "Q3 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "D37D3B2A8A6C47AC914777FEF823F09B",
+      "title": "Improved data wrangling in master data load jobs",
+      "quarter": "Q3 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAC9DD21FD0A5F838806FAE9930",
+      "title": "Improved user experience when adding data",
+      "quarter": null,
+      "capability": "Data Connectivity Management",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "21590949204143058288721CD4B3AB4D",
+      "title": "User-defined handling of mismatches between facts and primary data in the modeler",
+      "quarter": "Q4 2026",
+      "capability": "Data Design and Modelling",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "2DEF714648B84A45A626278DA93F5C43",
+      "title": "Member Selector Dialog for Calculated Measures and Unit Conversion Measures",
+      "quarter": null,
+      "capability": "Data Design and Modelling",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "7B01C29A79904CECACB4F3B614F1E13D",
+      "title": "Refinement of exception aggregation average and count calculations",
+      "quarter": null,
+      "capability": "Data Design and Modelling",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "0EB8974A435A48E39358A064103079F4",
+      "title": "Data analyzer: dynamic filter support for fiscal dimensions based on live models in SAP Datasphere",
+      "quarter": "Q4 2026",
+      "capability": "Exploratory Data Analysis",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "15F95BEB9DC04CA99583AEF0E12E8E2F",
+      "title": "Data analyzer: ability to save insights without preselecting mandatory prompts",
+      "quarter": "Q3 2026",
+      "capability": "Exploratory Data Analysis",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "B738AF4999AE4A349617AA0FED919816",
+      "title": "Data analyzer: support for story dynamic filters in interoperability flows",
+      "quarter": "Q3 2026",
+      "capability": "Exploratory Data Analysis",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "F2F4472A861B4B53A2E101D300FBB114",
+      "title": "Insight scheduling based on live models in SAP Datasphere",
+      "quarter": null,
+      "capability": "Exploratory Data Analysis",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "B3D99CC1B7811EEF9CA110AB4503772C",
+      "title": "Launching a Microsoft Excel workbook from the data analyzer",
+      "quarter": null,
+      "capability": "Exploratory Data Analysis",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "40AB4E5C98214F11A0E65EF68270C519",
+      "title": "Data analyzer: option to display the ID of measures on table",
+      "quarter": "Q3 2026",
+      "capability": "Exploratory Data Analysis",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "9B08081679634B8DBA1D4B7C74FADCB3",
+      "title": "Data analyzer: add multiple hyperlinks to table",
+      "quarter": "Q3 2026",
+      "capability": "Exploratory Data Analysis",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "13FDA4A615C31EEEBCC7F18B3BB68EE8",
+      "title": "Scheduling a story in presentation mode",
+      "quarter": "Q1 2027",
+      "capability": "Insight Sharing and Collaboration",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "B14354EFD3D542279CD72601C11FB42A",
+      "title": "Merging variables in Microsoft Excel",
+      "quarter": "Q4 2026",
+      "capability": "Office Suite Integration",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3ABE796A1FE0A7F2E7A0AF103F22",
+      "title": "Supporting dimension comments in Microsoft Excel",
+      "quarter": null,
+      "capability": "Office Suite Integration",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "E3BB51673FD940A1B2D3ABF4237FE34F",
+      "title": "Custom sorting within hierarchy in Microsoft Excel",
+      "quarter": "Q3 2026",
+      "capability": "Office Suite Integration",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "F4B920B421EE46B2A719A21247F645EF",
+      "title": "Data lock visualization in the grid in the Microsoft Excel add-in",
+      "quarter": "Q4 2026",
+      "capability": "Office Suite Integration",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AA914A11FD0A58BD75AC3896E5E",
+      "title": "Automated transfer of Excel workbooks from one tenant to another tenant",
+      "quarter": "Q1 2027",
+      "capability": "Office Suite Integration",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "8B1FD65FBEFB1EEF9CA0F0358235015B",
+      "title": "Support Multi actions in the Excel add-in",
+      "quarter": "Q3 2026",
+      "capability": "Office Suite Integration",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "06C828A4D1B845EB9F45862B8D4CE1E9",
+      "title": "Support for adding multiple new combinations to a table in the Excel add-in",
+      "quarter": "Q4 2026",
+      "capability": "Office Suite Integration",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "F344F2F86B384DC885FEAE62F0F44EA2",
+      "title": "Support for currency conversion in the Microsoft Excel add-in",
+      "quarter": "Q3 2026",
+      "capability": "Office Suite Integration",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "C94689DE60304BABB5C5C2700CA951B5",
+      "title": "Native capability to jump from models to Microsoft Excel",
+      "quarter": "Q4 2026",
+      "capability": "Office Suite Integration",
+      "status": "PLANNED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "905D0C4E9DD041A8AED7E467CF7555F2",
+      "title": "Support for connecting SAP Datasphere (tunnel mode) with the Microsoft Excel add-in",
+      "quarter": null,
+      "capability": "Office Suite Integration",
+      "status": "DELIVERED",
+      "product": "sap-analytics-cloud",
+      "product_display": "SAP Analytics Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "C0F14A396CF44853A49B9929B4A787CF",
+      "title": "Planning Agent",
+      "quarter": "Q4 2026",
+      "capability": "AI for Planning and Analytics",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "D8274AA0B42F4735A183DA9E85C81EBD",
+      "title": "Chart footer in smart insights feature",
+      "quarter": "Q4 2026",
+      "capability": "AI for Planning and Analytics",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "C56011F326834C10BA12FAD5423B3121",
+      "title": "AI-assisted prompt insights",
+      "quarter": "Q3 2026",
+      "capability": "AI for Planning and Analytics",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "1D0C0342C0C94C69B410F82B99E2A059",
+      "title": "AI-powered story insight generation",
+      "quarter": "Q3 2026",
+      "capability": "AI for Planning and Analytics",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "6F256A6435634C21B6F8DB39D75E17E0",
+      "title": "Smart insights from SAP Datasphere models",
+      "quarter": null,
+      "capability": "AI for Planning and Analytics",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "7FC4E67D11F6478E9D0FF4584DFF715A",
+      "title": "Data Actions: automatically derive changed planning context",
+      "quarter": "Q3 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "691B3B1873E94136A231409A4D3FD5CC",
+      "title": "Compass: predictive range proposals",
+      "quarter": "Q3 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAC9DD21FD0B1C76527708F1B99",
+      "title": "Multi Action: trigger SAP Datasphere task chain from an API step",
+      "quarter": null,
+      "capability": "Business Planning and Forecasting",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "35EF24CC61634CFA93C2409DC0CE6291",
+      "title": "Job Monitor: inclusion of Data Export API jobs",
+      "quarter": null,
+      "capability": "Business Planning and Forecasting",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "FDA45599DFB0406ABEC7632067C2BD96",
+      "title": "Advanced Formulas: first and last for non-year granularity",
+      "quarter": null,
+      "capability": "Business Planning and Forecasting",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "3E11D5E0DFC74D27BBD707F6413FE979",
+      "title": "Plan Entry: onBeforeDataEntryProcess() table event",
+      "quarter": null,
+      "capability": "Business Planning and Forecasting",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAC9DD21FD0A7DDD15678801988",
+      "title": "Multi Actions: API step to support business user authentication",
+      "quarter": "Product Vision",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "96E7394B948141C3882121ABF06867C5",
+      "title": "Asymmetric reporting: visibility filters for table widgets",
+      "quarter": null,
+      "capability": "Business Planning and Forecasting",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAADBCE1FE0B6D3A8E594907786",
+      "title": "Job Monitor: in-story monitoring",
+      "quarter": "Q3 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "3AEB69C2AC0542778B72FC6B51FBF6CF",
+      "title": "Data Locking: support for up to six locking dimensions",
+      "quarter": null,
+      "capability": "Business Planning and Forecasting",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "B0BEE54300814DE990E5BA76A1D79028",
+      "title": "Data Actions: scale factor with copy step",
+      "quarter": "Q3 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "EEC44C5DA547499C8F5555F62433C15F",
+      "title": "Data Validations",
+      "quarter": "Q4 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "2AE3C05AB40F4E20B8329948A4591234",
+      "title": "Data Locking: array selection support in API",
+      "quarter": null,
+      "capability": "Business Planning and Forecasting",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "4799BCB752CC4E2CB762F41980601333",
+      "title": "Advanced Formulas: string manipulation functions",
+      "quarter": "Q4 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "0DCFAA2354F34C1CBBD3177BC743CBE9",
+      "title": "Customization of validation rule handling for unassigned members",
+      "quarter": "Q3 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "7EF95598880A40DEB4E084A29C5FB4D2",
+      "title": "Plan Entry: extended input readiness for validation rules",
+      "quarter": null,
+      "capability": "Business Planning and Forecasting",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "B1F418C977484ECC924C5CC591B72C4F",
+      "title": "Export to Excel functionality: retain cell formatting as true value type",
+      "quarter": "Q3 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAADBCE1FE0A2B4E0744D2F111C",
+      "title": "Plan Process Management: retain team reference",
+      "quarter": null,
+      "capability": "Business Planning and Forecasting",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "4492C4D9AF7E40E49624B1AA20E68380",
+      "title": "Data Actions: filter-parameter",
+      "quarter": "Q3 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "56B5BD71BA6D445A82D58E4EDFB42382",
+      "title": "Job Monitor: inclusion of delta calculations",
+      "quarter": null,
+      "capability": "Business Planning and Forecasting",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "4945B1A494534E34B106D6D74E9A84AA",
+      "title": "Compass: story widget for the display of simulation results",
+      "quarter": "Q3 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "3A67D555B7BD45EE997B0C38D72CA87E",
+      "title": "Job Monitor: inclusion of Data Import API jobs",
+      "quarter": "Q3 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "840882BE0F0A467F93775D813FE8F9ED",
+      "title": "Version Management: warning on browser tab close with unpublished data",
+      "quarter": "Q4 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "CF907486B990440DB140205C442E49ED",
+      "title": "Multi Actions: comment management step",
+      "quarter": "Q3 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "1700ECFCD5BB4AD2BCD3D054C4FCA758",
+      "title": "Multi Actions: option to reduce preprocessing validation checks",
+      "quarter": "Q4 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3ABE796A1FE0A7E230EB65E17F17",
+      "title": "Modeling: reuse currency rate table from SAP Datasphere",
+      "quarter": "Q3 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "0A2E7704FB5041CDA84BF7D78A8E4E6A",
+      "title": "Plan Entry: copy and paste optimization",
+      "quarter": "Q3 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAADBCE1FE094D1DE1E1D95EBFC",
+      "title": "Live data connectivity to Microsoft Azure SQL Database",
+      "quarter": null,
+      "capability": "Business Planning and Forecasting",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3ABE772D1FD0B5967196D82A7F04",
+      "title": "Commercial projects margin insights",
+      "quarter": "Q4 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "1BF538234CAF452CB2573645BF8D1039",
+      "title": "Plan Auditing: removal of restrictions on data purge volumes",
+      "quarter": null,
+      "capability": "Business Planning and Forecasting",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "0425B8C9DF6D43878D1F3FB3BE72233C",
+      "title": "Plan Entry: additional information in the AfterExecute() event for file uploads",
+      "quarter": null,
+      "capability": "Business Planning and Forecasting",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "9D78EA70FA004304B30B319E53F8002A",
+      "title": "Advanced Formulas: performance improvements",
+      "quarter": "Q4 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "C6C9D7F755834678AA9D57C19453D91D",
+      "title": "Plan Entry: support for Inverse Formula entry where non-target factor does not have an inverse formula",
+      "quarter": null,
+      "capability": "Business Planning and Forecasting",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "BA2F6CB49BB34C9CB2CA10670757D38E",
+      "title": "Version Management: story events for version publishing",
+      "quarter": "Q4 2026",
+      "capability": "Business Planning and Forecasting",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "57E8F66D4BCE4C98B9940A911E1E7484",
+      "title": "Commenting: story API for batch updates of comments",
+      "quarter": null,
+      "capability": "Business Planning and Forecasting",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAC9DD21FD0A4C203167B3998EE",
+      "title": "Creation and push of data products through the data product generator",
+      "quarter": "Q2 2026",
+      "capability": "Business Warehouse Modernization",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AA914A11FD0AFC333763940D81F",
+      "title": "Data product generator: technical name for local table (file)",
+      "quarter": "Q2 2026",
+      "capability": "Business Warehouse Modernization",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AA914A11FD0B6B2650EC79F1CB0",
+      "title": "Data product generator: support of hierarchies",
+      "quarter": "Q2 2026",
+      "capability": "Business Warehouse Modernization",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAC9DD21FD0B49C939C308B7C3F",
+      "title": "Query template generator for SAP Business Data Cloud",
+      "quarter": "Q2 2026",
+      "capability": "Business Warehouse Modernization",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "C28E4FDC29614C52B1F51CCD7F597417",
+      "title": "SAP Business Warehouse application migration assistant",
+      "quarter": "Q4 2026",
+      "capability": "Business Warehouse Modernization",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3ABE772D1FD09EC5949F41BA1AAD",
+      "title": "Gauge chart",
+      "quarter": "Q3 2026",
+      "capability": "Dashboard Design",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "E9C01FD747E41EEDA8F9E2D33BCBA004",
+      "title": "Running total story calculation for live SAP Business Warehouse (SAP BW)",
+      "quarter": "Q1 2027",
+      "capability": "Dashboard Design",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": "Q3 2026"
+    },
+    {
+      "id": "6398BA8BC0244DBABEBAD03BABC14376",
+      "title": "Support for additional scales",
+      "quarter": null,
+      "capability": "Dashboard Design",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "9E814A84CC634CCFA2948F0EAA16D901",
+      "title": "Respect for SAP BW application query-level text presentations without the system admin toggle",
+      "quarter": null,
+      "capability": "Dashboard Design",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "60917F2EE2F34D53A28414ABD420A589",
+      "title": "Custom widget for dimension-based filtering by condition and range",
+      "quarter": null,
+      "capability": "Dashboard Design",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3ABE796A1FE09EC5687E9D87DA11",
+      "title": "Funnel chart",
+      "quarter": "Q3 2026",
+      "capability": "Dashboard Design",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "AA653AB78DBB486CA048D7DEBCC16A19",
+      "title": "Creation of charts with drag and drop",
+      "quarter": null,
+      "capability": "Dashboard Design",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "FE96FC7D1D6D495AB5A28F2F0E4FDAEE",
+      "title": "Scripting API: showing hierarchy leaves only in table widgets",
+      "quarter": null,
+      "capability": "Dashboard Design",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "150A4EA691B740C39D6E99AFDFA67000",
+      "title": "Decoupled Data Panel from Builder Panel and Styling Panel",
+      "quarter": null,
+      "capability": "Dashboard Design",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "33DFA7FE36214A59B3F744486C183BEF",
+      "title": "Dynamic time filter for \u201crest of period\u201d",
+      "quarter": null,
+      "capability": "Dashboard Design",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "6CBA209E471A406BBE03897FE30BD115",
+      "title": "Ability to show totals for blended tables and charts in the optimized story designer",
+      "quarter": null,
+      "capability": "Dashboard Design",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "D68168A2BC9B4BD0A199C5D2AD257B2D",
+      "title": "Prompted switch to the new table build experience",
+      "quarter": null,
+      "capability": "Dashboard Design",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAC9DD21FD09F8F3E54565B37D8",
+      "title": "Sankey chart",
+      "quarter": "Q3 2026",
+      "capability": "Dashboard Design",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "2BF1BA0B4FDA4C88B2174E53C2970730",
+      "title": "New supported features in the lightweight viewer",
+      "quarter": null,
+      "capability": "Dashboard Design",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "510C1FA9FF324F788911DC0B7CEDB3D1",
+      "title": "Addition of Microsoft Teams as a delivery channel for My Metrics Report",
+      "quarter": null,
+      "capability": "Dashboard Design",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "B7EF4C94EDE6427D81268CCFFAF3EEFA",
+      "title": "Deep copy support for composites with data models",
+      "quarter": null,
+      "capability": "Dashboard Extensibility",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "ABC1893F1B121EEEB8911641018E9E8C",
+      "title": "Responsive layout enhancement: improving the display of the responsive rule",
+      "quarter": "Q4 2026",
+      "capability": "Dashboard Extensibility",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "69FA734D47E8479582ADF1F669862095",
+      "title": "Composite: enablement of importing composites from SAP Business Data Cloud Intelligent Packages",
+      "quarter": null,
+      "capability": "Dashboard Extensibility",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAADBCE1FE0B4B6F862C475F724",
+      "title": "Custom widgets library",
+      "quarter": "Q3 2026",
+      "capability": "Dashboard Extensibility",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "78DE5EAE95A24D3D8E3850F1777EE3E8",
+      "title": "Composite: supporting composites in Lite Viewer",
+      "quarter": null,
+      "capability": "Dashboard Extensibility",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "1F9A6FF637844ECEAD766C0CF4746931",
+      "title": "Composite: enablement of interface properties in the composite calculation editor",
+      "quarter": null,
+      "capability": "Dashboard Extensibility",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "77CA977315FF47DF95EB5B794D7397C2",
+      "title": "Composite: versioning support for composite artifacts",
+      "quarter": null,
+      "capability": "Dashboard Extensibility",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AA914A11FD09CF62C1E6379E9DC",
+      "title": "Support for recent and favorites in open and save dialogs",
+      "quarter": null,
+      "capability": "Data and Analytics Administration",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "C10D295AC83C1EDF869D517DCDE3A54E",
+      "title": "Enablement of multiple availability zones (multi-AZ) for SAP HANA Cloud",
+      "quarter": "Product Vision",
+      "capability": "Data and Analytics Administration",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "587B02DAFF99432DB36C4AEAABBF9F21",
+      "title": "Public dimension tables in the file repository",
+      "quarter": "Q3 2026",
+      "capability": "Data and Analytics Administration",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAC9DD21FD0AEC594B37A267AE1",
+      "title": "My Metrics for KPIs monitoring: creating new metrics",
+      "quarter": "Q3 2026",
+      "capability": "Data and Analytics Administration",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "01D39DB4D0D34CF4884368965F0D61E6",
+      "title": "Customer monitoring on SAP Business Data Cloud cockpit",
+      "quarter": "Q2 2026",
+      "capability": "Data and Analytics Administration",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "B5A5AA23AA5D46DDA721639914B1740C",
+      "title": "My Metrics: edit metrics",
+      "quarter": "Q3 2026",
+      "capability": "Data and Analytics Administration",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "91D21DB778331FE084A6B6410F8978C1",
+      "title": "Default domain for the cockpit",
+      "quarter": "Q2 2026",
+      "capability": "Data and Analytics Administration",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "CC436021EEA74E4393FEB3AF870FB5C8",
+      "title": "Data product studio",
+      "quarter": "Q3 2026",
+      "capability": "Data and Analytics Administration",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "33158590E66E1FE084A758DBD9FD06F9",
+      "title": "Customer domains for the cockpit",
+      "quarter": "Q2 2026",
+      "capability": "Data and Analytics Administration",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "9C6553A1B66744F3921D74CF168B2E31",
+      "title": "Home screen: new homepage features",
+      "quarter": null,
+      "capability": "Data and Analytics Administration",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "858187A400D71EDDAF8EE902289032A3",
+      "title": "Metadata extraction for replication flows",
+      "quarter": "Q4 2026",
+      "capability": "Data and Analytics Cataloging",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAADBCE1EDD94829FFAD4A59203",
+      "title": "Metadata extraction for SAP HANA Cloud",
+      "quarter": "Q2 2026",
+      "capability": "Data and Analytics Cataloging",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAADBCE1EDD948273FBDE1B4EFA",
+      "title": "Metadata extraction for SAP S/4HANA",
+      "quarter": "Q2 2026",
+      "capability": "Data and Analytics Cataloging",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "A90128C2F6851EEDB3E6742547E6D1C1",
+      "title": "Metadata extraction for SAP ERP Central Component",
+      "quarter": "Q2 2026",
+      "capability": "Data and Analytics Cataloging",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "6BAC43E496D11EEFA4BD7AD3D7195111",
+      "title": "Data center availability for SAP Business Data Cloud in Germany (Sankt Leon-Rot) on SAP infrastructure",
+      "quarter": "Q2 2027",
+      "capability": "Data Center Availability",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "2F9E8060E8181EDFA4BDAEAD205D1449",
+      "title": "Data center availability for SAP Business Data Cloud in the United Arab Emirates on SAP infrastructure",
+      "quarter": "Q3 2026",
+      "capability": "Data Center Availability",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AA914A11FD095CF0DA3528C8464",
+      "title": "Data center availability for SAP Business Data Cloud in Japan through Microsoft Azure",
+      "quarter": "Q2 2026",
+      "capability": "Data Center Availability",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AA914A11FD0AAEAC6637A681375",
+      "title": "Data center availability for SAP Business Data Cloud in Israel through Google Cloud Platform",
+      "quarter": "Q2 2026",
+      "capability": "Data Center Availability",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "6BAC43E496D11EEFA4BD574559C880F9",
+      "title": "Data center availability for SAP Business Data Cloud on SAP infrastructure in Germany (Frankfurt)",
+      "quarter": "Q3 2026",
+      "capability": "Data Center Availability",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAADBCE1FE095CF18723ED1EC24",
+      "title": "Data center availability for SAP Business Data Cloud in India through Microsoft Azure",
+      "quarter": "Q1 2027",
+      "capability": "Data Center Availability",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "9F1F37ED41A14A38BE952653916CB957",
+      "title": "Data center availability for SAP Business Data Cloud in the United Kingdom through Amazon Web Services",
+      "quarter": "Product Vision",
+      "capability": "Data Center Availability",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAADBCE1FE0AAEADEA1F2D5B4F3",
+      "title": "Data center availability for SAP Business Data Cloud in the United Kingdom through Microsoft Azure",
+      "quarter": "Q4 2026",
+      "capability": "Data Center Availability",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAADBCE1FE0AAEAB945D80094F3",
+      "title": "Data center availability for SAP Business Data Cloud in Brazil through Google Cloud Platform",
+      "quarter": null,
+      "capability": "Data Center Availability",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "5DF12F1F7489456ABF29999344A4D710",
+      "title": "Data center availability for SAP Business Data Cloud in India through Amazon Web Services",
+      "quarter": "Product Vision",
+      "capability": "Data Center Availability",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3ABE772D1FD0AAEAADA4E6D47CE0",
+      "title": "Data center availability for SAP Business Data Cloud in Japan through Google Cloud Platform",
+      "quarter": null,
+      "capability": "Data Center Availability",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "81C4C671B92A1EEFA4BDBEAC845BA941",
+      "title": "Data center availability for SAP Business Data Cloud in Australia on SAP infrastructure",
+      "quarter": "Q1 2027",
+      "capability": "Data Center Availability",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "2F9E8060E8181EEFA4BE07CFBF887BFA",
+      "title": "Data center availability for SAP Business Data Cloud in the U.S. West on SAP infrastructure",
+      "quarter": "Q2 2027",
+      "capability": "Data Center Availability",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AA914A11FD0AAEB2F06B2BB9375",
+      "title": "Data center availability for SAP Business Data Cloud in Germany through Microsoft Azure",
+      "quarter": "Q2 2026",
+      "capability": "Data Center Availability",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3ABE772D1FD0AAEB3AA27B23FCE0",
+      "title": "Data center availability for SAP Business Data Cloud in China through Alibaba Cloud",
+      "quarter": "Q3 2026",
+      "capability": "Data Center Availability",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAC9DD21FD0AAEB298EC68EFA3D",
+      "title": "Data center availability for SAP Business Data Cloud in China through Microsoft Azure",
+      "quarter": "Q4 2026",
+      "capability": "Data Center Availability",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "571FEA0A0D121EDFA4BDFC0D779225E8",
+      "title": "Data center availability for SAP Business Data Cloud in Eastern United States on SAP infrastructure",
+      "quarter": "Q1 2027",
+      "capability": "Data Center Availability",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "2F9E8060E8181EEFA4BDCD58B177A25B",
+      "title": "Data center availability for SAP Business Data Cloud in Japan on SAP infrastructure",
+      "quarter": "Q2 2027",
+      "capability": "Data Center Availability",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "5D65663AE592468C917C397452803904",
+      "title": "Data center availability for SAP Business Data Cloud in US West through Amazon Web Services",
+      "quarter": "Q2 2027",
+      "capability": "Data Center Availability",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3ABE772D1FD0AAEAC12A2B3A7CE0",
+      "title": "Data center availability for SAP Business Data Cloud in Australia through Google Cloud Platform",
+      "quarter": null,
+      "capability": "Data Center Availability",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "6DF54C88F6211FE081A3C8872BE1E2D9",
+      "title": "Integration to enable enterprise analytics and innovations using machine learning and AI",
+      "quarter": null,
+      "capability": "Data Connectivity Management",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "6B3428F433A94E6680DD8CAD6A96A45E",
+      "title": "Non-key column addition in replication flow without data reload for SAP Datasphere local tables on file targets",
+      "quarter": "Q3 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3ABE796A1FE0A7C85AFE1D57BEF4",
+      "title": "Support for MySQL database as a source in replication flows",
+      "quarter": "Q3 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3ABE796A1FD0B3DA1CB5BC89C13A",
+      "title": "Transformation flows - delta table detection and configuration for SQL script nodes",
+      "quarter": "Q3 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "489E1EDBAF064FC18AE3502BEA48E620",
+      "title": "Support for delta replication from connection types for SAP ECC and SAP BW using replication flows",
+      "quarter": "Q3 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "309F047CD0D6477DADA474EC2660EBF0",
+      "title": "Support for adding of non-key columns in replication flow without data reload for Datasphere Local table as target",
+      "quarter": "Q3 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "6DF54C88F6211FE0809BD29F0D2AEA85",
+      "title": "Support for SAP Cloud Connector for cloud data stores",
+      "quarter": "Q2 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "8067DD203A7F4EBA997B0E0B0D2FE18F",
+      "title": "SAP Snowflake",
+      "quarter": null,
+      "capability": "Data Connectivity Management",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAC9DD21FD0AA8F3B5F403EDA09",
+      "title": "Support for replication (initial load only) from connection types for SAP ECC and SAP BW using replication flows",
+      "quarter": "Q2 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "E739C76B38B41EEF82A3109E11DDF0F7",
+      "title": "Semantic onboarding: import of calculation views from SAP HANA",
+      "quarter": "Q2 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "5767C5C876BD1EEEB39392E90A58B570",
+      "title": "Support for Google BigQuery as a source in replication flows",
+      "quarter": "Product Vision",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3ABE772D1EECB3A392887B364215",
+      "title": "Incremental load for New Model Load Jobs",
+      "quarter": "Q4 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "91D21DB778331FE0809B5BA6D2BB5E17",
+      "title": "Support SAP Cloud Connector for cloud object stores",
+      "quarter": "Q2 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAC9DD21FD0A8913FF5460BB9A3",
+      "title": "Delta load scheduling in task chains",
+      "quarter": "Q2 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "01BE3BFE44181EDEBAF2CFCAC0DAAAAB",
+      "title": "Usability for replication flows in the areas of modeling and monitoring",
+      "quarter": "Product Vision",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "7790EF56B6721EDFA88500910660B68D",
+      "title": "Additional support for input parameters ABAP CDS views",
+      "quarter": "Q4 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "D9840EC05D5841D09971909642BCE7DC",
+      "title": "SAP Business Data Cloud Connect for Google BigQuery",
+      "quarter": "Q2 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3ABE796A1FE094D5AE03AABA3065",
+      "title": "Support for Oracle database as a source in replication flows",
+      "quarter": "Q2 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAADBCE1FE095FEE3767C0FAC4C",
+      "title": "Live data connectivity to Microsoft SharePoint lists",
+      "quarter": "Q4 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3ABE772D1FD0ABFFD29798DEDD0F",
+      "title": "Enabling REST API connectivity and source support in replication flows",
+      "quarter": "Q3 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3ABE796A1FE095FF827A052C529C",
+      "title": "Live data connectivity to Microsoft SharePoint Excel files",
+      "quarter": "Q4 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "A51713C4AB2F1EDF8FD544918325686E",
+      "title": "Import connection for SAP HANA Cloud",
+      "quarter": "Q3 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "DC45C76420C242BDA9A93A7F41760CE8",
+      "title": "Reduced resource consumption in local table merge tasks",
+      "quarter": "Q2 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "5A563893226844F5B0C5CB2F9AD379BF",
+      "title": "Support for Snowflake as the source for an initial load in a replication flow",
+      "quarter": "Q2 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAC9DD21EDCA2EE626A07B2C0FD",
+      "title": "Handling of schedules upon user deletion",
+      "quarter": "Q4 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "D37D3B2A8A6C47AC914777FEF823F09B",
+      "title": "Improved data wrangling in master data load jobs",
+      "quarter": "Q3 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "6D26EBC4B24449A3B0C6C2B0FE486891",
+      "title": "SAP Snowflake in Azure and Google Cloud Platform (GCP) with cross\u2011hyperscaler support",
+      "quarter": "Q3 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "D5ACC18176214E4089F67F06FBAE2C93",
+      "title": "SAP Business Data Cloud Connect for Snowflake in Microsoft Azure and Google Cloud Platform (GCP)",
+      "quarter": "Q3 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "E0725B39A6B8409397526D174DF350F5",
+      "title": "Support for delta-enabled local tables on files as a target in replication flows for initial-load-only sources",
+      "quarter": "Q2 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "7F9F136673CD4976B0DADFE11F2BDC4F",
+      "title": "Transformation flow: ability to flatten star schema for subsequent machine learning (ML) and AI analysis",
+      "quarter": "Q2 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "320392CA25384D3DAD97B695CC794E19",
+      "title": "SAP Business Data Cloud Connect in Microsoft Azure and Google Cloud Platform (GCP) with cross\u2011hyperscaler support",
+      "quarter": "Q3 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "9198570EEC624C9D98DEBACCA56351E3",
+      "title": "SAP Business Data Cloud Connect for Snowflake",
+      "quarter": null,
+      "capability": "Data Connectivity Management",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAC9DD21FD0A5F838806FAE9930",
+      "title": "Improved user experience when adding data",
+      "quarter": null,
+      "capability": "Data Connectivity Management",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "766B1933CD0140CAA95507CDF09A9A8B",
+      "title": "OAuth 2.0 with X.509 client certificate authentication for on-premises connections to ABAP and SAP S/4HANA",
+      "quarter": "Q3 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3ABE772D1EED819B65893042F477",
+      "title": "Sharing of dependent entities",
+      "quarter": "Q4 2026",
+      "capability": "Data Design and Modelling",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "6DF54C88F6211FD084ADCE49C7B08221",
+      "title": "AI-assisted SQL generation on the view builder",
+      "quarter": "Q2 2026",
+      "capability": "Data Design and Modelling",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "280A69E0BC974E938C31A3FCA9B045A9",
+      "title": "New custom fields",
+      "quarter": "Q3 2026",
+      "capability": "Data Design and Modelling",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAC9DD21FD0A4825BD0AE2AB8DD",
+      "title": "Delivering data products for public sector cost objects and features in SAP SuccessFactors",
+      "quarter": "Q2 2026",
+      "capability": "Data Design and Modelling",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "71879553B6474E0FB2FBA6377992BBDD",
+      "title": "Support for copying multiple spaces at once in SAP Datasphere with model repointing",
+      "quarter": "Q2 2026",
+      "capability": "Data Design and Modelling",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "571FEA0A0D121EDFA3F4DD6438447DB6",
+      "title": "Restricted measure based on node-level hierarchy",
+      "quarter": "Q3 2026",
+      "capability": "Data Design and Modelling",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "3B3D3BDFEDC61EDFB7AF56E956712E89",
+      "title": "Support for display attributes in analytic models",
+      "quarter": "Q2 2027",
+      "capability": "Data Design and Modelling",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "21590949204143058288721CD4B3AB4D",
+      "title": "User-defined handling of mismatches between facts and primary data in the modeler",
+      "quarter": "Q4 2026",
+      "capability": "Data Design and Modelling",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": "Q3 2026"
+    },
+    {
+      "id": "2DEF714648B84A45A626278DA93F5C43",
+      "title": "Member Selector Dialog for Calculated Measures and Unit Conversion Measures",
+      "quarter": null,
+      "capability": "Data Design and Modelling",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "7B01C29A79904CECACB4F3B614F1E13D",
+      "title": "Refinement of exception aggregation average and count calculations",
+      "quarter": null,
+      "capability": "Data Design and Modelling",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "DC85397620AB463786651411B5004274",
+      "title": "Analytic model: restrict data export",
+      "quarter": "Q3 2026",
+      "capability": "Data Design and Modelling",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "F586EF4391F81FE084AD599C8C467A06",
+      "title": "Analytic model: Multi-fact modeling",
+      "quarter": "Q4 2026",
+      "capability": "Data Design and Modelling",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "E78B0E4728D31EEDA1EF80BA403814E0",
+      "title": "User and authorization management audit",
+      "quarter": "Q2 2026",
+      "capability": "Data Privacy Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "31F8B05650641EDDA1EF50D24787BB72",
+      "title": "Integration with the Identity Provisioning service",
+      "quarter": "Product Vision",
+      "capability": "Data Privacy Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "DB9C27ACB50C1FE08C9A7E3902E18594",
+      "title": "Retail Intelligence: SAP Customer Activity Repository applications bundle",
+      "quarter": "Q4 2026",
+      "capability": "Data Product Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "AEEDA9FCA2DD448DAF20E8F63E6CC663",
+      "title": "Finance Intelligence: group financial statement intelligent app",
+      "quarter": "Q1 2027",
+      "capability": "Data Product Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "33158590E66E1FD0849A4704E7EC1BD4",
+      "title": "People Intelligence: compensation",
+      "quarter": "Q2 2026",
+      "capability": "Data Product Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "7478358955B74B7583D517311D42ABF4",
+      "title": "Data product: point-of-sale sales transaction",
+      "quarter": "Q3 2026",
+      "capability": "Data Product Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "C6341607E4EF4F92B8A4473C217E9EC7",
+      "title": "Cloud ERP Intelligence: Extension of project portfolio",
+      "quarter": "Q4 2026",
+      "capability": "Data Product Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "5E98458436F1455FB68317A483D02D9E",
+      "title": "Data Products for SAP Master Data Governance - data quality validation rule",
+      "quarter": "Q4 2026",
+      "capability": "Data Product Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "1D57231EA3FF1FD08C9B5D38E253E15D",
+      "title": "Finance Intelligence: SAP Environment, Health, and Safety Management",
+      "quarter": "Q2 2026",
+      "capability": "Data Product Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "2D24430EC2AE1FE08C9A8F48923D458E",
+      "title": "Revenue Intelligence: SAP Service Cloud Version 2",
+      "quarter": "Q3 2026",
+      "capability": "Data Product Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "01DD7775C9D61FE08C9A698198CA5A02",
+      "title": "Revenue Intelligence: SAP Sales Cloud Version 2",
+      "quarter": "Q3 2026",
+      "capability": "Data Product Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "2494E8DEE4214CE79BFE7D9346B9D8CF",
+      "title": "Data products for utilities billing master data",
+      "quarter": "Q2 2027",
+      "capability": "Data Product Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "48CBEB6B7E124F6B9308699DD368B06B",
+      "title": "Data products for utilities billing document",
+      "quarter": "Q4 2026",
+      "capability": "Data Product Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "2BCC8D150BBC4AB3AE3E16E8C1200A8A",
+      "title": "Data products for energy settlement master data",
+      "quarter": "Q4 2026",
+      "capability": "Data Product Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "329112DE33634C608CD26B31BF000F3A",
+      "title": "Data product: order management system (OMS) sales orders",
+      "quarter": "Q3 2026",
+      "capability": "Data Product Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "3C46D8ABD6E74054A97518F8A9E3B3F4",
+      "title": "Cloud ERP intelligence: extension of projects and project networks",
+      "quarter": "Q4 2026",
+      "capability": "Data Product Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3ABE772D1FD0A5A17B3D6CCDFBFA",
+      "title": "Cloud ERP intelligence: project portfolio",
+      "quarter": "Q4 2026",
+      "capability": "Data Product Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3ABE772D1FD0908F2720D5DD7797",
+      "title": "Data products for utilities master data objects and utilities time series",
+      "quarter": "Q4 2026",
+      "capability": "Data Product Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "3134648123384706BB68D5C19829AA55",
+      "title": "Data products for advanced metering infrastructure events in utilities",
+      "quarter": "Product Vision",
+      "capability": "Data Product Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "DB9C27ACB50C1FD086F75D40F2432DD2",
+      "title": "Finance Intelligence: SAP Green Ledger",
+      "quarter": "Q2 2026",
+      "capability": "Data Product Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "AF4016E7EC2D43B190646784C30FC363",
+      "title": "Data products for SAP Master Data Governance: data quality evaluation results for business partner",
+      "quarter": "Q4 2026",
+      "capability": "Data Product Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "C0090B2067644090ADC3DEBC00C2632A",
+      "title": "Cloud ERP intelligence: project claim",
+      "quarter": "Q2 2027",
+      "capability": "Data Product Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "01DD7775C9D61FD086F746D0EE3697BD",
+      "title": "Cloud ERP Intelligence & Finance Intelligence: SAP Sustainability Footprint Management",
+      "quarter": "Q2 2026",
+      "capability": "Data Product Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "1D57231EA3FF1FD086F753000E86CEA9",
+      "title": "Cloud ERP Intelligence & Finance Intelligence: SAP Sustainability Control Tower",
+      "quarter": "Q2 2026",
+      "capability": "Data Product Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "BB57E4273F50495597159A5B6CC29D7C",
+      "title": "Data products for utilities invoicing document",
+      "quarter": "Q4 2026",
+      "capability": "Data Product Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "3D0A9618B5724295B290A040FE0C0118",
+      "title": "Data products for utilities meter reading document",
+      "quarter": "Q4 2026",
+      "capability": "Data Product Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAC9DD21FD0A59CE8D27480B91F",
+      "title": "Travel and Expense Intelligence in SAP Business Data Cloud",
+      "quarter": "Q3 2026",
+      "capability": "Data Product Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "01DD7775C9D61FE08C9A76E9F4F81CCF",
+      "title": "Revenue Intelligence: SAP Engagement Cloud",
+      "quarter": "Q3 2026",
+      "capability": "Data Product Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "DB9C27ACB50C1FD08C9A606A774A9D62",
+      "title": "Revenue Intelligence: SAP Commerce Cloud",
+      "quarter": "Q3 2026",
+      "capability": "Data Product Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "B9AB30B8BBAD4B4DA355CD0365399FFD",
+      "title": "Data products for utilities disconnection and reconnection",
+      "quarter": "Product Vision",
+      "capability": "Data Product Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "A25A0CAEF97246BC88CAD3EFF7227595",
+      "title": "Data products for clarification cases in business process exception management",
+      "quarter": "Product Vision",
+      "capability": "Data Product Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "A92AF3E5D57147EC95732AC6D2ED78A2",
+      "title": "Support for a local table on file as a source (initial only) in replication flows",
+      "quarter": "Q3 2026",
+      "capability": "Data Replication and ETL",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "F5A58673B6DD1EED9ACCD476191E1A51",
+      "title": "Live SAP Business Warehouse (SAP BW): dynamic filter support for fiscal dimensions",
+      "quarter": "Q3 2026",
+      "capability": "Exploratory Data Analysis",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "0EB8974A435A48E39358A064103079F4",
+      "title": "Data analyzer: dynamic filter support for fiscal dimensions based on live models in SAP Datasphere",
+      "quarter": "Q4 2026",
+      "capability": "Exploratory Data Analysis",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "15F95BEB9DC04CA99583AEF0E12E8E2F",
+      "title": "Data analyzer: ability to save insights without preselecting mandatory prompts",
+      "quarter": "Q3 2026",
+      "capability": "Exploratory Data Analysis",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "B738AF4999AE4A349617AA0FED919816",
+      "title": "Data analyzer: support for story dynamic filters in interoperability flows",
+      "quarter": "Q3 2026",
+      "capability": "Exploratory Data Analysis",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "F2F4472A861B4B53A2E101D300FBB114",
+      "title": "Insight scheduling based on live models in SAP Datasphere",
+      "quarter": null,
+      "capability": "Exploratory Data Analysis",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "B3D99CC1B7811EEF9CA110AB4503772C",
+      "title": "Launching a Microsoft Excel workbook from the data analyzer",
+      "quarter": null,
+      "capability": "Exploratory Data Analysis",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "40AB4E5C98214F11A0E65EF68270C519",
+      "title": "Data analyzer: option to display the ID of measures on table",
+      "quarter": "Q3 2026",
+      "capability": "Exploratory Data Analysis",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "9B08081679634B8DBA1D4B7C74FADCB3",
+      "title": "Data analyzer: add multiple hyperlinks to table",
+      "quarter": "Q3 2026",
+      "capability": "Exploratory Data Analysis",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "13FDA4A615C31EEEBCC7F18B3BB68EE8",
+      "title": "Scheduling a story in presentation mode",
+      "quarter": "Q1 2027",
+      "capability": "Insight Sharing and Collaboration",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAADBCE1FE0B79B06CB30745798",
+      "title": "People Intelligence: EU pay transparency insights",
+      "quarter": "Q2 2026",
+      "capability": "Intelligent Content Management",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "B14354EFD3D542279CD72601C11FB42A",
+      "title": "Merging variables in Microsoft Excel",
+      "quarter": "Q4 2026",
+      "capability": "Office Suite Integration",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3ABE796A1FE0A7F2E7A0AF103F22",
+      "title": "Supporting dimension comments in Microsoft Excel",
+      "quarter": null,
+      "capability": "Office Suite Integration",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "E3BB51673FD940A1B2D3ABF4237FE34F",
+      "title": "Custom sorting within hierarchy in Microsoft Excel",
+      "quarter": "Q3 2026",
+      "capability": "Office Suite Integration",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "F4B920B421EE46B2A719A21247F645EF",
+      "title": "Data lock visualization in the grid in the Microsoft Excel add-in",
+      "quarter": "Q4 2026",
+      "capability": "Office Suite Integration",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AA914A11FD0A58BD75AC3896E5E",
+      "title": "Automated transfer of Excel workbooks from one tenant to another tenant",
+      "quarter": "Q1 2027",
+      "capability": "Office Suite Integration",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "8B1FD65FBEFB1EEF9CA0F0358235015B",
+      "title": "Support Multi actions in the Excel add-in",
+      "quarter": "Q3 2026",
+      "capability": "Office Suite Integration",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "06C828A4D1B845EB9F45862B8D4CE1E9",
+      "title": "Support for adding multiple new combinations to a table in the Excel add-in",
+      "quarter": "Q4 2026",
+      "capability": "Office Suite Integration",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "F344F2F86B384DC885FEAE62F0F44EA2",
+      "title": "Support for currency conversion in the Microsoft Excel add-in",
+      "quarter": "Q3 2026",
+      "capability": "Office Suite Integration",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "C94689DE60304BABB5C5C2700CA951B5",
+      "title": "Native capability to jump from models to Microsoft Excel",
+      "quarter": "Q4 2026",
+      "capability": "Office Suite Integration",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "905D0C4E9DD041A8AED7E467CF7555F2",
+      "title": "Support for connecting SAP Datasphere (tunnel mode) with the Microsoft Excel add-in",
+      "quarter": null,
+      "capability": "Office Suite Integration",
+      "status": "DELIVERED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3ABE772D1FD0A5F7BFC26C687C05",
+      "title": "Data import API: hierarchy support",
+      "quarter": "Q4 2026",
+      "capability": "Other",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "20AF8C673D90408398400D5AA889A951",
+      "title": "Smart insights from table cells",
+      "quarter": "Q3 2026",
+      "capability": "Other",
+      "status": "PLANNED",
+      "product": "sap-business-data-cloud",
+      "product_display": "SAP Business Data Cloud",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "C10D295AC83C1EDF869D517DCDE3A54E",
+      "title": "Enablement of multiple availability zones (multi-AZ) for SAP HANA Cloud",
+      "quarter": "Product Vision",
+      "capability": "Data and Analytics Administration",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "858187A400D71EDDAF8EE902289032A3",
+      "title": "Metadata extraction for replication flows",
+      "quarter": "Q4 2026",
+      "capability": "Data and Analytics Cataloging",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAADBCE1EDD94829FFAD4A59203",
+      "title": "Metadata extraction for SAP HANA Cloud",
+      "quarter": "Q2 2026",
+      "capability": "Data and Analytics Cataloging",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "27D4BC7308D81EDE83DEF951C0F23A28",
+      "title": "Enriching data products with catalog metadata",
+      "quarter": "Q3 2026",
+      "capability": "Data and Analytics Cataloging",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAADBCE1EDD948273FBDE1B4EFA",
+      "title": "Metadata extraction for SAP S/4HANA",
+      "quarter": "Q2 2026",
+      "capability": "Data and Analytics Cataloging",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "A90128C2F6851EEDB3E6742547E6D1C1",
+      "title": "Metadata extraction for SAP ERP Central Component",
+      "quarter": "Q2 2026",
+      "capability": "Data and Analytics Cataloging",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "766B1933CD0140CAA95507CDF09A9A8B",
+      "title": "OAuth 2.0 with X.509 client certificate authentication for on-premises connections to ABAP and SAP S/4HANA",
+      "quarter": "Q3 2026",
+      "capability": "Data Connectivity Management",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3ABE772D1EED819B65893042F477",
+      "title": "Sharing of dependent entities",
+      "quarter": "Q4 2026",
+      "capability": "Data Design and Modelling",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "6DF54C88F6211FD084ADCE49C7B08221",
+      "title": "AI-assisted SQL generation on the view builder",
+      "quarter": "Q3 2026",
+      "capability": "Data Design and Modelling",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": "Q2 2026"
+    },
+    {
+      "id": "571FEA0A0D121EDFA3F4DD6438447DB6",
+      "title": "Restricted measure based on node-level hierarchy",
+      "quarter": "Q3 2026",
+      "capability": "Data Design and Modelling",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "3B3D3BDFEDC61EDFB7AF56E956712E89",
+      "title": "Support for display attributes in analytic models",
+      "quarter": "Q2 2027",
+      "capability": "Data Design and Modelling",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "DC85397620AB463786651411B5004274",
+      "title": "Analytic model: restrict data export",
+      "quarter": "Q3 2026",
+      "capability": "Data Design and Modelling",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "F586EF4391F81FE084AD599C8C467A06",
+      "title": "Analytic model: Multi-fact modeling",
+      "quarter": "Q4 2026",
+      "capability": "Data Design and Modelling",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": "Q3 2026"
+    },
+    {
+      "id": "0588719776CB1EEE8F9DC09454DC6F47",
+      "title": "Private data marketplace \u2013 sharing data products through the Catena X EDC connector",
+      "quarter": "Q2 2026",
+      "capability": "Data Marketplace Management",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "E78B0E4728D31EEDA1EF80BA403814E0",
+      "title": "User and authorization management audit",
+      "quarter": "Q2 2026",
+      "capability": "Data Privacy Management",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "31F8B05650641EDDA1EF50D24787BB72",
+      "title": "Integration with the Identity Provisioning service",
+      "quarter": "Product Vision",
+      "capability": "Data Privacy Management",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "A92AF3E5D57147EC95732AC6D2ED78A2",
+      "title": "Support for a local table on file as a source (initial only) in replication flows",
+      "quarter": "Q3 2026",
+      "capability": "Data Replication and ETL",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "6B3428F433A94E6680DD8CAD6A96A45E",
+      "title": "Non-key column addition in replication flow without data reload for SAP Datasphere local tables on file targets",
+      "quarter": "Q3 2026",
+      "capability": "Data Replication and ETL",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3ABE796A1FE0A7C85AFE1D57BEF4",
+      "title": "Support for MySQL database as a source in replication flows",
+      "quarter": "Q3 2026",
+      "capability": "Data Replication and ETL",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3ABE796A1FD0B3DA1CB5BC89C13A",
+      "title": "Transformation flows - delta table detection and configuration for SQL script nodes",
+      "quarter": "Q3 2026",
+      "capability": "Data Replication and ETL",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "489E1EDBAF064FC18AE3502BEA48E620",
+      "title": "Support for delta replication from connection types for SAP ECC and SAP BW using replication flows",
+      "quarter": "Q3 2026",
+      "capability": "Data Replication and ETL",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "309F047CD0D6477DADA474EC2660EBF0",
+      "title": "Support for adding of non-key columns in replication flow without data reload for Datasphere Local table as target",
+      "quarter": "Q3 2026",
+      "capability": "Data Replication and ETL",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "6DF54C88F6211FE0809BD29F0D2AEA85",
+      "title": "Support for SAP Cloud Connector for cloud data stores",
+      "quarter": "Q2 2026",
+      "capability": "Data Replication and ETL",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAC9DD21FD0AA8F3B5F403EDA09",
+      "title": "Support for replication (initial load only) from connection types for SAP ECC and SAP BW using replication flows",
+      "quarter": "Q2 2026",
+      "capability": "Data Replication and ETL",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "E739C76B38B41EEF82A3109E11DDF0F7",
+      "title": "Semantic onboarding: import of calculation views from SAP HANA",
+      "quarter": "Q2 2026",
+      "capability": "Data Replication and ETL",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "5767C5C876BD1EEEB39392E90A58B570",
+      "title": "Support for Google BigQuery as a source in replication flows",
+      "quarter": "Product Vision",
+      "capability": "Data Replication and ETL",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "91D21DB778331FE0809B5BA6D2BB5E17",
+      "title": "Support SAP Cloud Connector for cloud object stores",
+      "quarter": "Q2 2026",
+      "capability": "Data Replication and ETL",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAC9DD21FD0A8913FF5460BB9A3",
+      "title": "Delta load scheduling in task chains",
+      "quarter": "Q2 2026",
+      "capability": "Data Replication and ETL",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "01BE3BFE44181EDEBAF2CFCAC0DAAAAB",
+      "title": "Usability for replication flows in the areas of modeling and monitoring",
+      "quarter": "Product Vision",
+      "capability": "Data Replication and ETL",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "0A0B3BF6DF2E4AF395360EDB363D12B8",
+      "title": "Automated creation and renewal of SAML assertions for connections with SAP SuccessFactors",
+      "quarter": "Q3 2026",
+      "capability": "Data Replication and ETL",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "7790EF56B6721EDFA88500910660B68D",
+      "title": "Additional support for input parameters ABAP CDS views",
+      "quarter": "Q4 2026",
+      "capability": "Data Replication and ETL",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3ABE796A1FE094D5AE03AABA3065",
+      "title": "Support for Oracle database as a source in replication flows",
+      "quarter": "Q2 2026",
+      "capability": "Data Replication and ETL",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3ABE772D1FD0ABFFD29798DEDD0F",
+      "title": "Enabling REST API connectivity and source support in replication flows",
+      "quarter": "Q3 2026",
+      "capability": "Data Replication and ETL",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": "Q2 2026"
+    },
+    {
+      "id": "000D3ABE772D1FD0B5F6304D54B9DF32",
+      "title": "Support for SHA3-256 hashing for SAP Signavio solutions as the target",
+      "quarter": "Q2 2026",
+      "capability": "Data Replication and ETL",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "DC45C76420C242BDA9A93A7F41760CE8",
+      "title": "Reduced resource consumption in local table merge tasks",
+      "quarter": "Q2 2026",
+      "capability": "Data Replication and ETL",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "5A563893226844F5B0C5CB2F9AD379BF",
+      "title": "Support for Snowflake as the source for an initial load in a replication flow",
+      "quarter": "Q2 2026",
+      "capability": "Data Replication and ETL",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "000D3AAC9DD21EDCA2EE626A07B2C0FD",
+      "title": "Handling of schedules upon user deletion",
+      "quarter": "Q4 2026",
+      "capability": "Data Replication and ETL",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "E0725B39A6B8409397526D174DF350F5",
+      "title": "Support for delta-enabled local tables on files as a target in replication flows for initial-load-only sources",
+      "quarter": "Q2 2026",
+      "capability": "Data Replication and ETL",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "7F9F136673CD4976B0DADFE11F2BDC4F",
+      "title": "Transformation flow: ability to flatten star schema for subsequent machine learning (ML) and AI analysis",
+      "quarter": "Q2 2026",
+      "capability": "Data Replication and ETL",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "71879553B6474E0FB2FBA6377992BBDD",
+      "title": "Support for copying multiple spaces at once in SAP Datasphere with model repointing",
+      "quarter": "Q2 2026",
+      "capability": "Other",
+      "status": "PLANNED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "73DD64690CE24FB284D28B935D79AFBF",
+      "title": "Analytic model: ability to map variables of stacked models",
+      "quarter": null,
+      "capability": "Other",
+      "status": "DELIVERED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    },
+    {
+      "id": "CDCF37A942614EB68AF21280776B2C78",
+      "title": "Analytic model: ability to distinguish between inherited and local properties",
+      "quarter": null,
+      "capability": "Other",
+      "status": "DELIVERED",
+      "product": "sap-datasphere",
+      "product_display": "SAP Datasphere",
+      "snapshot_date": "2026-05-27",
+      "slipped_from": null
+    }
+  ]
+};
+  window.__SHIFT_HISTORY__ = [
+  {
+    "date": "2026-05-27",
+    "product": "sap-business-data-cloud",
+    "product_display": "SAP Business Data Cloud",
+    "id": "E9C01FD747E41EEDA8F9E2D33BCBA004",
+    "title": "Running total story calculation for live SAP Business Warehouse (SAP BW)",
+    "old_quarter": "Q3 2026",
+    "new_quarter": "Q1 2027",
+    "direction": "forward"
+  },
+  {
+    "date": "2026-05-27",
+    "product": "sap-business-data-cloud",
+    "product_display": "SAP Business Data Cloud",
+    "id": "21590949204143058288721CD4B3AB4D",
+    "title": "User-defined handling of mismatches between facts and primary data in the modeler",
+    "old_quarter": "Q3 2026",
+    "new_quarter": "Q4 2026",
+    "direction": "forward"
+  },
+  {
+    "date": "2026-05-27",
+    "product": "sap-datasphere",
+    "product_display": "SAP Datasphere",
+    "id": "6DF54C88F6211FD084ADCE49C7B08221",
+    "title": "AI-assisted SQL generation on the view builder",
+    "old_quarter": "Q2 2026",
+    "new_quarter": "Q3 2026",
+    "direction": "forward"
+  },
+  {
+    "date": "2026-05-27",
+    "product": "sap-datasphere",
+    "product_display": "SAP Datasphere",
+    "id": "F586EF4391F81FE084AD599C8C467A06",
+    "title": "Analytic model: Multi-fact modeling",
+    "old_quarter": "Q3 2026",
+    "new_quarter": "Q4 2026",
+    "direction": "forward"
+  },
+  {
+    "date": "2026-05-27",
+    "product": "sap-datasphere",
+    "product_display": "SAP Datasphere",
+    "id": "000D3ABE772D1FD0ABFFD29798DEDD0F",
+    "title": "Enabling REST API connectivity and source support in replication flows",
+    "old_quarter": "Q2 2026",
+    "new_quarter": "Q3 2026",
+    "direction": "forward"
+  }
+];
+</script>
+<script src="assets/roadmap/scripts/app.js"></script>
+
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script type="text/babel" src="scripts/components.jsx"></script>
+</body>
+</html>
