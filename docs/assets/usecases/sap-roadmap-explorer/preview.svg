@@ -1,0 +1,259 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <!-- background -->
+  <rect width="800" height="600" fill="#eef2fa"/>
+
+  <!-- subtle dot grid -->
+  <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+    <circle cx="12" cy="12" r="0.9" fill="#c5d3ea" opacity=".5"/>
+  </pattern>
+  <rect width="800" height="600" fill="url(#dots)"/>
+
+  <!-- ── HEADER BAR ────────────────────────────────────────────────── -->
+  <rect x="0" y="0" width="800" height="70" fill="#0a1628"/>
+
+  <!-- header title -->
+  <text x="32" y="30" font-family="system-ui,sans-serif" font-size="11" font-weight="700"
+        fill="#e84c18" letter-spacing="2.5" opacity=".9">SAP ROADMAP TRACKER</text>
+  <text x="32" y="54" font-family="system-ui,sans-serif" font-size="11" fill="#c5d3ea" opacity=".75">
+    3 products · daily diff at 03:00 UTC · GitHub Actions pipeline
+  </text>
+
+  <!-- date chip -->
+  <rect x="630" y="22" width="140" height="26" rx="4" fill="#e84c18" opacity=".15"/>
+  <text x="700" y="39" font-family="system-ui,sans-serif" font-size="10.5" font-weight="600"
+        fill="#e84c18" text-anchor="middle" letter-spacing="0.5">Tue 27 May 2026</text>
+
+  <!-- ── GANTT SECTION ─────────────────────────────────────────────── -->
+  <!-- gantt card -->
+  <rect x="24" y="88" width="530" height="352" rx="8" fill="#ffffff" stroke="#c5d3ea" stroke-width="1"/>
+
+  <!-- gantt section label -->
+  <text x="44" y="112" font-family="system-ui,sans-serif" font-size="8.5" font-weight="700"
+        fill="#0a1628" letter-spacing="2" opacity=".5">CURRENT ROADMAP — GANTT VIEW</text>
+  <line x1="44" y1="118" x2="534" y2="118" stroke="#c5d3ea" stroke-width="0.7"/>
+
+  <!-- quarter column headers -->
+  <!-- product label column width = 148px, starts at x=44 -->
+  <!-- Q columns start at x=192, each 70px wide -->
+  <text x="213" y="136" font-family="system-ui,sans-serif" font-size="9" font-weight="700"
+        fill="#0a1628" opacity=".55" text-anchor="middle" letter-spacing="1">Q1 2026</text>
+  <text x="283" y="136" font-family="system-ui,sans-serif" font-size="9" font-weight="700"
+        fill="#0a1628" opacity=".55" text-anchor="middle" letter-spacing="1">Q2 2026</text>
+  <text x="353" y="136" font-family="system-ui,sans-serif" font-size="9" font-weight="700"
+        fill="#0a1628" opacity=".55" text-anchor="middle" letter-spacing="1">Q3 2026</text>
+  <text x="423" y="136" font-family="system-ui,sans-serif" font-size="9" font-weight="700"
+        fill="#0a1628" opacity=".55" text-anchor="middle" letter-spacing="1">Q4 2026</text>
+  <text x="499" y="136" font-family="system-ui,sans-serif" font-size="9" font-weight="700"
+        fill="#0a1628" opacity=".35" text-anchor="middle" letter-spacing="1">Vision</text>
+
+  <!-- vertical quarter dividers -->
+  <line x1="248" y1="122" x2="248" y2="428" stroke="#c5d3ea" stroke-width="0.6" stroke-dasharray="3,3"/>
+  <line x1="318" y1="122" x2="318" y2="428" stroke="#c5d3ea" stroke-width="0.6" stroke-dasharray="3,3"/>
+  <line x1="388" y1="122" x2="388" y2="428" stroke="#c5d3ea" stroke-width="0.6" stroke-dasharray="3,3"/>
+  <line x1="458" y1="122" x2="458" y2="428" stroke="#c5d3ea" stroke-width="0.6" stroke-dasharray="3,3"/>
+
+  <!-- today marker (Q2 2026, roughly mid-column) -->
+  <line x1="290" y1="122" x2="290" y2="428" stroke="#e84c18" stroke-width="1.2" opacity=".5"/>
+  <rect x="277" y="122" width="26" height="13" rx="3" fill="#e84c18" opacity=".85"/>
+  <text x="290" y="132" font-family="system-ui,sans-serif" font-size="7.5" font-weight="700"
+        fill="white" text-anchor="middle">TODAY</text>
+
+  <!-- ── ROW 1: SAP Analytics Cloud ── -->
+  <line x1="44" y1="157" x2="534" y2="157" stroke="#c5d3ea" stroke-width="0.5"/>
+  <text x="44" y="176" font-family="system-ui,sans-serif" font-size="9.5" font-weight="600"
+        fill="#0a1628" opacity=".8">SAP Analytics Cloud</text>
+  <text x="44" y="188" font-family="system-ui,sans-serif" font-size="8" fill="#0a1628" opacity=".4">21 items</text>
+
+  <!-- SAC bars – blue #3b82f6 -->
+  <rect x="252" y="163" width="55" height="11" rx="3" fill="#3b82f6" opacity=".75"/>
+  <rect x="253" y="176" width="42" height="11" rx="3" fill="#3b82f6" opacity=".55"/>
+  <rect x="322" y="163" width="48" height="11" rx="3" fill="#3b82f6" opacity=".65"/>
+  <rect x="323" y="176" width="36" height="11" rx="3" fill="#3b82f6" opacity=".45"/>
+  <rect x="392" y="163" width="52" height="11" rx="3" fill="#3b82f6" opacity=".6"/>
+  <rect x="393" y="176" width="30" height="11" rx="3" fill="#3b82f6" opacity=".35"/>
+  <rect x="462" y="170" width="32" height="11" rx="3" fill="#3b82f6" opacity=".25"/>
+
+  <!-- NEW badge on a SAC Q3 item -->
+  <rect x="444" y="163" width="22" height="11" rx="3" fill="#22c55e"/>
+  <text x="455" y="172" font-family="system-ui,sans-serif" font-size="7" font-weight="700"
+        fill="white" text-anchor="middle">NEW</text>
+
+  <!-- ── ROW 2: SAP Business Data Cloud ── -->
+  <line x1="44" y1="209" x2="534" y2="209" stroke="#c5d3ea" stroke-width="0.5"/>
+  <text x="44" y="228" font-family="system-ui,sans-serif" font-size="9.5" font-weight="600"
+        fill="#0a1628" opacity=".8">SAP Business Data Cloud</text>
+  <text x="44" y="240" font-family="system-ui,sans-serif" font-size="8" fill="#0a1628" opacity=".4">18 items</text>
+
+  <!-- BDC bars – teal #0d9488 -->
+  <rect x="252" y="215" width="38" height="11" rx="3" fill="#0d9488" opacity=".7"/>
+  <rect x="253" y="228" width="50" height="11" rx="3" fill="#0d9488" opacity=".5"/>
+  <rect x="322" y="215" width="58" height="11" rx="3" fill="#0d9488" opacity=".65"/>
+  <rect x="322" y="228" width="44" height="11" rx="3" fill="#0d9488" opacity=".45"/>
+  <rect x="392" y="215" width="46" height="11" rx="3" fill="#0d9488" opacity=".6"/>
+  <rect x="393" y="228" width="35" height="11" rx="3" fill="#0d9488" opacity=".4"/>
+  <rect x="462" y="215" width="40" height="11" rx="3" fill="#0d9488" opacity=".28"/>
+
+  <!-- SLIPPED badge on a BDC item -->
+  <rect x="392" y="228" width="40" height="11" rx="3" fill="#f97316" opacity=".85"/>
+  <text x="412" y="237" font-family="system-ui,sans-serif" font-size="7" font-weight="700"
+        fill="white" text-anchor="middle">▶ Q4</text>
+
+  <!-- ── ROW 3: SAP Datasphere ── -->
+  <line x1="44" y1="261" x2="534" y2="261" stroke="#c5d3ea" stroke-width="0.5"/>
+  <text x="44" y="280" font-family="system-ui,sans-serif" font-size="9.5" font-weight="600"
+        fill="#0a1628" opacity=".8">SAP Datasphere</text>
+  <text x="44" y="292" font-family="system-ui,sans-serif" font-size="8" fill="#0a1628" opacity=".4">15 items</text>
+
+  <!-- Datasphere bars – purple #7c3aed -->
+  <rect x="252" y="267" width="44" height="11" rx="3" fill="#7c3aed" opacity=".65"/>
+  <rect x="253" y="280" width="58" height="11" rx="3" fill="#7c3aed" opacity=".5"/>
+  <rect x="322" y="267" width="50" height="11" rx="3" fill="#7c3aed" opacity=".6"/>
+  <rect x="322" y="280" width="38" height="11" rx="3" fill="#7c3aed" opacity=".4"/>
+  <rect x="392" y="267" width="56" height="11" rx="3" fill="#7c3aed" opacity=".65"/>
+  <rect x="393" y="280" width="40" height="11" rx="3" fill="#7c3aed" opacity=".45"/>
+  <rect x="462" y="267" width="28" height="11" rx="3" fill="#7c3aed" opacity=".22"/>
+  <rect x="463" y="280" width="20" height="11" rx="3" fill="#7c3aed" opacity=".15"/>
+
+  <!-- ── LEGEND ── -->
+  <line x1="44" y1="316" x2="534" y2="316" stroke="#c5d3ea" stroke-width="0.7"/>
+  <rect x="44" y="324" width="10" height="8" rx="2" fill="#22c55e"/>
+  <text x="58" y="332" font-family="system-ui,sans-serif" font-size="8.5" fill="#0a1628" opacity=".6">New item</text>
+  <rect x="130" y="324" width="10" height="8" rx="2" fill="#f97316" opacity=".85"/>
+  <text x="144" y="332" font-family="system-ui,sans-serif" font-size="8.5" fill="#0a1628" opacity=".6">Date shift</text>
+  <rect x="220" y="324" width="10" height="8" rx="2" fill="#ef4444" opacity=".7"/>
+  <text x="234" y="332" font-family="system-ui,sans-serif" font-size="8.5" fill="#0a1628" opacity=".6">Removed</text>
+  <line x1="300" y1="328" x2="310" y2="328" stroke="#e84c18" stroke-width="1.2" opacity=".5"/>
+  <circle cx="305" cy="328" r="2" fill="#e84c18" opacity=".6"/>
+  <text x="314" y="332" font-family="system-ui,sans-serif" font-size="8.5" fill="#0a1628" opacity=".6">Today</text>
+
+  <!-- ── DAILY DIFF FEED ── -->
+  <line x1="44" y1="348" x2="534" y2="348" stroke="#c5d3ea" stroke-width="0.7"/>
+  <text x="44" y="364" font-family="system-ui,sans-serif" font-size="8.5" font-weight="700"
+        fill="#0a1628" letter-spacing="2" opacity=".5">TODAY'S CHANGES</text>
+
+  <!-- change row 1 – added -->
+  <rect x="44" y="372" width="480" height="15" rx="3" fill="#22c55e" opacity=".08"/>
+  <rect x="44" y="372" width="3" height="15" rx="1.5" fill="#22c55e"/>
+  <text x="54" y="383" font-family="system-ui,sans-serif" font-size="8.5" fill="#0a1628" opacity=".75">
+    + Added · SAP Analytics Cloud · "Embedded Analytics Enhancements" · Q3 2026
+  </text>
+
+  <!-- change row 2 – shifted -->
+  <rect x="44" y="392" width="480" height="15" rx="3" fill="#f97316" opacity=".08"/>
+  <rect x="44" y="392" width="3" height="15" rx="1.5" fill="#f97316"/>
+  <text x="54" y="403" font-family="system-ui,sans-serif" font-size="8.5" fill="#0a1628" opacity=".75">
+    ▶ Shifted · SAP Business Data Cloud · "Data Marketplace" · Q3 → Q4 2026
+  </text>
+
+  <!-- change row 3 – removed -->
+  <rect x="44" y="412" width="480" height="15" rx="3" fill="#ef4444" opacity=".08"/>
+  <rect x="44" y="412" width="3" height="15" rx="1.5" fill="#ef4444"/>
+  <text x="54" y="423" font-family="system-ui,sans-serif" font-size="8.5" fill="#0a1628" opacity=".75">
+    − Removed · SAP Business Data Cloud · "Early Adopter Access – Wave 1"
+  </text>
+
+  <!-- ── RIGHT STATS PANEL ─────────────────────────────────────────── -->
+  <rect x="572" y="88" width="204" height="352" rx="8" fill="#0a1628" opacity=".04"/>
+  <rect x="572" y="88" width="204" height="352" rx="8" fill="none" stroke="#c5d3ea" stroke-width="1"/>
+
+  <!-- panel title -->
+  <text x="592" y="112" font-family="system-ui,sans-serif" font-size="8.5" font-weight="700"
+        fill="#0a1628" letter-spacing="2" opacity=".5">SNAPSHOT STATS</text>
+  <line x1="592" y1="118" x2="756" y2="118" stroke="#c5d3ea" stroke-width="0.7"/>
+
+  <!-- total items big number -->
+  <text x="592" y="148" font-family="system-ui,sans-serif" font-size="36" font-weight="700"
+        fill="#0a1628" opacity=".88">54</text>
+  <text x="638" y="136" font-family="system-ui,sans-serif" font-size="8.5" fill="#0a1628" opacity=".45">roadmap</text>
+  <text x="638" y="148" font-family="system-ui,sans-serif" font-size="8.5" fill="#0a1628" opacity=".45">items tracked</text>
+
+  <line x1="592" y1="162" x2="756" y2="162" stroke="#c5d3ea" stroke-width="0.6"/>
+
+  <!-- change breakdown -->
+  <text x="592" y="182" font-family="system-ui,sans-serif" font-size="8.5" font-weight="700"
+        fill="#0a1628" letter-spacing="1.5" opacity=".45">TODAY</text>
+
+  <!-- added -->
+  <rect x="592" y="190" width="22" height="22" rx="4" fill="#22c55e" opacity=".15"/>
+  <text x="603" y="205" font-family="system-ui,sans-serif" font-size="13" font-weight="700"
+        fill="#22c55e" text-anchor="middle">1</text>
+  <text x="620" y="199" font-family="system-ui,sans-serif" font-size="9" font-weight="600"
+        fill="#0a1628" opacity=".75">Added</text>
+  <text x="620" y="210" font-family="system-ui,sans-serif" font-size="8" fill="#0a1628" opacity=".4">new roadmap item</text>
+
+  <!-- shifted -->
+  <rect x="592" y="220" width="22" height="22" rx="4" fill="#f97316" opacity=".15"/>
+  <text x="603" y="235" font-family="system-ui,sans-serif" font-size="13" font-weight="700"
+        fill="#f97316" text-anchor="middle">1</text>
+  <text x="620" y="229" font-family="system-ui,sans-serif" font-size="9" font-weight="600"
+        fill="#0a1628" opacity=".75">Shifted</text>
+  <text x="620" y="240" font-family="system-ui,sans-serif" font-size="8" fill="#0a1628" opacity=".4">delivery quarter moved</text>
+
+  <!-- removed -->
+  <rect x="592" y="250" width="22" height="22" rx="4" fill="#ef4444" opacity=".15"/>
+  <text x="603" y="265" font-family="system-ui,sans-serif" font-size="13" font-weight="700"
+        fill="#ef4444" text-anchor="middle">1</text>
+  <text x="620" y="259" font-family="system-ui,sans-serif" font-size="9" font-weight="600"
+        fill="#0a1628" opacity=".75">Removed</text>
+  <text x="620" y="270" font-family="system-ui,sans-serif" font-size="8" fill="#0a1628" opacity=".4">item dropped</text>
+
+  <line x1="592" y1="284" x2="756" y2="284" stroke="#c5d3ea" stroke-width="0.6"/>
+
+  <!-- 7-day sparkline bars -->
+  <text x="592" y="302" font-family="system-ui,sans-serif" font-size="8.5" font-weight="700"
+        fill="#0a1628" letter-spacing="1.5" opacity=".45">7-DAY ACTIVITY</text>
+
+  <rect x="592" y="314" width="14" height="18" rx="2" fill="#c5d3ea" opacity=".6"/>
+  <rect x="610" y="318" width="14" height="14" rx="2" fill="#c5d3ea" opacity=".5"/>
+  <rect x="628" y="310" width="14" height="22" rx="2" fill="#c5d3ea" opacity=".6"/>
+  <rect x="646" y="320" width="14" height="12" rx="2" fill="#c5d3ea" opacity=".4"/>
+  <rect x="664" y="306" width="14" height="26" rx="2" fill="#c5d3ea" opacity=".6"/>
+  <rect x="682" y="314" width="14" height="18" rx="2" fill="#c5d3ea" opacity=".5"/>
+  <rect x="700" y="308" width="14" height="24" rx="2" fill="#e84c18" opacity=".75"/>
+  <line x1="592" y1="338" x2="756" y2="338" stroke="#c5d3ea" stroke-width="0.5"/>
+  <text x="700" y="350" font-family="system-ui,sans-serif" font-size="7.5" fill="#e84c18"
+        text-anchor="middle" font-weight="600">today</text>
+
+  <line x1="592" y1="360" x2="756" y2="360" stroke="#c5d3ea" stroke-width="0.6"/>
+
+  <!-- product colour legend in panel -->
+  <rect x="592" y="370" width="8" height="8" rx="2" fill="#3b82f6" opacity=".75"/>
+  <text x="604" y="378" font-family="system-ui,sans-serif" font-size="8" fill="#0a1628" opacity=".55">Analytics Cloud</text>
+  <rect x="592" y="384" width="8" height="8" rx="2" fill="#0d9488" opacity=".75"/>
+  <text x="604" y="392" font-family="system-ui,sans-serif" font-size="8" fill="#0a1628" opacity=".55">Business Data Cloud</text>
+  <rect x="592" y="398" width="8" height="8" rx="2" fill="#7c3aed" opacity=".75"/>
+  <text x="604" y="406" font-family="system-ui,sans-serif" font-size="8" fill="#0a1628" opacity=".55">Datasphere</text>
+
+  <!-- ── BOTTOM STRIP ───────────────────────────────────────────────── -->
+  <rect x="0" y="460" width="800" height="140" fill="#0a1628" opacity=".03"/>
+  <line x1="0" y1="460" x2="800" y2="460" stroke="#c5d3ea" stroke-width="0.8"/>
+
+  <!-- weekly report snippet -->
+  <text x="32" y="484" font-family="system-ui,sans-serif" font-size="8.5" font-weight="700"
+        fill="#0a1628" letter-spacing="2" opacity=".45">WEEKLY BRIEF — 2026-W22</text>
+  <line x1="32" y1="490" x2="560" y2="490" stroke="#c5d3ea" stroke-width="0.6"/>
+
+  <rect x="32" y="497" width="3" height="52" rx="1.5" fill="#e84c18" opacity=".6"/>
+
+  <text x="44" y="510" font-family="system-ui,sans-serif" font-size="9" font-weight="600"
+        fill="#0a1628" opacity=".7">SAP Analytics Cloud</text>
+  <rect x="44" y="516" width="220" height="4" rx="2" fill="#0a1628" opacity=".18"/>
+  <rect x="44" y="525" width="190" height="4" rx="2" fill="#c5d3ea" opacity=".7"/>
+  <rect x="44" y="534" width="210" height="4" rx="2" fill="#c5d3ea" opacity=".5"/>
+
+  <text x="280" y="510" font-family="system-ui,sans-serif" font-size="9" font-weight="600"
+        fill="#0a1628" opacity=".7">SAP Datasphere</text>
+  <rect x="280" y="516" width="200" height="4" rx="2" fill="#0a1628" opacity=".18"/>
+  <rect x="280" y="525" width="170" height="4" rx="2" fill="#c5d3ea" opacity=".7"/>
+  <rect x="280" y="534" width="185" height="4" rx="2" fill="#c5d3ea" opacity=".5"/>
+
+  <!-- github pages badge -->
+  <rect x="612" y="468" width="156" height="26" rx="5" fill="#0a1628" opacity=".07" stroke="#c5d3ea" stroke-width="0.8"/>
+  <text x="690" y="484" font-family="system-ui,sans-serif" font-size="9" fill="#0a1628"
+        text-anchor="middle" opacity=".5">⚡ GitHub Pages preview</text>
+
+  <!-- footer label -->
+  <text x="32" y="578" font-family="system-ui,sans-serif" font-size="8.5" fill="#0a1628" opacity=".35">
+    Generated by SAP Roadmap Tracker · valantic Digital Finance · github.com/valantic-digital-finance-GmbH
+  </text>
+</svg>
