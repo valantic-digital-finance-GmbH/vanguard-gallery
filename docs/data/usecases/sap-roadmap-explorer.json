@@ -12,5 +12,5 @@
     "Searchable Gantt chart and change timeline on a GitHub Pages site"
   ],
   "stack": "Python · Playwright · D3.js · GitHub Actions",
-  "image": "https://valantic-digital-finance-GmbH.github.io/vanguard-gallery/assets/usecases/sap-roadmap-explorer/preview.svg"
+  "art": "sap"
 }
