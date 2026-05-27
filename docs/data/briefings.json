@@ -1,5 +1,83 @@
 [
   {
+    "id": "wed-2026-05-27",
+    "weekday": "Wednesday",
+    "iso": "2026-05-27",
+    "full": "May 27, 2026",
+    "title": "SAP's partnership with Anthropic enables business professionals to leverage Claude for building scalable business cases using SAP's Business Accelerator Hub sandbox data.",
+    "preview": "The blog provides a step-by-step guide, including a Master Prompt and sample output, for creating proofs of concept without requiring engineering expertise.",
+    "reads": "11 min",
+    "posts": 3,
+    "tags": [
+      "Business AI",
+      "Business Data Cloud"
+    ],
+    "highlights": [
+      "SAP's partnership with Anthropic enables business professionals to leverage Claude for building scalable business cases using SAP's Business Accelerator Hub sandbox data.",
+      "The blog provides a step-by-step guide, including a Master Prompt and sample output, for creating proofs of concept without requiring engineering expertise.",
+      "The focus is on practical, accessible tools that allow users to start small and think at scale in their business initiatives."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Start Small. Think at Scale. Business Professionals Can Use SAP & Claude to Build a Business Case.",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/start-small-think-at-scale-business-professionals-can-use-sap-amp-claude-to/ba-p/14404412",
+            "author": "RichDBlumberg",
+            "date_published": "2026-05-26",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members",
+            "summary": "This blog explores the SAP and Anthropic partnership and provides a step-by-step guide for business professionals to create a proof of concept using SAP's Business Accelerator Hub sandbox data and Claude. It includes a Master Prompt and sample output, enabling users to start small and scale without engineering support. The focus is on practical application and accessibility.",
+            "post_type": "How-to"
+          },
+          {
+            "title": "Joule Everywhere: Breaking Down SAP’s Biggest AI Announcements from Sapphire 2026",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/joule-everywhere-breaking-down-sap-s-biggest-ai-announcements-from-sapphire/ba-p/14404234",
+            "author": "pvsbprasad",
+            "date_published": "2026-05-26",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Mastering SAP Business Data Cloud - Discovery workshop 2026-Q2",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/mastering-sap-business-data-cloud-discovery-workshop-2026-q2/ba-p/14403569",
+            "author": "JoseBastidas",
+            "date_published": "2026-05-26",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "tue-2026-05-26",
     "weekday": "Tuesday",
     "iso": "2026-05-26",
@@ -3341,86 +3419,6 @@
           }
         ],
         "rest": []
-      }
-    ]
-  },
-  {
-    "id": "fri-2025-05-30",
-    "weekday": "Friday",
-    "iso": "2025-05-30",
-    "full": "May 30, 2025",
-    "title": "4 SAP blog posts.",
-    "preview": "4 SAP blog posts.",
-    "reads": "20 min",
-    "posts": 4,
-    "tags": [
-      "Analytics Cloud",
-      "SAC Planning",
-      "Datasphere"
-    ],
-    "highlights": [],
-    "sections": [
-      {
-        "name": "SAP Datasphere",
-        "tags": [
-          "SAP Datasphere"
-        ],
-        "top": [
-          {
-            "title": "SAP Datasphere News in April",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-datasphere-news-in-april/ba-p/14091774",
-            "author": "kpsauer",
-            "date_published": "2025-05-07",
-            "matching_tags": [
-              "SAP Datasphere"
-            ],
-            "minutes": 5
-          }
-        ],
-        "rest": []
-      },
-      {
-        "name": "SAP Analytics Cloud",
-        "tags": [
-          "SAP Analytics Cloud",
-          "SAP Analytics Cloud for planning",
-          "SAP Analytics Cloud, data modeling"
-        ],
-        "top": [
-          {
-            "title": "Getting Authenticated with Data Export and Data Import API's",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/getting-authenticated-with-data-export-and-data-import-api-s/ba-p/14060183",
-            "author": "jamiePower",
-            "date_published": "2025-05-30",
-            "matching_tags": [
-              "SAP Analytics Cloud",
-              "SAP Analytics Cloud for planning"
-            ],
-            "minutes": 5
-          },
-          {
-            "title": "SAP 分析云建模扩展与集成 2025 年 QRC2 版本更新内容",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-%E5%88%86%E6%9E%90%E4%BA%91%E5%BB%BA%E6%A8%A1%E6%89%A9%E5%B1%95%E4%B8%8E%E9%9B%86%E6%88%90-2025-%E5%B9%B4-qrc2-%E7%89%88%E6%9C%AC%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9/ba-p/14108577",
-            "author": "mike688",
-            "date_published": "2025-05-22",
-            "matching_tags": [
-              "SAP Analytics Cloud"
-            ],
-            "minutes": 5
-          }
-        ],
-        "rest": [
-          {
-            "title": "新功能详解：使用Housekeeping在SAP 分析云系统中高效维护数据",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/%E6%96%B0%E5%8A%9F%E8%83%BD%E8%AF%A6%E8%A7%A3-%E4%BD%BF%E7%94%A8housekeeping%E5%9C%A8sap-%E5%88%86%E6%9E%90%E4%BA%91%E7%B3%BB%E7%BB%9F%E4%B8%AD%E9%AB%98%E6%95%88%E7%BB%B4%E6%8A%A4%E6%95%B0%E6%8D%AE/ba-p/14097042",
-            "author": "Simon_Hwang",
-            "date_published": "2025-05-09",
-            "matching_tags": [
-              "SAP Analytics Cloud"
-            ],
-            "minutes": 5
-          }
-        ]
       }
     ]
   }
