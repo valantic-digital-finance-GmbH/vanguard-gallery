@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1b2a"/>
+      <stop offset="100%" style="stop-color:#1a2744"/>
+    </linearGradient>
+    <linearGradient id="nodeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00c9a7"/>
+      <stop offset="100%" style="stop-color:#0099cc"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#4f46e5"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <radialGradient id="haloPurple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:0.25"/>
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="haloTeal" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#00c9a7;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#00c9a7;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.06" stroke="#6096b4" stroke-width="0.5">
+    <line x1="0" y1="60" x2="800" y2="60"/>
+    <line x1="0" y1="120" x2="800" y2="120"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="240" x2="800" y2="240"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="0" y1="420" x2="800" y2="420"/>
+    <line x1="0" y1="480" x2="800" y2="480"/>
+    <line x1="0" y1="540" x2="800" y2="540"/>
+    <line x1="80" y1="0" x2="80" y2="600"/>
+    <line x1="160" y1="0" x2="160" y2="600"/>
+    <line x1="240" y1="0" x2="240" y2="600"/>
+    <line x1="320" y1="0" x2="320" y2="600"/>
+    <line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="480" y1="0" x2="480" y2="600"/>
+    <line x1="560" y1="0" x2="560" y2="600"/>
+    <line x1="640" y1="0" x2="640" y2="600"/>
+    <line x1="720" y1="0" x2="720" y2="600"/>
+  </g>
+
+  <!-- Halo behind center -->
+  <ellipse cx="400" cy="280" rx="180" ry="160" fill="url(#haloPurple)"/>
+
+  <!-- Connection lines (graph edges) -->
+  <g stroke="#00c9a7" stroke-width="1.5" opacity="0.35" filter="url(#glow)">
+    <!-- center to satellites -->
+    <line x1="400" y1="280" x2="160" y2="150"/>
+    <line x1="400" y1="280" x2="640" y2="150"/>
+    <line x1="400" y1="280" x2="130" y2="360"/>
+    <line x1="400" y1="280" x2="670" y2="360"/>
+    <line x1="400" y1="280" x2="260" y2="460"/>
+    <line x1="400" y1="280" x2="540" y2="460"/>
+    <!-- satellite to satellite -->
+    <line x1="160" y1="150" x2="640" y2="150" opacity="0.3"/>
+    <line x1="130" y1="360" x2="260" y2="460" opacity="0.3"/>
+    <line x1="670" y1="360" x2="540" y2="460" opacity="0.3"/>
+    <line x1="160" y1="150" x2="130" y2="360" opacity="0.3"/>
+    <line x1="640" y1="150" x2="670" y2="360" opacity="0.3"/>
+  </g>
+
+  <!-- Satellite nodes -->
+  <!-- Top-left: "Session" -->
+  <circle cx="160" cy="150" r="38" fill="url(#nodeGrad)" opacity="0.9" filter="url(#glow)"/>
+  <circle cx="160" cy="150" r="38" fill="none" stroke="#00c9a7" stroke-width="1.5" opacity="0.6"/>
+  <text x="160" y="143" text-anchor="middle" font-family="'Segoe UI', Inter, sans-serif" font-size="10" font-weight="600" fill="white" opacity="0.95">Session</text>
+  <text x="160" y="158" text-anchor="middle" font-family="'Segoe UI', Inter, sans-serif" font-size="10" font-weight="600" fill="white" opacity="0.95">Hooks</text>
+
+  <!-- Top-right: "flush.py" -->
+  <circle cx="640" cy="150" r="38" fill="url(#nodeGrad)" opacity="0.9" filter="url(#glow)"/>
+  <circle cx="640" cy="150" r="38" fill="none" stroke="#00c9a7" stroke-width="1.5" opacity="0.6"/>
+  <text x="640" y="143" text-anchor="middle" font-family="'Segoe UI', Inter, sans-serif" font-size="10" font-weight="600" fill="white" opacity="0.95">flush.py</text>
+  <text x="640" y="158" text-anchor="middle" font-family="'Segoe UI', Inter, sans-serif" font-size="9" font-weight="400" fill="#d0f7f0" opacity="0.85">Agent SDK</text>
+
+  <!-- Left: "Daily Logs" -->
+  <circle cx="130" cy="360" r="38" fill="url(#nodeGrad)" opacity="0.9" filter="url(#glow)"/>
+  <circle cx="130" cy="360" r="38" fill="none" stroke="#00c9a7" stroke-width="1.5" opacity="0.6"/>
+  <text x="130" y="353" text-anchor="middle" font-family="'Segoe UI', Inter, sans-serif" font-size="10" font-weight="600" fill="white" opacity="0.95">Daily</text>
+  <text x="130" y="368" text-anchor="middle" font-family="'Segoe UI', Inter, sans-serif" font-size="10" font-weight="600" fill="white" opacity="0.95">Logs</text>
+
+  <!-- Right: "query.py" -->
+  <circle cx="670" cy="360" r="38" fill="url(#nodeGrad)" opacity="0.9" filter="url(#glow)"/>
+  <circle cx="670" cy="360" r="38" fill="none" stroke="#00c9a7" stroke-width="1.5" opacity="0.6"/>
+  <text x="670" y="353" text-anchor="middle" font-family="'Segoe UI', Inter, sans-serif" font-size="10" font-weight="600" fill="white" opacity="0.95">query.py</text>
+  <text x="670" y="368" text-anchor="middle" font-family="'Segoe UI', Inter, sans-serif" font-size="9" font-weight="400" fill="#d0f7f0" opacity="0.85">Retrieval</text>
+
+  <!-- Bottom-left: "compile.py" -->
+  <circle cx="260" cy="460" r="38" fill="url(#nodeGrad)" opacity="0.9" filter="url(#glow)"/>
+  <circle cx="260" cy="460" r="38" fill="none" stroke="#00c9a7" stroke-width="1.5" opacity="0.6"/>
+  <text x="260" y="453" text-anchor="middle" font-family="'Segoe UI', Inter, sans-serif" font-size="10" font-weight="600" fill="white" opacity="0.95">compile</text>
+  <text x="260" y="468" text-anchor="middle" font-family="'Segoe UI', Inter, sans-serif" font-size="9" font-weight="400" fill="#d0f7f0" opacity="0.85">.py</text>
+
+  <!-- Bottom-right: "Copilot" -->
+  <circle cx="540" cy="460" r="38" fill="url(#nodeGrad)" opacity="0.9" filter="url(#glow)"/>
+  <circle cx="540" cy="460" r="38" fill="none" stroke="#00c9a7" stroke-width="1.5" opacity="0.6"/>
+  <text x="540" y="453" text-anchor="middle" font-family="'Segoe UI', Inter, sans-serif" font-size="10" font-weight="600" fill="white" opacity="0.95">Copilot</text>
+  <text x="540" y="468" text-anchor="middle" font-family="'Segoe UI', Inter, sans-serif" font-size="9" font-weight="400" fill="#d0f7f0" opacity="0.85">Memory</text>
+
+  <!-- Center node: brain/hub -->
+  <circle cx="400" cy="280" rx="64" ry="64" r="64" fill="url(#centerGrad)" filter="url(#softglow)" opacity="0.95"/>
+  <circle cx="400" cy="280" r="64" fill="none" stroke="#a78bfa" stroke-width="2" opacity="0.7"/>
+  <circle cx="400" cy="280" r="56" fill="none" stroke="#7c3aed" stroke-width="1" opacity="0.4"/>
+
+  <!-- Brain icon (simplified) inside center -->
+  <g transform="translate(400,271)" fill="white" opacity="0.95">
+    <!-- Left lobe -->
+    <path d="M-4,-18 C-18,-18 -28,-8 -28,4 C-28,14 -22,22 -14,24 L-4,24 Z" fill="white" opacity="0.9"/>
+    <!-- Right lobe -->
+    <path d="M4,-18 C18,-18 28,-8 28,4 C28,14 22,22 14,24 L4,24 Z" fill="white" opacity="0.9"/>
+    <!-- Center bridge -->
+    <rect x="-4" y="-8" width="8" height="32" rx="2" fill="white" opacity="0.7"/>
+    <!-- Neural dots -->
+    <circle cx="-16" cy="0" r="3" fill="#7c3aed"/>
+    <circle cx="16" cy="0" r="3" fill="#7c3aed"/>
+    <circle cx="-20" cy="-10" r="2" fill="#a78bfa"/>
+    <circle cx="20" cy="-10" r="2" fill="#a78bfa"/>
+    <circle cx="0" cy="-22" r="2.5" fill="#a78bfa"/>
+  </g>
+
+  <!-- Title text -->
+  <text x="400" y="555" text-anchor="middle" font-family="'Segoe UI', Inter, sans-serif" font-size="28" font-weight="700" fill="white" letter-spacing="1" opacity="0.95">LLM Personal Wiki</text>
+  <text x="400" y="582" text-anchor="middle" font-family="'Segoe UI', Inter, sans-serif" font-size="14" font-weight="400" fill="#8ab4cc" letter-spacing="0.5">AI conversations · automatically compiled · always searchable</text>
+
+  <!-- Top label -->
+  <text x="400" y="36" text-anchor="middle" font-family="'Segoe UI', Inter, sans-serif" font-size="12" font-weight="500" fill="#00c9a7" letter-spacing="2" opacity="0.8">KNOWLEDGE OPS</text>
+</svg>
