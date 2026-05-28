@@ -101,7 +101,7 @@
     "href": "sap-roadmap.html",
     "description": "Automated daily tracking of SAP product roadmap changes — additions, deletions, and delivery-quarter shifts — with Markdown reports and a static preview site.",
     "benefits": [
-      "Detects roadmap changes across 3 SAP products every morning at 03:00 UTC",
+      "Detects roadmap changes across SAP Analytics Cloud, SAP Business Data Cloud, and SAP Datasphere every morning at 03:00 UTC",
       "Alerts on delivery-quarter shifts before they hit project plans",
       "Searchable Gantt chart and change timeline on a GitHub Pages site"
     ],
