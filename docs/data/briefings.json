@@ -1,5 +1,84 @@
 [
   {
+    "id": "thu-2026-05-28",
+    "weekday": "Thursday",
+    "iso": "2026-05-28",
+    "full": "May 28, 2026",
+    "title": "Traditional data architectures like SAP BW struggle to meet the real-time demands of modern AI workloads.",
+    "preview": "Static pipelines and siloed systems are insufficient for dynamic, AI-driven applications.",
+    "reads": "11 min",
+    "posts": 3,
+    "tags": [
+      "Business AI",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [
+      "Traditional data architectures like SAP BW struggle to meet the real-time demands of modern AI workloads.",
+      "Static pipelines and siloed systems are insufficient for dynamic, AI-driven applications.",
+      "Organizations must adopt more flexible and advanced data stacks to stay competitive in the AI era."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "SAP Business AI in Life Sciences - Partner live expert session",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-ai-in-life-sciences-partner-live-expert-session/ba-p/14404402",
+            "author": "JoseBastidas",
+            "date_published": "2026-05-27",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "AI has outgrown legacy data architectures like SAP BW — is your stack ready to keep up?",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/ai-has-outgrown-legacy-data-architectures-like-sap-bw-is-your-stack-ready/ba-p/14404820",
+            "author": "kurzdo93",
+            "date_published": "2026-05-27",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "The blog post discusses how traditional data architectures, such as SAP BW, are inadequate for modern AI demands. It highlights the limitations of static pipelines and siloed systems in handling real-time, dynamic workloads required by AI and modern applications. The post emphasizes the need for a more adaptable and advanced data stack.",
+            "post_type": "Article"
+          },
+          {
+            "title": "Contextualize and reason Post-SAP Sapphire SAP Business Data Cloud briefing",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/contextualize-and-reason-post-sap-sapphire-sap-business-data-cloud-briefing/ba-p/14404271",
+            "author": "JoseBastidas",
+            "date_published": "2026-05-27",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "wed-2026-05-27",
     "weekday": "Wednesday",
     "iso": "2026-05-27",
@@ -3338,84 +3417,6 @@
               "SAP Analytics Cloud"
             ],
             "minutes": 1
-          }
-        ],
-        "rest": []
-      }
-    ]
-  },
-  {
-    "id": "thu-2025-06-26",
-    "weekday": "Thursday",
-    "iso": "2025-06-26",
-    "full": "Jun 26, 2025",
-    "title": "4 SAP blog posts.",
-    "preview": "4 SAP blog posts.",
-    "reads": "20 min",
-    "posts": 4,
-    "tags": [
-      "Datasphere",
-      "Analytics Cloud"
-    ],
-    "highlights": [],
-    "sections": [
-      {
-        "name": "SAP Datasphere",
-        "tags": [
-          "SAP Datasphere"
-        ],
-        "top": [
-          {
-            "title": "All Datasphere Functions in One File",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/all-datasphere-functions-in-one-file/ba-p/14137499",
-            "author": "ByronCarvajalP",
-            "date_published": "2025-06-26",
-            "matching_tags": [
-              "SAP Datasphere"
-            ],
-            "minutes": 5
-          },
-          {
-            "title": "SAP Datasphere News in May",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-datasphere-news-in-may/ba-p/14125082",
-            "author": "kpsauer",
-            "date_published": "2025-06-13",
-            "matching_tags": [
-              "SAP Datasphere"
-            ],
-            "minutes": 5
-          }
-        ],
-        "rest": [
-          {
-            "title": "Provisioning of Business Data Cloud : SAP Datasphere",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/provisioning-of-business-data-cloud-sap-datasphere/ba-p/14118851",
-            "author": "ShreyasriB",
-            "date_published": "2025-06-04",
-            "matching_tags": [
-              "SAP Datasphere"
-            ],
-            "minutes": 5
-          }
-        ]
-      },
-      {
-        "name": "SAP Analytics Cloud",
-        "tags": [
-          "SAP Analytics Cloud",
-          "SAP Analytics Cloud for planning",
-          "SAP Analytics Cloud, data modeling"
-        ],
-        "top": [
-          {
-            "title": "Provisioning of Business Data Cloud : SAP Analytics Cloud",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/provisioning-of-business-data-cloud-sap-analytics-cloud/ba-p/14120463",
-            "author": "ShreyasriB",
-            "date_published": "2025-06-06",
-            "matching_tags": [
-              "SAP Analytics Cloud"
-            ],
-            "minutes": 5
           }
         ],
         "rest": []
