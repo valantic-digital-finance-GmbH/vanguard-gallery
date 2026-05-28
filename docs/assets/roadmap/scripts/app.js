@@ -119,14 +119,68 @@ function toggleSlippedOnly() {
   render();
 }
 
+function switchTab(tabName) {
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.tab === tabName);
+  });
+  document.querySelectorAll('.tab-panel').forEach(panel => {
+    panel.classList.toggle('active', panel.id === tabName + '-panel');
+  });
+
+  if (tabName === 'shifts') {
+    renderShifts();
+  }
+}
+
+function renderShifts() {
+  const productVal = document.getElementById('product-filter').value;
+  const allShifts = window.__SHIFT_HISTORY__ || [];
+
+  const filtered = productVal
+    ? allShifts.filter(s => s.product === productVal)
+    : allShifts;
+
+  const tbody = document.getElementById('shifts-table-body');
+  const empty = document.getElementById('shifts-empty');
+
+  if (filtered.length === 0) {
+    tbody.innerHTML = '';
+    empty.style.display = 'block';
+    return;
+  }
+
+  empty.style.display = 'none';
+  tbody.innerHTML = filtered.map(shift => {
+    const dirClass = shift.direction === 'forward' ? 'direction-forward' : 'direction-backward';
+    const dirText = shift.direction === 'forward' ? '⬆ Forward' : '⬇ Backward';
+    return '<tr>'
+      + '<td>' + escHtml(shift.date) + '</td>'
+      + '<td>' + escHtml(shift.title) + '</td>'
+      + '<td>' + escHtml(shift.product_display) + '</td>'
+      + '<td>' + escHtml(shift.old_quarter) + '</td>'
+      + '<td>' + escHtml(shift.new_quarter) + '</td>'
+      + '<td class="' + dirClass + '">' + dirText + '</td>'
+      + '</tr>';
+  }).join('');
+}
+
 function init() {
   try {
     allItems = (window.__LATEST_DATA__ || {}).items || [];
-    document.getElementById('product-filter').addEventListener('change', render);
+    document.getElementById('product-filter').addEventListener('change', () => {
+      render();
+      const activeTab = document.querySelector('.tab-btn.active');
+      if (activeTab && activeTab.dataset.tab === 'shifts') {
+        renderShifts();
+      }
+    });
     document.getElementById('slip-toggle').addEventListener('click', toggleSlip);
     document.getElementById('slip-toggle').classList.toggle('active', slipActive);
     document.getElementById('slipped-only-toggle').addEventListener('click', toggleSlippedOnly);
     document.getElementById('slipped-only-toggle').classList.toggle('active', slippedOnlyActive);
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => switchTab(btn.dataset.tab));
+    });
     render();
   } catch (err) {
     document.getElementById('board').innerHTML =
