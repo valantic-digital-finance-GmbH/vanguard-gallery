@@ -65,7 +65,10 @@ function render() {
     let totalVisible = 0;
     const groupsHtml = renderedCaps.map(({ cap, items }) => {
       totalVisible += items.length;
+      const slippedInGroup = slipActive ? items.filter(i => i.slipped_from).length : 0;
       const collapsed = defaultCollapsed ? ' collapsed' : '';
+      const capCountClass = slippedInGroup > 0 ? ' slip-count' : '';
+      const capHeaderSlipClass = slippedInGroup > 0 ? ' has-slipped' : '';
       const itemsHtml = items.map(item => {
         const sClass = statusClass(item.status);
         const isSlipped = slipActive && item.slipped_from;
@@ -73,18 +76,21 @@ function render() {
         const slipHtml = isSlipped
           ? '<div class="slip-badge">&#9888; Slipped from ' + escHtml(item.slipped_from) + '</div>'
           : '';
+        const titleHtml = item.url
+          ? '<a class="item-link" href="' + escHtml(item.url) + '" target="_blank" rel="noopener noreferrer">' + escHtml(item.title) + '</a>'
+          : escHtml(item.title);
         return '<div class="item-card ' + sClass + visionClass + (isSlipped ? ' slipped' : '') + '">'
           + '<div class="item-status">' + escHtml(item.status || '') + '</div>'
-          + '<div class="item-title">' + escHtml(item.title) + '</div>'
+          + '<div class="item-title">' + titleHtml + '</div>'
           + slipHtml
           + '<div class="item-product">' + escHtml(item.product_display || '') + '</div>'
           + '</div>';
       }).join('');
       return '<div class="cap-group' + collapsed + '">'
-        + '<div class="cap-header' + collapsed + '" onclick="toggleGroup(this)">'
-        + '<span class="chevron">&#9660;</span>'
+        + '<div class="cap-header' + collapsed + capHeaderSlipClass + '" onclick="toggleGroup(this)">'
+        + '<span class="chevron"></span>'
         + escHtml(cap)
-        + '<span class="cap-count">' + items.length + '</span>'
+        + '<span class="cap-count' + capCountClass + '">' + items.length + '</span>'
         + '</div>'
         + '<div class="cap-items">' + itemsHtml + '</div>'
         + '</div>';
@@ -92,7 +98,8 @@ function render() {
 
     board.insertAdjacentHTML('beforeend',
       '<div class="col">'
-      + '<div class="col-header' + (isVision ? ' vision' : '') + '">'
+      + '<div class="col-header' + (isVision ? ' vision' : '') + '" onclick="toggleColumn(this)">'
+      + '<span class="col-chevron"></span>'
       + escHtml(quarter) + '<span class="count">' + totalVisible + '</span>'
       + '</div>'
       + '<div class="col-body">' + groupsHtml + '</div>'
@@ -105,6 +112,13 @@ function toggleGroup(headerEl) {
   const group = headerEl.closest('.cap-group');
   const isNowCollapsed = group.classList.toggle('collapsed');
   headerEl.classList.toggle('collapsed', isNowCollapsed);
+}
+
+function toggleColumn(headerEl) {
+  const col = headerEl.closest('.col');
+  const isNowCollapsed = headerEl.classList.toggle('collapsed');
+  col.querySelectorAll('.cap-group').forEach(g => g.classList.toggle('collapsed', isNowCollapsed));
+  col.querySelectorAll('.cap-header').forEach(h => h.classList.toggle('collapsed', isNowCollapsed));
 }
 
 function toggleSlip() {
