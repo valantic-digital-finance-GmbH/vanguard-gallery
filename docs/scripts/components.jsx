@@ -27,6 +27,7 @@ function Header({ active }) {
   const items = [
     { id: 'home', label: 'Home', href: 'index.html' },
     { id: 'sap', label: 'SAP Blog Tracker', href: 'sap-blog-tracker.html' },
+    { id: 'roadmap', label: 'SAP Roadmap Tracker', href: 'sap-roadmap.html' },
   ];
 
   return (
@@ -75,6 +76,7 @@ function Footer() {
               <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="sap-blog-tracker.html">SAP Blog Tracker</a></li>
+                <li><a href="sap-roadmap.html">SAP Roadmap Tracker</a></li>
                 <li><a href="#use-cases">Use cases</a></li>
                 <li><a href="#news">Latest news</a></li>
               </ul>
