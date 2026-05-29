@@ -10,7 +10,29 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/roadmap/styles/site.css">
-  <style>body { background: #ffffff !important; }</style>
+  <style>
+    body { background: #ffffff !important; }
+    .rb-entry { border: 1px solid #D2D2D7; border-radius: 4px; margin-bottom: 8px; overflow: hidden; }
+    .rb-entry-header { display: flex; align-items: center; justify-content: space-between;
+      padding: 16px 20px; cursor: pointer; background: #FAFAFA; user-select: none; }
+    .rb-entry-header:hover { background: #F0F0F2; }
+    .rb-period { font-size: 14px; font-weight: 500; color: #1D1D1F; }
+    .rb-change-count { font-size: 13px; color: #6E6E73; margin-left: auto; margin-right: 12px; }
+    .rb-chevron { width: 8px; height: 8px; border-right: 2px solid #86868B;
+      border-bottom: 2px solid #86868B; transform: rotate(45deg); transition: transform .2s; }
+    .rb-entry.rb-open .rb-chevron { transform: rotate(-135deg); }
+    .rb-entry-body { padding: 20px 24px; background: #FFFFFF; }
+    .rb-product { margin-bottom: 24px; }
+    .rb-product-name { font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+      color: #86868B; font-weight: 600; margin-bottom: 8px; }
+    .rb-type { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+      font-weight: 600; margin: 16px 0 8px; }
+    .rb-item { padding: 8px 0; border-top: 1px solid #D2D2D7; }
+    .rb-item a { color: #1D1D1F; text-decoration: none; font-size: 14px; font-weight: 500; }
+    .rb-item a:hover { text-decoration: underline; }
+    .rb-meta { font-size: 12px; color: #6E6E73; margin-top: 2px; }
+    .rb-no-changes { font-size: 13px; color: #6E6E73; font-style: italic; margin: 8px 0; }
+  </style>
   <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
@@ -69,17 +91,16 @@
           </p>
         </div>
         <div class="pv-view-toggle" role="tablist" aria-label="View mode">
-          <button role="tab" aria-selected="false" class="pv-view-toggle-btn"
-            style="opacity:.4; cursor:not-allowed;" disabled title="Coming soon">
+          <button id="btn-briefing" role="tab" aria-selected="false" class="pv-view-toggle-btn">
             Briefing
           </button>
-          <button role="tab" aria-selected="true" class="pv-view-toggle-btn is-active">
+          <button id="btn-board" role="tab" aria-selected="true" class="pv-view-toggle-btn is-active">
             Board View
           </button>
         </div>
       </div>
 
-      <div style="padding: 0 10%;">
+      <div id="board-panel" style="padding: 0 10%;">
         
 <header class="toolbar">
 <span class="filter-label">Product</span>
@@ -133,7 +154,7 @@
 </div>
 <script>
   window.__LATEST_DATA__ = {
-  "generated": "2026-05-28T14:35:15.127573+00:00",
+  "generated": "2026-05-29T04:30:40.307885+00:00",
   "products": [
     "sap-analytics-cloud",
     "sap-business-data-cloud",
@@ -148,7 +169,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=C0F14A396CF44853A49B9929B4A787CF"
     },
@@ -160,7 +181,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=D8274AA0B42F4735A183DA9E85C81EBD"
     },
@@ -172,7 +193,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=C56011F326834C10BA12FAD5423B3121"
     },
@@ -184,7 +205,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=1D0C0342C0C94C69B410F82B99E2A059"
     },
@@ -196,7 +217,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=6F256A6435634C21B6F8DB39D75E17E0"
     },
@@ -208,7 +229,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=20AF8C673D90408398400D5AA889A951"
     },
@@ -220,7 +241,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=7FC4E67D11F6478E9D0FF4584DFF715A"
     },
@@ -232,7 +253,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=691B3B1873E94136A231409A4D3FD5CC"
     },
@@ -244,7 +265,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=000D3AAC9DD21FD0B1C76527708F1B99"
     },
@@ -256,7 +277,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=35EF24CC61634CFA93C2409DC0CE6291"
     },
@@ -268,7 +289,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=FDA45599DFB0406ABEC7632067C2BD96"
     },
@@ -280,7 +301,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=3E11D5E0DFC74D27BBD707F6413FE979"
     },
@@ -292,7 +313,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=000D3AAC9DD21FD0A7DDD15678801988"
     },
@@ -304,7 +325,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=96E7394B948141C3882121ABF06867C5"
     },
@@ -316,7 +337,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=000D3AAADBCE1FE0B6D3A8E594907786"
     },
@@ -328,7 +349,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=3AEB69C2AC0542778B72FC6B51FBF6CF"
     },
@@ -340,7 +361,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=B0BEE54300814DE990E5BA76A1D79028"
     },
@@ -352,7 +373,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=EEC44C5DA547499C8F5555F62433C15F"
     },
@@ -364,7 +385,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=2AE3C05AB40F4E20B8329948A4591234"
     },
@@ -376,7 +397,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=4799BCB752CC4E2CB762F41980601333"
     },
@@ -388,7 +409,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=0DCFAA2354F34C1CBBD3177BC743CBE9"
     },
@@ -400,7 +421,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=7EF95598880A40DEB4E084A29C5FB4D2"
     },
@@ -412,7 +433,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=B1F418C977484ECC924C5CC591B72C4F"
     },
@@ -424,7 +445,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=000D3AAADBCE1FE0A2B4E0744D2F111C"
     },
@@ -436,7 +457,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=4492C4D9AF7E40E49624B1AA20E68380"
     },
@@ -448,7 +469,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=56B5BD71BA6D445A82D58E4EDFB42382"
     },
@@ -460,7 +481,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=4945B1A494534E34B106D6D74E9A84AA"
     },
@@ -472,7 +493,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=3A67D555B7BD45EE997B0C38D72CA87E"
     },
@@ -484,7 +505,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=840882BE0F0A467F93775D813FE8F9ED"
     },
@@ -496,7 +517,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=CF907486B990440DB140205C442E49ED"
     },
@@ -508,7 +529,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=1700ECFCD5BB4AD2BCD3D054C4FCA758"
     },
@@ -520,7 +541,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=000D3ABE796A1FE0A7E230EB65E17F17"
     },
@@ -532,7 +553,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=0A2E7704FB5041CDA84BF7D78A8E4E6A"
     },
@@ -544,7 +565,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=000D3AAADBCE1FE094D1DE1E1D95EBFC"
     },
@@ -556,7 +577,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=1BF538234CAF452CB2573645BF8D1039"
     },
@@ -568,7 +589,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=0425B8C9DF6D43878D1F3FB3BE72233C"
     },
@@ -580,7 +601,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=9D78EA70FA004304B30B319E53F8002A"
     },
@@ -592,7 +613,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=C6C9D7F755834678AA9D57C19453D91D"
     },
@@ -604,7 +625,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=BA2F6CB49BB34C9CB2CA10670757D38E"
     },
@@ -616,7 +637,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=57E8F66D4BCE4C98B9940A911E1E7484"
     },
@@ -628,7 +649,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=000D3ABE772D1FD09EC5949F41BA1AAD"
     },
@@ -640,7 +661,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=E9C01FD747E41EEDA8F9E2D33BCBA004"
     },
@@ -652,7 +673,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=F5A58673B6DD1EED9ACCD476191E1A51"
     },
@@ -664,7 +685,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=6398BA8BC0244DBABEBAD03BABC14376"
     },
@@ -676,7 +697,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=7F3FD5C2AD7148FC856B52B2D862BB80"
     },
@@ -688,7 +709,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=9E814A84CC634CCFA2948F0EAA16D901"
     },
@@ -700,7 +721,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=60917F2EE2F34D53A28414ABD420A589"
     },
@@ -712,7 +733,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=000D3ABE796A1FE09EC5687E9D87DA11"
     },
@@ -724,7 +745,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=AA653AB78DBB486CA048D7DEBCC16A19"
     },
@@ -736,7 +757,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=FE96FC7D1D6D495AB5A28F2F0E4FDAEE"
     },
@@ -748,7 +769,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=150A4EA691B740C39D6E99AFDFA67000"
     },
@@ -760,7 +781,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=33DFA7FE36214A59B3F744486C183BEF"
     },
@@ -772,7 +793,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=6CBA209E471A406BBE03897FE30BD115"
     },
@@ -784,7 +805,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=D68168A2BC9B4BD0A199C5D2AD257B2D"
     },
@@ -796,7 +817,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=000D3AAC9DD21FD09F8F3E54565B37D8"
     },
@@ -808,7 +829,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=2BF1BA0B4FDA4C88B2174E53C2970730"
     },
@@ -820,7 +841,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=9FFA0E60D3644A478CB28867514F9EA7"
     },
@@ -832,7 +853,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=510C1FA9FF324F788911DC0B7CEDB3D1"
     },
@@ -844,7 +865,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=B7EF4C94EDE6427D81268CCFFAF3EEFA"
     },
@@ -856,7 +877,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=ABC1893F1B121EEEB8911641018E9E8C"
     },
@@ -868,7 +889,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=69FA734D47E8479582ADF1F669862095"
     },
@@ -880,7 +901,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=000D3AAADBCE1FE0B4B6F862C475F724"
     },
@@ -892,7 +913,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=78DE5EAE95A24D3D8E3850F1777EE3E8"
     },
@@ -904,7 +925,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=1F9A6FF637844ECEAD766C0CF4746931"
     },
@@ -916,7 +937,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=77CA977315FF47DF95EB5B794D7397C2"
     },
@@ -928,7 +949,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=000D3AA914A11FD09CF62C1E6379E9DC"
     },
@@ -940,7 +961,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=587B02DAFF99432DB36C4AEAABBF9F21"
     },
@@ -952,7 +973,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=000D3AAC9DD21FD0AEC594B37A267AE1"
     },
@@ -964,7 +985,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=B5A5AA23AA5D46DDA721639914B1740C"
     },
@@ -976,7 +997,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=9C6553A1B66744F3921D74CF168B2E31"
     },
@@ -988,7 +1009,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=000D3ABE772D1EECB3A392887B364215"
     },
@@ -1000,7 +1021,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=000D3ABE772D1FD0A5F7BFC26C687C05"
     },
@@ -1012,7 +1033,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=000D3AAADBCE1FE095FEE3767C0FAC4C"
     },
@@ -1024,7 +1045,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=000D3ABE796A1FE095FF827A052C529C"
     },
@@ -1036,7 +1057,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=A51713C4AB2F1EDF8FD544918325686E"
     },
@@ -1048,7 +1069,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=D37D3B2A8A6C47AC914777FEF823F09B"
     },
@@ -1060,7 +1081,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=000D3AAC9DD21FD0A5F838806FAE9930"
     },
@@ -1072,7 +1093,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=21590949204143058288721CD4B3AB4D"
     },
@@ -1084,7 +1105,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=2DEF714648B84A45A626278DA93F5C43"
     },
@@ -1096,7 +1117,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=7B01C29A79904CECACB4F3B614F1E13D"
     },
@@ -1108,7 +1129,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=0EB8974A435A48E39358A064103079F4"
     },
@@ -1120,7 +1141,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=15F95BEB9DC04CA99583AEF0E12E8E2F"
     },
@@ -1132,7 +1153,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=B738AF4999AE4A349617AA0FED919816"
     },
@@ -1144,7 +1165,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=F2F4472A861B4B53A2E101D300FBB114"
     },
@@ -1156,7 +1177,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=B3D99CC1B7811EEF9CA110AB4503772C"
     },
@@ -1168,7 +1189,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=40AB4E5C98214F11A0E65EF68270C519"
     },
@@ -1180,7 +1201,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=9B08081679634B8DBA1D4B7C74FADCB3"
     },
@@ -1192,7 +1213,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=13FDA4A615C31EEEBCC7F18B3BB68EE8"
     },
@@ -1204,7 +1225,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=B14354EFD3D542279CD72601C11FB42A"
     },
@@ -1216,7 +1237,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=000D3ABE796A1FE0A7F2E7A0AF103F22"
     },
@@ -1228,7 +1249,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=E3BB51673FD940A1B2D3ABF4237FE34F"
     },
@@ -1240,7 +1261,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=F4B920B421EE46B2A719A21247F645EF"
     },
@@ -1252,7 +1273,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=000D3AA914A11FD0A58BD75AC3896E5E"
     },
@@ -1264,7 +1285,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=8B1FD65FBEFB1EEF9CA0F0358235015B"
     },
@@ -1276,7 +1297,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=06C828A4D1B845EB9F45862B8D4CE1E9"
     },
@@ -1288,7 +1309,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=F344F2F86B384DC885FEAE62F0F44EA2"
     },
@@ -1300,7 +1321,7 @@
       "status": "PLANNED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=C94689DE60304BABB5C5C2700CA951B5"
     },
@@ -1312,7 +1333,7 @@
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
       "product_display": "SAP Analytics Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=905D0C4E9DD041A8AED7E467CF7555F2"
     },
@@ -1324,7 +1345,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=C0F14A396CF44853A49B9929B4A787CF"
     },
@@ -1336,7 +1357,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=D8274AA0B42F4735A183DA9E85C81EBD"
     },
@@ -1348,7 +1369,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=C56011F326834C10BA12FAD5423B3121"
     },
@@ -1360,7 +1381,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=1D0C0342C0C94C69B410F82B99E2A059"
     },
@@ -1372,7 +1393,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=6F256A6435634C21B6F8DB39D75E17E0"
     },
@@ -1384,7 +1405,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=7FC4E67D11F6478E9D0FF4584DFF715A"
     },
@@ -1396,7 +1417,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=691B3B1873E94136A231409A4D3FD5CC"
     },
@@ -1408,7 +1429,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAC9DD21FD0B1C76527708F1B99"
     },
@@ -1420,7 +1441,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=35EF24CC61634CFA93C2409DC0CE6291"
     },
@@ -1432,7 +1453,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=FDA45599DFB0406ABEC7632067C2BD96"
     },
@@ -1444,7 +1465,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=3E11D5E0DFC74D27BBD707F6413FE979"
     },
@@ -1456,7 +1477,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAC9DD21FD0A7DDD15678801988"
     },
@@ -1468,7 +1489,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=96E7394B948141C3882121ABF06867C5"
     },
@@ -1480,7 +1501,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAADBCE1FE0B6D3A8E594907786"
     },
@@ -1492,7 +1513,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=3AEB69C2AC0542778B72FC6B51FBF6CF"
     },
@@ -1504,7 +1525,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=B0BEE54300814DE990E5BA76A1D79028"
     },
@@ -1516,7 +1537,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=EEC44C5DA547499C8F5555F62433C15F"
     },
@@ -1528,7 +1549,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=2AE3C05AB40F4E20B8329948A4591234"
     },
@@ -1540,7 +1561,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=4799BCB752CC4E2CB762F41980601333"
     },
@@ -1552,7 +1573,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=0DCFAA2354F34C1CBBD3177BC743CBE9"
     },
@@ -1564,7 +1585,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=7EF95598880A40DEB4E084A29C5FB4D2"
     },
@@ -1576,7 +1597,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=B1F418C977484ECC924C5CC591B72C4F"
     },
@@ -1588,7 +1609,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAADBCE1FE0A2B4E0744D2F111C"
     },
@@ -1600,7 +1621,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=4492C4D9AF7E40E49624B1AA20E68380"
     },
@@ -1612,7 +1633,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=56B5BD71BA6D445A82D58E4EDFB42382"
     },
@@ -1624,7 +1645,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=4945B1A494534E34B106D6D74E9A84AA"
     },
@@ -1636,7 +1657,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=3A67D555B7BD45EE997B0C38D72CA87E"
     },
@@ -1648,7 +1669,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=840882BE0F0A467F93775D813FE8F9ED"
     },
@@ -1660,7 +1681,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=CF907486B990440DB140205C442E49ED"
     },
@@ -1672,7 +1693,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=1700ECFCD5BB4AD2BCD3D054C4FCA758"
     },
@@ -1684,7 +1705,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3ABE796A1FE0A7E230EB65E17F17"
     },
@@ -1696,7 +1717,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=0A2E7704FB5041CDA84BF7D78A8E4E6A"
     },
@@ -1708,7 +1729,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAADBCE1FE094D1DE1E1D95EBFC"
     },
@@ -1720,7 +1741,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3ABE772D1FD0B5967196D82A7F04"
     },
@@ -1732,7 +1753,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=1BF538234CAF452CB2573645BF8D1039"
     },
@@ -1744,7 +1765,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=0425B8C9DF6D43878D1F3FB3BE72233C"
     },
@@ -1756,7 +1777,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=9D78EA70FA004304B30B319E53F8002A"
     },
@@ -1768,7 +1789,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=C6C9D7F755834678AA9D57C19453D91D"
     },
@@ -1780,7 +1801,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=BA2F6CB49BB34C9CB2CA10670757D38E"
     },
@@ -1792,7 +1813,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=57E8F66D4BCE4C98B9940A911E1E7484"
     },
@@ -1804,7 +1825,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAC9DD21FD0A4C203167B3998EE"
     },
@@ -1816,7 +1837,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AA914A11FD0AFC333763940D81F"
     },
@@ -1828,7 +1849,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AA914A11FD0B6B2650EC79F1CB0"
     },
@@ -1840,7 +1861,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAC9DD21FD0B49C939C308B7C3F"
     },
@@ -1852,7 +1873,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=C28E4FDC29614C52B1F51CCD7F597417"
     },
@@ -1864,7 +1885,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3ABE772D1FD09EC5949F41BA1AAD"
     },
@@ -1876,7 +1897,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": "Q3 2026",
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=E9C01FD747E41EEDA8F9E2D33BCBA004"
     },
@@ -1888,7 +1909,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=6398BA8BC0244DBABEBAD03BABC14376"
     },
@@ -1900,7 +1921,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=9E814A84CC634CCFA2948F0EAA16D901"
     },
@@ -1912,7 +1933,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=60917F2EE2F34D53A28414ABD420A589"
     },
@@ -1924,7 +1945,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3ABE796A1FE09EC5687E9D87DA11"
     },
@@ -1936,7 +1957,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=AA653AB78DBB486CA048D7DEBCC16A19"
     },
@@ -1948,7 +1969,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=FE96FC7D1D6D495AB5A28F2F0E4FDAEE"
     },
@@ -1960,7 +1981,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=150A4EA691B740C39D6E99AFDFA67000"
     },
@@ -1972,7 +1993,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=33DFA7FE36214A59B3F744486C183BEF"
     },
@@ -1984,7 +2005,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=6CBA209E471A406BBE03897FE30BD115"
     },
@@ -1996,7 +2017,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=D68168A2BC9B4BD0A199C5D2AD257B2D"
     },
@@ -2008,7 +2029,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAC9DD21FD09F8F3E54565B37D8"
     },
@@ -2020,7 +2041,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=2BF1BA0B4FDA4C88B2174E53C2970730"
     },
@@ -2032,7 +2053,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=510C1FA9FF324F788911DC0B7CEDB3D1"
     },
@@ -2044,7 +2065,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=B7EF4C94EDE6427D81268CCFFAF3EEFA"
     },
@@ -2056,7 +2077,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=ABC1893F1B121EEEB8911641018E9E8C"
     },
@@ -2068,7 +2089,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=69FA734D47E8479582ADF1F669862095"
     },
@@ -2080,7 +2101,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAADBCE1FE0B4B6F862C475F724"
     },
@@ -2092,7 +2113,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=78DE5EAE95A24D3D8E3850F1777EE3E8"
     },
@@ -2104,7 +2125,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=1F9A6FF637844ECEAD766C0CF4746931"
     },
@@ -2116,7 +2137,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=77CA977315FF47DF95EB5B794D7397C2"
     },
@@ -2128,7 +2149,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AA914A11FD09CF62C1E6379E9DC"
     },
@@ -2140,7 +2161,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=C10D295AC83C1EDF869D517DCDE3A54E"
     },
@@ -2152,7 +2173,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=587B02DAFF99432DB36C4AEAABBF9F21"
     },
@@ -2164,7 +2185,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAC9DD21FD0AEC594B37A267AE1"
     },
@@ -2176,7 +2197,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=01D39DB4D0D34CF4884368965F0D61E6"
     },
@@ -2188,7 +2209,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=B5A5AA23AA5D46DDA721639914B1740C"
     },
@@ -2200,7 +2221,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=91D21DB778331FE084A6B6410F8978C1"
     },
@@ -2212,7 +2233,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=CC436021EEA74E4393FEB3AF870FB5C8"
     },
@@ -2224,7 +2245,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=33158590E66E1FE084A758DBD9FD06F9"
     },
@@ -2236,7 +2257,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=9C6553A1B66744F3921D74CF168B2E31"
     },
@@ -2248,7 +2269,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=858187A400D71EDDAF8EE902289032A3"
     },
@@ -2260,7 +2281,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAADBCE1EDD94829FFAD4A59203"
     },
@@ -2272,7 +2293,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAADBCE1EDD948273FBDE1B4EFA"
     },
@@ -2284,7 +2305,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=A90128C2F6851EEDB3E6742547E6D1C1"
     },
@@ -2296,7 +2317,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=6BAC43E496D11EEFA4BD7AD3D7195111"
     },
@@ -2308,7 +2329,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=2F9E8060E8181EDFA4BDAEAD205D1449"
     },
@@ -2320,7 +2341,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AA914A11FD095CF0DA3528C8464"
     },
@@ -2332,7 +2353,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AA914A11FD0AAEAC6637A681375"
     },
@@ -2344,7 +2365,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=6BAC43E496D11EEFA4BD574559C880F9"
     },
@@ -2356,7 +2377,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAADBCE1FE095CF18723ED1EC24"
     },
@@ -2368,7 +2389,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=9F1F37ED41A14A38BE952653916CB957"
     },
@@ -2380,7 +2401,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAADBCE1FE0AAEADEA1F2D5B4F3"
     },
@@ -2392,7 +2413,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAADBCE1FE0AAEAB945D80094F3"
     },
@@ -2404,7 +2425,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=5DF12F1F7489456ABF29999344A4D710"
     },
@@ -2416,7 +2437,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3ABE772D1FD0AAEAADA4E6D47CE0"
     },
@@ -2428,7 +2449,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=81C4C671B92A1EEFA4BDBEAC845BA941"
     },
@@ -2440,7 +2461,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=2F9E8060E8181EEFA4BE07CFBF887BFA"
     },
@@ -2452,7 +2473,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AA914A11FD0AAEB2F06B2BB9375"
     },
@@ -2464,7 +2485,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3ABE772D1FD0AAEB3AA27B23FCE0"
     },
@@ -2476,7 +2497,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAC9DD21FD0AAEB298EC68EFA3D"
     },
@@ -2488,7 +2509,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=571FEA0A0D121EDFA4BDFC0D779225E8"
     },
@@ -2500,7 +2521,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=2F9E8060E8181EEFA4BDCD58B177A25B"
     },
@@ -2512,7 +2533,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=5D65663AE592468C917C397452803904"
     },
@@ -2524,7 +2545,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3ABE772D1FD0AAEAC12A2B3A7CE0"
     },
@@ -2536,7 +2557,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=6DF54C88F6211FE081A3C8872BE1E2D9"
     },
@@ -2548,7 +2569,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=6B3428F433A94E6680DD8CAD6A96A45E"
     },
@@ -2560,7 +2581,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3ABE796A1FE0A7C85AFE1D57BEF4"
     },
@@ -2572,7 +2593,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3ABE796A1FD0B3DA1CB5BC89C13A"
     },
@@ -2584,7 +2605,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=489E1EDBAF064FC18AE3502BEA48E620"
     },
@@ -2596,7 +2617,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=83C3B594E9BF410C9EB49224CBFFDA0A"
     },
@@ -2608,7 +2629,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=309F047CD0D6477DADA474EC2660EBF0"
     },
@@ -2620,7 +2641,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=6DF54C88F6211FE0809BD29F0D2AEA85"
     },
@@ -2632,7 +2653,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=8067DD203A7F4EBA997B0E0B0D2FE18F"
     },
@@ -2644,7 +2665,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAC9DD21FD0AA8F3B5F403EDA09"
     },
@@ -2656,7 +2677,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=E739C76B38B41EEF82A3109E11DDF0F7"
     },
@@ -2668,7 +2689,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=5767C5C876BD1EEEB39392E90A58B570"
     },
@@ -2680,7 +2701,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3ABE772D1EECB3A392887B364215"
     },
@@ -2692,7 +2713,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=91D21DB778331FE0809B5BA6D2BB5E17"
     },
@@ -2704,7 +2725,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAC9DD21FD0A8913FF5460BB9A3"
     },
@@ -2716,7 +2737,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=01BE3BFE44181EDEBAF2CFCAC0DAAAAB"
     },
@@ -2728,7 +2749,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=7790EF56B6721EDFA88500910660B68D"
     },
@@ -2740,7 +2761,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=D9840EC05D5841D09971909642BCE7DC"
     },
@@ -2752,7 +2773,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3ABE796A1FE094D5AE03AABA3065"
     },
@@ -2764,7 +2785,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAADBCE1FE095FEE3767C0FAC4C"
     },
@@ -2776,7 +2797,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3ABE772D1FD0ABFFD29798DEDD0F"
     },
@@ -2788,7 +2809,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3ABE796A1FE095FF827A052C529C"
     },
@@ -2800,7 +2821,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=A51713C4AB2F1EDF8FD544918325686E"
     },
@@ -2812,7 +2833,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=DC45C76420C242BDA9A93A7F41760CE8"
     },
@@ -2824,7 +2845,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=5A563893226844F5B0C5CB2F9AD379BF"
     },
@@ -2836,7 +2857,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAC9DD21EDCA2EE626A07B2C0FD"
     },
@@ -2848,7 +2869,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=D37D3B2A8A6C47AC914777FEF823F09B"
     },
@@ -2860,7 +2881,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=6D26EBC4B24449A3B0C6C2B0FE486891"
     },
@@ -2872,7 +2893,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=D5ACC18176214E4089F67F06FBAE2C93"
     },
@@ -2884,7 +2905,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=E0725B39A6B8409397526D174DF350F5"
     },
@@ -2896,7 +2917,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=7F9F136673CD4976B0DADFE11F2BDC4F"
     },
@@ -2908,7 +2929,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=320392CA25384D3DAD97B695CC794E19"
     },
@@ -2920,7 +2941,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=9198570EEC624C9D98DEBACCA56351E3"
     },
@@ -2932,7 +2953,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAC9DD21FD0A5F838806FAE9930"
     },
@@ -2944,7 +2965,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=766B1933CD0140CAA95507CDF09A9A8B"
     },
@@ -2956,7 +2977,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3ABE772D1EED819B65893042F477"
     },
@@ -2968,7 +2989,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=6DF54C88F6211FD084ADCE49C7B08221"
     },
@@ -2980,7 +3001,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=280A69E0BC974E938C31A3FCA9B045A9"
     },
@@ -2992,7 +3013,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAC9DD21FD0A4825BD0AE2AB8DD"
     },
@@ -3004,7 +3025,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=71879553B6474E0FB2FBA6377992BBDD"
     },
@@ -3016,7 +3037,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=571FEA0A0D121EDFA3F4DD6438447DB6"
     },
@@ -3028,7 +3049,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=3B3D3BDFEDC61EDFB7AF56E956712E89"
     },
@@ -3040,7 +3061,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": "Q3 2026",
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=21590949204143058288721CD4B3AB4D"
     },
@@ -3052,7 +3073,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=2DEF714648B84A45A626278DA93F5C43"
     },
@@ -3064,7 +3085,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=7B01C29A79904CECACB4F3B614F1E13D"
     },
@@ -3076,7 +3097,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=DC85397620AB463786651411B5004274"
     },
@@ -3088,7 +3109,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=F586EF4391F81FE084AD599C8C467A06"
     },
@@ -3100,7 +3121,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=E78B0E4728D31EEDA1EF80BA403814E0"
     },
@@ -3112,7 +3133,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=31F8B05650641EDDA1EF50D24787BB72"
     },
@@ -3124,7 +3145,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=DB9C27ACB50C1FE08C9A7E3902E18594"
     },
@@ -3136,7 +3157,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=AEEDA9FCA2DD448DAF20E8F63E6CC663"
     },
@@ -3148,7 +3169,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=33158590E66E1FD0849A4704E7EC1BD4"
     },
@@ -3160,7 +3181,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=7478358955B74B7583D517311D42ABF4"
     },
@@ -3172,7 +3193,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=C6341607E4EF4F92B8A4473C217E9EC7"
     },
@@ -3184,7 +3205,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=5E98458436F1455FB68317A483D02D9E"
     },
@@ -3196,7 +3217,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=1D57231EA3FF1FD08C9B5D38E253E15D"
     },
@@ -3208,7 +3229,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=2D24430EC2AE1FE08C9A8F48923D458E"
     },
@@ -3220,7 +3241,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=01DD7775C9D61FE08C9A698198CA5A02"
     },
@@ -3232,7 +3253,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=2494E8DEE4214CE79BFE7D9346B9D8CF"
     },
@@ -3244,7 +3265,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=48CBEB6B7E124F6B9308699DD368B06B"
     },
@@ -3256,7 +3277,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=2BCC8D150BBC4AB3AE3E16E8C1200A8A"
     },
@@ -3268,7 +3289,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=329112DE33634C608CD26B31BF000F3A"
     },
@@ -3280,7 +3301,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=3C46D8ABD6E74054A97518F8A9E3B3F4"
     },
@@ -3292,7 +3313,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3ABE772D1FD0A5A17B3D6CCDFBFA"
     },
@@ -3304,7 +3325,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3ABE772D1FD0908F2720D5DD7797"
     },
@@ -3316,7 +3337,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=3134648123384706BB68D5C19829AA55"
     },
@@ -3328,7 +3349,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=DB9C27ACB50C1FD086F75D40F2432DD2"
     },
@@ -3340,7 +3361,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=AF4016E7EC2D43B190646784C30FC363"
     },
@@ -3352,7 +3373,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=C0090B2067644090ADC3DEBC00C2632A"
     },
@@ -3364,7 +3385,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=01DD7775C9D61FD086F746D0EE3697BD"
     },
@@ -3376,7 +3397,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=1D57231EA3FF1FD086F753000E86CEA9"
     },
@@ -3388,7 +3409,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=BB57E4273F50495597159A5B6CC29D7C"
     },
@@ -3400,7 +3421,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=3D0A9618B5724295B290A040FE0C0118"
     },
@@ -3412,7 +3433,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAC9DD21FD0A59CE8D27480B91F"
     },
@@ -3424,7 +3445,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=01DD7775C9D61FE08C9A76E9F4F81CCF"
     },
@@ -3436,7 +3457,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=DB9C27ACB50C1FD08C9A606A774A9D62"
     },
@@ -3448,7 +3469,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=B9AB30B8BBAD4B4DA355CD0365399FFD"
     },
@@ -3460,7 +3481,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=A25A0CAEF97246BC88CAD3EFF7227595"
     },
@@ -3472,7 +3493,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=A92AF3E5D57147EC95732AC6D2ED78A2"
     },
@@ -3484,7 +3505,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=F5A58673B6DD1EED9ACCD476191E1A51"
     },
@@ -3496,7 +3517,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=0EB8974A435A48E39358A064103079F4"
     },
@@ -3508,7 +3529,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=15F95BEB9DC04CA99583AEF0E12E8E2F"
     },
@@ -3520,7 +3541,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=B738AF4999AE4A349617AA0FED919816"
     },
@@ -3532,7 +3553,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=F2F4472A861B4B53A2E101D300FBB114"
     },
@@ -3544,7 +3565,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=B3D99CC1B7811EEF9CA110AB4503772C"
     },
@@ -3556,7 +3577,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=40AB4E5C98214F11A0E65EF68270C519"
     },
@@ -3568,7 +3589,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=9B08081679634B8DBA1D4B7C74FADCB3"
     },
@@ -3580,7 +3601,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=13FDA4A615C31EEEBCC7F18B3BB68EE8"
     },
@@ -3592,7 +3613,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAADBCE1FE0B79B06CB30745798"
     },
@@ -3604,7 +3625,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=B14354EFD3D542279CD72601C11FB42A"
     },
@@ -3616,7 +3637,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3ABE796A1FE0A7F2E7A0AF103F22"
     },
@@ -3628,7 +3649,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=E3BB51673FD940A1B2D3ABF4237FE34F"
     },
@@ -3640,7 +3661,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=F4B920B421EE46B2A719A21247F645EF"
     },
@@ -3652,7 +3673,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AA914A11FD0A58BD75AC3896E5E"
     },
@@ -3664,7 +3685,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=8B1FD65FBEFB1EEF9CA0F0358235015B"
     },
@@ -3676,7 +3697,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=06C828A4D1B845EB9F45862B8D4CE1E9"
     },
@@ -3688,7 +3709,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=F344F2F86B384DC885FEAE62F0F44EA2"
     },
@@ -3700,7 +3721,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=C94689DE60304BABB5C5C2700CA951B5"
     },
@@ -3712,7 +3733,7 @@
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=905D0C4E9DD041A8AED7E467CF7555F2"
     },
@@ -3724,7 +3745,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3ABE772D1FD0A5F7BFC26C687C05"
     },
@@ -3736,7 +3757,7 @@
       "status": "PLANNED",
       "product": "sap-business-data-cloud",
       "product_display": "SAP Business Data Cloud",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=20AF8C673D90408398400D5AA889A951"
     },
@@ -3748,7 +3769,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=C10D295AC83C1EDF869D517DCDE3A54E"
     },
@@ -3760,7 +3781,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=858187A400D71EDDAF8EE902289032A3"
     },
@@ -3772,7 +3793,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=000D3AAADBCE1EDD94829FFAD4A59203"
     },
@@ -3784,7 +3805,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=27D4BC7308D81EDE83DEF951C0F23A28"
     },
@@ -3796,7 +3817,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=000D3AAADBCE1EDD948273FBDE1B4EFA"
     },
@@ -3808,7 +3829,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=A90128C2F6851EEDB3E6742547E6D1C1"
     },
@@ -3820,7 +3841,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=83C3B594E9BF410C9EB49224CBFFDA0A"
     },
@@ -3832,7 +3853,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=766B1933CD0140CAA95507CDF09A9A8B"
     },
@@ -3844,7 +3865,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=000D3ABE772D1EED819B65893042F477"
     },
@@ -3856,7 +3877,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": "Q2 2026",
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=6DF54C88F6211FD084ADCE49C7B08221"
     },
@@ -3868,7 +3889,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=571FEA0A0D121EDFA3F4DD6438447DB6"
     },
@@ -3880,7 +3901,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=3B3D3BDFEDC61EDFB7AF56E956712E89"
     },
@@ -3892,7 +3913,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=DC85397620AB463786651411B5004274"
     },
@@ -3904,7 +3925,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": "Q3 2026",
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=F586EF4391F81FE084AD599C8C467A06"
     },
@@ -3916,7 +3937,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=0588719776CB1EEE8F9DC09454DC6F47"
     },
@@ -3928,7 +3949,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=E78B0E4728D31EEDA1EF80BA403814E0"
     },
@@ -3940,7 +3961,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=31F8B05650641EDDA1EF50D24787BB72"
     },
@@ -3952,7 +3973,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=A92AF3E5D57147EC95732AC6D2ED78A2"
     },
@@ -3964,7 +3985,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=6B3428F433A94E6680DD8CAD6A96A45E"
     },
@@ -3976,7 +3997,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=000D3ABE796A1FE0A7C85AFE1D57BEF4"
     },
@@ -3988,7 +4009,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=000D3ABE796A1FD0B3DA1CB5BC89C13A"
     },
@@ -4000,7 +4021,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=489E1EDBAF064FC18AE3502BEA48E620"
     },
@@ -4012,7 +4033,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=309F047CD0D6477DADA474EC2660EBF0"
     },
@@ -4024,7 +4045,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=6DF54C88F6211FE0809BD29F0D2AEA85"
     },
@@ -4036,7 +4057,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=000D3AAC9DD21FD0AA8F3B5F403EDA09"
     },
@@ -4048,7 +4069,7 @@
       "status": "DELIVERED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=E739C76B38B41EEF82A3109E11DDF0F7"
     },
@@ -4060,7 +4081,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=5767C5C876BD1EEEB39392E90A58B570"
     },
@@ -4072,7 +4093,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=91D21DB778331FE0809B5BA6D2BB5E17"
     },
@@ -4084,7 +4105,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=000D3AAC9DD21FD0A8913FF5460BB9A3"
     },
@@ -4096,7 +4117,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=01BE3BFE44181EDEBAF2CFCAC0DAAAAB"
     },
@@ -4108,7 +4129,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=0A0B3BF6DF2E4AF395360EDB363D12B8"
     },
@@ -4120,7 +4141,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=7790EF56B6721EDFA88500910660B68D"
     },
@@ -4132,7 +4153,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=000D3ABE796A1FE094D5AE03AABA3065"
     },
@@ -4144,7 +4165,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": "Q2 2026",
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=000D3ABE772D1FD0ABFFD29798DEDD0F"
     },
@@ -4156,7 +4177,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=000D3ABE772D1FD0B5F6304D54B9DF32"
     },
@@ -4168,7 +4189,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=DC45C76420C242BDA9A93A7F41760CE8"
     },
@@ -4180,7 +4201,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=5A563893226844F5B0C5CB2F9AD379BF"
     },
@@ -4192,7 +4213,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=000D3AAC9DD21EDCA2EE626A07B2C0FD"
     },
@@ -4204,7 +4225,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=E0725B39A6B8409397526D174DF350F5"
     },
@@ -4216,7 +4237,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=7F9F136673CD4976B0DADFE11F2BDC4F"
     },
@@ -4228,7 +4249,7 @@
       "status": "PLANNED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=71879553B6474E0FB2FBA6377992BBDD"
     },
@@ -4240,7 +4261,7 @@
       "status": "DELIVERED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=73DD64690CE24FB284D28B935D79AFBF"
     },
@@ -4252,7 +4273,7 @@
       "status": "DELIVERED",
       "product": "sap-datasphere",
       "product_display": "SAP Datasphere",
-      "snapshot_date": "2026-05-28",
+      "snapshot_date": "2026-05-29",
       "slipped_from": null,
       "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=CDCF37A942614EB68AF21280776B2C78"
     }
@@ -4314,15 +4335,99 @@
 <script src="assets/roadmap/scripts/app.js"></script>
 
       </div>
+      <div id="briefing-panel" hidden style="padding: 0 10%; max-width: 960px; margin: 32px auto 0;">
+      </div>
     </section>
   </main>
 
   <div id="footer"></div>
 
+  <script>window.__ROADMAP_BRIEFINGS__ = [{"id": "mon-2026-05-25", "iso": "2026-05-25", "full": "25 May 2026", "period": "2026-05-18 – 2026-05-24", "title": "No changes this week", "preview": "No changes across all tracked products.", "total_changes": 0, "products_with_changes": [], "sections": [{"slug": "sap-analytics-cloud", "name": "SAP Analytics Cloud", "slipped": [], "added": [], "deleted": []}, {"slug": "sap-business-data-cloud", "name": "SAP Business Data Cloud", "slipped": [], "added": [], "deleted": []}, {"slug": "sap-datasphere", "name": "SAP Datasphere", "slipped": [], "added": [], "deleted": []}]}];</script>
+
   <script type="text/babel" src="scripts/components.jsx"></script>
   <script type="text/babel">
     ReactDOM.createRoot(document.getElementById('header')).render(<Header active="roadmap"/>);
     ReactDOM.createRoot(document.getElementById('footer')).render(<Footer/>);
+  </script>
+
+  <script>
+  (function () {
+    var briefings = window.__ROADMAP_BRIEFINGS__ || [];
+    var briefingPanel = document.getElementById('briefing-panel');
+    var boardPanel    = document.getElementById('board-panel');
+    var btnBriefing   = document.getElementById('btn-briefing');
+    var btnBoard      = document.getElementById('btn-board');
+
+    function activate(showBriefing) {
+      briefingPanel.hidden = !showBriefing;
+      boardPanel.hidden    = showBriefing;
+      btnBriefing.classList.toggle('is-active', showBriefing);
+      btnBriefing.setAttribute('aria-selected', String(showBriefing));
+      btnBoard.classList.toggle('is-active', !showBriefing);
+      btnBoard.setAttribute('aria-selected', String(!showBriefing));
+    }
+
+    btnBriefing.addEventListener('click', function () { activate(true); });
+    btnBoard.addEventListener('click',    function () { activate(false); });
+
+    function esc(s) {
+      return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+
+    if (!briefings.length) {
+      briefingPanel.innerHTML =
+        '<p style="padding:40px;font-size:14px;color:#6E6E73;text-align:center;">' +
+        'No briefings available yet. The first briefing will be sent on Monday.</p>';
+      return;
+    }
+
+    function renderSection(sec) {
+      var parts = [];
+      if (sec.slipped && sec.slipped.length) {
+        parts.push('<div class="rb-type" style="color:#C0392B;">Slipped</div>');
+        sec.slipped.forEach(function (it) {
+          parts.push('<div class="rb-item"><a href="' + esc(it.url) + '" target="_blank" rel="noopener">' + esc(it.title) + '</a>' +
+            '<div class="rb-meta">' + esc(it.old_quarter) + ' → ' + esc(it.new_quarter) +
+            (it.capability ? ' · ' + esc(it.capability) : '') + '</div></div>');
+        });
+      }
+      if (sec.added && sec.added.length) {
+        parts.push('<div class="rb-type" style="color:#0066CC;">Added</div>');
+        sec.added.forEach(function (it) {
+          parts.push('<div class="rb-item"><a href="' + esc(it.url) + '" target="_blank" rel="noopener">' + esc(it.title) + '</a>' +
+            '<div class="rb-meta">' + esc(it.quarter || '') +
+            (it.capability ? ' · ' + esc(it.capability) : '') + '</div></div>');
+        });
+      }
+      if (sec.deleted && sec.deleted.length) {
+        parts.push('<div class="rb-type" style="color:#6E6E73;">Deleted</div>');
+        sec.deleted.forEach(function (it) {
+          parts.push('<div class="rb-item"><span style="font-size:14px;font-weight:500;">' + esc(it.title) + '</span>' +
+            '<div class="rb-meta">' + esc(it.quarter || '') +
+            (it.capability ? ' · ' + esc(it.capability) : '') + '</div></div>');
+        });
+      }
+      if (!parts.length) {
+        parts.push('<p class="rb-no-changes">No changes this week.</p>');
+      }
+      return '<div class="rb-product"><div class="rb-product-name">' + esc(sec.name) + '</div>' + parts.join('') + '</div>';
+    }
+
+    briefingPanel.innerHTML = briefings.map(function (entry, idx) {
+      var total       = entry.total_changes;
+      var changeLabel = total === 0 ? 'No changes' : total + ' change' + (total === 1 ? '' : 's');
+      var bodyId      = 'rb-body-' + idx;
+      var sectionsHtml = (entry.sections || []).map(renderSection).join('');
+      return '<div class="rb-entry rb-open">' +
+        '<div class="rb-entry-header" onclick="this.closest('.rb-entry').classList.toggle('rb-open')">' +
+          '<div class="rb-period">' + esc(entry.period) + '</div>' +
+          '<div class="rb-change-count">' + esc(changeLabel) + '</div>' +
+          '<div class="rb-chevron"></div>' +
+        '</div>' +
+        '<div class="rb-entry-body" id="' + bodyId + '">' + sectionsHtml + '</div>' +
+      '</div>';
+    }).join('');
+  })();
   </script>
 </body>
 </html>
