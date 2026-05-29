@@ -177,7 +177,7 @@
 </div>
 <script>
   window.__LATEST_DATA__ = {
-  "generated": "2026-05-29T11:17:06.137428+00:00",
+  "generated": "2026-05-29T11:47:08.508532+00:00",
   "products": [
     "sap-analytics-cloud",
     "sap-business-data-cloud",
@@ -4346,6 +4346,30 @@
       return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
     }
 
+    var MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+    function isoWeek(dateStr) {
+      var d = new Date(dateStr + 'T00:00:00');
+      d.setDate(d.getDate() + 4 - (d.getDay() || 7));
+      var y1 = new Date(d.getFullYear(), 0, 1);
+      return Math.ceil(((d - y1) / 86400000 + 1) / 7);
+    }
+
+    function fmtDate(dateStr) {
+      var d = new Date(dateStr + 'T00:00:00');
+      return d.getDate() + ' ' + MONTHS[d.getMonth()];
+    }
+
+    function entryTitle(entry) {
+      var parts = (entry.period || '').split(' – ');
+      if (parts.length < 2) return esc(entry.period);
+      var startStr = parts[0].trim();
+      var endStr   = parts[1].trim();
+      var cw = isoWeek(startStr);
+      var year = endStr.substring(0, 4);
+      return 'Weekly Report CW' + cw + ' · ' + fmtDate(startStr) + ' – ' + fmtDate(endStr) + ' ' + year;
+    }
+
     if (!briefings.length) {
       briefingPanel.innerHTML =
         '<p style="padding:40px;font-size:14px;color:#6E6E73;text-align:center;">' +
@@ -4415,7 +4439,7 @@
         : '<span class="rb-no-chip">No changes</span>';
       return '<div class="rb-entry rb-open">' +
         '<div class="rb-entry-header" onclick="this.closest(\'.rb-entry\').classList.toggle(\'rb-open\')">' +
-          '<div class="rb-period">' + esc(entry.period) + '</div>' +
+          '<div class="rb-period">' + entryTitle(entry) + '</div>' +
           chipsOrLabel +
           '<div class="rb-chevron"></div>' +
         '</div>' +
