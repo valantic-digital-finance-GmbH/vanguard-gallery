@@ -1,5 +1,52 @@
 [
   {
+    "id": "fri-2026-05-29",
+    "weekday": "Friday",
+    "iso": "2026-05-29",
+    "full": "May 29, 2026",
+    "title": "SAP announces a four-episode live miniseries in June 2026 focused on SAP Business Data Cloud (SAP BDC) data architecture.",
+    "preview": "The series is designed for SAP Partners, including architects, consultants, and data professionals, to deepen their expertise in SAP BDC capabilities.",
+    "reads": "5 min",
+    "posts": 1,
+    "tags": [
+      "Analytics Cloud",
+      "SAC Planning",
+      "Business Data Cloud"
+    ],
+    "highlights": [
+      "SAP announces a four-episode live miniseries in June 2026 focused on SAP Business Data Cloud (SAP BDC) data architecture.",
+      "The series is designed for SAP Partners, including architects, consultants, and data professionals, to deepen their expertise in SAP BDC capabilities.",
+      "Participants will gain advanced insights into SAP BDC's data architecture to support strategic implementations."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "From Blueprint to Reality: SAP BDC Data Architecture Deep Dive Miniseries- June 2026",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/from-blueprint-to-reality-sap-bdc-data-architecture-deep-dive-miniseries/ba-p/14401555",
+            "author": "KarthikM8",
+            "date_published": "2026-05-22",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Analytics Cloud for planning",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "The blog introduces a four-episode live session miniseries in June 2026, aimed at SAP Partners to enhance their understanding of SAP Business Data Cloud (SAP BDC) data architecture. It targets architects, consultants, and data professionals seeking advanced insights into SAP BDC capabilities.",
+            "post_type": "Event"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "thu-2026-05-28",
     "weekday": "Thursday",
     "iso": "2026-05-28",
@@ -3353,73 +3400,6 @@
             "minutes": 5
           }
         ]
-      }
-    ]
-  },
-  {
-    "id": "mon-2025-07-28",
-    "weekday": "Monday",
-    "iso": "2025-07-28",
-    "full": "Jul 28, 2025",
-    "title": "3 SAP blog posts.",
-    "preview": "3 SAP blog posts.",
-    "reads": "11 min",
-    "posts": 3,
-    "tags": [
-      "Analytics Cloud",
-      "Datasphere"
-    ],
-    "highlights": [],
-    "sections": [
-      {
-        "name": "SAP Datasphere",
-        "tags": [
-          "SAP Datasphere"
-        ],
-        "top": [
-          {
-            "title": "SAP Datasphere News in June",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-datasphere-news-in-june/ba-p/14141650",
-            "author": "kpsauer",
-            "date_published": "2025-07-04",
-            "matching_tags": [
-              "SAP Datasphere"
-            ],
-            "minutes": 5
-          }
-        ],
-        "rest": []
-      },
-      {
-        "name": "SAP Analytics Cloud",
-        "tags": [
-          "SAP Analytics Cloud",
-          "SAP Analytics Cloud for planning",
-          "SAP Analytics Cloud, data modeling"
-        ],
-        "top": [
-          {
-            "title": "Planning & Analytics App Inspiration Gallery",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/planning-amp-analytics-app-inspiration-gallery/ba-p/14160311",
-            "author": "MarcZauritz",
-            "date_published": "2025-07-28",
-            "matching_tags": [
-              "SAP Analytics Cloud"
-            ],
-            "minutes": 5
-          },
-          {
-            "title": "How to Collect a HTTP Archive (HAR file) from the SAC Mobile App: A Step-by-Step Guide",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-collect-a-http-archive-har-file-from-the-sac-mobile-app-a-step-by/ba-p/14140486",
-            "author": "nik_beliakov",
-            "date_published": "2025-07-04",
-            "matching_tags": [
-              "SAP Analytics Cloud"
-            ],
-            "minutes": 1
-          }
-        ],
-        "rest": []
       }
     ]
   }
