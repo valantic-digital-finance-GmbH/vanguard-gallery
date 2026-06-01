@@ -14,6 +14,9 @@
     /* body panel — shown when parent .pv-briefing has is-open */
     .rb-entry-body { display: none; padding: 16px 20px 20px; background: #FFFFFF; }
     .pv-briefing.is-open .rb-entry-body { display: block; }
+    /* date column: 3-line layout fits in the 140px grid column */
+    .pv-briefing .pv-brief-date { text-align: left; }
+    .pv-briefing .pv-brief-date .full { font-size: 14px; font-weight: 500; letter-spacing: 0; }
     /* change-type chip colour overrides inside pv-brief-tags */
     .pv-brief-tags .chip-added   { background: #EAF2FF; color: #0066CC; border-color: #C5DCFA; }
     .pv-brief-tags .chip-slipped { background: #FDECEA; color: #C0392B; border-color: #F5C6C2; }
@@ -4347,6 +4350,11 @@
       return d.getDate() + ' ' + MONTHS[d.getMonth()];
     }
 
+    function fmtDateLong(dateStr) {
+      var d = new Date(dateStr + 'T00:00:00');
+      return MONTHS[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+    }
+
     if (!briefings.length) {
       briefingPanel.innerHTML =
         '<p style="padding:40px;font-size:14px;color:#6E6E73;text-align:center;">' +
@@ -4412,10 +4420,9 @@
       var parts = (entry.period || '').split(' – ');
       var startStr = (parts[0] || '').trim();
       var endStr   = (parts[1] || '').trim();
-      var cwLabel  = startStr ? 'CW' + isoWeek(startStr) : '';
-      var dateRange = (startStr && endStr)
-        ? fmtDate(startStr) + '\u2013' + fmtDate(endStr)
-        : esc(entry.full || '');
+      var cwLabel  = startStr ? 'CW ' + isoWeek(startStr) : '';
+      var dateStart = startStr ? fmtDateLong(startStr) : '';
+      var dateEnd   = endStr   ? fmtDateLong(endStr)   : '';
 
       // Build change chips
       var chips = '';
@@ -4430,7 +4437,8 @@
             ' onclick="var e=this.closest(\'.pv-briefing\');e.classList.toggle(\'is-open\');this.setAttribute(\'aria-expanded\',e.classList.contains(\'is-open\'))">' +
             '<div class="pv-brief-date">' +
               '<span class="day">' + esc(cwLabel) + '</span>' +
-              '<span class="full">' + esc(dateRange) + '</span>' +
+              '<span class="full">' + esc(dateStart) + ' \u2013</span>' +
+              '<span class="full">' + esc(dateEnd) + '</span>' +
             '</div>' +
             '<div class="pv-brief-main">' +
               '<h3>' + esc(entry.title) + '</h3>' +
