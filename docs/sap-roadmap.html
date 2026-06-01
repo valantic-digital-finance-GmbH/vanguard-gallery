@@ -11,26 +11,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/roadmap/styles/site.css">
   <style>
-    body { background: #ffffff !important; }
-    /* entry card */
-    .rb-entry { border: 1px solid #D2D2D7; border-radius: 6px; margin-bottom: 10px; overflow: hidden; }
-    .rb-entry-header { display: flex; align-items: center; gap: 12px;
-      padding: 16px 20px; cursor: pointer; background: #FAFAFA; user-select: none; }
-    .rb-entry-header:hover { background: #F0F0F2; }
-    .rb-period { font-size: 14px; font-weight: 500; color: #1D1D1F; flex-shrink: 0; }
-    .rb-chips { display: flex; flex-wrap: wrap; gap: 6px; flex: 1; }
-    .rb-chip { display: inline-block; border-radius: 12px; padding: 3px 10px;
-      font-size: 12px; font-weight: 600; }
-    .rb-chip-slipped { background: #FDECEA; color: #C0392B; }
-    .rb-chip-added   { background: #EAF2FF; color: #0066CC; }
-    .rb-chip-deleted { background: #F0F0F2; color: #6E6E73; }
-    .rb-no-chip { font-size: 13px; color: #6E6E73; }
-    .rb-chevron { width: 8px; height: 8px; border-right: 2px solid #86868B;
-      border-bottom: 2px solid #86868B; transform: rotate(45deg); transition: transform .2s;
-      flex-shrink: 0; margin-left: auto; }
-    .rb-entry.rb-open .rb-chevron { transform: rotate(-135deg); }
+    /* body panel — shown when parent .pv-briefing has is-open */
     .rb-entry-body { display: none; padding: 16px 20px 20px; background: #FFFFFF; }
-    .rb-entry.rb-open .rb-entry-body { display: block; }
+    .pv-briefing.is-open .rb-entry-body { display: block; }
+    /* change-type chip colour overrides inside pv-brief-tags */
+    .pv-brief-tags .chip-added   { background: #EAF2FF; color: #0066CC; border-color: #C5DCFA; }
+    .pv-brief-tags .chip-slipped { background: #FDECEA; color: #C0392B; border-color: #F5C6C2; }
+    .pv-brief-tags .chip-removed { background: #F0F0F2; color: #6E6E73; border-color: #D2D2D7; }
     /* product section */
     .rb-product { margin-bottom: 20px; }
     .rb-product-name { font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
@@ -4360,16 +4347,6 @@
       return d.getDate() + ' ' + MONTHS[d.getMonth()];
     }
 
-    function entryTitle(entry) {
-      var parts = (entry.period || '').split(' – ');
-      if (parts.length < 2) return esc(entry.period);
-      var startStr = parts[0].trim();
-      var endStr   = parts[1].trim();
-      var cw = isoWeek(startStr);
-      var year = endStr.substring(0, 4);
-      return 'Weekly Report CW' + cw + ' · ' + fmtDate(startStr) + ' – ' + fmtDate(endStr) + ' ' + year;
-    }
-
     if (!briefings.length) {
       briefingPanel.innerHTML =
         '<p style="padding:40px;font-size:14px;color:#6E6E73;text-align:center;">' +
@@ -4425,27 +4402,47 @@
       return '<div class="rb-product"><div class="rb-product-name">' + esc(sec.name) + '</div>' + parts.join('') + '</div>';
     }
 
-    briefingPanel.innerHTML = briefings.map(function (entry) {
+    briefingPanel.innerHTML = '<div class="pv-briefing-list">' + briefings.map(function (entry) {
       var secs = entry.sections || [];
       var totalSlipped = secs.reduce(function (s, x) { return s + (x.slipped || []).length; }, 0);
       var totalAdded   = secs.reduce(function (s, x) { return s + (x.added   || []).length; }, 0);
       var totalDeleted = secs.reduce(function (s, x) { return s + (x.deleted || []).length; }, 0);
+
+      // Build date column: CW number + range
+      var parts = (entry.period || '').split(' – ');
+      var startStr = (parts[0] || '').trim();
+      var endStr   = (parts[1] || '').trim();
+      var cwLabel  = startStr ? 'CW' + isoWeek(startStr) : '';
+      var dateRange = (startStr && endStr)
+        ? fmtDate(startStr) + '\u2013' + fmtDate(endStr)
+        : esc(entry.full || '');
+
+      // Build change chips
       var chips = '';
-      if (totalSlipped) chips += '<span class="rb-chip rb-chip-slipped">↗ ' + totalSlipped + '</span>';
-      if (totalAdded)   chips += '<span class="rb-chip rb-chip-added">✦ '   + totalAdded   + '</span>';
-      if (totalDeleted) chips += '<span class="rb-chip rb-chip-deleted">✕ ' + totalDeleted + '</span>';
-      var chipsOrLabel = chips
-        ? '<div class="rb-chips">' + chips + '</div>'
-        : '<span class="rb-no-chip">No changes</span>';
-      return '<div class="rb-entry rb-open">' +
-        '<div class="rb-entry-header" onclick="this.closest(\'.rb-entry\').classList.toggle(\'rb-open\')">' +
-          '<div class="rb-period">' + entryTitle(entry) + '</div>' +
-          chipsOrLabel +
-          '<div class="rb-chevron"></div>' +
-        '</div>' +
+      if (totalAdded)   chips += '<span class="chip-added">\u2756 ' + totalAdded   + ' added</span>';
+      if (totalSlipped) chips += '<span class="chip-slipped">\u2197 ' + totalSlipped + ' slipped</span>';
+      if (totalDeleted) chips += '<span class="chip-removed">\u2715 ' + totalDeleted + ' removed</span>';
+      if (!chips)       chips  = '<span>No changes</span>';
+
+      return '<div class="pv-briefing">' +
+        '<h3 style="margin:0">' +
+          '<button class="pv-briefing-summary" aria-expanded="false"' +
+            ' onclick="var e=this.closest(\'.pv-briefing\');e.classList.toggle(\'is-open\');this.setAttribute(\'aria-expanded\',e.classList.contains(\'is-open\'))">' +
+            '<div class="pv-brief-date">' +
+              '<span class="day">' + esc(cwLabel) + '</span>' +
+              '<span class="full">' + esc(dateRange) + '</span>' +
+            '</div>' +
+            '<div class="pv-brief-main">' +
+              '<h3>' + esc(entry.title) + '</h3>' +
+              '<p class="preview">' + esc(entry.preview) + '</p>' +
+              '<div class="pv-brief-tags">' + chips + '</div>' +
+            '</div>' +
+            '<span class="pv-brief-toggle" aria-hidden="true"><i class="ph ph-plus"></i></span>' +
+          '</button>' +
+        '</h3>' +
         '<div class="rb-entry-body">' + secs.map(renderSection).join('') + '</div>' +
       '</div>';
-    }).join('');
+    }).join('') + '</div>';
   })();
   </script>
 </body>
