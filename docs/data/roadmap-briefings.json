@@ -1,5 +1,57 @@
 [
   {
+    "id": "mon-2026-06-01",
+    "iso": "2026-06-01",
+    "full": "1 June 2026",
+    "period": "2026-05-25 – 2026-05-31",
+    "title": "2 changes across 2 products",
+    "preview": "SAP Business Data Cloud: 1 item added. SAP Datasphere: 1 item added",
+    "total_changes": 2,
+    "products_with_changes": [
+      "SAP Business Data Cloud",
+      "SAP Datasphere"
+    ],
+    "sections": [
+      {
+        "slug": "sap-analytics-cloud",
+        "name": "SAP Analytics Cloud",
+        "slipped": [],
+        "added": [],
+        "deleted": []
+      },
+      {
+        "slug": "sap-business-data-cloud",
+        "name": "SAP Business Data Cloud",
+        "slipped": [],
+        "added": [
+          {
+            "id": "83C3B594E9BF410C9EB49224CBFFDA0A",
+            "title": "Google Workload Identity Federation (WIF) support for Google BigQuery connection authentication with replication flows",
+            "quarter": "Q4 2026",
+            "capability": "Data Replication and ETL",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=83C3B594E9BF410C9EB49224CBFFDA0A"
+          }
+        ],
+        "deleted": []
+      },
+      {
+        "slug": "sap-datasphere",
+        "name": "SAP Datasphere",
+        "slipped": [],
+        "added": [
+          {
+            "id": "83C3B594E9BF410C9EB49224CBFFDA0A",
+            "title": "Google Workload Identity Federation (WIF) support for Google BigQuery connection authentication with replication flows",
+            "quarter": "Q4 2026",
+            "capability": "Data Replication and ETL",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=83C3B594E9BF410C9EB49224CBFFDA0A"
+          }
+        ],
+        "deleted": []
+      }
+    ]
+  },
+  {
     "id": "mon-2026-05-29",
     "iso": "2026-05-29",
     "full": "29 May 2026",
