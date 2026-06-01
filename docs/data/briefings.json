@@ -1,5 +1,87 @@
 [
   {
+    "id": "mon-2026-06-01",
+    "weekday": "Monday",
+    "iso": "2026-06-01",
+    "full": "Jun 1, 2026",
+    "title": "SAP unveiled Joule Studio at SAPPHIRE 2026, enabling intent-based development for scalable AI agent deployment in enterprises.",
+    "preview": "Joule Studio addresses dynamic business needs and market changes with advanced AI-driven solutions.",
+    "reads": "11 min",
+    "posts": 3,
+    "tags": [
+      "Business AI",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [
+      "SAP unveiled Joule Studio at SAPPHIRE 2026, enabling intent-based development for scalable AI agent deployment in enterprises.",
+      "Joule Studio addresses dynamic business needs and market changes with advanced AI-driven solutions.",
+      "Business Consent in SAP Business Data Cloud resolves fragmented SAP landscapes by integrating multiple CRM IDs seamlessly.",
+      "The feature accelerates integration with SAP SuccessFactors, supporting cross-solution scenarios like People Intelligence without extensive consolidation efforts."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Joule Studio: Intent-Based Development for Creating and Running AI Agents at Scale",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/joule-studio-intent-based-development-for-creating-and-running-ai-agents-at/ba-p/14407210",
+            "author": "mark_wright",
+            "date_published": "2026-05-29",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "SAP introduced Joule Studio at SAPPHIRE 2026, a platform for intent-based development to create and deploy AI agents at enterprise scale. This innovation aims to help organizations address evolving business needs and market changes more effectively. It represents a significant advancement in AI-driven enterprise solutions.",
+            "post_type": "Release"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "From Fragmented Landscapes to Unified Insights: Business Consent in SAP BDC",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/from-fragmented-landscapes-to-unified-insights-business-consent-in-sap-bdc/ba-p/14408202",
+            "author": "Vivek-RR",
+            "date_published": "2026-06-01",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "The blog discusses how Business Consent in SAP Business Data Cloud enables organizations to overcome fragmented SAP landscapes spread across multiple CRM IDs. It explains how this feature facilitates quick integration with SAP SuccessFactors for cross-solution scenarios like People Intelligence, bypassing the need for lengthy consolidation projects.",
+            "post_type": "Article"
+          },
+          {
+            "title": "SAP Snowflake: How to Store and Manage Secrets for APIs, Database Credentials, and Keys",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-snowflake-how-to-store-and-manage-secrets-for-apis-database-credentials/ba-p/14407925",
+            "author": "Yogananda",
+            "date_published": "2026-05-31",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "fri-2026-05-29",
     "weekday": "Friday",
     "iso": "2026-05-29",
@@ -3253,153 +3335,6 @@
           }
         ],
         "rest": []
-      }
-    ]
-  },
-  {
-    "id": "mon-2025-08-25",
-    "weekday": "Monday",
-    "iso": "2025-08-25",
-    "full": "Aug 25, 2025",
-    "title": "6 SAP blog posts.",
-    "preview": "6 SAP blog posts.",
-    "reads": "22 min",
-    "posts": 6,
-    "tags": [
-      "Analytics Cloud",
-      "Business Data Cloud",
-      "Datasphere"
-    ],
-    "highlights": [],
-    "sections": [
-      {
-        "name": "SAP Business Data Cloud",
-        "tags": [
-          "SAP Business Data Cloud"
-        ],
-        "top": [
-          {
-            "title": "How to use SAP Business Data Cloud Capacity Unit Estimator for SAP Analytics Cloud?",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-use-sap-business-data-cloud-capacity-unit-estimator-for-sap/ba-p/14184447",
-            "author": "FernandaFroelich",
-            "date_published": "2025-08-20",
-            "matching_tags": [
-              "SAP Analytics Cloud",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 1
-          },
-          {
-            "title": "How to edit a quota assignment in SAP Business Data Cloud (BDC)?",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-edit-a-quota-assignment-in-sap-business-data-cloud-bdc/ba-p/14181937",
-            "author": "FernandaFroelich",
-            "date_published": "2025-08-19",
-            "matching_tags": [
-              "SAP Analytics Cloud",
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5
-          }
-        ],
-        "rest": [
-          {
-            "title": "How to use SAP Business Data Cloud Capacity Unit Estimator?",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-use-sap-business-data-cloud-capacity-unit-estimator/ba-p/14181530",
-            "author": "FernandaFroelich",
-            "date_published": "2025-08-15",
-            "matching_tags": [
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5
-          }
-        ]
-      },
-      {
-        "name": "SAP Datasphere",
-        "tags": [
-          "SAP Datasphere"
-        ],
-        "top": [
-          {
-            "title": "How to edit a quota assignment in SAP Business Data Cloud (BDC)?",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-edit-a-quota-assignment-in-sap-business-data-cloud-bdc/ba-p/14181937",
-            "author": "FernandaFroelich",
-            "date_published": "2025-08-19",
-            "matching_tags": [
-              "SAP Analytics Cloud",
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5
-          },
-          {
-            "title": "Optimizing Data Movement in SAP Datasphere: Replication Flow or Remote Table Replication?",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/optimizing-data-movement-in-sap-datasphere-replication-flow-or-remote-table/ba-p/14179771",
-            "author": "Harish_Ratnala",
-            "date_published": "2025-08-14",
-            "matching_tags": [
-              "SAP Datasphere"
-            ],
-            "minutes": 1
-          }
-        ],
-        "rest": []
-      },
-      {
-        "name": "SAP Analytics Cloud",
-        "tags": [
-          "SAP Analytics Cloud",
-          "SAP Analytics Cloud for planning",
-          "SAP Analytics Cloud, data modeling"
-        ],
-        "top": [
-          {
-            "title": "SAP Analytics Cloud: Smarter Currency Conversion with Just Ask",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-analytics-cloud-smarter-currency-conversion-with-just-ask/ba-p/14191389",
-            "author": "emilylian-sap",
-            "date_published": "2025-08-25",
-            "matching_tags": [
-              "SAP Analytics Cloud"
-            ],
-            "minutes": 5
-          },
-          {
-            "title": "How to use SAP Business Data Cloud Capacity Unit Estimator for SAP Analytics Cloud?",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-use-sap-business-data-cloud-capacity-unit-estimator-for-sap/ba-p/14184447",
-            "author": "FernandaFroelich",
-            "date_published": "2025-08-20",
-            "matching_tags": [
-              "SAP Analytics Cloud",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 1
-          }
-        ],
-        "rest": [
-          {
-            "title": "How to edit a quota assignment in SAP Business Data Cloud (BDC)?",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-edit-a-quota-assignment-in-sap-business-data-cloud-bdc/ba-p/14181937",
-            "author": "FernandaFroelich",
-            "date_published": "2025-08-19",
-            "matching_tags": [
-              "SAP Analytics Cloud",
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5
-          },
-          {
-            "title": "AI-Assisted Calculations in SAP Analytics Cloud",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/ai-assisted-calculations-in-sap-analytics-cloud/ba-p/14180673",
-            "author": "EstherRodrigo",
-            "date_published": "2025-08-14",
-            "matching_tags": [
-              "SAP Analytics Cloud"
-            ],
-            "minutes": 5
-          }
-        ]
       }
     ]
   }
