@@ -4,18 +4,20 @@
     "weekday": "Monday",
     "iso": "2026-06-01",
     "full": "Jun 1, 2026",
-    "title": "Explore best practices for leveraging coding agents while mitigating security risks in development and operations.",
-    "preview": "Discover use cases for agent-assisted coding to streamline enterprise workflows.",
-    "reads": "1 min",
-    "posts": 1,
+    "title": "SAP unveiled Joule Studio at SAPPHIRE 2026, enabling intent-based development for scalable AI agent deployment in enterprises.",
+    "preview": "Joule Studio addresses dynamic business needs and market changes with advanced AI-driven solutions.",
+    "reads": "22 min",
+    "posts": 6,
     "tags": [
-      "Business AI"
+      "Business AI",
+      "Datasphere",
+      "Business Data Cloud"
     ],
     "highlights": [
-      "Explore best practices for leveraging coding agents while mitigating security risks in development and operations.",
-      "Discover use cases for agent-assisted coding to streamline enterprise workflows.",
-      "Utilize resources like SAP Joule and the AI Golden Path to build confidence and trust in AI solutions.",
-      "Focus on upskilling in AI to drive adoption and innovation in enterprise environments."
+      "SAP unveiled Joule Studio at SAPPHIRE 2026, enabling intent-based development for scalable AI agent deployment in enterprises.",
+      "Joule Studio addresses dynamic business needs and market changes with advanced AI-driven solutions.",
+      "Business Consent in SAP Business Data Cloud resolves fragmented SAP landscapes by integrating multiple CRM IDs seamlessly.",
+      "The feature accelerates integration with SAP SuccessFactors, supporting cross-solution scenarios like People Intelligence without extensive consolidation efforts."
     ],
     "sections": [
       {
@@ -24,6 +26,20 @@
           "SAP Business AI"
         ],
         "top": [
+          {
+            "title": "Joule Studio: Intent-Based Development for Creating and Running AI Agents at Scale",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/joule-studio-intent-based-development-for-creating-and-running-ai-agents-at/ba-p/14407210",
+            "author": "mark_wright",
+            "date_published": "2026-05-29",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "SAP introduced Joule Studio at SAPPHIRE 2026, a platform for intent-based development to create and deploy AI agents at enterprise scale. This innovation aims to help organizations address evolving business needs and market changes more effectively. It represents a significant advancement in AI-driven enterprise solutions.",
+            "post_type": "Release"
+          },
           {
             "title": "From Hype to Hands-On: Level Up Your AI Skills This May",
             "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/from-hype-to-hands-on-level-up-your-ai-skills-this-may/ba-p/14406752",
@@ -39,7 +55,71 @@
             "post_type": "Article"
           }
         ],
-        "rest": []
+        "rest": [
+          {
+            "title": "Secure by Design: How SAP and NVIDIA Are Redefining Agent Execution",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/secure-by-design-how-sap-and-nvidia-are-redefining-agent-execution/ba-p/14406128",
+            "author": "ratulshah",
+            "date_published": "2026-06-01",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "SAP and NVIDIA are collaborating to create a secure execution layer for autonomous AI agents in enterprise processes. This involves combining runtime containment with SAP's AI-enabled data fabric solutions to ensure safety, governance, and auditability. The goal is to deliver production-ready agentic AI solutions.",
+            "post_type": "Article"
+          }
+        ]
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "From Fragmented Landscapes to Unified Insights: Business Consent in SAP BDC",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/from-fragmented-landscapes-to-unified-insights-business-consent-in-sap-bdc/ba-p/14408202",
+            "author": "Vivek-RR",
+            "date_published": "2026-06-01",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "The blog discusses how Business Consent in SAP Business Data Cloud enables organizations to overcome fragmented SAP landscapes spread across multiple CRM IDs. It explains how this feature facilitates quick integration with SAP SuccessFactors for cross-solution scenarios like People Intelligence, bypassing the need for lengthy consolidation projects.",
+            "post_type": "Article"
+          },
+          {
+            "title": "SAP Snowflake: How to Store and Manage Secrets for APIs, Database Credentials, and Keys",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-snowflake-how-to-store-and-manage-secrets-for-apis-database-credentials/ba-p/14407925",
+            "author": "Yogananda",
+            "date_published": "2026-05-31",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": [
+          {
+            "title": "Leading with SAP Business Data Cloud innovation and roadmap",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/leading-with-sap-business-data-cloud-innovation-and-roadmap/ba-p/14407490",
+            "author": "JoseBastidas",
+            "date_published": "2026-06-01",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ]
       }
     ]
   },
