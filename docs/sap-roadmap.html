@@ -11,26 +11,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/roadmap/styles/site.css">
   <style>
+    /* restore white page background — roadmap/styles/site.css sets body to #e8edf2 */
     body { background: #ffffff !important; }
-    /* entry card */
-    .rb-entry { border: 1px solid #D2D2D7; border-radius: 6px; margin-bottom: 10px; overflow: hidden; }
-    .rb-entry-header { display: flex; align-items: center; gap: 12px;
-      padding: 16px 20px; cursor: pointer; background: #FAFAFA; user-select: none; }
-    .rb-entry-header:hover { background: #F0F0F2; }
-    .rb-period { font-size: 14px; font-weight: 500; color: #1D1D1F; flex-shrink: 0; }
-    .rb-chips { display: flex; flex-wrap: wrap; gap: 6px; flex: 1; }
-    .rb-chip { display: inline-block; border-radius: 12px; padding: 3px 10px;
-      font-size: 12px; font-weight: 600; }
-    .rb-chip-slipped { background: #FDECEA; color: #C0392B; }
-    .rb-chip-added   { background: #EAF2FF; color: #0066CC; }
-    .rb-chip-deleted { background: #F0F0F2; color: #6E6E73; }
-    .rb-no-chip { font-size: 13px; color: #6E6E73; }
-    .rb-chevron { width: 8px; height: 8px; border-right: 2px solid #86868B;
-      border-bottom: 2px solid #86868B; transform: rotate(45deg); transition: transform .2s;
-      flex-shrink: 0; margin-left: auto; }
-    .rb-entry.rb-open .rb-chevron { transform: rotate(-135deg); }
+    /* body panel — shown when parent .pv-briefing has is-open */
     .rb-entry-body { display: none; padding: 16px 20px 20px; background: #FFFFFF; }
-    .rb-entry.rb-open .rb-entry-body { display: block; }
+    .pv-briefing.is-open .rb-entry-body { display: block; }
+    /* date column: 3-line layout */
+    .pv-briefing .pv-brief-date { text-align: left; }
+    .pv-briefing .pv-briefing-summary { grid-template-columns: 190px 1fr 28px; }
+    .pv-briefing .pv-brief-date .full { font-size: 19px; font-weight: 500; letter-spacing: -.01em; white-space: nowrap; }
+    /* change-type chip colour overrides inside pv-brief-tags */
+    .pv-brief-tags .chip-added   { background: #EAF2FF; color: #0066CC; border-color: #C5DCFA; }
+    .pv-brief-tags .chip-slipped { background: #FDECEA; color: #C0392B; border-color: #F5C6C2; }
+    .pv-brief-tags .chip-removed { background: #F0F0F2; color: #6E6E73; border-color: #D2D2D7; }
     /* product section */
     .rb-product { margin-bottom: 20px; }
     .rb-product-name { font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
@@ -143,6 +136,15 @@
 <div class="tab-bar">
 <button class="tab-btn active" data-tab="board">📋 Board</button>
 <button class="tab-btn" data-tab="shifts">🔀 Date Shifts</button>
+<div id="search-wrap">
+<label class="search-pill">
+<svg aria-hidden="true" fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" style="color:var(--text-secondary);flex-shrink:0" viewbox="0 0 24 24" width="13">
+<circle cx="11" cy="11" r="8"></circle><line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+</svg>
+<input autocomplete="off" id="search-input" placeholder="Search items…" type="text"/>
+<button aria-label="Clear search" class="search-clear" tabindex="-1">×</button>
+</label>
+</div>
 <div class="legend">
 <div class="leg"><div class="leg-dot" style="background:#3b82f6"></div> Planned</div>
 <div class="leg"><div class="leg-dot" style="background:#64748b"></div> Delivered</div>
@@ -177,7 +179,7 @@
 </div>
 <script>
   window.__LATEST_DATA__ = {
-  "generated": "2026-06-01T12:03:42.644393+00:00",
+  "generated": "2026-06-01T12:21:10.577514+00:00",
   "products": [
     "sap-analytics-cloud",
     "sap-business-data-cloud",
@@ -235,7 +237,7 @@
     {
       "id": "6F256A6435634C21B6F8DB39D75E17E0",
       "title": "Smart insights from SAP Datasphere models",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "AI for Planning and Analytics",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -283,7 +285,7 @@
     {
       "id": "000D3AAC9DD21FD0B1C76527708F1B99",
       "title": "Multi Action: trigger SAP Datasphere task chain from an API step",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Business Planning and Forecasting",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -295,7 +297,7 @@
     {
       "id": "35EF24CC61634CFA93C2409DC0CE6291",
       "title": "Job Monitor: inclusion of Data Export API jobs",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Business Planning and Forecasting",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -307,7 +309,7 @@
     {
       "id": "FDA45599DFB0406ABEC7632067C2BD96",
       "title": "Advanced Formulas: first and last for non-year granularity",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Business Planning and Forecasting",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -319,7 +321,7 @@
     {
       "id": "3E11D5E0DFC74D27BBD707F6413FE979",
       "title": "Plan Entry: onBeforeDataEntryProcess() table event",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Business Planning and Forecasting",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -343,7 +345,7 @@
     {
       "id": "96E7394B948141C3882121ABF06867C5",
       "title": "Asymmetric reporting: visibility filters for table widgets",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Business Planning and Forecasting",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -367,7 +369,7 @@
     {
       "id": "3AEB69C2AC0542778B72FC6B51FBF6CF",
       "title": "Data Locking: support for up to six locking dimensions",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Business Planning and Forecasting",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -403,7 +405,7 @@
     {
       "id": "2AE3C05AB40F4E20B8329948A4591234",
       "title": "Data Locking: array selection support in API",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Business Planning and Forecasting",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -439,7 +441,7 @@
     {
       "id": "7EF95598880A40DEB4E084A29C5FB4D2",
       "title": "Plan Entry: extended input readiness for validation rules",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Business Planning and Forecasting",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -463,7 +465,7 @@
     {
       "id": "000D3AAADBCE1FE0A2B4E0744D2F111C",
       "title": "Plan Process Management: retain team reference",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Business Planning and Forecasting",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -487,7 +489,7 @@
     {
       "id": "56B5BD71BA6D445A82D58E4EDFB42382",
       "title": "Job Monitor: inclusion of delta calculations",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Business Planning and Forecasting",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -583,7 +585,7 @@
     {
       "id": "000D3AAADBCE1FE094D1DE1E1D95EBFC",
       "title": "Live data connectivity to Microsoft Azure SQL Database",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Business Planning and Forecasting",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -595,7 +597,7 @@
     {
       "id": "1BF538234CAF452CB2573645BF8D1039",
       "title": "Plan Auditing: removal of restrictions on data purge volumes",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Business Planning and Forecasting",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -607,7 +609,7 @@
     {
       "id": "0425B8C9DF6D43878D1F3FB3BE72233C",
       "title": "Plan Entry: additional information in the AfterExecute() event for file uploads",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Business Planning and Forecasting",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -631,7 +633,7 @@
     {
       "id": "C6C9D7F755834678AA9D57C19453D91D",
       "title": "Plan Entry: support for Inverse Formula entry where non-target factor does not have an inverse formula",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Business Planning and Forecasting",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -655,7 +657,7 @@
     {
       "id": "57E8F66D4BCE4C98B9940A911E1E7484",
       "title": "Commenting: story API for batch updates of comments",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Business Planning and Forecasting",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -703,7 +705,7 @@
     {
       "id": "6398BA8BC0244DBABEBAD03BABC14376",
       "title": "Support for additional scales",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Design",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -715,7 +717,7 @@
     {
       "id": "7F3FD5C2AD7148FC856B52B2D862BB80",
       "title": "Invalid calculations management",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Design",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -727,7 +729,7 @@
     {
       "id": "9E814A84CC634CCFA2948F0EAA16D901",
       "title": "Respect for SAP BW application query-level text presentations without the system admin toggle",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Design",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -739,7 +741,7 @@
     {
       "id": "60917F2EE2F34D53A28414ABD420A589",
       "title": "Custom widget for dimension-based filtering by condition and range",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Design",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -763,7 +765,7 @@
     {
       "id": "AA653AB78DBB486CA048D7DEBCC16A19",
       "title": "Creation of charts with drag and drop",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Design",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -775,7 +777,7 @@
     {
       "id": "FE96FC7D1D6D495AB5A28F2F0E4FDAEE",
       "title": "Scripting API: showing hierarchy leaves only in table widgets",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Design",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -787,7 +789,7 @@
     {
       "id": "150A4EA691B740C39D6E99AFDFA67000",
       "title": "Decoupled Data Panel from Builder Panel and Styling Panel",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Design",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -799,7 +801,7 @@
     {
       "id": "33DFA7FE36214A59B3F744486C183BEF",
       "title": "Dynamic time filter for \u201crest of period\u201d",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Design",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -811,7 +813,7 @@
     {
       "id": "6CBA209E471A406BBE03897FE30BD115",
       "title": "Ability to show totals for blended tables and charts in the optimized story designer",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Design",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -823,7 +825,7 @@
     {
       "id": "D68168A2BC9B4BD0A199C5D2AD257B2D",
       "title": "Prompted switch to the new table build experience",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Design",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -847,7 +849,7 @@
     {
       "id": "2BF1BA0B4FDA4C88B2174E53C2970730",
       "title": "New supported features in the lightweight viewer",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Design",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -859,7 +861,7 @@
     {
       "id": "9FFA0E60D3644A478CB28867514F9EA7",
       "title": "Ability to use measure input control within restricted measure calculations",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Design",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -871,7 +873,7 @@
     {
       "id": "510C1FA9FF324F788911DC0B7CEDB3D1",
       "title": "Addition of Microsoft Teams as a delivery channel for My Metrics Report",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Design",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -883,7 +885,7 @@
     {
       "id": "B7EF4C94EDE6427D81268CCFFAF3EEFA",
       "title": "Deep copy support for composites with data models",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Extensibility",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -907,7 +909,7 @@
     {
       "id": "69FA734D47E8479582ADF1F669862095",
       "title": "Composite: enablement of importing composites from SAP Business Data Cloud Intelligent Packages",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Extensibility",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -931,7 +933,7 @@
     {
       "id": "78DE5EAE95A24D3D8E3850F1777EE3E8",
       "title": "Composite: supporting composites in Lite Viewer",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Extensibility",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -943,7 +945,7 @@
     {
       "id": "1F9A6FF637844ECEAD766C0CF4746931",
       "title": "Composite: enablement of interface properties in the composite calculation editor",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Extensibility",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -955,7 +957,7 @@
     {
       "id": "77CA977315FF47DF95EB5B794D7397C2",
       "title": "Composite: versioning support for composite artifacts",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Extensibility",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -967,7 +969,7 @@
     {
       "id": "000D3AA914A11FD09CF62C1E6379E9DC",
       "title": "Support for recent and favorites in open and save dialogs",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Data and Analytics Administration",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -1015,7 +1017,7 @@
     {
       "id": "9C6553A1B66744F3921D74CF168B2E31",
       "title": "Home screen: new homepage features",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Data and Analytics Administration",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -1099,7 +1101,7 @@
     {
       "id": "000D3AAC9DD21FD0A5F838806FAE9930",
       "title": "Improved user experience when adding data",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Data Connectivity Management",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -1123,7 +1125,7 @@
     {
       "id": "2DEF714648B84A45A626278DA93F5C43",
       "title": "Member Selector Dialog for Calculated Measures and Unit Conversion Measures",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Data Design and Modelling",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -1135,7 +1137,7 @@
     {
       "id": "7B01C29A79904CECACB4F3B614F1E13D",
       "title": "Refinement of exception aggregation average and count calculations",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Data Design and Modelling",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -1183,7 +1185,7 @@
     {
       "id": "F2F4472A861B4B53A2E101D300FBB114",
       "title": "Insight scheduling based on live models in SAP Datasphere",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Exploratory Data Analysis",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -1195,7 +1197,7 @@
     {
       "id": "B3D99CC1B7811EEF9CA110AB4503772C",
       "title": "Launching a Microsoft Excel workbook from the data analyzer",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Exploratory Data Analysis",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -1255,7 +1257,7 @@
     {
       "id": "000D3ABE796A1FE0A7F2E7A0AF103F22",
       "title": "Supporting dimension comments in Microsoft Excel",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Office Suite Integration",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -1351,7 +1353,7 @@
     {
       "id": "905D0C4E9DD041A8AED7E467CF7555F2",
       "title": "Support for connecting SAP Datasphere (tunnel mode) with the Microsoft Excel add-in",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Office Suite Integration",
       "status": "DELIVERED",
       "product": "sap-analytics-cloud",
@@ -1411,7 +1413,7 @@
     {
       "id": "6F256A6435634C21B6F8DB39D75E17E0",
       "title": "Smart insights from SAP Datasphere models",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "AI for Planning and Analytics",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -1447,7 +1449,7 @@
     {
       "id": "000D3AAC9DD21FD0B1C76527708F1B99",
       "title": "Multi Action: trigger SAP Datasphere task chain from an API step",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Business Planning and Forecasting",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -1459,7 +1461,7 @@
     {
       "id": "35EF24CC61634CFA93C2409DC0CE6291",
       "title": "Job Monitor: inclusion of Data Export API jobs",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Business Planning and Forecasting",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -1471,7 +1473,7 @@
     {
       "id": "FDA45599DFB0406ABEC7632067C2BD96",
       "title": "Advanced Formulas: first and last for non-year granularity",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Business Planning and Forecasting",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -1483,7 +1485,7 @@
     {
       "id": "3E11D5E0DFC74D27BBD707F6413FE979",
       "title": "Plan Entry: onBeforeDataEntryProcess() table event",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Business Planning and Forecasting",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -1507,7 +1509,7 @@
     {
       "id": "96E7394B948141C3882121ABF06867C5",
       "title": "Asymmetric reporting: visibility filters for table widgets",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Business Planning and Forecasting",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -1531,7 +1533,7 @@
     {
       "id": "3AEB69C2AC0542778B72FC6B51FBF6CF",
       "title": "Data Locking: support for up to six locking dimensions",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Business Planning and Forecasting",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -1567,7 +1569,7 @@
     {
       "id": "2AE3C05AB40F4E20B8329948A4591234",
       "title": "Data Locking: array selection support in API",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Business Planning and Forecasting",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -1603,7 +1605,7 @@
     {
       "id": "7EF95598880A40DEB4E084A29C5FB4D2",
       "title": "Plan Entry: extended input readiness for validation rules",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Business Planning and Forecasting",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -1627,7 +1629,7 @@
     {
       "id": "000D3AAADBCE1FE0A2B4E0744D2F111C",
       "title": "Plan Process Management: retain team reference",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Business Planning and Forecasting",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -1651,7 +1653,7 @@
     {
       "id": "56B5BD71BA6D445A82D58E4EDFB42382",
       "title": "Job Monitor: inclusion of delta calculations",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Business Planning and Forecasting",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -1747,7 +1749,7 @@
     {
       "id": "000D3AAADBCE1FE094D1DE1E1D95EBFC",
       "title": "Live data connectivity to Microsoft Azure SQL Database",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Business Planning and Forecasting",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -1771,7 +1773,7 @@
     {
       "id": "1BF538234CAF452CB2573645BF8D1039",
       "title": "Plan Auditing: removal of restrictions on data purge volumes",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Business Planning and Forecasting",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -1783,7 +1785,7 @@
     {
       "id": "0425B8C9DF6D43878D1F3FB3BE72233C",
       "title": "Plan Entry: additional information in the AfterExecute() event for file uploads",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Business Planning and Forecasting",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -1807,7 +1809,7 @@
     {
       "id": "C6C9D7F755834678AA9D57C19453D91D",
       "title": "Plan Entry: support for Inverse Formula entry where non-target factor does not have an inverse formula",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Business Planning and Forecasting",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -1831,7 +1833,7 @@
     {
       "id": "57E8F66D4BCE4C98B9940A911E1E7484",
       "title": "Commenting: story API for batch updates of comments",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Business Planning and Forecasting",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -1927,7 +1929,7 @@
     {
       "id": "6398BA8BC0244DBABEBAD03BABC14376",
       "title": "Support for additional scales",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Design",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -1939,7 +1941,7 @@
     {
       "id": "9E814A84CC634CCFA2948F0EAA16D901",
       "title": "Respect for SAP BW application query-level text presentations without the system admin toggle",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Design",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -1951,7 +1953,7 @@
     {
       "id": "60917F2EE2F34D53A28414ABD420A589",
       "title": "Custom widget for dimension-based filtering by condition and range",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Design",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -1975,7 +1977,7 @@
     {
       "id": "AA653AB78DBB486CA048D7DEBCC16A19",
       "title": "Creation of charts with drag and drop",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Design",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -1987,7 +1989,7 @@
     {
       "id": "FE96FC7D1D6D495AB5A28F2F0E4FDAEE",
       "title": "Scripting API: showing hierarchy leaves only in table widgets",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Design",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -1999,7 +2001,7 @@
     {
       "id": "150A4EA691B740C39D6E99AFDFA67000",
       "title": "Decoupled Data Panel from Builder Panel and Styling Panel",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Design",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -2011,7 +2013,7 @@
     {
       "id": "33DFA7FE36214A59B3F744486C183BEF",
       "title": "Dynamic time filter for \u201crest of period\u201d",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Design",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -2023,7 +2025,7 @@
     {
       "id": "6CBA209E471A406BBE03897FE30BD115",
       "title": "Ability to show totals for blended tables and charts in the optimized story designer",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Design",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -2035,7 +2037,7 @@
     {
       "id": "D68168A2BC9B4BD0A199C5D2AD257B2D",
       "title": "Prompted switch to the new table build experience",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Design",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -2059,7 +2061,7 @@
     {
       "id": "2BF1BA0B4FDA4C88B2174E53C2970730",
       "title": "New supported features in the lightweight viewer",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Design",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -2071,7 +2073,7 @@
     {
       "id": "510C1FA9FF324F788911DC0B7CEDB3D1",
       "title": "Addition of Microsoft Teams as a delivery channel for My Metrics Report",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Design",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -2083,7 +2085,7 @@
     {
       "id": "B7EF4C94EDE6427D81268CCFFAF3EEFA",
       "title": "Deep copy support for composites with data models",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Extensibility",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -2107,7 +2109,7 @@
     {
       "id": "69FA734D47E8479582ADF1F669862095",
       "title": "Composite: enablement of importing composites from SAP Business Data Cloud Intelligent Packages",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Extensibility",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -2131,7 +2133,7 @@
     {
       "id": "78DE5EAE95A24D3D8E3850F1777EE3E8",
       "title": "Composite: supporting composites in Lite Viewer",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Extensibility",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -2143,7 +2145,7 @@
     {
       "id": "1F9A6FF637844ECEAD766C0CF4746931",
       "title": "Composite: enablement of interface properties in the composite calculation editor",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Extensibility",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -2155,7 +2157,7 @@
     {
       "id": "77CA977315FF47DF95EB5B794D7397C2",
       "title": "Composite: versioning support for composite artifacts",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Dashboard Extensibility",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -2167,7 +2169,7 @@
     {
       "id": "000D3AA914A11FD09CF62C1E6379E9DC",
       "title": "Support for recent and favorites in open and save dialogs",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Data and Analytics Administration",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -2275,7 +2277,7 @@
     {
       "id": "9C6553A1B66744F3921D74CF168B2E31",
       "title": "Home screen: new homepage features",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Data and Analytics Administration",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -2431,7 +2433,7 @@
     {
       "id": "000D3AAADBCE1FE0AAEAB945D80094F3",
       "title": "Data center availability for SAP Business Data Cloud in Brazil through Google Cloud Platform",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Data Center Availability",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -2455,7 +2457,7 @@
     {
       "id": "000D3ABE772D1FD0AAEAADA4E6D47CE0",
       "title": "Data center availability for SAP Business Data Cloud in Japan through Google Cloud Platform",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Data Center Availability",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -2563,7 +2565,7 @@
     {
       "id": "000D3ABE772D1FD0AAEAC12A2B3A7CE0",
       "title": "Data center availability for SAP Business Data Cloud in Australia through Google Cloud Platform",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Data Center Availability",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -2575,7 +2577,7 @@
     {
       "id": "6DF54C88F6211FE081A3C8872BE1E2D9",
       "title": "Integration to enable enterprise analytics and innovations using machine learning and AI",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Data Connectivity Management",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -2671,7 +2673,7 @@
     {
       "id": "8067DD203A7F4EBA997B0E0B0D2FE18F",
       "title": "SAP Snowflake",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Data Connectivity Management",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -2695,7 +2697,7 @@
     {
       "id": "E739C76B38B41EEF82A3109E11DDF0F7",
       "title": "Semantic onboarding: import of calculation views from SAP HANA",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Data Connectivity Management",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -2959,7 +2961,7 @@
     {
       "id": "9198570EEC624C9D98DEBACCA56351E3",
       "title": "SAP Business Data Cloud Connect for Snowflake",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Data Connectivity Management",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -2971,7 +2973,7 @@
     {
       "id": "000D3AAC9DD21FD0A5F838806FAE9930",
       "title": "Improved user experience when adding data",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Data Connectivity Management",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -3091,7 +3093,7 @@
     {
       "id": "2DEF714648B84A45A626278DA93F5C43",
       "title": "Member Selector Dialog for Calculated Measures and Unit Conversion Measures",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Data Design and Modelling",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -3103,7 +3105,7 @@
     {
       "id": "7B01C29A79904CECACB4F3B614F1E13D",
       "title": "Refinement of exception aggregation average and count calculations",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Data Design and Modelling",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -3571,7 +3573,7 @@
     {
       "id": "F2F4472A861B4B53A2E101D300FBB114",
       "title": "Insight scheduling based on live models in SAP Datasphere",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Exploratory Data Analysis",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -3583,7 +3585,7 @@
     {
       "id": "B3D99CC1B7811EEF9CA110AB4503772C",
       "title": "Launching a Microsoft Excel workbook from the data analyzer",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Exploratory Data Analysis",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -3655,7 +3657,7 @@
     {
       "id": "000D3ABE796A1FE0A7F2E7A0AF103F22",
       "title": "Supporting dimension comments in Microsoft Excel",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Office Suite Integration",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -3751,7 +3753,7 @@
     {
       "id": "905D0C4E9DD041A8AED7E467CF7555F2",
       "title": "Support for connecting SAP Datasphere (tunnel mode) with the Microsoft Excel add-in",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Office Suite Integration",
       "status": "DELIVERED",
       "product": "sap-business-data-cloud",
@@ -4087,7 +4089,7 @@
     {
       "id": "E739C76B38B41EEF82A3109E11DDF0F7",
       "title": "Semantic onboarding: import of calculation views from SAP HANA",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Data Replication and ETL",
       "status": "DELIVERED",
       "product": "sap-datasphere",
@@ -4279,7 +4281,7 @@
     {
       "id": "73DD64690CE24FB284D28B935D79AFBF",
       "title": "Analytic model: ability to map variables of stacked models",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Other",
       "status": "DELIVERED",
       "product": "sap-datasphere",
@@ -4291,7 +4293,7 @@
     {
       "id": "CDCF37A942614EB68AF21280776B2C78",
       "title": "Analytic model: ability to distinguish between inherited and local properties",
-      "quarter": null,
+      "quarter": "Q2 2026",
       "capability": "Other",
       "status": "DELIVERED",
       "product": "sap-datasphere",
@@ -4360,14 +4362,9 @@
       return d.getDate() + ' ' + MONTHS[d.getMonth()];
     }
 
-    function entryTitle(entry) {
-      var parts = (entry.period || '').split(' – ');
-      if (parts.length < 2) return esc(entry.period);
-      var startStr = parts[0].trim();
-      var endStr   = parts[1].trim();
-      var cw = isoWeek(startStr);
-      var year = endStr.substring(0, 4);
-      return 'Weekly Report CW' + cw + ' · ' + fmtDate(startStr) + ' – ' + fmtDate(endStr) + ' ' + year;
+    function fmtDateLong(dateStr) {
+      var d = new Date(dateStr + 'T00:00:00');
+      return MONTHS[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
     }
 
     if (!briefings.length) {
@@ -4425,27 +4422,45 @@
       return '<div class="rb-product"><div class="rb-product-name">' + esc(sec.name) + '</div>' + parts.join('') + '</div>';
     }
 
-    briefingPanel.innerHTML = briefings.map(function (entry) {
+    briefingPanel.innerHTML = '<div class="pv-briefing-list">' + briefings.map(function (entry) {
       var secs = entry.sections || [];
       var totalSlipped = secs.reduce(function (s, x) { return s + (x.slipped || []).length; }, 0);
       var totalAdded   = secs.reduce(function (s, x) { return s + (x.added   || []).length; }, 0);
       var totalDeleted = secs.reduce(function (s, x) { return s + (x.deleted || []).length; }, 0);
+
+      var parts = (entry.period || '').split(' – ');
+      var startStr = (parts[0] || '').trim();
+      var endStr   = (parts[1] || '').trim();
+      var cwLabel  = startStr ? 'CW ' + isoWeek(startStr) : '';
+      var dateStart = startStr ? fmtDateLong(startStr) : '';
+      var dateEnd   = endStr   ? fmtDateLong(endStr)   : '';
+
       var chips = '';
-      if (totalSlipped) chips += '<span class="rb-chip rb-chip-slipped">↗ ' + totalSlipped + '</span>';
-      if (totalAdded)   chips += '<span class="rb-chip rb-chip-added">✦ '   + totalAdded   + '</span>';
-      if (totalDeleted) chips += '<span class="rb-chip rb-chip-deleted">✕ ' + totalDeleted + '</span>';
-      var chipsOrLabel = chips
-        ? '<div class="rb-chips">' + chips + '</div>'
-        : '<span class="rb-no-chip">No changes</span>';
-      return '<div class="rb-entry rb-open">' +
-        '<div class="rb-entry-header" onclick="this.closest(\'.rb-entry\').classList.toggle(\'rb-open\')">' +
-          '<div class="rb-period">' + entryTitle(entry) + '</div>' +
-          chipsOrLabel +
-          '<div class="rb-chevron"></div>' +
-        '</div>' +
+      if (totalAdded)   chips += '<span class="chip-added">❖ ' + totalAdded   + ' added</span>';
+      if (totalSlipped) chips += '<span class="chip-slipped">↗ ' + totalSlipped + ' slipped</span>';
+      if (totalDeleted) chips += '<span class="chip-removed">✕ ' + totalDeleted + ' removed</span>';
+      if (!chips)       chips  = '<span>No changes</span>';
+
+      return '<div class="pv-briefing">' +
+        '<h3 style="margin:0">' +
+          '<button class="pv-briefing-summary" aria-expanded="false"' +
+            ' onclick="var e=this.closest(\'.pv-briefing\');e.classList.toggle(\'is-open\');this.setAttribute(\'aria-expanded\',e.classList.contains(\'is-open\'))">' +
+            '<div class="pv-brief-date">' +
+              '<span class="day">' + esc(cwLabel) + '</span>' +
+              '<span class="full">' + esc(dateStart) + ' –</span>' +
+              '<span class="full">' + esc(dateEnd) + '</span>' +
+            '</div>' +
+            '<div class="pv-brief-main">' +
+              '<h3>' + esc(entry.title) + '</h3>' +
+              '<p class="preview">' + esc(entry.preview) + '</p>' +
+              '<div class="pv-brief-tags">' + chips + '</div>' +
+            '</div>' +
+            '<span class="pv-brief-toggle" aria-hidden="true"><i class="ph ph-plus"></i></span>' +
+          '</button>' +
+        '</h3>' +
         '<div class="rb-entry-body">' + secs.map(renderSection).join('') + '</div>' +
       '</div>';
-    }).join('');
+    }).join('') + '</div>';
   })();
   </script>
 </body>

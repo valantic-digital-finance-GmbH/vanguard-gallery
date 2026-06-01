@@ -3,6 +3,7 @@
 let allItems = [];
 let slipActive = true;
 let slippedOnlyActive = false;
+let searchQuery = "";
 
 function quarterSortKey(q) {
   if (!q || q === 'null' || q === 'undefined') return 999999;
@@ -33,9 +34,15 @@ function statusClass(status) {
 function render() {
   const productVal = document.getElementById('product-filter').value;
   const productFiltered = productVal ? allItems.filter(i => i.product === productVal) : allItems;
+  const searchFiltered = !searchQuery
+    ? productFiltered
+    : productFiltered.filter(item =>
+        [item.title, item.capability, item.status, item.product_display, item.quarter]
+          .some(f => f && f.toLowerCase().includes(searchQuery))
+      );
 
   const quarterMap = new Map();
-  productFiltered.forEach(item => {
+  searchFiltered.forEach(item => {
     const q = item.quarter || 'Product Vision';
     if (!quarterMap.has(q)) quarterMap.set(q, new Map());
     const capMap = quarterMap.get(q);
@@ -140,7 +147,16 @@ function switchTab(tabName) {
   document.querySelectorAll('.tab-panel').forEach(panel => {
     panel.classList.toggle('active', panel.id === tabName + '-panel');
   });
+  if (tabName !== 'board') {
+    const inp = document.getElementById('search-input');
+    if (inp) { inp.value = ''; }
+    searchQuery = '';
+  }
+  document.getElementById('search-wrap').style.display = tabName === 'board' ? '' : 'none';
 
+  if (tabName === 'board') {
+    render();
+  }
   if (tabName === 'shifts') {
     renderShifts();
   }
@@ -192,6 +208,18 @@ function init() {
     document.getElementById('slip-toggle').classList.toggle('active', slipActive);
     document.getElementById('slipped-only-toggle').addEventListener('click', toggleSlippedOnly);
     document.getElementById('slipped-only-toggle').classList.toggle('active', slippedOnlyActive);
+    document.getElementById('search-input').addEventListener('input', e => {
+      searchQuery = e.target.value.toLowerCase().trim();
+      render();
+    });
+    document.getElementById('search-input')
+      .closest('.search-pill')
+      .querySelector('.search-clear')
+      .addEventListener('click', () => {
+        document.getElementById('search-input').value = '';
+        searchQuery = '';
+        render();
+      });
     document.querySelectorAll('.tab-btn').forEach(btn => {
       btn.addEventListener('click', () => switchTab(btn.dataset.tab));
     });
