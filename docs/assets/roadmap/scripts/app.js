@@ -37,7 +37,9 @@ function render() {
   const searchFiltered = !searchQuery
     ? productFiltered
     : productFiltered.filter(item =>
-        [item.title, item.capability, item.status, item.product_display, item.quarter]
+        // Match the item's own text only — NOT the enclosing group fields
+        // (quarter column / capability group), which items are bucketed under.
+        [item.title, item.status, item.product_display]
           .some(f => f && f.toLowerCase().includes(searchQuery))
       );
 
