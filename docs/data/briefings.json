@@ -1,5 +1,70 @@
 [
   {
+    "id": "wed-2026-06-03",
+    "weekday": "Wednesday",
+    "iso": "2026-06-03",
+    "full": "Jun 3, 2026",
+    "title": "SAP Business AI Platform introduces 'GOVERN' to ensure ethical, transparent, and compliant AI usage.",
+    "preview": "The 'GOVERN' framework emphasizes data privacy, bias mitigation, and regulatory adherence in AI applications.",
+    "reads": "10 min",
+    "posts": 2,
+    "tags": [
+      "Business AI",
+      "Business Data Cloud"
+    ],
+    "highlights": [
+      "SAP Business AI Platform introduces 'GOVERN' to ensure ethical, transparent, and compliant AI usage.",
+      "The 'GOVERN' framework emphasizes data privacy, bias mitigation, and regulatory adherence in AI applications.",
+      "SAP Business Data Cloud is tailored to address retail industry needs, focusing on real-time insights and customer-centric strategies.",
+      "Retailers can leverage SAP Business Data Cloud to unify data silos and enhance decision-making across supply chains and customer interactions.",
+      "Both initiatives underscore SAP's commitment to industry-specific solutions and responsible AI practices."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Post-SAP Sapphire briefing SAP Business AI Platform – GOVERN",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/post-sap-sapphire-briefing-sap-business-ai-platform-govern/ba-p/14405513",
+            "author": "JoseBastidas",
+            "date_published": "2026-06-02",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Positioning SAP Business Data Cloud for the Retail industry",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/positioning-sap-business-data-cloud-for-the-retail-industry/ba-p/14409058",
+            "author": "JoseBastidas",
+            "date_published": "2026-06-02",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "tue-2026-06-02",
     "weekday": "Tuesday",
     "iso": "2026-06-02",
@@ -3284,88 +3349,6 @@
             "minutes": 1,
             "summary": "This blog provides a step-by-step guide to importing data from an on-premise MS SQL Server into SAP Analytics Cloud. It explains the use of the SAP Analytics Cloud Agent and SAP Cloud Connector for establishing the connection and recommends installing these tools on a dedicated server for optimal performance. The focus is on ensuring a stable and efficient setup for multiple users.",
             "post_type": "How-to"
-          }
-        ],
-        "rest": []
-      }
-    ]
-  },
-  {
-    "id": "fri-2025-10-31",
-    "weekday": "Friday",
-    "iso": "2025-10-31",
-    "full": "Oct 31, 2025",
-    "title": "The blog post demonstrates an end-to-end process of integrating SAP BW data with Databricks Enterprise via SAP Business Data Cloud, eliminating the need for data movement.",
-    "preview": "The blog post provides a curated list of recommended SAP TechEd virtual sessions focused on building an AI-ready data strategy. It targets engineers, scientists, and analysts looking to enhance their ",
-    "reads": "15 min",
-    "posts": 3,
-    "tags": [
-      "Business Data Cloud",
-      "Datasphere"
-    ],
-    "highlights": [],
-    "sections": [
-      {
-        "name": "SAP Business Data Cloud",
-        "tags": [
-          "SAP Business Data Cloud"
-        ],
-        "top": [
-          {
-            "title": "BW Data Product Generator to Databricks Enterprise Capability",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/bw-data-product-generator-to-databricks-enterprise-capability/ba-p/14251192",
-            "author": "JonGooding",
-            "date_published": "2025-10-31",
-            "matching_tags": [
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "summary": "The blog post demonstrates an end-to-end process of integrating SAP BW data with Databricks Enterprise via SAP Business Data Cloud, eliminating the need for data movement. It highlights the capability to enable machine learning and AI on SAP BW data seamlessly.",
-            "post_type": "Deep dive"
-          },
-          {
-            "title": "SAP TechEd Virtual Business Data Cloud Session Recommendations",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-teched-virtual-business-data-cloud-session-recommendations/ba-p/14248738",
-            "author": "JoseChicas",
-            "date_published": "2025-10-22",
-            "matching_tags": [
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "summary": "The blog post provides a curated list of recommended SAP TechEd virtual sessions focused on building an AI-ready data strategy. It targets engineers, scientists, and analysts looking to enhance their understanding of SAP's Business Data Cloud offerings. The sessions aim to equip attendees with insights and tools for leveraging data effectively in AI initiatives.",
-            "post_type": "Event"
-          }
-        ],
-        "rest": [
-          {
-            "title": "SAP Datasphere News in September",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-datasphere-news-in-september/ba-p/14235999",
-            "author": "kpsauer",
-            "date_published": "2025-10-16",
-            "matching_tags": [
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5
-          }
-        ]
-      },
-      {
-        "name": "SAP Datasphere",
-        "tags": [
-          "SAP Datasphere"
-        ],
-        "top": [
-          {
-            "title": "SAP Datasphere News in September",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-datasphere-news-in-september/ba-p/14235999",
-            "author": "kpsauer",
-            "date_published": "2025-10-16",
-            "matching_tags": [
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5
           }
         ],
         "rest": []
