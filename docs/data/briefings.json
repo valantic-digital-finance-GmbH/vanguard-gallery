@@ -6,11 +6,12 @@
     "full": "Jun 3, 2026",
     "title": "SAP Business AI Platform introduces 'GOVERN' to ensure ethical, transparent, and compliant AI usage.",
     "preview": "The 'GOVERN' framework emphasizes data privacy, bias mitigation, and regulatory adherence in AI applications.",
-    "reads": "10 min",
-    "posts": 2,
+    "reads": "11 min",
+    "posts": 3,
     "tags": [
       "Business AI",
-      "Business Data Cloud"
+      "Business Data Cloud",
+      "Datasphere"
     ],
     "highlights": [
       "SAP Business AI Platform introduces 'GOVERN' to ensure ethical, transparent, and compliant AI usage.",
@@ -60,7 +61,23 @@
             "board_name": "Technology Blog Posts by SAP"
           }
         ],
-        "rest": []
+        "rest": [
+          {
+            "title": "SAP Business Data Cloud and Datasphere News in May",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-data-cloud-and-datasphere-news-in-may/ba-p/14408387",
+            "author": "kpsauer",
+            "date_published": "2026-06-03",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "The blog highlights significant announcements about SAP Business Data Cloud (BDC) made during SAPPHIRE Orlando, along with two major Datasphere releases in May. It includes a SAPPHIRE recap, feature picks, and recommended community blogs. The author also shares a personal highlight from the month.",
+            "post_type": "Article"
+          }
+        ]
       }
     ]
   },
