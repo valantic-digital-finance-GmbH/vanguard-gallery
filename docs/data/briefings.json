@@ -1,5 +1,50 @@
 [
   {
+    "id": "thu-2026-06-04",
+    "weekday": "Thursday",
+    "iso": "2026-06-04",
+    "full": "Jun 4, 2026",
+    "title": "SAP launches an exclusive webinar series for partners to explore autonomous enterprise strategies.",
+    "preview": "The series focuses on enhancing partner expertise in leveraging SAP solutions effectively.",
+    "reads": "5 min",
+    "posts": 1,
+    "tags": [
+      "Business AI",
+      "Business Data Cloud"
+    ],
+    "highlights": [
+      "SAP launches an exclusive webinar series for partners to explore autonomous enterprise strategies.",
+      "The series focuses on enhancing partner expertise in leveraging SAP solutions effectively.",
+      "Registration and details are available on the SAP PartnerEdge platform."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Accelerate Your Journey to the Autonomous Enterprise: Join Our Exclusive Partner Webinar Series",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/accelerate-your-journey-to-the-autonomous-enterprise-join-our-exclusive/ba-p/14410422",
+            "author": "OanaTudorascu",
+            "date_published": "2026-06-03",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "This blog post promotes an exclusive webinar series designed for SAP partners to explore strategies and tools for advancing towards an autonomous enterprise. It provides a link to the PartnerEdge platform for further details and registration. The series aims to enhance partner knowledge and capabilities in leveraging SAP solutions.",
+            "post_type": "Event"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "wed-2026-06-03",
     "weekday": "Wednesday",
     "iso": "2026-06-03",
@@ -3250,122 +3295,6 @@
               "SAP Business Data Cloud"
             ],
             "minutes": 5
-          }
-        ],
-        "rest": []
-      }
-    ]
-  },
-  {
-    "id": "thu-2025-11-27",
-    "weekday": "Thursday",
-    "iso": "2025-11-27",
-    "full": "Nov 27, 2025",
-    "title": "This blog post provides a detailed guide on activating the Object Store in SAP Datasphere, covering key limitations, requirements, supported regions, and deployment considerations.",
-    "preview": "This blog post provides a step-by-step guide to provisioning SAP BDC Connect for seamless data sharing with Databricks. It covers prerequisites such as admin permissions, regional alignment, and works",
-    "reads": "13 min",
-    "posts": 5,
-    "tags": [
-      "Datasphere",
-      "Business Data Cloud",
-      "Analytics Cloud"
-    ],
-    "highlights": [],
-    "sections": [
-      {
-        "name": "SAP Business Data Cloud",
-        "tags": [
-          "SAP Business Data Cloud"
-        ],
-        "top": [
-          {
-            "title": "How to provision SAP BDC Connect for Databricks?",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-provision-sap-bdc-connect-for-databricks/ba-p/14279245",
-            "author": "FernandaFroelich",
-            "date_published": "2025-11-27",
-            "matching_tags": [
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 1,
-            "summary": "This blog post provides a step-by-step guide to provisioning SAP BDC Connect for seamless data sharing with Databricks. It covers prerequisites such as admin permissions, regional alignment, and workspace compatibility, followed by configuration steps in SAP for Me and Databricks. The guide ensures successful connection setup and validation for data product sharing.",
-            "post_type": "How-to"
-          },
-          {
-            "title": "SAP Datasphere News in October",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-datasphere-news-in-october/ba-p/14258069",
-            "author": "kpsauer",
-            "date_published": "2025-11-04",
-            "matching_tags": [
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5
-          }
-        ],
-        "rest": []
-      },
-      {
-        "name": "SAP Datasphere",
-        "tags": [
-          "SAP Datasphere"
-        ],
-        "top": [
-          {
-            "title": "How to activate the Object Store in SAP Datasphere?",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-activate-the-object-store-in-sap-datasphere/ba-p/14279053",
-            "author": "FernandaFroelich",
-            "date_published": "2025-11-27",
-            "matching_tags": [
-              "SAP Datasphere"
-            ],
-            "minutes": 1,
-            "summary": "This blog post provides a detailed guide on activating the Object Store in SAP Datasphere, covering key limitations, requirements, supported regions, and deployment considerations. It includes a step-by-step walkthrough for successful activation, addressing space creation and capacity unit planning. The post ensures clarity on what to expect during the process.",
-            "post_type": "How-to"
-          },
-          {
-            "title": "Is it possible to configure scoped roles from SAP Datasphere in SAP Cloud Identity Service?",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/is-it-possible-to-configure-scoped-roles-from-sap-datasphere-in-sap-cloud/ba-p/14278996",
-            "author": "FernandaFroelich",
-            "date_published": "2025-11-27",
-            "matching_tags": [
-              "SAP Datasphere"
-            ],
-            "minutes": 5
-          }
-        ],
-        "rest": [
-          {
-            "title": "SAP Datasphere News in October",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-datasphere-news-in-october/ba-p/14258069",
-            "author": "kpsauer",
-            "date_published": "2025-11-04",
-            "matching_tags": [
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5
-          }
-        ]
-      },
-      {
-        "name": "SAP Analytics Cloud",
-        "tags": [
-          "SAP Analytics Cloud",
-          "SAP Analytics Cloud for planning",
-          "SAP Analytics Cloud, data modeling"
-        ],
-        "top": [
-          {
-            "title": "Creating an Import Data Connection to an On-Premise MS SQL Server",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/creating-an-import-data-connection-to-an-on-premise-ms-sql-server/ba-p/14265075",
-            "author": "Sakshi_Kathuria",
-            "date_published": "2025-11-11",
-            "matching_tags": [
-              "SAP Analytics Cloud"
-            ],
-            "minutes": 1,
-            "summary": "This blog provides a step-by-step guide to importing data from an on-premise MS SQL Server into SAP Analytics Cloud. It explains the use of the SAP Analytics Cloud Agent and SAP Cloud Connector for establishing the connection and recommends installing these tools on a dedicated server for optimal performance. The focus is on ensuring a stable and efficient setup for multiple users.",
-            "post_type": "How-to"
           }
         ],
         "rest": []
