@@ -1,5 +1,18 @@
 [
   {
+    "id": "fri-2026-06-05",
+    "weekday": "Friday",
+    "iso": "2026-06-05",
+    "full": "Jun 5, 2026",
+    "title": "No new posts today.",
+    "preview": "No new SAP blog posts were published since the last check.",
+    "reads": "—",
+    "posts": 0,
+    "tags": [],
+    "highlights": [],
+    "sections": []
+  },
+  {
     "id": "thu-2026-06-04",
     "weekday": "Thursday",
     "iso": "2026-06-04",
@@ -3238,63 +3251,6 @@
             "minutes": 1,
             "summary": "The blog post discusses the challenges users face with the calculation logic in SAP Analytics Cloud (SAC), particularly when features behave inconsistently. It introduces a collective KBA that compiles the latest known limitations of Story Calculations to assist users in navigating these issues.",
             "post_type": "Article"
-          }
-        ],
-        "rest": []
-      }
-    ]
-  },
-  {
-    "id": "fri-2025-12-12",
-    "weekday": "Friday",
-    "iso": "2025-12-12",
-    "full": "Dec 12, 2025",
-    "title": "1 SAP blog posts.",
-    "preview": "1 SAP blog posts.",
-    "reads": "5 min",
-    "posts": 1,
-    "tags": [
-      "Datasphere",
-      "Business Data Cloud"
-    ],
-    "highlights": [],
-    "sections": [
-      {
-        "name": "SAP Business Data Cloud",
-        "tags": [
-          "SAP Business Data Cloud"
-        ],
-        "top": [
-          {
-            "title": "SAP Datasphere News in November",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-datasphere-news-in-november/ba-p/14286018",
-            "author": "kpsauer",
-            "date_published": "2025-12-12",
-            "matching_tags": [
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5
-          }
-        ],
-        "rest": []
-      },
-      {
-        "name": "SAP Datasphere",
-        "tags": [
-          "SAP Datasphere"
-        ],
-        "top": [
-          {
-            "title": "SAP Datasphere News in November",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-datasphere-news-in-november/ba-p/14286018",
-            "author": "kpsauer",
-            "date_published": "2025-12-12",
-            "matching_tags": [
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5
           }
         ],
         "rest": []
