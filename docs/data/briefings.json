@@ -1,5 +1,145 @@
 [
   {
+    "id": "mon-2026-06-08",
+    "weekday": "Monday",
+    "iso": "2026-06-08",
+    "full": "Jun 8, 2026",
+    "title": "SAP Analytics Cloud now supports live planning model connections to Microsoft Azure, enabling real-time data querying and calculation without replication.",
+    "preview": "ABAP CDC-based replication in SAP Datasphere uses components like CDC logging tables and database triggers to ensure seamless data flow from S/4HANA to Datasphere Local Tables.",
+    "reads": "22 min",
+    "posts": 6,
+    "tags": [
+      "Analytics Cloud",
+      "SAC Planning",
+      "SAC Modeling",
+      "Business Data Cloud",
+      "Datasphere"
+    ],
+    "highlights": [
+      "SAP Analytics Cloud now supports live planning model connections to Microsoft Azure, enabling real-time data querying and calculation without replication.",
+      "ABAP CDC-based replication in SAP Datasphere uses components like CDC logging tables and database triggers to ensure seamless data flow from S/4HANA to Datasphere Local Tables.",
+      "A detailed guide explains troubleshooting the 'low space version' error in SAP Datasphere transformation flows, aiding consultants in resolving client issues.",
+      "S/4HANA Public Cloud integrates with AI and Business Data Cloud to enhance data-driven decision-making and leverage SAP Cloud ERP data for better business outcomes."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "SAP Datasphere: Data Tiering Strategy and Best Practices",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-datasphere-data-tiering-strategy-and-best-practices/ba-p/14376106",
+            "author": "jeet_kapase",
+            "date_published": "2026-06-07",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "S/4HANA Public Cloud in the Age of AI and Business Data Cloud",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/s-4hana-public-cloud-in-the-age-of-ai-and-business-data-cloud/ba-p/14412495",
+            "author": "GiriRaaj",
+            "date_published": "2026-06-06",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "The blog explores how S/4HANA Public Cloud integrates with AI and the Business Data Cloud (BDC) to enhance data-driven decision-making. It highlights leveraging SAP Cloud ERP data products within BDC for improved business outcomes.",
+            "post_type": "Article"
+          },
+          {
+            "title": "Live Versions for Planning Models in SAP Analytics Cloud: Microsoft Azure Is Here!",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/live-versions-for-planning-models-in-sap-analytics-cloud-microsoft-azure-is/ba-p/14411873",
+            "author": "Max_Gander",
+            "date_published": "2026-06-05",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Analytics Cloud for planning",
+              "SAP Analytics Cloud, data modeling",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts",
+            "summary": "SAP Analytics Cloud now supports live connections to Microsoft Azure for planning models, joining Google BigQuery and Snowflake. This allows users to query and calculate data live without replication, with options to copy data into plan versions as needed. The blog provides a detailed setup guide and addresses common questions.",
+            "post_type": "How-to"
+          }
+        ],
+        "rest": [
+          {
+            "title": "Under the Hood of ABAP CDC in SAP Datasphere Replication Flows",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/under-the-hood-of-abap-cdc-in-sap-datasphere-replication-flows/ba-p/14411878",
+            "author": "anilkumarauce",
+            "date_published": "2026-06-05",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ]
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "Error \"Space Version of space <SPACEID> is too low to run transformation flow\" in Datasphere ?",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/error-quot-space-version-of-space-lt-spaceid-gt-is-too-low-to-run/ba-p/14411786",
+            "author": "albertosimeoni",
+            "date_published": "2026-06-05",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members",
+            "summary": "The blog post addresses the error related to low space version in SAP Datasphere when running a transformation flow. It focuses on troubleshooting and managing this issue, particularly in consultancy scenarios with clients.",
+            "post_type": "How-to"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "How To Trigger Automated Email Notifications Based on KPI Thresholds in SAP Analytics Cloud",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/how-to-trigger-automated-email-notifications-based-on-kpi-thresholds-in-sap/ba-p/14406736",
+            "author": "Himanshu_Sharma_26",
+            "date_published": "2026-06-05",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Analytics Cloud for planning",
+              "SAP Analytics Cloud, data modeling"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "fri-2026-06-05",
     "weekday": "Friday",
     "iso": "2026-06-05",
@@ -3200,99 +3340,6 @@
               "SAP Analytics Cloud"
             ],
             "minutes": 5
-          }
-        ],
-        "rest": []
-      }
-    ]
-  },
-  {
-    "id": "tue-2026-01-27",
-    "weekday": "Tuesday",
-    "iso": "2026-01-27",
-    "full": "Jan 27, 2026",
-    "title": "The blog outlines ten compelling reasons to rely on the SAP Business Transformation Center for critical ERP data migrations.",
-    "preview": "The blog post discusses the challenges users face with the calculation logic in SAP Analytics Cloud (SAC), particularly when features behave inconsistently. It introduces a collective KBA that compile",
-    "reads": "11 min",
-    "posts": 3,
-    "tags": [
-      "Business Data Cloud",
-      "Analytics Cloud",
-      "Datasphere"
-    ],
-    "highlights": [],
-    "sections": [
-      {
-        "name": "SAP Business Data Cloud",
-        "tags": [
-          "SAP Business Data Cloud"
-        ],
-        "top": [
-          {
-            "title": "10 reasons to trust the SAP Business Transformation Center with your data migration",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/10-reasons-to-trust-the-sap-business-transformation-center-with-your-data/ba-p/14289531",
-            "author": "Sascha_Loeffler",
-            "date_published": "2026-01-27",
-            "matching_tags": [
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "summary": "The blog outlines ten compelling reasons to rely on the SAP Business Transformation Center for critical ERP data migrations. It emphasizes the tool's reliability and suitability for complex transformation projects.",
-            "post_type": "Article"
-          },
-          {
-            "title": "SAP Datasphere News in December",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-datasphere-news-in-december/ba-p/14299695",
-            "author": "kpsauer",
-            "date_published": "2026-01-09",
-            "matching_tags": [
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5
-          }
-        ],
-        "rest": []
-      },
-      {
-        "name": "SAP Datasphere",
-        "tags": [
-          "SAP Datasphere"
-        ],
-        "top": [
-          {
-            "title": "SAP Datasphere News in December",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-datasphere-news-in-december/ba-p/14299695",
-            "author": "kpsauer",
-            "date_published": "2026-01-09",
-            "matching_tags": [
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5
-          }
-        ],
-        "rest": []
-      },
-      {
-        "name": "SAP Analytics Cloud",
-        "tags": [
-          "SAP Analytics Cloud",
-          "SAP Analytics Cloud for planning",
-          "SAP Analytics Cloud, data modeling"
-        ],
-        "top": [
-          {
-            "title": "Understanding Known Limitations of Calculations Feature in SAP Analytics Cloud (SAC)",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/understanding-known-limitations-of-calculations-feature-in-sap-analytics/ba-p/14306575",
-            "author": "fidan_karimovaa",
-            "date_published": "2026-01-22",
-            "matching_tags": [
-              "SAP Analytics Cloud"
-            ],
-            "minutes": 1,
-            "summary": "The blog post discusses the challenges users face with the calculation logic in SAP Analytics Cloud (SAC), particularly when features behave inconsistently. It introduces a collective KBA that compiles the latest known limitations of Story Calculations to assist users in navigating these issues.",
-            "post_type": "Article"
           }
         ],
         "rest": []
