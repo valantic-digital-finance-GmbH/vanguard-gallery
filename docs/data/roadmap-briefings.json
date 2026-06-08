@@ -1,5 +1,182 @@
 [
   {
+    "id": "mon-2026-06-08",
+    "iso": "2026-06-08",
+    "full": "8 June 2026",
+    "period": "2026-06-01 – 2026-06-07",
+    "title": "18 changes across 3 products",
+    "preview": "SAP Analytics Cloud: 5 items added. SAP Business Data Cloud: 3 items slipped, 8 items added. SAP Datasphere: 2 items slipped",
+    "total_changes": 18,
+    "products_with_changes": [
+      "SAP Analytics Cloud",
+      "SAP Business Data Cloud",
+      "SAP Datasphere"
+    ],
+    "sections": [
+      {
+        "slug": "sap-analytics-cloud",
+        "name": "SAP Analytics Cloud",
+        "slipped": [],
+        "added": [
+          {
+            "id": "F565D8ED1DE64D2B80621F9EDA776C34",
+            "title": "Bulk deletion of comments from the comment management dashboard",
+            "quarter": "Q3 2026",
+            "capability": "Insight Sharing and Collaboration",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=F565D8ED1DE64D2B80621F9EDA776C34"
+          },
+          {
+            "id": "C8287371FFCE44529E0534E565341211",
+            "title": "Updated default theme for new stories",
+            "quarter": "Q3 2026",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=C8287371FFCE44529E0534E565341211"
+          },
+          {
+            "id": "39EAE374AC7B4CDF8A7217FE9B9A6C34",
+            "title": "Data analyzer: changing dimension member order in a table and chart",
+            "quarter": "Q1 2027",
+            "capability": "Exploratory Data Analysis",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=39EAE374AC7B4CDF8A7217FE9B9A6C34"
+          },
+          {
+            "id": "9CAA2900FF0145409AF9992CC61CE935",
+            "title": "Data analyzer: support for models with week-granularity or user-managed time dimensions",
+            "quarter": "Q4 2026",
+            "capability": "Exploratory Data Analysis",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=9CAA2900FF0145409AF9992CC61CE935"
+          },
+          {
+            "id": "3BEAA4EB627144548748CF857237114B",
+            "title": "Smart insights on models that include multiple account hierarchies",
+            "quarter": "Q3 2026",
+            "capability": "AI for Planning and Analytics",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=3BEAA4EB627144548748CF857237114B"
+          }
+        ],
+        "deleted": []
+      },
+      {
+        "slug": "sap-business-data-cloud",
+        "name": "SAP Business Data Cloud",
+        "slipped": [
+          {
+            "id": "571FEA0A0D121EDFA3F4DD6438447DB6",
+            "title": "Restricted measure based on node-level hierarchy",
+            "old_quarter": "Q3 2026",
+            "new_quarter": "Q4 2026",
+            "direction": "forward",
+            "capability": "Data Design and Modelling",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=571FEA0A0D121EDFA3F4DD6438447DB6"
+          },
+          {
+            "id": "000D3AAC9DD21FD0A4C203167B3998EE",
+            "title": "Creation and push of data products through the data product generator",
+            "old_quarter": "Q2 2026",
+            "new_quarter": "Q3 2026",
+            "direction": "forward",
+            "capability": "Business Warehouse Modernization",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAC9DD21FD0A4C203167B3998EE"
+          },
+          {
+            "id": "91D21DB778331FE0809B5BA6D2BB5E17",
+            "title": "Support SAP Cloud Connector for cloud object stores",
+            "old_quarter": "Q2 2026",
+            "new_quarter": "Q3 2026",
+            "direction": "forward",
+            "capability": "Data Replication and ETL",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=91D21DB778331FE0809B5BA6D2BB5E17"
+          }
+        ],
+        "added": [
+          {
+            "id": "5D8C4801F67D4728BFF7B6D9AE197068",
+            "title": "Data product generator: enabling partition definition in subscriptions",
+            "quarter": "Q4 2026",
+            "capability": "Business Warehouse Modernization",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=5D8C4801F67D4728BFF7B6D9AE197068"
+          },
+          {
+            "id": "F565D8ED1DE64D2B80621F9EDA776C34",
+            "title": "Bulk deletion of comments from the comment management dashboard",
+            "quarter": "Q3 2026",
+            "capability": "Insight Sharing and Collaboration",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=F565D8ED1DE64D2B80621F9EDA776C34"
+          },
+          {
+            "id": "C8287371FFCE44529E0534E565341211",
+            "title": "Updated default theme for new stories",
+            "quarter": "Q3 2026",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=C8287371FFCE44529E0534E565341211"
+          },
+          {
+            "id": "39EAE374AC7B4CDF8A7217FE9B9A6C34",
+            "title": "Data analyzer: changing dimension member order in a table and chart",
+            "quarter": "Q1 2027",
+            "capability": "Exploratory Data Analysis",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=39EAE374AC7B4CDF8A7217FE9B9A6C34"
+          },
+          {
+            "id": "9CAA2900FF0145409AF9992CC61CE935",
+            "title": "Data analyzer: support for models with week-granularity or user-managed time dimensions",
+            "quarter": "Q4 2026",
+            "capability": "Exploratory Data Analysis",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=9CAA2900FF0145409AF9992CC61CE935"
+          },
+          {
+            "id": "380B6445A52B4172B0850DC689977427",
+            "title": "Data product generator: selection of subscriptions within process variants",
+            "quarter": "Q3 2026",
+            "capability": "Business Warehouse Modernization",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=380B6445A52B4172B0850DC689977427"
+          },
+          {
+            "id": "7F8871772815484CBB0D8FE27FA9D813",
+            "title": "Data product generator: ability to manage request deletions without an initial load",
+            "quarter": "Q3 2026",
+            "capability": "Business Warehouse Modernization",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=7F8871772815484CBB0D8FE27FA9D813"
+          },
+          {
+            "id": "3BEAA4EB627144548748CF857237114B",
+            "title": "Smart insights on models that include multiple account hierarchies",
+            "quarter": "Q3 2026",
+            "capability": "AI for Planning and Analytics",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=3BEAA4EB627144548748CF857237114B"
+          }
+        ],
+        "deleted": []
+      },
+      {
+        "slug": "sap-datasphere",
+        "name": "SAP Datasphere",
+        "slipped": [
+          {
+            "id": "571FEA0A0D121EDFA3F4DD6438447DB6",
+            "title": "Restricted measure based on node-level hierarchy",
+            "old_quarter": "Q3 2026",
+            "new_quarter": "Q4 2026",
+            "direction": "forward",
+            "capability": "Data Design and Modelling",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=571FEA0A0D121EDFA3F4DD6438447DB6"
+          },
+          {
+            "id": "91D21DB778331FE0809B5BA6D2BB5E17",
+            "title": "Support SAP Cloud Connector for cloud object stores",
+            "old_quarter": "Q2 2026",
+            "new_quarter": "Q3 2026",
+            "direction": "forward",
+            "capability": "Data Replication and ETL",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=91D21DB778331FE0809B5BA6D2BB5E17"
+          }
+        ],
+        "added": [],
+        "deleted": []
+      }
+    ]
+  },
+  {
     "id": "mon-2026-06-01",
     "iso": "2026-06-01",
     "full": "1 June 2026",
