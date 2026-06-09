@@ -1,5 +1,18 @@
 [
   {
+    "id": "tue-2026-06-09",
+    "weekday": "Tuesday",
+    "iso": "2026-06-09",
+    "full": "Jun 9, 2026",
+    "title": "No new posts today.",
+    "preview": "No new SAP blog posts were published since the last check.",
+    "reads": "—",
+    "posts": 0,
+    "tags": [],
+    "highlights": [],
+    "sections": []
+  },
+  {
     "id": "mon-2026-06-08",
     "weekday": "Monday",
     "iso": "2026-06-08",
@@ -3195,151 +3208,6 @@
             "minutes": 5,
             "summary": "The blog explains how to use the SAP Business Data Cloud Capacity Unit Estimator for SAP BDC Connect for Databricks. It provides guidance on sizing your setup to plan effectively, avoid unexpected issues, and optimize your data-sharing architecture.",
             "post_type": "How-to"
-          }
-        ],
-        "rest": []
-      }
-    ]
-  },
-  {
-    "id": "sat-2026-02-28",
-    "weekday": "Saturday",
-    "iso": "2026-02-28",
-    "full": "Feb 28, 2026",
-    "title": "6 SAP blog posts.",
-    "preview": "6 SAP blog posts.",
-    "reads": "30 min",
-    "posts": 6,
-    "tags": [
-      "Datasphere",
-      "Business Data Cloud",
-      "Analytics Cloud"
-    ],
-    "highlights": [],
-    "sections": [
-      {
-        "name": "SAP Business Data Cloud",
-        "tags": [
-          "SAP Business Data Cloud"
-        ],
-        "top": [
-          {
-            "title": "SAP Business Data Cloud and Datasphere News in February",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-data-cloud-and-datasphere-news-in-february/ba-p/14331899",
-            "author": "kpsauer",
-            "date_published": "2026-02-28",
-            "matching_tags": [
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5
-          },
-          {
-            "title": "Expanding Visual Analysis: New Area Chart, Pareto Chart, and Stacked Area Enhancements",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/expanding-visual-analysis-new-area-chart-pareto-chart-and-stacked-area/ba-p/14328138",
-            "author": "Tunir",
-            "date_published": "2026-02-13",
-            "matching_tags": [
-              "SAP Analytics Cloud",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5
-          }
-        ],
-        "rest": [
-          {
-            "title": "Create Your Own SAP BDC Workshop: BDC Partner Academy",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/create-your-own-sap-bdc-workshop-bdc-partner-academy/ba-p/14325696",
-            "author": "KarthikM8",
-            "date_published": "2026-02-11",
-            "matching_tags": [
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5
-          },
-          {
-            "title": "SAP Business Data Cloud and Datasphere News in January",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-data-cloud-and-datasphere-news-in-january/ba-p/14320094",
-            "author": "kpsauer",
-            "date_published": "2026-02-05",
-            "matching_tags": [
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5
-          }
-        ]
-      },
-      {
-        "name": "SAP Datasphere",
-        "tags": [
-          "SAP Datasphere"
-        ],
-        "top": [
-          {
-            "title": "SAP Business Data Cloud and Datasphere News in February",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-data-cloud-and-datasphere-news-in-february/ba-p/14331899",
-            "author": "kpsauer",
-            "date_published": "2026-02-28",
-            "matching_tags": [
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5
-          },
-          {
-            "title": "AI-Assisted SAP Datasphere Modeling",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/ai-assisted-sap-datasphere-modeling/ba-p/14334545",
-            "author": "Yonggang_Yu",
-            "date_published": "2026-02-23",
-            "matching_tags": [
-              "SAP Datasphere"
-            ],
-            "minutes": 5
-          }
-        ],
-        "rest": [
-          {
-            "title": "SAP Business Data Cloud and Datasphere News in January",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-data-cloud-and-datasphere-news-in-january/ba-p/14320094",
-            "author": "kpsauer",
-            "date_published": "2026-02-05",
-            "matching_tags": [
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5
-          }
-        ]
-      },
-      {
-        "name": "SAP Analytics Cloud",
-        "tags": [
-          "SAP Analytics Cloud",
-          "SAP Analytics Cloud for planning",
-          "SAP Analytics Cloud, data modeling"
-        ],
-        "top": [
-          {
-            "title": "Expanding Visual Analysis: New Area Chart, Pareto Chart, and Stacked Area Enhancements",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/expanding-visual-analysis-new-area-chart-pareto-chart-and-stacked-area/ba-p/14328138",
-            "author": "Tunir",
-            "date_published": "2026-02-13",
-            "matching_tags": [
-              "SAP Analytics Cloud",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5
-          },
-          {
-            "title": "Story Versioning in SAP Analytics Cloud: Design with Confidence & Iterate Without Fear!",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/story-versioning-in-sap-analytics-cloud-design-with-confidence-amp-iterate/ba-p/14327560",
-            "author": "Tunir",
-            "date_published": "2026-02-13",
-            "matching_tags": [
-              "SAP Analytics Cloud"
-            ],
-            "minutes": 5
           }
         ],
         "rest": []
