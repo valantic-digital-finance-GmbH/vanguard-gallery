@@ -1,5 +1,86 @@
 [
   {
+    "id": "wed-2026-06-10",
+    "weekday": "Wednesday",
+    "iso": "2026-06-10",
+    "full": "Jun 10, 2026",
+    "title": "Implementing a simple landing page in SAP Analytics Cloud stories can significantly reduce loading times and improve performance without modifying the data model or queries.",
+    "preview": "Blank date values in SAP BW data blending can disrupt range-based time dimension filters in SAP Analytics Cloud, impacting reporting accuracy.",
+    "reads": "15 min",
+    "posts": 3,
+    "tags": [
+      "Business AI",
+      "Analytics Cloud"
+    ],
+    "highlights": [
+      "Implementing a simple landing page in SAP Analytics Cloud stories can significantly reduce loading times and improve performance without modifying the data model or queries.",
+      "Blank date values in SAP BW data blending can disrupt range-based time dimension filters in SAP Analytics Cloud, impacting reporting accuracy.",
+      "A practical workaround is available to address issues caused by blank values in time dimension filters, ensuring smoother data blending and reporting."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Understanding Security in SAP Joule’s Runtime",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/understanding-security-in-sap-joule-s-runtime/ba-p/14414450",
+            "author": "AlexDevassy",
+            "date_published": "2026-06-09",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "Improving SAP Analytics Cloud Story Performance with a Simple Landing Page",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/improving-sap-analytics-cloud-story-performance-with-a-simple-landing-page/ba-p/14414560",
+            "author": "RajuRam",
+            "date_published": "2026-06-09",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members",
+            "summary": "The blog discusses a design improvement for SAP Analytics Cloud stories that prevents performance issues caused by large data loads on story opening. By implementing a simple landing page, loading times were reduced, enhancing user experience without altering the data model or query.",
+            "post_type": "How-to"
+          },
+          {
+            "title": "Handling Blank Values in BW Data Blending and Time Dimension Filters in SAP Analytics Cloud",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/handling-blank-values-in-bw-data-blending-and-time-dimension-filters-in-sap/ba-p/14414530",
+            "author": "RajuRam",
+            "date_published": "2026-06-09",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members",
+            "summary": "The blog post discusses issues caused by blank date values when blending SAP BW data in SAP Analytics Cloud, particularly with range-based time dimension filters. It explains the root cause, its impact on reporting, and provides a practical workaround to address the issue. ",
+            "post_type": "How-to"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "tue-2026-06-09",
     "weekday": "Tuesday",
     "iso": "2026-06-09",
@@ -3171,43 +3252,6 @@
             "minutes": 1,
             "summary": "The blog highlights key features and enhancements introduced in the March releases of SAP Datasphere and SAP Business Data Cloud. It also provides links to community news blogs and a webinar series titled 'The Next Era of Business Data.'",
             "post_type": "Release"
-          }
-        ],
-        "rest": []
-      }
-    ]
-  },
-  {
-    "id": "thu-2026-03-19",
-    "weekday": "Thursday",
-    "iso": "2026-03-19",
-    "full": "Mar 19, 2026",
-    "title": "The blog explains how to use the SAP Business Data Cloud Capacity Unit Estimator for SAP BDC Connect for Databricks.",
-    "preview": "The blog explains how to use the SAP Business Data Cloud Capacity Unit Estimator for SAP BDC Connect for Databricks.",
-    "reads": "5 min",
-    "posts": 1,
-    "tags": [
-      "Business Data Cloud"
-    ],
-    "highlights": [],
-    "sections": [
-      {
-        "name": "SAP Business Data Cloud",
-        "tags": [
-          "SAP Business Data Cloud"
-        ],
-        "top": [
-          {
-            "title": "How to use SAP Business Data Cloud Capacity Unit Estimator for SAP BDC Connect for Databricks?",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-use-sap-business-data-cloud-capacity-unit-estimator-for-sap-bdc/ba-p/14353832",
-            "author": "FernandaFroelich",
-            "date_published": "2026-03-19",
-            "matching_tags": [
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "summary": "The blog explains how to use the SAP Business Data Cloud Capacity Unit Estimator for SAP BDC Connect for Databricks. It provides guidance on sizing your setup to plan effectively, avoid unexpected issues, and optimize your data-sharing architecture.",
-            "post_type": "How-to"
           }
         ],
         "rest": []
