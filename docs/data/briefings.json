@@ -1,5 +1,52 @@
 [
   {
+    "id": "thu-2026-06-11",
+    "weekday": "Thursday",
+    "iso": "2026-06-11",
+    "full": "Jun 11, 2026",
+    "title": "SAP is transitioning from embedding AI in applications to using AI to enhance application functionality.",
+    "preview": "This shift aligns with the vision of the Autonomous Enterprise, emphasizing innovation and operational efficiency.",
+    "reads": "5 min",
+    "posts": 1,
+    "tags": [
+      "Analytics Cloud",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [
+      "SAP is transitioning from embedding AI in applications to using AI to enhance application functionality.",
+      "This shift aligns with the vision of the Autonomous Enterprise, emphasizing innovation and operational efficiency.",
+      "Data professionals are central to leveraging AI's potential in optimizing enterprise applications."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "From “AI in Applications” to “AI on Applications”",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/from-ai-in-applications-to-ai-on-applications/ba-p/14415270",
+            "author": "ThierryAudas",
+            "date_published": "2026-06-10",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts",
+            "summary": "The blog explores SAP's shift from embedding AI within applications to leveraging AI to enhance application functionality. It highlights the implications of this strategy for data professionals in the context of the Autonomous Enterprise. Key focus areas include innovation and operational efficiency.",
+            "post_type": "Article"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "wed-2026-06-10",
     "weekday": "Wednesday",
     "iso": "2026-06-10",
@@ -3174,88 +3221,5 @@
       "sections": [],
       "sources": []
     }
-  },
-  {
-    "id": "mon-2026-04-27",
-    "weekday": "Monday",
-    "iso": "2026-04-27",
-    "full": "Apr 27, 2026",
-    "title": "The blog provides a detailed guide on implementing Single Sign-On (SSO) for SAP Datasphere using SAP Cloud Identity Services.",
-    "preview": "The blog highlights key features and enhancements introduced in the March releases of SAP Datasphere and SAP Business Data Cloud. It also provides links to community news blogs and a webinar series ti",
-    "reads": "11 min",
-    "posts": 3,
-    "tags": [
-      "Business Data Cloud",
-      "Datasphere"
-    ],
-    "highlights": [],
-    "sections": [
-      {
-        "name": "SAP Business Data Cloud",
-        "tags": [
-          "SAP Business Data Cloud"
-        ],
-        "top": [
-          {
-            "title": "Provisioning of Business Data Cloud : SAP Hana Cloud",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/provisioning-of-business-data-cloud-sap-hana-cloud/ba-p/14382155",
-            "author": "ShreyasriB",
-            "date_published": "2026-04-27",
-            "matching_tags": [
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5
-          },
-          {
-            "title": "SAP Business Data Cloud and Datasphere News in March",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-data-cloud-and-datasphere-news-in-march/ba-p/14368704",
-            "author": "kpsauer",
-            "date_published": "2026-04-08",
-            "matching_tags": [
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 1,
-            "summary": "The blog highlights key features and enhancements introduced in the March releases of SAP Datasphere and SAP Business Data Cloud. It also provides links to community news blogs and a webinar series titled 'The Next Era of Business Data.'",
-            "post_type": "Release"
-          }
-        ],
-        "rest": []
-      },
-      {
-        "name": "SAP Datasphere",
-        "tags": [
-          "SAP Datasphere"
-        ],
-        "top": [
-          {
-            "title": "Configuring Single Sign-On (SSO) for SAP Datasphere using SAP Cloud Identity Services (IAS)",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/configuring-single-sign-on-sso-for-sap-datasphere-using-sap-cloud-identity/ba-p/14375113",
-            "author": "karthikj2",
-            "date_published": "2026-04-15",
-            "matching_tags": [
-              "SAP Datasphere"
-            ],
-            "minutes": 5,
-            "summary": "The blog provides a detailed guide on implementing Single Sign-On (SSO) for SAP Datasphere using SAP Cloud Identity Services. It focuses on leveraging the SAP Identity Authentication Service (IAS) in integration with OKTA for seamless authentication.",
-            "post_type": "How-to"
-          },
-          {
-            "title": "SAP Business Data Cloud and Datasphere News in March",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-data-cloud-and-datasphere-news-in-march/ba-p/14368704",
-            "author": "kpsauer",
-            "date_published": "2026-04-08",
-            "matching_tags": [
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 1,
-            "summary": "The blog highlights key features and enhancements introduced in the March releases of SAP Datasphere and SAP Business Data Cloud. It also provides links to community news blogs and a webinar series titled 'The Next Era of Business Data.'",
-            "post_type": "Release"
-          }
-        ],
-        "rest": []
-      }
-    ]
   }
 ]
