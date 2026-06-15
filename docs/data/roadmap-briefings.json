@@ -1,5 +1,165 @@
 [
   {
+    "id": "mon-2026-06-15",
+    "iso": "2026-06-15",
+    "full": "15 June 2026",
+    "period": "2026-06-08 – 2026-06-14",
+    "title": "16 changes across 3 products",
+    "preview": "SAP Analytics Cloud: 1 item slipped to Q4 2026, 4 items added, 1 item deleted. SAP Business Data Cloud: 1 item slipped to Q4 2026, 6 items added, 2 items deleted. SAP Datasphere: 1 item deleted",
+    "total_changes": 16,
+    "products_with_changes": [
+      "SAP Analytics Cloud",
+      "SAP Business Data Cloud",
+      "SAP Datasphere"
+    ],
+    "sections": [
+      {
+        "slug": "sap-analytics-cloud",
+        "name": "SAP Analytics Cloud",
+        "slipped": [
+          {
+            "id": "000D3AAC9DD21FD0AEC594B37A267AE1",
+            "title": "My Metrics for KPIs monitoring: creating new metrics",
+            "old_quarter": "Q3 2026",
+            "new_quarter": "Q4 2026",
+            "direction": "forward",
+            "capability": "Data and Analytics Administration",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=000D3AAC9DD21FD0AEC594B37A267AE1"
+          }
+        ],
+        "added": [
+          {
+            "id": "0A33848E60974C3D88B6C6DD96AF8D55",
+            "title": "AI-assisted story code generation",
+            "quarter": "Q3 2026",
+            "capability": "Enterprise Reporting",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=0A33848E60974C3D88B6C6DD96AF8D55"
+          },
+          {
+            "id": "FE01F2F15B9B4F4598C0F38397944340",
+            "title": "Preview of comments associated with models in SAP Analytics Cloud in the Comment Management dashboard",
+            "quarter": "Q3 2026",
+            "capability": "Other",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=FE01F2F15B9B4F4598C0F38397944340"
+          },
+          {
+            "id": "A37251175385409A9A1995B9D9470E5E",
+            "title": "Version dimension filter in More Actions menu and table subtitle",
+            "quarter": "Q3 2026",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=A37251175385409A9A1995B9D9470E5E"
+          },
+          {
+            "id": "45BE27913968461787668E840A67E12B",
+            "title": "Custom widget: filtering by date range supporting custom dates and account-based filters",
+            "quarter": "Q3 2026",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=45BE27913968461787668E840A67E12B"
+          }
+        ],
+        "deleted": [
+          {
+            "id": "ABC1893F1B121EEEB8911641018E9E8C",
+            "title": "Responsive layout enhancement: improving the display of the responsive rule",
+            "quarter": "Q4 2026",
+            "capability": "Dashboard Extensibility",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=ABC1893F1B121EEEB8911641018E9E8C"
+          }
+        ]
+      },
+      {
+        "slug": "sap-business-data-cloud",
+        "name": "SAP Business Data Cloud",
+        "slipped": [
+          {
+            "id": "000D3AAC9DD21FD0AEC594B37A267AE1",
+            "title": "My Metrics for KPIs monitoring: creating new metrics",
+            "old_quarter": "Q3 2026",
+            "new_quarter": "Q4 2026",
+            "direction": "forward",
+            "capability": "Data and Analytics Administration",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAC9DD21FD0AEC594B37A267AE1"
+          }
+        ],
+        "added": [
+          {
+            "id": "0A33848E60974C3D88B6C6DD96AF8D55",
+            "title": "AI-assisted story code generation",
+            "quarter": "Q3 2026",
+            "capability": "Enterprise Reporting",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=0A33848E60974C3D88B6C6DD96AF8D55"
+          },
+          {
+            "id": "FE01F2F15B9B4F4598C0F38397944340",
+            "title": "Preview of comments associated with models in SAP Analytics Cloud in the Comment Management dashboard",
+            "quarter": "Q3 2026",
+            "capability": "Insight Sharing and Collaboration",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=FE01F2F15B9B4F4598C0F38397944340"
+          },
+          {
+            "id": "A37251175385409A9A1995B9D9470E5E",
+            "title": "Version dimension filter in More Actions menu and table subtitle",
+            "quarter": "Q3 2026",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=A37251175385409A9A1995B9D9470E5E"
+          },
+          {
+            "id": "45BE27913968461787668E840A67E12B",
+            "title": "Custom widget: filtering by date range supporting custom dates and account-based filters",
+            "quarter": "Q3 2026",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=45BE27913968461787668E840A67E12B"
+          },
+          {
+            "id": "B7A97C209DE8415BBBD05CBA3A0FEDEA",
+            "title": "SAP Business Data Cloud Intelligent Applications for Contract Accounting Insights",
+            "quarter": "Q4 2026",
+            "capability": "Enterprise Reporting",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=B7A97C209DE8415BBBD05CBA3A0FEDEA"
+          },
+          {
+            "id": "BD32B963FB1C4C33A52CC7FC5E74F726",
+            "title": "Data products for contract accounts, provider contracts, creditworthiness, and installment plans",
+            "quarter": "Q4 2026",
+            "capability": "Data Product Management",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=BD32B963FB1C4C33A52CC7FC5E74F726"
+          }
+        ],
+        "deleted": [
+          {
+            "id": "000D3ABE772D1EED819B65893042F477",
+            "title": "Sharing of dependent entities",
+            "quarter": "Q4 2026",
+            "capability": "Data Design and Modelling",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3ABE772D1EED819B65893042F477"
+          },
+          {
+            "id": "ABC1893F1B121EEEB8911641018E9E8C",
+            "title": "Responsive layout enhancement: improving the display of the responsive rule",
+            "quarter": "Q4 2026",
+            "capability": "Dashboard Extensibility",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=ABC1893F1B121EEEB8911641018E9E8C"
+          }
+        ]
+      },
+      {
+        "slug": "sap-datasphere",
+        "name": "SAP Datasphere",
+        "slipped": [],
+        "added": [],
+        "deleted": [
+          {
+            "id": "000D3ABE772D1EED819B65893042F477",
+            "title": "Sharing of dependent entities",
+            "quarter": "Q4 2026",
+            "capability": "Data Design and Modelling",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=000D3ABE772D1EED819B65893042F477"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "mon-2026-06-08",
     "iso": "2026-06-08",
     "full": "8 June 2026",
