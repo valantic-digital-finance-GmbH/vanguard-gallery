@@ -4,13 +4,54 @@
     "weekday": "Tuesday",
     "iso": "2026-06-16",
     "full": "Jun 16, 2026",
-    "title": "No new posts today.",
-    "preview": "No new SAP blog posts were published since the last check.",
-    "reads": "—",
-    "posts": 0,
-    "tags": [],
-    "highlights": [],
-    "sections": []
+    "title": "SAP Datasphere and Data Composer simplify data integration and orchestration for building a unified business data cloud.",
+    "preview": "SAP Snowflake integration enhances data sharing and analytics capabilities within the business data cloud ecosystem.",
+    "reads": "10 min",
+    "posts": 2,
+    "tags": [
+      "Business Data Cloud"
+    ],
+    "highlights": [
+      "SAP Datasphere and Data Composer simplify data integration and orchestration for building a unified business data cloud.",
+      "SAP Snowflake integration enhances data sharing and analytics capabilities within the business data cloud ecosystem.",
+      "Provisioning tools in SAP Datasphere streamline the connection of diverse data sources for real-time insights.",
+      "The combination of SAP Datasphere and Snowflake supports scalable, secure, and efficient data management strategies."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Provisioning of Business Data Cloud: SAP Snowflake",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/provisioning-of-business-data-cloud-sap-snowflake/ba-p/14419017",
+            "author": "ShreyasriB",
+            "date_published": "2026-06-15",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Provisioning of Business Data Cloud : SAP Datasphere, Data Composer",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/provisioning-of-business-data-cloud-sap-datasphere-data-composer/ba-p/14418654",
+            "author": "ShreyasriB",
+            "date_published": "2026-06-15",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      }
+    ]
   },
   {
     "id": "mon-2026-06-15",
