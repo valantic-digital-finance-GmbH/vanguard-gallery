@@ -1,5 +1,131 @@
 [
   {
+    "id": "wed-2026-06-17",
+    "weekday": "Wednesday",
+    "iso": "2026-06-17",
+    "full": "Jun 17, 2026",
+    "title": "SAP Analytics Cloud and SAP Datasphere can be seamlessly linked using formations in SAP BTP cockpit or SAP for Me, offering an optimized integration process.",
+    "preview": "The formation approach is recommended over the Tenant Links tab in SAC system administration for improved linking efficiency.",
+    "reads": "22 min",
+    "posts": 6,
+    "tags": [
+      "Analytics Cloud",
+      "SAC Planning",
+      "Business Data Cloud",
+      "Datasphere"
+    ],
+    "highlights": [
+      "SAP Analytics Cloud and SAP Datasphere can be seamlessly linked using formations in SAP BTP cockpit or SAP for Me, offering an optimized integration process.",
+      "The formation approach is recommended over the Tenant Links tab in SAC system administration for improved linking efficiency.",
+      "SAP Analytics Cloud's predictive planning now supports hierarchical entity selection with include/exclude logic, simplifying configuration for large member sets.",
+      "Dynamic selections in predictive planning adapt to organizational changes, reducing the need for manual updates.",
+      "The hierarchical selection feature is available for Planning Model data sources starting with wave 2026.12."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Use Formations to Link SAP Analytics Cloud and SAP Datasphere for Seamless Planning",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/use-formations-to-link-sap-analytics-cloud-and-sap-datasphere-for-seamless/ba-p/14420255",
+            "author": "Max_Gander",
+            "date_published": "2026-06-16",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Analytics Cloud for planning",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts",
+            "summary": "The blog post discusses two methods to link SAP Analytics Cloud and SAP Datasphere for seamless planning: using the Tenant Links tab in SAC system administration or formations in SAP BTP cockpit or SAP for Me. It recommends using the formation approach and provides guidance on its implementation, including steps for those who have already used the SAC admin UI. The focus is on optimizing the integration process.",
+            "post_type": "How-to"
+          },
+          {
+            "title": "Business Data Architecture for Modern Analytics Landscapes",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/business-data-architecture-for-modern-analytics-landscapes/ba-p/14420467",
+            "author": "AllanHald",
+            "date_published": "2026-06-16",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          },
+          {
+            "title": "Why Business Meaning Matters in Modern Analytics Landscapes",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/why-business-meaning-matters-in-modern-analytics-landscapes/ba-p/14420477",
+            "author": "AllanHald",
+            "date_published": "2026-06-16",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": [
+          {
+            "title": "Showcasing SAP Business Data Cloud - Demo options and use cases - Quarterly update",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/showcasing-sap-business-data-cloud-demo-options-and-use-cases-quarterly/ba-p/14419255",
+            "author": "JoseBastidas",
+            "date_published": "2026-06-16",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ]
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "Can I Dynamically Color SAC Table Cells Based on Min, Mid, and Max Input Values",
+            "url": "https://community.sap.com/t5/data-and-analytics-blog-posts/can-i-dynamically-color-sac-table-cells-based-on-min-mid-and-max-input/ba-p/14420560",
+            "author": "zee_siddique15",
+            "date_published": "2026-06-17",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-analyticsblog-board",
+            "board_name": "Data and Analytics Blog Posts"
+          },
+          {
+            "title": "Hierarchical Entity Selection in Predictive Planning",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/hierarchical-entity-selection-in-predictive-planning/ba-p/14419854",
+            "author": "david_serre",
+            "date_published": "2026-06-16",
+            "matching_tags": [
+              "SAP Analytics Cloud for planning"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "The blog post introduces hierarchical level selection and include/exclude logic in SAP Analytics Cloud's predictive planning, simplifying forecast configuration for large member sets. This feature allows dynamic selections that adapt to organizational changes, reducing manual updates. It is available for Planning Model data sources starting with wave 2026.12.",
+            "post_type": "Release"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "tue-2026-06-16",
     "weekday": "Tuesday",
     "iso": "2026-06-16",
@@ -2396,18 +2522,5 @@
         "rest": []
       }
     ]
-  },
-  {
-    "id": "wed-2026-05-06",
-    "weekday": "Wednesday",
-    "iso": "2026-05-06",
-    "full": "May 6, 2026",
-    "title": "No new posts today.",
-    "preview": "No new SAP blog posts were published since the last check.",
-    "reads": "—",
-    "posts": 0,
-    "tags": [],
-    "highlights": [],
-    "sections": []
   }
 ]
