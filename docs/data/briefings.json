@@ -1,5 +1,117 @@
 [
   {
+    "id": "fri-2026-06-19",
+    "weekday": "Friday",
+    "iso": "2026-06-19",
+    "full": "Jun 19, 2026",
+    "title": "Building SAP Analytics Cloud (SAC) stories requires understanding common pitfalls to create clear and actionable insights effectively.",
+    "preview": "The SAP Business AI Platform is reshaping the role of data analysts, shifting focus from 'AI in Applications' to 'AI on Applications.'",
+    "reads": "16 min",
+    "posts": 4,
+    "tags": [
+      "Analytics Cloud",
+      "SAC Modeling",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [
+      "Building SAP Analytics Cloud (SAC) stories requires understanding common pitfalls to create clear and actionable insights effectively.",
+      "The SAP Business AI Platform is reshaping the role of data analysts, shifting focus from 'AI in Applications' to 'AI on Applications.'",
+      "Master Data Management (MDM) is evolving into a critical AI infrastructure component, addressing challenges like inconsistent definitions in AI systems.",
+      "Clear and consistent data definitions, such as for 'customer,' are essential to avoid issues in AI-driven environments."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Working with BDC in the SAP Business AI Platform: The Data Analyst Perspective",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/working-with-bdc-in-the-sap-business-ai-platform-the-data-analyst/ba-p/14422275",
+            "author": "ThierryAudas",
+            "date_published": "2026-06-18",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts",
+            "summary": "The blog post is the first in a series exploring the impact of the SAP Business AI Platform on various BDC personas, focusing on the data analyst perspective. It builds on a prior discussion about the shift from 'AI in Applications' to 'AI on Applications.' The post aims to provide insights into day-to-day work changes for data analysts.",
+            "post_type": "Article"
+          },
+          {
+            "title": "Your AI Agent Has Three Different Definitions of \"Customer.\" That's a Problem.",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/your-ai-agent-has-three-different-definitions-of-quot-customer-quot-that-s/ba-p/14421512",
+            "author": "Scott_Mackenzie",
+            "date_published": "2026-06-18",
+            "matching_tags": [
+              "SAP Analytics Cloud, data modeling",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts",
+            "summary": "The blog highlights the evolving role of Master Data Management (MDM) from a traditional data governance discipline to a critical component of AI infrastructure. It emphasizes the challenges of inconsistent definitions, such as 'customer,' in AI-driven systems.",
+            "post_type": "Article"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "Hands-on Tutorial: Vibe coding SAP HANA Cloud Machine Learning with BAS, Python, Claude and Cline",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/hands-on-tutorial-vibe-coding-sap-hana-cloud-machine-learning-with-bas/ba-p/14411326",
+            "author": "AndreasForster",
+            "date_published": "2026-06-18",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "5 Things I Wish I Knew Before Building My First SAC Story",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/5-things-i-wish-i-knew-before-building-my-first-sac-story/ba-p/14422980",
+            "author": "Priya_312",
+            "date_published": "2026-06-19",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Analytics Cloud, data modeling"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "The author shares lessons learned from their experience building their first SAP Analytics Cloud (SAC) story. They aim to help others avoid common pitfalls and create effortless, actionable analytics. The blog reflects their passion for transforming complex data into clear insights.",
+            "post_type": "Tip"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "thu-2026-06-18",
     "weekday": "Thursday",
     "iso": "2026-06-18",
@@ -2478,18 +2590,5 @@
         "rest": []
       }
     ]
-  },
-  {
-    "id": "fri-2026-05-08",
-    "weekday": "Friday",
-    "iso": "2026-05-08",
-    "full": "May 8, 2026",
-    "title": "No new posts today.",
-    "preview": "No new SAP blog posts were published since the last check.",
-    "reads": "—",
-    "posts": 0,
-    "tags": [],
-    "highlights": [],
-    "sections": []
   }
 ]
