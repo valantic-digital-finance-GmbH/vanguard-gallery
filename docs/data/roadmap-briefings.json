@@ -1,5 +1,121 @@
 [
   {
+    "id": "mon-2026-06-22",
+    "iso": "2026-06-22",
+    "full": "22 June 2026",
+    "period": "2026-06-15 – 2026-06-21",
+    "title": "9 changes across 3 products",
+    "preview": "SAP Analytics Cloud: 1 item added. SAP Business Data Cloud: 3 items slipped, 2 items added. SAP Datasphere: 3 items slipped",
+    "total_changes": 9,
+    "products_with_changes": [
+      "SAP Analytics Cloud",
+      "SAP Business Data Cloud",
+      "SAP Datasphere"
+    ],
+    "sections": [
+      {
+        "slug": "sap-analytics-cloud",
+        "name": "SAP Analytics Cloud",
+        "slipped": [],
+        "added": [
+          {
+            "id": "32520299AA63487FBEF35FB2AD35D86A",
+            "title": "Plan Entry: repost data",
+            "quarter": "Q4 2026",
+            "capability": "Business Planning and Forecasting",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=32520299AA63487FBEF35FB2AD35D86A"
+          }
+        ],
+        "deleted": []
+      },
+      {
+        "slug": "sap-business-data-cloud",
+        "name": "SAP Business Data Cloud",
+        "slipped": [
+          {
+            "id": "A90128C2F6851EEDB3E6742547E6D1C1",
+            "title": "Metadata extraction for SAP ERP Central Component",
+            "old_quarter": "Q2 2026",
+            "new_quarter": "Q3 2026",
+            "direction": "forward",
+            "capability": "Data and Analytics Cataloging",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=A90128C2F6851EEDB3E6742547E6D1C1"
+          },
+          {
+            "id": "000D3AAADBCE1EDD94829FFAD4A59203",
+            "title": "Metadata extraction for SAP HANA Cloud",
+            "old_quarter": "Q2 2026",
+            "new_quarter": "Q3 2026",
+            "direction": "forward",
+            "capability": "Data and Analytics Cataloging",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAADBCE1EDD94829FFAD4A59203"
+          },
+          {
+            "id": "000D3AAADBCE1EDD948273FBDE1B4EFA",
+            "title": "Metadata extraction for SAP S/4HANA",
+            "old_quarter": "Q2 2026",
+            "new_quarter": "Q3 2026",
+            "direction": "forward",
+            "capability": "Data and Analytics Cataloging",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAADBCE1EDD948273FBDE1B4EFA"
+          }
+        ],
+        "added": [
+          {
+            "id": "74282CE17CEA4928AB9390A77D103649",
+            "title": "Revenue intelligence application",
+            "quarter": "Q3 2026",
+            "capability": "Other",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=74282CE17CEA4928AB9390A77D103649"
+          },
+          {
+            "id": "32520299AA63487FBEF35FB2AD35D86A",
+            "title": "Plan Entry: repost data",
+            "quarter": "Q4 2026",
+            "capability": "Business Planning and Forecasting",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=32520299AA63487FBEF35FB2AD35D86A"
+          }
+        ],
+        "deleted": []
+      },
+      {
+        "slug": "sap-datasphere",
+        "name": "SAP Datasphere",
+        "slipped": [
+          {
+            "id": "A90128C2F6851EEDB3E6742547E6D1C1",
+            "title": "Metadata extraction for SAP ERP Central Component",
+            "old_quarter": "Q2 2026",
+            "new_quarter": "Q3 2026",
+            "direction": "forward",
+            "capability": "Data and Analytics Cataloging",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=A90128C2F6851EEDB3E6742547E6D1C1"
+          },
+          {
+            "id": "000D3AAADBCE1EDD94829FFAD4A59203",
+            "title": "Metadata extraction for SAP HANA Cloud",
+            "old_quarter": "Q2 2026",
+            "new_quarter": "Q3 2026",
+            "direction": "forward",
+            "capability": "Data and Analytics Cataloging",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=000D3AAADBCE1EDD94829FFAD4A59203"
+          },
+          {
+            "id": "000D3AAADBCE1EDD948273FBDE1B4EFA",
+            "title": "Metadata extraction for SAP S/4HANA",
+            "old_quarter": "Q2 2026",
+            "new_quarter": "Q3 2026",
+            "direction": "forward",
+            "capability": "Data and Analytics Cataloging",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=000D3AAADBCE1EDD948273FBDE1B4EFA"
+          }
+        ],
+        "added": [],
+        "deleted": []
+      }
+    ]
+  },
+  {
     "id": "mon-2026-06-15",
     "iso": "2026-06-15",
     "full": "15 June 2026",
