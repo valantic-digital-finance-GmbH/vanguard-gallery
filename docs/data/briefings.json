@@ -1,5 +1,100 @@
 [
   {
+    "id": "mon-2026-06-22",
+    "weekday": "Monday",
+    "iso": "2026-06-22",
+    "full": "Jun 22, 2026",
+    "title": "SAP Agent Hub enables enterprises to observe and govern AI effectively, offering nine key benefits and value drivers.",
+    "preview": "The SAP Agent Hub blog emphasizes its role in enhancing AI oversight and governance for enterprise applications.",
+    "reads": "11 min",
+    "posts": 3,
+    "tags": [
+      "Business AI",
+      "Analytics Cloud",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [
+      "SAP Agent Hub enables enterprises to observe and govern AI effectively, offering nine key benefits and value drivers.",
+      "The SAP Agent Hub blog emphasizes its role in enhancing AI oversight and governance for enterprise applications.",
+      "Input controls in SAP Analytics Cloud (SAC) stories allow for dynamic filtering, improving data accessibility and usability.",
+      "Practical tips in the SAC blog help users save time and optimize their experience with dynamic filtering techniques."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "SAP Agent Hub: Observe and Govern Enterprise AI",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-agent-hub-observe-and-govern-enterprise-ai/ba-p/14423572",
+            "author": "hannahhorvath",
+            "date_published": "2026-06-19",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "The blog introduces SAP Agent Hub, highlighting its role in observing and governing enterprise AI. It outlines nine key benefits and value drivers of the solution.",
+            "post_type": "Article"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "SAP Business Data Cloud Seamless Planning入門 - Part1 : Seamless Planningとは？",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-data-cloud-seamless-planning%E5%85%A5%E9%96%80-part1-seamless-planning%E3%81%A8%E3%81%AF/ba-p/14422371",
+            "author": "yuiyoshikawa",
+            "date_published": "2026-06-19",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "Using Input Controls in SAC Stories to Drive Dynamic Filtering",
+            "url": "https://community.sap.com/t5/data-and-analytics-blog-posts/using-input-controls-in-sac-stories-to-drive-dynamic-filtering/ba-p/14424094",
+            "author": "Priya_312",
+            "date_published": "2026-06-22",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-analyticsblog-board",
+            "board_name": "Data and Analytics Blog Posts",
+            "summary": "The blog post discusses how to use input controls in SAP Analytics Cloud (SAC) stories to implement dynamic filtering. The author shares insights and practical tips to make data more accessible and useful. It aims to help users save time and improve their SAC experience.",
+            "post_type": "How-to"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "fri-2026-06-19",
     "weekday": "Friday",
     "iso": "2026-06-19",
@@ -2515,80 +2610,5 @@
     "tags": [],
     "highlights": [],
     "sections": []
-  },
-  {
-    "id": "mon-2026-05-11",
-    "weekday": "Monday",
-    "iso": "2026-05-11",
-    "full": "May 11, 2026",
-    "title": "SAP Discovery Center introduces AI maturity assessments and SAP Business Data Cloud services to enhance solution development.",
-    "preview": "Improved navigation and new Joule missions simplify the transition from exploration to production-ready solutions.",
-    "reads": "10 min",
-    "posts": 2,
-    "tags": [
-      "Analytics Cloud",
-      "Business Data Cloud"
-    ],
-    "highlights": [
-      "SAP Discovery Center introduces AI maturity assessments and SAP Business Data Cloud services to enhance solution development.",
-      "Improved navigation and new Joule missions simplify the transition from exploration to production-ready solutions.",
-      "Updates aim to provide expert guidance and streamline the user journey from inspiration to implementation."
-    ],
-    "sections": [
-      {
-        "name": "SAP Business Data Cloud",
-        "tags": [
-          "SAP Business Data Cloud"
-        ],
-        "top": [
-          {
-            "title": "What’s New in SAP Discovery Center: From Inspiration to Guidance",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/what-s-new-in-sap-discovery-center-from-inspiration-to-guidance/ba-p/14392005",
-            "author": "cecilysorenson",
-            "date_published": "2026-05-10",
-            "matching_tags": [
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "summary": "The blog highlights the latest updates in SAP Discovery Center, introduced at SAP Sapphire 2026. Key enhancements include AI maturity assessments, SAP Business Data Cloud services, improved navigation, and new Joule missions, all aimed at streamlining the transition from exploration to production-ready solutions with expert support.",
-            "post_type": "Release"
-          },
-          {
-            "title": "SAP BDC - Driving Lite Viewer Adoption: Why Your Tables Matter",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-bdc-driving-lite-viewer-adoption-why-your-tables-matter/ba-p/14392248",
-            "author": "thomas_fery",
-            "date_published": "2026-05-08",
-            "matching_tags": [
-              "SAP Analytics Cloud",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5
-          }
-        ],
-        "rest": []
-      },
-      {
-        "name": "SAP Analytics Cloud",
-        "tags": [
-          "SAP Analytics Cloud",
-          "SAP Analytics Cloud for planning",
-          "SAP Analytics Cloud, data modeling"
-        ],
-        "top": [
-          {
-            "title": "SAP BDC - Driving Lite Viewer Adoption: Why Your Tables Matter",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-bdc-driving-lite-viewer-adoption-why-your-tables-matter/ba-p/14392248",
-            "author": "thomas_fery",
-            "date_published": "2026-05-08",
-            "matching_tags": [
-              "SAP Analytics Cloud",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5
-          }
-        ],
-        "rest": []
-      }
-    ]
   }
 ]
