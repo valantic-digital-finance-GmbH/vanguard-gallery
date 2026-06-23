@@ -1,5 +1,150 @@
 [
   {
+    "id": "tue-2026-06-23",
+    "weekday": "Tuesday",
+    "iso": "2026-06-23",
+    "full": "Jun 23, 2026",
+    "title": "SAP Analytics Cloud Composites introduces enhanced flexibility, intelligence, and functionality to improve user experience and analytical capabilities.",
+    "preview": "The new live data connectivity in SAP Analytics Cloud enables direct model creation from live data sources, eliminating data replication and simplifying real-time analytics.",
+    "reads": "22 min",
+    "posts": 6,
+    "tags": [
+      "Business AI",
+      "Analytics Cloud",
+      "SAC Planning",
+      "SAC Modeling",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [
+      "SAP Analytics Cloud Composites introduces enhanced flexibility, intelligence, and functionality to improve user experience and analytical capabilities.",
+      "The new live data connectivity in SAP Analytics Cloud enables direct model creation from live data sources, eliminating data replication and simplifying real-time analytics.",
+      "The 'Federation Light' approach in SAC enhances workflows for analytics and planning while broadening access to federated data without traditional semantic models.",
+      "Architectural considerations, particularly around data fabrics, are critical for AI strategies, emphasizing integration, cataloguing, and governance.",
+      "Business Data Architecture separates metrics, measures, and dimensions to ensure data consistency, prevent duplication, and support scalable analytics environments."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "SAP Joule for Consultants Expert Workspace and New Enhancements",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-joule-for-consultants-expert-workspace-and-new-enhancements/ba-p/14423927",
+            "author": "Rundong_Liu",
+            "date_published": "2026-06-22",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "The Architecture Question Your AI Strategy Can't Avoid",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/the-architecture-question-your-ai-strategy-can-t-avoid/ba-p/14424853",
+            "author": "Scott_Mackenzie",
+            "date_published": "2026-06-23",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts",
+            "summary": "The blog discusses the importance of addressing architectural considerations in AI strategies, focusing on data fabrics. It highlights three key capabilities: integration, cataloguing, and governance, as outlined in supplementary research by the ODI.",
+            "post_type": "Article"
+          },
+          {
+            "title": "Live Data Connectivity in SAP Analytics Cloud - Overview and Direction",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/live-data-connectivity-in-sap-analytics-cloud-overview-and-direction/ba-p/14424486",
+            "author": "david_stocker",
+            "date_published": "2026-06-22",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Analytics Cloud for planning",
+              "SAP Analytics Cloud, data modeling",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "This blog post provides an overview of the new live data connectivity approach in SAP Analytics Cloud, which enables direct SAC model creation from live data sources without data replication. It highlights the benefits of this 'Federation Light' approach, including improved workflows for analytics and planning, and accessibility to federated data for a broader audience. The innovation reduces the need for traditional semantic models and simplifies working with real-time and large-scale data sources.",
+            "post_type": "Article"
+          },
+          {
+            "title": "Business Data Architecture: Defining Business Meaning",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/business-data-architecture-defining-business-meaning/ba-p/14424054",
+            "author": "AllanHald",
+            "date_published": "2026-06-22",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts",
+            "summary": "The blog post explores how analytics environments often fail at scale due to mixed meanings in data. It introduces Business Data Architecture, which separates metrics, measures, and dimensions to ensure consistency, prevent duplication, and build a stable analytical foundation. This approach allows businesses to define outcomes once and reuse them effectively across multiple analytical views.",
+            "post_type": "Deep dive"
+          }
+        ],
+        "rest": [
+          {
+            "title": "SAP BW Modernization and Stewardship with SAP Business Data Cloud - Introduction",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/sap-bw-modernization-and-stewardship-with-sap-business-data-cloud/ba-p/14424789",
+            "author": "AxelS",
+            "date_published": "2026-06-22",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ]
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "Smarter, More Flexible, More Powerful:  SAP Analytics Cloud Composites Innovation Roundup",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/smarter-more-flexible-more-powerful-sap-analytics-cloud-composites/ba-p/14424663",
+            "author": "jie_deng",
+            "date_published": "2026-06-22",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Analytics Cloud for planning"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts",
+            "summary": "The blog highlights key innovations in SAP Analytics Cloud Composites, focusing on enhanced flexibility, intelligence, and functionality. It provides an overview of recent updates aimed at improving user experience and analytical capabilities.",
+            "post_type": "Release"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "mon-2026-06-22",
     "weekday": "Monday",
     "iso": "2026-06-22",
@@ -2597,18 +2742,5 @@
         "rest": []
       }
     ]
-  },
-  {
-    "id": "tue-2026-05-12",
-    "weekday": "Tuesday",
-    "iso": "2026-05-12",
-    "full": "May 12, 2026",
-    "title": "No new posts today.",
-    "preview": "No new SAP blog posts were published since the last check.",
-    "reads": "—",
-    "posts": 0,
-    "tags": [],
-    "highlights": [],
-    "sections": []
   }
 ]
