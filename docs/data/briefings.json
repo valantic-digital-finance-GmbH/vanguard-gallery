@@ -1,5 +1,70 @@
 [
   {
+    "id": "wed-2026-06-24",
+    "weekday": "Wednesday",
+    "iso": "2026-06-24",
+    "full": "Jun 24, 2026",
+    "title": "Explore two methods for building hierarchies in SAP Analytics Cloud (SAC) and learn how to choose the right one for specific use cases.",
+    "preview": "Gain practical insights to optimize hierarchy designs in SAC, simplifying a complex topic for Business Intelligence professionals.",
+    "reads": "2 min",
+    "posts": 2,
+    "tags": [
+      "Analytics Cloud",
+      "SAC Planning",
+      "SAC Modeling"
+    ],
+    "highlights": [
+      "Explore two methods for building hierarchies in SAP Analytics Cloud (SAC) and learn how to choose the right one for specific use cases.",
+      "Gain practical insights to optimize hierarchy designs in SAC, simplifying a complex topic for Business Intelligence professionals.",
+      "Learn how to use input controls dynamically in SAC stories to enable effective filtering and enhance data analysis.",
+      "Discover time-saving techniques for leveraging input controls in SAC and improve your analytical workflows.",
+      "Both blogs encourage user engagement and sharing of experiences to foster a collaborative learning environment."
+    ],
+    "sections": [
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "Two Ways to Build a Hierarchy in SAC and How to Choose the Right One",
+            "url": "https://community.sap.com/t5/data-and-analytics-blog-posts/two-ways-to-build-a-hierarchy-in-sac-and-how-to-choose-the-right-one/ba-p/14426041",
+            "author": "Priya_312",
+            "date_published": "2026-06-24",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Analytics Cloud for planning",
+              "SAP Analytics Cloud, data modeling"
+            ],
+            "minutes": 1,
+            "board_id": "data-analyticsblog-board",
+            "board_name": "Data and Analytics Blog Posts",
+            "summary": "The blog explores two methods for building hierarchies in SAP Analytics Cloud (SAC) and provides guidance on selecting the appropriate approach based on specific use cases. It aims to simplify a complex topic for Business Intelligence professionals. The author shares practical insights from their experience to help users optimize their hierarchy designs.",
+            "post_type": "How-to"
+          },
+          {
+            "title": "How to Use Input Controls in SAC Stories Dynamically",
+            "url": "https://community.sap.com/t5/data-and-analytics-blog-posts/how-to-use-input-controls-in-sac-stories-dynamically/ba-p/14424094",
+            "author": "Priya_312",
+            "date_published": "2026-06-22",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-analyticsblog-board",
+            "board_name": "Data and Analytics Blog Posts",
+            "summary": "The blog post provides guidance on using input controls dynamically in SAP Analytics Cloud (SAC) stories for effective filtering. The author shares practical insights to help users save time and enhance their data analysis experience. Readers are encouraged to engage and share their own experiences.",
+            "post_type": "How-to"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "tue-2026-06-23",
     "weekday": "Tuesday",
     "iso": "2026-06-23",
@@ -2660,83 +2725,6 @@
             "minutes": 1,
             "summary": "The blog post explores the storage patterns encountered when building a Customer-Managed Data Product (CMDP) in SAP Business Data Cloud using a Datasphere VIEW as the data source. It explains why multiple copies of data are created before reaching Databricks, discusses available options, and clarifies the concept of 'zero copy' in this context. The insights are based on a real enterprise implementation validated by SAP Product Engineering.",
             "post_type": "Deep dive"
-          }
-        ],
-        "rest": []
-      }
-    ]
-  },
-  {
-    "id": "wed-2026-05-13",
-    "weekday": "Wednesday",
-    "iso": "2026-05-13",
-    "full": "May 13, 2026",
-    "title": "The SAP Analytics Cloud Home Screen now features a Blog Card introduced in Q2 2026 QRC.",
-    "preview": "The Blog Card provides direct access to SAP Community updates from the dashboard.",
-    "reads": "10 min",
-    "posts": 2,
-    "tags": [
-      "Analytics Cloud",
-      "Business Data Cloud"
-    ],
-    "highlights": [
-      "The SAP Analytics Cloud Home Screen now features a Blog Card introduced in Q2 2026 QRC.",
-      "The Blog Card provides direct access to SAP Community updates from the dashboard.",
-      "This enhancement ensures users stay updated with the latest SAP news and insights effortlessly."
-    ],
-    "sections": [
-      {
-        "name": "SAP Business Data Cloud",
-        "tags": [
-          "SAP Business Data Cloud"
-        ],
-        "top": [
-          {
-            "title": "What's New on the SAP Analytics Cloud Home Screen — Q2 2026 QRC: The New Blog Card",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/what-s-new-on-the-sap-analytics-cloud-home-screen-q2-2026-qrc-the-new-blog/ba-p/14394010",
-            "author": "thomas_fery",
-            "date_published": "2026-05-12",
-            "matching_tags": [
-              "SAP Analytics Cloud",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "summary": "The new Blog Card feature on the SAP Analytics Cloud Home Screen, introduced in Q2 2026 QRC, allows users to access SAP Community updates directly from their dashboard. This enhancement ensures users stay informed about the latest news and insights seamlessly.",
-            "post_type": "Release"
-          },
-          {
-            "title": "SAP HANA Cloud Integration with metaphactory - For Knowledge Graph Modelling, Visualization & More",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-hana-cloud-integration-with-metaphactory-for-knowledge-graph-modelling/ba-p/14390776",
-            "author": "shabana",
-            "date_published": "2026-05-12",
-            "matching_tags": [
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5
-          }
-        ],
-        "rest": []
-      },
-      {
-        "name": "SAP Analytics Cloud",
-        "tags": [
-          "SAP Analytics Cloud",
-          "SAP Analytics Cloud for planning",
-          "SAP Analytics Cloud, data modeling"
-        ],
-        "top": [
-          {
-            "title": "What's New on the SAP Analytics Cloud Home Screen — Q2 2026 QRC: The New Blog Card",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/what-s-new-on-the-sap-analytics-cloud-home-screen-q2-2026-qrc-the-new-blog/ba-p/14394010",
-            "author": "thomas_fery",
-            "date_published": "2026-05-12",
-            "matching_tags": [
-              "SAP Analytics Cloud",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "summary": "The new Blog Card feature on the SAP Analytics Cloud Home Screen, introduced in Q2 2026 QRC, allows users to access SAP Community updates directly from their dashboard. This enhancement ensures users stay informed about the latest news and insights seamlessly.",
-            "post_type": "Release"
           }
         ],
         "rest": []
