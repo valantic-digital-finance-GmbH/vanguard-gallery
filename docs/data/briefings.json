@@ -1,5 +1,127 @@
 [
   {
+    "id": "thu-2026-06-25",
+    "weekday": "Thursday",
+    "iso": "2026-06-25",
+    "full": "Jun 25, 2026",
+    "title": "SAP is advancing its vision of an autonomous enterprise by integrating agentic AI, governed data products, and event-driven architectures, as highlighted in the SAP Runs SAP series and SAP Sapphire sessions.",
+    "preview": "Organisational Change Management (OCM) is critical for successful AI adoption, addressing people-centric challenges to ensure AI initiatives are utilized and deliver tangible benefits.",
+    "reads": "21 min",
+    "posts": 5,
+    "tags": [
+      "Business AI",
+      "Business Data Cloud",
+      "SAC Planning",
+      "Datasphere"
+    ],
+    "highlights": [
+      "SAP is advancing its vision of an autonomous enterprise by integrating agentic AI, governed data products, and event-driven architectures, as highlighted in the SAP Runs SAP series and SAP Sapphire sessions.",
+      "Organisational Change Management (OCM) is critical for successful AI adoption, addressing people-centric challenges to ensure AI initiatives are utilized and deliver tangible benefits.",
+      "A simplified high-level overview of SAP's AI Agent reference architecture is introduced to help beginners grasp foundational concepts, marking the start of a new educational series.",
+      "Managing large data models in SAP Datasphere is streamlined through Claude Code, enabling modifications without disrupting downstream processes and addressing practical implementation challenges."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "How SAP is becoming an Autonomous Enterprise - SAP Runs SAP - From Vision to Execution",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/how-sap-is-becoming-an-autonomous-enterprise-sap-runs-sap-from-vision-to/ba-p/14425257",
+            "author": "TaniaD",
+            "date_published": "2026-06-24",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "The blog explores how SAP integrates agentic AI, governed data products, and event-driven architectures to scale AI in operations. It highlights insights from the SAP Runs SAP series and new sessions from SAP Sapphire. The focus is on executing the vision of an autonomous enterprise.",
+            "post_type": "Article"
+          },
+          {
+            "title": "Why OCM Is the Missing Piece in Every Organisation's AI Strategy",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/why-ocm-is-the-missing-piece-in-every-organisation-s-ai-strategy/ba-p/14426475",
+            "author": "DaveRyan",
+            "date_published": "2026-06-24",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "The blog post emphasizes the importance of Organisational Change Management (OCM) in successfully integrating AI into workplaces. It argues that AI adoption is primarily a people challenge, and organizations that prioritize OCM are more likely to see tangible benefits from their AI investments. Without OCM, AI initiatives risk being underutilized or ignored by employees.",
+            "post_type": "Article"
+          },
+          {
+            "title": "Simplifying SAP AI Agent Architecture for Beginners - #1 High Level Overview",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/simplifying-sap-ai-agent-architecture-for-beginners-1-high-level-overview/ba-p/14426309",
+            "author": "Raja_Gupta1",
+            "date_published": "2026-06-24",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "This blog introduces a simplified explanation of SAP's AI Agent reference architecture, aimed at helping beginners understand the concepts. It is the first in a series that breaks down the architecture into more digestible parts. The focus of this post is on providing a high-level overview.",
+            "post_type": "How-to"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "Working with Large Data Models in SAP Datasphere Using Claude Code",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/working-with-large-data-models-in-sap-datasphere-using-claude-code/ba-p/14426639",
+            "author": "FredericWall",
+            "date_published": "2026-06-24",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "The blog explores managing large data models in SAP Datasphere, focusing on modifying existing models without disrupting downstream processes. It builds on previous discussions about creating objects using natural language and Claude Code, addressing practical challenges in real-world scenarios.",
+            "post_type": "Deep dive"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "Improved Data Action scoping with the new Data Filter Parameter type",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/improved-data-action-scoping-with-the-new-data-filter-parameter-type/ba-p/14413702",
+            "author": "ScottGodfree",
+            "date_published": "2026-06-24",
+            "matching_tags": [
+              "SAP Analytics Cloud for planning"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "wed-2026-06-24",
     "weekday": "Wednesday",
     "iso": "2026-06-24",
@@ -2647,84 +2769,6 @@
             "minutes": 1,
             "summary": "The blog provides an overview of the key announcements made during SAP Sapphire 2026, focusing on their implications for the SAP partner ecosystem. It caters to both attendees and those who missed the event, offering insights based on the author's research and experience. The content aims to help partners understand the potential impact of these developments.",
             "post_type": "Event"
-          }
-        ],
-        "rest": []
-      }
-    ]
-  },
-  {
-    "id": "thu-2026-05-14",
-    "weekday": "Thursday",
-    "iso": "2026-05-14",
-    "full": "May 14, 2026",
-    "title": "CMDP in SAP BDC using Datasphere VIEW involves multiple data copies before reaching Databricks, challenging the 'zero copy' concept.",
-    "preview": "The blog provides insights into storage patterns and options for CMDP implementation, validated by SAP Product Engineering.",
-    "reads": "6 min",
-    "posts": 2,
-    "tags": [
-      "Datasphere",
-      "Business Data Cloud"
-    ],
-    "highlights": [
-      "CMDP in SAP BDC using Datasphere VIEW involves multiple data copies before reaching Databricks, challenging the 'zero copy' concept.",
-      "The blog provides insights into storage patterns and options for CMDP implementation, validated by SAP Product Engineering.",
-      "SAP's 3-episode BW Modernization Masterclass supports partners in transitioning from legacy BW systems to modern cloud analytics platforms.",
-      "The masterclass simplifies BW modernization and equips participants to better assist their customers."
-    ],
-    "sections": [
-      {
-        "name": "SAP Business Data Cloud",
-        "tags": [
-          "SAP Business Data Cloud"
-        ],
-        "top": [
-          {
-            "title": "Customer-Managed Data Products in SAP BDC: What Really Happens When Your Source Is a Datasphere VIEW",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/customer-managed-data-products-in-sap-bdc-what-really-happens-when-your/ba-p/14394675",
-            "author": "I858551",
-            "date_published": "2026-05-13",
-            "matching_tags": [
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 1,
-            "summary": "The blog post explores the storage patterns encountered when building a Customer-Managed Data Product (CMDP) in SAP Business Data Cloud using a Datasphere VIEW as the data source. It explains why multiple copies of data are created before reaching Databricks, discusses available options, and clarifies the concept of 'zero copy' in this context. The insights are based on a real enterprise implementation validated by SAP Product Engineering.",
-            "post_type": "Deep dive"
-          },
-          {
-            "title": "Transform Your BW Modernization Journey: Join SAP’s 3-Episode Modernization Masterclass",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/transform-your-bw-modernization-journey-join-sap-s-3-episode-modernization/ba-p/14395229",
-            "author": "KarthikM8",
-            "date_published": "2026-05-13",
-            "matching_tags": [
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "summary": "SAP has introduced a 3-episode masterclass to help partners transition from legacy Business Warehouse systems to modern cloud-based analytics platforms. This series aims to simplify BW modernization and equip participants with the necessary knowledge to support their customers effectively.",
-            "post_type": "Event"
-          }
-        ],
-        "rest": []
-      },
-      {
-        "name": "SAP Datasphere",
-        "tags": [
-          "SAP Datasphere"
-        ],
-        "top": [
-          {
-            "title": "Customer-Managed Data Products in SAP BDC: What Really Happens When Your Source Is a Datasphere VIEW",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/customer-managed-data-products-in-sap-bdc-what-really-happens-when-your/ba-p/14394675",
-            "author": "I858551",
-            "date_published": "2026-05-13",
-            "matching_tags": [
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 1,
-            "summary": "The blog post explores the storage patterns encountered when building a Customer-Managed Data Product (CMDP) in SAP Business Data Cloud using a Datasphere VIEW as the data source. It explains why multiple copies of data are created before reaching Databricks, discusses available options, and clarifies the concept of 'zero copy' in this context. The insights are based on a real enterprise implementation validated by SAP Product Engineering.",
-            "post_type": "Deep dive"
           }
         ],
         "rest": []
