@@ -6,13 +6,14 @@
     "full": "Jun 26, 2026",
     "title": "SAP Analytics Cloud now enables direct delivery of metrics reports to Microsoft Teams, improving collaboration with scheduled notifications and report links.",
     "preview": "The choice of SAP Analytics Cloud model is critical for optimizing reporting performance, with real-world insights highlighting its impact on data accessibility and usability.",
-    "reads": "13 min",
-    "posts": 5,
+    "reads": "18 min",
+    "posts": 6,
     "tags": [
       "Business AI",
       "Analytics Cloud",
       "SAC Planning",
-      "SAC Modeling"
+      "SAC Modeling",
+      "Business Data Cloud"
     ],
     "highlights": [
       "SAP Analytics Cloud now enables direct delivery of metrics reports to Microsoft Teams, improving collaboration with scheduled notifications and report links.",
@@ -110,6 +111,27 @@
             "board_name": "Data Professionals Blog posts"
           }
         ]
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Joule is Not Magic - Here is the Architecture Behind It",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/joule-is-not-magic-here-is-the-architecture-behind-it/ba-p/14427634",
+            "author": "krishnanunni_sudhakaranpi",
+            "date_published": "2026-06-26",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
       }
     ]
   },
