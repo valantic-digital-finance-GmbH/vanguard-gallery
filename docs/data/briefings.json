@@ -1,5 +1,160 @@
 [
   {
+    "id": "mon-2026-06-29",
+    "weekday": "Monday",
+    "iso": "2026-06-29",
+    "full": "Jun 29, 2026",
+    "title": "Syntax achieved the SAP Golden Certificate for the 10th consecutive time, underscoring its dedication to quality and innovation.",
+    "preview": "Global certifications in SAP Security Operations and SAP Business AI Operations validate Syntax's expertise in secure and cutting-edge SAP services.",
+    "reads": "31 min",
+    "posts": 7,
+    "tags": [
+      "Business AI",
+      "Analytics Cloud",
+      "Datasphere",
+      "SAC Planning",
+      "Business Data Cloud"
+    ],
+    "highlights": [
+      "Syntax achieved the SAP Golden Certificate for the 10th consecutive time, underscoring its dedication to quality and innovation.",
+      "Global certifications in SAP Security Operations and SAP Business AI Operations validate Syntax's expertise in secure and cutting-edge SAP services.",
+      "Syntax's focus on cloud transformation, SAP BTP, and AI demonstrates its commitment to delivering measurable business value.",
+      "Clear platform ownership is critical in multi-platform analytics to prevent inconsistencies, duplicate pipelines, and implementation confusion.",
+      "The blog emphasizes the need for defined responsibilities to tackle challenges in multi-platform analytics landscapes effectively."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Two Decades of Proven Excellence: Syntax Achieves SAP Golden Certificate While Driving Innovation",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/two-decades-of-proven-excellence-syntax-achieves-sap-golden-certificate/ba-p/14413489",
+            "author": "Christine13",
+            "date_published": "2026-06-26",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "Syntax has achieved the SAP Golden Certificate for the 10th consecutive time, showcasing its commitment to quality and operational excellence. The company also earned global certifications in SAP Security Operations and SAP Business AI Operations, emphasizing its ability to deliver secure and innovative services. This milestone highlights Syntax's expertise in cloud transformation, SAP BTP, and AI to drive business value for its customers.",
+            "post_type": "Article"
+          },
+          {
+            "title": "SAP Joule for Consultants Expert Library and New Enhancements",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-joule-for-consultants-expert-library-and-new-enhancements/ba-p/14423927",
+            "author": "Rundong_Liu",
+            "date_published": "2026-06-22",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Business Data Architecture: Platform Responsibility in a Multi-Platform Analytics Landscape",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/business-data-architecture-platform-responsibility-in-a-multi-platform/ba-p/14427581",
+            "author": "AllanHald",
+            "date_published": "2026-06-26",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts",
+            "summary": "The blog discusses the importance of clear platform ownership in a multi-platform analytics landscape to avoid inconsistencies in metrics, duplicate data pipelines, and confusion over implementation responsibilities. It highlights the challenges organizations face without defined ownership and offers insights into addressing these issues effectively.",
+            "post_type": "Article"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "Introducing Support Content — the additional Customer Support knowledge repository",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/introducing-support-content-the-additional-customer-support-knowledge/ba-p/14428455",
+            "author": "MarceloPinheiro",
+            "date_published": "2026-06-27",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Datasphere"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "Compass: Predictive Range Proposal \"Smart Boundaries\"",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/compass-predictive-range-proposal-quot-smart-boundaries-quot/ba-p/14419198",
+            "author": "ChenNee",
+            "date_published": "2026-06-26",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Analytics Cloud for planning"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          },
+          {
+            "title": "Context Aware Data Action Scoping",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/context-aware-data-action-scoping/ba-p/14413711",
+            "author": "ScottGodfree",
+            "date_published": "2026-06-26",
+            "matching_tags": [
+              "SAP Analytics Cloud for planning"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          },
+          {
+            "title": "Turning Spreadsheet Logic into a Scalable Calculation Framework in SAP Analytics Cloud",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/turning-spreadsheet-logic-into-a-scalable-calculation-framework-in-sap/ba-p/14427706",
+            "author": "zee_siddique15",
+            "date_published": "2026-06-26",
+            "matching_tags": [
+              "SAP Analytics Cloud for planning"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "fri-2026-06-26",
     "weekday": "Friday",
     "iso": "2026-06-26",
@@ -2555,317 +2710,6 @@
           }
         ],
         "rest": []
-      }
-    ]
-  },
-  {
-    "id": "mon-2026-05-18",
-    "weekday": "Monday",
-    "iso": "2026-05-18",
-    "full": "May 18, 2026",
-    "title": "SAP BW Bridge and Data Product Generator (DPG) offer distinct paths for transitioning to Datasphere, catering to different user needs and strategies.",
-    "preview": "The blog provides practical guidance to help users decide between migrating their BW system or adopting a modern data exploration approach with DPG.",
-    "reads": "88 min",
-    "posts": 20,
-    "tags": [
-      "Analytics Cloud",
-      "SAC Planning",
-      "Business Data Cloud",
-      "Datasphere",
-      "SAC Modeling"
-    ],
-    "highlights": [
-      "SAP BW Bridge and Data Product Generator (DPG) offer distinct paths for transitioning to Datasphere, catering to different user needs and strategies.",
-      "The blog provides practical guidance to help users decide between migrating their BW system or adopting a modern data exploration approach with DPG.",
-      "Season 10 of SAP Let’s Talk Data emphasizes actionable, technical insights for data professionals managing real-world systems.",
-      "The new season shifts focus from high-level discussions to expert-led lessons on practical data management and system design."
-    ],
-    "sections": [
-      {
-        "name": "SAP Business Data Cloud",
-        "tags": [
-          "SAP Business Data Cloud"
-        ],
-        "top": [
-          {
-            "title": "Table Widget Improvements in SAP Analytics Cloud 2026 Q2 QRC",
-            "url": "https://community.sap.com/t5/data-professionals-blog-posts/table-widget-improvements-in-sap-analytics-cloud-2026-q2-qrc/ba-p/14395598",
-            "author": "GregBotticchio",
-            "date_published": "2026-05-18",
-            "matching_tags": [
-              "SAP Analytics Cloud",
-              "SAP Analytics Cloud for planning",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "data-professionalsblog-board",
-            "board_name": "Data Professionals Blog posts"
-          },
-          {
-            "title": "Create a Custom SAP BDC Data Product share it with Enterprise Databricks, extend it and send it back",
-            "url": "https://community.sap.com/t5/data-and-analytics-blog-posts/create-a-custom-sap-bdc-data-product-share-it-with-enterprise-databricks/ba-p/14394738",
-            "author": "gvglupita",
-            "date_published": "2026-05-18",
-            "matching_tags": [
-              "SAP Analytics Cloud",
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "data-analyticsblog-board",
-            "board_name": "Data and Analytics Blog Posts"
-          },
-          {
-            "title": "Let's Talk Data Season 10 | How SAP Business Data Cloud is Transforming Data Science",
-            "url": "https://community.sap.com/t5/data-professionals-blog-posts/let-s-talk-data-season-10-how-sap-business-data-cloud-is-transforming-data/ba-p/14398593",
-            "author": "JoseChicas",
-            "date_published": "2026-05-18",
-            "matching_tags": [
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "data-professionalsblog-board",
-            "board_name": "Data Professionals Blog posts"
-          }
-        ],
-        "rest": [
-          {
-            "title": "Leveraging SAP Architecture Center for SAP Business Data Cloud",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/leveraging-sap-architecture-center-for-sap-business-data-cloud/ba-p/14397322",
-            "author": "JoseBastidas",
-            "date_published": "2026-05-18",
-            "matching_tags": [
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP"
-          },
-          {
-            "title": "Next-Level Cash Forecasting and Planning with SAP BDC and SAP S/4HANA",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/next-level-cash-forecasting-and-planning-with-sap-bdc-and-sap-s-4hana/ba-p/14396654",
-            "author": "JoseBastidas",
-            "date_published": "2026-05-18",
-            "matching_tags": [
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP"
-          },
-          {
-            "title": "Asymmetric Reporting Layout",
-            "url": "https://community.sap.com/t5/data-professionals-blog-posts/asymmetric-reporting-layout/ba-p/14395545",
-            "author": "GregBotticchio",
-            "date_published": "2026-05-13",
-            "matching_tags": [
-              "SAP Analytics Cloud",
-              "SAP Analytics Cloud for planning",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "data-professionalsblog-board",
-            "board_name": "Data Professionals Blog posts"
-          },
-          {
-            "title": "Your Journey to SAP Data Architect Certification Starts Now",
-            "url": "https://community.sap.com/t5/data-professionals-blog-posts/your-journey-to-sap-data-architect-certification-starts-now/ba-p/14393938",
-            "author": "JaSoN_Luo",
-            "date_published": "2026-05-12",
-            "matching_tags": [
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "data-professionalsblog-board",
-            "board_name": "Data Professionals Blog posts"
-          },
-          {
-            "title": "DataPros @ SAP Sapphire Virtual 2026 - Key Sessions to Attend",
-            "url": "https://community.sap.com/t5/data-professionals-blog-posts/datapros-sap-sapphire-virtual-2026-key-sessions-to-attend/ba-p/14392684",
-            "author": "JoseChicas",
-            "date_published": "2026-05-09",
-            "matching_tags": [
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "data-professionalsblog-board",
-            "board_name": "Data Professionals Blog posts"
-          },
-          {
-            "title": "From Numbers to Narrative: Building an AI Analytics Assistant in SAP Analytics Cloud",
-            "url": "https://community.sap.com/t5/data-and-analytics-blog-posts/from-numbers-to-narrative-building-an-ai-analytics-assistant-in-sap/ba-p/14392212",
-            "author": "spurwar",
-            "date_published": "2026-05-08",
-            "matching_tags": [
-              "SAP Analytics Cloud",
-              "SAP Analytics Cloud for planning",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "data-analyticsblog-board",
-            "board_name": "Data and Analytics Blog Posts"
-          },
-          {
-            "title": "SAP Sapphire Orlando 2026: What's new in SAP Business Data Cloud: AI innovations",
-            "url": "https://community.sap.com/t5/data-professionals-blog-posts/sap-sapphire-orlando-2026-what-s-new-in-sap-business-data-cloud-ai/ba-p/14391781",
-            "author": "Shaheen_Umer",
-            "date_published": "2026-05-08",
-            "matching_tags": [
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 1,
-            "board_id": "data-professionalsblog-board",
-            "board_name": "Data Professionals Blog posts"
-          },
-          {
-            "title": "SAP Sapphire 2026 - Join me in our SAP BDC Sessions!",
-            "url": "https://community.sap.com/t5/data-professionals-blog-posts/sap-sapphire-2026-join-me-in-our-sap-bdc-sessions/ba-p/14386780",
-            "author": "PrakashNanduri",
-            "date_published": "2026-05-06",
-            "matching_tags": [
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "data-professionalsblog-board",
-            "board_name": "Data Professionals Blog posts"
-          }
-        ]
-      },
-      {
-        "name": "SAP Datasphere",
-        "tags": [
-          "SAP Datasphere"
-        ],
-        "top": [
-          {
-            "title": "SAP BW Bridge or Data Product Generator (DPG): What would you choose",
-            "url": "https://community.sap.com/t5/data-and-analytics-blog-posts/sap-bw-bridge-or-data-product-generator-dpg-what-would-you-choose/ba-p/14364780",
-            "author": "Ankit_Sarkar",
-            "date_published": "2026-04-16",
-            "matching_tags": [
-              "SAP Datasphere"
-            ],
-            "minutes": 5,
-            "board_id": "data-analyticsblog-board",
-            "board_name": "Data and Analytics Blog Posts",
-            "summary": "The blog explains the differences between SAP BW Bridge and Data Product Generator (DPG) when transitioning to Datasphere. It provides practical guidance to help users decide whether to migrate their BW system or adopt a modern data exploration approach.",
-            "post_type": "Article"
-          },
-          {
-            "title": "Welcome to Season 10 of SAP Let’s Talk Data!",
-            "url": "https://community.sap.com/t5/data-professionals-blog-posts/welcome-to-season-10-of-sap-let-s-talk-data/ba-p/14370361",
-            "author": "Corrie",
-            "date_published": "2026-04-10",
-            "matching_tags": [
-              "SAP Datasphere"
-            ],
-            "minutes": 5,
-            "board_id": "data-professionalsblog-board",
-            "board_name": "Data Professionals Blog posts",
-            "summary": "Season 10 of SAP Let’s Talk Data focuses on practical, technical insights for data professionals. It features lessons from experts who design and manage real-world data systems, moving away from high-level discussions to actionable knowledge.",
-            "post_type": "Event"
-          }
-        ],
-        "rest": []
-      },
-      {
-        "name": "SAP Analytics Cloud",
-        "tags": [
-          "SAP Analytics Cloud",
-          "SAP Analytics Cloud for planning",
-          "SAP Analytics Cloud, data modeling"
-        ],
-        "top": [
-          {
-            "title": "How to create an Aging Analysis report using a User selected Key Date leveraging SAC Date difference",
-            "url": "https://community.sap.com/t5/data-and-analytics-blog-posts/how-to-create-an-aging-analysis-report-using-a-user-selected-key-date/ba-p/14393813",
-            "author": "N1kh1l",
-            "date_published": "2026-05-11",
-            "matching_tags": [
-              "SAP Analytics Cloud",
-              "SAP Analytics Cloud for planning"
-            ],
-            "minutes": 5,
-            "board_id": "data-analyticsblog-board",
-            "board_name": "Data and Analytics Blog Posts"
-          },
-          {
-            "title": "Adding a Decomposition Tree to SAP Analytics Cloud with D3.js",
-            "url": "https://community.sap.com/t5/data-and-analytics-blog-posts/adding-a-decomposition-tree-to-sap-analytics-cloud-with-d3-js/ba-p/14389832",
-            "author": "abhimanyu_sharma",
-            "date_published": "2026-05-05",
-            "matching_tags": [
-              "SAP Analytics Cloud",
-              "SAP Analytics Cloud, data modeling"
-            ],
-            "minutes": 5,
-            "board_id": "data-analyticsblog-board",
-            "board_name": "Data and Analytics Blog Posts"
-          },
-          {
-            "title": "SAP Analytics Cloud in SAP Business Data Cloud: Your Guide to the Latest Features & Enhancements",
-            "url": "https://community.sap.com/t5/data-professionals-blog-posts/sap-analytics-cloud-in-sap-business-data-cloud-your-guide-to-the-latest/ba-p/14385985",
-            "author": "Katharina_Klug",
-            "date_published": "2026-04-29",
-            "matching_tags": [
-              "SAP Analytics Cloud",
-              "SAP Analytics Cloud for planning"
-            ],
-            "minutes": 1,
-            "board_id": "data-professionalsblog-board",
-            "board_name": "Data Professionals Blog posts"
-          }
-        ],
-        "rest": [
-          {
-            "title": "SAP Sapphire 2026, top agenda picks for analytics practitioners",
-            "url": "https://community.sap.com/t5/data-professionals-blog-posts/sap-sapphire-2026-top-agenda-picks-for-analytics-practitioners/ba-p/14385956",
-            "author": "ThierryAudas",
-            "date_published": "2026-04-29",
-            "matching_tags": [
-              "SAP Analytics Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "data-professionalsblog-board",
-            "board_name": "Data Professionals Blog posts"
-          },
-          {
-            "title": "Building a Production-Ready SAC Custom Widget with Claude AI — From Zero to Four Widgets",
-            "url": "https://community.sap.com/t5/data-and-analytics-blog-posts/building-a-production-ready-sac-custom-widget-with-claude-ai-from-zero-to/ba-p/14381628",
-            "author": "Michelle_Miley",
-            "date_published": "2026-04-23",
-            "matching_tags": [
-              "SAP Analytics Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "data-analyticsblog-board",
-            "board_name": "Data and Analytics Blog Posts"
-          },
-          {
-            "title": "From Dashboards to Decisions: Extending SAP Analytics Cloud with Custom Widgets",
-            "url": "https://community.sap.com/t5/data-and-analytics-blog-posts/from-dashboards-to-decisions-extending-sap-analytics-cloud-with-custom/ba-p/14375717",
-            "author": "spurwar",
-            "date_published": "2026-04-16",
-            "matching_tags": [
-              "SAP Analytics Cloud for planning"
-            ],
-            "minutes": 1,
-            "board_id": "data-analyticsblog-board",
-            "board_name": "Data and Analytics Blog Posts"
-          },
-          {
-            "title": "How to Implement KeyFigure based Validation Rules in SAP Analytics Cloud Planning Templates",
-            "url": "https://community.sap.com/t5/data-and-analytics-blog-posts/how-to-implement-keyfigure-based-validation-rules-in-sap-analytics-cloud/ba-p/14322055",
-            "author": "mansi_dandavate",
-            "date_published": "2026-02-05",
-            "matching_tags": [
-              "SAP Analytics Cloud, data modeling"
-            ],
-            "minutes": 5,
-            "board_id": "data-analyticsblog-board",
-            "board_name": "Data and Analytics Blog Posts"
-          }
-        ]
       }
     ]
   }
