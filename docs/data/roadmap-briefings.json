@@ -1,5 +1,192 @@
 [
   {
+    "id": "mon-2026-06-29",
+    "iso": "2026-06-29",
+    "full": "29 June 2026",
+    "period": "2026-06-22 – 2026-06-28",
+    "title": "19 changes across 3 products",
+    "preview": "SAP Analytics Cloud: 5 items added. SAP Business Data Cloud: 5 items slipped, 7 items added. SAP Datasphere: 1 item slipped to Q3 2026, 1 item added",
+    "total_changes": 19,
+    "products_with_changes": [
+      "SAP Analytics Cloud",
+      "SAP Business Data Cloud",
+      "SAP Datasphere"
+    ],
+    "sections": [
+      {
+        "slug": "sap-analytics-cloud",
+        "name": "SAP Analytics Cloud",
+        "slipped": [],
+        "added": [
+          {
+            "id": "56548DADF06646FEB87DFE6AA289B660",
+            "title": "Copy and paste for composite widgets in stories",
+            "quarter": "Q3 2026",
+            "capability": "Dashboard Extensibility",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=56548DADF06646FEB87DFE6AA289B660"
+          },
+          {
+            "id": "8EB380E5B3574482B4AF09A0B34467AB",
+            "title": "Custom device support for responsive stories on iOS and Android",
+            "quarter": "Q3 2026",
+            "capability": "Dashboard Extensibility",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=8EB380E5B3574482B4AF09A0B34467AB"
+          },
+          {
+            "id": "22926E5F576740B591FEFA62ABCF3E02",
+            "title": "Support for input controls within a composite",
+            "quarter": "Q3 2026",
+            "capability": "Dashboard Extensibility",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=22926E5F576740B591FEFA62ABCF3E02"
+          },
+          {
+            "id": "1AA18653615A406888F20A2C450101C5",
+            "title": "Plan entry: insertion of multiple new lines",
+            "quarter": "Q4 2026",
+            "capability": "Business Planning and Forecasting",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=1AA18653615A406888F20A2C450101C5"
+          },
+          {
+            "id": "F03E4C9043334949B7E9A1E0908F2860",
+            "title": "Validation rules: improved input readiness during design time",
+            "quarter": "Q3 2026",
+            "capability": "Business Planning and Forecasting",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=F03E4C9043334949B7E9A1E0908F2860"
+          }
+        ],
+        "deleted": []
+      },
+      {
+        "slug": "sap-business-data-cloud",
+        "name": "SAP Business Data Cloud",
+        "slipped": [
+          {
+            "id": "6DF54C88F6211FD084ADCE49C7B08221",
+            "title": "AI-assisted SQL generation on the view builder",
+            "old_quarter": "Q2 2026",
+            "new_quarter": "Q3 2026",
+            "direction": "forward",
+            "capability": "Data Design and Modelling",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=6DF54C88F6211FD084ADCE49C7B08221"
+          },
+          {
+            "id": "33158590E66E1FE084A758DBD9FD06F9",
+            "title": "Customer domains for the cockpit",
+            "old_quarter": "Q2 2026",
+            "new_quarter": "Q4 2026",
+            "direction": "forward",
+            "capability": "Data and Analytics Administration",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=33158590E66E1FE084A758DBD9FD06F9"
+          },
+          {
+            "id": "91D21DB778331FE084A6B6410F8978C1",
+            "title": "Default domain for the cockpit",
+            "old_quarter": "Q2 2026",
+            "new_quarter": "Q3 2026",
+            "direction": "forward",
+            "capability": "Data and Analytics Administration",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=91D21DB778331FE084A6B6410F8978C1"
+          },
+          {
+            "id": "D9840EC05D5841D09971909642BCE7DC",
+            "title": "SAP Business Data Cloud Connect for Google BigQuery",
+            "old_quarter": "Q2 2026",
+            "new_quarter": "Q3 2026",
+            "direction": "forward",
+            "capability": "Data Replication and ETL",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=D9840EC05D5841D09971909642BCE7DC"
+          },
+          {
+            "id": "7F9F136673CD4976B0DADFE11F2BDC4F",
+            "title": "Transformation flow: ability to flatten star schema for subsequent machine learning (ML) and AI analysis",
+            "old_quarter": "Q2 2026",
+            "new_quarter": "Q3 2026",
+            "direction": "forward",
+            "capability": "Data Replication and ETL",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=7F9F136673CD4976B0DADFE11F2BDC4F"
+          }
+        ],
+        "added": [
+          {
+            "id": "56548DADF06646FEB87DFE6AA289B660",
+            "title": "Copy and paste for composite widgets in stories",
+            "quarter": "Q3 2026",
+            "capability": "Dashboard Extensibility",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=56548DADF06646FEB87DFE6AA289B660"
+          },
+          {
+            "id": "8EB380E5B3574482B4AF09A0B34467AB",
+            "title": "Custom device support for responsive stories on iOS and Android",
+            "quarter": "Q3 2026",
+            "capability": "Dashboard Extensibility",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=8EB380E5B3574482B4AF09A0B34467AB"
+          },
+          {
+            "id": "22926E5F576740B591FEFA62ABCF3E02",
+            "title": "Support for input controls within a composite",
+            "quarter": "Q3 2026",
+            "capability": "Dashboard Extensibility",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=22926E5F576740B591FEFA62ABCF3E02"
+          },
+          {
+            "id": "01DD7775C9D61FD08C9A8643468F40FA",
+            "title": "Consumer Product Intelligence: SAP Revenue Growth Management",
+            "quarter": "Q2 2026",
+            "capability": "Intelligent Content Management",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=01DD7775C9D61FD08C9A8643468F40FA"
+          },
+          {
+            "id": "16064419D86145BA84E8C9904B7E0FD3",
+            "title": "Custom time dimensions in data builder",
+            "quarter": "Q4 2026",
+            "capability": "Data Design and Modelling",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=16064419D86145BA84E8C9904B7E0FD3"
+          },
+          {
+            "id": "1AA18653615A406888F20A2C450101C5",
+            "title": "Plan entry: insertion of multiple new lines",
+            "quarter": "Q4 2026",
+            "capability": "Business Planning and Forecasting",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=1AA18653615A406888F20A2C450101C5"
+          },
+          {
+            "id": "F03E4C9043334949B7E9A1E0908F2860",
+            "title": "Validation rules: improved input readiness during design time",
+            "quarter": "Q3 2026",
+            "capability": "Business Planning and Forecasting",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=F03E4C9043334949B7E9A1E0908F2860"
+          }
+        ],
+        "deleted": []
+      },
+      {
+        "slug": "sap-datasphere",
+        "name": "SAP Datasphere",
+        "slipped": [
+          {
+            "id": "7F9F136673CD4976B0DADFE11F2BDC4F",
+            "title": "Transformation flow: ability to flatten star schema for subsequent machine learning (ML) and AI analysis",
+            "old_quarter": "Q2 2026",
+            "new_quarter": "Q3 2026",
+            "direction": "forward",
+            "capability": "Data Replication and ETL",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=7F9F136673CD4976B0DADFE11F2BDC4F"
+          }
+        ],
+        "added": [
+          {
+            "id": "16064419D86145BA84E8C9904B7E0FD3",
+            "title": "Custom time dimensions in data builder",
+            "quarter": "Q4 2026",
+            "capability": "Data Design and Modelling",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=16064419D86145BA84E8C9904B7E0FD3"
+          }
+        ],
+        "deleted": []
+      }
+    ]
+  },
+  {
     "id": "mon-2026-06-22",
     "iso": "2026-06-22",
     "full": "22 June 2026",
