@@ -1,5 +1,111 @@
 [
   {
+    "id": "tue-2026-06-30",
+    "weekday": "Tuesday",
+    "iso": "2026-06-30",
+    "full": "Jun 30, 2026",
+    "title": "The third part of the Model Context Protocol (MCP) series explores its integration with Joule, offering insights into practical applications and advanced integration scenarios.",
+    "preview": "Joule Work mobile app Version 3.1 enhances the New Experience and SAP Build Work Zone Experience to boost user engagement and functionality.",
+    "reads": "16 min",
+    "posts": 4,
+    "tags": [
+      "Business AI",
+      "SAC Planning",
+      "Datasphere"
+    ],
+    "highlights": [
+      "The third part of the Model Context Protocol (MCP) series explores its integration with Joule, offering insights into practical applications and advanced integration scenarios.",
+      "Joule Work mobile app Version 3.1 enhances the New Experience and SAP Build Work Zone Experience to boost user engagement and functionality.",
+      "The latest update on Datasphere consumption management provides strategies to monitor and control capacity units for BTPEA and Pay-as-you-Go models.",
+      "Optimizing Datasphere resource allocation is made easier with tools for gaining visibility and control over usage."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Demystifying Model Context Protocol (MCP), Part 3: Integration with Joule",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/demystifying-model-context-protocol-mcp-part-3-integration-with-joule/ba-p/14056321",
+            "author": "Avinash_Vaidya",
+            "date_published": "2026-06-29",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "This blog post is the third part of a series on Model Context Protocol (MCP), focusing on its integration with Joule. It builds on the previous part, where a commerce MCP server was created and deployed, and discusses further advancements in leveraging MCP for integration scenarios. The post aims to deepen understanding of MCP's practical applications.",
+            "post_type": "Deep dive"
+          },
+          {
+            "title": "Joule Work mobile app Version 3.1 is out",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/joule-work-mobile-app-version-3-1-is-out/ba-p/14429320",
+            "author": "ThiloBerndt",
+            "date_published": "2026-06-29",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "The Joule Work mobile app Version 3.1 introduces new features enhancing the New Experience (Engagement Layer) and the SAP Build Work Zone Experience, previously known as SAP Mobile Start. This update aims to improve user engagement and functionality.",
+            "post_type": "Release"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "Managing Datasphere Consumption: Gaining Visibility and Control Over Capacity Units",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/managing-datasphere-consumption-gaining-visibility-and-control-over/ba-p/14423578",
+            "author": "JimmyYang",
+            "date_published": "2026-06-29",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "The blog explains how to monitor and manage Datasphere consumption, focusing on capacity units for BTPEA and Pay-as-you-Go models. It provides insights into gaining visibility and control over usage. This helps optimize resource allocation effectively.",
+            "post_type": "How-to"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "Recreating Excel‑Like Heat Maps in SAP Analytics Cloud Using Dynamic User‑Driven Thresholds",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/recreating-excel-like-heat-maps-in-sap-analytics-cloud-using-dynamic-user/ba-p/14429033",
+            "author": "zee_siddique15",
+            "date_published": "2026-06-29",
+            "matching_tags": [
+              "SAP Analytics Cloud for planning"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "mon-2026-06-29",
     "weekday": "Monday",
     "iso": "2026-06-29",
@@ -2661,51 +2767,6 @@
             "board_id": "data-analyticsblog-board",
             "board_name": "Data and Analytics Blog Posts",
             "summary": "The blog highlights new SDK capabilities for SAC custom widgets, enabling advanced filtering options. These include Filter by Range for date dimensions and Filter by Condition with various operators like Contains and Starts With.",
-            "post_type": "Release"
-          }
-        ],
-        "rest": []
-      }
-    ]
-  },
-  {
-    "id": "tue-2026-05-19",
-    "weekday": "Tuesday",
-    "iso": "2026-05-19",
-    "full": "May 19, 2026",
-    "title": "SAP Analytics Cloud now features a curated Custom Widget Library for extended functionality.",
-    "preview": "The library introduces new chart types to enhance data visualization capabilities.",
-    "reads": "5 min",
-    "posts": 1,
-    "tags": [
-      "Analytics Cloud"
-    ],
-    "highlights": [
-      "SAP Analytics Cloud now features a curated Custom Widget Library for extended functionality.",
-      "The library introduces new chart types to enhance data visualization capabilities.",
-      "Custom widgets are designed to address specific user needs and expand analytics flexibility."
-    ],
-    "sections": [
-      {
-        "name": "SAP Analytics Cloud",
-        "tags": [
-          "SAP Analytics Cloud",
-          "SAP Analytics Cloud for planning",
-          "SAP Analytics Cloud, data modeling"
-        ],
-        "top": [
-          {
-            "title": "Introducing the SAP Analytics Cloud Custom Widget Library",
-            "url": "https://community.sap.com/t5/data-and-analytics-blog-posts/introducing-the-sap-analytics-cloud-custom-widget-library/ba-p/14398681",
-            "author": "Michelle_Miley",
-            "date_published": "2026-05-18",
-            "matching_tags": [
-              "SAP Analytics Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "data-analyticsblog-board",
-            "board_name": "Data and Analytics Blog Posts",
-            "summary": "The blog introduces a curated library of custom widgets for SAP Analytics Cloud, enabling users to extend its functionality with new chart types. It also explains the motivation behind creating these widgets to enhance data visualization capabilities.",
             "post_type": "Release"
           }
         ],
