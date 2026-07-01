@@ -6,8 +6,8 @@
     "full": "Jul 1, 2026",
     "title": "Modeling layers in business data architecture streamline and organize data transformations.",
     "preview": "Defined transformation layers foster shared understanding and prevent operational chaos.",
-    "reads": "16 min",
-    "posts": 4,
+    "reads": "17 min",
+    "posts": 5,
     "tags": [
       "Business AI",
       "Analytics Cloud",
@@ -91,7 +91,23 @@
             "post_type": "Article"
           }
         ],
-        "rest": []
+        "rest": [
+          {
+            "title": "Business Data Architecture: Why Business Meaning Matters in Modern Analytics Landscapes",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/business-data-architecture-why-business-meaning-matters-in-modern-analytics/ba-p/14420477",
+            "author": "AllanHald",
+            "date_published": "2026-06-16",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts",
+            "summary": "The blog post emphasizes the importance of explicitly defining business meaning to avoid fragmentation across various analytics tools and platforms. It argues that without a clear architecture, AI exacerbates the chaos rather than resolving it. The post advocates for a structured approach to ensure consistent and reliable analytics in modern, AI-driven landscapes.",
+            "post_type": "Article"
+          }
+        ]
       }
     ]
   },
