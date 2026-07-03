@@ -1,5 +1,75 @@
 [
   {
+    "id": "fri-2026-07-03",
+    "weekday": "Friday",
+    "iso": "2026-07-03",
+    "full": "Jul 3, 2026",
+    "title": "The 'Periodic Table of SAP Business AI' provides a business-first framework to simplify understanding of SAP's AI stack, including assistants, AI runtime, models, data foundation, and governance layers.",
+    "preview": "The table acts as a visual guide to explore the roles and relationships of components within the enterprise AI ecosystem.",
+    "reads": "2 min",
+    "posts": 2,
+    "tags": [
+      "Business AI",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [
+      "The 'Periodic Table of SAP Business AI' provides a business-first framework to simplify understanding of SAP's AI stack, including assistants, AI runtime, models, data foundation, and governance layers.",
+      "The table acts as a visual guide to explore the roles and relationships of components within the enterprise AI ecosystem.",
+      "Data Products are introduced as structured, reusable analytical assets to address fragmentation across platforms.",
+      "Organizing Data Products by purpose, like Revenue or General Ledger, and defining ownership contracts enhances clarity and consistency in data management."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "The Periodic Table of SAP Business AI: A Simple Map of the Enterprise AI Stack",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/the-periodic-table-of-sap-business-ai-a-simple-map-of-the-enterprise-ai/ba-p/14432507",
+            "author": "Jana_Cyber",
+            "date_published": "2026-07-03",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "The blog introduces a 'Periodic Table' framework to simplify understanding SAP Business AI's comprehensive stack, which includes assistants, AI runtime, models, data foundation, and governance layers. It organizes capabilities into groups for a business-first perspective, making it easier to grasp their purpose without technical details. The table serves as a visual guide to explore each component and its role in the enterprise AI ecosystem.",
+            "post_type": "Article"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Business Data Architecture: Data Products - Structured Reusable Analytical Assets",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/business-data-architecture-data-products-structured-reusable-analytical/ba-p/14432303",
+            "author": "AllanHald",
+            "date_published": "2026-07-02",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts",
+            "summary": "The blog post introduces Data Products as a solution to fragmented analytical assets across platforms. It emphasizes organizing related transformations by purpose, such as Revenue or General Ledger, and establishing explicit contracts for ownership and reuse. This approach ensures consistency and clarity in data management.",
+            "post_type": "Article"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "thu-2026-07-02",
     "weekday": "Thursday",
     "iso": "2026-07-02",
@@ -2524,63 +2594,6 @@
             "board_name": "Technology Blog Posts by SAP",
             "summary": "This blog post introduces the SAP Business Data Cloud Data Architecture Miniseries, a four-episode live session program taking place from June 1–5, 2026. It is tailored for SAP Partners, aiming to enhance their expertise in SAP BDC architecture and practices.",
             "post_type": "Event"
-          }
-        ],
-        "rest": []
-      }
-    ]
-  },
-  {
-    "id": "fri-2026-05-22",
-    "weekday": "Friday",
-    "iso": "2026-05-22",
-    "full": "May 22, 2026",
-    "title": "SAP Datasphere’s One Data Catalog uses AI to automate metadata management, solving issues like incomplete metadata and inconsistent classifications.",
-    "preview": "The tool supports compliance teams facing regulatory pressures by improving data governance at scale.",
-    "reads": "6 min",
-    "posts": 2,
-    "tags": [
-      "Datasphere",
-      "Business Data Cloud"
-    ],
-    "highlights": [
-      "SAP Datasphere’s One Data Catalog uses AI to automate metadata management, solving issues like incomplete metadata and inconsistent classifications.",
-      "The tool supports compliance teams facing regulatory pressures by improving data governance at scale.",
-      "A global pharmaceutical company successfully used One Data Catalog for audit preparation, showcasing its practical benefits."
-    ],
-    "sections": [
-      {
-        "name": "SAP Business Data Cloud",
-        "tags": [
-          "SAP Business Data Cloud"
-        ],
-        "top": [
-          {
-            "title": "One Data Catalog: AI-Powered Metadata and Search for Better Data Governance",
-            "url": "https://community.sap.com/t5/data-professionals-blog-posts/one-data-catalog-ai-powered-metadata-and-search-for-better-data-governance/ba-p/14401409",
-            "author": "Corrie",
-            "date_published": "2026-05-22",
-            "matching_tags": [
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 1,
-            "board_id": "data-professionalsblog-board",
-            "board_name": "Data Professionals Blog posts",
-            "summary": "The blog post discusses how SAP Datasphere’s One Data Catalog leverages AI to automate metadata management, addressing challenges like incomplete metadata and inconsistent classifications. It highlights the benefits for compliance teams under regulatory pressure and provides a real-world example of its application in a global pharmaceutical company's audit preparation. This AI-driven approach enhances data governance at enterprise scale.",
-            "post_type": "Article"
-          },
-          {
-            "title": "Embracing AI for planning and analysis in SAP Business Data Cloud",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/embracing-ai-for-planning-and-analysis-in-sap-business-data-cloud/ba-p/14400344",
-            "author": "JoseBastidas",
-            "date_published": "2026-05-21",
-            "matching_tags": [
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP"
           }
         ],
         "rest": []
