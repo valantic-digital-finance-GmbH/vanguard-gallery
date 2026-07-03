@@ -6,8 +6,8 @@
     "full": "Jul 3, 2026",
     "title": "The 'Periodic Table of SAP Business AI' provides a business-first framework to simplify understanding of SAP's AI stack, including assistants, AI runtime, models, data foundation, and governance layers.",
     "preview": "The table acts as a visual guide to explore the roles and relationships of components within the enterprise AI ecosystem.",
-    "reads": "2 min",
-    "posts": 2,
+    "reads": "7 min",
+    "posts": 3,
     "tags": [
       "Business AI",
       "Datasphere",
@@ -65,7 +65,20 @@
             "post_type": "Article"
           }
         ],
-        "rest": []
+        "rest": [
+          {
+            "title": "SAP Business Data Cloud and AI: Telling the story to drive adoption",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/sap-business-data-cloud-and-ai-telling-the-story-to-drive-adoption/ba-p/14432145",
+            "author": "JoseBastidas",
+            "date_published": "2026-07-03",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ]
       }
     ]
   },
