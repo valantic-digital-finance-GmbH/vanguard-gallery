@@ -6,8 +6,8 @@
     "full": "Jul 6, 2026",
     "title": "SAP has rebranded BTP as the SAP Business AI Platform, signaling a strategic focus on AI-first enterprise solutions.",
     "preview": "The rebranding underscores SAP's commitment to integrating AI across its product portfolio.",
-    "reads": "27 min",
-    "posts": 7,
+    "reads": "32 min",
+    "posts": 8,
     "tags": [
       "Business AI",
       "Business Data Cloud"
@@ -121,6 +121,18 @@
             "minutes": 1,
             "board_id": "technology-blog-sap",
             "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Introducing zero-copy integration between SAP Business Data Cloud and Google BigQuery",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/introducing-zero-copy-integration-between-sap-business-data-cloud-and/ba-p/14433834",
+            "author": "JoseBastidas",
+            "date_published": "2026-07-06",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
           }
         ]
       }
