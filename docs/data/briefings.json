@@ -1,5 +1,132 @@
 [
   {
+    "id": "mon-2026-07-06",
+    "weekday": "Monday",
+    "iso": "2026-07-06",
+    "full": "Jul 6, 2026",
+    "title": "SAP has rebranded BTP as the SAP Business AI Platform, signaling a strategic focus on AI-first enterprise solutions.",
+    "preview": "The rebranding underscores SAP's commitment to integrating AI across its product portfolio.",
+    "reads": "27 min",
+    "posts": 7,
+    "tags": [
+      "Business AI",
+      "Business Data Cloud"
+    ],
+    "highlights": [
+      "SAP has rebranded BTP as the SAP Business AI Platform, signaling a strategic focus on AI-first enterprise solutions.",
+      "The rebranding underscores SAP's commitment to integrating AI across its product portfolio.",
+      "Partners are encouraged to prioritize delivering AI-driven business outcomes to align with SAP's new direction.",
+      "This shift creates fresh opportunities and sets new expectations for SAP's partner ecosystem."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Coffee Sales Predicted Everyday with SAP RPT",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/coffee-sales-predicted-everyday-with-sap-rpt/ba-p/14433564",
+            "author": "ChandraBhushanSingh",
+            "date_published": "2026-07-06",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "SAP BTP Competency Is Now SAP Business AI Platform Competency: What Partners Need to Know",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-btp-competency-is-now-sap-business-ai-platform-competency-what-partners/ba-p/14430992",
+            "author": "Yellareddy",
+            "date_published": "2026-07-01",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "SAP has rebranded its BTP to the SAP Business AI Platform, reflecting a strategic shift toward AI-first enterprise solutions. This change emphasizes the integration of AI across SAP's portfolio and highlights the need for partners to focus on delivering AI-driven business outcomes. The rebranding signals new opportunities and expectations for SAP's partner ecosystem.",
+            "post_type": "Article"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Knowledge Graph Agent on SAP HANA Cloud Series – Part 2-2: Designing the Ontology for SAP Data",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/knowledge-graph-agent-on-sap-hana-cloud-series-part-2-2-designing-the/ba-p/14274465",
+            "author": "ClaudioJP",
+            "date_published": "2026-07-04",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Knowledge Graph Agent on SAP HANA Cloud Series – Part 2-1: Ontology Standards and Concepts",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/knowledge-graph-agent-on-sap-hana-cloud-series-part-2-1-ontology-standards/ba-p/14417385",
+            "author": "ClaudioJP",
+            "date_published": "2026-07-04",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Knowledge Graph Agent on SAP HANA Cloud Series – Part 1: Why Knowledge Graph for SAP Data",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/knowledge-graph-agent-on-sap-hana-cloud-series-part-1-why-knowledge-graph/ba-p/14417381",
+            "author": "ClaudioJP",
+            "date_published": "2026-07-04",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": [
+          {
+            "title": "What’s New in SAP HANA Cloud – July 2026",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/what-s-new-in-sap-hana-cloud-july-2026/ba-p/14419199",
+            "author": "thomashammer",
+            "date_published": "2026-07-03",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Accessing BW Data Products in the Query Layer of SAP BW/4HANA PCE in SAP Business Data Cloud",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/accessing-bw-data-products-in-the-query-layer-of-sap-bw-4hana-pce-in-sap/ba-p/14432688",
+            "author": "kurzdo93",
+            "date_published": "2026-07-03",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "fri-2026-07-03",
     "weekday": "Friday",
     "iso": "2026-07-03",
@@ -2486,127 +2613,6 @@
             "minutes": 5,
             "board_id": "technology-blog-sap",
             "board_name": "Technology Blog Posts by SAP"
-          }
-        ],
-        "rest": []
-      }
-    ]
-  },
-  {
-    "id": "mon-2026-05-25",
-    "weekday": "Monday",
-    "iso": "2026-05-25",
-    "full": "May 25, 2026",
-    "title": "SAP Enterprise Support Value Maps live session on June 09 will provide updates on Data and AI-focused remote services and sessions.",
-    "preview": "A step-by-step guide details how to integrate Claude AI with SAP Datasphere using the Multi-Cloud Platform (MCP) for enhanced AI-driven data utilization.",
-    "reads": "21 min",
-    "posts": 5,
-    "tags": [
-      "Business AI",
-      "Datasphere",
-      "Business Data Cloud",
-      "Analytics Cloud",
-      "SAC Planning",
-      "SAC Modeling"
-    ],
-    "highlights": [
-      "SAP Enterprise Support Value Maps live session on June 09 will provide updates on Data and AI-focused remote services and sessions.",
-      "A step-by-step guide details how to integrate Claude AI with SAP Datasphere using the Multi-Cloud Platform (MCP) for enhanced AI-driven data utilization.",
-      "SAP Analytics Cloud is migrating dimension tables to the file repository to streamline artifact management, simplify access control, and improve usability.",
-      "The SAP Business Data Cloud Data Architecture Miniseries, scheduled for June 2026, will offer SAP Partners a deep dive into BDC architecture and best practices."
-    ],
-    "sections": [
-      {
-        "name": "SAP Business AI",
-        "tags": [
-          "SAP Business AI"
-        ],
-        "top": [
-          {
-            "title": "LIVE SESSIONS on SAP Enterprise Support Value Maps – Data & AI Content Updates",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/live-sessions-on-sap-enterprise-support-value-maps-data-amp-ai-content/ba-p/14401341",
-            "author": "Caroline-S",
-            "date_published": "2026-05-22",
-            "matching_tags": [
-              "SAP Business AI",
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP",
-            "summary": "This blog post announces a live session on June 09, focusing on updates to SAP Enterprise Support Value Maps. The session will cover remote services and sessions related to Data and AI topics.",
-            "post_type": "Event"
-          },
-          {
-            "title": "Process Consulting Agent: Process Insights, Reasoning and Recommendations One Conversation Away",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/process-consulting-agent-process-insights-reasoning-and-recommendations-one/ba-p/14396080",
-            "author": "Maria_Nugroho",
-            "date_published": "2026-05-22",
-            "matching_tags": [
-              "SAP Business AI"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP"
-          },
-          {
-            "title": "Connect Claude AI to SAP Datasphere Using MCP: An Implementation Guide",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/connect-claude-ai-to-sap-datasphere-using-mcp-an-implementation-guide/ba-p/14387720",
-            "author": "saravananc2",
-            "date_published": "2026-05-22",
-            "matching_tags": [
-              "SAP Business AI",
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-members",
-            "board_name": "Technology Blog Posts by Members",
-            "summary": "This blog post provides a step-by-step guide on integrating Claude AI with SAP Datasphere using the Multi-Cloud Platform (MCP). It focuses on implementation details to enable seamless connectivity and data utilization. The guide is aimed at helping users leverage AI capabilities within SAP environments.",
-            "post_type": "How-to"
-          }
-        ],
-        "rest": []
-      },
-      {
-        "name": "SAP Business Data Cloud",
-        "tags": [
-          "SAP Business Data Cloud"
-        ],
-        "top": [
-          {
-            "title": "SAP Analytics Cloud Dimension Tables Move to the File Repository",
-            "url": "https://community.sap.com/t5/data-professionals-blog-posts/sap-analytics-cloud-dimension-tables-move-to-the-file-repository/ba-p/14400182",
-            "author": "Max_Gander",
-            "date_published": "2026-05-22",
-            "matching_tags": [
-              "SAP Analytics Cloud",
-              "SAP Analytics Cloud for planning",
-              "SAP Analytics Cloud, data modeling",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 1,
-            "board_id": "data-professionalsblog-board",
-            "board_name": "Data Professionals Blog posts",
-            "summary": "SAP Analytics Cloud is transitioning dimension tables to the file repository, enabling unified artifact management and simplifying access control. This change aims to reduce complexity in role maintenance and improve overall usability. The blog outlines the key changes, what remains consistent, and considerations for migration.",
-            "post_type": "Article"
-          },
-          {
-            "title": "From Blueprint to Reality: SAP BDC Data Architecture Miniseries -June 2026",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/from-blueprint-to-reality-sap-bdc-data-architecture-miniseries-june-2026/ba-p/14401555",
-            "author": "KarthikM8",
-            "date_published": "2026-05-22",
-            "matching_tags": [
-              "SAP Analytics Cloud",
-              "SAP Analytics Cloud for planning",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP",
-            "summary": "This blog post introduces the SAP Business Data Cloud Data Architecture Miniseries, a four-episode live session program taking place from June 1–5, 2026. It is tailored for SAP Partners, aiming to enhance their expertise in SAP BDC architecture and practices.",
-            "post_type": "Event"
           }
         ],
         "rest": []
