@@ -1,5 +1,48 @@
 [
   {
+    "id": "tue-2026-07-07",
+    "weekday": "Tuesday",
+    "iso": "2026-07-07",
+    "full": "Jul 7, 2026",
+    "title": "OCM bridges the gap between AI policies and daily behaviors by focusing on micro-moments of decision-making.",
+    "preview": "Designing systems that encourage responsible AI usage is critical for ethical adoption.",
+    "reads": "5 min",
+    "posts": 1,
+    "tags": [
+      "Business AI"
+    ],
+    "highlights": [
+      "OCM bridges the gap between AI policies and daily behaviors by focusing on micro-moments of decision-making.",
+      "Designing systems that encourage responsible AI usage is critical for ethical adoption.",
+      "Practical governance serves as a key enabler for implementing and sustaining ethical AI practices."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "From AI Policy to Daily Behaviour – How OCM Makes Governance Real",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/from-ai-policy-to-daily-behaviour-how-ocm-makes-governance-real/ba-p/14434780",
+            "author": "DaveRyan",
+            "date_published": "2026-07-06",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "The blog discusses how organizational change management (OCM) bridges the gap between AI policies and daily behaviors by focusing on micro-moments where individuals decide how to act on AI outputs. It emphasizes the importance of designing systems that encourage responsible AI usage. Practical governance is highlighted as a key enabler for ethical AI adoption.",
+            "post_type": "Article"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "mon-2026-07-06",
     "weekday": "Monday",
     "iso": "2026-07-06",
@@ -2565,60 +2608,6 @@
             "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/mastering-sap-business-data-cloud-discovery-workshop-2026-q2/ba-p/14403569",
             "author": "JoseBastidas",
             "date_published": "2026-05-26",
-            "matching_tags": [
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP"
-          }
-        ],
-        "rest": []
-      }
-    ]
-  },
-  {
-    "id": "tue-2026-05-26",
-    "weekday": "Tuesday",
-    "iso": "2026-05-26",
-    "full": "May 26, 2026",
-    "title": "SAP Datasphere enables the creation of cost center hierarchy analytical models for streamlined financial analysis.",
-    "preview": "The new SAP Snowflake integration enhances data connectivity and analytics capabilities within the SAP Business Data Cloud.",
-    "reads": "10 min",
-    "posts": 2,
-    "tags": [
-      "Business Data Cloud"
-    ],
-    "highlights": [
-      "SAP Datasphere enables the creation of cost center hierarchy analytical models for streamlined financial analysis.",
-      "The new SAP Snowflake integration enhances data connectivity and analytics capabilities within the SAP Business Data Cloud.",
-      "General availability of the SAP Snowflake connector simplifies access to enterprise data for advanced insights.",
-      "SAP continues to expand its ecosystem with tools that bridge data silos and improve decision-making processes."
-    ],
-    "sections": [
-      {
-        "name": "SAP Business Data Cloud",
-        "tags": [
-          "SAP Business Data Cloud"
-        ],
-        "top": [
-          {
-            "title": "Building a Cost Center Hierarchy Analytical Model in SAP Datasphere",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/building-a-cost-center-hierarchy-analytical-model-in-sap-datasphere/ba-p/14403638",
-            "author": "Siva",
-            "date_published": "2026-05-26",
-            "matching_tags": [
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-members",
-            "board_name": "Technology Blog Posts by Members"
-          },
-          {
-            "title": "Announcing General Availability of SAP Snowflake and SAP Business Data Cloud Connect for Snowflake",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/announcing-general-availability-of-sap-snowflake-and-sap-business-data/ba-p/14386550",
-            "author": "hozumi",
-            "date_published": "2026-05-25",
             "matching_tags": [
               "SAP Business Data Cloud"
             ],
