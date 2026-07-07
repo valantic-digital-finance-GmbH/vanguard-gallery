@@ -6,10 +6,12 @@
     "full": "Jul 7, 2026",
     "title": "OCM bridges the gap between AI policies and daily behaviors by focusing on micro-moments of decision-making.",
     "preview": "Designing systems that encourage responsible AI usage is critical for ethical adoption.",
-    "reads": "5 min",
-    "posts": 1,
+    "reads": "6 min",
+    "posts": 2,
     "tags": [
-      "Business AI"
+      "Business AI",
+      "Datasphere",
+      "Business Data Cloud"
     ],
     "highlights": [
       "OCM bridges the gap between AI policies and daily behaviors by focusing on micro-moments of decision-making.",
@@ -36,6 +38,30 @@
             "board_name": "Technology Blog Posts by SAP",
             "summary": "The blog discusses how organizational change management (OCM) bridges the gap between AI policies and daily behaviors by focusing on micro-moments where individuals decide how to act on AI outputs. It emphasizes the importance of designing systems that encourage responsible AI usage. Practical governance is highlighted as a key enabler for ethical AI adoption.",
             "post_type": "Article"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Business Data Architecture: Transformations - Making Architectural Boundaries Enforceable",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/business-data-architecture-transformations-making-architectural-boundaries/ba-p/14434885",
+            "author": "AllanHald",
+            "date_published": "2026-07-07",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts",
+            "summary": "The blog discusses the importance of enforcing architectural boundaries in business data architecture to maintain consistency. It highlights challenges like subjective judgment calls by developers and emphasizes the need for explicit rules to prevent misinterpretations. Clear guidelines ensure structured data flow and domain ownership.",
+            "post_type": "Deep dive"
           }
         ],
         "rest": []
