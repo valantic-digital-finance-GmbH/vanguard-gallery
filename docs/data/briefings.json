@@ -6,10 +6,11 @@
     "full": "Jul 8, 2026",
     "title": "Rakesh Ramakrishnan emphasizes the importance of transitioning from siloed practices to strategic approaches in SAP data management.",
     "preview": "Two decades of experience reveal that successful data management hinges on aligning technical execution with business objectives.",
-    "reads": "1 min",
-    "posts": 1,
+    "reads": "2 min",
+    "posts": 2,
     "tags": [
-      "Business Data Cloud"
+      "Business Data Cloud",
+      "Analytics Cloud"
     ],
     "highlights": [
       "Rakesh Ramakrishnan emphasizes the importance of transitioning from siloed practices to strategic approaches in SAP data management.",
@@ -35,6 +36,31 @@
             "board_id": "data-professionalsblog-board",
             "board_name": "Data Professionals Blog posts",
             "summary": "The blog post shares insights from Rakesh Ramakrishnan, an experienced SAP practitioner with two decades in data management. It highlights his journey from programming to becoming a development lead and his perspective on factors that determine the success of data management implementations. The discussion emphasizes strategic approaches over siloed practices.",
+            "post_type": "Article"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "Context Engineering in SAP Analytics Cloud: Building ContextWallet for AI and Genie Integrations",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/context-engineering-in-sap-analytics-cloud-building-contextwallet-for-ai/ba-p/14421318",
+            "author": "sampurnosarkar",
+            "date_published": "2026-07-08",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members",
+            "summary": "The blog post introduces Context Engineering and the development of ContextWallet, a custom SAP Analytics Cloud widget designed to capture and share dashboard context with AI systems like Databricks Genie. It addresses the challenge of preserving business context for more accurate AI responses and discusses the motivation, architecture, and implementation of ContextWallet. The post also highlights its potential as a foundation for future SAC-to-AI integrations.",
             "post_type": "Article"
           }
         ],
