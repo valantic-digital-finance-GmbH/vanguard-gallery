@@ -1,5 +1,48 @@
 [
   {
+    "id": "wed-2026-07-08",
+    "weekday": "Wednesday",
+    "iso": "2026-07-08",
+    "full": "Jul 8, 2026",
+    "title": "Rakesh Ramakrishnan emphasizes the importance of transitioning from siloed practices to strategic approaches in SAP data management.",
+    "preview": "Two decades of experience reveal that successful data management hinges on aligning technical execution with business objectives.",
+    "reads": "1 min",
+    "posts": 1,
+    "tags": [
+      "Business Data Cloud"
+    ],
+    "highlights": [
+      "Rakesh Ramakrishnan emphasizes the importance of transitioning from siloed practices to strategic approaches in SAP data management.",
+      "Two decades of experience reveal that successful data management hinges on aligning technical execution with business objectives.",
+      "The blog underscores the value of cross-functional collaboration and long-term planning in SAP implementations."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "From Silos to Strategy: What 20 Years of SAP Data Management Taught One Practitioner",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/from-silos-to-strategy-what-20-years-of-sap-data-management-taught-one/ba-p/14434904",
+            "author": "Corrie",
+            "date_published": "2026-07-07",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts",
+            "summary": "The blog post shares insights from Rakesh Ramakrishnan, an experienced SAP practitioner with two decades in data management. It highlights his journey from programming to becoming a development lead and his perspective on factors that determine the success of data management implementations. The discussion emphasizes strategic approaches over siloed practices.",
+            "post_type": "Article"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "tue-2026-07-07",
     "weekday": "Tuesday",
     "iso": "2026-07-07",
@@ -2556,84 +2599,6 @@
             "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/contextualize-and-reason-post-sap-sapphire-sap-business-data-cloud-briefing/ba-p/14404271",
             "author": "JoseBastidas",
             "date_published": "2026-05-27",
-            "matching_tags": [
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP"
-          }
-        ],
-        "rest": []
-      }
-    ]
-  },
-  {
-    "id": "wed-2026-05-27",
-    "weekday": "Wednesday",
-    "iso": "2026-05-27",
-    "full": "May 27, 2026",
-    "title": "SAP's partnership with Anthropic enables business professionals to leverage Claude for building scalable business cases using SAP's Business Accelerator Hub sandbox data.",
-    "preview": "The blog provides a step-by-step guide, including a Master Prompt and sample output, for creating proofs of concept without requiring engineering expertise.",
-    "reads": "11 min",
-    "posts": 3,
-    "tags": [
-      "Business AI",
-      "Business Data Cloud"
-    ],
-    "highlights": [
-      "SAP's partnership with Anthropic enables business professionals to leverage Claude for building scalable business cases using SAP's Business Accelerator Hub sandbox data.",
-      "The blog provides a step-by-step guide, including a Master Prompt and sample output, for creating proofs of concept without requiring engineering expertise.",
-      "The focus is on practical, accessible tools that allow users to start small and think at scale in their business initiatives."
-    ],
-    "sections": [
-      {
-        "name": "SAP Business AI",
-        "tags": [
-          "SAP Business AI"
-        ],
-        "top": [
-          {
-            "title": "Start Small. Think at Scale. Business Professionals Can Use SAP & Claude to Build a Business Case.",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/start-small-think-at-scale-business-professionals-can-use-sap-amp-claude-to/ba-p/14404412",
-            "author": "RichDBlumberg",
-            "date_published": "2026-05-26",
-            "matching_tags": [
-              "SAP Business AI"
-            ],
-            "minutes": 1,
-            "board_id": "technology-blog-members",
-            "board_name": "Technology Blog Posts by Members",
-            "summary": "This blog explores the SAP and Anthropic partnership and provides a step-by-step guide for business professionals to create a proof of concept using SAP's Business Accelerator Hub sandbox data and Claude. It includes a Master Prompt and sample output, enabling users to start small and scale without engineering support. The focus is on practical application and accessibility.",
-            "post_type": "How-to"
-          },
-          {
-            "title": "Joule Everywhere: Breaking Down SAP’s Biggest AI Announcements from Sapphire 2026",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/joule-everywhere-breaking-down-sap-s-biggest-ai-announcements-from-sapphire/ba-p/14404234",
-            "author": "pvsbprasad",
-            "date_published": "2026-05-26",
-            "matching_tags": [
-              "SAP Business AI",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-members",
-            "board_name": "Technology Blog Posts by Members"
-          }
-        ],
-        "rest": []
-      },
-      {
-        "name": "SAP Business Data Cloud",
-        "tags": [
-          "SAP Business Data Cloud"
-        ],
-        "top": [
-          {
-            "title": "Mastering SAP Business Data Cloud - Discovery workshop 2026-Q2",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/mastering-sap-business-data-cloud-discovery-workshop-2026-q2/ba-p/14403569",
-            "author": "JoseBastidas",
-            "date_published": "2026-05-26",
             "matching_tags": [
               "SAP Business Data Cloud"
             ],
