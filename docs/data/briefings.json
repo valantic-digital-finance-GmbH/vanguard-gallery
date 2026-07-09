@@ -1,5 +1,98 @@
 [
   {
+    "id": "thu-2026-07-09",
+    "weekday": "Thursday",
+    "iso": "2026-07-09",
+    "full": "Jul 9, 2026",
+    "title": "SAP Business Data Cloud and Datasphere saw three releases in June, introducing enhanced data source connectivity, transformation features, and operational updates.",
+    "preview": "A DSAG AK Business Analytics meeting recap, a video walkthrough of nine key features, and a roundup of 40 community blogs provide comprehensive insights into SAP Datasphere developments.",
+    "reads": "8 min",
+    "posts": 3,
+    "tags": [
+      "Analytics Cloud",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [
+      "SAP Business Data Cloud and Datasphere saw three releases in June, introducing enhanced data source connectivity, transformation features, and operational updates.",
+      "A DSAG AK Business Analytics meeting recap, a video walkthrough of nine key features, and a roundup of 40 community blogs provide comprehensive insights into SAP Datasphere developments.",
+      "Unit conversion in SAP Datasphere can be implemented using T006 and T006D tables, with a detailed example converting LB to KG using calculated columns and the CONVERT_UNIT function.",
+      "Key unit conversion concepts like base units, conversion factors, and scaling with EXP10 are explained for precise implementation in SAP Datasphere."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "SAP Business Data Cloud and Datasphere News in June",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/sap-business-data-cloud-and-datasphere-news-in-june/ba-p/14431586",
+            "author": "kpsauer",
+            "date_published": "2026-07-09",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts",
+            "summary": "The blog highlights three consecutive releases of SAP Business Data Cloud and Datasphere in June, featuring new data source connectivity, transformation improvements, and operational enhancements. It also recaps the DSAG AK Business Analytics meeting, shares community blog highlights, and provides a video walkthrough of nine key features. A full roundup of 40 community blogs is included for further insights.",
+            "post_type": "Release"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "Unit Conversion in SAP Datasphere using T006 (LB to KG Example)",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/unit-conversion-in-sap-datasphere-using-t006-lb-to-kg-example/ba-p/14424762",
+            "author": "GiriVenkataAnandaRaju_Alapati",
+            "date_published": "2026-07-08",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 2,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members",
+            "summary": "The blog post explains how to perform unit conversion in SAP Datasphere using standard SAP tables T006 and T006D, focusing on converting LB to KG. It details the implementation steps, including creating calculated columns and using the CONVERT_UNIT function, and provides a worked example for validation. Key concepts like base units, conversion factors, and scaling with EXP10 are also covered.",
+            "post_type": "How-to"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "SAP Analytics Cloud add-in for Microsoft Excel: Innovation, adoption and AI vision",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/sap-analytics-cloud-add-in-for-microsoft-excel-innovation-adoption-and-ai/ba-p/14435593",
+            "author": "JoseBastidas",
+            "date_published": "2026-07-08",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "wed-2026-07-08",
     "weekday": "Wednesday",
     "iso": "2026-07-08",
@@ -2552,85 +2645,6 @@
             "board_name": "Technology Blog Posts by SAP",
             "summary": "The blog introduces a four-episode live session miniseries in June 2026, aimed at SAP Partners to enhance their understanding of SAP Business Data Cloud (SAP BDC) data architecture. It targets architects, consultants, and data professionals seeking advanced insights into SAP BDC capabilities.",
             "post_type": "Event"
-          }
-        ],
-        "rest": []
-      }
-    ]
-  },
-  {
-    "id": "thu-2026-05-28",
-    "weekday": "Thursday",
-    "iso": "2026-05-28",
-    "full": "May 28, 2026",
-    "title": "Traditional data architectures like SAP BW struggle to meet the real-time demands of modern AI workloads.",
-    "preview": "Static pipelines and siloed systems are insufficient for dynamic, AI-driven applications.",
-    "reads": "11 min",
-    "posts": 3,
-    "tags": [
-      "Business AI",
-      "Datasphere",
-      "Business Data Cloud"
-    ],
-    "highlights": [
-      "Traditional data architectures like SAP BW struggle to meet the real-time demands of modern AI workloads.",
-      "Static pipelines and siloed systems are insufficient for dynamic, AI-driven applications.",
-      "Organizations must adopt more flexible and advanced data stacks to stay competitive in the AI era."
-    ],
-    "sections": [
-      {
-        "name": "SAP Business AI",
-        "tags": [
-          "SAP Business AI"
-        ],
-        "top": [
-          {
-            "title": "SAP Business AI in Life Sciences - Partner live expert session",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-ai-in-life-sciences-partner-live-expert-session/ba-p/14404402",
-            "author": "JoseBastidas",
-            "date_published": "2026-05-27",
-            "matching_tags": [
-              "SAP Business AI"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP"
-          }
-        ],
-        "rest": []
-      },
-      {
-        "name": "SAP Business Data Cloud",
-        "tags": [
-          "SAP Business Data Cloud"
-        ],
-        "top": [
-          {
-            "title": "AI has outgrown legacy data architectures like SAP BW — is your stack ready to keep up?",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/ai-has-outgrown-legacy-data-architectures-like-sap-bw-is-your-stack-ready/ba-p/14404820",
-            "author": "kurzdo93",
-            "date_published": "2026-05-27",
-            "matching_tags": [
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 1,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP",
-            "summary": "The blog post discusses how traditional data architectures, such as SAP BW, are inadequate for modern AI demands. It highlights the limitations of static pipelines and siloed systems in handling real-time, dynamic workloads required by AI and modern applications. The post emphasizes the need for a more adaptable and advanced data stack.",
-            "post_type": "Article"
-          },
-          {
-            "title": "Contextualize and reason Post-SAP Sapphire SAP Business Data Cloud briefing",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/contextualize-and-reason-post-sap-sapphire-sap-business-data-cloud-briefing/ba-p/14404271",
-            "author": "JoseBastidas",
-            "date_published": "2026-05-27",
-            "matching_tags": [
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP"
           }
         ],
         "rest": []
