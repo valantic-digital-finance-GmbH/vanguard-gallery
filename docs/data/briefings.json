@@ -6,8 +6,8 @@
     "full": "Jul 9, 2026",
     "title": "SAP Business Data Cloud and Datasphere saw three releases in June, introducing enhanced data source connectivity, transformation features, and operational updates.",
     "preview": "A DSAG AK Business Analytics meeting recap, a video walkthrough of nine key features, and a roundup of 40 community blogs provide comprehensive insights into SAP Datasphere developments.",
-    "reads": "8 min",
-    "posts": 3,
+    "reads": "13 min",
+    "posts": 4,
     "tags": [
       "Analytics Cloud",
       "Datasphere",
@@ -42,7 +42,20 @@
             "post_type": "Release"
           }
         ],
-        "rest": []
+        "rest": [
+          {
+            "title": "Leveraging Data Product Studio - what is coming",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/leveraging-data-product-studio-what-is-coming/ba-p/14436384",
+            "author": "JoseBastidas",
+            "date_published": "2026-07-09",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ]
       },
       {
         "name": "SAP Datasphere",
