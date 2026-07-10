@@ -1,5 +1,127 @@
 [
   {
+    "id": "fri-2026-07-10",
+    "weekday": "Friday",
+    "iso": "2026-07-10",
+    "full": "Jul 10, 2026",
+    "title": "Strategies for scaling Joule for Consultants across project teams include practical metrics, adoption patterns, and operational practices to maximize ROI.",
+    "preview": "A BW-like where-used feature is needed to trace DSP model changes and analyze their impact on SAC Stories, addressing challenges with failed DSP loads.",
+    "reads": "12 min",
+    "posts": 4,
+    "tags": [
+      "Business AI",
+      "Analytics Cloud",
+      "Datasphere",
+      "SAC Planning",
+      "Business Data Cloud"
+    ],
+    "highlights": [
+      "Strategies for scaling Joule for Consultants across project teams include practical metrics, adoption patterns, and operational practices to maximize ROI.",
+      "A BW-like where-used feature is needed to trace DSP model changes and analyze their impact on SAC Stories, addressing challenges with failed DSP loads.",
+      "SAP Analytics Cloud scripting can be used to build customer master data input forms for adding new records with auto-incremented IDs and updating attributes.",
+      "Horizon Morning will become the default SAP Analytics Cloud theme in Q4 2026, with Belize remaining temporarily available before deprecation."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "From Champions to Scale – How to Operationalize Joule for Consultants Across Project Teams",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/from-champions-to-scale-how-to-operationalize-joule-for-consultants-across/ba-p/14435917",
+            "author": "simsx",
+            "date_published": "2026-07-09",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "The blog discusses strategies to move from initial enthusiasm to widespread adoption of Joule for Consultants. It provides practical metrics, adoption patterns, and scaling practices aimed at helping SAP leaders maximize ROI from their J4C investment. The focus is on operationalizing the tool across project teams effectively.",
+            "post_type": "How-to"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Horizon Morning Becomes the New SAP Analytics Cloud Default Theme in Q4 2026",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/horizon-morning-becomes-the-new-sap-analytics-cloud-default-theme-in-q4/ba-p/14409412",
+            "author": "AnnaBurkhardt",
+            "date_published": "2026-07-09",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts",
+            "summary": "SAP Analytics Cloud will adopt Horizon Morning as the default theme starting in Q4 2026. Custom user settings will remain unchanged, and the Belize theme will still be available temporarily before its planned deprecation.",
+            "post_type": "Release"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "DSP Models used in SAC Stories (BW-like where-used)",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/dsp-models-used-in-sac-stories-bw-like-where-used/ba-p/14437209",
+            "author": "Martin_Kuma",
+            "date_published": "2026-07-09",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Datasphere"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members",
+            "summary": "The blog discusses challenges in identifying the impact of failed DSP loads on SAC Stories and provides insights into tracing DSP model changes, such as dimension adjustments, to affected SAC Stories. It highlights the need for a BW-like where-used feature for impact analysis and lineage tracking from DSP to SAC.",
+            "post_type": "Article"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "Building a Customer Master Data Input Form Using SAC Scripting",
+            "url": "https://community.sap.com/t5/data-and-analytics-blog-posts/building-a-customer-master-data-input-form-using-sac-scripting/ba-p/14433671",
+            "author": "yash16jadhav47",
+            "date_published": "2026-07-09",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Analytics Cloud for planning"
+            ],
+            "minutes": 1,
+            "board_id": "data-analyticsblog-board",
+            "board_name": "Data and Analytics Blog Posts",
+            "summary": "The blog explains how to use SAP Analytics Cloud (SAC) scripting to create a customer master data input form. This form allows users to add new customer records with auto-incremented Customer IDs and update existing customer attributes. The post provides a step-by-step guide to building these forms.",
+            "post_type": "How-to"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "thu-2026-07-09",
     "weekday": "Thursday",
     "iso": "2026-07-09",
@@ -2614,53 +2736,6 @@
             "board_name": "Technology Blog Posts by SAP"
           }
         ]
-      }
-    ]
-  },
-  {
-    "id": "fri-2026-05-29",
-    "weekday": "Friday",
-    "iso": "2026-05-29",
-    "full": "May 29, 2026",
-    "title": "SAP announces a four-episode live miniseries in June 2026 focused on SAP Business Data Cloud (SAP BDC) data architecture.",
-    "preview": "The series is designed for SAP Partners, including architects, consultants, and data professionals, to deepen their expertise in SAP BDC capabilities.",
-    "reads": "5 min",
-    "posts": 1,
-    "tags": [
-      "Analytics Cloud",
-      "SAC Planning",
-      "Business Data Cloud"
-    ],
-    "highlights": [
-      "SAP announces a four-episode live miniseries in June 2026 focused on SAP Business Data Cloud (SAP BDC) data architecture.",
-      "The series is designed for SAP Partners, including architects, consultants, and data professionals, to deepen their expertise in SAP BDC capabilities.",
-      "Participants will gain advanced insights into SAP BDC's data architecture to support strategic implementations."
-    ],
-    "sections": [
-      {
-        "name": "SAP Business Data Cloud",
-        "tags": [
-          "SAP Business Data Cloud"
-        ],
-        "top": [
-          {
-            "title": "From Blueprint to Reality: SAP BDC Data Architecture Deep Dive Miniseries- June 2026",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/from-blueprint-to-reality-sap-bdc-data-architecture-deep-dive-miniseries/ba-p/14401555",
-            "author": "KarthikM8",
-            "date_published": "2026-05-22",
-            "matching_tags": [
-              "SAP Analytics Cloud",
-              "SAP Analytics Cloud for planning",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP",
-            "summary": "The blog introduces a four-episode live session miniseries in June 2026, aimed at SAP Partners to enhance their understanding of SAP Business Data Cloud (SAP BDC) data architecture. It targets architects, consultants, and data professionals seeking advanced insights into SAP BDC capabilities.",
-            "post_type": "Event"
-          }
-        ],
-        "rest": []
       }
     ]
   }
