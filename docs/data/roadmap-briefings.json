@@ -1,5 +1,99 @@
 [
   {
+    "id": "mon-2026-07-13",
+    "iso": "2026-07-13",
+    "full": "13 July 2026",
+    "period": "2026-07-06 – 2026-07-12",
+    "title": "8 changes across 2 products",
+    "preview": "SAP Analytics Cloud: 4 items added. SAP Business Data Cloud: 4 items added",
+    "total_changes": 8,
+    "products_with_changes": [
+      "SAP Analytics Cloud",
+      "SAP Business Data Cloud"
+    ],
+    "sections": [
+      {
+        "slug": "sap-analytics-cloud",
+        "name": "SAP Analytics Cloud",
+        "slipped": [],
+        "added": [
+          {
+            "id": "C22C3A1E3F7C49859BF79D46254D7ECA",
+            "title": "Analytical insights capability in Joule and just ask feature: intent framework",
+            "quarter": "Q4 2026",
+            "capability": "AI for Planning and Analytics",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=C22C3A1E3F7C49859BF79D46254D7ECA"
+          },
+          {
+            "id": "4BBE9E74C1224648B105FC3E7F5C571A",
+            "title": "Analytical insights capability in Joule: LLM-based generated explanations",
+            "quarter": "Q4 2026",
+            "capability": "AI for Planning and Analytics",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=4BBE9E74C1224648B105FC3E7F5C571A"
+          },
+          {
+            "id": "ABC6D2E547D04234862B69FBDB84610F",
+            "title": "Analytical insights capability in Joule: support for metadata-related questions",
+            "quarter": "Q4 2026",
+            "capability": "AI for Planning and Analytics",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=ABC6D2E547D04234862B69FBDB84610F"
+          },
+          {
+            "id": "D8A70E4836274DFFB934A6BAB0299887",
+            "title": "Just ask feature: LLM-based generated explanations",
+            "quarter": "Q3 2026",
+            "capability": "AI for Planning and Analytics",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=D8A70E4836274DFFB934A6BAB0299887"
+          }
+        ],
+        "deleted": []
+      },
+      {
+        "slug": "sap-business-data-cloud",
+        "name": "SAP Business Data Cloud",
+        "slipped": [],
+        "added": [
+          {
+            "id": "C22C3A1E3F7C49859BF79D46254D7ECA",
+            "title": "Analytical insights capability in Joule and just ask feature: intent framework",
+            "quarter": "Q4 2026",
+            "capability": "AI for Planning and Analytics",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=C22C3A1E3F7C49859BF79D46254D7ECA"
+          },
+          {
+            "id": "4BBE9E74C1224648B105FC3E7F5C571A",
+            "title": "Analytical insights capability in Joule: LLM-based generated explanations",
+            "quarter": "Q4 2026",
+            "capability": "AI for Planning and Analytics",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=4BBE9E74C1224648B105FC3E7F5C571A"
+          },
+          {
+            "id": "ABC6D2E547D04234862B69FBDB84610F",
+            "title": "Analytical insights capability in Joule: support for metadata-related questions",
+            "quarter": "Q4 2026",
+            "capability": "AI for Planning and Analytics",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=ABC6D2E547D04234862B69FBDB84610F"
+          },
+          {
+            "id": "D8A70E4836274DFFB934A6BAB0299887",
+            "title": "Just ask feature: LLM-based generated explanations",
+            "quarter": "Q3 2026",
+            "capability": "AI for Planning and Analytics",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=D8A70E4836274DFFB934A6BAB0299887"
+          }
+        ],
+        "deleted": []
+      },
+      {
+        "slug": "sap-datasphere",
+        "name": "SAP Datasphere",
+        "slipped": [],
+        "added": [],
+        "deleted": []
+      }
+    ]
+  },
+  {
     "id": "mon-2026-07-06",
     "iso": "2026-07-06",
     "full": "6 July 2026",
