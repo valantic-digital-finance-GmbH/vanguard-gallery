@@ -1,0 +1,16 @@
+{
+  "id": "delta-dashboard",
+  "order": 60,
+  "title": "Delta Dashboard",
+  "tag": "Project controlling",
+  "icon": "ph-gauge",
+  "repo": "https://github.com/valantic-digital-finance-GmbH/delta-dashboard",
+  "description": "Pulls Projektron time-booking data into a local DuckDB store and surfaces project-controlling metrics — budget, actuals, delta, and burn-rate forecasts — in a fast Next.js dashboard.",
+  "benefits": [
+    "Tracks budget, actuals, delta, and forecast KPIs across every WBS task and team in one view",
+    "Imports Projektron bookings, structure, and invoicing data through an in-app 3-step wizard — no manual CSV wrangling",
+    "Forecasts estimate-at-completion with a rolling 3-month moving average and a traffic-light status badge"
+  ],
+  "stack": "Next.js · React · DuckDB · Python · Playwright",
+  "image": "assets/usecases/delta-dashboard/preview.svg"
+}
