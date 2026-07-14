@@ -1,5 +1,76 @@
 [
   {
+    "id": "tue-2026-07-14",
+    "weekday": "Tuesday",
+    "iso": "2026-07-14",
+    "full": "Jul 14, 2026",
+    "title": "SAP Activate Prompt Library offers curated AI prompts via SAP for Me to streamline and enhance SAP implementation projects.",
+    "preview": "The SAP Business AI Platform (BAIP), introduced at SAP Sapphire 2026, integrates SAP BTP, BDC, and BTM to enable scalable AI-driven business processes.",
+    "reads": "11 min",
+    "posts": 3,
+    "tags": [
+      "Business AI",
+      "Business Data Cloud"
+    ],
+    "highlights": [
+      "SAP Activate Prompt Library offers curated AI prompts via SAP for Me to streamline and enhance SAP implementation projects.",
+      "The SAP Business AI Platform (BAIP), introduced at SAP Sapphire 2026, integrates SAP BTP, BDC, and BTM to enable scalable AI-driven business processes.",
+      "BAIP aims to transform enterprise operations by providing tools for building, governing, and scaling AI capabilities."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Introducing the SAP Activate Prompt Library: Curated AI Prompts for Your Implementation Project",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/introducing-the-sap-activate-prompt-library-curated-ai-prompts-for-your/ba-p/14436408",
+            "author": "Chandan_Gurav",
+            "date_published": "2026-07-13",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "The blog introduces the SAP Activate Prompt Library, a curated collection of AI prompts designed to support SAP implementation projects. These prompts are accessible through SAP for Me, streamlining project workflows. This resource aims to enhance efficiency and effectiveness in SAP implementations.",
+            "post_type": "Release"
+          },
+          {
+            "title": "SAP Business AI Platform: What It Means for SAP BTP & SAP BDC Customers – Live Expert Session",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-ai-platform-what-it-means-for-sap-btp-amp-sap-bdc-customers/ba-p/14439249",
+            "author": "TaniaD",
+            "date_published": "2026-07-13",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "The blog discusses the introduction of the SAP Business AI Platform (BAIP) at SAP Sapphire 2026. It highlights how BAIP integrates SAP BTP, BDC, and BTM to enable enterprises to build, govern, and scale AI-driven business processes. The post emphasizes the platform's potential to transform enterprise operations with AI capabilities.",
+            "post_type": "Event"
+          },
+          {
+            "title": "Partner Learning Accelerator: SAP certified - Positioning the Autonomous Enterprise",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/partner-learning-accelerator-sap-certified-positioning-the-autonomous/ba-p/14436358",
+            "author": "JoseBastidas",
+            "date_published": "2026-07-13",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "mon-2026-07-13",
     "weekday": "Monday",
     "iso": "2026-07-13",
@@ -2567,111 +2638,6 @@
             "post_type": "Article"
           }
         ]
-      }
-    ]
-  },
-  {
-    "id": "tue-2026-06-02",
-    "weekday": "Tuesday",
-    "iso": "2026-06-02",
-    "full": "Jun 2, 2026",
-    "title": "SAP Business Data Cloud enables end-to-end forecasting workflows without redundant data copies.",
-    "preview": "The platform integrates AI-driven forecasts, such as combining BW sales data with external weather inputs.",
-    "reads": "16 min",
-    "posts": 4,
-    "tags": [
-      "Analytics Cloud",
-      "SAC Planning",
-      "Datasphere",
-      "Business Data Cloud"
-    ],
-    "highlights": [
-      "SAP Business Data Cloud enables end-to-end forecasting workflows without redundant data copies.",
-      "The platform integrates AI-driven forecasts, such as combining BW sales data with external weather inputs.",
-      "Streamlined planning processes are achieved through seamless data integration and advanced analytics."
-    ],
-    "sections": [
-      {
-        "name": "SAP Business Data Cloud",
-        "tags": [
-          "SAP Business Data Cloud"
-        ],
-        "top": [
-          {
-            "title": "End-to-End Forecasting with SAP Business Data Cloud",
-            "url": "https://community.sap.com/t5/data-and-analytics-blog-posts/end-to-end-forecasting-with-sap-business-data-cloud/ba-p/14406650",
-            "author": "ilya_kirzner",
-            "date_published": "2026-06-01",
-            "matching_tags": [
-              "SAP Analytics Cloud for planning",
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 1,
-            "board_id": "data-analyticsblog-board",
-            "board_name": "Data and Analytics Blog Posts",
-            "summary": "The blog demonstrates how to create an end-to-end forecasting workflow using SAP Business Data Cloud without redundant data copies. It showcases an AI-driven Ice Cream sales forecast combining sales data from BW and external weather forecasts. This highlights the platform's integration capabilities for streamlined planning processes.",
-            "post_type": "How-to"
-          },
-          {
-            "title": "Communicating the value of SAP Business Data Cloud using personas",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/communicating-the-value-of-sap-business-data-cloud-using-personas/ba-p/14407169",
-            "author": "JoseBastidas",
-            "date_published": "2026-06-01",
-            "matching_tags": [
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP"
-          }
-        ],
-        "rest": []
-      },
-      {
-        "name": "SAP Datasphere",
-        "tags": [
-          "SAP Datasphere"
-        ],
-        "top": [
-          {
-            "title": "Hands-on Tutorial: Machine Learning with SAP HANA Cloud and BAS",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/hands-on-tutorial-machine-learning-with-sap-hana-cloud-and-bas/ba-p/14404096",
-            "author": "AndreasForster",
-            "date_published": "2026-06-01",
-            "matching_tags": [
-              "SAP Datasphere"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP"
-          }
-        ],
-        "rest": []
-      },
-      {
-        "name": "SAP Analytics Cloud",
-        "tags": [
-          "SAP Analytics Cloud",
-          "SAP Analytics Cloud for planning",
-          "SAP Analytics Cloud, data modeling"
-        ],
-        "top": [
-          {
-            "title": "Improved Data Access in Stories: Introducing the Data Panel and Drag & Drop Creation of Charts",
-            "url": "https://community.sap.com/t5/data-professionals-blog-posts/improved-data-access-in-stories-introducing-the-data-panel-and-drag-amp/ba-p/14406280",
-            "author": "Tunir",
-            "date_published": "2026-06-01",
-            "matching_tags": [
-              "SAP Analytics Cloud",
-              "SAP Analytics Cloud for planning"
-            ],
-            "minutes": 5,
-            "board_id": "data-professionalsblog-board",
-            "board_name": "Data Professionals Blog posts"
-          }
-        ],
-        "rest": []
       }
     ]
   }
