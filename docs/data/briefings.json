@@ -1,5 +1,108 @@
 [
   {
+    "id": "wed-2026-07-15",
+    "weekday": "Wednesday",
+    "iso": "2026-07-15",
+    "full": "Jul 15, 2026",
+    "title": "SAP Datasphere can trigger remote actions in SAP BTP ABAP Cloud via Task Chain APIs, enabling automated cross-system orchestration with secure integration through ABAP Cloud Communication Arrangements and Web APIs.",
+    "preview": "Three solution architectures—Direct API Integration, SAP Integration Suite, and a custom CAP App—are evaluated for initiating remote actions, focusing on complexity, cost, and transformation requireme",
+    "reads": "12 min",
+    "posts": 4,
+    "tags": [
+      "Analytics Cloud",
+      "SAC Planning",
+      "SAC Modeling",
+      "Business Data Cloud",
+      "Datasphere"
+    ],
+    "highlights": [
+      "SAP Datasphere can trigger remote actions in SAP BTP ABAP Cloud via Task Chain APIs, enabling automated cross-system orchestration with secure integration through ABAP Cloud Communication Arrangements and Web APIs.",
+      "Three solution architectures—Direct API Integration, SAP Integration Suite, and a custom CAP App—are evaluated for initiating remote actions, focusing on complexity, cost, and transformation requirements.",
+      "The SAP Business Data Cloud integrates SAP Datasphere, Databricks, and SAP Analytics Cloud to create a unified data layer, supporting modern data platform strategies for architects and technical leads.",
+      "Transforming SAP BW systems with SAP Business Data Cloud involves historical offloading, semantic design using SAP Datasphere, and zero-copy data sharing with Databricks to modernize data ecosystems.",
+      "SAP Business Data Cloud enables AI-driven data strategies while preserving legacy investments, offering a pathway to advanced and scalable data architectures."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "SAP Analytics Cloud: A Look at 18 Months of Customer-Driven Deliveries",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/sap-analytics-cloud-a-look-at-18-months-of-customer-driven-deliveries/ba-p/14437953",
+            "author": "William_Yu1",
+            "date_published": "2026-07-14",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Analytics Cloud for planning",
+              "SAP Analytics Cloud, data modeling",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          },
+          {
+            "title": "Start remote Process/Actions in BTP ABAP via Task Chains from SAP Datasphere",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/start-remote-process-actions-in-btp-abap-via-task-chains-from-sap/ba-p/14440248",
+            "author": "stefan_geiselhart2",
+            "date_published": "2026-07-14",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "The blog explains how SAP Datasphere can initiate remote actions in SAP BTP ABAP Cloud using Task Chain APIs for automated cross-system orchestration. It discusses leveraging ABAP Cloud Communication Arrangements and Web APIs for secure integration and evaluates three solution architectures: Direct API Integration, SAP Integration Suite, and a custom CAP App. Each architecture is analyzed based on complexity, cost, and transformation needs.",
+            "post_type": "Deep dive"
+          },
+          {
+            "title": "Architecture Deep-Dive: Transforming SAP BW with SAP Business Data Cloud",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/architecture-deep-dive-transforming-sap-bw-with-sap-business-data-cloud/ba-p/14438478",
+            "author": "Rudrapuneet",
+            "date_published": "2026-07-12",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members",
+            "summary": "This blog post explores transforming legacy SAP BW systems into advanced, AI-driven data ecosystems using SAP Business Data Cloud. It provides a technical deep-dive into topics like historical offloading, semantic design with SAP Datasphere, and zero-copy data sharing with Databricks. The post emphasizes modernizing data strategies while preserving existing investments.",
+            "post_type": "Deep dive"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "SAP Business Data Cloud Architecture: Datasphere, Databricks, and the Unified Data Layer",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-data-cloud-architecture-datasphere-databricks-and-the-unified/ba-p/14434829",
+            "author": "basanireddy",
+            "date_published": "2026-07-14",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "The blog explores the technical architecture of SAP Business Data Cloud, emphasizing the integration of SAP Datasphere, Databricks, and SAP Analytics Cloud. It is tailored for data architects and technical leads developing modern data platform strategies. Key insights include leveraging these tools for a unified data layer in SAP environments.",
+            "post_type": "Deep dive"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "tue-2026-07-14",
     "weekday": "Tuesday",
     "iso": "2026-07-14",
@@ -2556,88 +2659,6 @@
           }
         ],
         "rest": []
-      }
-    ]
-  },
-  {
-    "id": "wed-2026-06-03",
-    "weekday": "Wednesday",
-    "iso": "2026-06-03",
-    "full": "Jun 3, 2026",
-    "title": "SAP Business AI Platform introduces 'GOVERN' to ensure ethical, transparent, and compliant AI usage.",
-    "preview": "The 'GOVERN' framework emphasizes data privacy, bias mitigation, and regulatory adherence in AI applications.",
-    "reads": "11 min",
-    "posts": 3,
-    "tags": [
-      "Business AI",
-      "Business Data Cloud",
-      "Datasphere"
-    ],
-    "highlights": [
-      "SAP Business AI Platform introduces 'GOVERN' to ensure ethical, transparent, and compliant AI usage.",
-      "The 'GOVERN' framework emphasizes data privacy, bias mitigation, and regulatory adherence in AI applications.",
-      "SAP Business Data Cloud is tailored to address retail industry needs, focusing on real-time insights and customer-centric strategies.",
-      "Retailers can leverage SAP Business Data Cloud to unify data silos and enhance decision-making across supply chains and customer interactions.",
-      "Both initiatives underscore SAP's commitment to industry-specific solutions and responsible AI practices."
-    ],
-    "sections": [
-      {
-        "name": "SAP Business AI",
-        "tags": [
-          "SAP Business AI"
-        ],
-        "top": [
-          {
-            "title": "Post-SAP Sapphire briefing SAP Business AI Platform – GOVERN",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/post-sap-sapphire-briefing-sap-business-ai-platform-govern/ba-p/14405513",
-            "author": "JoseBastidas",
-            "date_published": "2026-06-02",
-            "matching_tags": [
-              "SAP Business AI"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP"
-          }
-        ],
-        "rest": []
-      },
-      {
-        "name": "SAP Business Data Cloud",
-        "tags": [
-          "SAP Business Data Cloud"
-        ],
-        "top": [
-          {
-            "title": "Positioning SAP Business Data Cloud for the Retail industry",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/positioning-sap-business-data-cloud-for-the-retail-industry/ba-p/14409058",
-            "author": "JoseBastidas",
-            "date_published": "2026-06-02",
-            "matching_tags": [
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP"
-          }
-        ],
-        "rest": [
-          {
-            "title": "SAP Business Data Cloud and Datasphere News in May",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-data-cloud-and-datasphere-news-in-may/ba-p/14408387",
-            "author": "kpsauer",
-            "date_published": "2026-06-03",
-            "matching_tags": [
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 1,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP",
-            "summary": "The blog highlights significant announcements about SAP Business Data Cloud (BDC) made during SAPPHIRE Orlando, along with two major Datasphere releases in May. It includes a SAPPHIRE recap, feature picks, and recommended community blogs. The author also shares a personal highlight from the month.",
-            "post_type": "Article"
-          }
-        ]
       }
     ]
   }
