@@ -1,5 +1,72 @@
 [
   {
+    "id": "fri-2026-07-17",
+    "weekday": "Friday",
+    "iso": "2026-07-17",
+    "full": "Jul 17, 2026",
+    "title": "SAP Business Data Cloud enables enterprise scalability with faster provisioning, downtime-free schema evolution, and enhanced observability.",
+    "preview": "The platform emphasizes an open ecosystem and granular lifecycle control for seamless integration and adaptability.",
+    "reads": "6 min",
+    "posts": 2,
+    "tags": [
+      "Business AI",
+      "Business Data Cloud"
+    ],
+    "highlights": [
+      "SAP Business Data Cloud enables enterprise scalability with faster provisioning, downtime-free schema evolution, and enhanced observability.",
+      "The platform emphasizes an open ecosystem and granular lifecycle control for seamless integration and adaptability.",
+      "Real-world metrics and delivered capabilities underscore the platform's enterprise readiness.",
+      "Key expert contributions were instrumental in shaping the insights and innovations discussed."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Context Gravity vs. Data Gravity: Enabling actionable AI in distributed landscapes with SAP BDC",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/context-gravity-vs-data-gravity-enabling-actionable-ai-in-distributed/ba-p/14433689",
+            "author": "stojanm",
+            "date_published": "2026-07-16",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Inside SAP Business Data Cloud: How Enterprises Run at Scale",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/inside-sap-business-data-cloud-how-enterprises-run-at-scale/ba-p/14441632",
+            "author": "BabacarT",
+            "date_published": "2026-07-16",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts",
+            "summary": "The blog explores how SAP Business Data Cloud ensures enterprise readiness through measurable outcomes like faster provisioning, downtime-free schema evolution, and deep observability. It highlights the platform's open ecosystem and granular lifecycle control, supported by real numbers and delivered capabilities. Contributions from key experts are acknowledged in shaping the insights shared.",
+            "post_type": "Article"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "thu-2026-07-16",
     "weekday": "Thursday",
     "iso": "2026-07-16",
@@ -2638,61 +2705,6 @@
             "minutes": 5,
             "board_id": "technology-blog-members",
             "board_name": "Technology Blog Posts by Members"
-          }
-        ],
-        "rest": []
-      }
-    ]
-  },
-  {
-    "id": "fri-2026-06-05",
-    "weekday": "Friday",
-    "iso": "2026-06-05",
-    "full": "Jun 5, 2026",
-    "title": "SAP Sapphire Madrid 2026 emphasized the shift from digital transformation to autonomous enterprise operations.",
-    "preview": "The SAP Autonomous Enterprise model leverages AI to independently manage workflows under human strategic oversight.",
-    "reads": "6 min",
-    "posts": 2,
-    "tags": [
-      "Business AI"
-    ],
-    "highlights": [
-      "SAP Sapphire Madrid 2026 emphasized the shift from digital transformation to autonomous enterprise operations.",
-      "The SAP Autonomous Enterprise model leverages AI to independently manage workflows under human strategic oversight.",
-      "Autonomy in enterprise operations aims to enhance efficiency and decision-making through AI-driven processes."
-    ],
-    "sections": [
-      {
-        "name": "SAP Business AI",
-        "tags": [
-          "SAP Business AI"
-        ],
-        "top": [
-          {
-            "title": "SAP Business AI in Professional Services - Partner live expert session",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-ai-in-professional-services-partner-live-expert-session/ba-p/14410554",
-            "author": "JoseBastidas",
-            "date_published": "2026-06-04",
-            "matching_tags": [
-              "SAP Business AI"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP"
-          },
-          {
-            "title": "Architecting for Autonomy: SAP Sapphire Madrid Takeaways",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/architecting-for-autonomy-sap-sapphire-madrid-takeaways/ba-p/14404889",
-            "author": "SaravananKNagarajan",
-            "date_published": "2026-06-04",
-            "matching_tags": [
-              "SAP Business AI"
-            ],
-            "minutes": 1,
-            "board_id": "technology-blog-members",
-            "board_name": "Technology Blog Posts by Members",
-            "summary": "The blog discusses the concept of the SAP Autonomous Enterprise, an AI-driven operating model where AI independently manages business workflows under human strategic direction and governance. This theme was highlighted as a key focus during the SAP Sapphire Madrid 2026 keynote, marking a shift from digital transformation to autonomy in enterprise operations.",
-            "post_type": "Event"
           }
         ],
         "rest": []
