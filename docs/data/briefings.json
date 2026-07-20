@@ -1,5 +1,132 @@
 [
   {
+    "id": "mon-2026-07-20",
+    "weekday": "Monday",
+    "iso": "2026-07-20",
+    "full": "Jul 20, 2026",
+    "title": "The SAP Change Makers Podcast serves as a centralized hub for episodes featuring thought leaders discussing topics like quantum computing, AI, and operational resilience, with regular updates for easy access.",
+    "preview": "NTT DATA's 10th consecutive SAP certification, earning the Golden Certificate, underscores its strategic focus on operational excellence and innovation through SAP BTP and AI technologies.",
+    "reads": "18 min",
+    "posts": 6,
+    "tags": [
+      "Business AI",
+      "Business Data Cloud",
+      "Analytics Cloud",
+      "Datasphere"
+    ],
+    "highlights": [
+      "The SAP Change Makers Podcast serves as a centralized hub for episodes featuring thought leaders discussing topics like quantum computing, AI, and operational resilience, with regular updates for easy access.",
+      "NTT DATA's 10th consecutive SAP certification, earning the Golden Certificate, underscores its strategic focus on operational excellence and innovation through SAP BTP and AI technologies.",
+      "SAP Snowflake in Business Data Cloud simplifies machine learning workflows with a hands-on guide to building models using tools like Random Forest and Cortex AI Copilot for actionable insights.",
+      "Engaging in SAP Data Architecture community discussions fosters skill-building and practical knowledge on challenges like governance, AI readiness, and modern data platform strategies.",
+      "The SAP BW Query Template Generator supports modernization by enabling seamless integration of SAP BW/4HANA data into Business Data Cloud for advanced analytics and AI-driven processes."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "The SAP Change Makers Podcast: All Episodes in One Place",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/the-sap-change-makers-podcast-all-episodes-in-one-place/ba-p/14443627",
+            "author": "oliverhuschke",
+            "date_published": "2026-07-18",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "The blog post introduces the SAP Change Makers Podcast, which features leaders and experts driving impactful change within and around SAP. It highlights key episodes covering topics like quantum computing, SAP Mission Control Center, resilience during Black Friday, and Agentic AI. The post serves as a permanent collection of all episodes, updated with new content for easy access and listening.",
+            "post_type": "Article"
+          },
+          {
+            "title": "Moving Past the AI \"Sprinkle\": Context, Company Memory & the Autonomous Enterprise",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/moving-past-the-ai-quot-sprinkle-quot-context-company-memory-amp-the/ba-p/14430473",
+            "author": "prapatsorn_kraijarus",
+            "date_published": "2026-07-17",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          },
+          {
+            "title": "20 Years of Unbroken SAP Certification - How NTT DATA Turns Operations into a Strategic Edge",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/20-years-of-unbroken-sap-certification-how-ntt-data-turns-operations-into-a/ba-p/14439941",
+            "author": "Christine13",
+            "date_published": "2026-07-17",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "NTT DATA has achieved its 10th consecutive SAP certification, earning the Golden Certificate for its exceptional commitment to quality in SAP operations. Lars Janitz, a senior executive at NTT DATA, discusses how the company balances operational stability with innovation, leveraging technologies like SAP BTP and AI to drive future opportunities. He emphasizes the importance of a strong operational foundation for unlocking the potential of cloud and AI advancements.",
+            "post_type": "Article"
+          }
+        ],
+        "rest": [
+          {
+            "title": "Getting Started with SAP Snowflake in Business Data Cloud: Build Your First ML Model",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/getting-started-with-sap-snowflake-in-business-data-cloud-build-your-first/ba-p/14440873",
+            "author": "sherwin_emami",
+            "date_published": "2026-07-17",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ]
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Supporting Your SAP Data Architecture Learning Journey Through Community Discussions",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/supporting-your-sap-data-architecture-learning-journey-through-community/ba-p/14443021",
+            "author": "ThierryAudas",
+            "date_published": "2026-07-17",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts",
+            "summary": "The blog highlights the value of engaging with a community of practitioners to enhance your SAP Data Architecture learning journey. It emphasizes discussions on real-world challenges, implementation strategies, governance, AI readiness, and modern data platforms. This collaborative approach supports skill-building and practical insights.",
+            "post_type": "Article"
+          },
+          {
+            "title": "BW Modenization continued with the SAP BW Query Template Generator",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/bw-modenization-continued-with-the-sap-bw-query-template-generator/ba-p/14428143",
+            "author": "heiko_schneider",
+            "date_published": "2026-07-17",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "The blog discusses the importance of a robust data foundation for leveraging SAP's Business Data Cloud and its innovations, such as AI-driven agents and Intelligent Content, to enhance business processes. It highlights the value of existing SAP BW/4HANA data and the need for tools to efficiently transition and integrate this data into modern platforms. The focus is on enabling seamless integration of SAP and non-SAP data for creating advanced analytic models and views.",
+            "post_type": "Article"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "fri-2026-07-17",
     "weekday": "Friday",
     "iso": "2026-07-17",
@@ -2570,145 +2697,5 @@
     "tags": [],
     "highlights": [],
     "sections": []
-  },
-  {
-    "id": "mon-2026-06-08",
-    "weekday": "Monday",
-    "iso": "2026-06-08",
-    "full": "Jun 8, 2026",
-    "title": "SAP Analytics Cloud now supports live planning model connections to Microsoft Azure, enabling real-time data querying and calculation without replication.",
-    "preview": "ABAP CDC-based replication in SAP Datasphere uses components like CDC logging tables and database triggers to ensure seamless data flow from S/4HANA to Datasphere Local Tables.",
-    "reads": "22 min",
-    "posts": 6,
-    "tags": [
-      "Analytics Cloud",
-      "SAC Planning",
-      "SAC Modeling",
-      "Business Data Cloud",
-      "Datasphere"
-    ],
-    "highlights": [
-      "SAP Analytics Cloud now supports live planning model connections to Microsoft Azure, enabling real-time data querying and calculation without replication.",
-      "ABAP CDC-based replication in SAP Datasphere uses components like CDC logging tables and database triggers to ensure seamless data flow from S/4HANA to Datasphere Local Tables.",
-      "A detailed guide explains troubleshooting the 'low space version' error in SAP Datasphere transformation flows, aiding consultants in resolving client issues.",
-      "S/4HANA Public Cloud integrates with AI and Business Data Cloud to enhance data-driven decision-making and leverage SAP Cloud ERP data for better business outcomes."
-    ],
-    "sections": [
-      {
-        "name": "SAP Business Data Cloud",
-        "tags": [
-          "SAP Business Data Cloud"
-        ],
-        "top": [
-          {
-            "title": "SAP Datasphere: Data Tiering Strategy and Best Practices",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-datasphere-data-tiering-strategy-and-best-practices/ba-p/14376106",
-            "author": "jeet_kapase",
-            "date_published": "2026-06-07",
-            "matching_tags": [
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP"
-          },
-          {
-            "title": "S/4HANA Public Cloud in the Age of AI and Business Data Cloud",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/s-4hana-public-cloud-in-the-age-of-ai-and-business-data-cloud/ba-p/14412495",
-            "author": "GiriRaaj",
-            "date_published": "2026-06-06",
-            "matching_tags": [
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP",
-            "summary": "The blog explores how S/4HANA Public Cloud integrates with AI and the Business Data Cloud (BDC) to enhance data-driven decision-making. It highlights leveraging SAP Cloud ERP data products within BDC for improved business outcomes.",
-            "post_type": "Article"
-          },
-          {
-            "title": "Live Versions for Planning Models in SAP Analytics Cloud: Microsoft Azure Is Here!",
-            "url": "https://community.sap.com/t5/data-professionals-blog-posts/live-versions-for-planning-models-in-sap-analytics-cloud-microsoft-azure-is/ba-p/14411873",
-            "author": "Max_Gander",
-            "date_published": "2026-06-05",
-            "matching_tags": [
-              "SAP Analytics Cloud",
-              "SAP Analytics Cloud for planning",
-              "SAP Analytics Cloud, data modeling",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 1,
-            "board_id": "data-professionalsblog-board",
-            "board_name": "Data Professionals Blog posts",
-            "summary": "SAP Analytics Cloud now supports live connections to Microsoft Azure for planning models, joining Google BigQuery and Snowflake. This allows users to query and calculate data live without replication, with options to copy data into plan versions as needed. The blog provides a detailed setup guide and addresses common questions.",
-            "post_type": "How-to"
-          }
-        ],
-        "rest": [
-          {
-            "title": "Under the Hood of ABAP CDC in SAP Datasphere Replication Flows",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/under-the-hood-of-abap-cdc-in-sap-datasphere-replication-flows/ba-p/14411878",
-            "author": "anilkumarauce",
-            "date_published": "2026-06-05",
-            "matching_tags": [
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 1,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP"
-          }
-        ]
-      },
-      {
-        "name": "SAP Datasphere",
-        "tags": [
-          "SAP Datasphere"
-        ],
-        "top": [
-          {
-            "title": "Error \"Space Version of space <SPACEID> is too low to run transformation flow\" in Datasphere ?",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/error-quot-space-version-of-space-lt-spaceid-gt-is-too-low-to-run/ba-p/14411786",
-            "author": "albertosimeoni",
-            "date_published": "2026-06-05",
-            "matching_tags": [
-              "SAP Datasphere"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-members",
-            "board_name": "Technology Blog Posts by Members",
-            "summary": "The blog post addresses the error related to low space version in SAP Datasphere when running a transformation flow. It focuses on troubleshooting and managing this issue, particularly in consultancy scenarios with clients.",
-            "post_type": "How-to"
-          }
-        ],
-        "rest": []
-      },
-      {
-        "name": "SAP Analytics Cloud",
-        "tags": [
-          "SAP Analytics Cloud",
-          "SAP Analytics Cloud for planning",
-          "SAP Analytics Cloud, data modeling"
-        ],
-        "top": [
-          {
-            "title": "How To Trigger Automated Email Notifications Based on KPI Thresholds in SAP Analytics Cloud",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/how-to-trigger-automated-email-notifications-based-on-kpi-thresholds-in-sap/ba-p/14406736",
-            "author": "Himanshu_Sharma_26",
-            "date_published": "2026-06-05",
-            "matching_tags": [
-              "SAP Analytics Cloud",
-              "SAP Analytics Cloud for planning",
-              "SAP Analytics Cloud, data modeling"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-members",
-            "board_name": "Technology Blog Posts by Members"
-          }
-        ],
-        "rest": []
-      }
-    ]
   }
 ]
