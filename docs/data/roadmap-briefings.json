@@ -1,5 +1,337 @@
 [
   {
+    "id": "mon-2026-07-20",
+    "iso": "2026-07-20",
+    "full": "20 July 2026",
+    "period": "2026-07-13 – 2026-07-19",
+    "title": "40 changes across 3 products",
+    "preview": "SAP Analytics Cloud: 3 items slipped, 16 items added. SAP Business Data Cloud: 2 items slipped, 18 items added. SAP Datasphere: 1 item added",
+    "total_changes": 40,
+    "products_with_changes": [
+      "SAP Analytics Cloud",
+      "SAP Business Data Cloud",
+      "SAP Datasphere"
+    ],
+    "sections": [
+      {
+        "slug": "sap-analytics-cloud",
+        "name": "SAP Analytics Cloud",
+        "slipped": [
+          {
+            "id": "D8274AA0B42F4735A183DA9E85C81EBD",
+            "title": "Chart footer in smart insights feature",
+            "old_quarter": "Q4 2026",
+            "new_quarter": "Q2 2027",
+            "direction": "forward",
+            "capability": "AI for Planning and Analytics",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=D8274AA0B42F4735A183DA9E85C81EBD"
+          },
+          {
+            "id": "20AF8C673D90408398400D5AA889A951",
+            "title": "Smart insights from table cells",
+            "old_quarter": "Q3 2026",
+            "new_quarter": "Q1 2027",
+            "direction": "forward",
+            "capability": "AI for Planning and Analytics",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=20AF8C673D90408398400D5AA889A951"
+          },
+          {
+            "id": "965E34650AEC485084D7DEF14EBC0225",
+            "title": "Joule support for performance analysis and quick fixes for story design",
+            "old_quarter": "Q3 2026",
+            "new_quarter": "Q4 2026",
+            "direction": "forward",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=965E34650AEC485084D7DEF14EBC0225"
+          }
+        ],
+        "added": [
+          {
+            "id": "FE82A83BA6C7496A88A94F0C4E185666",
+            "title": "Analytical search: LLM-based model readiness check",
+            "quarter": "Q3 2026",
+            "capability": "AI for Planning and Analytics",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=FE82A83BA6C7496A88A94F0C4E185666"
+          },
+          {
+            "id": "52F39CB2498A4C4BB11D895A7B145714",
+            "title": "Data Actions: support for dimension filter values based on other dimensions' attributes in data filter",
+            "quarter": "Q4 2026",
+            "capability": "Business Planning and Forecasting",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=52F39CB2498A4C4BB11D895A7B145714"
+          },
+          {
+            "id": "CAA720BB6E774ADDA5EEB7BEFCB44C09",
+            "title": "Data Entry: option to paste with scale of target cell",
+            "quarter": "Q4 2026",
+            "capability": "Business Planning and Forecasting",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=CAA720BB6E774ADDA5EEB7BEFCB44C09"
+          },
+          {
+            "id": "5EAEDC3E71474550A08A5027A2231DDB",
+            "title": "Extending capabilities of lite weight viewer",
+            "quarter": "Q3 2026",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=5EAEDC3E71474550A08A5027A2231DDB"
+          },
+          {
+            "id": "216D7FEEA6D74A2FAF9EC29E7266E0A2",
+            "title": "Home screen: new features",
+            "quarter": "Q3 2026",
+            "capability": "Data and Analytics Administration",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=216D7FEEA6D74A2FAF9EC29E7266E0A2"
+          },
+          {
+            "id": "CFA67E554FB14BE2AFCAB5B4E57D9F4B",
+            "title": "Introducing delegated owner persona to manage schedule publications",
+            "quarter": "Q3 2026",
+            "capability": "Insight Sharing and Collaboration",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=CFA67E554FB14BE2AFCAB5B4E57D9F4B"
+          },
+          {
+            "id": "965E34650AEC485084D7DEF14EBC0225",
+            "title": "Joule support for performance analysis and quick fixes for story design",
+            "quarter": "Q3 2026",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=965E34650AEC485084D7DEF14EBC0225"
+          },
+          {
+            "id": "6998994598CF42BFBEA8ECC34663BD28",
+            "title": "Lazy loading of data for columns in the table widget",
+            "quarter": "Q3 2026",
+            "capability": "Enterprise Reporting",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=6998994598CF42BFBEA8ECC34663BD28"
+          },
+          {
+            "id": "A4C617C3699946E5A6BE1EAD83280903",
+            "title": "New default theme: Morning Horizon",
+            "quarter": "Q4 2026",
+            "capability": "Data and Analytics Administration",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=A4C617C3699946E5A6BE1EAD83280903"
+          },
+          {
+            "id": "558ABC34F1094DBF909263295D173521",
+            "title": "Quick builder panel for chart widgets in story view time",
+            "quarter": "Q3 2026",
+            "capability": "Exploratory Data Analysis",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=558ABC34F1094DBF909263295D173521"
+          },
+          {
+            "id": "85ABCEC7462F441383CE46DF0EF6611B",
+            "title": "Sorting in waterfall charts",
+            "quarter": "Q4 2026",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=85ABCEC7462F441383CE46DF0EF6611B"
+          },
+          {
+            "id": "0056C551B4424967B6F8EF29422DD492",
+            "title": "Support for table widget building through a drag and drop experience",
+            "quarter": "Q3 2026",
+            "capability": "Enterprise Reporting",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=0056C551B4424967B6F8EF29422DD492"
+          },
+          {
+            "id": "8352C328591243DCA8171BCD013746C0",
+            "title": "Compass feature: ability for simulation creators to delete private scenarios",
+            "quarter": "Q4 2026",
+            "capability": "Business Planning and Forecasting",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=8352C328591243DCA8171BCD013746C0"
+          },
+          {
+            "id": "F0909C09B7504C75A1BBAF750BDF2294",
+            "title": "Compass feature: unbooked or zero driver sampling",
+            "quarter": "Q4 2026",
+            "capability": "Business Planning and Forecasting",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=F0909C09B7504C75A1BBAF750BDF2294"
+          },
+          {
+            "id": "32641461354D48A78EBACB52A5178C5A",
+            "title": "Data entry: removal of the processing delay for fluid data entry",
+            "quarter": "Q4 2026",
+            "capability": "Business Planning and Forecasting",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=32641461354D48A78EBACB52A5178C5A"
+          },
+          {
+            "id": "FA2B8379687E4E79965FD62018324D10",
+            "title": "Data locking: attribute-based locks",
+            "quarter": "Q4 2026",
+            "capability": "Business Planning and Forecasting",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=FA2B8379687E4E79965FD62018324D10"
+          }
+        ],
+        "deleted": []
+      },
+      {
+        "slug": "sap-business-data-cloud",
+        "name": "SAP Business Data Cloud",
+        "slipped": [
+          {
+            "id": "20AF8C673D90408398400D5AA889A951",
+            "title": "Smart insights from table cells",
+            "old_quarter": "Q3 2026",
+            "new_quarter": "Q1 2027",
+            "direction": "forward",
+            "capability": "Other",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=20AF8C673D90408398400D5AA889A951"
+          },
+          {
+            "id": "965E34650AEC485084D7DEF14EBC0225",
+            "title": "Joule support for performance analysis and quick fixes for story design",
+            "old_quarter": "Q3 2026",
+            "new_quarter": "Q4 2026",
+            "direction": "forward",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=965E34650AEC485084D7DEF14EBC0225"
+          }
+        ],
+        "added": [
+          {
+            "id": "FE82A83BA6C7496A88A94F0C4E185666",
+            "title": "Analytical search: LLM-based model readiness check",
+            "quarter": "Q3 2026",
+            "capability": "AI for Planning and Analytics",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=FE82A83BA6C7496A88A94F0C4E185666"
+          },
+          {
+            "id": "52F39CB2498A4C4BB11D895A7B145714",
+            "title": "Data Actions: support for dimension filter values based on other dimensions' attributes in data filter",
+            "quarter": "Q4 2026",
+            "capability": "Business Planning and Forecasting",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=52F39CB2498A4C4BB11D895A7B145714"
+          },
+          {
+            "id": "CAA720BB6E774ADDA5EEB7BEFCB44C09",
+            "title": "Data Entry: option to paste with scale of target cell",
+            "quarter": "Q4 2026",
+            "capability": "Business Planning and Forecasting",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=CAA720BB6E774ADDA5EEB7BEFCB44C09"
+          },
+          {
+            "id": "5EAEDC3E71474550A08A5027A2231DDB",
+            "title": "Extending capabilities of lite weight viewer",
+            "quarter": "Q3 2026",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=5EAEDC3E71474550A08A5027A2231DDB"
+          },
+          {
+            "id": "216D7FEEA6D74A2FAF9EC29E7266E0A2",
+            "title": "Home screen: new features",
+            "quarter": "Q3 2026",
+            "capability": "Data and Analytics Administration",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=216D7FEEA6D74A2FAF9EC29E7266E0A2"
+          },
+          {
+            "id": "CFA67E554FB14BE2AFCAB5B4E57D9F4B",
+            "title": "Introducing delegated owner persona to manage schedule publications",
+            "quarter": "Q3 2026",
+            "capability": "Insight Sharing and Collaboration",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=CFA67E554FB14BE2AFCAB5B4E57D9F4B"
+          },
+          {
+            "id": "965E34650AEC485084D7DEF14EBC0225",
+            "title": "Joule support for performance analysis and quick fixes for story design",
+            "quarter": "Q3 2026",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=965E34650AEC485084D7DEF14EBC0225"
+          },
+          {
+            "id": "6998994598CF42BFBEA8ECC34663BD28",
+            "title": "Lazy loading of data for columns in the table widget",
+            "quarter": "Q3 2026",
+            "capability": "Enterprise Reporting",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=6998994598CF42BFBEA8ECC34663BD28"
+          },
+          {
+            "id": "B34BC2EAD036460EA65487EFA3587765",
+            "title": "Query template generator: reuse of object store entities",
+            "quarter": "Q4 2026",
+            "capability": "Business Warehouse Modernization",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=B34BC2EAD036460EA65487EFA3587765"
+          },
+          {
+            "id": "558ABC34F1094DBF909263295D173521",
+            "title": "Quick builder panel for chart widgets in story view time",
+            "quarter": "Q3 2026",
+            "capability": "Exploratory Data Analysis",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=558ABC34F1094DBF909263295D173521"
+          },
+          {
+            "id": "ECCEA3CF402C4B0A8E0E5346B9F22374",
+            "title": "SAP Business Warehouse application migration assistant for SAP BW/4HANA",
+            "quarter": "Q2 2027",
+            "capability": "Business Warehouse Modernization",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=ECCEA3CF402C4B0A8E0E5346B9F22374"
+          },
+          {
+            "id": "85ABCEC7462F441383CE46DF0EF6611B",
+            "title": "Sorting in waterfall charts",
+            "quarter": "Q4 2026",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=85ABCEC7462F441383CE46DF0EF6611B"
+          },
+          {
+            "id": "0056C551B4424967B6F8EF29422DD492",
+            "title": "Support for table widget building through a drag and drop experience",
+            "quarter": "Q3 2026",
+            "capability": "Enterprise Reporting",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=0056C551B4424967B6F8EF29422DD492"
+          },
+          {
+            "id": "FBD93F1746164690B812BBB4BD25FF71",
+            "title": "Support of delta loads with Oracle as the source for replication flows",
+            "quarter": "Q4 2026",
+            "capability": "Data Replication and ETL",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=FBD93F1746164690B812BBB4BD25FF71"
+          },
+          {
+            "id": "8352C328591243DCA8171BCD013746C0",
+            "title": "Compass feature: ability for simulation creators to delete private scenarios",
+            "quarter": "Q4 2026",
+            "capability": "Business Planning and Forecasting",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=8352C328591243DCA8171BCD013746C0"
+          },
+          {
+            "id": "F0909C09B7504C75A1BBAF750BDF2294",
+            "title": "Compass feature: unbooked or zero driver sampling",
+            "quarter": "Q4 2026",
+            "capability": "Business Planning and Forecasting",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=F0909C09B7504C75A1BBAF750BDF2294"
+          },
+          {
+            "id": "32641461354D48A78EBACB52A5178C5A",
+            "title": "Data entry: removal of the processing delay for fluid data entry",
+            "quarter": "Q4 2026",
+            "capability": "Business Planning and Forecasting",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=32641461354D48A78EBACB52A5178C5A"
+          },
+          {
+            "id": "FA2B8379687E4E79965FD62018324D10",
+            "title": "Data locking: attribute-based locks",
+            "quarter": "Q4 2026",
+            "capability": "Business Planning and Forecasting",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=FA2B8379687E4E79965FD62018324D10"
+          }
+        ],
+        "deleted": []
+      },
+      {
+        "slug": "sap-datasphere",
+        "name": "SAP Datasphere",
+        "slipped": [],
+        "added": [
+          {
+            "id": "FBD93F1746164690B812BBB4BD25FF71",
+            "title": "Support of delta loads with Oracle as the source for replication flows",
+            "quarter": "Q4 2026",
+            "capability": "Data Replication and ETL",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=FBD93F1746164690B812BBB4BD25FF71"
+          }
+        ],
+        "deleted": []
+      }
+    ]
+  },
+  {
     "id": "mon-2026-07-13",
     "iso": "2026-07-13",
     "full": "13 July 2026",
