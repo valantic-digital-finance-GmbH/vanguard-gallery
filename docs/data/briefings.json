@@ -6,8 +6,8 @@
     "full": "Jul 21, 2026",
     "title": "Day 4 of SAP AI Adoption & Learning Week emphasized responsible AI, secure deployment, and starting small with high-friction processes for practical adoption.",
     "preview": "Day 3 of SAP AI Adoption & Learning Week highlighted tools like Joule Studio, updates in SAP Document AI, and the Generative AI hub for model governance.",
-    "reads": "22 min",
-    "posts": 10,
+    "reads": "27 min",
+    "posts": 11,
     "tags": [
       "Business AI",
       "Datasphere",
@@ -169,6 +169,29 @@
             "board_name": "Data Professionals Blog posts"
           }
         ]
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "SAP Datasphere Master Data – Attributes, Texts, and Hierarchies",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-datasphere-master-data-attributes-texts-and-hierarchies/ba-p/14433620",
+            "author": "sawan_sinha",
+            "date_published": "2026-07-21",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "The blog provides a detailed guide on creating a G/L Account hierarchy in SAP Datasphere and integrating it with SAP Analytics Cloud for planning purposes. It explains the end-to-end process, including replication flows, hierarchy modeling, and data management techniques. Key steps like OData exposure and graphical views are also covered.",
+            "post_type": "How-to"
+          }
+        ],
+        "rest": []
       }
     ]
   },
