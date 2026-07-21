@@ -1,5 +1,178 @@
 [
   {
+    "id": "tue-2026-07-21",
+    "weekday": "Tuesday",
+    "iso": "2026-07-21",
+    "full": "Jul 21, 2026",
+    "title": "Day 4 of SAP AI Adoption & Learning Week emphasized responsible AI, secure deployment, and starting small with high-friction processes for practical adoption.",
+    "preview": "Day 3 of SAP AI Adoption & Learning Week highlighted tools like Joule Studio, updates in SAP Document AI, and the Generative AI hub for model governance.",
+    "reads": "22 min",
+    "posts": 10,
+    "tags": [
+      "Business AI",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [
+      "Day 4 of SAP AI Adoption & Learning Week emphasized responsible AI, secure deployment, and starting small with high-friction processes for practical adoption.",
+      "Day 3 of SAP AI Adoption & Learning Week highlighted tools like Joule Studio, updates in SAP Document AI, and the Generative AI hub for model governance.",
+      "SAP Business Data Cloud (BDC) enables Life Sciences and Healthcare organizations to leverage data with semantic understanding and regulatory awareness for AI-driven innovation.",
+      "BDC's Knowledge Core architecture redefines data-driven operations in regulated industries, addressing challenges in deriving value from vast datasets.",
+      "Treating S/4HANA data as a governed product through BDC improves data governance, reduces maintenance overhead, and resolves pipeline fragmentation issues."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "SAP AI Adoption & Learning Week – Day 4 in review",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-ai-adoption-amp-learning-week-day-4-in-review/ba-p/14444577",
+            "author": "shannabauer",
+            "date_published": "2026-07-20",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "Day 4 of SAP AI Adoption & Learning Week emphasized the importance of responsible AI, trusted business context, secure deployment, and lifecycle governance for enterprise AI. It highlighted starting small with a high-friction process and ensuring safeguards for practical AI adoption. The sessions provided a roadmap from learning to implementation.",
+            "post_type": "Event"
+          },
+          {
+            "title": "SAP AI Adoption & Learning Week – Day 3 in review",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-ai-adoption-amp-learning-week-day-3-in-review/ba-p/14444539",
+            "author": "shannabauer",
+            "date_published": "2026-07-20",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "The blog reviews Day 3 of SAP AI Adoption & Learning Week, focusing on intentional AI development and tools like Joule Studio for intent-based agent creation. It highlights updates in SAP Document AI, the Generative AI hub for model governance, and the SAP-RPT-1.5 model for structured business data. Key takeaways and session replays are available for further insights.",
+            "post_type": "Event"
+          },
+          {
+            "title": "Building Custom AI Agents with SAP Joule Studio: A Practical Guide Part-1",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/building-custom-ai-agents-with-sap-joule-studio-a-practical-guide-part-1/ba-p/14402428",
+            "author": "Vennilla00",
+            "date_published": "2026-07-20",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": [
+          {
+            "title": "SAP AI Adoption & Learning Week – Day 2 in review",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-ai-adoption-amp-learning-week-day-2-in-review/ba-p/14444405",
+            "author": "shannabauer",
+            "date_published": "2026-07-20",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "SAP AI Adoption & Learning Week – Day 1 in review",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-ai-adoption-amp-learning-week-day-1-in-review/ba-p/14444394",
+            "author": "shannabauer",
+            "date_published": "2026-07-20",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Redesigning Work for Human–AI Collaboration – An OCM Blueprint",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/redesigning-work-for-human-ai-collaboration-an-ocm-blueprint/ba-p/14434783",
+            "author": "DaveRyan",
+            "date_published": "2026-07-20",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ]
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "SAP Business Data Cloud (BDC) for LifeSciences & Healthcare: Building the Data Foundation for AI Era",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-data-cloud-bdc-for-lifesciences-amp-healthcare-building-the/ba-p/14444685",
+            "author": "ShashankGoyal",
+            "date_published": "2026-07-20",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "The blog discusses how SAP Business Data Cloud (BDC) helps Life Sciences and Healthcare organizations overcome challenges in deriving value from their vast data by embedding semantic understanding and enabling AI agents with regulatory and commercial awareness. It highlights BDC's innovative architecture, including its Knowledge Core, to redefine data-driven operations in regulated industries. The post emphasizes the transformative potential of BDC in the AI-driven era.",
+            "post_type": "Article"
+          },
+          {
+            "title": "From pipelines to products- when your S/4HANA data becomes a product, not a pipeline.",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/from-pipelines-to-products-when-your-s-4hana-data-becomes-a-product-not-a/ba-p/14444808",
+            "author": "VineetBakshi",
+            "date_published": "2026-07-20",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "The blog post discusses the challenges of managing S/4HANA data pipelines, such as fragmented extractions and ownership issues, which can lead to inconsistencies in reporting. It explores the benefits of treating S/4HANA data as a governed product through BDC, highlighting the advantages, trade-offs, and limitations of this approach. The goal is to improve data governance and reduce maintenance overhead.",
+            "post_type": "Article"
+          },
+          {
+            "title": "Announcing General Availability of SAP Business Data Cloud Connect for Google BigQuery",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/announcing-general-availability-of-sap-business-data-cloud-connect-for/ba-p/14441637",
+            "author": "RahulKumarTiwari",
+            "date_published": "2026-07-20",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": [
+          {
+            "title": "Data Management in the Age of AI: Lessons from the Field",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/data-management-in-the-age-of-ai-lessons-from-the-field/ba-p/14443383",
+            "author": "Corrie",
+            "date_published": "2026-07-20",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "mon-2026-07-20",
     "weekday": "Monday",
     "iso": "2026-07-20",
@@ -2684,18 +2857,5 @@
         "rest": []
       }
     ]
-  },
-  {
-    "id": "tue-2026-06-09",
-    "weekday": "Tuesday",
-    "iso": "2026-06-09",
-    "full": "Jun 9, 2026",
-    "title": "No new posts today.",
-    "preview": "No new SAP blog posts were published since the last check.",
-    "reads": "—",
-    "posts": 0,
-    "tags": [],
-    "highlights": [],
-    "sections": []
   }
 ]
