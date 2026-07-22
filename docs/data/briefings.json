@@ -1,5 +1,90 @@
 [
   {
+    "id": "wed-2026-07-22",
+    "weekday": "Wednesday",
+    "iso": "2026-07-22",
+    "full": "Jul 22, 2026",
+    "title": "Explains how to use OAuth 2.0 refresh tokens for automating SAC Multi-Actions execution.",
+    "preview": "Highlights seamless integration of long-running processes using SAC Multi-Actions Public API.",
+    "reads": "15 min",
+    "posts": 3,
+    "tags": [
+      "Analytics Cloud",
+      "Business Data Cloud",
+      "SAC Planning",
+      "Datasphere"
+    ],
+    "highlights": [
+      "Explains how to use OAuth 2.0 refresh tokens for automating SAC Multi-Actions execution.",
+      "Highlights seamless integration of long-running processes using SAC Multi-Actions Public API.",
+      "Provides a practical guide for leveraging the SAC Multi-Actions Public API effectively."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "SAP Business Data Cloud - New Search and Replace actions in filter token",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/sap-business-data-cloud-new-search-and-replace-actions-in-filter-token/ba-p/14444528",
+            "author": "arnoklein",
+            "date_published": "2026-07-21",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          },
+          {
+            "title": "Why Every SAP Analytics Consultant Needs to Learn BDC in 2026  - My Personal Take",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/why-every-sap-analytics-consultant-needs-to-learn-bdc-in-2026-my-personal/ba-p/14444493",
+            "author": "arshiya__safreen",
+            "date_published": "2026-07-21",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Analytics Cloud for planning",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "Using Refresh Token to Consume SAC Multi-Actions Public API",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/using-refresh-token-to-consume-sac-multi-actions-public-api/ba-p/14443927",
+            "author": "mingming",
+            "date_published": "2026-07-21",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "This blog provides a practical guide on using OAuth 2.0 refresh tokens to automate the execution of SAC Multi Actions, enabling seamless integration for long-running processes. It focuses on leveraging the SAC Multi-Actions Public API effectively.",
+            "post_type": "How-to"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "tue-2026-07-21",
     "weekday": "Tuesday",
     "iso": "2026-07-21",
@@ -2794,87 +2879,6 @@
             "board_name": "Data Professionals Blog posts",
             "summary": "The blog explores SAP's shift from embedding AI within applications to leveraging AI to enhance application functionality. It highlights the implications of this strategy for data professionals in the context of the Autonomous Enterprise. Key focus areas include innovation and operational efficiency.",
             "post_type": "Article"
-          }
-        ],
-        "rest": []
-      }
-    ]
-  },
-  {
-    "id": "wed-2026-06-10",
-    "weekday": "Wednesday",
-    "iso": "2026-06-10",
-    "full": "Jun 10, 2026",
-    "title": "Implementing a simple landing page in SAP Analytics Cloud stories can significantly reduce loading times and improve performance without modifying the data model or queries.",
-    "preview": "Blank date values in SAP BW data blending can disrupt range-based time dimension filters in SAP Analytics Cloud, impacting reporting accuracy.",
-    "reads": "15 min",
-    "posts": 3,
-    "tags": [
-      "Business AI",
-      "Analytics Cloud"
-    ],
-    "highlights": [
-      "Implementing a simple landing page in SAP Analytics Cloud stories can significantly reduce loading times and improve performance without modifying the data model or queries.",
-      "Blank date values in SAP BW data blending can disrupt range-based time dimension filters in SAP Analytics Cloud, impacting reporting accuracy.",
-      "A practical workaround is available to address issues caused by blank values in time dimension filters, ensuring smoother data blending and reporting."
-    ],
-    "sections": [
-      {
-        "name": "SAP Business AI",
-        "tags": [
-          "SAP Business AI"
-        ],
-        "top": [
-          {
-            "title": "Understanding Security in SAP Joule’s Runtime",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/understanding-security-in-sap-joule-s-runtime/ba-p/14414450",
-            "author": "AlexDevassy",
-            "date_published": "2026-06-09",
-            "matching_tags": [
-              "SAP Business AI"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP"
-          }
-        ],
-        "rest": []
-      },
-      {
-        "name": "SAP Analytics Cloud",
-        "tags": [
-          "SAP Analytics Cloud",
-          "SAP Analytics Cloud for planning",
-          "SAP Analytics Cloud, data modeling"
-        ],
-        "top": [
-          {
-            "title": "Improving SAP Analytics Cloud Story Performance with a Simple Landing Page",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/improving-sap-analytics-cloud-story-performance-with-a-simple-landing-page/ba-p/14414560",
-            "author": "RajuRam",
-            "date_published": "2026-06-09",
-            "matching_tags": [
-              "SAP Analytics Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-members",
-            "board_name": "Technology Blog Posts by Members",
-            "summary": "The blog discusses a design improvement for SAP Analytics Cloud stories that prevents performance issues caused by large data loads on story opening. By implementing a simple landing page, loading times were reduced, enhancing user experience without altering the data model or query.",
-            "post_type": "How-to"
-          },
-          {
-            "title": "Handling Blank Values in BW Data Blending and Time Dimension Filters in SAP Analytics Cloud",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/handling-blank-values-in-bw-data-blending-and-time-dimension-filters-in-sap/ba-p/14414530",
-            "author": "RajuRam",
-            "date_published": "2026-06-09",
-            "matching_tags": [
-              "SAP Analytics Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-members",
-            "board_name": "Technology Blog Posts by Members",
-            "summary": "The blog post discusses issues caused by blank date values when blending SAP BW data in SAP Analytics Cloud, particularly with range-based time dimension filters. It explains the root cause, its impact on reporting, and provides a practical workaround to address the issue. ",
-            "post_type": "How-to"
           }
         ],
         "rest": []
