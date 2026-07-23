@@ -1,5 +1,100 @@
 [
   {
+    "id": "thu-2026-07-23",
+    "weekday": "Thursday",
+    "iso": "2026-07-23",
+    "full": "Jul 23, 2026",
+    "title": "The Process Consulting Agent in SAP Signavio is now generally available, offering tools to enhance process management and guidance for effective usage.",
+    "preview": "Challenges in line-level matching between invoices and purchase orders in SAP MM and FI are addressed, with semantic AI proposed as a solution to improve the 'Three-Way Match' process.",
+    "reads": "16 min",
+    "posts": 4,
+    "tags": [
+      "Business AI",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [
+      "The Process Consulting Agent in SAP Signavio is now generally available, offering tools to enhance process management and guidance for effective usage.",
+      "Challenges in line-level matching between invoices and purchase orders in SAP MM and FI are addressed, with semantic AI proposed as a solution to improve the 'Three-Way Match' process.",
+      "SAP Datasphere provides three scheduling approaches for automating data flows, replication flows, and task chains, ensuring accurate and timely data integration."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "The Process Consulting Agent Is Generally Available: Get Started Now",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/the-process-consulting-agent-is-generally-available-get-started-now/ba-p/14446484",
+            "author": "Patrizia_Calvia",
+            "date_published": "2026-07-22",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "The Process Consulting Agent in SAP Signavio is now generally available, offering key capabilities to enhance process management. This blog discusses its features, value proposition, and provides guidance on getting started. It aims to help users leverage the tool effectively.",
+            "post_type": "Release"
+          },
+          {
+            "title": "SAP Signavio Process Modeler: What’s new in the July Release",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-signavio-process-modeler-what-s-new-in-the-july-release/ba-p/14445455",
+            "author": "Patrizia_Calvia",
+            "date_published": "2026-07-22",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Solving the Last Mile of Invoice-to-PO Line Matching in SAP MM & FI. Does traditional ML help here?",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/solving-the-last-mile-of-invoice-to-po-line-matching-in-sap-mm-amp-fi-does/ba-p/14443541",
+            "author": "karthikarjun",
+            "date_published": "2026-07-19",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members",
+            "summary": "The blog discusses challenges in achieving precise line-level matching between invoices and purchase orders in SAP MM and FI. It explores the limitations of traditional machine learning and introduces semantic AI as a potential solution. The focus is on improving the 'Three-Way Match' process.",
+            "post_type": "Deep dive"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Mastering SAP Datasphere Replication Scheduling",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/mastering-sap-datasphere-replication-scheduling/ba-p/14446301",
+            "author": "yogen_patil",
+            "date_published": "2026-07-22",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members",
+            "summary": "The blog post discusses the importance of data integration in SAP Datasphere for maintaining accurate and timely data. It highlights three scheduling approaches provided by SAP Datasphere to automate data flows, replication flows, and task chains, catering to diverse business and technical needs.",
+            "post_type": "Deep dive"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "wed-2026-07-22",
     "weekday": "Wednesday",
     "iso": "2026-07-22",
@@ -2832,53 +2927,6 @@
             "minutes": 5,
             "board_id": "technology-blog-members",
             "board_name": "Technology Blog Posts by Members"
-          }
-        ],
-        "rest": []
-      }
-    ]
-  },
-  {
-    "id": "thu-2026-06-11",
-    "weekday": "Thursday",
-    "iso": "2026-06-11",
-    "full": "Jun 11, 2026",
-    "title": "SAP is transitioning from embedding AI in applications to using AI to enhance application functionality.",
-    "preview": "This shift aligns with the vision of the Autonomous Enterprise, emphasizing innovation and operational efficiency.",
-    "reads": "5 min",
-    "posts": 1,
-    "tags": [
-      "Analytics Cloud",
-      "Datasphere",
-      "Business Data Cloud"
-    ],
-    "highlights": [
-      "SAP is transitioning from embedding AI in applications to using AI to enhance application functionality.",
-      "This shift aligns with the vision of the Autonomous Enterprise, emphasizing innovation and operational efficiency.",
-      "Data professionals are central to leveraging AI's potential in optimizing enterprise applications."
-    ],
-    "sections": [
-      {
-        "name": "SAP Business Data Cloud",
-        "tags": [
-          "SAP Business Data Cloud"
-        ],
-        "top": [
-          {
-            "title": "From “AI in Applications” to “AI on Applications”",
-            "url": "https://community.sap.com/t5/data-professionals-blog-posts/from-ai-in-applications-to-ai-on-applications/ba-p/14415270",
-            "author": "ThierryAudas",
-            "date_published": "2026-06-10",
-            "matching_tags": [
-              "SAP Analytics Cloud",
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "data-professionalsblog-board",
-            "board_name": "Data Professionals Blog posts",
-            "summary": "The blog explores SAP's shift from embedding AI within applications to leveraging AI to enhance application functionality. It highlights the implications of this strategy for data professionals in the context of the Autonomous Enterprise. Key focus areas include innovation and operational efficiency.",
-            "post_type": "Article"
           }
         ],
         "rest": []
