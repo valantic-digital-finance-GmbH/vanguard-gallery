@@ -1,5 +1,101 @@
 [
   {
+    "id": "fri-2026-07-24",
+    "weekday": "Friday",
+    "iso": "2026-07-24",
+    "full": "Jul 24, 2026",
+    "title": "BDC remains integral to enterprise architecture in the autonomous enterprise, with AI complementing rather than replacing its role.",
+    "preview": "SAP Datasphere's TCUR* tables are critical for currency conversion, offering detailed guidance on implementation, troubleshooting, and avoiding common pitfalls.",
+    "reads": "7 min",
+    "posts": 3,
+    "tags": [
+      "Business AI",
+      "Analytics Cloud",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [
+      "BDC remains integral to enterprise architecture in the autonomous enterprise, with AI complementing rather than replacing its role.",
+      "SAP Datasphere's TCUR* tables are critical for currency conversion, offering detailed guidance on implementation, troubleshooting, and avoiding common pitfalls.",
+      "SAP's acquisition of Reltio enhances Master Data Management by combining cloud-native unification with SAP MDG's governance capabilities.",
+      "Reltio and SAP MDG together enable trusted, unified data products for analytics, operations, and AI, supporting SAP's Autonomous Enterprise vision."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Working with BDC in the Autonomous Enterprise: The Enterprise Architect Perspective",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/working-with-bdc-in-the-autonomous-enterprise-the-enterprise-architect/ba-p/14446829",
+            "author": "VenkatG",
+            "date_published": "2026-07-23",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Analytics Cloud",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts",
+            "summary": "The blog discusses the role of Batch Data Communication (BDC) in the context of an autonomous enterprise from an enterprise architect's perspective. It emphasizes that AI will complement rather than replace enterprise architecture, highlighting its continued importance. The post explores how BDC integrates within this evolving landscape.",
+            "post_type": "Article"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "What does the Reltio Acquisition Mean for Master Data Management at SAP?",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/what-does-the-reltio-acquisition-mean-for-master-data-management-at-sap/ba-p/14447456",
+            "author": "Corrie",
+            "date_published": "2026-07-23",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts",
+            "summary": "The blog discusses SAP's acquisition of Reltio and its implications for Master Data Management (MDM) within the SAP ecosystem. Reltio complements SAP MDG as part of the SAP Business Data Cloud, providing cloud-native unification and cross-system data quality alongside MDG's governance capabilities. The article highlights how both solutions work together to create unified, trusted data products for analytics, operations, and AI, aligning with SAP's vision of the Autonomous Enterprise.",
+            "post_type": "Article"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "Currency Conversion in SAP Datasphere: Understanding TCUR* Tables and Practical Implementation",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/currency-conversion-in-sap-datasphere-understanding-tcur-tables-and/ba-p/14441352",
+            "author": "GiriVenkataAnandaRaju_Alapati",
+            "date_published": "2026-07-23",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members",
+            "summary": "The blog post explains the role of various TCUR* tables in SAP Datasphere for managing currency conversion, including exchange rates, conversion factors, and validity dates. It provides a detailed walkthrough of a complete implementation, covering source data to converted results, along with troubleshooting tips and lessons learned. Common pitfalls and practical insights are also discussed to aid successful execution.",
+            "post_type": "How-to"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "thu-2026-07-23",
     "weekday": "Thursday",
     "iso": "2026-07-23",
@@ -2822,115 +2918,5 @@
     "tags": [],
     "highlights": [],
     "sections": []
-  },
-  {
-    "id": "fri-2026-06-12",
-    "weekday": "Friday",
-    "iso": "2026-06-12",
-    "full": "Jun 12, 2026",
-    "title": "The Open Data Institute (ODI) and SAP released 'A Framework for AI-Ready Enterprise Data,' a vendor-neutral guide to address challenges in preparing data for AI.",
-    "preview": "The framework leverages ODI's expertise in building reliable data infrastructure and synthesizes insights from existing frameworks and experts.",
-    "reads": "12 min",
-    "posts": 4,
-    "tags": [
-      "Business AI",
-      "Analytics Cloud",
-      "Datasphere",
-      "Business Data Cloud"
-    ],
-    "highlights": [
-      "The Open Data Institute (ODI) and SAP released 'A Framework for AI-Ready Enterprise Data,' a vendor-neutral guide to address challenges in preparing data for AI.",
-      "The framework leverages ODI's expertise in building reliable data infrastructure and synthesizes insights from existing frameworks and experts.",
-      "SAP Databricks, integrated into SAP Business Data Cloud, enhances AI, machine learning, and predictive analytics in SAP Analytics Cloud.",
-      "The integration improves data quality, governance, and supports real-world use cases, as demonstrated in a cash forecasting example.",
-      "SAP Business Data Cloud and Databricks together streamline end-to-end processes for advanced analytics and decision-making."
-    ],
-    "sections": [
-      {
-        "name": "SAP Business AI",
-        "tags": [
-          "SAP Business AI"
-        ],
-        "top": [
-          {
-            "title": "The AI Isn't the Problem. The Data Underneath It Is.",
-            "url": "https://community.sap.com/t5/data-professionals-blog-posts/the-ai-isn-t-the-problem-the-data-underneath-it-is/ba-p/14417149",
-            "author": "Scott_Mackenzie",
-            "date_published": "2026-06-12",
-            "matching_tags": [
-              "SAP Business AI",
-              "SAP Analytics Cloud",
-              "SAP Datasphere",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 1,
-            "board_id": "data-professionalsblog-board",
-            "board_name": "Data Professionals Blog posts",
-            "summary": "The blog discusses the release of 'A Framework for AI-Ready Enterprise Data' by the Open Data Institute (ODI), SAP's research partner. The framework is a vendor-neutral guide developed through analysis of existing frameworks and expert insights, aimed at addressing challenges in preparing data for AI. It leverages ODI's extensive experience in creating reliable data infrastructure.",
-            "post_type": "Article"
-          },
-          {
-            "title": "SAP Business AI in Industrial Manufacturing - Partner live expert session",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-ai-in-industrial-manufacturing-partner-live-expert-session/ba-p/14414878",
-            "author": "JoseBastidas",
-            "date_published": "2026-06-11",
-            "matching_tags": [
-              "SAP Business AI"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP"
-          }
-        ],
-        "rest": []
-      },
-      {
-        "name": "SAP Business Data Cloud",
-        "tags": [
-          "SAP Business Data Cloud"
-        ],
-        "top": [
-          {
-            "title": "Need to Know - Beyond SAP Analytics Cloud AI and Using SAP Databricks in SAP Business Data Cloud",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/need-to-know-beyond-sap-analytics-cloud-ai-and-using-sap-databricks-in-sap/ba-p/14416821",
-            "author": "DeanFarrow",
-            "date_published": "2026-06-11",
-            "matching_tags": [
-              "SAP Analytics Cloud",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 1,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP",
-            "summary": "This blog post explores how SAP Databricks, integrated within SAP Business Data Cloud, enhances AI, machine learning, and predictive capabilities in SAP Analytics Cloud. It provides an overview of SAP Business Data Cloud, explains Databricks' role, and highlights its benefits for data quality, governance, and real-world use cases. A detailed walkthrough of a cash forecasting example illustrates the end-to-end process of leveraging these technologies.",
-            "post_type": "Deep dive"
-          }
-        ],
-        "rest": []
-      },
-      {
-        "name": "SAP Analytics Cloud",
-        "tags": [
-          "SAP Analytics Cloud",
-          "SAP Analytics Cloud for planning",
-          "SAP Analytics Cloud, data modeling"
-        ],
-        "top": [
-          {
-            "title": "Conversational Analytics in SAP Joule with SAP Analytics Cloud",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/conversational-analytics-in-sap-joule-with-sap-analytics-cloud/ba-p/14413216",
-            "author": "RamkumarArumugasamy",
-            "date_published": "2026-06-11",
-            "matching_tags": [
-              "SAP Analytics Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-members",
-            "board_name": "Technology Blog Posts by Members"
-          }
-        ],
-        "rest": []
-      }
-    ]
   }
 ]
