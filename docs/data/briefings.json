@@ -1,5 +1,165 @@
 [
   {
+    "id": "mon-2026-07-27",
+    "weekday": "Monday",
+    "iso": "2026-07-27",
+    "full": "Jul 27, 2026",
+    "title": "AI-powered development tools, MCP Servers, and VS Code streamline SAPUI5 and CAP project workflows, as highlighted in multilingual blog series.",
+    "preview": "SAP's BDC architecture evolves with object store centralization and 'MLOps-free' predictive AI, following acquisitions of Dremio and Prior Labs.",
+    "reads": "28 min",
+    "posts": 8,
+    "tags": [
+      "Business AI",
+      "Business Data Cloud",
+      "Analytics Cloud",
+      "SAC Planning",
+      "Datasphere"
+    ],
+    "highlights": [
+      "AI-powered development tools, MCP Servers, and VS Code streamline SAPUI5 and CAP project workflows, as highlighted in multilingual blog series.",
+      "SAP's BDC architecture evolves with object store centralization and 'MLOps-free' predictive AI, following acquisitions of Dremio and Prior Labs.",
+      "A practical guide demonstrates integrating custom ABAP logic into SAP BW Bridge Process Chains using Custom Process Types for enhanced functionality.",
+      "The blogs emphasize leveraging AI virtual assistants and MCP Servers to optimize SAP technology development processes across full-stack projects."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Experiences from prompt to UI5: AI-Powered Development using MCP Servers - Part 2 en Espanol",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/experiences-from-prompt-to-ui5-ai-powered-development-using-mcp-servers/ba-p/14448948",
+            "author": "SergioG_TX",
+            "date_published": "2026-07-26",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members",
+            "summary": "The blog shares experiences using AI tools with MCP Servers in VS Code to develop a SAPUI5 application and connect it to a CAP service. It provides insights into leveraging AI-powered development for SAP technologies. This is the second part of the series, presented in Spanish.",
+            "post_type": "Article"
+          },
+          {
+            "title": "Experiences from prompt to CAP: AI-Powered Development using MCP Servers (Espanol)",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/experiences-from-prompt-to-cap-ai-powered-development-using-mcp-servers/ba-p/14448930",
+            "author": "SergioG_TX",
+            "date_published": "2026-07-26",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members",
+            "summary": "The blog discusses the author's experiences using an AI virtual assistant to develop a CAP service within VS Code. It highlights the integration of AI tools to streamline development processes.",
+            "post_type": "Article"
+          },
+          {
+            "title": "Experiences from prompt to UI5: AI-Powered Development using MCP Servers - Part 2",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/experiences-from-prompt-to-ui5-ai-powered-development-using-mcp-servers/ba-p/14448784",
+            "author": "SergioG_TX",
+            "date_published": "2026-07-26",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members",
+            "summary": "The blog discusses the author's experience in developing a UI5 application within a full-stack CAP project. It highlights the use of MCP Servers, VS Code, and AI-powered code development tools to streamline the process.",
+            "post_type": "Article"
+          }
+        ],
+        "rest": [
+          {
+            "title": "Experiences from prompt to CAP: AI-Powered Development using MCP Servers",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/experiences-from-prompt-to-cap-ai-powered-development-using-mcp-servers/ba-p/14448774",
+            "author": "SergioG_TX",
+            "date_published": "2026-07-26",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          },
+          {
+            "title": "Gravitational Shift in SAP BDC: Object Store Centralization and MLOps-Free AI",
+            "url": "https://community.sap.com/t5/data-and-analytics-blog-posts/gravitational-shift-in-sap-bdc-object-store-centralization-and-mlops-free/ba-p/14448736",
+            "author": "Phil_from_Madrid",
+            "date_published": "2026-07-25",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-analyticsblog-board",
+            "board_name": "Data and Analytics Blog Posts"
+          },
+          {
+            "title": "Everyone is building AI agents. What happens next?",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/everyone-is-building-ai-agents-what-happens-next/ba-p/14448577",
+            "author": "santhosini_K",
+            "date_published": "2026-07-25",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ]
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Three New Chart Types in SAP Analytics Cloud: Sankey, Gauge, and Funnel",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/three-new-chart-types-in-sap-analytics-cloud-sankey-gauge-and-funnel/ba-p/14449029",
+            "author": "Vivek-Varma",
+            "date_published": "2026-07-26",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Analytics Cloud for planning",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "Executing Custom ABAP Programs in SAP BW Bridge Process Chains Using Custom Process Types",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/executing-custom-abap-programs-in-sap-bw-bridge-process-chains-using-custom/ba-p/14448184",
+            "author": "anilkumarauce",
+            "date_published": "2026-07-24",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "The blog explains how to use SAP BW Bridge's Custom Process Types to integrate custom ABAP logic into Process Chains. It provides a step-by-step guide, including ABAP class development, registration of the Custom Process Type, and its execution to validate ADSO activation. This serves as a practical example of extending SAP BW Bridge functionality.",
+            "post_type": "How-to"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "fri-2026-07-24",
     "weekday": "Friday",
     "iso": "2026-07-24",
@@ -2905,18 +3065,5 @@
         "rest": []
       }
     ]
-  },
-  {
-    "id": "mon-2026-06-15",
-    "weekday": "Monday",
-    "iso": "2026-06-15",
-    "full": "Jun 15, 2026",
-    "title": "No new posts today.",
-    "preview": "No new SAP blog posts were published since the last check.",
-    "reads": "—",
-    "posts": 0,
-    "tags": [],
-    "highlights": [],
-    "sections": []
   }
 ]
