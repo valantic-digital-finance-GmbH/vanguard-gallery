@@ -1,5 +1,85 @@
 [
   {
+    "id": "mon-2026-07-27",
+    "iso": "2026-07-27",
+    "full": "27 July 2026",
+    "period": "2026-07-20 – 2026-07-26",
+    "title": "6 changes across 2 products",
+    "preview": "SAP Analytics Cloud: 2 items added. SAP Business Data Cloud: 4 items added",
+    "total_changes": 6,
+    "products_with_changes": [
+      "SAP Analytics Cloud",
+      "SAP Business Data Cloud"
+    ],
+    "sections": [
+      {
+        "slug": "sap-analytics-cloud",
+        "name": "SAP Analytics Cloud",
+        "slipped": [],
+        "added": [
+          {
+            "id": "5CBA7F045AB747B0A94717C6414E7B75",
+            "title": "Reuse of currency rate tables from SAP Datasphere",
+            "quarter": "Q3 2026",
+            "capability": "Data Design and Modelling",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=5CBA7F045AB747B0A94717C6414E7B75"
+          },
+          {
+            "id": "1AD76DBE22054F47B04A61B4D37EE598",
+            "title": "Navigating from model to the job monitor",
+            "quarter": "Q3 2026",
+            "capability": "Data Design and Modelling",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=1AD76DBE22054F47B04A61B4D37EE598"
+          }
+        ],
+        "deleted": []
+      },
+      {
+        "slug": "sap-business-data-cloud",
+        "name": "SAP Business Data Cloud",
+        "slipped": [],
+        "added": [
+          {
+            "id": "B38D4868A02B4F4B9ACBF023EFD77244",
+            "title": "SAP BDC Connect for Snowflake in Google Cloud with cross-hyperscaler support",
+            "quarter": "Q3 2026",
+            "capability": "Data Product Sharing",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=B38D4868A02B4F4B9ACBF023EFD77244"
+          },
+          {
+            "id": "BCB884571AD54CA5852AF11FCC9547DF",
+            "title": "SAP Snowflake in Google Cloud Platform with cross-hyperscaler support",
+            "quarter": "Q3 2026",
+            "capability": "Data Product Sharing",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=BCB884571AD54CA5852AF11FCC9547DF"
+          },
+          {
+            "id": "1AD76DBE22054F47B04A61B4D37EE598",
+            "title": "Navigating from model to the job monitor",
+            "quarter": "Q3 2026",
+            "capability": "Data Design and Modelling",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=1AD76DBE22054F47B04A61B4D37EE598"
+          },
+          {
+            "id": "075CD117687149D3BFBE61A2902A31E2",
+            "title": "Retail Intelligence: order management system (OMS) return orders",
+            "quarter": "Q4 2026",
+            "capability": "Data Product Management",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=075CD117687149D3BFBE61A2902A31E2"
+          }
+        ],
+        "deleted": []
+      },
+      {
+        "slug": "sap-datasphere",
+        "name": "SAP Datasphere",
+        "slipped": [],
+        "added": [],
+        "deleted": []
+      }
+    ]
+  },
+  {
     "id": "mon-2026-07-20",
     "iso": "2026-07-20",
     "full": "20 July 2026",
@@ -2222,39 +2302,6 @@
             "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=83C3B594E9BF410C9EB49224CBFFDA0A"
           }
         ],
-        "deleted": []
-      }
-    ]
-  },
-  {
-    "id": "mon-2026-05-25",
-    "iso": "2026-05-25",
-    "full": "25 May 2026",
-    "period": "2026-05-18 – 2026-05-24",
-    "title": "No changes this week",
-    "preview": "No changes across all tracked products.",
-    "total_changes": 0,
-    "products_with_changes": [],
-    "sections": [
-      {
-        "slug": "sap-analytics-cloud",
-        "name": "SAP Analytics Cloud",
-        "slipped": [],
-        "added": [],
-        "deleted": []
-      },
-      {
-        "slug": "sap-business-data-cloud",
-        "name": "SAP Business Data Cloud",
-        "slipped": [],
-        "added": [],
-        "deleted": []
-      },
-      {
-        "slug": "sap-datasphere",
-        "name": "SAP Datasphere",
-        "slipped": [],
-        "added": [],
         "deleted": []
       }
     ]
