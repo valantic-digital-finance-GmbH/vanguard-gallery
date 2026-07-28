@@ -1,5 +1,172 @@
 [
   {
+    "id": "tue-2026-07-28",
+    "weekday": "Tuesday",
+    "iso": "2026-07-28",
+    "full": "Jul 28, 2026",
+    "title": "The focus of enterprise AI is shifting from model intelligence to orchestration, governance, and secure integration, with SAP tools like SAP Joule enabling governed agent architectures.",
+    "preview": "AI is streamlining OData testing processes, including script generation and load testing, as demonstrated through MCPServers in a Spanish-language blog.",
+    "reads": "33 min",
+    "posts": 9,
+    "tags": [
+      "Business AI",
+      "Analytics Cloud",
+      "Datasphere",
+      "Business Data Cloud",
+      "SAC Planning"
+    ],
+    "highlights": [
+      "The focus of enterprise AI is shifting from model intelligence to orchestration, governance, and secure integration, with SAP tools like SAP Joule enabling governed agent architectures.",
+      "AI is streamlining OData testing processes, including script generation and load testing, as demonstrated through MCPServers in a Spanish-language blog.",
+      "The Data Professionals community has surpassed 500 members, serving as a collaborative hub for solving data challenges and driving business value.",
+      "SAP Analytics Cloud will introduce a Horizon-aligned default story theme in Q3 2026, offering visual updates while retaining familiar elements."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Autonomous Enterprise AI Will Be Won in the Control Plane—Not the Model Layer",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/autonomous-enterprise-ai-will-be-won-in-the-control-plane-not-the-model/ba-p/14449109",
+            "author": "kirankola",
+            "date_published": "2026-07-27",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP",
+            "summary": "The blog post discusses the shift in focus from AI model intelligence to the orchestration, governance, security, and integration of AI across enterprises. It highlights how SAP's tools, such as SAP Joule and SAP Business AI Platform, enable a governed agent architecture for secure and outcome-driven execution. The emphasis is on aligning AI with business intent for effective enterprise adoption.",
+            "post_type": "Article"
+          },
+          {
+            "title": "Testing OData via AI assistant generated code - Español",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/testing-odata-via-ai-assistant-generated-code-espa%C3%B1ol/ba-p/14449823",
+            "author": "SergioG_TX",
+            "date_published": "2026-07-27",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members",
+            "summary": "The blog discusses experiences using MCPServers to generate and modify OData tests, as well as performing load testing on scripts, all facilitated by AI. It highlights the role of AI in streamlining the testing process. The content is shared in Spanish.",
+            "post_type": "How-to"
+          },
+          {
+            "title": "Testing OData via AI assistant generated code - Español",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/testing-odata-via-ai-assistant-generated-code-espa%C3%B1ol/ba-p/14449821",
+            "author": "SergioG_TX",
+            "date_published": "2026-07-27",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members",
+            "summary": "The blog discusses experiences with using MCPServers to generate and modify OData tests, as well as performing load testing on scripts, all facilitated by AI. It highlights the role of AI in streamlining these processes. The content is shared in Spanish.",
+            "post_type": "How-to"
+          }
+        ],
+        "rest": [
+          {
+            "title": "Testing OData via AI assistant generated code - VSCode - part 3",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/testing-odata-via-ai-assistant-generated-code-vscode-part-3/ba-p/14449716",
+            "author": "SergioG_TX",
+            "date_published": "2026-07-27",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          },
+          {
+            "title": "SAP Doesn’t Have to Win the AI Race. It Just Has to Own the Toll Booth.",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/sap-doesn-t-have-to-win-the-ai-race-it-just-has-to-own-the-toll-booth/ba-p/14449440",
+            "author": "STALANKI",
+            "date_published": "2026-07-27",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ]
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Celebrating 500+ Members in the Data Professionals Community",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/celebrating-500-members-in-the-data-professionals-community/ba-p/14449546",
+            "author": "ThierryAudas",
+            "date_published": "2026-07-27",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts",
+            "summary": "The Data Professionals community has surpassed 500 members, highlighting its importance as a hub for data practitioners to connect and collaborate. The blog introduces Vivek Devalkar, the 500th member, and emphasizes how the community helps solve challenges and drive business value through data. 🎉",
+            "post_type": "Event"
+          },
+          {
+            "title": "New Stories, New Look: The Default Story Theme Is Getting an Update",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/new-stories-new-look-the-default-story-theme-is-getting-an-update/ba-p/14449361",
+            "author": "AnnaBurkhardt",
+            "date_published": "2026-07-27",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Analytics Cloud for planning",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts",
+            "summary": "SAP Analytics Cloud introduces a refreshed Horizon-aligned default story theme starting with the Q3 2026 release. The update brings visual changes to new stories while maintaining some familiar elements. Users are advised to review and update their documentation accordingly.",
+            "post_type": "Release"
+          },
+          {
+            "title": "Certification Program for Partner Extension Applications on SAP Business Data Cloud",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/certification-program-for-partner-extension-applications-on-sap-business/ba-p/14449656",
+            "author": "sauravchetry",
+            "date_published": "2026-07-27",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": [
+          {
+            "title": "A Step-by-Step Guide to Data Product Activation in SAP Business Data Cloud",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/a-step-by-step-guide-to-data-product-activation-in-sap-business-data-cloud/ba-p/14426190",
+            "author": "karthiban_rajamanickame54a81",
+            "date_published": "2026-07-27",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "mon-2026-07-27",
     "weekday": "Monday",
     "iso": "2026-07-27",
@@ -3006,60 +3173,6 @@
             "board_name": "Technology Blog Posts by SAP",
             "summary": "The blog post introduces hierarchical level selection and include/exclude logic in SAP Analytics Cloud's predictive planning, simplifying forecast configuration for large member sets. This feature allows dynamic selections that adapt to organizational changes, reducing manual updates. It is available for Planning Model data sources starting with wave 2026.12.",
             "post_type": "Release"
-          }
-        ],
-        "rest": []
-      }
-    ]
-  },
-  {
-    "id": "tue-2026-06-16",
-    "weekday": "Tuesday",
-    "iso": "2026-06-16",
-    "full": "Jun 16, 2026",
-    "title": "SAP Datasphere and Data Composer simplify data integration and orchestration for building a unified business data cloud.",
-    "preview": "SAP Snowflake integration enhances data sharing and analytics capabilities within the business data cloud ecosystem.",
-    "reads": "10 min",
-    "posts": 2,
-    "tags": [
-      "Business Data Cloud"
-    ],
-    "highlights": [
-      "SAP Datasphere and Data Composer simplify data integration and orchestration for building a unified business data cloud.",
-      "SAP Snowflake integration enhances data sharing and analytics capabilities within the business data cloud ecosystem.",
-      "Provisioning tools in SAP Datasphere streamline the connection of diverse data sources for real-time insights.",
-      "The combination of SAP Datasphere and Snowflake supports scalable, secure, and efficient data management strategies."
-    ],
-    "sections": [
-      {
-        "name": "SAP Business Data Cloud",
-        "tags": [
-          "SAP Business Data Cloud"
-        ],
-        "top": [
-          {
-            "title": "Provisioning of Business Data Cloud: SAP Snowflake",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/provisioning-of-business-data-cloud-sap-snowflake/ba-p/14419017",
-            "author": "ShreyasriB",
-            "date_published": "2026-06-15",
-            "matching_tags": [
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP"
-          },
-          {
-            "title": "Provisioning of Business Data Cloud : SAP Datasphere, Data Composer",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/provisioning-of-business-data-cloud-sap-datasphere-data-composer/ba-p/14418654",
-            "author": "ShreyasriB",
-            "date_published": "2026-06-15",
-            "matching_tags": [
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP"
           }
         ],
         "rest": []
