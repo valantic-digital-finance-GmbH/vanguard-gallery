@@ -1,5 +1,120 @@
 [
   {
+    "id": "thu-2026-07-30",
+    "weekday": "Thursday",
+    "iso": "2026-07-30",
+    "full": "Jul 30, 2026",
+    "title": "Real-world scenarios demonstrate how prompts can effectively modify UI5 and Fiori elements apps, leveraging AI and MCP Servers.",
+    "preview": "The blogs emphasize the versatility and practical applications of prompts in customizing SAP UI5 applications.",
+    "reads": "25 min",
+    "posts": 5,
+    "tags": [
+      "Business AI",
+      "Datasphere",
+      "Business Data Cloud",
+      "Analytics Cloud",
+      "SAC Planning",
+      "SAC Modeling"
+    ],
+    "highlights": [
+      "Real-world scenarios demonstrate how prompts can effectively modify UI5 and Fiori elements apps, leveraging AI and MCP Servers.",
+      "The blogs emphasize the versatility and practical applications of prompts in customizing SAP UI5 applications.",
+      "SAP Analytics Cloud QRC3 2026 introduces enhanced data integration and calculation features within SAP Business Data Cloud modeling.",
+      "New updates in SAP Analytics Cloud aim to streamline data handling and boost analytical capabilities for end-users."
+    ],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "BAIP: What it means for SAP BTP and SAP BDC customers",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/baip-what-it-means-for-sap-btp-and-sap-bdc-customers/ba-p/14451907",
+            "author": "VenkatG",
+            "date_published": "2026-07-29",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          },
+          {
+            "title": "Prompts para cambiar el app de ui5 – posibilidades infinitas Parte 4",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/prompts-para-cambiar-el-app-de-ui5-posibilidades-infinitas-parte-4/ba-p/14451706",
+            "author": "SergioG_TX",
+            "date_published": "2026-07-29",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members",
+            "summary": "This blog explores various requirements commonly encountered in real-world projects, showcasing examples and scenarios. It focuses on leveraging prompts to modify UI5 applications effectively.",
+            "post_type": "How-to"
+          },
+          {
+            "title": "Prompts to change the ui5 app – possibilities could be endless - Part 4",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/prompts-to-change-the-ui5-app-possibilities-could-be-endless-part-4/ba-p/14451654",
+            "author": "SergioG_TX",
+            "date_published": "2026-07-29",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members",
+            "summary": "The blog explores various methods to modify a Fiori elements app, showcasing real-world project scenarios. It highlights the use of AI prompts and MCP Servers to address these requirements. The post shares insights from practical experiences.",
+            "post_type": "Deep dive"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "What's New in SAP Analytics Cloud Modeling Data Integration & Calculations QRC3 2026 Edition",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/what-s-new-in-sap-analytics-cloud-modeling-data-integration-amp/ba-p/14429588",
+            "author": "AmandaJMurphy",
+            "date_published": "2026-07-29",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Analytics Cloud for planning",
+              "SAP Analytics Cloud, data modeling",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts",
+            "summary": "The blog highlights new features in SAP Analytics Cloud QRC3 2026 edition, focusing on enhancements in data integration and calculations within SAP Business Data Cloud modeling. These updates aim to improve data handling and analytical capabilities for users.",
+            "post_type": "Release"
+          },
+          {
+            "title": "Modernize SAP BW with the SAP BW Data Product Generator and SAP Business Data Cloud",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/modernize-sap-bw-with-the-sap-bw-data-product-generator-and-sap-business/ba-p/14450010",
+            "author": "JoseBastidas",
+            "date_published": "2026-07-29",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "wed-2026-07-29",
     "weekday": "Wednesday",
     "iso": "2026-07-29",
@@ -3028,71 +3143,6 @@
             "board_name": "Technology Blog Posts by SAP",
             "summary": "The author shares lessons learned from their experience building their first SAP Analytics Cloud (SAC) story. They aim to help others avoid common pitfalls and create effortless, actionable analytics. The blog reflects their passion for transforming complex data into clear insights.",
             "post_type": "Tip"
-          }
-        ],
-        "rest": []
-      }
-    ]
-  },
-  {
-    "id": "thu-2026-06-18",
-    "weekday": "Thursday",
-    "iso": "2026-06-18",
-    "full": "Jun 18, 2026",
-    "title": "SAP has introduced a new certification for SAP Generative AI Developers, emphasizing skills in AI-driven solutions within SAP ecosystems.",
-    "preview": "The certification focuses on leveraging SAP's AI tools to enhance business processes and drive innovation.",
-    "reads": "10 min",
-    "posts": 2,
-    "tags": [
-      "Business AI",
-      "Business Data Cloud"
-    ],
-    "highlights": [
-      "SAP has introduced a new certification for SAP Generative AI Developers, emphasizing skills in AI-driven solutions within SAP ecosystems.",
-      "The certification focuses on leveraging SAP's AI tools to enhance business processes and drive innovation.",
-      "Integration between SAP Business Data Cloud and SAP S/4HANA Cloud is streamlined using Cloud Integration Automation.",
-      "Cloud Integration Automation simplifies complex data workflows, enabling seamless connectivity and operational efficiency.",
-      "These advancements underline SAP's commitment to AI innovation and robust cloud integration capabilities."
-    ],
-    "sections": [
-      {
-        "name": "SAP Business AI",
-        "tags": [
-          "SAP Business AI"
-        ],
-        "top": [
-          {
-            "title": "Get Certified: SAP Certified - SAP Generative AI Developer",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/get-certified-sap-certified-sap-generative-ai-developer/ba-p/14420165",
-            "author": "JoseBastidas",
-            "date_published": "2026-06-17",
-            "matching_tags": [
-              "SAP Business AI"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP"
-          }
-        ],
-        "rest": []
-      },
-      {
-        "name": "SAP Business Data Cloud",
-        "tags": [
-          "SAP Business Data Cloud"
-        ],
-        "top": [
-          {
-            "title": "Integrating SAP Business Data Cloud with SAP S/4HANA Cloud using Cloud Integration Automation",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/integrating-sap-business-data-cloud-with-sap-s-4hana-cloud-using-cloud/ba-p/14420937",
-            "author": "kai-michael_roesner",
-            "date_published": "2026-06-17",
-            "matching_tags": [
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP"
           }
         ],
         "rest": []
