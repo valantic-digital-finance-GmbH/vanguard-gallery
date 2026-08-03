@@ -1,5 +1,137 @@
 [
   {
+    "id": "mon-2026-08-03",
+    "iso": "2026-08-03",
+    "full": "3 August 2026",
+    "period": "2026-07-27 – 2026-08-02",
+    "title": "13 changes across 3 products",
+    "preview": "SAP Analytics Cloud: 5 items added. SAP Business Data Cloud: 5 items added, 2 items deleted. SAP Datasphere: 1 item deleted",
+    "total_changes": 13,
+    "products_with_changes": [
+      "SAP Analytics Cloud",
+      "SAP Business Data Cloud",
+      "SAP Datasphere"
+    ],
+    "sections": [
+      {
+        "slug": "sap-analytics-cloud",
+        "name": "SAP Analytics Cloud",
+        "slipped": [],
+        "added": [
+          {
+            "id": "B87FDD4F8243479F8CEE5BE8D283D7F6",
+            "title": "Analytical insights capability in Joule: support for tables, interactive charts and follow-up questions",
+            "quarter": "Q3 2026",
+            "capability": "AI for Planning and Analytics",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=B87FDD4F8243479F8CEE5BE8D283D7F6"
+          },
+          {
+            "id": "54F198234D1F46E9B8BE1735E59D8E18",
+            "title": "Analytical insights in Joule with multi-language support",
+            "quarter": "Q2 2027",
+            "capability": "AI for Planning and Analytics",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=54F198234D1F46E9B8BE1735E59D8E18"
+          },
+          {
+            "id": "A8B9D7BC3B0140109B683BE10C46C96F",
+            "title": "Ability for admins to configure the default theme for new stories at the tenant level in SAP Analytics Cloud",
+            "quarter": "Q3 2026",
+            "capability": "Dashboard Extensibility",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=A8B9D7BC3B0140109B683BE10C46C96F"
+          },
+          {
+            "id": "ECD35531618B4FBA8043A40DCA6E5EB9",
+            "title": "Replace pre-delivered story theme to align with Horizon Morning",
+            "quarter": "Q3 2026",
+            "capability": "Dashboard Extensibility",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=ECD35531618B4FBA8043A40DCA6E5EB9"
+          },
+          {
+            "id": "C6FE16FA40C8480ABBDF042A4DBD451A",
+            "title": "WalkMe Integration for Enhanced User Guidance",
+            "quarter": "Q4 2026",
+            "capability": "Other",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=C6FE16FA40C8480ABBDF042A4DBD451A"
+          }
+        ],
+        "deleted": []
+      },
+      {
+        "slug": "sap-business-data-cloud",
+        "name": "SAP Business Data Cloud",
+        "slipped": [],
+        "added": [
+          {
+            "id": "B87FDD4F8243479F8CEE5BE8D283D7F6",
+            "title": "Analytical insights capability in Joule: support for tables, interactive charts and follow-up questions",
+            "quarter": "Q3 2026",
+            "capability": "AI for Planning and Analytics",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=B87FDD4F8243479F8CEE5BE8D283D7F6"
+          },
+          {
+            "id": "54F198234D1F46E9B8BE1735E59D8E18",
+            "title": "Analytical insights in Joule with multi-language support",
+            "quarter": "Q2 2027",
+            "capability": "AI for Planning and Analytics",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=54F198234D1F46E9B8BE1735E59D8E18"
+          },
+          {
+            "id": "A8B9D7BC3B0140109B683BE10C46C96F",
+            "title": "Ability for admins to configure the default theme for new stories at the tenant level in SAP Analytics Cloud",
+            "quarter": "Q3 2026",
+            "capability": "Dashboard Extensibility",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=A8B9D7BC3B0140109B683BE10C46C96F"
+          },
+          {
+            "id": "ECD35531618B4FBA8043A40DCA6E5EB9",
+            "title": "Replace pre-delivered story theme to align with Horizon Morning",
+            "quarter": "Q3 2026",
+            "capability": "Dashboard Extensibility",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=ECD35531618B4FBA8043A40DCA6E5EB9"
+          },
+          {
+            "id": "C6FE16FA40C8480ABBDF042A4DBD451A",
+            "title": "WalkMe Integration for Enhanced User Guidance",
+            "quarter": "Q4 2026",
+            "capability": "Knowledge Management",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=C6FE16FA40C8480ABBDF042A4DBD451A"
+          }
+        ],
+        "deleted": [
+          {
+            "id": "5767C5C876BD1EEEB39392E90A58B570",
+            "title": "Support for Google BigQuery as a source in replication flows",
+            "quarter": "Product Vision",
+            "capability": "Data Replication and ETL",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=5767C5C876BD1EEEB39392E90A58B570"
+          },
+          {
+            "id": "CC436021EEA74E4393FEB3AF870FB5C8",
+            "title": "Data product studio",
+            "quarter": "Q3 2026",
+            "capability": "Data Product Sharing",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=CC436021EEA74E4393FEB3AF870FB5C8"
+          }
+        ]
+      },
+      {
+        "slug": "sap-datasphere",
+        "name": "SAP Datasphere",
+        "slipped": [],
+        "added": [],
+        "deleted": [
+          {
+            "id": "5767C5C876BD1EEEB39392E90A58B570",
+            "title": "Support for Google BigQuery as a source in replication flows",
+            "quarter": "Product Vision",
+            "capability": "Data Replication and ETL",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=5767C5C876BD1EEEB39392E90A58B570"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "mon-2026-07-27",
     "iso": "2026-07-27",
     "full": "27 July 2026",
@@ -2207,58 +2339,6 @@
     "iso": "2026-06-01",
     "full": "1 June 2026",
     "period": "2026-05-25 – 2026-05-31",
-    "title": "2 changes across 2 products",
-    "preview": "SAP Business Data Cloud: 1 item added. SAP Datasphere: 1 item added",
-    "total_changes": 2,
-    "products_with_changes": [
-      "SAP Business Data Cloud",
-      "SAP Datasphere"
-    ],
-    "sections": [
-      {
-        "slug": "sap-analytics-cloud",
-        "name": "SAP Analytics Cloud",
-        "slipped": [],
-        "added": [],
-        "deleted": []
-      },
-      {
-        "slug": "sap-business-data-cloud",
-        "name": "SAP Business Data Cloud",
-        "slipped": [],
-        "added": [
-          {
-            "id": "83C3B594E9BF410C9EB49224CBFFDA0A",
-            "title": "Google Workload Identity Federation (WIF) support for Google BigQuery connection authentication with replication flows",
-            "quarter": "Q4 2026",
-            "capability": "Data Replication and ETL",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=83C3B594E9BF410C9EB49224CBFFDA0A"
-          }
-        ],
-        "deleted": []
-      },
-      {
-        "slug": "sap-datasphere",
-        "name": "SAP Datasphere",
-        "slipped": [],
-        "added": [
-          {
-            "id": "83C3B594E9BF410C9EB49224CBFFDA0A",
-            "title": "Google Workload Identity Federation (WIF) support for Google BigQuery connection authentication with replication flows",
-            "quarter": "Q4 2026",
-            "capability": "Data Replication and ETL",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=83C3B594E9BF410C9EB49224CBFFDA0A"
-          }
-        ],
-        "deleted": []
-      }
-    ]
-  },
-  {
-    "id": "mon-2026-05-29",
-    "iso": "2026-05-29",
-    "full": "29 May 2026",
-    "period": "2026-05-22 – 2026-05-28",
     "title": "2 changes across 2 products",
     "preview": "SAP Business Data Cloud: 1 item added. SAP Datasphere: 1 item added",
     "total_changes": 2,
