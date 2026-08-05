@@ -1,5 +1,92 @@
 [
   {
+    "id": "wed-2026-08-05",
+    "weekday": "Wednesday",
+    "iso": "2026-08-05",
+    "full": "Aug 5, 2026",
+    "title": "4 new SAP blog posts today.",
+    "preview": "4 new SAP blog posts today.",
+    "reads": "16 min",
+    "posts": 4,
+    "tags": [
+      "Business AI",
+      "Business Data Cloud",
+      "Analytics Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Understanding SAP Business AI Platform (BAIP): The Next Evolution of Enterprise AI",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/understanding-sap-business-ai-platform-baip-the-next-evolution-of/ba-p/14455335",
+            "author": "pvsbprasad",
+            "date_published": "2026-08-04",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          },
+          {
+            "title": "SAP UX Q3/2026 Update – Part 2: SAP S/4HANA Cloud Public Edition 2608",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-ux-q3-2026-update-part-2-sap-s-4hana-cloud-public-edition-2608/ba-p/14454961",
+            "author": "ThomasReiss",
+            "date_published": "2026-08-04",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Prompt Management in SAP AI Core",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/prompt-management-in-sap-ai-core/ba-p/14417824",
+            "author": "Vennilla00",
+            "date_published": "2026-08-04",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "Introducing the SAP Analytics Cloud Custom Widget Library",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/introducing-the-sap-analytics-cloud-custom-widget-library/ba-p/14455069",
+            "author": "Michelle_Miley",
+            "date_published": "2026-08-04",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "tue-2026-08-04",
     "weekday": "Tuesday",
     "iso": "2026-08-04",
@@ -2969,71 +3056,6 @@
             "minutes": 5,
             "board_id": "data-professionalsblog-board",
             "board_name": "Data Professionals Blog posts"
-          }
-        ],
-        "rest": []
-      }
-    ]
-  },
-  {
-    "id": "wed-2026-06-24",
-    "weekday": "Wednesday",
-    "iso": "2026-06-24",
-    "full": "Jun 24, 2026",
-    "title": "Explore two methods for building hierarchies in SAP Analytics Cloud (SAC) and learn how to choose the right one for specific use cases.",
-    "preview": "Gain practical insights to optimize hierarchy designs in SAC, simplifying a complex topic for Business Intelligence professionals.",
-    "reads": "2 min",
-    "posts": 2,
-    "tags": [
-      "Analytics Cloud",
-      "SAC Planning",
-      "SAC Modeling"
-    ],
-    "highlights": [
-      "Explore two methods for building hierarchies in SAP Analytics Cloud (SAC) and learn how to choose the right one for specific use cases.",
-      "Gain practical insights to optimize hierarchy designs in SAC, simplifying a complex topic for Business Intelligence professionals.",
-      "Learn how to use input controls dynamically in SAC stories to enable effective filtering and enhance data analysis.",
-      "Discover time-saving techniques for leveraging input controls in SAC and improve your analytical workflows.",
-      "Both blogs encourage user engagement and sharing of experiences to foster a collaborative learning environment."
-    ],
-    "sections": [
-      {
-        "name": "SAP Analytics Cloud",
-        "tags": [
-          "SAP Analytics Cloud",
-          "SAP Analytics Cloud for planning",
-          "SAP Analytics Cloud, data modeling"
-        ],
-        "top": [
-          {
-            "title": "Two Ways to Build a Hierarchy in SAC and How to Choose the Right One",
-            "url": "https://community.sap.com/t5/data-and-analytics-blog-posts/two-ways-to-build-a-hierarchy-in-sac-and-how-to-choose-the-right-one/ba-p/14426041",
-            "author": "Priya_312",
-            "date_published": "2026-06-24",
-            "matching_tags": [
-              "SAP Analytics Cloud",
-              "SAP Analytics Cloud for planning",
-              "SAP Analytics Cloud, data modeling"
-            ],
-            "minutes": 1,
-            "board_id": "data-analyticsblog-board",
-            "board_name": "Data and Analytics Blog Posts",
-            "summary": "The blog explores two methods for building hierarchies in SAP Analytics Cloud (SAC) and provides guidance on selecting the appropriate approach based on specific use cases. It aims to simplify a complex topic for Business Intelligence professionals. The author shares practical insights from their experience to help users optimize their hierarchy designs.",
-            "post_type": "How-to"
-          },
-          {
-            "title": "How to Use Input Controls in SAC Stories Dynamically",
-            "url": "https://community.sap.com/t5/data-and-analytics-blog-posts/how-to-use-input-controls-in-sac-stories-dynamically/ba-p/14424094",
-            "author": "Priya_312",
-            "date_published": "2026-06-22",
-            "matching_tags": [
-              "SAP Analytics Cloud"
-            ],
-            "minutes": 1,
-            "board_id": "data-analyticsblog-board",
-            "board_name": "Data and Analytics Blog Posts",
-            "summary": "The blog post provides guidance on using input controls dynamically in SAP Analytics Cloud (SAC) stories for effective filtering. The author shares practical insights to help users save time and enhance their data analysis experience. Readers are encouraged to engage and share their own experiences.",
-            "post_type": "How-to"
           }
         ],
         "rest": []
