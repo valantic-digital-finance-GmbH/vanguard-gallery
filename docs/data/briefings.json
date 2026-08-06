@@ -1,5 +1,66 @@
 [
   {
+    "id": "thu-2026-08-06",
+    "weekday": "Thursday",
+    "iso": "2026-08-06",
+    "full": "Aug 6, 2026",
+    "title": "3 new SAP blog posts today.",
+    "preview": "3 new SAP blog posts today.",
+    "reads": "7 min",
+    "posts": 3,
+    "tags": [
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "SAP BW Query Template Generator – First Hands-On Experience",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/sap-bw-query-template-generator-first-hands-on-experience/ba-p/14455005",
+            "author": "UlrichM",
+            "date_published": "2026-08-05",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          },
+          {
+            "title": "[Demos] AI-Powered Innovation in SAP Master Data Governance",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/demos-ai-powered-innovation-in-sap-master-data-governance/ba-p/14456950",
+            "author": "Corrie",
+            "date_published": "2026-08-05",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          },
+          {
+            "title": "Try Out the Dremio and Understand Before It Becomes Tightly Coupled with Your Future SAP Landscapes",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/try-out-the-dremio-and-understand-before-it-becomes-tightly-coupled-with/ba-p/14456412",
+            "author": "Yogananda",
+            "date_published": "2026-08-05",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "wed-2026-08-05",
     "weekday": "Wednesday",
     "iso": "2026-08-05",
@@ -2934,128 +2995,6 @@
             "minutes": 5,
             "board_id": "technology-blog-sap",
             "board_name": "Technology Blog Posts by SAP"
-          }
-        ],
-        "rest": []
-      }
-    ]
-  },
-  {
-    "id": "thu-2026-06-25",
-    "weekday": "Thursday",
-    "iso": "2026-06-25",
-    "full": "Jun 25, 2026",
-    "title": "SAP is advancing its vision of an autonomous enterprise by integrating agentic AI, governed data products, and event-driven architectures, as highlighted in the SAP Runs SAP series and SAP Sapphire sessions.",
-    "preview": "Organisational Change Management (OCM) is critical for successful AI adoption, addressing people-centric challenges to ensure AI initiatives are utilized and deliver tangible benefits.",
-    "reads": "21 min",
-    "posts": 5,
-    "tags": [
-      "Business AI",
-      "Business Data Cloud",
-      "SAC Planning",
-      "Datasphere"
-    ],
-    "highlights": [
-      "SAP is advancing its vision of an autonomous enterprise by integrating agentic AI, governed data products, and event-driven architectures, as highlighted in the SAP Runs SAP series and SAP Sapphire sessions.",
-      "Organisational Change Management (OCM) is critical for successful AI adoption, addressing people-centric challenges to ensure AI initiatives are utilized and deliver tangible benefits.",
-      "A simplified high-level overview of SAP's AI Agent reference architecture is introduced to help beginners grasp foundational concepts, marking the start of a new educational series.",
-      "Managing large data models in SAP Datasphere is streamlined through Claude Code, enabling modifications without disrupting downstream processes and addressing practical implementation challenges."
-    ],
-    "sections": [
-      {
-        "name": "SAP Business AI",
-        "tags": [
-          "SAP Business AI"
-        ],
-        "top": [
-          {
-            "title": "How SAP is becoming an Autonomous Enterprise - SAP Runs SAP - From Vision to Execution",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/how-sap-is-becoming-an-autonomous-enterprise-sap-runs-sap-from-vision-to/ba-p/14425257",
-            "author": "TaniaD",
-            "date_published": "2026-06-24",
-            "matching_tags": [
-              "SAP Business AI",
-              "SAP Business Data Cloud"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP",
-            "summary": "The blog explores how SAP integrates agentic AI, governed data products, and event-driven architectures to scale AI in operations. It highlights insights from the SAP Runs SAP series and new sessions from SAP Sapphire. The focus is on executing the vision of an autonomous enterprise.",
-            "post_type": "Article"
-          },
-          {
-            "title": "Why OCM Is the Missing Piece in Every Organisation's AI Strategy",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/why-ocm-is-the-missing-piece-in-every-organisation-s-ai-strategy/ba-p/14426475",
-            "author": "DaveRyan",
-            "date_published": "2026-06-24",
-            "matching_tags": [
-              "SAP Business AI"
-            ],
-            "minutes": 1,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP",
-            "summary": "The blog post emphasizes the importance of Organisational Change Management (OCM) in successfully integrating AI into workplaces. It argues that AI adoption is primarily a people challenge, and organizations that prioritize OCM are more likely to see tangible benefits from their AI investments. Without OCM, AI initiatives risk being underutilized or ignored by employees.",
-            "post_type": "Article"
-          },
-          {
-            "title": "Simplifying SAP AI Agent Architecture for Beginners - #1 High Level Overview",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/simplifying-sap-ai-agent-architecture-for-beginners-1-high-level-overview/ba-p/14426309",
-            "author": "Raja_Gupta1",
-            "date_published": "2026-06-24",
-            "matching_tags": [
-              "SAP Business AI"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP",
-            "summary": "This blog introduces a simplified explanation of SAP's AI Agent reference architecture, aimed at helping beginners understand the concepts. It is the first in a series that breaks down the architecture into more digestible parts. The focus of this post is on providing a high-level overview.",
-            "post_type": "How-to"
-          }
-        ],
-        "rest": []
-      },
-      {
-        "name": "SAP Datasphere",
-        "tags": [
-          "SAP Datasphere"
-        ],
-        "top": [
-          {
-            "title": "Working with Large Data Models in SAP Datasphere Using Claude Code",
-            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/working-with-large-data-models-in-sap-datasphere-using-claude-code/ba-p/14426639",
-            "author": "FredericWall",
-            "date_published": "2026-06-24",
-            "matching_tags": [
-              "SAP Datasphere"
-            ],
-            "minutes": 5,
-            "board_id": "technology-blog-sap",
-            "board_name": "Technology Blog Posts by SAP",
-            "summary": "The blog explores managing large data models in SAP Datasphere, focusing on modifying existing models without disrupting downstream processes. It builds on previous discussions about creating objects using natural language and Claude Code, addressing practical challenges in real-world scenarios.",
-            "post_type": "Deep dive"
-          }
-        ],
-        "rest": []
-      },
-      {
-        "name": "SAP Analytics Cloud",
-        "tags": [
-          "SAP Analytics Cloud",
-          "SAP Analytics Cloud for planning",
-          "SAP Analytics Cloud, data modeling"
-        ],
-        "top": [
-          {
-            "title": "Improved Data Action scoping with the new Data Filter Parameter type",
-            "url": "https://community.sap.com/t5/data-professionals-blog-posts/improved-data-action-scoping-with-the-new-data-filter-parameter-type/ba-p/14413702",
-            "author": "ScottGodfree",
-            "date_published": "2026-06-24",
-            "matching_tags": [
-              "SAP Analytics Cloud for planning"
-            ],
-            "minutes": 5,
-            "board_id": "data-professionalsblog-board",
-            "board_name": "Data Professionals Blog posts"
           }
         ],
         "rest": []
