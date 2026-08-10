@@ -1,5 +1,102 @@
 [
   {
+    "id": "mon-2026-08-10",
+    "iso": "2026-08-10",
+    "full": "10 August 2026",
+    "period": "2026-08-03 – 2026-08-09",
+    "title": "7 changes across 2 products",
+    "preview": "SAP Analytics Cloud: 1 item slipped to Q4 2026, 1 item added. SAP Business Data Cloud: 3 items slipped, 2 items added",
+    "total_changes": 7,
+    "products_with_changes": [
+      "SAP Analytics Cloud",
+      "SAP Business Data Cloud"
+    ],
+    "sections": [
+      {
+        "slug": "sap-analytics-cloud",
+        "name": "SAP Analytics Cloud",
+        "slipped": [
+          {
+            "id": "F344F2F86B384DC885FEAE62F0F44EA2",
+            "title": "Support for currency conversion in the Microsoft Excel add-in",
+            "old_quarter": "Q3 2026",
+            "new_quarter": "Q4 2026",
+            "direction": "forward",
+            "capability": "Office Suite Integration",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=F344F2F86B384DC885FEAE62F0F44EA2"
+          }
+        ],
+        "added": [
+          {
+            "id": "E5B098A06E2E4F3C9CD4108914ABA968",
+            "title": "Introduce Data Import API into Job Monitor",
+            "quarter": "Q3 2026",
+            "capability": "Self-Service Data Preparation",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=E5B098A06E2E4F3C9CD4108914ABA968"
+          }
+        ],
+        "deleted": []
+      },
+      {
+        "slug": "sap-business-data-cloud",
+        "name": "SAP Business Data Cloud",
+        "slipped": [
+          {
+            "id": "000D3ABE772D1FD0AAEB3AA27B23FCE0",
+            "title": "Data center availability for SAP Business Data Cloud in China through Alibaba Cloud",
+            "old_quarter": "Q1 2027",
+            "new_quarter": "Q2 2027",
+            "direction": "forward",
+            "capability": "Data Center Availability",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3ABE772D1FD0AAEB3AA27B23FCE0"
+          },
+          {
+            "id": "000D3AAC9DD21FD0AAEB298EC68EFA3D",
+            "title": "Data center availability for SAP Business Data Cloud in China through Microsoft Azure",
+            "old_quarter": "Q1 2027",
+            "new_quarter": "Q2 2027",
+            "direction": "forward",
+            "capability": "Data Center Availability",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAC9DD21FD0AAEB298EC68EFA3D"
+          },
+          {
+            "id": "F344F2F86B384DC885FEAE62F0F44EA2",
+            "title": "Support for currency conversion in the Microsoft Excel add-in",
+            "old_quarter": "Q3 2026",
+            "new_quarter": "Q4 2026",
+            "direction": "forward",
+            "capability": "Office Suite Integration",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=F344F2F86B384DC885FEAE62F0F44EA2"
+          }
+        ],
+        "added": [
+          {
+            "id": "000D3ABE772D1FD0A8CC28C95B939C7D",
+            "title": "Query spend data through Joule",
+            "quarter": "Q3 2026",
+            "capability": "Spend Data Analytics",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3ABE772D1FD0A8CC28C95B939C7D"
+          },
+          {
+            "id": "85EDB223F4A84A4382378BFC6047CA2E",
+            "title": "Total spend data products",
+            "quarter": "Q3 2026",
+            "capability": "Spend Data Analytics",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=85EDB223F4A84A4382378BFC6047CA2E"
+          }
+        ],
+        "deleted": []
+      },
+      {
+        "slug": "sap-datasphere",
+        "name": "SAP Datasphere",
+        "slipped": [],
+        "added": [],
+        "deleted": []
+      }
+    ]
+  },
+  {
     "id": "mon-2026-08-03",
     "iso": "2026-08-03",
     "full": "3 August 2026",
@@ -2330,58 +2427,6 @@
           }
         ],
         "added": [],
-        "deleted": []
-      }
-    ]
-  },
-  {
-    "id": "mon-2026-06-01",
-    "iso": "2026-06-01",
-    "full": "1 June 2026",
-    "period": "2026-05-25 – 2026-05-31",
-    "title": "2 changes across 2 products",
-    "preview": "SAP Business Data Cloud: 1 item added. SAP Datasphere: 1 item added",
-    "total_changes": 2,
-    "products_with_changes": [
-      "SAP Business Data Cloud",
-      "SAP Datasphere"
-    ],
-    "sections": [
-      {
-        "slug": "sap-analytics-cloud",
-        "name": "SAP Analytics Cloud",
-        "slipped": [],
-        "added": [],
-        "deleted": []
-      },
-      {
-        "slug": "sap-business-data-cloud",
-        "name": "SAP Business Data Cloud",
-        "slipped": [],
-        "added": [
-          {
-            "id": "83C3B594E9BF410C9EB49224CBFFDA0A",
-            "title": "Google Workload Identity Federation (WIF) support for Google BigQuery connection authentication with replication flows",
-            "quarter": "Q4 2026",
-            "capability": "Data Replication and ETL",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=83C3B594E9BF410C9EB49224CBFFDA0A"
-          }
-        ],
-        "deleted": []
-      },
-      {
-        "slug": "sap-datasphere",
-        "name": "SAP Datasphere",
-        "slipped": [],
-        "added": [
-          {
-            "id": "83C3B594E9BF410C9EB49224CBFFDA0A",
-            "title": "Google Workload Identity Federation (WIF) support for Google BigQuery connection authentication with replication flows",
-            "quarter": "Q4 2026",
-            "capability": "Data Replication and ETL",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=83C3B594E9BF410C9EB49224CBFFDA0A"
-          }
-        ],
         "deleted": []
       }
     ]
