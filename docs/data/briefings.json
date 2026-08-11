@@ -1,5 +1,78 @@
 [
   {
+    "id": "tue-2026-08-11",
+    "weekday": "Tuesday",
+    "iso": "2026-08-11",
+    "full": "Aug 11, 2026",
+    "title": "3 new SAP blog posts today.",
+    "preview": "3 new SAP blog posts today.",
+    "reads": "7 min",
+    "posts": 3,
+    "tags": [
+      "Business AI",
+      "Analytics Cloud",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "From AI Discovery to Production Reality: HP Inc.’s Journey Toward the Autonomous Enterprise",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/from-ai-discovery-to-production-reality-hp-inc-s-journey-toward-the/ba-p/14460896",
+            "author": "balajigaddam",
+            "date_published": "2026-08-10",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "New Administration Setting - Define a story theme as the default at the tenant level",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/new-administration-setting-define-a-story-theme-as-the-default-at-the/ba-p/14449421",
+            "author": "christina_mast",
+            "date_published": "2026-08-10",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          },
+          {
+            "title": "BDC",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/bdc/ba-p/14457266",
+            "author": "NarasimhaAdityaKambhampati369",
+            "date_published": "2026-08-10",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "mon-2026-08-10",
     "weekday": "Monday",
     "iso": "2026-08-10",
