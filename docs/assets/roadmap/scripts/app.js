@@ -3,11 +3,14 @@
 let allItems = [];
 let slipActive = true;
 let slippedOnlyActive = false;
+let showPastActive = false;
+let currentQuarterKey = 999997;
 let searchQuery = "";
 
 function quarterSortKey(q) {
   if (!q || q === 'null' || q === 'undefined') return 999999;
   if (q === 'Product Vision') return 999998;
+  if (q === 'Unscheduled') return 999999;
   const m = q.match(/Q(\d)\s+(\d{4})/);
   if (!m) return 999997;
   return parseInt(m[2]) * 10 + parseInt(m[1]);
@@ -34,9 +37,10 @@ function statusClass(status) {
 function render() {
   const productVal = document.getElementById('product-filter').value;
   const productFiltered = productVal ? allItems.filter(i => i.product === productVal) : allItems;
+  const pastFiltered = showPastActive ? productFiltered : productFiltered.filter(i => !i.past);
   const searchFiltered = !searchQuery
-    ? productFiltered
-    : productFiltered.filter(item =>
+    ? pastFiltered
+    : pastFiltered.filter(item =>
         // Match the item's own text only — NOT the enclosing group fields
         // (quarter column / capability group), which items are bucketed under.
         [item.title, item.status, item.product_display]
@@ -45,7 +49,7 @@ function render() {
 
   const quarterMap = new Map();
   searchFiltered.forEach(item => {
-    const q = item.quarter || 'Product Vision';
+    const q = item.quarter || 'Unscheduled';
     if (!quarterMap.has(q)) quarterMap.set(q, new Map());
     const capMap = quarterMap.get(q);
     const cap = item.capability || 'Other';
@@ -65,11 +69,12 @@ function render() {
   quarters.forEach(quarter => {
     const capMap = quarterMap.get(quarter);
     const isVision = quarter === 'Product Vision';
+    const isPastCol = quarterSortKey(quarter) < currentQuarterKey;
     const renderedCaps = [...capMap.keys()].sort().map(cap => {
       const allCapItems = capMap.get(cap);
       return { cap, items: slippedOnlyActive ? allCapItems.filter(i => i.slipped_from) : allCapItems };
     }).filter(g => g.items.length > 0);
-    const defaultCollapsed = renderedCaps.length > 3;
+    const defaultCollapsed = renderedCaps.length > 3 || isPastCol;
 
     let totalVisible = 0;
     const groupsHtml = renderedCaps.map(({ cap, items }) => {
@@ -82,13 +87,14 @@ function render() {
         const sClass = statusClass(item.status);
         const isSlipped = slipActive && item.slipped_from;
         const visionClass = isVision ? ' vision' : '';
+        const pastClass = item.past ? ' past' : '';
         const slipHtml = isSlipped
           ? '<div class="slip-badge">&#9888; Slipped from ' + escHtml(item.slipped_from) + '</div>'
           : '';
         const titleHtml = item.url
           ? '<a class="item-link" href="' + escHtml(item.url) + '" target="_blank" rel="noopener noreferrer">' + escHtml(item.title) + '</a>'
           : escHtml(item.title);
-        return '<div class="item-card ' + sClass + visionClass + (isSlipped ? ' slipped' : '') + '">'
+        return '<div class="item-card ' + sClass + visionClass + pastClass + (isSlipped ? ' slipped' : '') + '">'
           + '<div class="item-status">' + escHtml(item.status || '') + '</div>'
           + '<div class="item-title">' + titleHtml + '</div>'
           + slipHtml
@@ -106,15 +112,20 @@ function render() {
     }).join('');  // .filter already removed empty groups
 
     board.insertAdjacentHTML('beforeend',
-      '<div class="col">'
-      + '<div class="col-header' + (isVision ? ' vision' : '') + '" onclick="toggleColumn(this)">'
+      '<div class="col' + (isPastCol ? ' past' : '') + '">'
+      + '<div class="col-header' + (isVision ? ' vision' : '') + (isPastCol ? ' past' : '') + '" onclick="toggleColumn(this)">'
       + '<span class="col-chevron"></span>'
       + escHtml(quarter) + '<span class="count">' + totalVisible + '</span>'
       + '</div>'
-      + '<div class="col-body">' + groupsHtml + '</div>'
+      + '<div class="col-body' + (isPastCol ? ' past' : '') + '">' + groupsHtml + '</div>'
       + '</div>'
     );
   });
+
+  if (showPastActive) {
+    const firstCurrent = board.querySelector('.col:not(.past)');
+    if (firstCurrent) firstCurrent.scrollIntoView({ block: 'nearest', inline: 'start' });
+  }
 }
 
 function toggleGroup(headerEl) {
@@ -139,6 +150,12 @@ function toggleSlip() {
 function toggleSlippedOnly() {
   slippedOnlyActive = !slippedOnlyActive;
   document.getElementById('slipped-only-toggle').classList.toggle('active', slippedOnlyActive);
+  render();
+}
+
+function togglePast() {
+  showPastActive = !showPastActive;
+  document.getElementById('past-toggle').classList.toggle('active', showPastActive);
   render();
 }
 
@@ -199,6 +216,7 @@ function renderShifts() {
 function init() {
   try {
     allItems = (window.__LATEST_DATA__ || {}).items || [];
+    currentQuarterKey = quarterSortKey((window.__LATEST_DATA__ || {}).current_quarter);
     document.getElementById('product-filter').addEventListener('change', () => {
       render();
       const activeTab = document.querySelector('.tab-btn.active');
@@ -210,6 +228,8 @@ function init() {
     document.getElementById('slip-toggle').classList.toggle('active', slipActive);
     document.getElementById('slipped-only-toggle').addEventListener('click', toggleSlippedOnly);
     document.getElementById('slipped-only-toggle').classList.toggle('active', slippedOnlyActive);
+    document.getElementById('past-toggle').addEventListener('click', togglePast);
+    document.getElementById('past-toggle').classList.toggle('active', showPastActive);
     document.getElementById('search-input').addEventListener('input', e => {
       searchQuery = e.target.value.toLowerCase().trim();
       render();
