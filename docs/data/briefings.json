@@ -6,8 +6,8 @@
     "full": "Aug 12, 2026",
     "title": "7 new SAP blog posts today.",
     "preview": "7 new SAP blog posts today.",
-    "reads": "19 min",
-    "posts": 7,
+    "reads": "20 min",
+    "posts": 8,
     "tags": [
       "Business AI",
       "Analytics Cloud",
@@ -120,7 +120,21 @@
             "board_name": "Data Professionals Blog posts"
           }
         ],
-        "rest": []
+        "rest": [
+          {
+            "title": "Is Your SAP Datasphere Tenant Running Healthy? Meet the Tenant Health Check Agent (EAC)",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/is-your-sap-datasphere-tenant-running-healthy-meet-the-tenant-health-check/ba-p/14461075",
+            "author": "kpsauer",
+            "date_published": "2026-08-12",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ]
       }
     ]
   },
