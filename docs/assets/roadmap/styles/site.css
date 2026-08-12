@@ -11,6 +11,10 @@
   --bg-col: #eef1f6;
   --bg-card: #ffffff;
   --border: #dde3eb;
+  --past-col: #7b869b;
+  --past-bg: #f2f4f8;
+  --past-text: #9aa5b5;
+  --past-border: #cbd5e1;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -58,6 +62,8 @@ body {
 .slip-toggle .dot { width: 8px; height: 8px; border-radius: 50%; background: #cbd5e1; }
 .slip-toggle.active { border-color: #ef4444; color: #ef4444; background: #fff5f5; }
 .slip-toggle.active .dot { background: #ef4444; }
+.slip-toggle.past-toggle.active { border-color: var(--navy-col); color: var(--navy-col); background: #eef1f6; }
+.slip-toggle.past-toggle.active .dot { background: var(--navy-col); }
 
 /* ── Tab Bar ── */
 .tab-bar {
@@ -207,6 +213,8 @@ body {
 
 /* ── Column ── */
 .col { flex: 1 1 280px; min-width: 280px; max-width: 400px; display: flex; flex-direction: column; }
+.col.past { opacity: .85; transition: opacity .15s; }
+.col.past:hover { opacity: 1; }
 
 .col-header {
   background: var(--navy-col); color: white;
@@ -216,6 +224,7 @@ body {
   white-space: nowrap; cursor: pointer; user-select: none;
 }
 .col-header.vision { background: var(--purple-vision); }
+.col-header.past { background: var(--past-col); }
 .col-header .count {
   background: rgba(255,255,255,.2); border-radius: 12px;
   padding: 1px 8px; font-size: .74rem; font-weight: 600;
@@ -232,6 +241,7 @@ body {
   border-top: none; border-radius: 0 0 8px 8px;
   flex: 1; padding: 8px;
 }
+.col-body.past { background: var(--past-bg); border-style: dashed; }
 
 /* ── Capability group ── */
 .cap-group { margin-bottom: 6px; }
@@ -272,6 +282,9 @@ body {
 .item-card.slipped { border-left-color: #ef4444 !important; background: #fff7f7; }
 .item-card.vision     { border-left-color: #8b5cf6; }
 .item-card.vision .item-status { color: #8b5cf6; }
+.item-card.past { background: #fafbfc; border-left-color: var(--past-border); }
+.item-card.past .item-title  { color: var(--past-text); }
+.item-card.past .item-status { color: var(--past-text); }
 
 .item-status {
   font-size: .62rem; font-weight: 700; text-transform: uppercase;
