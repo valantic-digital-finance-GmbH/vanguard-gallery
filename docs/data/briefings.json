@@ -6,14 +6,15 @@
     "full": "Aug 13, 2026",
     "title": "4 new SAP blog posts today.",
     "preview": "4 new SAP blog posts today.",
-    "reads": "16 min",
-    "posts": 4,
+    "reads": "17 min",
+    "posts": 5,
     "tags": [
       "Business AI",
       "Analytics Cloud",
       "Business Data Cloud",
       "SAC Planning",
-      "SAC Modeling"
+      "SAC Modeling",
+      "Datasphere"
     ],
     "highlights": [],
     "sections": [
@@ -70,7 +71,21 @@
             "board_name": "Data Professionals Blog posts"
           }
         ],
-        "rest": []
+        "rest": [
+          {
+            "title": "SAP Business Data Cloud and Datasphere News in July",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/sap-business-data-cloud-and-datasphere-news-in-july/ba-p/14454658",
+            "author": "kpsauer",
+            "date_published": "2026-08-13",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ]
       },
       {
         "name": "SAP Analytics Cloud",
