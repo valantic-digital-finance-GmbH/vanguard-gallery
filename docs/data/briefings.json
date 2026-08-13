@@ -1,5 +1,105 @@
 [
   {
+    "id": "thu-2026-08-13",
+    "weekday": "Thursday",
+    "iso": "2026-08-13",
+    "full": "Aug 13, 2026",
+    "title": "4 new SAP blog posts today.",
+    "preview": "4 new SAP blog posts today.",
+    "reads": "16 min",
+    "posts": 4,
+    "tags": [
+      "Business AI",
+      "Analytics Cloud",
+      "Business Data Cloud",
+      "SAC Planning",
+      "SAC Modeling"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Stop Hunting Through KBAs. Start Resolving Alerts. Introducing the ALM Alert Resolution Agent",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/stop-hunting-through-kbas-start-resolving-alerts-introducing-the-alm-alert/ba-p/14461301",
+            "author": "frank_wenzke",
+            "date_published": "2026-08-12",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Managing the agent lifecycle from idea to value",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/managing-the-agent-lifecycle-from-idea-to-value/ba-p/14458314",
+            "author": "JoseBastidas",
+            "date_published": "2026-08-12",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "AI-Assisted Story Code Generation for SAP Analytics Cloud",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/ai-assisted-story-code-generation-for-sap-analytics-cloud/ba-p/14454500",
+            "author": "jie_deng",
+            "date_published": "2026-08-12",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "My SAC story took 9 seconds to load — and the backend wasn't the problem",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/my-sac-story-took-9-seconds-to-load-and-the-backend-wasn-t-the-problem/ba-p/14459853",
+            "author": "Baudoin",
+            "date_published": "2026-08-12",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Analytics Cloud for planning",
+              "SAP Analytics Cloud, data modeling"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "wed-2026-08-12",
     "weekday": "Wednesday",
     "iso": "2026-08-12",
