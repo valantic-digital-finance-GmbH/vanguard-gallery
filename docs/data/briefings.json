@@ -1,5 +1,111 @@
 [
   {
+    "id": "fri-2026-08-14",
+    "weekday": "Friday",
+    "iso": "2026-08-14",
+    "full": "Aug 14, 2026",
+    "title": "5 new SAP blog posts today.",
+    "preview": "5 new SAP blog posts today.",
+    "reads": "13 min",
+    "posts": 5,
+    "tags": [
+      "Business AI",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Joule Studio Unlocked: The Partner Webinar Series You Cannot Miss",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/joule-studio-unlocked-the-partner-webinar-series-you-cannot-miss/ba-p/14463114",
+            "author": "OanaTudorascu",
+            "date_published": "2026-08-13",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "SAP Business AI in Agribusiness - Partner live expert session",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-ai-in-agribusiness-partner-live-expert-session/ba-p/14462394",
+            "author": "JoseBastidas",
+            "date_published": "2026-08-13",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Autonomous ALM with SAP Cloud ALM and  Joule",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/autonomous-alm-with-sap-cloud-alm-and-joule/ba-p/14453871",
+            "author": "Xavier",
+            "date_published": "2026-08-12",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "The Data Steward’s Evolving Role in the SAP Business AI Platform",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/the-data-steward-s-evolving-role-in-the-sap-business-ai-platform/ba-p/14461564",
+            "author": "Corrie",
+            "date_published": "2026-08-13",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "Dynamic Current Month, Year-to-Date, Current Year and Previous Measures in SAP Datasphere",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/dynamic-current-month-year-to-date-current-year-and-previous-measures-in/ba-p/14463317",
+            "author": "dohaidang_le",
+            "date_published": "2026-08-13",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "thu-2026-08-13",
     "weekday": "Thursday",
     "iso": "2026-08-13",
