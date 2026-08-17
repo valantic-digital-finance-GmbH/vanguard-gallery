@@ -1,5 +1,115 @@
 [
   {
+    "id": "mon-2026-08-17",
+    "weekday": "Monday",
+    "iso": "2026-08-17",
+    "full": "Aug 17, 2026",
+    "title": "5 new SAP blog posts today.",
+    "preview": "5 new SAP blog posts today.",
+    "reads": "21 min",
+    "posts": 5,
+    "tags": [
+      "Business AI",
+      "Business Data Cloud",
+      "Analytics Cloud",
+      "Datasphere"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "New Sessions on SAP Learning Hub on Autonomous Enterprise for Architects",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/new-sessions-on-sap-learning-hub-on-autonomous-enterprise-for-architects/ba-p/14464364",
+            "author": "Gaurish-Dessai",
+            "date_published": "2026-08-16",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "SAP RPT 1.5: Where Explainability Makes Responsible AI Real",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-rpt-1-5-where-explainability-makes-responsible-ai-real/ba-p/14464521",
+            "author": "AlexDevassy",
+            "date_published": "2026-08-16",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Why SAP Needs a Knowledge Graph: Giving Enterprise AI a Map of the Business",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/why-sap-needs-a-knowledge-graph-giving-enterprise-ai-a-map-of-the-business/ba-p/14464679",
+            "author": "sicheng_zuo13c642",
+            "date_published": "2026-08-16",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Using Currency Conversion with the  HANACurrency Data Product",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/using-currency-conversion-with-the-hanacurrency-data-product/ba-p/14437828",
+            "author": "luka-deda28_",
+            "date_published": "2026-08-14",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "SAP Business Data Cloud Seamless Planning入門 - Part3 : SAP Datasphereの実績ファクトビューをライブバージョンで参照しよう",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-data-cloud-seamless-planning%E5%85%A5%E9%96%80-part3-sap/ba-p/14453208",
+            "author": "yuiyoshikawa",
+            "date_published": "2026-08-14",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "fri-2026-08-14",
     "weekday": "Friday",
     "iso": "2026-08-14",
