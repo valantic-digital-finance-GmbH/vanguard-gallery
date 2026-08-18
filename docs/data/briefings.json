@@ -1,5 +1,115 @@
 [
   {
+    "id": "tue-2026-08-18",
+    "weekday": "Tuesday",
+    "iso": "2026-08-18",
+    "full": "Aug 18, 2026",
+    "title": "5 new SAP blog posts today.",
+    "preview": "5 new SAP blog posts today.",
+    "reads": "17 min",
+    "posts": 5,
+    "tags": [
+      "Analytics Cloud",
+      "SAC Planning",
+      "Business Data Cloud",
+      "Datasphere"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "A Smarter, More Polished Charting Experience in SAP Analytics Cloud",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/a-smarter-more-polished-charting-experience-in-sap-analytics-cloud/ba-p/14464193",
+            "author": "Vivek-Varma",
+            "date_published": "2026-08-17",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Analytics Cloud for planning",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          },
+          {
+            "title": "Data Is More Than a Constant for the AI Engineer",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/data-is-more-than-a-constant-for-the-ai-engineer/ba-p/14465509",
+            "author": "Daniel_Dukes",
+            "date_published": "2026-08-17",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "SAP Datasphere Integration Patterns: Lessons Learned from Two Years of Implementations",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/sap-datasphere-integration-patterns-lessons-learned-from-two-years-of/ba-p/14460833",
+            "author": "saikrishna_kalivarapu2",
+            "date_published": "2026-08-17",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          },
+          {
+            "title": "Dynamic Labels in CDS Views: Making S/4HANA Embedded Analytics Truly Parameter‑Driven",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/dynamic-labels-in-cds-views-making-s-4hana-embedded-analytics-truly/ba-p/14371418",
+            "author": "PriyRatanShukla",
+            "date_published": "2026-08-17",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "Composite Enhancements for  SAP Analytics Cloud QRC3 2026",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/composite-enhancements-for-sap-analytics-cloud-qrc3-2026/ba-p/14463156",
+            "author": "jie_deng",
+            "date_published": "2026-08-17",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "mon-2026-08-17",
     "weekday": "Monday",
     "iso": "2026-08-17",
