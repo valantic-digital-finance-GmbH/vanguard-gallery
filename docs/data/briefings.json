@@ -1,5 +1,82 @@
 [
   {
+    "id": "wed-2026-08-19",
+    "weekday": "Wednesday",
+    "iso": "2026-08-19",
+    "full": "Aug 19, 2026",
+    "title": "3 new SAP blog posts today.",
+    "preview": "3 new SAP blog posts today.",
+    "reads": "15 min",
+    "posts": 3,
+    "tags": [
+      "Analytics Cloud",
+      "SAC Planning",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Enrich SAP Analytics Cloud Story Dashboards using the AI-assisted prompt insights widget",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/enrich-sap-analytics-cloud-story-dashboards-using-the-ai-assisted-prompt/ba-p/14466018",
+            "author": "johannes_huhn",
+            "date_published": "2026-08-18",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Analytics Cloud for planning",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Let’s Talk Data Season10 | SAP BW Modernization with SAP BDC",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/let-s-talk-data-season10-sap-bw-modernization-with-sap-bdc/ba-p/14466528",
+            "author": "VenkatG",
+            "date_published": "2026-08-18",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "Introducing the Compass Widget: Bringing Risk Context Into Your Stories",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/introducing-the-compass-widget-bringing-risk-context-into-your-stories/ba-p/14463057",
+            "author": "ChenNee",
+            "date_published": "2026-08-18",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Analytics Cloud for planning"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "tue-2026-08-18",
     "weekday": "Tuesday",
     "iso": "2026-08-18",
