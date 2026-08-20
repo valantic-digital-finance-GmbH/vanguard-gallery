@@ -1,5 +1,67 @@
 [
   {
+    "id": "thu-2026-08-20",
+    "weekday": "Thursday",
+    "iso": "2026-08-20",
+    "full": "Aug 20, 2026",
+    "title": "2 new SAP blog posts today.",
+    "preview": "2 new SAP blog posts today.",
+    "reads": "6 min",
+    "posts": 2,
+    "tags": [
+      "Analytics Cloud",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "SAP Business Data Cloud - SAC Favourites and Shared With Me Deprecation",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-data-cloud-sac-favourites-and-shared-with-me-deprecation/ba-p/14467643",
+            "author": "thomas_fery",
+            "date_published": "2026-08-19",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "SAP UX Q3/2026 Update – Part 7: SAP Analytics Cloud",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-ux-q3-2026-update-part-7-sap-analytics-cloud/ba-p/14468011",
+            "author": "ThomasReiss",
+            "date_published": "2026-08-19",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "wed-2026-08-19",
     "weekday": "Wednesday",
     "iso": "2026-08-19",
