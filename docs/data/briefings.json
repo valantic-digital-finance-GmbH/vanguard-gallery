@@ -1,5 +1,102 @@
 [
   {
+    "id": "fri-2026-08-21",
+    "weekday": "Friday",
+    "iso": "2026-08-21",
+    "full": "Aug 21, 2026",
+    "title": "4 new SAP blog posts today.",
+    "preview": "4 new SAP blog posts today.",
+    "reads": "16 min",
+    "posts": 4,
+    "tags": [
+      "Business AI",
+      "Business Data Cloud",
+      "Analytics Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "How SAP Business AI Platform Changes the Work of Data Scientists",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/how-sap-business-ai-platform-changes-the-work-of-data-scientists/ba-p/14468928",
+            "author": "Bradley_Vasilik",
+            "date_published": "2026-08-20",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "SAP Analytics Business Intelligence Statement of Direction / アナリティクス製品の方向性に関して",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-analytics-business-intelligence-statement-of-direction/ba-p/14468060",
+            "author": "MNagaya",
+            "date_published": "2026-08-20",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Your Data Never Leaves the Room: How SAP BDC and AI Core Keep Enterprise AI Inside the Walls",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/your-data-never-leaves-the-room-how-sap-bdc-and-ai-core-keep-enterprise-ai/ba-p/14468041",
+            "author": "sicheng_zuo13c642",
+            "date_published": "2026-08-20",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "Real-Time Airline Analytics using ABAP CDS Views & SAP Analytics Cloud",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/real-time-airline-analytics-using-abap-cds-views-amp-sap-analytics-cloud/ba-p/14461289",
+            "author": "Ellendula_PranithKumar",
+            "date_published": "2026-08-20",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "thu-2026-08-20",
     "weekday": "Thursday",
     "iso": "2026-08-20",
