@@ -1,5 +1,153 @@
 [
   {
+    "id": "mon-2026-08-24",
+    "weekday": "Monday",
+    "iso": "2026-08-24",
+    "full": "Aug 24, 2026",
+    "title": "9 new SAP blog posts today.",
+    "preview": "9 new SAP blog posts today.",
+    "reads": "13 min",
+    "posts": 9,
+    "tags": [
+      "Business AI",
+      "Analytics Cloud",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Joule Everywhere - SAP AI Layer for the Autonomous Enterprise - Part 5",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/joule-everywhere-sap-ai-layer-for-the-autonomous-enterprise-part-5/ba-p/14470205",
+            "author": "kkotti",
+            "date_published": "2026-08-24",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Joule Everywhere - SAP AI Layer for the Autonomous Enterprise - Part 4",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/joule-everywhere-sap-ai-layer-for-the-autonomous-enterprise-part-4/ba-p/14470189",
+            "author": "kkotti",
+            "date_published": "2026-08-24",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Joule Everywhere - SAP AI Layer for the Autonomous Enterprise - Part 3",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/joule-everywhere-sap-ai-layer-for-the-autonomous-enterprise-part-3/ba-p/14470168",
+            "author": "kkotti",
+            "date_published": "2026-08-24",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": [
+          {
+            "title": "Joule Everywhere - SAP AI Layer for the Autonomous Enterprise - Part 2",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/joule-everywhere-sap-ai-layer-for-the-autonomous-enterprise-part-2/ba-p/14469792",
+            "author": "kkotti",
+            "date_published": "2026-08-24",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Joule Everywhere - SAP AI Layer for the Autonomous Enterprise - Part 1",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/joule-everywhere-sap-ai-layer-for-the-autonomous-enterprise-part-1/ba-p/14469736",
+            "author": "kkotti",
+            "date_published": "2026-08-24",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "OData MCP Proxy - How to add a UI view to your own MCP server",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/odata-mcp-proxy-how-to-add-a-ui-view-to-your-own-mcp-server/ba-p/14469719",
+            "author": "WouterLemaire",
+            "date_published": "2026-08-21",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ]
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Making NLQ More Explainable, Reliable, and Actionable",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/making-nlq-more-explainable-reliable-and-actionable/ba-p/14468276",
+            "author": "ThierryAudas",
+            "date_published": "2026-08-21",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          },
+          {
+            "title": "Need to Know - SAP Snowflake and SAP Business Data Cloud: Data + AI Combo That Changes Everything",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/need-to-know-sap-snowflake-and-sap-business-data-cloud-data-ai-combo-that/ba-p/14469704",
+            "author": "DeanFarrow",
+            "date_published": "2026-08-21",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Got a BDC Question? Ask the Data Professionals Community",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/got-a-bdc-question-ask-the-data-professionals-community/ba-p/14469365",
+            "author": "Daniel_Dukes",
+            "date_published": "2026-08-21",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "fri-2026-08-21",
     "weekday": "Friday",
     "iso": "2026-08-21",
