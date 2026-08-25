@@ -4,13 +4,41 @@
     "weekday": "Tuesday",
     "iso": "2026-08-25",
     "full": "Aug 25, 2026",
-    "title": "No new posts today.",
-    "preview": "No new SAP blog posts were published since the last check.",
-    "reads": "—",
-    "posts": 0,
-    "tags": [],
+    "title": "1 new SAP blog posts today.",
+    "preview": "1 new SAP blog posts today.",
+    "reads": "1 min",
+    "posts": 1,
+    "tags": [
+      "Business AI",
+      "SAC Planning",
+      "Datasphere"
+    ],
     "highlights": [],
-    "sections": []
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "AI-Powered Forecasting with SAC, SAP RPT & Gen AI - Part 2: Feeding the Expert the Right Case File",
+            "url": "https://community.sap.com/t5/data-and-analytics-blog-posts/ai-powered-forecasting-with-sac-sap-rpt-amp-gen-ai-part-2-feeding-the/ba-p/14471328",
+            "author": "Elangovan",
+            "date_published": "2026-08-25",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Analytics Cloud for planning",
+              "SAP Datasphere"
+            ],
+            "minutes": 1,
+            "board_id": "data-analyticsblog-board",
+            "board_name": "Data and Analytics Blog Posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
   },
   {
     "id": "mon-2026-08-24",
