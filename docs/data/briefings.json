@@ -1,5 +1,82 @@
 [
   {
+    "id": "wed-2026-08-26",
+    "weekday": "Wednesday",
+    "iso": "2026-08-26",
+    "full": "Aug 26, 2026",
+    "title": "3 new SAP blog posts today.",
+    "preview": "3 new SAP blog posts today.",
+    "reads": "7 min",
+    "posts": 3,
+    "tags": [
+      "Business AI",
+      "SAC Planning",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "AI-Powered Forecasting with SAC, SAP RPT & Gen AI - \tPart 3: From JSON to a Trustworthy Sentence",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/ai-powered-forecasting-with-sac-sap-rpt-amp-gen-ai-part-3-from-json-to-a/ba-p/14472071",
+            "author": "Elangovan",
+            "date_published": "2026-08-26",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Analytics Cloud for planning",
+              "SAP Datasphere"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          },
+          {
+            "title": "Beyond SAP Snowflake ML: Calling SAP HANA Cloud ML and RPT-1.5 via External Access Integration (EAI)",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/beyond-sap-snowflake-ml-calling-sap-hana-cloud-ml-and-rpt-1-5-via-external/ba-p/14465962",
+            "author": "sherwin_emami",
+            "date_published": "2026-08-25",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Data Product Data Governance in SAP Business Data Cloud",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/data-product-data-governance-in-sap-business-data-cloud/ba-p/14470556",
+            "author": "GaetanSaulnier",
+            "date_published": "2026-08-25",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "tue-2026-08-25",
     "weekday": "Tuesday",
     "iso": "2026-08-25",
