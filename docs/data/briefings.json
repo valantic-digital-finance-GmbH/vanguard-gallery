@@ -1,5 +1,114 @@
 [
   {
+    "id": "thu-2026-08-27",
+    "weekday": "Thursday",
+    "iso": "2026-08-27",
+    "full": "Aug 27, 2026",
+    "title": "5 new SAP blog posts today.",
+    "preview": "5 new SAP blog posts today.",
+    "reads": "13 min",
+    "posts": 5,
+    "tags": [
+      "Business AI",
+      "Analytics Cloud",
+      "SAC Modeling",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Meet Your New ALM Dashboard Agent for Implementation Projects in SAP Cloud ALM",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/meet-your-new-alm-dashboard-agent-for-implementation-projects-in-sap-cloud/ba-p/14473276",
+            "author": "Nagar_Megha",
+            "date_published": "2026-08-27",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Generative AI-Powered Document Processing in SAP Integration Suite",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/generative-ai-powered-document-processing-in-sap-integration-suite/ba-p/14466536",
+            "author": "sapcpids",
+            "date_published": "2026-08-26",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          },
+          {
+            "title": "From Hype to Hands-On: Level Up Your AI Skills This August",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/from-hype-to-hands-on-level-up-your-ai-skills-this-august/ba-p/14472462",
+            "author": "shannabauer",
+            "date_published": "2026-08-26",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Data architect miniseries - Unpacking the knowledge core for data architects",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/data-architect-miniseries-unpacking-the-knowledge-core-for-data-architects/ba-p/14472771",
+            "author": "JoseBastidas",
+            "date_published": "2026-08-26",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "Extracting SAC Parent-Child Hierarchies into Databricks Using OData",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/extracting-sac-parent-child-hierarchies-into-databricks-using-odata/ba-p/14471440",
+            "author": "sampurnosarkar",
+            "date_published": "2026-08-27",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Analytics Cloud, data modeling"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "wed-2026-08-26",
     "weekday": "Wednesday",
     "iso": "2026-08-26",
