@@ -1,5 +1,67 @@
 [
   {
+    "id": "fri-2026-08-28",
+    "weekday": "Friday",
+    "iso": "2026-08-28",
+    "full": "Aug 28, 2026",
+    "title": "2 new SAP blog posts today.",
+    "preview": "2 new SAP blog posts today.",
+    "reads": "2 min",
+    "posts": 2,
+    "tags": [
+      "Business AI",
+      "SAC Planning",
+      "Datasphere"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "AI-Powered Forecasting with SAC, SAP RPT & Gen AI - Part 4: From Script to Service",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/ai-powered-forecasting-with-sac-sap-rpt-amp-gen-ai-part-4-from-script-to/ba-p/14472174",
+            "author": "Elangovan",
+            "date_published": "2026-08-27",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Analytics Cloud for planning",
+              "SAP Datasphere"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "Execute and Monitor SAP Datasphere Task Chains from UC4",
+            "url": "https://community.sap.com/t5/data-and-analytics-blog-posts/execute-and-monitor-sap-datasphere-task-chains-from-uc4/ba-p/14471535",
+            "author": "VinodKhatri",
+            "date_published": "2026-08-28",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 1,
+            "board_id": "data-analyticsblog-board",
+            "board_name": "Data and Analytics Blog Posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "thu-2026-08-27",
     "weekday": "Thursday",
     "iso": "2026-08-27",
