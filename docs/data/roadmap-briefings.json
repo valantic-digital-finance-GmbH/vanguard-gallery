@@ -1,5 +1,366 @@
 [
   {
+    "id": "mon-2026-08-31",
+    "iso": "2026-08-31",
+    "full": "31 August 2026",
+    "period": "2026-08-24 – 2026-08-30",
+    "title": "42 changes across 3 products",
+    "preview": "SAP Analytics Cloud: 2 items slipped, 14 items added. SAP Business Data Cloud: 6 items slipped, 15 items added. SAP Datasphere: 4 items slipped, 1 item added",
+    "total_changes": 42,
+    "products_with_changes": [
+      "SAP Analytics Cloud",
+      "SAP Business Data Cloud",
+      "SAP Datasphere"
+    ],
+    "sections": [
+      {
+        "slug": "sap-analytics-cloud",
+        "name": "SAP Analytics Cloud",
+        "slipped": [
+          {
+            "id": "F4B920B421EE46B2A719A21247F645EF",
+            "title": "Data lock visualization in the grid in the Microsoft Excel add-in",
+            "old_quarter": "Q4 2026",
+            "new_quarter": "Q1 2027",
+            "direction": "forward",
+            "capability": "Office Suite Integration",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=F4B920B421EE46B2A719A21247F645EF"
+          },
+          {
+            "id": "B14354EFD3D542279CD72601C11FB42A",
+            "title": "Merging variables in Microsoft Excel",
+            "old_quarter": "Q4 2026",
+            "new_quarter": "Q1 2027",
+            "direction": "forward",
+            "capability": "Office Suite Integration",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=B14354EFD3D542279CD72601C11FB42A"
+          }
+        ],
+        "added": [
+          {
+            "id": "0065E21A2B2F45E2814D9FBCFFC1FB15",
+            "title": "Auto generation of titles in tables",
+            "quarter": "Q4 2026",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=0065E21A2B2F45E2814D9FBCFFC1FB15"
+          },
+          {
+            "id": "19D19F3503B64481981D4094EE0F5959",
+            "title": "Change account and dimension hierarchies in JustAsk post search experience",
+            "quarter": "Q4 2026",
+            "capability": "AI for Planning and Analytics",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=19D19F3503B64481981D4094EE0F5959"
+          },
+          {
+            "id": "36D62E9CD1664923AA37BB0B19DC8329",
+            "title": "Custom axis title",
+            "quarter": "Q1 2027",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=36D62E9CD1664923AA37BB0B19DC8329"
+          },
+          {
+            "id": "8349B52C57494EE6B47F12F1FA1CDAE9",
+            "title": "Edit story filter in view mode",
+            "quarter": "Q4 2026",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=8349B52C57494EE6B47F12F1FA1CDAE9"
+          },
+          {
+            "id": "14A248F56C224C50B25343213648AEFB",
+            "title": "Edit table with Just Ask post search experience",
+            "quarter": "Q4 2026",
+            "capability": "AI for Planning and Analytics",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=14A248F56C224C50B25343213648AEFB"
+          },
+          {
+            "id": "301FD58DA52D4DF298062B23662F4D72",
+            "title": "Filter by condition for table widget",
+            "quarter": "Q4 2026",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=301FD58DA52D4DF298062B23662F4D72"
+          },
+          {
+            "id": "DB15B0DED07B47CEA5913D219FBCFFF2",
+            "title": "Filter table from headers",
+            "quarter": "Q4 2026",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=DB15B0DED07B47CEA5913D219FBCFFF2"
+          },
+          {
+            "id": "0ECED13CD9E14BC48F4F6457C4C35F29",
+            "title": "Result limit settings for tables",
+            "quarter": "Q1 2027",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=0ECED13CD9E14BC48F4F6457C4C35F29"
+          },
+          {
+            "id": "D86647A8C07747F991F6A7CADA8384E0",
+            "title": "Support add and edit filter in lite viewer excluding filter by time and measure-based filter",
+            "quarter": "Q4 2026",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=D86647A8C07747F991F6A7CADA8384E0"
+          },
+          {
+            "id": "B32D4CCEDB5A4CB4A95E4493E7A25522",
+            "title": "Sync axis for measures in combination of column and line charts",
+            "quarter": "Q4 2026",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=B32D4CCEDB5A4CB4A95E4493E7A25522"
+          },
+          {
+            "id": "EAFE67B031A94FB481A006AE6CCECA5A",
+            "title": "Version semantics for SAP Datasphere analytic models",
+            "quarter": "Q4 2026",
+            "capability": "Office Suite Integration",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=EAFE67B031A94FB481A006AE6CCECA5A"
+          },
+          {
+            "id": "64F4BD9CE3704D38BED7C1C829D77083",
+            "title": "Analytical insights capability in Joule and Just Ask: enhancement for improved natural language understanding",
+            "quarter": "",
+            "capability": "AI for Planning and Analytics",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=64F4BD9CE3704D38BED7C1C829D77083"
+          },
+          {
+            "id": "E8E78A657830498DA6CB90B3A7E1FED9",
+            "title": "Add and edit numeric measure filters in lite viewer",
+            "quarter": "Q1 2027",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=E8E78A657830498DA6CB90B3A7E1FED9"
+          },
+          {
+            "id": "D4B0A086A3E5475CA8A0F0BC5127CA13",
+            "title": "Drag and drop entities to canvas to create charts",
+            "quarter": "Q1 2027",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=D4B0A086A3E5475CA8A0F0BC5127CA13"
+          }
+        ],
+        "deleted": []
+      },
+      {
+        "slug": "sap-business-data-cloud",
+        "name": "SAP Business Data Cloud",
+        "slipped": [
+          {
+            "id": "000D3ABE772D1FD0ABFFD29798DEDD0F",
+            "title": "Enabling REST API connectivity and source support in replication flows",
+            "old_quarter": "Q3 2026",
+            "new_quarter": "Q4 2026",
+            "direction": "forward",
+            "capability": "Data Replication and ETL",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3ABE772D1FD0ABFFD29798DEDD0F"
+          },
+          {
+            "id": "A90128C2F6851EEDB3E6742547E6D1C1",
+            "title": "Metadata extraction for SAP ERP Central Component",
+            "old_quarter": "Q3 2026",
+            "new_quarter": "Q1 2027",
+            "direction": "forward",
+            "capability": "Data and Analytics Cataloging",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=A90128C2F6851EEDB3E6742547E6D1C1"
+          },
+          {
+            "id": "000D3AAADBCE1EDD94829FFAD4A59203",
+            "title": "Metadata extraction for SAP HANA Cloud",
+            "old_quarter": "Q3 2026",
+            "new_quarter": "Q1 2027",
+            "direction": "forward",
+            "capability": "Data and Analytics Cataloging",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAADBCE1EDD94829FFAD4A59203"
+          },
+          {
+            "id": "000D3AAADBCE1EDD948273FBDE1B4EFA",
+            "title": "Metadata extraction for SAP S/4HANA",
+            "old_quarter": "Q3 2026",
+            "new_quarter": "Q1 2027",
+            "direction": "forward",
+            "capability": "Data and Analytics Cataloging",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAADBCE1EDD948273FBDE1B4EFA"
+          },
+          {
+            "id": "F4B920B421EE46B2A719A21247F645EF",
+            "title": "Data lock visualization in the grid in the Microsoft Excel add-in",
+            "old_quarter": "Q4 2026",
+            "new_quarter": "Q1 2027",
+            "direction": "forward",
+            "capability": "Office Suite Integration",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=F4B920B421EE46B2A719A21247F645EF"
+          },
+          {
+            "id": "B14354EFD3D542279CD72601C11FB42A",
+            "title": "Merging variables in Microsoft Excel",
+            "old_quarter": "Q4 2026",
+            "new_quarter": "Q1 2027",
+            "direction": "forward",
+            "capability": "Office Suite Integration",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=B14354EFD3D542279CD72601C11FB42A"
+          }
+        ],
+        "added": [
+          {
+            "id": "0065E21A2B2F45E2814D9FBCFFC1FB15",
+            "title": "Auto generation of titles in tables",
+            "quarter": "Q4 2026",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=0065E21A2B2F45E2814D9FBCFFC1FB15"
+          },
+          {
+            "id": "19D19F3503B64481981D4094EE0F5959",
+            "title": "Change account and dimension hierarchies in JustAsk post search experience",
+            "quarter": "Q4 2026",
+            "capability": "AI for Planning and Analytics",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=19D19F3503B64481981D4094EE0F5959"
+          },
+          {
+            "id": "36D62E9CD1664923AA37BB0B19DC8329",
+            "title": "Custom axis title",
+            "quarter": "Q1 2027",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=36D62E9CD1664923AA37BB0B19DC8329"
+          },
+          {
+            "id": "8349B52C57494EE6B47F12F1FA1CDAE9",
+            "title": "Edit story filter in view mode",
+            "quarter": "Q4 2026",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=8349B52C57494EE6B47F12F1FA1CDAE9"
+          },
+          {
+            "id": "14A248F56C224C50B25343213648AEFB",
+            "title": "Edit table with Just Ask post search experience",
+            "quarter": "Q4 2026",
+            "capability": "AI for Planning and Analytics",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=14A248F56C224C50B25343213648AEFB"
+          },
+          {
+            "id": "301FD58DA52D4DF298062B23662F4D72",
+            "title": "Filter by condition for table widget",
+            "quarter": "Q4 2026",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=301FD58DA52D4DF298062B23662F4D72"
+          },
+          {
+            "id": "DB15B0DED07B47CEA5913D219FBCFFF2",
+            "title": "Filter table from headers",
+            "quarter": "Q4 2026",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=DB15B0DED07B47CEA5913D219FBCFFF2"
+          },
+          {
+            "id": "0ECED13CD9E14BC48F4F6457C4C35F29",
+            "title": "Result limit settings for tables",
+            "quarter": "Q1 2027",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=0ECED13CD9E14BC48F4F6457C4C35F29"
+          },
+          {
+            "id": "D86647A8C07747F991F6A7CADA8384E0",
+            "title": "Support add and edit filter in lite viewer excluding filter by time and measure-based filter",
+            "quarter": "Q4 2026",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=D86647A8C07747F991F6A7CADA8384E0"
+          },
+          {
+            "id": "EF92559C8C1F478FBD12C792A5A88454",
+            "title": "Support local table on files as source with delta in replication flows",
+            "quarter": "Q4 2026",
+            "capability": "Data Replication and ETL",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=EF92559C8C1F478FBD12C792A5A88454"
+          },
+          {
+            "id": "B32D4CCEDB5A4CB4A95E4493E7A25522",
+            "title": "Sync axis for measures in combination of column and line charts",
+            "quarter": "Q4 2026",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=B32D4CCEDB5A4CB4A95E4493E7A25522"
+          },
+          {
+            "id": "EAFE67B031A94FB481A006AE6CCECA5A",
+            "title": "Version semantics for SAP Datasphere analytic models",
+            "quarter": "Q4 2026",
+            "capability": "Office Suite Integration",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=EAFE67B031A94FB481A006AE6CCECA5A"
+          },
+          {
+            "id": "64F4BD9CE3704D38BED7C1C829D77083",
+            "title": "Analytical insights capability in Joule and Just Ask: enhancement for improved natural language understanding",
+            "quarter": "",
+            "capability": "AI for Planning and Analytics",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=64F4BD9CE3704D38BED7C1C829D77083"
+          },
+          {
+            "id": "E8E78A657830498DA6CB90B3A7E1FED9",
+            "title": "Add and edit numeric measure filters in lite viewer",
+            "quarter": "Q1 2027",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=E8E78A657830498DA6CB90B3A7E1FED9"
+          },
+          {
+            "id": "D4B0A086A3E5475CA8A0F0BC5127CA13",
+            "title": "Drag and drop entities to canvas to create charts",
+            "quarter": "Q1 2027",
+            "capability": "Dashboard Design",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=D4B0A086A3E5475CA8A0F0BC5127CA13"
+          }
+        ],
+        "deleted": []
+      },
+      {
+        "slug": "sap-datasphere",
+        "name": "SAP Datasphere",
+        "slipped": [
+          {
+            "id": "000D3ABE772D1FD0ABFFD29798DEDD0F",
+            "title": "Enabling REST API connectivity and source support in replication flows",
+            "old_quarter": "Q3 2026",
+            "new_quarter": "Q4 2026",
+            "direction": "forward",
+            "capability": "Data Replication and ETL",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=000D3ABE772D1FD0ABFFD29798DEDD0F"
+          },
+          {
+            "id": "A90128C2F6851EEDB3E6742547E6D1C1",
+            "title": "Metadata extraction for SAP ERP Central Component",
+            "old_quarter": "Q3 2026",
+            "new_quarter": "Q1 2027",
+            "direction": "forward",
+            "capability": "Data and Analytics Cataloging",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=A90128C2F6851EEDB3E6742547E6D1C1"
+          },
+          {
+            "id": "000D3AAADBCE1EDD94829FFAD4A59203",
+            "title": "Metadata extraction for SAP HANA Cloud",
+            "old_quarter": "Q3 2026",
+            "new_quarter": "Q1 2027",
+            "direction": "forward",
+            "capability": "Data and Analytics Cataloging",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=000D3AAADBCE1EDD94829FFAD4A59203"
+          },
+          {
+            "id": "000D3AAADBCE1EDD948273FBDE1B4EFA",
+            "title": "Metadata extraction for SAP S/4HANA",
+            "old_quarter": "Q3 2026",
+            "new_quarter": "Q1 2027",
+            "direction": "forward",
+            "capability": "Data and Analytics Cataloging",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=000D3AAADBCE1EDD948273FBDE1B4EFA"
+          }
+        ],
+        "added": [
+          {
+            "id": "EF92559C8C1F478FBD12C792A5A88454",
+            "title": "Support local table on files as source with delta in replication flows",
+            "quarter": "Q4 2026",
+            "capability": "Data Replication and ETL",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=EF92559C8C1F478FBD12C792A5A88454"
+          }
+        ],
+        "deleted": []
+      }
+    ]
+  },
+  {
     "id": "mon-2026-08-24",
     "iso": "2026-08-24",
     "full": "24 August 2026",
@@ -2280,122 +2641,6 @@
             "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=16064419D86145BA84E8C9904B7E0FD3"
           }
         ],
-        "deleted": []
-      }
-    ]
-  },
-  {
-    "id": "mon-2026-06-22",
-    "iso": "2026-06-22",
-    "full": "22 June 2026",
-    "period": "2026-06-15 – 2026-06-21",
-    "title": "9 changes across 3 products",
-    "preview": "SAP Analytics Cloud: 1 item added. SAP Business Data Cloud: 3 items slipped, 2 items added. SAP Datasphere: 3 items slipped",
-    "total_changes": 9,
-    "products_with_changes": [
-      "SAP Analytics Cloud",
-      "SAP Business Data Cloud",
-      "SAP Datasphere"
-    ],
-    "sections": [
-      {
-        "slug": "sap-analytics-cloud",
-        "name": "SAP Analytics Cloud",
-        "slipped": [],
-        "added": [
-          {
-            "id": "32520299AA63487FBEF35FB2AD35D86A",
-            "title": "Plan Entry: repost data",
-            "quarter": "Q4 2026",
-            "capability": "Business Planning and Forecasting",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=32520299AA63487FBEF35FB2AD35D86A"
-          }
-        ],
-        "deleted": []
-      },
-      {
-        "slug": "sap-business-data-cloud",
-        "name": "SAP Business Data Cloud",
-        "slipped": [
-          {
-            "id": "A90128C2F6851EEDB3E6742547E6D1C1",
-            "title": "Metadata extraction for SAP ERP Central Component",
-            "old_quarter": "Q2 2026",
-            "new_quarter": "Q3 2026",
-            "direction": "forward",
-            "capability": "Data and Analytics Cataloging",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=A90128C2F6851EEDB3E6742547E6D1C1"
-          },
-          {
-            "id": "000D3AAADBCE1EDD94829FFAD4A59203",
-            "title": "Metadata extraction for SAP HANA Cloud",
-            "old_quarter": "Q2 2026",
-            "new_quarter": "Q3 2026",
-            "direction": "forward",
-            "capability": "Data and Analytics Cataloging",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAADBCE1EDD94829FFAD4A59203"
-          },
-          {
-            "id": "000D3AAADBCE1EDD948273FBDE1B4EFA",
-            "title": "Metadata extraction for SAP S/4HANA",
-            "old_quarter": "Q2 2026",
-            "new_quarter": "Q3 2026",
-            "direction": "forward",
-            "capability": "Data and Analytics Cataloging",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAADBCE1EDD948273FBDE1B4EFA"
-          }
-        ],
-        "added": [
-          {
-            "id": "74282CE17CEA4928AB9390A77D103649",
-            "title": "Revenue intelligence application",
-            "quarter": "Q3 2026",
-            "capability": "Other",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=74282CE17CEA4928AB9390A77D103649"
-          },
-          {
-            "id": "32520299AA63487FBEF35FB2AD35D86A",
-            "title": "Plan Entry: repost data",
-            "quarter": "Q4 2026",
-            "capability": "Business Planning and Forecasting",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=32520299AA63487FBEF35FB2AD35D86A"
-          }
-        ],
-        "deleted": []
-      },
-      {
-        "slug": "sap-datasphere",
-        "name": "SAP Datasphere",
-        "slipped": [
-          {
-            "id": "A90128C2F6851EEDB3E6742547E6D1C1",
-            "title": "Metadata extraction for SAP ERP Central Component",
-            "old_quarter": "Q2 2026",
-            "new_quarter": "Q3 2026",
-            "direction": "forward",
-            "capability": "Data and Analytics Cataloging",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=A90128C2F6851EEDB3E6742547E6D1C1"
-          },
-          {
-            "id": "000D3AAADBCE1EDD94829FFAD4A59203",
-            "title": "Metadata extraction for SAP HANA Cloud",
-            "old_quarter": "Q2 2026",
-            "new_quarter": "Q3 2026",
-            "direction": "forward",
-            "capability": "Data and Analytics Cataloging",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=000D3AAADBCE1EDD94829FFAD4A59203"
-          },
-          {
-            "id": "000D3AAADBCE1EDD948273FBDE1B4EFA",
-            "title": "Metadata extraction for SAP S/4HANA",
-            "old_quarter": "Q2 2026",
-            "new_quarter": "Q3 2026",
-            "direction": "forward",
-            "capability": "Data and Analytics Cataloging",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=000D3AAADBCE1EDD948273FBDE1B4EFA"
-          }
-        ],
-        "added": [],
         "deleted": []
       }
     ]
