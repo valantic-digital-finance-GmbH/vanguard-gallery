@@ -1,5 +1,104 @@
 [
   {
+    "id": "mon-2026-08-31",
+    "weekday": "Monday",
+    "iso": "2026-08-31",
+    "full": "Aug 31, 2026",
+    "title": "4 new SAP blog posts today.",
+    "preview": "4 new SAP blog posts today.",
+    "reads": "16 min",
+    "posts": 4,
+    "tags": [
+      "Business AI",
+      "Business Data Cloud",
+      "Analytics Cloud",
+      "Datasphere"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Agentic AI in SAP Autonomous Finance: One Joule Request End to End, From Prompt to Audit Log",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/agentic-ai-in-sap-autonomous-finance-one-joule-request-end-to-end-from/ba-p/14475732",
+            "author": "VineetBakshi",
+            "date_published": "2026-08-30",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Architecting Your Data Foundation for the Autonomous Enterprise",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/architecting-your-data-foundation-for-the-autonomous-enterprise/ba-p/14474905",
+            "author": "Liam_Clarke",
+            "date_published": "2026-08-28",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          },
+          {
+            "title": "Data architect miniseries - Leveraging the open data ecosystem to drive success",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/data-architect-miniseries-leveraging-the-open-data-ecosystem-to-drive/ba-p/14474032",
+            "author": "JoseBastidas",
+            "date_published": "2026-08-28",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "Exploring Story Filter APIs in SAP Analytics Cloud",
+            "url": "https://community.sap.com/t5/data-and-analytics-blog-posts/exploring-story-filter-apis-in-sap-analytics-cloud/ba-p/14455829",
+            "author": "neenulalu9471",
+            "date_published": "2026-08-28",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-analyticsblog-board",
+            "board_name": "Data and Analytics Blog Posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "fri-2026-08-28",
     "weekday": "Friday",
     "iso": "2026-08-28",
