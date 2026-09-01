@@ -1,5 +1,94 @@
 [
   {
+    "id": "tue-2026-09-01",
+    "weekday": "Tuesday",
+    "iso": "2026-09-01",
+    "full": "Sep 1, 2026",
+    "title": "4 new SAP blog posts today.",
+    "preview": "4 new SAP blog posts today.",
+    "reads": "4 min",
+    "posts": 4,
+    "tags": [
+      "Business AI",
+      "SAC Planning",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "AI-Powered Forecasting with SAC, SAP RPT & Gen AI - Part 5: Ask, Click, or Wait",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/ai-powered-forecasting-with-sac-sap-rpt-amp-gen-ai-part-5-ask-click-or-wait/ba-p/14473243",
+            "author": "Elangovan",
+            "date_published": "2026-08-31",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Analytics Cloud for planning",
+              "SAP Datasphere"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          },
+          {
+            "title": "From Compliance to Innovation: CrimSync Liverpool #1 Unites Customers, SAP Experts & Partners",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/from-compliance-to-innovation-crimsync-liverpool-1-unites-customers-sap/ba-p/14476287",
+            "author": "David2807",
+            "date_published": "2026-08-31",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "What We Learned Building SAP Joule Agents",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/what-we-learned-building-sap-joule-agents/ba-p/14451864",
+            "author": "Prasanna",
+            "date_published": "2026-08-31",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Business Data Architecture: Data Product Blueprints",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/business-data-architecture-data-product-blueprints/ba-p/14475528",
+            "author": "AllanHald",
+            "date_published": "2026-08-31",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "mon-2026-08-31",
     "weekday": "Monday",
     "iso": "2026-08-31",
