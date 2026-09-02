@@ -1,5 +1,126 @@
 [
   {
+    "id": "wed-2026-09-02",
+    "weekday": "Wednesday",
+    "iso": "2026-09-02",
+    "full": "Sep 2, 2026",
+    "title": "5 new SAP blog posts today.",
+    "preview": "5 new SAP blog posts today.",
+    "reads": "17 min",
+    "posts": 5,
+    "tags": [
+      "Business AI",
+      "SAC Planning",
+      "Datasphere",
+      "Analytics Cloud",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "AI-Powered Forecasting with SAC, SAP RPT & Gen AI - Part 6: From Proof of Concept to Production",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/ai-powered-forecasting-with-sac-sap-rpt-amp-gen-ai-part-6-from-proof-of/ba-p/14475849",
+            "author": "Elangovan",
+            "date_published": "2026-09-02",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Analytics Cloud for planning",
+              "SAP Datasphere"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Positioning SAP Reltio with SAP Business Data Cloud",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/positioning-sap-reltio-with-sap-business-data-cloud/ba-p/14477479",
+            "author": "JoseBastidas",
+            "date_published": "2026-09-01",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          },
+          {
+            "title": "Implementing SAP Business Data Cloud and AI with SAP Open Data Ecosystem",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/implementing-sap-business-data-cloud-and-ai-with-sap-open-data-ecosystem/ba-p/14476752",
+            "author": "JoseBastidas",
+            "date_published": "2026-09-01",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "From AI Ambition to Autonomous Enterprise: SAP Connect Days for AI & Data Leaders 2026",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/from-ai-ambition-to-autonomous-enterprise-sap-connect-days-for-ai-amp-data/ba-p/14477647",
+            "author": "joanneks",
+            "date_published": "2026-09-01",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Datasphere"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "Upcoming Change: Member Limit Enforcement for Data Action Parameters [Updated]",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/upcoming-change-member-limit-enforcement-for-data-action-parameters-updated/ba-p/14414984",
+            "author": "ScottGodfree",
+            "date_published": "2026-06-30",
+            "matching_tags": [
+              "SAP Analytics Cloud for planning"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "tue-2026-09-01",
     "weekday": "Tuesday",
     "iso": "2026-09-01",
