@@ -1,5 +1,58 @@
 [
   {
+    "id": "thu-2026-09-03",
+    "weekday": "Thursday",
+    "iso": "2026-09-03",
+    "full": "Sep 3, 2026",
+    "title": "2 new SAP blog posts today.",
+    "preview": "2 new SAP blog posts today.",
+    "reads": "10 min",
+    "posts": 2,
+    "tags": [
+      "Business AI",
+      "Analytics Cloud",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Simplified SAP Joule for Consultants (J4C) Activation  using CIAS Automation",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/simplified-sap-joule-for-consultants-j4c-activation-using-cias-automation/ba-p/14478339",
+            "author": "SnehaGoture",
+            "date_published": "2026-09-03",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "The New Analytics Playbook: Why Dashboards Are Still Very Much Needed",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/the-new-analytics-playbook-why-dashboards-are-still-very-much-needed/ba-p/14478297",
+            "author": "Tobias_Mueller",
+            "date_published": "2026-09-02",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Analytics Cloud",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "wed-2026-09-02",
     "weekday": "Wednesday",
     "iso": "2026-09-02",
