@@ -1,5 +1,46 @@
 [
   {
+    "id": "fri-2026-09-04",
+    "weekday": "Friday",
+    "iso": "2026-09-04",
+    "full": "Sep 4, 2026",
+    "title": "1 new SAP blog posts today.",
+    "preview": "1 new SAP blog posts today.",
+    "reads": "5 min",
+    "posts": 1,
+    "tags": [
+      "Analytics Cloud",
+      "SAC Planning",
+      "Datasphere"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "Seamless Planning & Data Types: What SAC Actually Lets You Control in Datasphere",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/seamless-planning-amp-data-types-what-sac-actually-lets-you-control-in/ba-p/14479165",
+            "author": "Tano_B",
+            "date_published": "2026-09-03",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Analytics Cloud for planning",
+              "SAP Datasphere"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "thu-2026-09-03",
     "weekday": "Thursday",
     "iso": "2026-09-03",
