@@ -1,5 +1,58 @@
 [
   {
+    "id": "mon-2026-09-07",
+    "weekday": "Monday",
+    "iso": "2026-09-07",
+    "full": "Sep 7, 2026",
+    "title": "2 new SAP blog posts today.",
+    "preview": "2 new SAP blog posts today.",
+    "reads": "6 min",
+    "posts": 2,
+    "tags": [
+      "Analytics Cloud",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "How Much Business Logic Is Too Much Business Logic in SAP Datasphere?",
+            "url": "https://community.sap.com/t5/data-and-analytics-blog-posts/how-much-business-logic-is-too-much-business-logic-in-sap-datasphere/ba-p/14476376",
+            "author": "Akbarali_DnA",
+            "date_published": "2026-09-04",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-analyticsblog-board",
+            "board_name": "Data and Analytics Blog Posts"
+          },
+          {
+            "title": "Leveraging SAP Business Data Cloud test, demo, and development license",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/leveraging-sap-business-data-cloud-test-demo-and-development-license/ba-p/14479350",
+            "author": "JoseBastidas",
+            "date_published": "2026-09-04",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "fri-2026-09-04",
     "weekday": "Friday",
     "iso": "2026-09-04",
