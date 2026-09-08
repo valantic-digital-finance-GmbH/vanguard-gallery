@@ -1,5 +1,102 @@
 [
   {
+    "id": "tue-2026-09-08",
+    "weekday": "Tuesday",
+    "iso": "2026-09-08",
+    "full": "Sep 8, 2026",
+    "title": "5 new SAP blog posts today.",
+    "preview": "5 new SAP blog posts today.",
+    "reads": "17 min",
+    "posts": 5,
+    "tags": [
+      "Business AI",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "When AI Skills Learn—and Forget: Designing a Reliable Evolution Framework",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/when-ai-skills-learn-and-forget-designing-a-reliable-evolution-framework/ba-p/14481004",
+            "author": "ying_dai2",
+            "date_published": "2026-09-07",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "OData MCP Proxy - Combining skills with MCP servers",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/odata-mcp-proxy-combining-skills-with-mcp-servers/ba-p/14480963",
+            "author": "WouterLemaire",
+            "date_published": "2026-09-07",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          },
+          {
+            "title": "SAP Joule Agent and SAP Asset Performance Management(APM):Turning Asset Alerts into Conversations",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/sap-joule-agent-and-sap-asset-performance-management-apm-turning-asset/ba-p/14479185",
+            "author": "Pardhasaradhi_Reddy_Chelikam",
+            "date_published": "2026-09-07",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Provisioning of SAP BDC Connect for Snowflake",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/provisioning-of-sap-bdc-connect-for-snowflake/ba-p/14481139",
+            "author": "gvglupita",
+            "date_published": "2026-09-08",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Business Data Architecture: AI-Assisted Delivery",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/business-data-architecture-ai-assisted-delivery/ba-p/14480064",
+            "author": "AllanHald",
+            "date_published": "2026-09-07",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "mon-2026-09-07",
     "weekday": "Monday",
     "iso": "2026-09-07",
