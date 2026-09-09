@@ -1,5 +1,77 @@
 [
   {
+    "id": "wed-2026-09-09",
+    "weekday": "Wednesday",
+    "iso": "2026-09-09",
+    "full": "Sep 9, 2026",
+    "title": "3 new SAP blog posts today.",
+    "preview": "3 new SAP blog posts today.",
+    "reads": "11 min",
+    "posts": 3,
+    "tags": [
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "SAP Business Data Cloud and Datasphere News in August",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/sap-business-data-cloud-and-datasphere-news-in-august/ba-p/14480924",
+            "author": "kpsauer",
+            "date_published": "2026-09-08",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          },
+          {
+            "title": "SAP Business Data Cloud: Best Practices for SAP BW Modernization, Episode 1: Introduction",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/sap-business-data-cloud-best-practices-for-sap-bw-modernization-episode-1/ba-p/14481186",
+            "author": "JoseBastidas",
+            "date_published": "2026-09-08",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "Finding the \"Where-Used\" List for Replication Flows in SAP Datasphere",
+            "url": "https://community.sap.com/t5/data-and-analytics-blog-posts/finding-the-quot-where-used-quot-list-for-replication-flows-in-sap/ba-p/14479141",
+            "author": "Gunpreet",
+            "date_published": "2026-09-08",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 5,
+            "board_id": "data-analyticsblog-board",
+            "board_name": "Data and Analytics Blog Posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "tue-2026-09-08",
     "weekday": "Tuesday",
     "iso": "2026-09-08",
