@@ -1,5 +1,103 @@
 [
   {
+    "id": "thu-2026-09-10",
+    "weekday": "Thursday",
+    "iso": "2026-09-10",
+    "full": "Sep 10, 2026",
+    "title": "5 new SAP blog posts today.",
+    "preview": "5 new SAP blog posts today.",
+    "reads": "13 min",
+    "posts": 5,
+    "tags": [
+      "Business AI",
+      "Business Data Cloud",
+      "Datasphere"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Real Customers. Real AI Impact with SAP Business AI Platform",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/real-customers-real-ai-impact-with-sap-business-ai-platform/ba-p/14479955",
+            "author": "AaronGraber",
+            "date_published": "2026-09-10",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "You Think You Know Your Suppliers. But Do You Really?",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/you-think-you-know-your-suppliers-but-do-you-really/ba-p/14482298",
+            "author": "NanditaGhosh",
+            "date_published": "2026-09-09",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Optional Currency Conversion",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/optional-currency-conversion/ba-p/14474633",
+            "author": "senja_28-",
+            "date_published": "2026-09-10",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "What SAP Reltio in SAP Business Data Cloud means for your data",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/what-sap-reltio-in-sap-business-data-cloud-means-for-your-data/ba-p/14482405",
+            "author": "Corrie",
+            "date_published": "2026-09-09",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          },
+          {
+            "title": "SAP BDC: Best Practices for SAP BW Modernization, Episode 2: Greenfield Datasphere approach",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/sap-bdc-best-practices-for-sap-bw-modernization-episode-2-greenfield/ba-p/14481885",
+            "author": "JoseBastidas",
+            "date_published": "2026-09-09",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "wed-2026-09-09",
     "weekday": "Wednesday",
     "iso": "2026-09-09",
