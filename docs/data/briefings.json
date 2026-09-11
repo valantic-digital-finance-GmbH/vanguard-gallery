@@ -6,8 +6,8 @@
     "full": "Sep 11, 2026",
     "title": "3 new SAP blog posts today.",
     "preview": "3 new SAP blog posts today.",
-    "reads": "15 min",
-    "posts": 3,
+    "reads": "20 min",
+    "posts": 4,
     "tags": [
       "Analytics Cloud",
       "Datasphere",
@@ -58,6 +58,27 @@
             "minutes": 5,
             "board_id": "data-professionalsblog-board",
             "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "Dynamic Hierarchy Path Generation for Flexible Restricted Measures in SAP Datasphere",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/dynamic-hierarchy-path-generation-for-flexible-restricted-measures-in-sap/ba-p/14480112",
+            "author": "AbhijeetBehuria",
+            "date_published": "2026-09-11",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
           }
         ],
         "rest": []
