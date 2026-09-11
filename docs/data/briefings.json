@@ -1,5 +1,70 @@
 [
   {
+    "id": "fri-2026-09-11",
+    "weekday": "Friday",
+    "iso": "2026-09-11",
+    "full": "Sep 11, 2026",
+    "title": "3 new SAP blog posts today.",
+    "preview": "3 new SAP blog posts today.",
+    "reads": "15 min",
+    "posts": 3,
+    "tags": [
+      "Analytics Cloud",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Connected Data Is Not the Same as Trusted Data",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/connected-data-is-not-the-same-as-trusted-data/ba-p/14483214",
+            "author": "JacobBrass",
+            "date_published": "2026-09-11",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          },
+          {
+            "title": "Foundational Support Guidance for SAP Reltio",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/foundational-support-guidance-for-sap-reltio/ba-p/14483374",
+            "author": "Caroline-S",
+            "date_published": "2026-09-10",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Introducing the SAP Business Data Cloud Modernization Option for SAP BW NetWeaver",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/introducing-the-sap-business-data-cloud-modernization-option-for-sap-bw/ba-p/14482618",
+            "author": "meganhoy",
+            "date_published": "2026-09-10",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "thu-2026-09-10",
     "weekday": "Thursday",
     "iso": "2026-09-10",
