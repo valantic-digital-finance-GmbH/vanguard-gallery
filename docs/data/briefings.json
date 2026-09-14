@@ -1,5 +1,90 @@
 [
   {
+    "id": "mon-2026-09-14",
+    "weekday": "Monday",
+    "iso": "2026-09-14",
+    "full": "Sep 14, 2026",
+    "title": "4 new SAP blog posts today.",
+    "preview": "4 new SAP blog posts today.",
+    "reads": "12 min",
+    "posts": 4,
+    "tags": [
+      "Business AI",
+      "Analytics Cloud",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Build a SAP PO Runtime & Sizing Analyzer-SAP Cloud Connector+Integration Suite+HANA Cloud+IE MCP",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/build-a-sap-po-runtime-amp-sizing-analyzer-sap-cloud-connector-integration/ba-p/14484156",
+            "author": "subhojitSaha",
+            "date_published": "2026-09-13",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Explore and reuse SAP Datasphere models from Databricks",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/explore-and-reuse-sap-datasphere-models-from-databricks/ba-p/14482125",
+            "author": "remi_astier",
+            "date_published": "2026-09-11",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Converging Every AI Workload on a Single Database",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/converging-every-ai-workload-on-a-single-database/ba-p/14483221",
+            "author": "JacobBrass",
+            "date_published": "2026-09-11",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          },
+          {
+            "title": "SAP BDC: Best Practices for SAP BW Modernization, Episode 3: Data Product Generator",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/sap-bdc-best-practices-for-sap-bw-modernization-episode-3-data-product/ba-p/14483143",
+            "author": "JoseBastidas",
+            "date_published": "2026-09-11",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "fri-2026-09-11",
     "weekday": "Friday",
     "iso": "2026-09-11",
