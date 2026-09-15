@@ -1,5 +1,56 @@
 [
   {
+    "id": "tue-2026-09-15",
+    "weekday": "Tuesday",
+    "iso": "2026-09-15",
+    "full": "Sep 15, 2026",
+    "title": "2 new SAP blog posts today.",
+    "preview": "2 new SAP blog posts today.",
+    "reads": "10 min",
+    "posts": 2,
+    "tags": [
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Business Data Architecture: Looking Back and Full Steam Ahead",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/business-data-architecture-looking-back-and-full-steam-ahead/ba-p/14484102",
+            "author": "AllanHald",
+            "date_published": "2026-09-14",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          },
+          {
+            "title": "Partner Learning Accelerator: SAP Certified - Data Architect - SAP Business Data Cloud",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/partner-learning-accelerator-sap-certified-data-architect-sap-business-data/ba-p/14484358",
+            "author": "JoseBastidas",
+            "date_published": "2026-09-14",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "mon-2026-09-14",
     "weekday": "Monday",
     "iso": "2026-09-14",
