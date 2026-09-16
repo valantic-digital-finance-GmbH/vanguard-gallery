@@ -1,5 +1,127 @@
 [
   {
+    "id": "wed-2026-09-16",
+    "weekday": "Wednesday",
+    "iso": "2026-09-16",
+    "full": "Sep 16, 2026",
+    "title": "6 new SAP blog posts today.",
+    "preview": "6 new SAP blog posts today.",
+    "reads": "14 min",
+    "posts": 6,
+    "tags": [
+      "Business AI",
+      "Analytics Cloud",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Importance of Defining Agency and Accountability Before Deploying AI Agents",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/importance-of-defining-agency-and-accountability-before-deploying-ai-agents/ba-p/14485741",
+            "author": "rmukeshgupta",
+            "date_published": "2026-09-16",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Agentic AI on BTP: Your Own Joule for Consultants, Connected to Your Own System",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/agentic-ai-on-btp-your-own-joule-for-consultants-connected-to-your-own/ba-p/14485024",
+            "author": "WouterLemaire",
+            "date_published": "2026-09-15",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "SAP BW Query vs. SAP Datasphere Analytic Model: Why Migration Often Means Rebuilding",
+            "url": "https://community.sap.com/t5/data-and-analytics-blog-posts/sap-bw-query-vs-sap-datasphere-analytic-model-why-migration-often-means/ba-p/14484468",
+            "author": "JuergenMoeller",
+            "date_published": "2026-09-15",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-analyticsblog-board",
+            "board_name": "Data and Analytics Blog Posts"
+          },
+          {
+            "title": "We're Improving Result Limit Settings to SAC Tables - Tell Us What Admins Need",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/we-re-improving-result-limit-settings-to-sac-tables-tell-us-what-admins/ba-p/14485068",
+            "author": "AnnaBurkhardt",
+            "date_published": "2026-09-15",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          },
+          {
+            "title": "How to connect HDLF instance to SAP Datasphere",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-connect-hdlf-instance-to-sap-datasphere/ba-p/14483673",
+            "author": "nils_henk",
+            "date_published": "2026-09-15",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "SAP Datasphere CI/CD: Automating Deployments with GitHub Actions",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/sap-datasphere-ci-cd-automating-deployments-with-github-actions/ba-p/14480672",
+            "author": "harishkumar_jc1aebb",
+            "date_published": "2026-09-15",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "tue-2026-09-15",
     "weekday": "Tuesday",
     "iso": "2026-09-15",
