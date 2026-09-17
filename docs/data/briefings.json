@@ -1,5 +1,107 @@
 [
   {
+    "id": "thu-2026-09-17",
+    "weekday": "Thursday",
+    "iso": "2026-09-17",
+    "full": "Sep 17, 2026",
+    "title": "5 new SAP blog posts today.",
+    "preview": "5 new SAP blog posts today.",
+    "reads": "13 min",
+    "posts": 5,
+    "tags": [
+      "Business AI",
+      "Datasphere",
+      "Analytics Cloud",
+      "SAC Planning",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "The Enterprise Chef: Why SAP Knowledge Graph Is the Secret Ingredient Your AI Has Been Missing",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/the-enterprise-chef-why-sap-knowledge-graph-is-the-secret-ingredient-your/ba-p/14486348",
+            "author": "florian_hamon",
+            "date_published": "2026-09-16",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Datasphere"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Making AI Real: Cirque du Soleil",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/making-ai-real-cirque-du-soleil/ba-p/14486141",
+            "author": "timoelliott",
+            "date_published": "2026-09-16",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "User Insights: SAP Business Data Cloud practitioner’s recommendations for modern FP&A",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/user-insights-sap-business-data-cloud-practitioner-s-recommendations-for/ba-p/14485889",
+            "author": "ThierryAudas",
+            "date_published": "2026-09-16",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Analytics Cloud for planning",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          },
+          {
+            "title": "Selling SAP Business Data Cloud: Sales plays, bill of material and sizing",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/selling-sap-business-data-cloud-sales-plays-bill-of-material-and-sizing/ba-p/14485735",
+            "author": "JoseBastidas",
+            "date_published": "2026-09-16",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          },
+          {
+            "title": "Fueling unrivaled AI and thriving with SAP Business Data Cloud",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/fueling-unrivaled-ai-and-thriving-with-sap-business-data-cloud/ba-p/14485463",
+            "author": "JoseBastidas",
+            "date_published": "2026-09-16",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "wed-2026-09-16",
     "weekday": "Wednesday",
     "iso": "2026-09-16",
