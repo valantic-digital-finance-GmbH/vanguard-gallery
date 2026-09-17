@@ -6,8 +6,8 @@
     "full": "Sep 17, 2026",
     "title": "5 new SAP blog posts today.",
     "preview": "5 new SAP blog posts today.",
-    "reads": "13 min",
-    "posts": 5,
+    "reads": "18 min",
+    "posts": 6,
     "tags": [
       "Business AI",
       "Datasphere",
@@ -95,6 +95,28 @@
             "minutes": 5,
             "board_id": "data-professionalsblog-board",
             "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "From BW to Datasphere: Translating Existing Reporting Logic",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/from-bw-to-datasphere-translating-existing-reporting-logic/ba-p/14483448",
+            "author": "suryacreatx",
+            "date_published": "2026-09-17",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Datasphere"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
           }
         ],
         "rest": []
