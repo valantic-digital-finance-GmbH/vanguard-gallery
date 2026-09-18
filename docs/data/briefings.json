@@ -1,5 +1,104 @@
 [
   {
+    "id": "fri-2026-09-18",
+    "weekday": "Friday",
+    "iso": "2026-09-18",
+    "full": "Sep 18, 2026",
+    "title": "4 new SAP blog posts today.",
+    "preview": "4 new SAP blog posts today.",
+    "reads": "12 min",
+    "posts": 4,
+    "tags": [
+      "Business AI",
+      "Analytics Cloud",
+      "SAC Planning",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "The Capability Mirage: When AI Makes Your Organization Look Smarter Than It Is",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/the-capability-mirage-when-ai-makes-your-organization-look-smarter-than-it/ba-p/14487123",
+            "author": "rmukeshgupta",
+            "date_published": "2026-09-18",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Safeguarding the Transition from SAP Data Intelligence to SAP Business Data Cloud and SAP Datasphere",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/safeguarding-the-transition-from-sap-data-intelligence-to-sap-business-data/ba-p/14485235",
+            "author": "Alexander_Hatz",
+            "date_published": "2026-09-17",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Leveraging SAP Business Data Cloud discovery workshop framework for your customers",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/leveraging-sap-business-data-cloud-discovery-workshop-framework-for-your/ba-p/14486219",
+            "author": "JoseBastidas",
+            "date_published": "2026-09-17",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "SAP Analytics Cloud (SAC) QRC3 2026 Planning Enhancements – Copy Step & Comment Management",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/sap-analytics-cloud-sac-qrc3-2026-planning-enhancements-copy-step-amp/ba-p/14479018",
+            "author": "Manichandana_Thumma",
+            "date_published": "2026-09-17",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Analytics Cloud for planning"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "thu-2026-09-17",
     "weekday": "Thursday",
     "iso": "2026-09-17",
