@@ -1,5 +1,83 @@
 [
   {
+    "id": "mon-2026-09-21",
+    "weekday": "Monday",
+    "iso": "2026-09-21",
+    "full": "Sep 21, 2026",
+    "title": "4 new SAP blog posts today.",
+    "preview": "4 new SAP blog posts today.",
+    "reads": "20 min",
+    "posts": 4,
+    "tags": [
+      "Analytics Cloud",
+      "Business Data Cloud",
+      "Datasphere"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "CSS Class Guide for Pre-delivered Story Theme",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/css-class-guide-for-pre-delivered-story-theme/ba-p/14482235",
+            "author": "christina_mast",
+            "date_published": "2026-09-18",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          },
+          {
+            "title": "Automate Datasphere Objects' transport with datasphere-cli",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/automate-datasphere-objects-transport-with-datasphere-cli/ba-p/14487474",
+            "author": "amiramarouani",
+            "date_published": "2026-09-18",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "SAP BW Modernization with SAP Business Data Cloud Expert-Guided Implementation",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-bw-modernization-with-sap-business-data-cloud-expert-guided/ba-p/14481696",
+            "author": "MichaelMoloney",
+            "date_published": "2026-09-18",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": [
+          {
+            "title": "SAP Business Data Cloud: A Practical Guide to Capacity Unit Optimization",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-data-cloud-a-practical-guide-to-capacity-unit-optimization/ba-p/14486662",
+            "author": "GiriRaaj",
+            "date_published": "2026-09-18",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "fri-2026-09-18",
     "weekday": "Friday",
     "iso": "2026-09-18",
