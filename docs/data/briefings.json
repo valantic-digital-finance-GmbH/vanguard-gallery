@@ -6,12 +6,13 @@
     "full": "Sep 21, 2026",
     "title": "4 new SAP blog posts today.",
     "preview": "4 new SAP blog posts today.",
-    "reads": "20 min",
-    "posts": 4,
+    "reads": "21 min",
+    "posts": 5,
     "tags": [
       "Analytics Cloud",
       "Business Data Cloud",
-      "Datasphere"
+      "Datasphere",
+      "Business AI"
     ],
     "highlights": [],
     "sections": [
@@ -74,6 +75,28 @@
             "board_name": "Technology Blog Posts by SAP"
           }
         ]
+      },
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "ATLAS: Compare Architectures. Reveal Shared DNA. Explore the AI Architecture & Technology Landscape",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/atlas-compare-architectures-reveal-shared-dna-explore-the-ai-architecture/ba-p/14487862",
+            "author": "AdemBaykal",
+            "date_published": "2026-09-18",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
       }
     ]
   },
