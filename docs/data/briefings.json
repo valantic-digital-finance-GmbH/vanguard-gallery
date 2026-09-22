@@ -1,5 +1,42 @@
 [
   {
+    "id": "tue-2026-09-22",
+    "weekday": "Tuesday",
+    "iso": "2026-09-22",
+    "full": "Sep 22, 2026",
+    "title": "1 new SAP blog posts today.",
+    "preview": "1 new SAP blog posts today.",
+    "reads": "5 min",
+    "posts": 1,
+    "tags": [
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "[DEMO] End-to-end governance in action with SAP Business Data Cloud and Collibra",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/demo-end-to-end-governance-in-action-with-sap-business-data-cloud-and/ba-p/14487737",
+            "author": "Corrie",
+            "date_published": "2026-09-21",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "mon-2026-09-21",
     "weekday": "Monday",
     "iso": "2026-09-21",
