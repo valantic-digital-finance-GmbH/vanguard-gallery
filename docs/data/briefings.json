@@ -1,5 +1,66 @@
 [
   {
+    "id": "wed-2026-09-23",
+    "weekday": "Wednesday",
+    "iso": "2026-09-23",
+    "full": "Sep 23, 2026",
+    "title": "2 new SAP blog posts today.",
+    "preview": "2 new SAP blog posts today.",
+    "reads": "6 min",
+    "posts": 2,
+    "tags": [
+      "Business AI",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "A Supplier Failure Is Never Just a Supplier Problem",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/a-supplier-failure-is-never-just-a-supplier-problem/ba-p/14490014",
+            "author": "NanditaGhosh",
+            "date_published": "2026-09-22",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Your data has layers, most data teams see only one",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/your-data-has-layers-most-data-teams-see-only-one/ba-p/14487743",
+            "author": "Corrie",
+            "date_published": "2026-09-22",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "tue-2026-09-22",
     "weekday": "Tuesday",
     "iso": "2026-09-22",
