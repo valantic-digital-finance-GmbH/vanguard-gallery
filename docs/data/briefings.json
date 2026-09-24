@@ -6,12 +6,13 @@
     "full": "Sep 24, 2026",
     "title": "3 new SAP blog posts today.",
     "preview": "3 new SAP blog posts today.",
-    "reads": "11 min",
-    "posts": 3,
+    "reads": "16 min",
+    "posts": 4,
     "tags": [
       "Business AI",
       "Analytics Cloud",
-      "Business Data Cloud"
+      "Business Data Cloud",
+      "Datasphere"
     ],
     "highlights": [],
     "sections": [
@@ -55,7 +56,21 @@
             "board_name": "Technology Blog Posts by SAP"
           }
         ],
-        "rest": []
+        "rest": [
+          {
+            "title": "SAP BW Diet Strategy: How to Reduce Your SAP BW Footprint on the Path to SAP Business Data Cloud",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-bw-diet-strategy-how-to-reduce-your-sap-bw-footprint-on-the-path-to-sap/ba-p/14490898",
+            "author": "i830757",
+            "date_published": "2026-09-24",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ]
       },
       {
         "name": "SAP Analytics Cloud",
