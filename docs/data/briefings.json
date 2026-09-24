@@ -1,5 +1,88 @@
 [
   {
+    "id": "thu-2026-09-24",
+    "weekday": "Thursday",
+    "iso": "2026-09-24",
+    "full": "Sep 24, 2026",
+    "title": "3 new SAP blog posts today.",
+    "preview": "3 new SAP blog posts today.",
+    "reads": "11 min",
+    "posts": 3,
+    "tags": [
+      "Business AI",
+      "Analytics Cloud",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "SAP Managed Joule Integration Testing Guide for LOB: Level 2 and Level 0 Provisioning Approaches",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-managed-joule-integration-testing-guide-for-lob-level-2-and-level-0/ba-p/14489750",
+            "author": "ManjunathaBasavanna",
+            "date_published": "2026-09-22",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Using SAP HANA Native Storage Extension (NSE) with SAP BW 7.5 - Part 1",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/using-sap-hana-native-storage-extension-nse-with-sap-bw-7-5-part-1/ba-p/14489810",
+            "author": "Tanuj_G",
+            "date_published": "2026-09-22",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "Which Browser Is Best for SAP Analytics?",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/which-browser-is-best-for-sap-analytics/ba-p/14486968",
+            "author": "dallasmarks",
+            "date_published": "2026-09-23",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "wed-2026-09-23",
     "weekday": "Wednesday",
     "iso": "2026-09-23",
