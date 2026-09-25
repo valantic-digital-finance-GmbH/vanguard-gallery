@@ -1,5 +1,54 @@
 [
   {
+    "id": "fri-2026-09-25",
+    "weekday": "Friday",
+    "iso": "2026-09-25",
+    "full": "Sep 25, 2026",
+    "title": "2 new SAP blog posts today.",
+    "preview": "2 new SAP blog posts today.",
+    "reads": "10 min",
+    "posts": 2,
+    "tags": [
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "SAP BDC → Databricks: Sharing SAP Data Products with Enterprise Databricks and SAP Databricks",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-bdc-databricks-sharing-sap-data-products-with-enterprise-databricks-and/ba-p/14490133",
+            "author": "Sreekanth-Keerthipati",
+            "date_published": "2026-09-24",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "SAP Business Data Cloud customer adoption: Teaming up for success",
+            "url": "https://community.sap.com/t5/data-professionals-blog-posts/sap-business-data-cloud-customer-adoption-teaming-up-for-success/ba-p/14490886",
+            "author": "JoseBastidas",
+            "date_published": "2026-09-24",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "thu-2026-09-24",
     "weekday": "Thursday",
     "iso": "2026-09-24",
