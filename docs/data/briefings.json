@@ -6,8 +6,8 @@
     "full": "Sep 28, 2026",
     "title": "31 new SAP blog posts today.",
     "preview": "31 new SAP blog posts today.",
-    "reads": "115 min",
-    "posts": 31,
+    "reads": "120 min",
+    "posts": 32,
     "tags": [
       "Business AI",
       "Business Data Cloud",
@@ -64,7 +64,20 @@
             "board_name": "Technology Blog Posts by SAP"
           }
         ],
-        "rest": []
+        "rest": [
+          {
+            "title": "Beyond LLMs, Are We Hallucinating About AI Concepts?",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/beyond-llms-are-we-hallucinating-about-ai-concepts/ba-p/14492742",
+            "author": "sunny_kapoor",
+            "date_published": "2026-09-26",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ]
       },
       {
         "name": "SAP Business Data Cloud",
