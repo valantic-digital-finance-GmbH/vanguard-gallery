@@ -1,5 +1,451 @@
 [
   {
+    "id": "mon-2026-09-28",
+    "weekday": "Monday",
+    "iso": "2026-09-28",
+    "full": "Sep 28, 2026",
+    "title": "31 new SAP blog posts today.",
+    "preview": "31 new SAP blog posts today.",
+    "reads": "115 min",
+    "posts": 31,
+    "tags": [
+      "Business AI",
+      "Business Data Cloud",
+      "Datasphere",
+      "Analytics Cloud",
+      "SAC Planning",
+      "SAC Modeling"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Blueprinting SAP Agentic AI: MCP & A2A",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/blueprinting-sap-agentic-ai-mcp-amp-a2a/ba-p/14493036",
+            "author": "SridharKarra",
+            "date_published": "2026-09-28",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          },
+          {
+            "title": "Need to Know - The SAP Business AI Platform Overview Guide",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/need-to-know-the-sap-business-ai-platform-overview-guide/ba-p/14492885",
+            "author": "DeanFarrow",
+            "date_published": "2026-09-27",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "From AI-Ready Data to Agent-Ready Data",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/from-ai-ready-data-to-agent-ready-data/ba-p/14492601",
+            "author": "MostafaElbarbary",
+            "date_published": "2026-09-26",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Using SAP HANA Native Storage Extension (NSE) with SAP BW 7.5 - Part 3",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/using-sap-hana-native-storage-extension-nse-with-sap-bw-7-5-part-3/ba-p/14493031",
+            "author": "Tanuj_G",
+            "date_published": "2026-09-28",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Using SAP HANA Native Storage Extension (NSE) with SAP BW 7.5 - Part 2",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/using-sap-hana-native-storage-extension-nse-with-sap-bw-7-5-part-2/ba-p/14493014",
+            "author": "Tanuj_G",
+            "date_published": "2026-09-28",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Need to Know: SAP Business Data Cloud",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/need-to-know-sap-business-data-cloud/ba-p/14492933",
+            "author": "DeanFarrow",
+            "date_published": "2026-09-27",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": [
+          {
+            "title": "What’s New in SAP HANA Cloud – September 2026",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/what-s-new-in-sap-hana-cloud-september-2026/ba-p/14491462",
+            "author": "thomashammer",
+            "date_published": "2026-09-25",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "SAP Business Data Cloud customer adoption: Teaming up for success",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/sap-business-data-cloud-customer-adoption-teaming-up-for-success/ba-p/14490886",
+            "author": "JoseBastidas",
+            "date_published": "2026-09-24",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          },
+          {
+            "title": "Your data has layers, most data teams see only one",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/your-data-has-layers-most-data-teams-see-only-one/ba-p/14487743",
+            "author": "Corrie",
+            "date_published": "2026-09-22",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          },
+          {
+            "title": "[DEMO] End-to-end governance in action with SAP Business Data Cloud and Collibra",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/demo-end-to-end-governance-in-action-with-sap-business-data-cloud-and/ba-p/14487737",
+            "author": "Corrie",
+            "date_published": "2026-09-21",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          },
+          {
+            "title": "CSS Class Guide for Pre-delivered Story Theme",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/css-class-guide-for-pre-delivered-story-theme/ba-p/14482235",
+            "author": "christina_mast",
+            "date_published": "2026-09-18",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          },
+          {
+            "title": "Leveraging SAP Business Data Cloud discovery workshop framework for your customers",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/leveraging-sap-business-data-cloud-discovery-workshop-framework-for-your/ba-p/14486219",
+            "author": "JoseBastidas",
+            "date_published": "2026-09-17",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          },
+          {
+            "title": "User Insights: SAP Business Data Cloud practitioner’s recommendations for modern FP&A",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/user-insights-sap-business-data-cloud-practitioner-s-recommendations-for/ba-p/14485889",
+            "author": "ThierryAudas",
+            "date_published": "2026-09-16",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Analytics Cloud for planning",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          }
+        ]
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "Business Data Architecture: Looking Back and Full Steam Ahead",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/business-data-architecture-looking-back-and-full-steam-ahead/ba-p/14484102",
+            "author": "AllanHald",
+            "date_published": "2026-09-14",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          },
+          {
+            "title": "SAP Business Data Cloud and Datasphere News in August",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/sap-business-data-cloud-and-datasphere-news-in-august/ba-p/14480924",
+            "author": "kpsauer",
+            "date_published": "2026-09-08",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          },
+          {
+            "title": "Business Data Architecture: AI-Assisted Delivery",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/business-data-architecture-ai-assisted-delivery/ba-p/14480064",
+            "author": "AllanHald",
+            "date_published": "2026-09-07",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "Building a Custom SAP Analytics Cloud Widget for Databricks Genie",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/building-a-custom-sap-analytics-cloud-widget-for-databricks-genie/ba-p/14491921",
+            "author": "sampurnosarkar",
+            "date_published": "2026-09-25",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Analytics Cloud for planning",
+              "SAP Analytics Cloud, data modeling"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          },
+          {
+            "title": "We're Improving Result Limit Settings to SAC Tables - Tell Us What Admins Need",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/we-re-improving-result-limit-settings-to-sac-tables-tell-us-what-admins/ba-p/14485068",
+            "author": "AnnaBurkhardt",
+            "date_published": "2026-09-15",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          },
+          {
+            "title": "Architecting Your Data Foundation for the Autonomous Enterprise",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/architecting-your-data-foundation-for-the-autonomous-enterprise/ba-p/14474905",
+            "author": "Liam_Clarke",
+            "date_published": "2026-08-28",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          }
+        ],
+        "rest": [
+          {
+            "title": "Got a BDC Question? Ask the Data Professionals Community",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/got-a-bdc-question-ask-the-data-professionals-community/ba-p/14469365",
+            "author": "Daniel_Dukes",
+            "date_published": "2026-08-21",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          },
+          {
+            "title": "Making NLQ More Explainable, Reliable, and Actionable",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/making-nlq-more-explainable-reliable-and-actionable/ba-p/14468276",
+            "author": "ThierryAudas",
+            "date_published": "2026-08-21",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          },
+          {
+            "title": "Introducing the Compass Widget: Bringing Risk Context Into Your Stories",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/introducing-the-compass-widget-bringing-risk-context-into-your-stories/ba-p/14463057",
+            "author": "ChenNee",
+            "date_published": "2026-08-18",
+            "matching_tags": [
+              "SAP Analytics Cloud for planning"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          },
+          {
+            "title": "A Smarter, More Polished Charting Experience in SAP Analytics Cloud",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/a-smarter-more-polished-charting-experience-in-sap-analytics-cloud/ba-p/14464193",
+            "author": "Vivek-Varma",
+            "date_published": "2026-08-17",
+            "matching_tags": [
+              "SAP Analytics Cloud for planning"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          },
+          {
+            "title": "Table Widget Improvements in SAP Analytics Cloud 2026 Q3 QRC",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/table-widget-improvements-in-sap-analytics-cloud-2026-q3-qrc/ba-p/14452628",
+            "author": "GregBotticchio",
+            "date_published": "2026-07-30",
+            "matching_tags": [
+              "SAP Analytics Cloud for planning"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          },
+          {
+            "title": "Sneak Peek in to SAP Analytics Cloud release for Q3 2026",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/sneak-peek-in-to-sap-analytics-cloud-release-for-q3-2026/ba-p/14452348",
+            "author": "Orla_C",
+            "date_published": "2026-07-30",
+            "matching_tags": [
+              "SAP Analytics Cloud for planning"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          },
+          {
+            "title": "What's New in SAP Analytics Cloud Modeling Data Integration & Calculations QRC3 2026 Edition",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/what-s-new-in-sap-analytics-cloud-modeling-data-integration-amp/ba-p/14429588",
+            "author": "AmandaJMurphy",
+            "date_published": "2026-07-29",
+            "matching_tags": [
+              "SAP Analytics Cloud for planning",
+              "SAP Analytics Cloud, data modeling"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          },
+          {
+            "title": "New Stories, New Look: The Default Story Theme Is Getting an Update",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/new-stories-new-look-the-default-story-theme-is-getting-an-update/ba-p/14449361",
+            "author": "AnnaBurkhardt",
+            "date_published": "2026-07-27",
+            "matching_tags": [
+              "SAP Analytics Cloud for planning"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          },
+          {
+            "title": "SAP Analytics Cloud: A Look at 18 Months of Customer-Driven Deliveries",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/sap-analytics-cloud-a-look-at-18-months-of-customer-driven-deliveries/ba-p/14437953",
+            "author": "William_Yu1",
+            "date_published": "2026-07-14",
+            "matching_tags": [
+              "SAP Analytics Cloud, data modeling"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          },
+          {
+            "title": "Your AI Agent Has Three Different Definitions of \"Customer.\" That's a Problem.",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/your-ai-agent-has-three-different-definitions-of-quot-customer-quot-that-s/ba-p/14421512",
+            "author": "Scott_Mackenzie",
+            "date_published": "2026-06-18",
+            "matching_tags": [
+              "SAP Analytics Cloud, data modeling"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          },
+          {
+            "title": "Live Versions for Planning Models in SAP Analytics Cloud: Microsoft Azure Is Here!",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/live-versions-for-planning-models-in-sap-analytics-cloud-microsoft-azure-is/ba-p/14411873",
+            "author": "Max_Gander",
+            "date_published": "2026-06-05",
+            "matching_tags": [
+              "SAP Analytics Cloud, data modeling"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          },
+          {
+            "title": "SAP Analytics Cloud Dimension Tables Move to the File Repository",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/sap-analytics-cloud-dimension-tables-move-to-the-file-repository/ba-p/14400182",
+            "author": "Max_Gander",
+            "date_published": "2026-05-22",
+            "matching_tags": [
+              "SAP Analytics Cloud, data modeling"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "fri-2026-09-25",
     "weekday": "Friday",
     "iso": "2026-09-25",
