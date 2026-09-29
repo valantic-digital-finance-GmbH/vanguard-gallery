@@ -6,12 +6,13 @@
     "full": "Sep 29, 2026",
     "title": "4 new SAP blog posts today.",
     "preview": "4 new SAP blog posts today.",
-    "reads": "12 min",
-    "posts": 4,
+    "reads": "17 min",
+    "posts": 5,
     "tags": [
       "SAC Modeling",
       "Datasphere",
-      "Business Data Cloud"
+      "Business Data Cloud",
+      "Analytics Cloud"
     ],
     "highlights": [],
     "sections": [
@@ -79,6 +80,29 @@
             "minutes": 5,
             "board_id": "data-analyticsblog-board",
             "board_name": "Data and Analytics Blog Posts"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "I tried the SAC Lite Viewer — and my story didn't even qualify",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/i-tried-the-sac-lite-viewer-and-my-story-didn-t-even-qualify/ba-p/14492516",
+            "author": "Baudoin",
+            "date_published": "2026-09-29",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
           }
         ],
         "rest": []
