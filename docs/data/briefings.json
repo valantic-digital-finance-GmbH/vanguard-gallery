@@ -1,5 +1,91 @@
 [
   {
+    "id": "tue-2026-09-29",
+    "weekday": "Tuesday",
+    "iso": "2026-09-29",
+    "full": "Sep 29, 2026",
+    "title": "4 new SAP blog posts today.",
+    "preview": "4 new SAP blog posts today.",
+    "reads": "12 min",
+    "posts": 4,
+    "tags": [
+      "SAC Modeling",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Did You Know? An SAP Business Data Cloud Series | Season 1, Episode 1",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/did-you-know-an-sap-business-data-cloud-series-season-1-episode-1/ba-p/14491684",
+            "author": "JoseChicas",
+            "date_published": "2026-09-29",
+            "matching_tags": [
+              "SAP Analytics Cloud, data modeling",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          },
+          {
+            "title": "What AI-Native, Autonomous Master Data Looks Like in SAP Business Data Cloud",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/what-ai-native-autonomous-master-data-looks-like-in-sap-business-data-cloud/ba-p/14490833",
+            "author": "Corrie",
+            "date_published": "2026-09-28",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          },
+          {
+            "title": "Leading with SAP Business Data Cloud innovation and roadmap",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/leading-with-sap-business-data-cloud-innovation-and-roadmap/ba-p/14493027",
+            "author": "JoseBastidas",
+            "date_published": "2026-09-28",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "Unlocking Currency Conversion in SQLScript with CONVERT_CURRENCY() in SAP HANA XSA and Datasphere",
+            "url": "https://community.sap.com/t5/data-and-analytics-blog-posts/unlocking-currency-conversion-in-sqlscript-with-convert-currency-in-sap/ba-p/14493234",
+            "author": "pradeep_gupta1",
+            "date_published": "2026-09-28",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 5,
+            "board_id": "data-analyticsblog-board",
+            "board_name": "Data and Analytics Blog Posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "mon-2026-09-28",
     "weekday": "Monday",
     "iso": "2026-09-28",
