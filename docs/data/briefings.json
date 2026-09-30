@@ -1,5 +1,117 @@
 [
   {
+    "id": "wed-2026-09-30",
+    "weekday": "Wednesday",
+    "iso": "2026-09-30",
+    "full": "Sep 30, 2026",
+    "title": "5 new SAP blog posts today.",
+    "preview": "5 new SAP blog posts today.",
+    "reads": "17 min",
+    "posts": 5,
+    "tags": [
+      "Business AI",
+      "Datasphere",
+      "Business Data Cloud",
+      "Analytics Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Is a Data Product Ready for an AI Agent?",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/is-a-data-product-ready-for-an-ai-agent/ba-p/14494043",
+            "author": "MostafaElbarbary",
+            "date_published": "2026-09-29",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Publish SAP Databricks Views as Custom Data Products in SAP Business Data Cloud",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/publish-sap-databricks-views-as-custom-data-products-in-sap-business-data/ba-p/14494001",
+            "author": "Yogananda",
+            "date_published": "2026-09-29",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Building Your First Data Product in SAP Datasphere: Step-by-Step Practical Guide",
+            "url": "https://community.sap.com/t5/data-and-analytics-blog-posts/building-your-first-data-product-in-sap-datasphere-step-by-step-practical/ba-p/14489319",
+            "author": "omar-oun_1",
+            "date_published": "2026-09-29",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-analyticsblog-board",
+            "board_name": "Data and Analytics Blog Posts"
+          },
+          {
+            "title": "Connect to AWS S3 using SAP Cloud Connector for SAP Datasphere Replication flows",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/connect-to-aws-s3-using-sap-cloud-connector-for-sap-datasphere-replication/ba-p/14491719",
+            "author": "venkat_madireddi",
+            "date_published": "2026-09-29",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "Dynamic Top-N Waterfall Analysis in SAP Analytics Cloud: Why I Moved Ranking to SAP Datasphere",
+            "url": "https://community.sap.com/t5/data-and-analytics-blog-posts/dynamic-top-n-waterfall-analysis-in-sap-analytics-cloud-why-i-moved-ranking/ba-p/14492743",
+            "author": "AshokVadlamudi",
+            "date_published": "2026-09-29",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Datasphere"
+            ],
+            "minutes": 1,
+            "board_id": "data-analyticsblog-board",
+            "board_name": "Data and Analytics Blog Posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "tue-2026-09-29",
     "weekday": "Tuesday",
     "iso": "2026-09-29",
