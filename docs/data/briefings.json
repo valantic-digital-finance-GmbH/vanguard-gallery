@@ -1,5 +1,80 @@
 [
   {
+    "id": "thu-2026-10-01",
+    "weekday": "Thursday",
+    "iso": "2026-10-01",
+    "full": "Oct 1, 2026",
+    "title": "3 new SAP blog posts today.",
+    "preview": "3 new SAP blog posts today.",
+    "reads": "15 min",
+    "posts": 3,
+    "tags": [
+      "Business AI",
+      "Analytics Cloud",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "New Expert-Guided Implementation: Configuring AI-Assisted User Learning and Change Management",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/new-expert-guided-implementation-configuring-ai-assisted-user-learning-and/ba-p/14495204",
+            "author": "mirnachaanine",
+            "date_published": "2026-09-30",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "User Insights: SAP Business Data Cloud practitioners’ recommendations for BW modernization",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/user-insights-sap-business-data-cloud-practitioners-recommendations-for-bw/ba-p/14493947",
+            "author": "ThierryAudas",
+            "date_published": "2026-09-30",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          },
+          {
+            "title": "SAP HANA Cloud: Enabling AI with a custom knowledge layer in SAP Business Data Cloud",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/sap-hana-cloud-enabling-ai-with-a-custom-knowledge-layer-in-sap-business/ba-p/14494073",
+            "author": "JoseBastidas",
+            "date_published": "2026-09-30",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "wed-2026-09-30",
     "weekday": "Wednesday",
     "iso": "2026-09-30",
