@@ -1,5 +1,117 @@
 [
   {
+    "id": "fri-2026-10-02",
+    "weekday": "Friday",
+    "iso": "2026-10-02",
+    "full": "Oct 2, 2026",
+    "title": "6 new SAP blog posts today.",
+    "preview": "6 new SAP blog posts today.",
+    "reads": "22 min",
+    "posts": 6,
+    "tags": [
+      "Business AI",
+      "Analytics Cloud",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Architecting multi-agent systems, Model Context Protocol (MCP) and Agent-to-Agent (A2A)",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/architecting-multi-agent-systems-model-context-protocol-mcp-and-agent-to/ba-p/14495614",
+            "author": "JoseBastidas",
+            "date_published": "2026-10-01",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "DevOps with SAP Business AI, How the Scope, Tooling & Mindset Change When You Adopt SAP BAIP",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/devops-with-sap-business-ai-how-the-scope-tooling-amp-mindset-change-when/ba-p/14495151",
+            "author": "Rodrigo_Riveros",
+            "date_published": "2026-10-01",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Working with SAP Business Data Cloud in the SAP Business AI Platform: The Data Engineer Perspective",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/working-with-sap-business-data-cloud-in-the-sap-business-ai-platform-the/ba-p/14486987",
+            "author": "AxelS",
+            "date_published": "2026-10-01",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          },
+          {
+            "title": "Start your data product journey with SAP Start Smart guides",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/start-your-data-product-journey-with-sap-start-smart-guides/ba-p/14494238",
+            "author": "Bradley_Vasilik",
+            "date_published": "2026-10-01",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          },
+          {
+            "title": "What an AI infra engineer sees when opening SAP's AI stack (2/3): models and retrieval on HANA",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/what-an-ai-infra-engineer-sees-when-opening-sap-s-ai-stack-2-3-models-and/ba-p/14495146",
+            "author": "amishkush",
+            "date_published": "2026-10-01",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          }
+        ],
+        "rest": [
+          {
+            "title": "Partner Learning Accelerator: SAP Certified - SAP Business Data Cloud",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/partner-learning-accelerator-sap-certified-sap-business-data-cloud/ba-p/14494393",
+            "author": "JoseBastidas",
+            "date_published": "2026-10-01",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "thu-2026-10-01",
     "weekday": "Thursday",
     "iso": "2026-10-01",
