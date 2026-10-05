@@ -1,5 +1,111 @@
 [
   {
+    "id": "mon-2026-10-05",
+    "weekday": "Monday",
+    "iso": "2026-10-05",
+    "full": "Oct 5, 2026",
+    "title": "4 new SAP blog posts today.",
+    "preview": "4 new SAP blog posts today.",
+    "reads": "12 min",
+    "posts": 4,
+    "tags": [
+      "Business AI",
+      "Analytics Cloud",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Tabular Orchestration for SAP-RPT, hands-on: from zero to a governed context in HDLFS",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/tabular-orchestration-for-sap-rpt-hands-on-from-zero-to-a-governed-context/ba-p/14495251",
+            "author": "Antonio_leites",
+            "date_published": "2026-10-03",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Understanding Capacity Unit Consumption in SAP BDC and SAP Datasphere from \"Technical Perspective\"",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/understanding-capacity-unit-consumption-in-sap-bdc-and-sap-datasphere-from/ba-p/14490417",
+            "author": "Vijay_Gadivenuka",
+            "date_published": "2026-10-02",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "Data Access Control (DAC) Scenarios in SAP Datasphere",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/data-access-control-dac-scenarios-in-sap-datasphere/ba-p/14496284",
+            "author": "abhimanyu_sharma",
+            "date_published": "2026-10-02",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "Releasing SAC Pilot: The Ultimate Productivity Browser Extension for SAP Analytics Cloud",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/releasing-sac-pilot-the-ultimate-productivity-browser-extension-for-sap/ba-p/14494053",
+            "author": "rohitchouhan",
+            "date_published": "2026-10-04",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "fri-2026-10-02",
     "weekday": "Friday",
     "iso": "2026-10-02",
