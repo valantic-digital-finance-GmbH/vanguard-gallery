@@ -1,5 +1,86 @@
 [
   {
+    "id": "tue-2026-10-06",
+    "weekday": "Tuesday",
+    "iso": "2026-10-06",
+    "full": "Oct 6, 2026",
+    "title": "4 new SAP blog posts today.",
+    "preview": "4 new SAP blog posts today.",
+    "reads": "20 min",
+    "posts": 4,
+    "tags": [
+      "Business AI",
+      "Analytics Cloud",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Jev vs. RPT: The Decision Layer Is Here, and RPT Already Speaks Its Language",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/jev-vs-rpt-the-decision-layer-is-here-and-rpt-already-speaks-its-language/ba-p/14497557",
+            "author": "philipp_herzig",
+            "date_published": "2026-10-05",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "SAP TechEd 2026: Must-Attend Sessions for Data Professionals",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/sap-teched-2026-must-attend-sessions-for-data-professionals/ba-p/14496983",
+            "author": "VenkataGiduthuri",
+            "date_published": "2026-10-05",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Analytics Cloud",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          },
+          {
+            "title": "Partner Learning Accelerator: SAP Certified - SAP Generative AI Developer",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/partner-learning-accelerator-sap-certified-sap-generative-ai-developer/ba-p/14497542",
+            "author": "JoseBastidas",
+            "date_published": "2026-10-05",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": [
+          {
+            "title": "Data Products Need Owners Not Only Schemas",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/data-products-need-owners-not-only-schemas/ba-p/14497226",
+            "author": "MostafaElbarbary",
+            "date_published": "2026-10-05",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "mon-2026-10-05",
     "weekday": "Monday",
     "iso": "2026-10-05",
