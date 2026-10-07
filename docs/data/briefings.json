@@ -1,5 +1,66 @@
 [
   {
+    "id": "wed-2026-10-07",
+    "weekday": "Wednesday",
+    "iso": "2026-10-07",
+    "full": "Oct 7, 2026",
+    "title": "2 new SAP blog posts today.",
+    "preview": "2 new SAP blog posts today.",
+    "reads": "2 min",
+    "posts": 2,
+    "tags": [
+      "Business AI",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Building on SAP Business AI Platform: What ISV Partners Need to Know",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/building-on-sap-business-ai-platform-what-isv-partners-need-to-know/ba-p/14497714",
+            "author": "EvgeniyGorbunov",
+            "date_published": "2026-10-06",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "SAP Business Data Cloud and Datasphere News in September",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/sap-business-data-cloud-and-datasphere-news-in-september/ba-p/14494609",
+            "author": "kpsauer",
+            "date_published": "2026-10-06",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "tue-2026-10-06",
     "weekday": "Tuesday",
     "iso": "2026-10-06",
