@@ -1,5 +1,64 @@
 [
   {
+    "id": "thu-2026-10-08",
+    "weekday": "Thursday",
+    "iso": "2026-10-08",
+    "full": "Oct 8, 2026",
+    "title": "2 new SAP blog posts today.",
+    "preview": "2 new SAP blog posts today.",
+    "reads": "6 min",
+    "posts": 2,
+    "tags": [
+      "Business AI",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "SAP UX Update for SAP S/4HANA Cloud Private Edition 2025 FPS02",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-ux-update-for-sap-s-4hana-cloud-private-edition-2025-fps02/ba-p/14498398",
+            "author": "ThomasReiss",
+            "date_published": "2026-10-07",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "SAP Reltio in the SAP Business AI Platform Architecture",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/sap-reltio-in-the-sap-business-ai-platform-architecture/ba-p/14498303",
+            "author": "JoseBastidas",
+            "date_published": "2026-10-07",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "wed-2026-10-07",
     "weekday": "Wednesday",
     "iso": "2026-10-07",
