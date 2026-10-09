@@ -1,5 +1,113 @@
 [
   {
+    "id": "fri-2026-10-09",
+    "weekday": "Friday",
+    "iso": "2026-10-09",
+    "full": "Oct 9, 2026",
+    "title": "5 new SAP blog posts today.",
+    "preview": "5 new SAP blog posts today.",
+    "reads": "17 min",
+    "posts": 5,
+    "tags": [
+      "Business AI",
+      "Analytics Cloud",
+      "Datasphere"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Agent Recovery Mechanism",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/agent-recovery-mechanism/ba-p/14499515",
+            "author": "kristiyan",
+            "date_published": "2026-10-08",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "The Multi-Tenant Mental Model: How SaaS Works on SAP Business AI Platform",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/the-multi-tenant-mental-model-how-saas-works-on-sap-business-ai-platform/ba-p/14498083",
+            "author": "florin_barbuceanu",
+            "date_published": "2026-10-08",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "From Idea to First Customer: Best Practices to Ship Extensions on SAP Business AI Platform",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/from-idea-to-first-customer-best-practices-to-ship-extensions-on-sap/ba-p/14497996",
+            "author": "florin_barbuceanu",
+            "date_published": "2026-10-08",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "S/4HANA to Datasphere: Handling Real-World Data Quality Issues",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/s-4hana-to-datasphere-handling-real-world-data-quality-issues/ba-p/14498070",
+            "author": "suryacreatx",
+            "date_published": "2026-10-08",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Datasphere"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "Watch, Share, Contribute: SAC Video Tutorials – Fully Updated for Horizon",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/watch-share-contribute-sac-video-tutorials-fully-updated-for-horizon/ba-p/14499076",
+            "author": "isabellelouie",
+            "date_published": "2026-10-08",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "thu-2026-10-08",
     "weekday": "Thursday",
     "iso": "2026-10-08",
