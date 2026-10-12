@@ -1,5 +1,114 @@
 [
   {
+    "id": "mon-2026-10-12",
+    "weekday": "Monday",
+    "iso": "2026-10-12",
+    "full": "Oct 12, 2026",
+    "title": "5 new SAP blog posts today.",
+    "preview": "5 new SAP blog posts today.",
+    "reads": "21 min",
+    "posts": 5,
+    "tags": [
+      "Business AI",
+      "Analytics Cloud",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Business AI in ABAP Cloud – A Strategic Overview (Part 1)",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/business-ai-in-abap-cloud-a-strategic-overview-part-1/ba-p/14500255",
+            "author": "fabianfellhauer",
+            "date_published": "2026-10-12",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Exploring AI and key innovations in SAP Cloud ERP Private 2025 FPS2",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/exploring-ai-and-key-innovations-in-sap-cloud-erp-private-2025-fps2/ba-p/14497888",
+            "author": "Yannick_PTT",
+            "date_published": "2026-10-09",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Did You Know? An SAP Business Data Cloud Series | Season 1, Episode 2 | Translation",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/did-you-know-an-sap-business-data-cloud-series-season-1-episode-2/ba-p/14500727",
+            "author": "JoseChicas",
+            "date_published": "2026-10-09",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          },
+          {
+            "title": "Managing the Custom Data Product Lifecycle in SAP Datasphere / SAP BDC",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/managing-the-custom-data-product-lifecycle-in-sap-datasphere-sap-bdc/ba-p/14496311",
+            "author": "Harish_Ratnala",
+            "date_published": "2026-10-09",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "Why Your SAP Datasphere Measure Shows 0 Even When the Source Has Millions of Records ?",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/why-your-sap-datasphere-measure-shows-0-even-when-the-source-has-millions/ba-p/14499609",
+            "author": "suryacreatx",
+            "date_published": "2026-10-09",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Datasphere"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "fri-2026-10-09",
     "weekday": "Friday",
     "iso": "2026-10-09",
