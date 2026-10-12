@@ -1,5 +1,192 @@
 [
   {
+    "id": "mon-2026-10-12",
+    "iso": "2026-10-12",
+    "full": "12 October 2026",
+    "period": "2026-10-05 – 2026-10-11",
+    "title": "19 changes across 3 products",
+    "preview": "SAP Analytics Cloud: 2 items slipped, 3 items added. SAP Business Data Cloud: 4 items slipped, 9 items added. SAP Datasphere: 1 item added",
+    "total_changes": 19,
+    "products_with_changes": [
+      "SAP Analytics Cloud",
+      "SAP Business Data Cloud",
+      "SAP Datasphere"
+    ],
+    "sections": [
+      {
+        "slug": "sap-analytics-cloud",
+        "name": "SAP Analytics Cloud",
+        "slipped": [
+          {
+            "id": "C22C3A1E3F7C49859BF79D46254D7ECA",
+            "title": "Analytical insights capability in Joule and just ask feature: intent framework",
+            "old_quarter": "Q4 2026",
+            "new_quarter": "Q1 2027",
+            "direction": "forward",
+            "capability": "AI for Planning and Analytics",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=C22C3A1E3F7C49859BF79D46254D7ECA"
+          },
+          {
+            "id": "EEC44C5DA547499C8F5555F62433C15F",
+            "title": "Data Actions: Data Validations",
+            "old_quarter": "Q4 2026",
+            "new_quarter": "Q1 2027",
+            "direction": "forward",
+            "capability": "Business Planning and Forecasting",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=EEC44C5DA547499C8F5555F62433C15F"
+          }
+        ],
+        "added": [
+          {
+            "id": "8235DD79CF90429E9C8CE3C4B0BA9FFD",
+            "title": "Extending capabilities of lightweight viewer",
+            "quarter": "Q4 2026",
+            "capability": "Other",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=8235DD79CF90429E9C8CE3C4B0BA9FFD"
+          },
+          {
+            "id": "3D09903F419F4B738596A8317F44807D",
+            "title": "Object size management in stories",
+            "quarter": "Q4 2026",
+            "capability": "Other",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=3D09903F419F4B738596A8317F44807D"
+          },
+          {
+            "id": "BF3589C1BF044F8F8B9790666BF78BF3",
+            "title": "Proactive performance check on save",
+            "quarter": "Q4 2026",
+            "capability": "Other",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=BF3589C1BF044F8F8B9790666BF78BF3"
+          }
+        ],
+        "deleted": []
+      },
+      {
+        "slug": "sap-business-data-cloud",
+        "name": "SAP Business Data Cloud",
+        "slipped": [
+          {
+            "id": "ABC6D2E547D04234862B69FBDB84610F",
+            "title": "Analytical insights capability in Joule: support for metadata-related questions",
+            "old_quarter": "Q4 2026",
+            "new_quarter": "Q1 2027",
+            "direction": "forward",
+            "capability": "AI for Planning and Analytics",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=ABC6D2E547D04234862B69FBDB84610F"
+          },
+          {
+            "id": "D8274AA0B42F4735A183DA9E85C81EBD",
+            "title": "Chart footer in smart insights feature",
+            "old_quarter": "Q4 2026",
+            "new_quarter": "Q4 2027",
+            "direction": "forward",
+            "capability": "AI for Planning and Analytics",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=D8274AA0B42F4735A183DA9E85C81EBD"
+          },
+          {
+            "id": "EEC44C5DA547499C8F5555F62433C15F",
+            "title": "Data Actions: Data Validations",
+            "old_quarter": "Q4 2026",
+            "new_quarter": "Q1 2027",
+            "direction": "forward",
+            "capability": "Business Planning and Forecasting",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=EEC44C5DA547499C8F5555F62433C15F"
+          },
+          {
+            "id": "000D3ABE772D1EECB3A392887B364215",
+            "title": "Incremental load for New Model Load Jobs",
+            "old_quarter": "Q4 2026",
+            "new_quarter": "Q4 2027",
+            "direction": "forward",
+            "capability": "Data Replication and ETL",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3ABE772D1EECB3A392887B364215"
+          }
+        ],
+        "added": [
+          {
+            "id": "9E2E26FD000243D9A2FF8639816118DE",
+            "title": "Cancel queued transport jobs in transport monitor",
+            "quarter": "Q4 2026",
+            "capability": "Data and Analytics Administration",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=9E2E26FD000243D9A2FF8639816118DE"
+          },
+          {
+            "id": "A4972DC7DD004195BE58C6FDCEACDBF5",
+            "title": "Enhanced warnings for import overwrite to prevent accidental data loss",
+            "quarter": "Q4 2026",
+            "capability": "Data and Analytics Administration",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=A4972DC7DD004195BE58C6FDCEACDBF5"
+          },
+          {
+            "id": "2ECCCDB07A2C40508B23034F791618A2",
+            "title": "Per-column ABAP data type mapping in replication flow",
+            "quarter": "Q4 2026",
+            "capability": "Data Replication and ETL",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=2ECCCDB07A2C40508B23034F791618A2"
+          },
+          {
+            "id": "74D5EDA14DAC4753B4FBACC1D0E2ECA6",
+            "title": "Bidirectional data integration between SAP Business Data Cloud and SAP Integrated Business Planning general availability",
+            "quarter": "Q1 2027",
+            "capability": "Data Replication and ETL",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=74D5EDA14DAC4753B4FBACC1D0E2ECA6"
+          },
+          {
+            "id": "2E7FA69B1DDE420589C5C939EE808971",
+            "title": "Bidirectional integration of data between SAP Business Data Cloud and SAP Integrated Business Planning",
+            "quarter": "Q4 2026",
+            "capability": "Data Replication and ETL",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=2E7FA69B1DDE420589C5C939EE808971"
+          },
+          {
+            "id": "8235DD79CF90429E9C8CE3C4B0BA9FFD",
+            "title": "Extending capabilities of lightweight viewer",
+            "quarter": "Q4 2026",
+            "capability": "Other",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=8235DD79CF90429E9C8CE3C4B0BA9FFD"
+          },
+          {
+            "id": "000D3ABE796A1FE0AC9D1C6BEF9E1FE0",
+            "title": "Integration with the SAP Business Data Cloud solution",
+            "quarter": "Q3 2027",
+            "capability": "Data Product Management",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3ABE796A1FE0AC9D1C6BEF9E1FE0"
+          },
+          {
+            "id": "3D09903F419F4B738596A8317F44807D",
+            "title": "Object size management in stories",
+            "quarter": "Q4 2026",
+            "capability": "Other",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=3D09903F419F4B738596A8317F44807D"
+          },
+          {
+            "id": "BF3589C1BF044F8F8B9790666BF78BF3",
+            "title": "Proactive performance check on save",
+            "quarter": "Q4 2026",
+            "capability": "Other",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=BF3589C1BF044F8F8B9790666BF78BF3"
+          }
+        ],
+        "deleted": []
+      },
+      {
+        "slug": "sap-datasphere",
+        "name": "SAP Datasphere",
+        "slipped": [],
+        "added": [
+          {
+            "id": "2ECCCDB07A2C40508B23034F791618A2",
+            "title": "Per-column ABAP data type mapping in replication flow",
+            "quarter": "Q4 2026",
+            "capability": "Data Replication and ETL",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=2ECCCDB07A2C40508B23034F791618A2"
+          }
+        ],
+        "deleted": []
+      }
+    ]
+  },
+  {
     "id": "mon-2026-10-05",
     "iso": "2026-10-05",
     "full": "5 October 2026",
@@ -2975,138 +3162,6 @@
         "slipped": [],
         "added": [],
         "deleted": []
-      }
-    ]
-  },
-  {
-    "id": "mon-2026-08-03",
-    "iso": "2026-08-03",
-    "full": "3 August 2026",
-    "period": "2026-07-27 – 2026-08-02",
-    "title": "13 changes across 3 products",
-    "preview": "SAP Analytics Cloud: 5 items added. SAP Business Data Cloud: 5 items added, 2 items deleted. SAP Datasphere: 1 item deleted",
-    "total_changes": 13,
-    "products_with_changes": [
-      "SAP Analytics Cloud",
-      "SAP Business Data Cloud",
-      "SAP Datasphere"
-    ],
-    "sections": [
-      {
-        "slug": "sap-analytics-cloud",
-        "name": "SAP Analytics Cloud",
-        "slipped": [],
-        "added": [
-          {
-            "id": "B87FDD4F8243479F8CEE5BE8D283D7F6",
-            "title": "Analytical insights capability in Joule: support for tables, interactive charts and follow-up questions",
-            "quarter": "Q3 2026",
-            "capability": "AI for Planning and Analytics",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=B87FDD4F8243479F8CEE5BE8D283D7F6"
-          },
-          {
-            "id": "54F198234D1F46E9B8BE1735E59D8E18",
-            "title": "Analytical insights in Joule with multi-language support",
-            "quarter": "Q2 2027",
-            "capability": "AI for Planning and Analytics",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=54F198234D1F46E9B8BE1735E59D8E18"
-          },
-          {
-            "id": "A8B9D7BC3B0140109B683BE10C46C96F",
-            "title": "Ability for admins to configure the default theme for new stories at the tenant level in SAP Analytics Cloud",
-            "quarter": "Q3 2026",
-            "capability": "Dashboard Extensibility",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=A8B9D7BC3B0140109B683BE10C46C96F"
-          },
-          {
-            "id": "ECD35531618B4FBA8043A40DCA6E5EB9",
-            "title": "Replace pre-delivered story theme to align with Horizon Morning",
-            "quarter": "Q3 2026",
-            "capability": "Dashboard Extensibility",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=ECD35531618B4FBA8043A40DCA6E5EB9"
-          },
-          {
-            "id": "C6FE16FA40C8480ABBDF042A4DBD451A",
-            "title": "WalkMe Integration for Enhanced User Guidance",
-            "quarter": "Q4 2026",
-            "capability": "Other",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=C6FE16FA40C8480ABBDF042A4DBD451A"
-          }
-        ],
-        "deleted": []
-      },
-      {
-        "slug": "sap-business-data-cloud",
-        "name": "SAP Business Data Cloud",
-        "slipped": [],
-        "added": [
-          {
-            "id": "B87FDD4F8243479F8CEE5BE8D283D7F6",
-            "title": "Analytical insights capability in Joule: support for tables, interactive charts and follow-up questions",
-            "quarter": "Q3 2026",
-            "capability": "AI for Planning and Analytics",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=B87FDD4F8243479F8CEE5BE8D283D7F6"
-          },
-          {
-            "id": "54F198234D1F46E9B8BE1735E59D8E18",
-            "title": "Analytical insights in Joule with multi-language support",
-            "quarter": "Q2 2027",
-            "capability": "AI for Planning and Analytics",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=54F198234D1F46E9B8BE1735E59D8E18"
-          },
-          {
-            "id": "A8B9D7BC3B0140109B683BE10C46C96F",
-            "title": "Ability for admins to configure the default theme for new stories at the tenant level in SAP Analytics Cloud",
-            "quarter": "Q3 2026",
-            "capability": "Dashboard Extensibility",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=A8B9D7BC3B0140109B683BE10C46C96F"
-          },
-          {
-            "id": "ECD35531618B4FBA8043A40DCA6E5EB9",
-            "title": "Replace pre-delivered story theme to align with Horizon Morning",
-            "quarter": "Q3 2026",
-            "capability": "Dashboard Extensibility",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=ECD35531618B4FBA8043A40DCA6E5EB9"
-          },
-          {
-            "id": "C6FE16FA40C8480ABBDF042A4DBD451A",
-            "title": "WalkMe Integration for Enhanced User Guidance",
-            "quarter": "Q4 2026",
-            "capability": "Knowledge Management",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=C6FE16FA40C8480ABBDF042A4DBD451A"
-          }
-        ],
-        "deleted": [
-          {
-            "id": "5767C5C876BD1EEEB39392E90A58B570",
-            "title": "Support for Google BigQuery as a source in replication flows",
-            "quarter": "Product Vision",
-            "capability": "Data Replication and ETL",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=5767C5C876BD1EEEB39392E90A58B570"
-          },
-          {
-            "id": "CC436021EEA74E4393FEB3AF870FB5C8",
-            "title": "Data product studio",
-            "quarter": "Q3 2026",
-            "capability": "Data Product Sharing",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=CC436021EEA74E4393FEB3AF870FB5C8"
-          }
-        ]
-      },
-      {
-        "slug": "sap-datasphere",
-        "name": "SAP Datasphere",
-        "slipped": [],
-        "added": [],
-        "deleted": [
-          {
-            "id": "5767C5C876BD1EEEB39392E90A58B570",
-            "title": "Support for Google BigQuery as a source in replication flows",
-            "quarter": "Product Vision",
-            "capability": "Data Replication and ETL",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=5767C5C876BD1EEEB39392E90A58B570"
-          }
-        ]
       }
     ]
   }
