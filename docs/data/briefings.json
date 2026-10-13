@@ -1,5 +1,93 @@
 [
   {
+    "id": "tue-2026-10-13",
+    "weekday": "Tuesday",
+    "iso": "2026-10-13",
+    "full": "Oct 13, 2026",
+    "title": "3 new SAP blog posts today.",
+    "preview": "3 new SAP blog posts today.",
+    "reads": "15 min",
+    "posts": 3,
+    "tags": [
+      "Business AI",
+      "Analytics Cloud",
+      "Datasphere",
+      "Business Data Cloud",
+      "SAC Planning"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "JOIN US: Meet SAP Business Data Cloud @ SAP TechEd 2026",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/join-us-meet-sap-business-data-cloud-sap-teched-2026/ba-p/14501963",
+            "author": "VenkataGiduthuri",
+            "date_published": "2026-10-13",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Analytics Cloud",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "JOIN US: Meet SAP HANA Cloud @ SAP TechEd 2026",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/join-us-meet-sap-hana-cloud-sap-teched-2026/ba-p/14499507",
+            "author": "thomashammer",
+            "date_published": "2026-10-12",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "Managing Parent-Child Hierarchies in SAC: One Small Update That Simplifies Everything",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/managing-parent-child-hierarchies-in-sac-one-small-update-that-simplifies/ba-p/14501623",
+            "author": "Tano_B",
+            "date_published": "2026-10-12",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Analytics Cloud for planning",
+              "SAP Datasphere"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "mon-2026-10-12",
     "weekday": "Monday",
     "iso": "2026-10-12",
