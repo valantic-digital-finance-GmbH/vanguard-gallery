@@ -1,5 +1,76 @@
 [
   {
+    "id": "wed-2026-10-14",
+    "weekday": "Wednesday",
+    "iso": "2026-10-14",
+    "full": "Oct 14, 2026",
+    "title": "3 new SAP blog posts today.",
+    "preview": "3 new SAP blog posts today.",
+    "reads": "11 min",
+    "posts": 3,
+    "tags": [
+      "Business AI",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Architecting Digital Workforce: Understanding SAP Joule, Assistants, Agents, Skills and Joule studio",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/architecting-digital-workforce-understanding-sap-joule-assistants-agents/ba-p/14501524",
+            "author": "JansiMurugesan",
+            "date_published": "2026-10-13",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Update on SAP’s partner-led AI adoption incentive",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/update-on-sap-s-partner-led-ai-adoption-incentive/ba-p/14501708",
+            "author": "JoseBastidas",
+            "date_published": "2026-10-13",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Seamless planning in SAP Business Data Cloud: Updates and roadmap",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/seamless-planning-in-sap-business-data-cloud-updates-and-roadmap/ba-p/14501977",
+            "author": "JoseBastidas",
+            "date_published": "2026-10-13",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "tue-2026-10-13",
     "weekday": "Tuesday",
     "iso": "2026-10-13",
