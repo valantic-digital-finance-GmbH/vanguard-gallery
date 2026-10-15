@@ -1,5 +1,114 @@
 [
   {
+    "id": "thu-2026-10-15",
+    "weekday": "Thursday",
+    "iso": "2026-10-15",
+    "full": "Oct 15, 2026",
+    "title": "5 new SAP blog posts today.",
+    "preview": "5 new SAP blog posts today.",
+    "reads": "21 min",
+    "posts": 5,
+    "tags": [
+      "Business AI",
+      "Analytics Cloud",
+      "Business Data Cloud",
+      "Datasphere"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "User Insights: SAP Business Data Cloud practitioners’ recommendations for a Business AI foundation",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/user-insights-sap-business-data-cloud-practitioners-recommendations-for-a/ba-p/14502810",
+            "author": "ThierryAudas",
+            "date_published": "2026-10-14",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Analytics Cloud",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          },
+          {
+            "title": "Partner Learning Accelerator: SAP Certified - Solution Architect - SAP Business AI Platform",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/partner-learning-accelerator-sap-certified-solution-architect-sap-business/ba-p/14502960",
+            "author": "JoseBastidas",
+            "date_published": "2026-10-14",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "SAP BusinessObjects BI and Data Services Statement of Direction - October 2026 update",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-businessobjects-bi-and-data-services-statement-of-direction-october/ba-p/14502529",
+            "author": "EricFenollosa",
+            "date_published": "2026-10-14",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "What 18 Days Through the American West Taught Me About Data",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/what-18-days-through-the-american-west-taught-me-about-data/ba-p/14504029",
+            "author": "Corrie",
+            "date_published": "2026-10-14",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "SAP Datasphere Replication Flow Fails with CDS Views Having No Key Fields — What Actually Happens?",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/sap-datasphere-replication-flow-fails-with-cds-views-having-no-key-fields/ba-p/14503744",
+            "author": "suryacreatx",
+            "date_published": "2026-10-14",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "wed-2026-10-14",
     "weekday": "Wednesday",
     "iso": "2026-10-14",
