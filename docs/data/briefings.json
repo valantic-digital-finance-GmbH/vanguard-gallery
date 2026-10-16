@@ -1,5 +1,42 @@
 [
   {
+    "id": "fri-2026-10-16",
+    "weekday": "Friday",
+    "iso": "2026-10-16",
+    "full": "Oct 16, 2026",
+    "title": "1 new SAP blog posts today.",
+    "preview": "1 new SAP blog posts today.",
+    "reads": "5 min",
+    "posts": 1,
+    "tags": [
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "SAP Business Data Cloud Sales Play Sprint: Intelligent content and insights to Autonomous Suite",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/sap-business-data-cloud-sales-play-sprint-intelligent-content-and-insights/ba-p/14504500",
+            "author": "JoseBastidas",
+            "date_published": "2026-10-15",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "thu-2026-10-15",
     "weekday": "Thursday",
     "iso": "2026-10-15",
