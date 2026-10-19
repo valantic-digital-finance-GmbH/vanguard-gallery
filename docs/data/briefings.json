@@ -6,8 +6,8 @@
     "full": "Oct 19, 2026",
     "title": "3 new SAP blog posts today.",
     "preview": "3 new SAP blog posts today.",
-    "reads": "15 min",
-    "posts": 3,
+    "reads": "20 min",
+    "posts": 4,
     "tags": [
       "Business AI",
       "Business Data Cloud"
@@ -33,7 +33,20 @@
             "board_name": "Technology Blog Posts by SAP"
           }
         ],
-        "rest": []
+        "rest": [
+          {
+            "title": "Business AI in ABAP Cloud - Embedding AI with the ABAP AI SDK",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/business-ai-in-abap-cloud-embedding-ai-with-the-abap-ai-sdk/ba-p/14501649",
+            "author": "fabianfellhauer",
+            "date_published": "2026-10-19",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ]
       },
       {
         "name": "SAP Business Data Cloud",
