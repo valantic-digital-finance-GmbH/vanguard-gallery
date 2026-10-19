@@ -1,5 +1,76 @@
 [
   {
+    "id": "mon-2026-10-19",
+    "weekday": "Monday",
+    "iso": "2026-10-19",
+    "full": "Oct 19, 2026",
+    "title": "3 new SAP blog posts today.",
+    "preview": "3 new SAP blog posts today.",
+    "reads": "15 min",
+    "posts": 3,
+    "tags": [
+      "Business AI",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "t's All Joule Everywhere, Do You Actually Know Which Joule You are Talking About?",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/t-s-all-joule-everywhere-do-you-actually-know-which-joule-you-are-talking/ba-p/14505264",
+            "author": "GouthamiR",
+            "date_published": "2026-10-16",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "SAP Business Data Cloud for Oil, Gas, and Energy",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/sap-business-data-cloud-for-oil-gas-and-energy/ba-p/14504967",
+            "author": "JoseBastidas",
+            "date_published": "2026-10-16",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          },
+          {
+            "title": "Part 1: SAP Business Data Cloud an overview",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/part-1-sap-business-data-cloud-an-overview/ba-p/14504900",
+            "author": "patelyogesh",
+            "date_published": "2026-10-15",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "fri-2026-10-16",
     "weekday": "Friday",
     "iso": "2026-10-16",
