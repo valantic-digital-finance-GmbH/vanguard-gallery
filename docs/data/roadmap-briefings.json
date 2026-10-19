@@ -1,5 +1,155 @@
 [
   {
+    "id": "mon-2026-10-19",
+    "iso": "2026-10-19",
+    "full": "19 October 2026",
+    "period": "2026-10-12 – 2026-10-18",
+    "title": "14 changes across 3 products",
+    "preview": "SAP Analytics Cloud: 2 items slipped, 2 items added. SAP Business Data Cloud: 2 items slipped, 5 items added, 1 item deleted. SAP Datasphere: 1 item added, 1 item deleted",
+    "total_changes": 14,
+    "products_with_changes": [
+      "SAP Analytics Cloud",
+      "SAP Business Data Cloud",
+      "SAP Datasphere"
+    ],
+    "sections": [
+      {
+        "slug": "sap-analytics-cloud",
+        "name": "SAP Analytics Cloud",
+        "slipped": [
+          {
+            "id": "FAF05078B88C43E2980AF90773970D5F",
+            "title": "Data analyzer: pin dimension filter tokens to the filter bar",
+            "old_quarter": "Q4 2026",
+            "new_quarter": "Q1 2027",
+            "direction": "forward",
+            "capability": "Exploratory Data Analysis",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=FAF05078B88C43E2980AF90773970D5F"
+          },
+          {
+            "id": "000D3ABE772D1EECB3A392887B364215",
+            "title": "Incremental load for New Model Load Jobs",
+            "old_quarter": "Q4 2026",
+            "new_quarter": "Q4 2027",
+            "direction": "forward",
+            "capability": "Data Replication and ETL",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=000D3ABE772D1EECB3A392887B364215"
+          }
+        ],
+        "added": [
+          {
+            "id": "D53F9D94AB9E4C8B9BE38EA74356341F",
+            "title": "Decoupling filters from entity selection in predictive scenarios",
+            "quarter": "Q1 2027",
+            "capability": "Business Planning and Forecasting",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=D53F9D94AB9E4C8B9BE38EA74356341F"
+          },
+          {
+            "id": "E8C5E259A828498D8D9E5050A2BEC969",
+            "title": "Unified story settings panel",
+            "quarter": "Q1 2027",
+            "capability": "AI for Planning and Analytics",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=E8C5E259A828498D8D9E5050A2BEC969"
+          }
+        ],
+        "deleted": []
+      },
+      {
+        "slug": "sap-business-data-cloud",
+        "name": "SAP Business Data Cloud",
+        "slipped": [
+          {
+            "id": "33158590E66E1FE084A758DBD9FD06F9",
+            "title": "Customer domains for the cockpit",
+            "old_quarter": "Q4 2026",
+            "new_quarter": "Q1 2027",
+            "direction": "forward",
+            "capability": "Data and Analytics Administration",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=33158590E66E1FE084A758DBD9FD06F9"
+          },
+          {
+            "id": "FAF05078B88C43E2980AF90773970D5F",
+            "title": "Data analyzer: pin dimension filter tokens to the filter bar",
+            "old_quarter": "Q4 2026",
+            "new_quarter": "Q1 2027",
+            "direction": "forward",
+            "capability": "Exploratory Data Analysis",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=FAF05078B88C43E2980AF90773970D5F"
+          }
+        ],
+        "added": [
+          {
+            "id": "DB9C27ACB50C1FD086F75D40F2432DD2",
+            "title": "Finance Intelligence: SAP Green Ledger",
+            "quarter": "Q4 2026",
+            "capability": "Data Product Management",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=DB9C27ACB50C1FD086F75D40F2432DD2"
+          },
+          {
+            "id": "31BA2E0496514798AE71E5D8AAF03568",
+            "title": "Navigation enhancement from model to Excel add-in",
+            "quarter": "Q4 2026",
+            "capability": "Other",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=31BA2E0496514798AE71E5D8AAF03568"
+          },
+          {
+            "id": "6375947242FE4697BD960A4D1B480EF8",
+            "title": "Navigation from public dimension to job monitor",
+            "quarter": "Q4 2026",
+            "capability": "Other",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=6375947242FE4697BD960A4D1B480EF8"
+          },
+          {
+            "id": "A6C4B0FB18D74A9FB52C9F8EBCBF3572",
+            "title": "Omnichannel Promotion Pricing for Promotion Data Product in SAP BDC",
+            "quarter": "Q4 2026",
+            "capability": "Data Product Management",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=A6C4B0FB18D74A9FB52C9F8EBCBF3572"
+          },
+          {
+            "id": "000D3ABE796A1FD0B3DA1CB5BC89C13A",
+            "title": "Transformation flows - delta table detection and configuration for SQL script nodes",
+            "quarter": "Q4 2026",
+            "capability": "Data Replication and ETL",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3ABE796A1FD0B3DA1CB5BC89C13A"
+          }
+        ],
+        "deleted": [
+          {
+            "id": "FBD93F1746164690B812BBB4BD25FF71",
+            "title": "Support of delta loads with Oracle as the source for replication flows",
+            "quarter": "Q4 2026",
+            "capability": "Data Replication and ETL",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=FBD93F1746164690B812BBB4BD25FF71"
+          }
+        ]
+      },
+      {
+        "slug": "sap-datasphere",
+        "name": "SAP Datasphere",
+        "slipped": [],
+        "added": [
+          {
+            "id": "000D3ABE796A1FD0B3DA1CB5BC89C13A",
+            "title": "Transformation flows - delta table detection and configuration for SQL script nodes",
+            "quarter": "Q4 2026",
+            "capability": "Data Replication and ETL",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=000D3ABE796A1FD0B3DA1CB5BC89C13A"
+          }
+        ],
+        "deleted": [
+          {
+            "id": "FBD93F1746164690B812BBB4BD25FF71",
+            "title": "Support of delta loads with Oracle as the source for replication flows",
+            "quarter": "Q4 2026",
+            "capability": "Data Replication and ETL",
+            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=FBD93F1746164690B812BBB4BD25FF71"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "mon-2026-10-12",
     "iso": "2026-10-12",
     "full": "12 October 2026",
@@ -3064,103 +3214,6 @@
             "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800002141&range=CURRENT-LAST#;INNO=34B03DC6FA1E4B7BBC8037768C0D15B1"
           }
         ],
-        "deleted": []
-      }
-    ]
-  },
-  {
-    "id": "mon-2026-08-10",
-    "iso": "2026-08-10",
-    "full": "10 August 2026",
-    "period": "2026-08-03 – 2026-08-09",
-    "title": "7 changes across 2 products",
-    "preview": "SAP Analytics Cloud: 1 item slipped to Q4 2026, 1 item added. SAP Business Data Cloud: 3 items slipped, 2 items added",
-    "total_changes": 7,
-    "products_with_changes": [
-      "SAP Analytics Cloud",
-      "SAP Business Data Cloud"
-    ],
-    "sections": [
-      {
-        "slug": "sap-analytics-cloud",
-        "name": "SAP Analytics Cloud",
-        "slipped": [
-          {
-            "id": "F344F2F86B384DC885FEAE62F0F44EA2",
-            "title": "Support for currency conversion in the Microsoft Excel add-in",
-            "old_quarter": "Q3 2026",
-            "new_quarter": "Q4 2026",
-            "direction": "forward",
-            "capability": "Office Suite Integration",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=F344F2F86B384DC885FEAE62F0F44EA2"
-          }
-        ],
-        "added": [
-          {
-            "id": "E5B098A06E2E4F3C9CD4108914ABA968",
-            "title": "Introduce Data Import API into Job Monitor",
-            "quarter": "Q3 2026",
-            "capability": "Self-Service Data Preparation",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=67838200100800006884&range=CURRENT-LAST#;INNO=E5B098A06E2E4F3C9CD4108914ABA968"
-          }
-        ],
-        "deleted": []
-      },
-      {
-        "slug": "sap-business-data-cloud",
-        "name": "SAP Business Data Cloud",
-        "slipped": [
-          {
-            "id": "000D3ABE772D1FD0AAEB3AA27B23FCE0",
-            "title": "Data center availability for SAP Business Data Cloud in China through Alibaba Cloud",
-            "old_quarter": "Q1 2027",
-            "new_quarter": "Q2 2027",
-            "direction": "forward",
-            "capability": "Data Center Availability",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3ABE772D1FD0AAEB3AA27B23FCE0"
-          },
-          {
-            "id": "000D3AAC9DD21FD0AAEB298EC68EFA3D",
-            "title": "Data center availability for SAP Business Data Cloud in China through Microsoft Azure",
-            "old_quarter": "Q1 2027",
-            "new_quarter": "Q2 2027",
-            "direction": "forward",
-            "capability": "Data Center Availability",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3AAC9DD21FD0AAEB298EC68EFA3D"
-          },
-          {
-            "id": "F344F2F86B384DC885FEAE62F0F44EA2",
-            "title": "Support for currency conversion in the Microsoft Excel add-in",
-            "old_quarter": "Q3 2026",
-            "new_quarter": "Q4 2026",
-            "direction": "forward",
-            "capability": "Office Suite Integration",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=F344F2F86B384DC885FEAE62F0F44EA2"
-          }
-        ],
-        "added": [
-          {
-            "id": "000D3ABE772D1FD0A8CC28C95B939C7D",
-            "title": "Query spend data through Joule",
-            "quarter": "Q3 2026",
-            "capability": "Spend Data Analytics",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=000D3ABE772D1FD0A8CC28C95B939C7D"
-          },
-          {
-            "id": "85EDB223F4A84A4382378BFC6047CA2E",
-            "title": "Total spend data products",
-            "quarter": "Q3 2026",
-            "capability": "Spend Data Analytics",
-            "url": "https://roadmaps.sap.com/board?PRODUCT=73555000100800004851&range=CURRENT-LAST#;INNO=85EDB223F4A84A4382378BFC6047CA2E"
-          }
-        ],
-        "deleted": []
-      },
-      {
-        "slug": "sap-datasphere",
-        "name": "SAP Datasphere",
-        "slipped": [],
-        "added": [],
         "deleted": []
       }
     ]
