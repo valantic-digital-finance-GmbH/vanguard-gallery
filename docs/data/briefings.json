@@ -6,8 +6,8 @@
     "full": "Oct 20, 2026",
     "title": "6 new SAP blog posts today.",
     "preview": "6 new SAP blog posts today.",
-    "reads": "26 min",
-    "posts": 6,
+    "reads": "31 min",
+    "posts": 7,
     "tags": [
       "Business AI",
       "Analytics Cloud",
@@ -70,6 +70,19 @@
             "minutes": 5,
             "board_id": "technology-blog-sap",
             "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Upcoming Webinar- Contextualize and Reason with SAP BDC: A Practitioner's Guide to Trusted AI Agents",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/upcoming-webinar-contextualize-and-reason-with-sap-bdc-a-practitioner-s/ba-p/14506957",
+            "author": "VenkataGiduthuri",
+            "date_published": "2026-10-20",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
           }
         ]
       },
