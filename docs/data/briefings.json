@@ -1,5 +1,115 @@
 [
   {
+    "id": "tue-2026-10-20",
+    "weekday": "Tuesday",
+    "iso": "2026-10-20",
+    "full": "Oct 20, 2026",
+    "title": "6 new SAP blog posts today.",
+    "preview": "6 new SAP blog posts today.",
+    "reads": "26 min",
+    "posts": 6,
+    "tags": [
+      "Business AI",
+      "Analytics Cloud",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "From agent-led process mining to action: What's new in the Process Consulting Agent October release",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/from-agent-led-process-mining-to-action-what-s-new-in-the-process/ba-p/14498943",
+            "author": "Patrizia_Calvia",
+            "date_published": "2026-10-19",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "From Hype to Hands-On: Level Up Your AI Skills This October",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/from-hype-to-hands-on-level-up-your-ai-skills-this-october/ba-p/14506838",
+            "author": "shannabauer",
+            "date_published": "2026-10-19",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Get Involved Before It's Final: 44 New SAP Customer Engagement Initiative Projects Are Now Open",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/get-involved-before-it-s-final-44-new-sap-customer-engagement-initiative/ba-p/14506772",
+            "author": "Nadine_Pfliegensdoerfer",
+            "date_published": "2026-10-19",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": [
+          {
+            "title": "Business AI in ABAP Cloud - Embedding AI with the ABAP AI SDK (Part 2)",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/business-ai-in-abap-cloud-embedding-ai-with-the-abap-ai-sdk-part-2/ba-p/14501649",
+            "author": "fabianfellhauer",
+            "date_published": "2026-10-19",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ]
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Introducing the Comment Management Dashboard in SAP Analytics Cloud: Full Control Over Your Comments",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/introducing-the-comment-management-dashboard-in-sap-analytics-cloud-full/ba-p/14506635",
+            "author": "pranav_kumar11",
+            "date_published": "2026-10-19",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "SAP Business Data Cloud: CSVファイルからカスタムデータプロダクトの作成",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-data-cloud-csv%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%8B%E3%82%89%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%87%E3%83%BC%E3%82%BF%E3%83%97%E3%83%AD%E3%83%80%E3%82%AF%E3%83%88%E3%81%AE%E4%BD%9C%E6%88%90/ba-p/14497022",
+            "author": "yuiyoshikawa",
+            "date_published": "2026-10-19",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "mon-2026-10-19",
     "weekday": "Monday",
     "iso": "2026-10-19",
