@@ -1,5 +1,112 @@
 [
   {
+    "id": "wed-2026-10-21",
+    "weekday": "Wednesday",
+    "iso": "2026-10-21",
+    "full": "Oct 21, 2026",
+    "title": "5 new SAP blog posts today.",
+    "preview": "5 new SAP blog posts today.",
+    "reads": "25 min",
+    "posts": 5,
+    "tags": [
+      "Business AI",
+      "Analytics Cloud",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Part 2: From MCP to Natural Language: SAP Integration Suite and Joule Work Desktop",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/part-2-from-mcp-to-natural-language-sap-integration-suite-and-joule-work/ba-p/14507707",
+            "author": "kenichi_unnai",
+            "date_published": "2026-10-21",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Part 1: From OData to MCP: Building an MCP Server with SAP Integration Suite",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/part-1-from-odata-to-mcp-building-an-mcp-server-with-sap-integration-suite/ba-p/14506342",
+            "author": "kenichi_unnai",
+            "date_published": "2026-10-21",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "From process mining to action: What's new in the Process Consulting Agent October release",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/from-process-mining-to-action-what-s-new-in-the-process-consulting-agent/ba-p/14498943",
+            "author": "Patrizia_Calvia",
+            "date_published": "2026-10-19",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "SAP Business Data Cloud Sales Play Sprint: Enhance Business AI with the Intelligent Data Fabric",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/sap-business-data-cloud-sales-play-sprint-enhance-business-ai-with-the/ba-p/14507049",
+            "author": "JoseBastidas",
+            "date_published": "2026-10-20",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "From Datasphere to SAC: When a Model Becomes a Business Answer",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/from-datasphere-to-sac-when-a-model-becomes-a-business-answer/ba-p/14507344",
+            "author": "suryacreatx",
+            "date_published": "2026-10-20",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Datasphere"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "tue-2026-10-20",
     "weekday": "Tuesday",
     "iso": "2026-10-20",
