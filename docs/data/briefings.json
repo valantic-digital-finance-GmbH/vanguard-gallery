@@ -6,8 +6,8 @@
     "full": "Oct 22, 2026",
     "title": "2 new SAP blog posts today.",
     "preview": "2 new SAP blog posts today.",
-    "reads": "10 min",
-    "posts": 2,
+    "reads": "15 min",
+    "posts": 3,
     "tags": [
       "Business AI",
       "Business Data Cloud"
@@ -33,7 +33,21 @@
             "board_name": "Technology Blog Posts by SAP"
           }
         ],
-        "rest": []
+        "rest": [
+          {
+            "title": "Closing the Workforce Plan-to-Execution Gap with SAP Business AI Platform",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/closing-the-workforce-plan-to-execution-gap-with-sap-business-ai-platform/ba-p/14505696",
+            "author": "Hierlste",
+            "date_published": "2026-10-22",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ]
       },
       {
         "name": "SAP Business Data Cloud",
