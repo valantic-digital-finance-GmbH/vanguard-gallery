@@ -1,5 +1,64 @@
 [
   {
+    "id": "thu-2026-10-22",
+    "weekday": "Thursday",
+    "iso": "2026-10-22",
+    "full": "Oct 22, 2026",
+    "title": "2 new SAP blog posts today.",
+    "preview": "2 new SAP blog posts today.",
+    "reads": "10 min",
+    "posts": 2,
+    "tags": [
+      "Business AI",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "The Nervous System: How Event-Driven Architecture makes AI better",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/the-nervous-system-how-event-driven-architecture-makes-ai-better/ba-p/14507521",
+            "author": "JoseBastidas",
+            "date_published": "2026-10-21",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Introducing SAP Reltio Velocity Packs in SAP Business Data Cloud",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/introducing-sap-reltio-velocity-packs-in-sap-business-data-cloud/ba-p/14507604",
+            "author": "JoseBastidas",
+            "date_published": "2026-10-21",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "wed-2026-10-21",
     "weekday": "Wednesday",
     "iso": "2026-10-21",
