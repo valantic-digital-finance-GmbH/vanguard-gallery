@@ -1,5 +1,91 @@
 [
   {
+    "id": "fri-2026-10-23",
+    "weekday": "Friday",
+    "iso": "2026-10-23",
+    "full": "Oct 23, 2026",
+    "title": "4 new SAP blog posts today.",
+    "preview": "4 new SAP blog posts today.",
+    "reads": "12 min",
+    "posts": 4,
+    "tags": [
+      "Business AI",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "SAP RPT as the Decision Model for Intent-Based Development in Joule Studio 2.0",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-rpt-as-the-decision-model-for-intent-based-development-in-joule-studio/ba-p/14509411",
+            "author": "shrutisangwan",
+            "date_published": "2026-10-22",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Did You Know? An SAP Business Data Cloud Series | Season 1, Episode 3 | Joule for Datasphere",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/did-you-know-an-sap-business-data-cloud-series-season-1-episode-3-joule-for/ba-p/14507861",
+            "author": "JoseChicas",
+            "date_published": "2026-10-22",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          },
+          {
+            "title": "From Analytical Model to S/4HANA Table: Automating Field-Level Data Lineage in SAP Datasphere",
+            "url": "https://community.sap.com/t5/data-and-analytics-blog-posts/from-analytical-model-to-s-4hana-table-automating-field-level-data-lineage/ba-p/14505912",
+            "author": "Gunpreet",
+            "date_published": "2026-10-22",
+            "matching_tags": [
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-analyticsblog-board",
+            "board_name": "Data and Analytics Blog Posts"
+          },
+          {
+            "title": "Delete the Training Pipeline",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/delete-the-training-pipeline/ba-p/14509110",
+            "author": "andreas_roth",
+            "date_published": "2026-10-22",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "thu-2026-10-22",
     "weekday": "Thursday",
     "iso": "2026-10-22",
