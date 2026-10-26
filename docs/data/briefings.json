@@ -1,5 +1,129 @@
 [
   {
+    "id": "mon-2026-10-26",
+    "weekday": "Monday",
+    "iso": "2026-10-26",
+    "full": "Oct 26, 2026",
+    "title": "6 new SAP blog posts today.",
+    "preview": "6 new SAP blog posts today.",
+    "reads": "22 min",
+    "posts": 6,
+    "tags": [
+      "Business AI",
+      "Business Data Cloud",
+      "Analytics Cloud",
+      "SAC Planning",
+      "Datasphere"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Joule Agents on SAP Cloud ERP Private: What Really Happens When You Try to Activate One",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/joule-agents-on-sap-cloud-erp-private-what-really-happens-when-you-try-to/ba-p/14510515",
+            "author": "VineetBakshi",
+            "date_published": "2026-10-25",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "From Innovation to Certification: How SAP Partners Are Turning AI Into Business Outcomes",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/from-innovation-to-certification-how-sap-partners-are-turning-ai-into/ba-p/14510034",
+            "author": "ogettani",
+            "date_published": "2026-10-23",
+            "matching_tags": [
+              "SAP Business AI",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "SAP BTP Hackathon 2026 最優秀賞個別インタビュー",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-btp-hackathon-2026-%E6%9C%80%E5%84%AA%E7%A7%80%E8%B3%9E%E5%80%8B%E5%88%A5%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%93%E3%83%A5%E3%83%BC/ba-p/14507194",
+            "author": "riku_suetsugu2497e3",
+            "date_published": "2026-10-23",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "Upcoming Expert-guided Implementation (EGI) sessions SAP Data & Analytics November 2026",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/upcoming-expert-guided-implementation-egi-sessions-sap-data-amp-analytics/ba-p/14508648",
+            "author": "dperritt",
+            "date_published": "2026-10-23",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Analytics Cloud for planning",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Positioning SAP Business Data Cloud for the Retail Industry",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/positioning-sap-business-data-cloud-for-the-retail-industry/ba-p/14508787",
+            "author": "JoseBastidas",
+            "date_published": "2026-10-23",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Datasphere",
+        "tags": [
+          "SAP Datasphere"
+        ],
+        "top": [
+          {
+            "title": "Part 2 : SAP Datasphere: High-Level Overview",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/part-2-sap-datasphere-high-level-overview/ba-p/14509568",
+            "author": "patelyogesh",
+            "date_published": "2026-10-23",
+            "matching_tags": [
+              "SAP Datasphere"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "fri-2026-10-23",
     "weekday": "Friday",
     "iso": "2026-10-23",
