@@ -1,5 +1,42 @@
 [
   {
+    "id": "tue-2026-10-27",
+    "weekday": "Tuesday",
+    "iso": "2026-10-27",
+    "full": "Oct 27, 2026",
+    "title": "1 new SAP blog posts today.",
+    "preview": "1 new SAP blog posts today.",
+    "reads": "1 min",
+    "posts": 1,
+    "tags": [
+      "Business AI"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Dispute Resolution for Vendor Invoices: MCP Server App Designed in Hours, Not Developed in Months",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/dispute-resolution-for-vendor-invoices-mcp-server-app-designed-in-hours-not/ba-p/14511194",
+            "author": "Siarhei",
+            "date_published": "2026-10-26",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "mon-2026-10-26",
     "weekday": "Monday",
     "iso": "2026-10-26",
