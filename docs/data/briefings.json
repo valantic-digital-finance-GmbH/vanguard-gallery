@@ -1,5 +1,136 @@
 [
   {
+    "id": "wed-2026-10-28",
+    "weekday": "Wednesday",
+    "iso": "2026-10-28",
+    "full": "Oct 28, 2026",
+    "title": "7 new SAP blog posts today.",
+    "preview": "7 new SAP blog posts today.",
+    "reads": "27 min",
+    "posts": 7,
+    "tags": [
+      "Business AI",
+      "Analytics Cloud",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "What's New in SAP Discovery Center at SAP TechEd 2026",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/what-s-new-in-sap-discovery-center-at-sap-teched-2026/ba-p/14511808",
+            "author": "cecilysorenson",
+            "date_published": "2026-10-27",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "SAP‑RPT‑TS: SAP's new Time Series Foundation Model",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-rpt-ts-sap-s-new-time-series-foundation-model/ba-p/14507166",
+            "author": "xinchen",
+            "date_published": "2026-10-27",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "SAP BTP Hackathon 2026 ファイナリスト座談会 Vol.1",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-btp-hackathon-2026-%E3%83%95%E3%82%A1%E3%82%A4%E3%83%8A%E3%83%AA%E3%82%B9%E3%83%88%E5%BA%A7%E8%AB%87%E4%BC%9A-vol-1/ba-p/14509106",
+            "author": "KeisukeNakamura",
+            "date_published": "2026-10-27",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "What’s Next with SAP HANA Cloud – SAP TechEd 2026",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/what-s-next-with-sap-hana-cloud-sap-teched-2026/ba-p/14509146",
+            "author": "thomashammer",
+            "date_published": "2026-10-27",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "SAP HANA Cloud Scale-Out: Expanding In-Memory Capacity Beyond Single-Node Limits",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-hana-cloud-scale-out-expanding-in-memory-capacity-beyond-single-node/ba-p/14509218",
+            "author": "zhen_tian",
+            "date_published": "2026-10-27",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Step-by-Step Guide: Configuring SAP BDC Connect for Google BigQuery",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/step-by-step-guide-configuring-sap-bdc-connect-for-google-bigquery/ba-p/14510286",
+            "author": "Parishudh-Marupurolu",
+            "date_published": "2026-10-27",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Analytics Cloud",
+        "tags": [
+          "SAP Analytics Cloud",
+          "SAP Analytics Cloud for planning",
+          "SAP Analytics Cloud, data modeling"
+        ],
+        "top": [
+          {
+            "title": "Horizon Story Template for SAP Analytics Cloud - Simplified and Refined with the new Default Theme",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/horizon-story-template-for-sap-analytics-cloud-simplified-and-refined-with/ba-p/14509084",
+            "author": "felixjonathanmueller",
+            "date_published": "2026-10-27",
+            "matching_tags": [
+              "SAP Analytics Cloud"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "tue-2026-10-27",
     "weekday": "Tuesday",
     "iso": "2026-10-27",
