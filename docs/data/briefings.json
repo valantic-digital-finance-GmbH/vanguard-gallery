@@ -1,5 +1,46 @@
 [
   {
+    "id": "thu-2026-10-29",
+    "weekday": "Thursday",
+    "iso": "2026-10-29",
+    "full": "Oct 29, 2026",
+    "title": "1 new SAP blog posts today.",
+    "preview": "1 new SAP blog posts today.",
+    "reads": "5 min",
+    "posts": 1,
+    "tags": [
+      "Analytics Cloud",
+      "Datasphere",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "User Insights: SAP Business Data Cloud practitioners' recommendations for a trusted data foundation",
+            "url": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/user-insights-sap-business-data-cloud-practitioners-recommendations-for-a/ba-p/14511765",
+            "author": "ThierryAudas",
+            "date_published": "2026-10-28",
+            "matching_tags": [
+              "SAP Analytics Cloud",
+              "SAP Datasphere",
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "data-professionalsblog-board",
+            "board_name": "Data and AI Professionals Blog posts"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "wed-2026-10-28",
     "weekday": "Wednesday",
     "iso": "2026-10-28",
