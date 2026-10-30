@@ -1,5 +1,54 @@
 [
   {
+    "id": "fri-2026-10-30",
+    "weekday": "Friday",
+    "iso": "2026-10-30",
+    "full": "Oct 30, 2026",
+    "title": "2 new SAP blog posts today.",
+    "preview": "2 new SAP blog posts today.",
+    "reads": "10 min",
+    "posts": 2,
+    "tags": [
+      "Business AI"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "Monitoring Dashboards in SAP Cloud ALM for Operations",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/monitoring-dashboards-in-sap-cloud-alm-for-operations/ba-p/14513438",
+            "author": "MarcelBusu",
+            "date_published": "2026-10-30",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          },
+          {
+            "title": "Anomaly Detection with AI in SAP Cloud ALM for Operations",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/anomaly-detection-with-ai-in-sap-cloud-alm-for-operations/ba-p/14513436",
+            "author": "MarcelBusu",
+            "date_published": "2026-10-30",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "thu-2026-10-29",
     "weekday": "Thursday",
     "iso": "2026-10-29",
