@@ -1,5 +1,88 @@
 [
   {
+    "id": "mon-2026-11-02",
+    "weekday": "Monday",
+    "iso": "2026-11-02",
+    "full": "Nov 2, 2026",
+    "title": "4 new SAP blog posts today.",
+    "preview": "4 new SAP blog posts today.",
+    "reads": "16 min",
+    "posts": 4,
+    "tags": [
+      "Business AI",
+      "Business Data Cloud"
+    ],
+    "highlights": [],
+    "sections": [
+      {
+        "name": "SAP Business AI",
+        "tags": [
+          "SAP Business AI"
+        ],
+        "top": [
+          {
+            "title": "SAP Workforce - My Second Brain (powered by MCC - CPR) - Download SAP Joule Skill - Set-Up Guide",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-workforce-my-second-brain-powered-by-mcc-cpr-download-sap-joule-skill/ba-p/14513564",
+            "author": "alexanderbund",
+            "date_published": "2026-10-30",
+            "matching_tags": [
+              "SAP Business AI"
+            ],
+            "minutes": 1,
+            "board_id": "technology-blog-sap",
+            "board_name": "Technology Blog Posts by SAP"
+          }
+        ],
+        "rest": []
+      },
+      {
+        "name": "SAP Business Data Cloud",
+        "tags": [
+          "SAP Business Data Cloud"
+        ],
+        "top": [
+          {
+            "title": "SAP Joule Work at SAP TechEd Berlin 2026: Redefining the Future of Work with Agentic AI",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/sap-joule-work-at-sap-teched-berlin-2026-redefining-the-future-of-work-with/ba-p/14514384",
+            "author": "RanjeetKr",
+            "date_published": "2026-11-01",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          },
+          {
+            "title": "Beyond Data Silos: Powering the Autonomous Enterprise with SAP's Next-Generation Data Fabric and AI",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/beyond-data-silos-powering-the-autonomous-enterprise-with-sap-s-next/ba-p/14514265",
+            "author": "RanjeetKr",
+            "date_published": "2026-10-31",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          },
+          {
+            "title": "SAP TechEd 2026 Berlin: Key Innovations, AI Breakthroughs and What's New in the SAP Ecosystem",
+            "url": "https://community.sap.com/t5/technology-blog-posts-by-members/sap-teched-2026-berlin-key-innovations-ai-breakthroughs-and-what-s-new-in/ba-p/14513987",
+            "author": "RanjeetKr",
+            "date_published": "2026-10-30",
+            "matching_tags": [
+              "SAP Business Data Cloud"
+            ],
+            "minutes": 5,
+            "board_id": "technology-blog-members",
+            "board_name": "Technology Blog Posts by Members"
+          }
+        ],
+        "rest": []
+      }
+    ]
+  },
+  {
     "id": "fri-2026-10-30",
     "weekday": "Friday",
     "iso": "2026-10-30",
