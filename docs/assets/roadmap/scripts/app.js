@@ -201,7 +201,7 @@ function renderShifts() {
   empty.style.display = 'none';
   tbody.innerHTML = filtered.map(shift => {
     const dirClass = shift.direction === 'forward' ? 'direction-forward' : 'direction-backward';
-    const dirText = shift.direction === 'forward' ? '⬆ Forward' : '⬇ Backward';
+    const dirText = shift.direction === 'forward' ? '⬆ Forward' : shift.direction === 'unknown' ? '↔ Changed' : '⬇ Backward';
     return '<tr>'
       + '<td>' + escHtml(shift.date) + '</td>'
       + '<td>' + escHtml(shift.title) + '</td>'
